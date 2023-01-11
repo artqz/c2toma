@@ -1,0 +1,19 @@
+{
+  "name": "c2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.2",
+    "ts-node-dev": "^2.0.0"
+  }
+}

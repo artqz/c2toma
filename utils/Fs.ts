@@ -20,21 +20,33 @@ export function loadMap(path: string, filename: string) {
   return MapsInfo.parse(JSON.parse(map));
 }
 
+type Chronicle = "c1" | "c2";
+
 const MapsInfo = z.object({
   map: z.string()
 })
 type MapsInfo = z.infer<typeof MapsInfo>;
+type Map = {
+  npcId: number,
+  map: string
+}
 
-export function loadMaps(path: string) {
+export function loadMaps() {
+  const chronicles: Chronicle[] = ["c1", "c2"]
+  for (const c of chronicles) {
+  const path = `maps/${c}`
   const entries = Fs.readdirSync(path, "utf8");
   const result = entries.filter((file) => Path.extname(file) === ".json");
 
   const maps = new Map<number, MapsInfo>();
-  for (const filename of result) {
+  
+    for (const filename of result) {
     const npc = loadMap(path, filename);
     maps.set(parseInt(filename), npc);
   }
-  console.log(maps);
+
+  }
   
-  return Array.from(maps.values());
+  
+  return [];
 }

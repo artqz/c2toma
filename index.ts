@@ -1,8 +1,9 @@
+import { loadNpcsToma } from './import/npcs';
 import { loadMaps } from './utils/Fs';
 
-async function init() {
-  const t = loadMaps("maps/c1")
-  // console.log(t);
+function init() {
+  const npcs = loadNpcsToma()
+  // console.log(npcs);
   
 }
 

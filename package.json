@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsnd --respawn index.ts"
+    "dev": "tsnd --respawn index.ts",
+    "save": "ts-node saveMaps.ts"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "@types/node-fetch": "^2.6.2",
+    "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0"
   }
 }

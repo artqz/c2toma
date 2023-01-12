@@ -69,9 +69,10 @@ async function init() {
   const mapC1 = new Map<number, string>();
 
   for (const npcId of npcs) {
-    const map = await getMap({ npcId, chronicle: "c1" });
+    const map = await getMap({ npcId, chronicle: "c2" });
     // console.log(map);
   }
+  console.log("finish");
 }
 
 init();

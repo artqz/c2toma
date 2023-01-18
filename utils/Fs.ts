@@ -1,7 +1,7 @@
 import Fs from "fs";
 import Path from "path"
 import { z } from 'zod';
-
+export default Fs
 export function saveFile(path: string, data: string) {
   return Fs.writeFileSync(path, data);
 }
@@ -22,10 +22,11 @@ export function loadMap(path: string, filename: string) {
 
 type Chronicle = "c1" | "c2";
 
-const MapsInfo = z.object({
+export const MapsInfo = z.object({
   map: z.string()
 })
-type MapsInfo = z.infer<typeof MapsInfo>;
+export type MapsInfo = z.infer<typeof MapsInfo>;
+
 type Map = {
   npcId: number,
   map: string
@@ -49,4 +50,11 @@ export function loadMaps() {
   
   
   return [];
+}
+
+export function getFiles(path: string, ext: ".json") {
+    const entries = Fs.readdirSync(path, "utf8");
+    const result = entries.filter((file) => Path.extname(file) === ext);
+
+    return result    
 }

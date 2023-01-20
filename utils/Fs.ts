@@ -52,7 +52,7 @@ export function loadMaps() {
   return [];
 }
 
-export function getFiles(path: string, ext: ".json") {
+export function getFiles(path: string, ext: ".json" | ".png") {
     const entries = Fs.readdirSync(path, "utf8");
     const result = entries.filter((file) => Path.extname(file) === ext);
 

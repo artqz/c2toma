@@ -4,8 +4,7 @@ const path = "maps/c2"
 
 const files = getFiles(path, ".json") 
 
-async function init() {
-  for (const file of files) {
+for (const file of files) {
   const src = Fs.readFileSync(
         `${path}/${file}`,
         "utf8"
@@ -18,6 +17,3 @@ async function init() {
   const _file = file.replace(".json", "")
   Fs.writeFileSync(`${path}/png/${_file}.png`, base64Image, {encoding: 'base64'});
 }
-}
-
-init()

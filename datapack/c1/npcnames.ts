@@ -22,6 +22,6 @@ export function loadNpcNamesJson(path: string): NpcNameEntry[] {
   return data;
 }
 
-export function loadNpcNames() {
+export function loadNpcNamesC1() {
     return loadNpcNamesJson("datapack/c1/npcname-e.txt.l2h.json");
 }

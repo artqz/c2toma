@@ -1,6 +1,8 @@
 import Fs from "fs";
 import Path from "path"
-import { loadNpcNames } from '../datapack/c1/npcnames';
+
+import { loadNpcNamesC2, NpcNameEntry } from '../datapack/c2/npcnames';
+import { loadNpcDataC4 } from '../datapack/c4/npcdata';
 import { Npc } from '../result/types';
 import { NpcDataEntry } from './types';
 
@@ -10,26 +12,32 @@ function loadNpcJson(path: string, filename: string) {
 }
 
 
-export function loadNpcsToma ()  {
+export function loadNpcs()  {  
+  const npcnamesC2 = new Map(loadNpcNamesC2().map((npc) => [npc.id, npc]));
+  let npcs: Map<number, Npc>
+  npcs = loadTomaNpcs(npcnamesC2)
+  npcs = loadC4Npcs(npcs)
   
-  const npcnamesC1 = new Map(loadNpcNames().map((npc) => [npc.id, npc]));
+  console.log("NPCs loaded.");
 
+  return npcs
+}
+
+function loadTomaNpcs(npcnamesC2: Map<number, NpcNameEntry>) {
+  const npcs = new Map<number, Npc>()
   const path = "npcs/c2"
   const entries = Fs.readdirSync(path, "utf8");
-  const result = entries.filter((file) => Path.extname(file) === ".json");
+  const tomaNpcs = new Map(entries.filter((file) => Path.extname(file) === ".json").map(x => [parseInt(x), parseInt(x)]));
   
-  const npcs = new Map<number, Npc>()
-  const newC2Npc:number[] = []
+  for (const npcC2 of Array.from(npcnamesC2.values())) {
+    const npcId = npcC2.id
+    
 
-  for (const filename of result) {
-    const npcId = parseInt(filename)
-    const npcById = npcnamesC1.get(npcId)
+    const npcById = tomaNpcs.get(npcId)
     // удалить лишних мобов, которых нет в ц2 клиенте
-    if (!npcById) {
-      newC2Npc.push(npcId)   
-    }
-    const npc = loadNpcJson(path, filename);
-    npcs.set(parseInt(filename), {
+    if (npcById){
+    const npc = loadNpcJson(path, `${npcId}.json`);
+    npcs.set(npcId, {
       agroRange: 0, // нет данных у томы
       baseAttackSpeed: npc.npcData.baseAttackSpeed,
       baseCritical: npc.npcData.baseCritical,
@@ -43,9 +51,9 @@ export function loadNpcsToma ()  {
       id: npc.npcData.npcClassId,
       level: npc.npcData.level,
       magicUseSpeedModify: 0, // нет данных у томы
-      name: "", // нет данных у томы
-      nick: "", // нет данных у томы
-      nickColor: "default", // нет данных у томы
+      name: {en: npcC2.name, ru: ""}, // нет данных у томы
+      nick: {en: npcC2.nick, ru: ""}, // нет данных у томы
+      nickColor: npcC2.nickcolor, // нет данных у томы
       npcName: "", // нет данных у томы
       orgHp: npc.npcData.orgHp,
       orgHpRegen: 0, // нет данных у томы
@@ -54,12 +62,31 @@ export function loadNpcsToma ()  {
       physicalAvoidModify: npc.npcData.physicalAvoidModify,
       physicalHitModify: npc.npcData.physicalHitModify,
       type: npc.npcData.npcType.toString(), // необходимо перевести в другой вид, либо взять в другом сервере
-      existInC1: true
+      race: "" // нет данных у томы
     })
   }
-  console.log(newC2Npc.length);
-  
-  console.log("finish");
-  
+}
+  return npcs
+}
+
+function loadC4Npcs(npcsToma: Map<number, Npc>) {
+  const npcs = new Map<number, Npc>()
+  const c4Npcs = new Map(loadNpcDataC4().map((npc) => [npc.$[1], npc]));
+
+  for (const npc of Array.from(npcsToma.values())) {
+    const npcById = c4Npcs.get(npc.id)
+
+    if (npcById){
+      npcs.set(npc.id, {
+        ...npc,
+        agroRange: npcById.agro_range,
+        npcName: npcById.$[2],
+        orgHpRegen: npcById.org_hp_regen,
+        orgMpRegen: npcById.org_mp_regen,
+        type: npcById.$[0],
+        race: npcById.race
+      })
+    }
+  }
   return npcs
 }

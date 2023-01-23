@@ -1,0 +1,112 @@
+import { z } from 'zod';
+import { ItemEntryC2, loadItemNamesC2 } from '../datapack/c2/itemnames';
+import { loadItemDataC4 } from '../datapack/c4/itemdata';
+import { Item } from '../result/types';
+
+export function loadItems()  {  
+  const itemnamesC2 = new Map(loadItemNamesC2().map((npc) => [npc.id, npc]));
+  let items: Map<number, Item>
+
+  items = loadC4Npcs(itemnamesC2)
+  
+  console.log("Items loaded.");
+
+  return items
+}
+
+function loadC4Npcs (itemnamesC2: Map<number, ItemEntryC2>) {
+  const items = new Map<number, Item>()
+  const itemsC4 = new Map(loadItemDataC4().map((item) => [item.$[1], item]));
+
+  for (const itemC2 of Array.from(itemnamesC2.values())) {
+    const itemC4 = itemsC4.get(itemC2.id)
+    if (!itemC4) {
+      console.log("Нет", itemC2.id, itemC2.name);      
+    } else {
+      if(itemC4.t === "item") {
+      items.set(itemC2.id, {
+        addName: {en: "", ru: ""},
+        armorType: itemC4.armor_type!,
+        attackRange: itemC4.attack_range!,
+        attackSpeed: itemC4.attack_speed!,
+        avoidModify: itemC4.avoid_modify!,
+        canPenetrate: Boolean(itemC4.can_penetrate!),
+        consumeType: itemC4.consume_type!,
+        critical: itemC4.critical!,
+        criticalAttackSkill: itemC4.critical_attack_skill!,
+        crystalCount: itemC4.crystal_count!,
+        crystalType: itemC4.crystal_type!,
+        damageRange: itemC4.damage_range ? itemC4.damage_range.$ + "" : "none",
+        defaultPrice: itemC4.default_price!,
+        desc: {en: itemC2.description, ru: ""},
+        dualFhitRate: itemC4.dual_fhit_rate!,
+        durability: itemC4.durability!,
+        effectiveRange: itemC4.effective_range!,
+        etcitemType: itemC4.etcitem_type!,
+        hitModify: itemC4.hit_modify!,
+        icon: "",
+        id: itemC4.$[1]!,
+        immediateEffect: Boolean(itemC4.immediate_effect!),
+        initialCount: itemC4.initial_count!,
+        isDestruct: Boolean(itemC4.is_destruct!),
+        isDrop: Boolean(itemC4.is_drop!),
+        isTrade: Boolean(itemC4.is_trade!),
+        itemName: (itemC4.$[2]!).toString(),
+        itemSkill: itemC4.item_skill!,
+        magicalDamage: itemC4.magical_damage!,
+        magicalDefense: itemC4.magical_defense!,
+        magicWeapon: Boolean(itemC4.magic_weapon!),
+        materialType: itemC4.material_type!,
+        maximumCount: itemC4.maximum_count!,
+        mpBonus: itemC4.mp_bonus!,
+        mpConsume: itemC4.mp_consume!,
+        name: {en: itemC2.name, ru: ""},
+        physicalDamage: itemC4.physical_damage!,
+        physicalDefense: itemC4.physical_defense!,
+        randomDamage: itemC4.random_damage!,
+        reuseDelay: itemC4.reuse_delay!,
+        shieldDefense: itemC4.shield_defense!,
+        shieldDefenseRate: itemC4.shield_defense_rate!,
+        slotBitType: asSlot(itemC4.slot_bit_type!.$.toString()),
+        soulshotCount: itemC4.soulshot_count!,
+        spiritshotCount: itemC4.spiritshot_count!,
+        type: itemC4.$[0].toString(),
+        weaponType: itemC4.weapon_type!,
+        weight: itemC4.weight!,
+      })
+    }
+    }
+  }
+  console.log(items);
+  
+  return items
+}
+
+export const Slot = z.enum([
+  "rhand",
+  "lrhand",
+  "lhand",
+  "chest",
+  "legs",
+  "feet",
+  "head",
+  "gloves",
+  "back",
+  "underwear",
+  "none",
+  "onepiece",
+  "rear,lear",
+  "rfinger,lfinger",
+  "neck",
+  // GF
+  "rbracelet",
+  "lbracelet",
+  "hair",
+  "hair2",
+  "hairall",
+  "alldress",
+  "deco1",
+  "waist",
+]);
+export type Slot = z.infer<typeof Slot>;
+export const asSlot = Slot.parse;

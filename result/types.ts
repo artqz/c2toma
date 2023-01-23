@@ -1,11 +1,12 @@
 type Int = number
 type Float = number
+type lstring = {en: string, ru: string}
 
 export type Npc = {
   id: Int;
   npcName: string;
-  name: string;
-  nick: string;
+  name: lstring;
+  nick: lstring;
   nickColor: "default" | "quest" | "raid";
   type: string;
   level: Int | null;
@@ -26,5 +27,60 @@ export type Npc = {
   baseReuseDelay: Int | null;
   baseCritical: Int | null;
   magicUseSpeedModify: Float | null;
-  existInC1: boolean;
+  race: string;
 };
+
+export type Skill = {
+
+}
+
+export type Item = {
+  id: Int;
+  itemName: string;
+  type: string;
+  icon: string;
+  name: lstring;
+  addName: lstring;
+  desc: lstring;
+  weaponType: string;
+  armorType: string;
+  etcitemType: string | null;
+  slotBitType: string;
+  weight: Int | null;
+  consumeType: string | null;
+  initialCount: Int | null;
+  maximumCount: Int | null;
+  soulshotCount: Int | null;
+  spiritshotCount: Int | null;
+  immediateEffect: boolean;
+  defaultPrice: Int | null;
+  itemSkill: string | null;
+  criticalAttackSkill: string | null;
+  materialType: string | null;
+  crystalType: string | null;
+  crystalCount: Int | null;
+  isTrade: boolean;
+  isDrop: boolean;
+  isDestruct: boolean;
+  physicalDamage: Int | null;
+  randomDamage: Int | null;
+  canPenetrate: boolean;
+  critical: Int | null;
+  hitModify: Float | null;
+  avoidModify: Int | null;
+  dualFhitRate: Int | null;
+  shieldDefense: Int | null;
+  shieldDefenseRate: Int | null;
+  attackRange: Int | null;
+  effectiveRange: Int | null;
+  damageRange: string | null;
+  attackSpeed: Int | null;
+  reuseDelay: Int | null;
+  mpConsume: Int | null;
+  magicalDamage: Int | null;
+  durability: Int | null;
+  physicalDefense: Int | null;
+  magicalDefense: Int | null;
+  mpBonus: Int | null;
+  magicWeapon: boolean;
+}

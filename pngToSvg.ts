@@ -16,12 +16,12 @@ async function init() {
     const result = await png2svg({ 
   tracer: 'imagetracer', 
   optimize: true,
-  input: Fs.readFileSync(src) ,
+  input: src ,
   numberofcolors: 24, 
   pathomit: 1,
 })
 const _file = file.replace(".png", "")
-console.log(_file);
+console.log(src);
 
 Fs.writeFileSync(`${path}/svg/${_file}.svg`, result.content)
 console.log("save");

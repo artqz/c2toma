@@ -7,14 +7,14 @@ import { Item } from "../result/types";
 export function loadItems() {
   const itemnamesC2 = new Map(loadItemNamesC2().map((npc) => [npc.id, npc]));
   let items: Map<number, Item>;
-  items = loadC4Npcs(itemnamesC2);
+  items = loadC4Items(itemnamesC2);
   items = loadC2Icons(items);
   console.log("Items loaded.");
 
   return items;
 }
 
-function loadC4Npcs(itemnamesC2: Map<number, ItemEntryC2>) {
+function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
   const items = new Map<number, Item>();
   const itemsC4 = new Map(loadItemDataC4().map((item) => [item.$[1], item]));
 

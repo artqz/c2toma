@@ -33,7 +33,15 @@ export type Npc = {
   skillList: string[];
 };
 
-export type Skill = {};
+export type Skill = {
+  id: Int;
+  skillName: string;
+  name: string;
+  desc: string;
+  level: Int | null;
+  operateType: string | null;
+  icon: string;
+};
 
 export type Item = {
   id: Int;

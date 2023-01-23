@@ -28,6 +28,8 @@ export type Npc = {
   baseCritical: Int | null;
   magicUseSpeedModify: Float | null;
   race: string;
+  dropList: NpcDrop[],
+  spoilList: NpcDrop[],
 };
 
 export type Skill = {
@@ -84,3 +86,11 @@ export type Item = {
   mpBonus: Int | null;
   magicWeapon: boolean;
 }
+
+export type NpcDrop = {
+  npcId: Int;
+  itemId: Int;
+  countMin: Int;
+  countMax: Int;
+  chance: Float;
+};

@@ -3,7 +3,7 @@ import Path from "path"
 
 import { loadNpcNamesC2, NpcNameEntry } from '../datapack/c2/npcnames';
 import { loadNpcDataC4 } from '../datapack/c4/npcdata';
-import { Npc } from '../result/types';
+import { Item, Npc, NpcDrop } from '../result/types';
 import { NpcDataEntry } from './types';
 
 function loadNpcJson(path: string, filename: string) {
@@ -12,11 +12,12 @@ function loadNpcJson(path: string, filename: string) {
 }
 
 
-export function loadNpcs()  {  
+export function loadNpcs(deps: {items:Map<number, Item>})  {  
   const npcnamesC2 = new Map(loadNpcNamesC2().map((npc) => [npc.id, npc]));
   let npcs: Map<number, Npc>
   npcs = loadTomaNpcs(npcnamesC2)
   npcs = loadC4Npcs(npcs)
+  console.log(npcs);
   
   console.log("NPCs loaded.");
 
@@ -30,13 +31,13 @@ function loadTomaNpcs(npcnamesC2: Map<number, NpcNameEntry>) {
   const tomaNpcs = new Map(entries.filter((file) => Path.extname(file) === ".json").map(x => [parseInt(x), parseInt(x)]));
   
   for (const npcC2 of Array.from(npcnamesC2.values())) {
-    const npcId = npcC2.id
-    
+    const npcId = npcC2.id   
 
     const npcById = tomaNpcs.get(npcId)
-    // удалить лишних мобов, которых нет в ц2 клиенте
+   
     if (npcById){
     const npc = loadNpcJson(path, `${npcId}.json`);
+    
     npcs.set(npcId, {
       agroRange: 0, // нет данных у томы
       baseAttackSpeed: npc.npcData.baseAttackSpeed,
@@ -62,7 +63,9 @@ function loadTomaNpcs(npcnamesC2: Map<number, NpcNameEntry>) {
       physicalAvoidModify: npc.npcData.physicalAvoidModify,
       physicalHitModify: npc.npcData.physicalHitModify,
       type: npc.npcData.npcType.toString(), // необходимо перевести в другой вид, либо взять в другом сервере
-      race: "" // нет данных у томы
+      race: "", // нет данных у томы
+      dropList: getDrop(npc.drop),
+      spoilList: getDrop(npc.drop)
     })
   }
 }
@@ -89,4 +92,25 @@ function loadC4Npcs(npcsToma: Map<number, Npc>) {
     }
   }
   return npcs
+}
+
+
+function getDrop(list: {
+    npcType: number,
+    min: number,
+    max: number;
+    chance: number;
+    npcId: number;
+    crystal: {
+        itemClassId: number;
+        crystalType: "NoGrade" | "D" | "C" | "B" | "A" | "S";
+    };
+}[]) {
+  const drop: NpcDrop[] = []
+
+  for (const item of list) {
+    drop.push({chance: item.chance, countMax: item.max, countMin: item.min, itemId: item.crystal.itemClassId, npcId: item.npcId})
+  }
+
+  return drop
 }

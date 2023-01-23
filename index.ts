@@ -4,8 +4,8 @@ import { svg } from './import/svg';
 import { loadMaps } from './utils/Fs';
 
 function init() {
-  const npcs = loadNpcs()
-  const items = loadItems()
+   const items = loadItems()
+  const npcs = loadNpcs({items})
   // const _svg = svg()
   // console.log(_svg);
 

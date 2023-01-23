@@ -77,7 +77,6 @@ function loadC4Npcs (itemnamesC2: Map<number, ItemEntryC2>) {
     }
     }
   }
-  console.log(items);
   
   return items
 }

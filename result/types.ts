@@ -30,6 +30,7 @@ export type Npc = {
   race: string;
   dropList: NpcDrop[],
   spoilList: NpcDrop[],
+  skillList: string[]
 };
 
 export type Skill = {

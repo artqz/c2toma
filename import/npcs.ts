@@ -65,7 +65,8 @@ function loadTomaNpcs(npcnamesC2: Map<number, NpcNameEntry>) {
       type: npc.npcData.npcType.toString(), // необходимо перевести в другой вид, либо взять в другом сервере
       race: "", // нет данных у томы
       dropList: getDrop(npc.drop),
-      spoilList: getDrop(npc.drop)
+      spoilList: getDrop(npc.drop),
+      skillList: []
     })
   }
 }
@@ -87,7 +88,8 @@ function loadC4Npcs(npcsToma: Map<number, Npc>) {
         orgHpRegen: npcById.org_hp_regen,
         orgMpRegen: npcById.org_mp_regen,
         type: npcById.$[0],
-        race: npcById.race
+        race: npcById.race,
+        skillList: npcById.skill_list.$!.map(x => x.replace("@", ""))
       })
     }
   }

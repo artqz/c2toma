@@ -1,12 +1,12 @@
-type Int = number
-type Float = number
-type lstring = {en: string, ru: string}
+type Int = number;
+type Float = number;
+type lstring = { en: string; ru: string };
 
 export type Npc = {
   id: Int;
   npcName: string;
-  name: lstring;
-  nick: lstring;
+  name: string;
+  nick: string;
   nickColor: "default" | "quest" | "raid";
   type: string;
   level: Int | null;
@@ -28,23 +28,21 @@ export type Npc = {
   baseCritical: Int | null;
   magicUseSpeedModify: Float | null;
   race: string;
-  dropList: NpcDrop[],
-  spoilList: NpcDrop[],
-  skillList: string[]
+  dropList: NpcDrop[];
+  spoilList: NpcDrop[];
+  skillList: string[];
 };
 
-export type Skill = {
-
-}
+export type Skill = {};
 
 export type Item = {
   id: Int;
   itemName: string;
   type: string;
   icon: string;
-  name: lstring;
-  addName: lstring;
-  desc: lstring;
+  name: string;
+  addName: string;
+  desc: string;
   weaponType: string;
   armorType: string;
   etcitemType: string | null;
@@ -86,7 +84,7 @@ export type Item = {
   magicalDefense: Int | null;
   mpBonus: Int | null;
   magicWeapon: boolean;
-}
+};
 
 export type NpcDrop = {
   npcId: Int;

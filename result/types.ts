@@ -95,9 +95,19 @@ export type Item = {
 };
 
 export type NpcDrop = {
-  npcId: Int;
-  itemId: Int;
+  itemName: string;
   countMin: Int;
   countMax: Int;
   chance: Float;
+};
+
+export type Multisell = {
+  id: number;
+  multisellName: string;
+  sellList: SellList[];
+};
+
+export type SellList = {
+  requiredItems: { itemName: string; count: number }[];
+  resultItems: { itemName: string; count: number }[];
 };

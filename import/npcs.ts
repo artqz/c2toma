@@ -13,8 +13,8 @@ function loadNpcJson(path: string, filename: string) {
 
 export function loadNpcs(deps: { items: Map<number, Item> }) {
   const npcnamesC2 = new Map(loadNpcNamesC2().map((npc) => [npc.id, npc]));
-  let npcs: Map<number, Npc>;
-  npcs = loadTomaNpcs(npcnamesC2);
+
+  let npcs = loadTomaNpcs(deps);
   npcs = loadC4Npcs(npcs);
 
   console.log("NPCs loaded.");
@@ -22,7 +22,9 @@ export function loadNpcs(deps: { items: Map<number, Item> }) {
   return npcs;
 }
 
-function loadTomaNpcs(npcnamesC2: Map<number, NpcNameEntry>) {
+function loadTomaNpcs(deps: { items: Map<number, Item> }) {
+  const npcnamesC2 = new Map(loadNpcNamesC2().map((npc) => [npc.id, npc]));
+
   const npcs = new Map<number, Npc>();
   const path = "npcs/c2";
   const entries = Fs.readdirSync(path, "utf8");
@@ -66,8 +68,8 @@ function loadTomaNpcs(npcnamesC2: Map<number, NpcNameEntry>) {
         physicalHitModify: npc.npcData.physicalHitModify,
         type: npc.npcData.npcType.toString(), // необходимо перевести в другой вид, либо взять в другом сервере
         race: "", // нет данных у томы
-        dropList: getDrop(npc.drop),
-        spoilList: getDrop(npc.drop),
+        dropList: getDrop(npc.drop, deps.items),
+        spoilList: getDrop(npc.drop, deps.items),
         skillList: [],
       });
     }
@@ -109,7 +111,8 @@ function getDrop(
       itemClassId: number;
       crystalType: "NoGrade" | "D" | "C" | "B" | "A" | "S";
     };
-  }[]
+  }[],
+  items: Map<number, Item>
 ) {
   const drop: NpcDrop[] = [];
 
@@ -118,8 +121,7 @@ function getDrop(
       chance: item.chance,
       countMax: item.max,
       countMin: item.min,
-      itemId: item.crystal.itemClassId,
-      npcId: item.npcId,
+      itemName: items.get(item.crystal.itemClassId)!.itemName,
     });
   }
 

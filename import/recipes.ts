@@ -10,7 +10,7 @@ export function loadRecipes(deps: { items: Map<number, Item> }) {
   for (const rec of recipes) {
     recMap.set(rec.id, {
       id: rec.id,
-      itemName: itemById.get(rec.product_id)!.itemName,
+      itemName: rec.name,
       level: rec.level,
       mpConsume: rec.mp_consume,
       materialList: getMaterials({ ...deps, materials: rec.material.$ }),

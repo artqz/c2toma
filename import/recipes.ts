@@ -29,7 +29,7 @@ export function loadRecipes(deps: { items: Map<number, Item> }) {
   }
   console.log("Recipes loaded.");
 
-  return recipes;
+  return recMap;
 }
 
 function getMaterials(deps: { materials: string[]; items: Map<number, Item> }) {

@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 import z from "zod";
-import { checkFile, saveFile } from './utils/Fs';
+import { checkFile, saveFile } from "./utils/Fs";
 
 const NpcDataEntry = z.object({
   npc: z.object({
@@ -30,7 +30,7 @@ const MapDataEntry = z.object({
 });
 type MapDataEntry = z.infer<typeof NpcDataEntry>;
 
-type Chronicle = "c1" | "c2";
+type Chronicle = "c1" | "c2" | "c4";
 
 async function getMap(props: { npcId: number; chronicle: Chronicle }) {
   const { npcId, chronicle } = props;
@@ -65,13 +65,13 @@ async function getMap(props: { npcId: number; chronicle: Chronicle }) {
 
 async function init() {
   const npcs = await getTomaNpcs();
-  const chronicles: Chronicle[] = ["c1", "c2"]
+  const chronicles: Chronicle[] = ["c1", "c2", "c4"];
   for (const chronicle of chronicles) {
     for (const npcId of npcs) {
-    await getMap({ npcId, chronicle });
+      await getMap({ npcId, chronicle });
+    }
   }
-  }
-  
+
   console.log("[success]: finish");
 }
 

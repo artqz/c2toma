@@ -33,6 +33,16 @@ export type Npc = {
   skillList: string[];
 };
 
+export type Point = {
+  x: Float;
+  y: Float;
+};
+
+export type NpcSpawn = {
+  npcName: string;
+  pos: Point[];
+};
+
 export type Skill = {
   id: Int;
   skillName: string;

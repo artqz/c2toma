@@ -1,5 +1,6 @@
 import { loadItems } from "./import/items";
 import { loadMultisell } from "./import/multisell";
+import { loadNpcPos } from "./import/npcpos";
 import { loadNpcs } from "./import/npcs";
 import { loadRecipes } from "./import/recipes";
 import { loadSkills } from "./import/skills";
@@ -11,6 +12,7 @@ function init() {
   const npcs = loadNpcs({ items });
   const multisell = loadMultisell({ items });
   const recipes = loadRecipes({ items });
+  const pos = loadNpcPos({ npcs });
 
   // const _svg = svg()
   // console.log(_svg);

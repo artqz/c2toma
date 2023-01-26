@@ -111,3 +111,25 @@ export type SellList = {
   requiredItems: { itemName: string; count: number }[];
   resultItems: { itemName: string; count: number }[];
 };
+
+export type Recipe = {
+  id: Int;
+  recipeName: string;
+  itemName: string;
+  productList: Product[];
+  materialList: Material[];
+  npcFeeList: Material[];
+  successRate: Int | null;
+  level: Int | null;
+  mpConsume: Int | null;
+};
+
+export type Product = {
+  itemName: string;
+  count: Int;
+};
+
+export type Material = {
+  itemName: string;
+  count: Int;
+};

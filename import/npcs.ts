@@ -12,8 +12,6 @@ function loadNpcJson(path: string, filename: string) {
 }
 
 export function loadNpcs(deps: { items: Map<number, Item> }) {
-  const npcnamesC2 = new Map(loadNpcNamesC2().map((npc) => [npc.id, npc]));
-
   let npcs = loadTomaNpcs(deps);
   npcs = loadC4Npcs(npcs);
 

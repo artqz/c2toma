@@ -1,6 +1,7 @@
 import { loadItems } from "./import/items";
 import { loadMultisell } from "./import/multisell";
 import { loadNpcs } from "./import/npcs";
+import { loadRecipes } from "./import/recipes";
 import { loadSkills } from "./import/skills";
 import { saveFile } from "./utils/Fs";
 
@@ -9,6 +10,7 @@ function init() {
   const skills = loadSkills();
   const npcs = loadNpcs({ items });
   const multisell = loadMultisell({ items });
+  const recipes = loadRecipes({ items });
 
   // const _svg = svg()
   // console.log(_svg);
@@ -29,6 +31,11 @@ function init() {
     "result/data/multisell.json",
     JSON.stringify(Array.from(multisell.values()), null, 2)
   );
+  saveFile(
+    "result/data/recipes.json",
+    JSON.stringify(Array.from(recipes.values()), null, 2)
+  );
+  console.log("Finish.");
 }
 
 init();

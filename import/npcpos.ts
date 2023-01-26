@@ -2,6 +2,7 @@ import { Npc, NpcSpawn } from "./../result/types";
 import { loadNpcPosC1 } from "../datapack/c1/npcpos";
 import { loadFile } from "../utils/Fs";
 import { z } from "zod";
+import { loadNpcPosC4 } from "../datapack/c4/npcpos";
 
 const MapDataEntry = z.object({
   map: z.string(),
@@ -44,16 +45,17 @@ function compareMaps(deps: { npcs: Map<number, Npc> }) {
     }
   }
 
-  const posC1 = getPos(npcC1);
+  const posC1 = getPos(npcC1, "c1");
+  const posC4 = getPos(npcC4, "c4");
   return { c1: npcC1, c4: npcC4 };
 }
 
 const IGNORE_NPCS = new Set([""]);
 
-function getPos(npcs: string[]) {
+function getPos(npcs: string[], chronicle: "c1" | "c4") {
   const npcSpawns = new Map<string, NpcSpawn>();
   const npcMap = new Map(npcs.map((npc) => [npc, npc]));
-  const npcPos = loadNpcPosC1();
+  const npcPos = chronicle === "c1" ? loadNpcPosC1() : loadNpcPosC4();
 
   const terrMap = new Map<string, { shape: Array<[number, number, number]> }>();
   for (const entry of npcPos) {
@@ -101,6 +103,7 @@ function getPos(npcs: string[]) {
       npcC2.push(npc);
     }
   }
+  console.log(npcC2);
 
   return { npcSpawns, npcC2 };
 }

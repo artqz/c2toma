@@ -1,4 +1,4 @@
-import { Npc, NpcSpawn, Point } from "./../result/types";
+import { Npc, NpcSpawn } from "./../result/types";
 import { loadNpcPosC1 } from "../datapack/c1/npcpos";
 import { loadFile } from "../utils/Fs";
 import { z } from "zod";
@@ -10,9 +10,9 @@ const MapDataEntry = z.object({
 type MapDataEntry = z.infer<typeof MapDataEntry>;
 
 export function loadNpcPos(deps: { npcs: Map<number, Npc> }) {
-  const mergedNpcPos = compareMaps(deps);
+  const pos = compareMaps(deps);
 
-  return mergedNpcPos;
+  return pos;
 }
 
 function compareMaps(deps: { npcs: Map<number, Npc> }) {
@@ -104,6 +104,7 @@ function addSpawn(deps: { npcs: Map<string, Npc>; chronicle: "c1" | "c4" }) {
   for (const npc of deps.npcs.values()) {
     if (!npc.spawns.length) {
       console.log("нет позиций:", npc.npcName);
+      // добавить из ц2
     }
   }
 

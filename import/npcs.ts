@@ -1,5 +1,6 @@
 import Fs from "fs";
 import Path from "path";
+import { loadNpcDataC1 } from "../datapack/c1/npcdata";
 
 import { loadNpcNamesC2, NpcNameEntry } from "../datapack/c2/npcnames";
 import { loadNpcDataC4 } from "../datapack/c4/npcdata";
@@ -47,6 +48,7 @@ function loadTomaNpcs(deps: { items: Map<number, Item> }) {
         nick: npcC2.nick, // нет данных у томы
         nickColor: npcC2.nickcolor, // нет данных у томы
         level: npc.npcData.level,
+        ai: "",
         agroRange: 0, // нет данных у томы
         baseAttackSpeed: npc.npcData.baseAttackSpeed,
         baseCritical: npc.npcData.baseCritical,
@@ -69,6 +71,7 @@ function loadTomaNpcs(deps: { items: Map<number, Item> }) {
         dropList: getDrop(npc.drop, deps.items),
         spoilList: getDrop(npc.drop, deps.items),
         skillList: [],
+        spawns: [],
       });
     }
   }
@@ -78,21 +81,40 @@ function loadTomaNpcs(deps: { items: Map<number, Item> }) {
 function loadC4Npcs(npcsToma: Map<number, Npc>) {
   const npcs = new Map<number, Npc>();
   const c4Npcs = new Map(loadNpcDataC4().map((npc) => [npc.$[1], npc]));
-
+  const c1Npcs = new Map(loadNpcDataC1().map((npc) => [npc.$[1], npc]));
   for (const npc of Array.from(npcsToma.values())) {
     const npcById = c4Npcs.get(npc.id);
-
-    if (npcById) {
-      npcs.set(npc.id, {
-        ...npc,
-        agroRange: npcById.agro_range,
-        npcName: npcById.$[2],
-        orgHpRegen: npcById.org_hp_regen,
-        orgMpRegen: npcById.org_mp_regen,
-        type: npcById.$[0],
-        race: npcById.race,
-        skillList: npcById.skill_list.$!.map((x) => x.replace("@", "")),
-      });
+    if (OLD_NPCS.has(npcById!.$[2])) {
+      const npcC1 = c1Npcs.get(npc.id);
+      if (npcC1) {
+        npcs.set(npc.id, {
+          ...npc,
+          agroRange: npcC1.agro_range,
+          npcName: npcC1.$[2],
+          orgHpRegen: npcC1.org_hp_regen,
+          orgMpRegen: npcC1.org_mp_regen,
+          type: npcC1.$[0],
+          race: npcC1.race,
+          ai: npcC1.npc_ai.$[0],
+          skillList: npcById
+            ? npcById.skill_list.$!.map((x) => x.replace("@", ""))
+            : [],
+        });
+      }
+    } else {
+      if (npcById) {
+        npcs.set(npc.id, {
+          ...npc,
+          agroRange: npcById.agro_range,
+          npcName: npcById.$[2],
+          orgHpRegen: npcById.org_hp_regen,
+          orgMpRegen: npcById.org_mp_regen,
+          type: npcById.$[0],
+          race: npcById.race,
+          ai: npcById.npc_ai.$[0],
+          skillList: npcById.skill_list.$!.map((x) => x.replace("@", "")),
+        });
+      }
     }
   }
   return npcs;
@@ -125,3 +147,69 @@ function getDrop(
 
   return drop;
 }
+
+const OLD_NPCS = new Set([
+  "__gargoyle_lord",
+  "__patriarch_kuroboros",
+  "__malex",
+  "__madness_beast",
+  "__discard_guardian",
+  "__brae_orc_chief",
+  "__soul_scavenger",
+  "__sukar_wererat_chief",
+  "__kaysha_herald_of_ikaro",
+  "__tracker_sharuk",
+  "__priest_of_kuroboros",
+  "__tiger_hornet",
+  "__revenant_of_sir_calibu",
+  "__demon_tempest",
+  "__redeye_leader_trakia",
+  "__nurkas_messenger",
+  "__queens_nobel_leader",
+  "__titan_premo_prime",
+  "__archon_susceptor",
+  "__eyes_of_bereth",
+  "__adherent_of_anta_skyla",
+  "__corsair_captain_kylon",
+  "__cave_servant_lord_ishk",
+  "__scavenger_ldr_rinoket",
+  "__necrosentinel_guard",
+  "__envoyofantaras_nakonda",
+  "__dread_avenger_kraven",
+  "__handmaiden_of_orfen",
+  "__fairy_queen_timiniel",
+  "__betrayer_of_urutu",
+  "__rampage_golem_ldr_talo",
+  "__guts",
+  "__langu",
+  "__guflang",
+  "__rayon",
+  "__ria",
+  "__maslin",
+  "__gludio_outter_doorman",
+  "__ol_mahum_steward_tamut",
+  "__partisan_ordery_brakel",
+  "__tokum_priest_of_fire",
+  "__ruben",
+  "__horner",
+  "__bremmer",
+  "__calis",
+  "__winker",
+  "__black",
+  "__dillon",
+  "__boyer",
+  "__tim",
+  "__seth",
+  "__ron",
+  "__flynn",
+  "event_human",
+  "__gludio_teleporter1",
+  "__gludio_teleporter2",
+  "__gludio_teleporter3",
+  "__dion_default_teleporte",
+  "__giran_teleporter1",
+  "__giran_teleporter2",
+  "__giran_teleporter3",
+  "__oren_default_teleporte",
+  "__aden_default_teleporte",
+]);

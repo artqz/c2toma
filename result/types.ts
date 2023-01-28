@@ -9,6 +9,7 @@ export type Npc = {
   nick: string;
   nickColor: "default" | "quest" | "raid";
   type: string;
+  ai: string;
   level: Int | null;
   exp: Float | null;
   sp: Float | null;
@@ -31,6 +32,7 @@ export type Npc = {
   dropList: NpcDrop[];
   spoilList: NpcDrop[];
   skillList: string[];
+  spawns: NpcSpawn[];
 };
 
 export type Point = {

@@ -1,4 +1,4 @@
-import { Npc, NpcSpawn } from "./../result/types";
+import { Npc, NpcSpawn, Point } from "./../result/types";
 import { loadNpcPosC1 } from "../datapack/c1/npcpos";
 import { loadFile } from "../utils/Fs";
 import { z } from "zod";
@@ -10,15 +10,16 @@ const MapDataEntry = z.object({
 type MapDataEntry = z.infer<typeof MapDataEntry>;
 
 export function loadNpcPos(deps: { npcs: Map<number, Npc> }) {
-  compareMaps(deps);
-  return [];
+  const mergedNpcPos = compareMaps(deps);
+
+  return mergedNpcPos;
 }
 
 function compareMaps(deps: { npcs: Map<number, Npc> }) {
   const { npcs } = deps;
-  const npcC1: string[] = [];
-  const npcC4: string[] = [];
-  const npcC2: string[] = [];
+  let npcsC1 = new Map<string, Npc>();
+  let npcsC4 = new Map<string, Npc>();
+  let npcsC2 = new Map<string, Npc>();
 
   for (const npc of Array.from(npcs.values())) {
     const empty = MapDataEntry.parse(
@@ -35,51 +36,27 @@ function compareMaps(deps: { npcs: Map<number, Npc> }) {
     ).map;
 
     if (mapC2 !== empty) {
-      if (mapC2 === mapC1) {
-        npcC1.push(npc.npcName);
-      } else if (mapC2 === mapC4) {
-        npcC4.push(npc.npcName);
+      if (mapC2 === mapC4) {
+        npcsC4.set(npc.npcName, npc);
+      } else if (mapC2 === mapC1) {
+        npcsC1.set(npc.npcName, npc);
       } else {
-        npcC2.push(npc.npcName);
+        npcsC2.set(npc.npcName, npc);
       }
     }
   }
 
-  const posC1 = getPos(npcC1, "c1");
-  const posC4 = getPos(npcC4, "c4");
-  const arr = [posC1, posC4]
-  const merged = arr.flatMap(e => [...e])
-  
-  return merged;
+  npcsC1 = addSpawn({ npcs: npcsC1, chronicle: "c1" });
+  npcsC4 = addSpawn({ npcs: npcsC4, chronicle: "c4" });
+
+  const arr = [npcsC1, npcsC4, npcsC2];
+  const mergedNpcPos = new Map(arr.flatMap((e) => [...e]));
+
+  return mergedNpcPos;
 }
 
-const IGNORE_NPCS = new Set([""]);
-
-function getPos(npcs: string[], chronicle: "c1" | "c4") {
-
-    const npcPos = getAllPos(chronicle)
-    const npcSpawns = new Map<string, NpcSpawn>()
-    for (const npcName of npcs) {
-      const npc = npcPos.get(npcName)
-      if(npc) {
-        npcSpawns.set(npcName, {...npc})
-      }
-      else {
-        // console.log(npcName);
-        
-      }
-    }
-
-    return npcSpawns
-    
-
-}
-
-
-function getAllPos(chronicle: "c1" | "c4") {
-  const npcPos = chronicle === "c1" ? loadNpcPosC1() : loadNpcPosC4();
-
-  const npcSpawns = new Map<string, NpcSpawn>()
+function addSpawn(deps: { npcs: Map<string, Npc>; chronicle: "c1" | "c4" }) {
+  const npcPos = deps.chronicle === "c1" ? loadNpcPosC1() : loadNpcPosC4();
 
   const terrMap = new Map<string, { shape: Array<[number, number, number]> }>();
   for (const entry of npcPos) {
@@ -89,6 +66,7 @@ function getAllPos(chronicle: "c1" | "c4") {
       });
     } else if (entry.t === "npcmaker" || entry.t === "npcmaker_ex") {
       const [terrIds, ...spawns] = entry.$;
+
       for (const spawn of spawns) {
         const posArr: Array<Array<{ x: number; y: number }>> = [];
 
@@ -107,11 +85,27 @@ function getAllPos(chronicle: "c1" | "c4") {
           }
         }
         const npcName = spawn.$[0];
-        for (const pos of posArr) {         
-            npcSpawns.set(npcName, { npcName, pos });          
+
+        for (const pos of posArr) {
+          const spawn: NpcSpawn = {
+            npcName,
+            pos,
+          };
+
+          const npc = deps.npcs.get(npcName);
+          if (npc) {
+            npc.spawns.push(spawn);
+          }
         }
       }
     }
   }
-  return npcSpawns
+
+  for (const npc of deps.npcs.values()) {
+    if (!npc.spawns.length) {
+      console.log("нет позиций:", npc.npcName);
+    }
+  }
+
+  return deps.npcs;
 }

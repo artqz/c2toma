@@ -12,10 +12,7 @@ function init() {
   const npcs = loadNpcs({ items });
   const multisell = loadMultisell({ items });
   const recipes = loadRecipes({ items });
-  const pos = loadNpcPos({ npcs });
-
-  // const _svg = svg()
-  // console.log(_svg);
+  const npcsWithPos = loadNpcPos({ npcs });
 
   saveFile(
     "result/data/items.json",
@@ -23,7 +20,7 @@ function init() {
   );
   saveFile(
     "result/data/npcs.json",
-    JSON.stringify(Array.from(npcs.values()), null, 2)
+    JSON.stringify(Array.from(npcsWithPos.values()), null, 2)
   );
   saveFile(
     "result/data/skills.json",

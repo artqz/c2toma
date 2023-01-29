@@ -11,6 +11,7 @@ type MapDataEntry = z.infer<typeof MapDataEntry>;
 
 export function loadNpcPos(deps: { npcs: Map<number, Npc> }) {
   const pos = compareMaps(deps);
+  console.log("NPCs Positions added.");
 
   return pos;
 }

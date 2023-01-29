@@ -2,6 +2,7 @@ import { loadItems } from "./import/items";
 import { loadMultisell } from "./import/multisell";
 import { loadNpcPos } from "./import/npcpos";
 import { loadNpcs } from "./import/npcs";
+import { loadProfs } from "./import/profs";
 import { loadRecipes } from "./import/recipes";
 import { loadSkills } from "./import/skills";
 import { saveFile } from "./utils/Fs";
@@ -13,6 +14,7 @@ function init() {
   const multisell = loadMultisell({ items });
   const recipes = loadRecipes({ items });
   const npcsWithPos = loadNpcPos({ npcs });
+  const profs = loadProfs({ skills, items });
 
   saveFile(
     "result/data/items.json",
@@ -33,6 +35,10 @@ function init() {
   saveFile(
     "result/data/recipes.json",
     JSON.stringify(Array.from(recipes.values()), null, 2)
+  );
+  saveFile(
+    "result/data/profs.json",
+    JSON.stringify(Array.from(profs.values()), null, 2)
   );
   console.log("Finish.");
 }

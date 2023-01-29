@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsnd --respawn index.ts",
+    "saveProf": "ts-node saveClasses.ts",
     "saveMaps": "ts-node saveMaps.ts",
     "saveNpcs": "ts-node saveNpcs.ts",
     "convertPNG": "ts-node b64ToPng.ts",
@@ -14,12 +15,14 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.7",
+    "slug": "^8.2.2",
     "svg-png-converter": "^0.0.9",
     "svg-points": "^6.0.1",
     "zod": "^3.20.2"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.6.2",
+    "@types/slug": "^5.0.3",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0"
   }

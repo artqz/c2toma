@@ -145,3 +145,24 @@ export type Material = {
   itemName: string;
   count: Int;
 };
+
+export type Prof = {
+  id: number;
+  profName: string;
+  parent: string | null;
+  skills: ProfSkill[];
+};
+
+export type ProfSkill = {
+  skillName: string;
+  skillLevel: number;
+  isMagic: boolean;
+  operateType: number;
+  getLv: number;
+  lvUpSp: number;
+  autoGet: boolean;
+  itemNeeded: string | null;
+  hp: number;
+  mp: number;
+  range: number;
+};

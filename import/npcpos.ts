@@ -3,6 +3,7 @@ import { loadNpcPosC1 } from "../datapack/c1/npcpos";
 import { loadFile } from "../utils/Fs";
 import { z } from "zod";
 import { loadNpcPosC4 } from "../datapack/c4/npcpos";
+import { loadNpcPosToma } from "../datapack/toma/npcpos";
 
 const MapDataEntry = z.object({
   map: z.string(),
@@ -10,6 +11,9 @@ const MapDataEntry = z.object({
 type MapDataEntry = z.infer<typeof MapDataEntry>;
 
 export function loadNpcPos(deps: { npcs: Map<number, Npc> }) {
+  const tomaPos = loadNpcPosToma();
+  tomaPos["348.png"].map((x) => console.log(x));
+
   const pos = compareMaps(deps);
   console.log("NPCs Positions added.");
 

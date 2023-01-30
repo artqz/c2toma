@@ -11,9 +11,6 @@ const MapDataEntry = z.object({
 type MapDataEntry = z.infer<typeof MapDataEntry>;
 
 export function loadNpcPos(deps: { npcs: Map<number, Npc> }) {
-  const tomaPos = loadNpcPosToma();
-  tomaPos["348.png"].map((x) => console.log(x));
-
   const pos = compareMaps(deps);
   console.log("NPCs Positions added.");
 
@@ -53,7 +50,7 @@ function compareMaps(deps: { npcs: Map<number, Npc> }) {
 
   npcsC1 = addSpawn({ npcs: npcsC1, chronicle: "c1" });
   npcsC4 = addSpawn({ npcs: npcsC4, chronicle: "c4" });
-
+  addTomaSpawn({ npcs: npcsC2 });
   const arr = [npcsC1, npcsC4, npcsC2];
   const mergedNpcPos = new Map(arr.flatMap((e) => [...e]));
 
@@ -106,12 +103,32 @@ function addSpawn(deps: { npcs: Map<string, Npc>; chronicle: "c1" | "c4" }) {
     }
   }
 
+  let npcsC2 = new Map<string, Npc>();
   for (const npc of deps.npcs.values()) {
     if (!npc.spawns.length) {
-      console.log("нет позиций:", npc.npcName);
+      // console.log("нет позиций:", npc.npcName);
       // добавить из ц2
+      npcsC2.set(npc.npcName, npc);
     }
   }
 
+  addTomaSpawn({ npcs: npcsC2 });
+
   return deps.npcs;
+}
+
+function addTomaSpawn(deps: { npcs: Map<string, Npc> }) {
+  const tomaPos = loadNpcPosToma();
+
+  for (const npc of Array.from(deps.npcs.values())) {
+    const tomaNpcPos: NpcSpawn[] = tomaPos[`${npc.id}.png`].map((x) => {
+      return {
+        npcName: npc.npcName,
+        pos: x.map((z) => {
+          return { x: z[0], y: z[1] };
+        }),
+      };
+    });
+    npc.spawns = tomaNpcPos;
+  }
 }

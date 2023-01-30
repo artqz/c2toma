@@ -166,3 +166,11 @@ export type ProfSkill = {
   mp: number;
   range: number;
 };
+
+export type Ai = {
+  super: string;
+  name: string;
+  sell_lists: AiSellList[];
+};
+
+export type AiSellList = [string, number, number, number][];

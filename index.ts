@@ -1,3 +1,4 @@
+import { loadAi } from "./import/ai";
 import { loadItems } from "./import/items";
 import { loadMultisell } from "./import/multisell";
 import { loadNpcPos } from "./import/npcpos";
@@ -15,6 +16,7 @@ function init() {
   const recipes = loadRecipes({ items });
   const npcsWithPos = loadNpcPos({ npcs });
   const profs = loadProfs({ skills, items });
+  const ai = loadAi({ npcs, items });
 
   saveFile(
     "result/data/items.json",
@@ -39,6 +41,10 @@ function init() {
   saveFile(
     "result/data/profs.json",
     JSON.stringify(Array.from(profs.values()), null, 2)
+  );
+  saveFile(
+    "result/data/ai.json",
+    JSON.stringify(Array.from(ai.values()), null, 2)
   );
   console.log("Finish.");
 }

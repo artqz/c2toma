@@ -26,7 +26,7 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
       if (itemC4.t === "item") {
         items.set(itemC2.id, {
           id: itemC4.$[1]!,
-          itemName: itemC4.$[2]!.toString(),
+          itemName: itemC4.$[2]!.toString().replace(":", "_"),
           name: itemC2.name,
           addName: "",
           desc: itemC2.description,

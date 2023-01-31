@@ -32,7 +32,7 @@ function loadC4Skills() {
     if (skillC4) {
       skills.set(skillC2.skill_id + "_" + skillC2.skill_level, {
         id: skillC4.skill_id,
-        skillName: skillC4.skill_name,
+        skillName: skillC4.skill_name.replace(" ", "_"),
         name: skillC2.name,
         desc: skillC2.desc ?? "",
         level: skillC4.level,

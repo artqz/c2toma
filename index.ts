@@ -11,7 +11,7 @@ import { saveFile } from "./utils/Fs";
 function init() {
   const items = loadItems();
   const skills = loadSkills();
-  const npcs = loadNpcs({ items });
+  const npcs = loadNpcs({ items, skills });
   const multisell = loadMultisell({ items });
   const recipes = loadRecipes({ items });
   const npcsWithPos = loadNpcPos({ npcs });

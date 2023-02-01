@@ -93,7 +93,6 @@ export type Item = {
   shieldDefense: Int | null;
   shieldDefenseRate: Int | null;
   attackRange: Int | null;
-  effectiveRange: Int | null;
   damageRange: string | null;
   attackSpeed: Int | null;
   reuseDelay: Int | null;

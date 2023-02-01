@@ -2,6 +2,7 @@ import { z } from "zod";
 import { loadItemGrpC2 } from "../datapack/c2/itemgrp";
 import { ItemEntryC2, loadItemNamesC2 } from "../datapack/c2/itemnames";
 import { loadItemDataC4 } from "../datapack/c4/itemdata";
+import { loadItemDataGF } from "../datapack/gf/itemdata";
 import { Item } from "../result/types";
 
 export function loadItems() {
@@ -16,7 +17,12 @@ export function loadItems() {
 
 function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
   const items = new Map<number, Item>();
-  const itemsC4 = new Map(loadItemDataC4().map((item) => [item.$[1], item]));
+  const itemsC4 = new Map(loadItemDataGF().map((item) => [item.$[1], item]));
+  // for (const tItem of loadItemDataGF()) {
+  //   if (tItem.$.length > 3) {
+  //     console.log(tItem.t);
+  //   }
+  // }
 
   for (const itemC2 of Array.from(itemnamesC2.values())) {
     const itemC4 = itemsC4.get(itemC2.id);
@@ -47,7 +53,6 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
           defaultPrice: itemC4.default_price!,
           dualFhitRate: itemC4.dual_fhit_rate!,
           durability: itemC4.durability!,
-          effectiveRange: itemC4.effective_range!,
           etcitemType: itemC4.etcitem_type!,
           hitModify: itemC4.hit_modify!,
           immediateEffect: Boolean(itemC4.immediate_effect!),

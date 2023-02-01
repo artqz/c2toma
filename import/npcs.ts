@@ -69,7 +69,7 @@ function loadTomaNpcs(deps: { items: Map<number, Item> }) {
         type: npc.npcData.npcType.toString(), // необходимо перевести в другой вид, либо взять в другом сервере
         race: "", // нет данных у томы
         dropList: getDrop(npc.drop, deps.items),
-        spoilList: getDrop(npc.drop, deps.items),
+        spoilList: getDrop(npc.spoil, deps.items),
         skillList: [],
         spawns: [],
       });

@@ -46030,5 +46030,98 @@
     "skill_level": 8,
     "name": "none",
     "desc": "none"
+  },
+
+  {
+    "t": "skill",
+    "skill_id": 4290,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4291,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4292,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4293,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4294,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4295,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4296,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4297,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4298,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4299,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4300,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4301,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
+  },
+  {
+    "t": "skill",
+    "skill_id": 4302,
+    "skill_level": 1,
+    "name": "none",
+    "desc": "none"
   }
 ]
+

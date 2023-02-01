@@ -46031,97 +46031,96 @@
     "name": "none",
     "desc": "none"
   },
-
+  
   {
     "t": "skill",
     "skill_id": 4290,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Undead"
   },
   {
     "t": "skill",
     "skill_id": 4291,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Construct"
   },
   {
     "t": "skill",
     "skill_id": 4292,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Beast"
   },
   {
     "t": "skill",
     "skill_id": 4293,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Animal"
   },
   {
     "t": "skill",
     "skill_id": 4294,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Plant"
   },
   {
     "t": "skill",
     "skill_id": 4295,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Humanoid"
   },
   {
     "t": "skill",
     "skill_id": 4296,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Spirit"
   },
   {
     "t": "skill",
     "skill_id": 4297,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Divine"
   },
   {
     "t": "skill",
     "skill_id": 4298,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Demonic"
   },
   {
     "t": "skill",
     "skill_id": 4299,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Dragon"
   },
   {
     "t": "skill",
     "skill_id": 4300,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Giant"
   },
   {
     "t": "skill",
     "skill_id": 4301,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Bug"
   },
   {
     "t": "skill",
     "skill_id": 4302,
     "skill_level": 1,
-    "name": "none",
-    "desc": "none"
+    "name": "Race",
+    "desc": "Fairy"
   }
 ]
-

@@ -4,10 +4,11 @@ import { loadNpcDataC1 } from "../datapack/c1/npcdata";
 
 import { loadNpcNamesC2, NpcNameEntry } from "../datapack/c2/npcnames";
 import { loadNpcDataC4 } from "../datapack/c4/npcdata";
-import { loadSkillDataC4 } from '../datapack/c4/skilldata';
-import { loadSkillIconsGF } from '../datapack/gf/skillgrp';
-import { loadSkillNamesGF } from '../datapack/gf/skillnames';
+import { loadSkillDataC4 } from "../datapack/c4/skilldata";
+import { loadSkillIconsGF } from "../datapack/gf/skillgrp";
+import { loadSkillNamesGF } from "../datapack/gf/skillnames";
 import { Item, Npc, NpcDrop, Skill } from "../result/types";
+import { saveFile } from "../utils/Fs";
 import { NpcDataEntry } from "./types";
 
 function loadNpcJson(path: string, filename: string) {
@@ -15,16 +16,22 @@ function loadNpcJson(path: string, filename: string) {
   return NpcDataEntry.parse(JSON.parse(map));
 }
 
-export function loadNpcs(deps: { items: Map<number, Item>, skills: Map<string, Skill>  }) {
+export function loadNpcs(deps: {
+  items: Map<number, Item>;
+  skills: Map<string, Skill>;
+}) {
   let npcs = loadTomaNpcs(deps);
-  npcs = loadC4Npcs({...deps, npcsToma: npcs});
+  npcs = loadC4Npcs({ ...deps, npcsToma: npcs });
 
   console.log("NPCs loaded.");
 
   return npcs;
 }
 
-function loadTomaNpcs(deps: { items: Map<number, Item>, skills: Map<string, Skill> }) {
+function loadTomaNpcs(deps: {
+  items: Map<number, Item>;
+  skills: Map<string, Skill>;
+}) {
   const npcnamesC2 = new Map(loadNpcNamesC2().map((npc) => [npc.id, npc]));
 
   const npcs = new Map<number, Npc>();
@@ -81,11 +88,14 @@ function loadTomaNpcs(deps: { items: Map<number, Item>, skills: Map<string, Skil
   return npcs;
 }
 
-function loadC4Npcs(deps: {npcsToma: Map<number, Npc>, skills: Map<string, Skill> }) {
+function loadC4Npcs(deps: {
+  npcsToma: Map<number, Npc>;
+  skills: Map<string, Skill>;
+}) {
   const npcs = new Map<number, Npc>();
   const c4Npcs = new Map(loadNpcDataC4().map((npc) => [npc.$[1], npc]));
   const c1Npcs = new Map(loadNpcDataC1().map((npc) => [npc.$[1], npc]));
-  const npcsSkills = new Map<string, string>()
+  const npcsSkills = new Map<string, string>();
   for (const npc of Array.from(deps.npcsToma.values())) {
     const npcById = c4Npcs.get(npc.id);
     if (OLD_NPCS.has(npcById!.$[2])) {
@@ -101,11 +111,11 @@ function loadC4Npcs(deps: {npcsToma: Map<number, Npc>, skills: Map<string, Skill
           race: npcC1.race,
           ai: npcC1.npc_ai.$[0],
           skillList: npcById
-            ? npcById.skill_list.$!.map((x) => { 
-              const skillName = x.replace("@", "")
-              npcsSkills.set(skillName, skillName)
-              return skillName
-            })
+            ? npcById.skill_list.$!.map((x) => {
+                const skillName = x.replace("@", "");
+                npcsSkills.set(skillName, skillName);
+                return skillName;
+              })
             : [],
         });
       }
@@ -121,11 +131,11 @@ function loadC4Npcs(deps: {npcsToma: Map<number, Npc>, skills: Map<string, Skill
           race: npcById.race,
           ai: npcById.npc_ai.$[0],
           skillList: npcById
-            ? npcById.skill_list.$!.map((x) => { 
-              const skillName = x.replace("@", "")
-              npcsSkills.set(skillName, skillName)
-              return skillName
-            })
+            ? npcById.skill_list.$!.map((x) => {
+                const skillName = x.replace("@", "");
+                npcsSkills.set(skillName, skillName);
+                return skillName;
+              })
             : [],
         });
       }
@@ -133,30 +143,33 @@ function loadC4Npcs(deps: {npcsToma: Map<number, Npc>, skills: Map<string, Skill
   }
 
   //add npc skills
-  addNpcSkills({...deps, npcsSkills})
+  addNpcSkills({ ...deps, npcsSkills });
   return npcs;
 }
 
-function addNpcSkills(deps: {npcsSkills: Map<string,string>, skills: Map<string, Skill> }) {
-    const skillByName = new Map(Array.from(deps.skills.values()).map(x => [x.skillName, x]))
-    const skillC4 = new Map(Array.from(skillsC4GF().values()).map(x => [x.skillName, x]))
+function addNpcSkills(deps: {
+  npcsSkills: Map<string, string>;
+  skills: Map<string, Skill>;
+}) {
+  const skillByName = new Map(
+    Array.from(deps.skills.values()).map((x) => [x.skillName, x])
+  );
+  const skillC4 = new Map(
+    Array.from(skillsC4GF().values()).map((x) => [x.skillName, x])
+  );
 
-    for (const npcSkill of Array.from(deps.npcsSkills.values())) {
-      const skill = skillByName.get(npcSkill)
-      if (!skill) {
-        const _skill = skillC4.get(npcSkill)
-        if (_skill) {          
-           deps.skills.set(_skill.id+"_"+_skill.level, {
-          ..._skill
-        })
-        }
-        
-
+  for (const npcSkill of Array.from(deps.npcsSkills.values())) {
+    const skill = skillByName.get(npcSkill);
+    if (!skill) {
+      const _skill = skillC4.get(npcSkill);
+      if (_skill) {
+        deps.skills.set(_skill.id + "_" + _skill.level, {
+          ..._skill,
+        });
       }
-      
     }
-    
   }
+}
 
 function getDrop(
   list: {
@@ -186,46 +199,51 @@ function getDrop(
   return drop;
 }
 
-
 function skillsC4GF() {
-  const skillDataC4 = loadSkillDataC4()
-  const skillIcons = loadSkillIconsGF()
-  const skillNames = loadSkillNamesGF()
+  const skillDataC4 = loadSkillDataC4();
+  const skillIcons = loadSkillIconsGF();
+  const skillNames = loadSkillNamesGF();
 
-  const skillsMap = new Map<string, Skill>()
+  const skillsMap = new Map<string, Skill>();
 
   //add data
   for (const skillData of skillDataC4.values()) {
     skillsMap.set(skillData.skill_id + "_" + skillData.level, {
-      id: skillData.skill_id ,
-          level: skillData.level,
-          name: "",
-          desc: "",
-          icon: "",
-          operateType: skillData.operate_type,
-          skillName: skillData.skill_name
-    })
+      id: skillData.skill_id,
+      level: skillData.level,
+      name: "",
+      desc: "",
+      icon: "",
+      operateType: skillData.operate_type,
+      skillName: skillData.skill_name,
+    });
   }
 
   //add skill
   for (const skillIco of skillIcons) {
-    const skill = skillsMap.get(skillIco.id+"_"+skillIco.level)
+    const skill = skillsMap.get(skillIco.id + "_" + skillIco.level);
     if (skill) {
-      skillsMap.set(skillIco.id+"_"+skillIco.level, {...skill, icon: skillIco.icon})
+      skillsMap.set(skillIco.id + "_" + skillIco.level, {
+        ...skill,
+        icon: skillIco.icon.replace("_new", ""),
+      });
     }
   }
 
   //add names
   for (const skillName of skillNames) {
-    const skill = skillsMap.get(skillName.id+"_"+skillName.level)
+    const skill = skillsMap.get(skillName.id + "_" + skillName.level);
     if (skill) {
-      skillsMap.set(skillName.id+"_"+skillName.level, {...skill, name: skillName.name, desc: skillName.desc})
+      skillsMap.set(skillName.id + "_" + skillName.level, {
+        ...skill,
+        name: skillName.name,
+        desc: skillName.desc,
+      });
     }
   }
 
-  return skillsMap
+  return skillsMap;
 }
-
 
 const OLD_NPCS = new Set([
   "__gargoyle_lord",

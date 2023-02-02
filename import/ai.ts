@@ -1,5 +1,4 @@
 import { loadAiDataC4 } from "../datapack/c4/aidata";
-import { AiObj, AiObjData, loadAiGf } from "../datapack/gf/aidata";
 import { Ai, AiSellList, Item, Npc } from "../result/types";
 
 export function loadAi(deps: {
@@ -10,7 +9,6 @@ export function loadAi(deps: {
     Array.from(deps.npcs.values()).map((x) => [x.npcName, x])
   );
   const ais = loadAiDataC4();
-  getAiData({ ...deps, data: loadAiGf() });
 
   const AiMap = new Map<string, Ai>();
   for (const ai of ais) {
@@ -33,26 +31,29 @@ function filterSellList(deps: {
   items: Map<number, Item>;
 }) {
   const itemByName = new Map(
-    Array.from(deps.items.values()).map((x) => [x.itemName, x])
+    Array.from(deps.items.values()).map((x) => [x.itemName.replace("'", "_"), x])
   );
 
-  return deps.sellLists.map((list) => list.filter((x) => itemByName.get(x[0])));
-}
-
-function getAiData(deps: { data: AiObj; npcs: Map<number, Npc> }) {
-  for (const npc of deps.npcs.values()) {
-    const data = deps.data[npc.ai];
-
-    // addSellList("SellList0", data.props?.SellList0);
-    // addSellList("SellList1", data.props?.SellList1);
-    // addSellList("SellList2", data.props?.SellList2);
-    // addSellList("SellList3", data.props?.SellList3);
-    // addSellList("SellList4", data.props?.SellList4);
-    // addSellList("SellList5", data.props?.SellList5);
-    // addSellList("SellList6", data.props?.SellList6);
-    // addSellList("SellList7", data.props?.SellList7);
+ 
+const lists = new Map<number, AiSellList>()
+for (const [i, list] of deps.sellLists.entries()) {
+  const newList: AiSellList = []
+  for (const x of list.values()) {
+    const item = itemByName.get(x[0])
+    if (item) {
+      newList.push([item.itemName, x[1], x[2], x[3]])
+    }
   }
+  lists.set(i, newList)
 }
+
+return Array.from(lists.values())
+
+  
+}
+
+
+
 
 // function addSellList(
 //   listTitle: string,

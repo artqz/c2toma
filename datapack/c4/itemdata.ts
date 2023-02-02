@@ -1,15 +1,21 @@
-
 import Fs from "fs";
 import { z } from "zod";
 
-
 const ItemEntryC4 = z.object({
-  $: z.union([z.tuple([z.string(), z.number(), z.string()]), z.array(z.number())]),
-  t: z.enum(["item", "set"]),
+  // $: z.union([
+  //   z.tuple([z.string(), z.number(), z.string()]),
+  //   z.array(z.number()),
+  // ]),
+  // t: z.enum(["item", "set"]),
+  $: z.union([
+    z.tuple([z.string(), z.number(), z.string()]),
+    z.tuple([z.string(), z.number(), z.string(), z.number()]),
+    z.array(z.number()),
+  ]),
   armor_type: z.string().optional(),
   etcitem_type: z.string().optional(),
   weapon_type: z.string().optional(),
-  slot_bit_type: z.object({$: z.array(z.string())}).optional(),
+  slot_bit_type: z.object({ $: z.array(z.string()) }).optional(),
   weight: z.number().optional(),
   consume_type: z.string().optional(),
   initial_count: z.number().optional(),
@@ -37,7 +43,7 @@ const ItemEntryC4 = z.object({
   shield_defense_rate: z.number().optional(),
   attack_range: z.number().optional(),
   effective_range: z.number().optional(),
-  damage_range: z.object({$: z.array(z.number()).optional()}).optional(),
+  damage_range: z.object({ $: z.array(z.number()).optional() }).optional(),
   attack_speed: z.number().optional(),
   reuse_delay: z.number().optional(),
   mp_consume: z.number().optional(),
@@ -55,10 +61,10 @@ export function loadItemDataJson(path: string): ItemEntryC4[] {
   const src = Fs.readFileSync(path, "utf8");
   const json = JSON.parse(src);
   let data = ItemEntryC4.array().parse(json);
-  
+
   return data;
 }
 
 export function loadItemDataC4() {
-    return loadItemDataJson("datapack/c4/itemdata.txt.l2h.json");
+  return loadItemDataJson("datapack/c4/itemdata.txt.l2h.json");
 }

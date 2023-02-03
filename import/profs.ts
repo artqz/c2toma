@@ -38,7 +38,7 @@ function getSkills(deps: {
       skillName: skillById.get(pSkill.skillId + "_" + pSkill.skillLevel)!
         .skillName,
       itemNeeded: pSkill.itemNeeded
-        ? itemById.get(pSkill.itemNeeded)!.itemName
+        ? itemById.get(pSkill.itemNeeded)!.itemName.replace(":", "_")
         : null,
     });
   }

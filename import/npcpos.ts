@@ -11,10 +11,9 @@ const MapDataEntry = z.object({
 type MapDataEntry = z.infer<typeof MapDataEntry>;
 
 export function loadNpcPos(deps: { npcs: Map<number, Npc> }) {
-  const pos = compareMaps(deps);
+  compareMaps(deps);
   console.log("NPCs Positions added.");
 
-  return pos;
 }
 
 function compareMaps(deps: { npcs: Map<number, Npc> }) {
@@ -51,6 +50,7 @@ function compareMaps(deps: { npcs: Map<number, Npc> }) {
   npcsC1 = addSpawn({ npcs: npcsC1, chronicle: "c1" });
   npcsC4 = addSpawn({ npcs: npcsC4, chronicle: "c4" });
   addTomaSpawn({ npcs: npcsC2 });
+  
   const arr = [npcsC1, npcsC4, npcsC2];
   const mergedNpcPos = new Map(arr.flatMap((e) => [...e]));
 

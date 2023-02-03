@@ -14,10 +14,11 @@ function init() {
   const npcs = loadNpcs({ items, skills });
   const multisell = loadMultisell({ items });
   const recipes = loadRecipes({ items });
-  const npcsWithPos = loadNpcPos({ npcs });
+  loadNpcPos({ npcs });
   const profs = loadProfs({ skills, items });
   const ai = loadAi({ npcs, items });
-
+  
+  
   createDir("result/data")
 
   saveFile(
@@ -26,7 +27,7 @@ function init() {
   );
   saveFile(
     "result/data/npcs.json",
-    JSON.stringify(Array.from(npcsWithPos.values()), null, 2)
+    JSON.stringify(Array.from(npcs.values()), null, 2)
   );
   saveFile(
     "result/data/skills.json",

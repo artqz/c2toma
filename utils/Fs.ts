@@ -2,6 +2,13 @@ import Fs from "fs";
 import Path from "path";
 import { z } from "zod";
 export default Fs;
+
+export function createDir(path: string) {
+  if (!Fs.existsSync(path)){
+      Fs.mkdirSync(path, { recursive: true });
+  }
+}
+
 export function saveFile(path: string, data: string) {
   return Fs.writeFileSync(path, data);
 }

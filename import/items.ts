@@ -34,7 +34,7 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         id: itemC4.$[1]!,
         itemName: itemC4.$[2]!.toString().replace(":", "_"),
         name: itemC2.name,
-        addName: "",
+        addName: itemC2.additionalname,
         desc: itemC2.description,
         icon: "",
         armorType: itemC4.armor_type!,

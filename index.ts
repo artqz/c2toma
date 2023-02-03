@@ -6,7 +6,7 @@ import { loadNpcs } from "./import/npcs";
 import { loadProfs } from "./import/profs";
 import { loadRecipes } from "./import/recipes";
 import { loadSkills } from "./import/skills";
-import { saveFile } from "./utils/Fs";
+import { createDir, saveFile } from "./utils/Fs";
 
 function init() {
   const items = loadItems();
@@ -17,6 +17,8 @@ function init() {
   const npcsWithPos = loadNpcPos({ npcs });
   const profs = loadProfs({ skills, items });
   const ai = loadAi({ npcs, items });
+
+  createDir("result/data")
 
   saveFile(
     "result/data/items.json",

@@ -13,7 +13,6 @@ type MapDataEntry = z.infer<typeof MapDataEntry>;
 export function loadNpcPos(deps: { npcs: Map<number, Npc> }) {
   compareMaps(deps);
   console.log("NPCs Positions added.");
-
 }
 
 function compareMaps(deps: { npcs: Map<number, Npc> }) {
@@ -50,7 +49,7 @@ function compareMaps(deps: { npcs: Map<number, Npc> }) {
   npcsC1 = addSpawn({ npcs: npcsC1, chronicle: "c1" });
   npcsC4 = addSpawn({ npcs: npcsC4, chronicle: "c4" });
   addTomaSpawn({ npcs: npcsC2 });
-  
+
   const arr = [npcsC1, npcsC4, npcsC2];
   const mergedNpcPos = new Map(arr.flatMap((e) => [...e]));
 
@@ -124,8 +123,10 @@ function addTomaSpawn(deps: { npcs: Map<string, Npc> }) {
     const tomaNpcPos: NpcSpawn[] = tomaPos[`${npc.id}.png`].map((x) => {
       return {
         npcName: npc.npcName,
-        pos: x.map((z) => {
-          return { x: z[0], y: z[1] };
+        pos: x.map((pos) => {
+          const x = (pos[0] - 655 - 5) / 0.005;
+          const y = (pos[1] - 1150 - 160) / 0.005;
+          return { x, y };
         }),
       };
     });

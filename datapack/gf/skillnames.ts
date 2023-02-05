@@ -25,13 +25,15 @@ const EntryGF = z.object({
 });
 
 export function loadSkillNamesGF(): SkillNameEntry[] {
-
-  const json = parseCsv(Fs.readFileSync("datapack/gf/skillname-e.txt", "utf8"), {
-    delimiter: "\t",
-    relaxQuotes: true,
-    columns: true,
-    bom: true,
-  });
+  const json = parseCsv(
+    Fs.readFileSync("datapack/gf/skillname-e.txt", "utf8"),
+    {
+      delimiter: "\t",
+      relaxQuotes: true,
+      columns: true,
+      bom: true,
+    }
+  );
 
   let data = EntryGF.array().parse(json);
 

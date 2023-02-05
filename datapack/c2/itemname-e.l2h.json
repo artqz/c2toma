@@ -403,7 +403,7 @@
     "name": "Mithril Breastplate",
     "additionalname": "",
     "popup": -1,
-    "description": "When worn with Mithril Gaiters and Mithril Helmet, chances of being poisoned will decrease by 20%. If one wears Hoplon as well, maximum HP will increase by 126. Effect 13."
+    "description": "When worn with Mithril Gaiters and Helmet, chances of being poisoned will decrease by 20%. If one wears Hoplon as well, maximum HP will increase by 126."
   },
   {
     "id": 59,
@@ -417,7 +417,7 @@
     "name": "Composite Armor",
     "additionalname": "",
     "popup": -1,
-    "description": "Armor consisting of upper and lower garments. When worn with a Composite Helmet, the weight limit will increase by 5795. If one is equipped with a Composite Shield as well, M. Def. will increase by 5%."
+    "description": "Armor consisting of upper and lower garments. When worn with a Composite Helmet, the weight limit will increase by 5795. If one is equipped with a Composite Shield as well, M. Def. will increase by 5.26%."
   },
   {
     "id": 61,
@@ -1698,7 +1698,7 @@
     "name": "Hell Knife",
     "additionalname": "",
     "popup": -1,
-    "description": "Bestows one of the following functions: Focus, Back Blow, or Might Mortal."
+    "description": ""
   },
   {
     "id": 244,
@@ -2503,7 +2503,7 @@
     "name": "Blue Wolf Breastplate",
     "additionalname": "",
     "popup": -1,
-    "description": "When worn with Blue Wolf Gaiters, Blue Wolf Helmet, Blue Wolf Gloves and Blue Wolf Boots, increases Speed by 7 and HP recovery speed by 5%. Generates STR +3, CON -1, and DEX -2 ."
+    "description": "When worn with Blue Wolf Gaiters, Blue Wolf Helmet, Blue Wolf Gloves and Blue Wolf Boots, increases Speed by 7 and HP recovery speed by 5.24%. Generates STR +3, CON -1, and DEX -2 ."
   },
   {
     "id": 359,
@@ -2776,7 +2776,7 @@
     "name": "Mithril Shirt",
     "additionalname": "",
     "popup": -1,
-    "description": "When worn with Tempered Mithril Gaiters and Mithril Boots, maximum MP will increase by 4."
+    "description": "When worn with Tempered Mithril Gaiters and Mithril Boots, Evasion will increase by 4."
   },
   {
     "id": 398,
@@ -2797,14 +2797,14 @@
     "name": "Theca Leather Armor",
     "additionalname": "",
     "popup": -1,
-    "description": "When worn with Theca Leather Gaiters and Theca Leather Boots P. Def. will increase by 5%."
+    "description": "When worn with Theca Leather Gaiters and Theca Leather Boots P. Def. will increase by 5.24%."
   },
   {
     "id": 401,
     "name": "Drake Leather Armor",
     "additionalname": "",
     "popup": -1,
-    "description": "Armor consisting of upper and lower garments. When worn with Drake Leather Boots, M. Def will increase by 5%."
+    "description": "Armor consisting of upper and lower garments. When worn with Drake Leather Boots, M. Def will increase by 5.24%."
   },
   {
     "id": 402,
@@ -7512,14 +7512,14 @@
   },
   {
     "id": 1074,
-    "name": "Boat Ticket: Talking Island to Gludio",
+    "name": "Boat Ticket: Talking Island to Gludin",
     "additionalname": "",
     "popup": -1,
     "description": "Boat Ticket: Depart Talking Island - Arrive Gludin Harbor"
   },
   {
     "id": 1075,
-    "name": "Boat Ticket: Gludio to Talking Island",
+    "name": "Boat Ticket: Gludin to Talking Island",
     "additionalname": "",
     "popup": -1,
     "description": "Boat Ticket: Depart Gludin Harbor - Arrive Talking Island"
@@ -14501,7 +14501,7 @@
     "name": "Dark Elven Dagger Edge",
     "additionalname": "",
     "popup": -1,
-    "description": "A key material that dwarves use to make the Darkelven Dagger. Can be sold in the shop."
+    "description": "A key material that dwarves use to make the Dark Elven Dagger. Can be sold in the shop."
   },
   {
     "id": 2073,
@@ -15747,14 +15747,14 @@
     "name": "Recipe: Bone Arrow",
     "additionalname": "",
     "popup": -1,
-    "description": "The recipe for a bone arrow.  Requires Create Item skill level 3. The success rate is 100%."
+    "description": "The recipe for a bone arrow.  Requires Create Item skill level 2. The success rate is 100%."
   },
   {
     "id": 2251,
     "name": "Recipe: Steel Arrow",
     "additionalname": "",
     "popup": -1,
-    "description": "The recipe for a steel arrow. Requires Create Item skill level 5. The success rate is 100%."
+    "description": "The recipe for a steel arrow. Requires Create Item skill level 3. The success rate is 100%."
   },
   {
     "id": 2252,
@@ -21113,17 +21113,17 @@
   },
   {
     "id": 3017,
-    "name": "Recipe: Blessed Gloves",
-    "additionalname": "",
-    "popup": -1,
-    "description": "The recipe for a pair of blessed gloves.  Requires Create Item skill level 6. The success rate is 100%."
-  },
-  {
-    "id": 3018,
     "name": "Recipe: Divine Gloves",
     "additionalname": "",
     "popup": -1,
     "description": "The recipe for a pair of divine gloves. Requires Create Item skill level 6. The success rate is 100%."
+  },
+  {
+    "id": 3018,
+    "name": "Recipe: Blessed Gloves",
+    "additionalname": "",
+    "popup": -1,
+    "description": "The recipe for a pair of blessed gloves.  Requires Create Item skill level 6. The success rate is 100%."
   },
   {
     "id": 3019,
@@ -29257,7 +29257,7 @@
     "name": "Recipe: Silver Arrow",
     "additionalname": "",
     "popup": -1,
-    "description": "The recipe for a silver arrow.  Requires Create Item skill level 7. The success rate is 100%."
+    "description": "The recipe for a silver arrow.  Requires Create Item skill level 4. The success rate is 100%."
   },
   {
     "id": 4181,
@@ -33034,24 +33034,24 @@
   },
   {
     "id": 4720,
-    "name": "Tallum Blade",
-    "additionalname": "Health",
+    "name": "",
+    "additionalname": "",
     "popup": -1,
-    "description": "Increases maximum HP by 25%."
+    "description": ""
   },
   {
     "id": 4721,
-    "name": "Tallum Blade - Rsk. Evasion",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Evasion increases when HP drops below 20%."
+    "description": ""
   },
   {
     "id": 4722,
-    "name": "Tallum Blade - Rsk. Haste",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Increases Atk. Spd when HP becomes 20% or lower."
+    "description": ""
   },
   {
     "id": 4723,
@@ -33286,24 +33286,24 @@
   },
   {
     "id": 4756,
-    "name": "Meteor Shower",
-    "additionalname": "Health",
+    "name": "",
+    "additionalname": "",
     "popup": -1,
-    "description": "Increases maximum HP by 25%."
+    "description": ""
   },
   {
     "id": 4757,
-    "name": "Meteor Shower - Focus",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Increases critical attack rate."
+    "description": ""
   },
   {
     "id": 4758,
-    "name": "Meteor Shower - M. Focus",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Increases critical attack rate."
+    "description": ""
   },
   {
     "id": 4759,
@@ -33328,21 +33328,21 @@
   },
   {
     "id": 4762,
-    "name": "Darkelven Dagger",
+    "name": "Dark Elven Dagger",
     "additionalname": "Focus",
     "popup": -1,
     "description": "Increases critical attack rate by 90."
   },
   {
     "id": 4763,
-    "name": "Darkelven Dagger",
+    "name": "Dark Elven Dagger",
     "additionalname": "Back Blow",
     "popup": -1,
     "description": "Increases critical attack rate by 109 when attacking the enemy from behind."
   },
   {
     "id": 4764,
-    "name": "Darkelven Dagger",
+    "name": "Dark Elven Dagger",
     "additionalname": "Might Mortal",
     "popup": -1,
     "description": "Increases the success rate of Mortal Blow and Deadly Blow by 77%."
@@ -33475,45 +33475,45 @@
   },
   {
     "id": 4783,
-    "name": "Bloody Orchid",
+    "name": "",
     "additionalname": "Evasion",
     "popup": -1,
-    "description": "Increases Evasion by 2. "
+    "description": ""
   },
   {
     "id": 4784,
-    "name": "Bloody Orchid - Focus",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Increases critical attack rate."
+    "description": ""
   },
   {
     "id": 4785,
-    "name": "Bloody Orchid - Backblow",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Increases critical attack rate when attacking enemy 's back."
+    "description": ""
   },
   {
     "id": 4786,
     "name": "Hell Knife",
-    "additionalname": "Focus",
+    "additionalname": "",
     "popup": -1,
-    "description": "Increases critical attack rate by 71."
+    "description": ""
   },
   {
     "id": 4787,
     "name": "Hell Knife",
-    "additionalname": "Back Blow",
+    "additionalname": "",
     "popup": -1,
-    "description": "Increases critical attack rate by 86 when attacking the enemy from behind."
+    "description": ""
   },
   {
     "id": 4788,
     "name": "Hell Knife",
-    "additionalname": "Might Mortal",
+    "additionalname": "",
     "popup": -1,
-    "description": "Increases the success rate of Mortal Blow and Deadly Blow by 74%."
+    "description": ""
   },
   {
     "id": 4789,
@@ -33643,24 +33643,24 @@
   },
   {
     "id": 4807,
-    "name": "Blood Tornado - Critical Drain",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Absorbs a target's HP during a critical attack."
+    "description": ""
   },
   {
     "id": 4808,
-    "name": "Blood Tornado - Rsk. Evasion",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Increases Evasion when HP becomes 20% or lower."
+    "description": ""
   },
   {
     "id": 4809,
-    "name": "Blood Tornado - Haste",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Increases Atk. Spd."
+    "description": ""
   },
   {
     "id": 4810,
@@ -33811,24 +33811,24 @@
   },
   {
     "id": 4831,
-    "name": "Carnage Bow",
-    "additionalname": "Critical Bleed",
+    "name": "",
+    "additionalname": "",
     "popup": -1,
-    "description": " 30% chance that target will bleed during critical attack. Effect 6."
+    "description": ""
   },
   {
     "id": 4832,
-    "name": "Carnage Bow",
-    "additionalname": "Mana Up",
+    "name": "",
+    "additionalname": "",
     "popup": -1,
-    "description": "Increases maximum HP by 30%"
+    "description": ""
   },
   {
     "id": 4833,
-    "name": "Carnage Bow",
-    "additionalname": "Quick Recovery",
+    "name": "",
+    "additionalname": "",
     "popup": -1,
-    "description": "Reduces re-use delay by approximately 10%."
+    "description": ""
   },
   {
     "id": 4834,
@@ -34021,24 +34021,24 @@
   },
   {
     "id": 4861,
-    "name": "Halberd",
-    "additionalname": "Critical Stun",
+    "name": "",
+    "additionalname": "",
     "popup": -1,
-    "description": "15% chance of stun effect during a critical attack."
+    "description": ""
   },
   {
     "id": 4862,
-    "name": "Halberd",
-    "additionalname": "Long Blow",
+    "name": "",
+    "additionalname": "",
     "popup": -1,
-    "description": "Increases attack range."
+    "description": ""
   },
   {
     "id": 4863,
-    "name": "Halberd",
-    "additionalname": "Wide Blow",
+    "name": "",
+    "additionalname": "",
     "popup": -1,
-    "description": "Broadens angle of attack."
+    "description": ""
   },
   {
     "id": 4864,
@@ -34073,7 +34073,7 @@
     "name": "Crystal Staff",
     "additionalname": "Mana Up",
     "popup": -1,
-    "description": "Increases maximum HP by 30%"
+    "description": "Increases maximum MP by 30%"
   },
   {
     "id": 4869,
@@ -34192,7 +34192,7 @@
     "name": "Paagrio Axe",
     "additionalname": "Mana Up",
     "popup": -1,
-    "description": "Increases maximum HP by 30%"
+    "description": "Increases maximum MP by 30%"
   },
   {
     "id": 4886,
@@ -34241,7 +34241,7 @@
     "name": "Ghoul's Staff",
     "additionalname": "Mana Up",
     "popup": -1,
-    "description": "Increases maximum HP by 30%"
+    "description": "Increases maximum MP by 30%"
   },
   {
     "id": 4893,
@@ -34315,24 +34315,24 @@
   },
   {
     "id": 4903,
-    "name": "Dasparion's Staff - Mana Up",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "Increases maximum MP."
+    "description": ""
   },
   {
     "id": 4904,
-    "name": "Dasparion's Staff - Magic Weakness",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "When using bad magic, casts Curse: Weakness magic against the target."
+    "description": ""
   },
   {
     "id": 4905,
-    "name": "Dasparion's Staff - Magic Chaos",
+    "name": "",
     "additionalname": "",
     "popup": -1,
-    "description": "When using bad magic, casts Curse: Chaos magic against the target."
+    "description": ""
   },
   {
     "id": 4906,
@@ -35883,50 +35883,50 @@
   },
   {
     "id": 5127,
-    "name": "",
+    "name": "Dailaon Knife",
     "additionalname": "",
     "popup": -1,
     "description": ""
   },
   {
     "id": 5128,
-    "name": "",
+    "name": "Crokian Blade",
     "additionalname": "",
     "popup": -1,
     "description": ""
   },
   {
     "id": 5129,
-    "name": "",
+    "name": "Doll Knife",
     "additionalname": "",
     "popup": -1,
     "description": ""
   },
   {
     "id": 5130,
-    "name": "",
+    "name": "Nos Sword",
     "additionalname": "",
     "popup": -1,
     "description": ""
   },
   {
     "id": 5131,
-    "name": "",
+    "name": "Parhit Staff",
     "additionalname": "",
     "popup": -1,
     "description": ""
   },
   {
     "id": 5132,
-    "name": "",
+    "name": "Giant Trident",
     "additionalname": "",
     "popup": -1,
     "description": ""
   },
   {
     "id": 5133,
-    "name": "",
-    "additionalname": "",
+    "name": "Chrono Unitus",
+    "additionalname": "Chronicle II Souvenir!!!",
     "popup": -1,
     "description": ""
   },
@@ -36373,59 +36373,59 @@
   },
   {
     "id": 5197,
-    "name": "Chest Key - Grade 8",
-    "additionalname": "",
-    "popup": -1,
-    "description": "Used to open a box with a level between 1 and 10."
-  },
-  {
-    "id": 5198,
-    "name": "Chest Key - Grade 7",
-    "additionalname": "",
-    "popup": -1,
-    "description": "Used to open a box with a level between 11 and 20."
-  },
-  {
-    "id": 5199,
-    "name": "Chest Key - Grade 6",
-    "additionalname": "",
-    "popup": -1,
-    "description": "Used to open a Devil's Chest, Orc's Chest, Chest of Convict, Chest of the Undead and Chest of Ol Mahum."
-  },
-  {
-    "id": 5200,
-    "name": "Chest Key - Grade 5",
-    "additionalname": "",
-    "popup": -1,
-    "description": "Used to open the Chest of Lizardman, Chest of Specter, Chest of Stakato, Chest of Crokian and Chest of Merkior."
-  },
-  {
-    "id": 5201,
-    "name": "Chest Key - Grade 4",
-    "additionalname": "",
-    "popup": -1,
-    "description": "Used to open the Chest of Wigott, Chest of Balthazar, Chest of Cema, Chest of Kaspar and Chest of Orim."
-  },
-  {
-    "id": 5202,
-    "name": "Chest Key - Grade 3",
-    "additionalname": "",
-    "popup": -1,
-    "description": "Used to open Chest of Zaken."
-  },
-  {
-    "id": 5203,
-    "name": "Chest Key - Grade 2",
-    "additionalname": "",
-    "popup": -1,
-    "description": "Used to open a box with a level between 61 and 70."
-  },
-  {
-    "id": 5204,
     "name": "Chest Key - Grade 1",
     "additionalname": "",
     "popup": -1,
-    "description": "Used to open a box with a level between 11 and 20."
+    "description": "Opens a level 1 treasure chest with a success rate of 60%. When opening a higher level treasure chest, the success rate will decrease."
+  },
+  {
+    "id": 5198,
+    "name": "Chest Key - Grade 2",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Opens a level 10 treasure chest with a success rate of 60%. When opening a higher level treasure chest, the success rate will decrease."
+  },
+  {
+    "id": 5199,
+    "name": "Chest Key - Grade 3",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Opens a level 20 treasure chest with a success rate of 60%. When opening a higher level treasure chest, the success rate will decrease.."
+  },
+  {
+    "id": 5200,
+    "name": "Chest Key - Grade 4",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Opens a level 30 treasure chest with a success rate of 60%. When opening a higher level treasure chest, the success rate will decrease."
+  },
+  {
+    "id": 5201,
+    "name": "Chest Key - Grade 5",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Opens a level 40 treasure chest with a success rate of 60%. When opening a higher level treasure chest, the success rate will decrease."
+  },
+  {
+    "id": 5202,
+    "name": "Chest Key - Grade 6",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Opens a level 50 treasure chest with a success rate of 60%. When opening a higher level treasure chest, the success rate will decrease."
+  },
+  {
+    "id": 5203,
+    "name": "Chest Key - Grade 7",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Opens a level 60 treasure chest with a success rate of 60%. When opening a higher level treasure chest, the success rate will decrease."
+  },
+  {
+    "id": 5204,
+    "name": "Chest Key - Grade 8",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Opens a level 70 treasure chest with a success rate of 60%. When opening a higher level treasure chest, the success rate will decrease."
   },
   {
     "id": 5205,
@@ -36607,7 +36607,7 @@
     "name": "Recipe: Mithril Arrow",
     "additionalname": "",
     "popup": -1,
-    "description": "The recipe for a mithril arrow. Requires Create Item skill level 8. The success rate is 100%."
+    "description": "The recipe for a mithril arrow. Requires Create Item skill level 4. The success rate is 100%."
   },
   {
     "id": 5231,
@@ -36628,349 +36628,440 @@
     "name": "Keshanberk*Keshanberk",
     "additionalname": "",
     "popup": -1,
-    "description": "Increases maximum HP when enchanted +4 or more."
+    "description": "When enchanted by 4 or more, Atk. Spd. will increase by 8%"
   },
   {
     "id": 5234,
-    "name": "",
+    "name": "Mystery Potion",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "Legend says that if you drink this potion your head will grow larger! Believe it if you will!"
   },
   {
     "id": 5235,
-    "name": "",
-    "additionalname": "",
+    "name": "Facelifting Potion - A",
+    "additionalname": "A beauty potion that changes one's facial appearance to Type A. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1080,
     "description": ""
   },
   {
     "id": 5236,
-    "name": "",
-    "additionalname": "",
+    "name": "Facelifting Potion - B",
+    "additionalname": "A beauty potion that changes one's facial appearance to Type B. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1080,
     "description": ""
   },
   {
     "id": 5237,
-    "name": "",
-    "additionalname": "",
+    "name": "Facelifting Potion - C",
+    "additionalname": "A beauty potion that changes one's facial appearance to Type C. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1080,
     "description": ""
   },
   {
     "id": 5238,
-    "name": "",
-    "additionalname": "",
+    "name": "Dye Potion - A",
+    "additionalname": "A beauty potion that changes one's hair color to Type A. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1081,
     "description": ""
   },
   {
     "id": 5239,
-    "name": "",
-    "additionalname": "",
+    "name": "Dye Potion - B",
+    "additionalname": "A beauty potion that changes one's hair color to Type B. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1081,
     "description": ""
   },
   {
     "id": 5240,
-    "name": "",
-    "additionalname": "",
+    "name": "Dye Potion - C",
+    "additionalname": "A beauty potion that changes one's hair color to Type C. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1081,
     "description": ""
   },
   {
     "id": 5241,
-    "name": "",
-    "additionalname": "",
+    "name": "Dye Potion - D",
+    "additionalname": "A beauty potion that changes one's hair color to Type D. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1081,
     "description": ""
   },
   {
     "id": 5242,
-    "name": "",
-    "additionalname": "",
+    "name": "Hair Style Change Potion - A",
+    "additionalname": "A beauty potion that changes one's hair style to Type A. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1082,
     "description": ""
   },
   {
     "id": 5243,
-    "name": "",
-    "additionalname": "",
+    "name": "Hair Style Change Potion - B",
+    "additionalname": "A beauty potion that changes one's hair style to Type B. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1082,
     "description": ""
   },
   {
     "id": 5244,
-    "name": "",
-    "additionalname": "",
+    "name": "Hair Style Change Potion - C",
+    "additionalname": "A beauty potion that changes one's hair style to Type C. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1082,
     "description": ""
   },
   {
     "id": 5245,
-    "name": "",
-    "additionalname": "",
+    "name": "Hair Style Change Potion - D",
+    "additionalname": "A beauty potion that changes one's hair style to Type D. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1082,
     "description": ""
   },
   {
     "id": 5246,
-    "name": "",
-    "additionalname": "",
+    "name": "Hair Style Change Potion - E",
+    "additionalname": "A beauty potion that changes one's hair style to Type E. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1082,
     "description": ""
   },
   {
     "id": 5247,
-    "name": "",
-    "additionalname": "",
+    "name": "Hair Style Change Potion - F",
+    "additionalname": "A beauty potion that changes one's hair style to Type F. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1082,
     "description": ""
   },
   {
     "id": 5248,
-    "name": "",
-    "additionalname": "",
+    "name": "Hair Style Change Potion - G",
+    "additionalname": "A beauty potion that changes one's hair style to Type G. May be used by either male or female characters. The results may be viewed on the Character Creation Screen.",
     "popup": 1082,
     "description": ""
   },
   {
     "id": 5249,
-    "name": "",
-    "additionalname": "",
+    "name": "Commemorative Item: First Anniversary of Lineage II Service",
+    "additionalname": "After the conclusion of the event, this item is traded for an actual item through a drawing.",
     "popup": -1,
     "description": ""
   },
   {
     "id": 5250,
-    "name": "",
+    "name": "Soulshot (NG) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of soulshots - No Grade."
   },
   {
     "id": 5251,
-    "name": "",
+    "name": "Soulshot (D) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of soulshots - D Grade."
   },
   {
     "id": 5252,
-    "name": "",
+    "name": "Soulshot (C) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of soulshots - C Grade."
   },
   {
     "id": 5253,
-    "name": "",
+    "name": "Soulshot (B) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of soulshots - B Grade."
   },
   {
     "id": 5254,
-    "name": "",
+    "name": "Soulshot (A) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of soulshots - A Grade."
   },
   {
     "id": 5255,
-    "name": "",
+    "name": "Soulshot (S) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of soulshots - S Grade."
   },
   {
     "id": 5256,
-    "name": "",
+    "name": "Spiritshot (NG) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of spiritshots - No Grade."
   },
   {
     "id": 5257,
-    "name": "",
+    "name": "Spiritshot (D) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of spiritshots - D Grade."
   },
   {
     "id": 5258,
-    "name": "",
+    "name": "Spiritshot (C) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of spiritshots - C Grade."
   },
   {
     "id": 5259,
-    "name": "",
+    "name": "Spiritshot (B) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of spiritshots - B Grade."
   },
   {
     "id": 5260,
-    "name": "",
+    "name": "Spiritshot (A) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of spiritshots - A Grade."
   },
   {
     "id": 5261,
-    "name": "",
+    "name": "Spiritshot (S) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of spiritshots - S Grade."
   },
   {
     "id": 5262,
-    "name": "",
+    "name": "Blessed Spiritshot (NG) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of blessed spiritshots - No Grade."
   },
   {
     "id": 5263,
-    "name": "",
+    "name": "Blessed Spiritshot (D) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of blessed spiritshots - D Grade."
   },
   {
     "id": 5264,
-    "name": "",
+    "name": "Blessed Spiritshot (C) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of blessed spiritshots - C Grade."
   },
   {
     "id": 5265,
-    "name": "",
+    "name": "Blessed Spiritshot (B) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of blessed spiritshots - B Grade."
   },
   {
     "id": 5266,
-    "name": "",
+    "name": "Blessed Spiritshot (A) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of blessed spiritshots - A Grade."
   },
   {
     "id": 5267,
-    "name": "",
+    "name": "Blessed Spiritshot (S) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a compressed package of blessed spiritshots - S Grade."
   },
   {
     "id": 5268,
-    "name": "",
+    "name": "Recipe: Soulshot (D) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of soulshots - D Grade. Requires Create Item skill level 2. The success rate is 100%."
   },
   {
     "id": 5269,
-    "name": "",
+    "name": "Recipe: Soulshot (C) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of soulshots - C Grade. Requires Create Item skill level 4. The success rate is 100%."
   },
   {
     "id": 5270,
-    "name": "",
+    "name": "Recipe: Soulshot (B) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of soulshots - B Grade. Requires Create Item skill level 6. The success rate is 100%."
   },
   {
     "id": 5271,
-    "name": "",
+    "name": "Recipe: Soulshot (A) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of soulshots - A Grade. Requires Create Item skill level 7. The success rate is 100%."
   },
   {
     "id": 5272,
-    "name": "",
+    "name": "Recipe: Soulshot (S) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of soulshots - S Grade. Requires Create Item skill level 8. The success rate is 100%."
   },
   {
     "id": 5273,
-    "name": "",
+    "name": "Recipe: Spiritshot (D) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of spiritshots - D Grade. Requires Create Item skill level 2. The success rate is 100%."
   },
   {
     "id": 5274,
-    "name": "",
+    "name": "Recipe: Spiritshot (C) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of spiritshots - C Grade. Requires Create Item skill level 4. The success rate is 100%."
   },
   {
     "id": 5275,
-    "name": "",
+    "name": "Recipe: Spiritshot (B) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of spiritshots - B Grade. Requires Create Item skill level 6. The success rate is 100%."
   },
   {
     "id": 5276,
-    "name": "",
+    "name": "Recipe: Spiritshot (A) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of spiritshots - A Grade. Requires Create Item skill level 7. The success rate is 100%."
   },
   {
     "id": 5277,
-    "name": "",
+    "name": "Recipe: Spiritshot (S) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of spiritshots - S Grade. Requires Create Item skill level 8. The success rate is 100%."
   },
   {
     "id": 5278,
-    "name": "",
+    "name": "Recipe: Blessed Spiritshot (D) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of blessed spiritshots - D Grade. Requires Create Item skill level 2. The success rate is 100%."
   },
   {
     "id": 5279,
-    "name": "",
+    "name": "Recipe: Blessed Spiritshot (C) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of blessed spiritshots - C Grade. Requires Create Item skill level 4. The success rate is 100%."
   },
   {
     "id": 5280,
-    "name": "",
+    "name": "Recipe: Blessed Spiritshot (B) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of blessed spiritshots - B Grade. Requires Create Item skill level 6. The success rate is 100%."
   },
   {
     "id": 5281,
-    "name": "",
+    "name": "Recipe: Blessed Spiritshot (A) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of blessed spiritshots - A Grade. Requires Create Item skill level 7. The success rate is 100%."
   },
   {
     "id": 5282,
-    "name": "",
+    "name": "Recipe: Blessed Spiritshot (S) Advanced Compressed Package",
     "additionalname": "",
     "popup": -1,
-    "description": ""
+    "description": "This is a recipe for a compressed package of blessed spiritshots - S Grade. Requires Create Item skill level 8. The success rate is 100%."
+  },
+  {
+    "id": 5555,
+    "name": "Token of Love",
+    "additionalname": "",
+    "popup": -1,
+    "description": "A commemorative item for Christmas"
+  },
+  {
+    "id": 5556,
+    "name": "Star Ornament",
+    "additionalname": "",
+    "popup": -1,
+    "description": "An essential ingredient needed to make a Christmas Tree. Take it to a Santa trainee, and he will create a Christmas Tree for you."
+  },
+  {
+    "id": 5557,
+    "name": "Bead Ornament",
+    "additionalname": "",
+    "popup": -1,
+    "description": "An ingredient of a Christmas Tree. Take it to a Santa trainee, along with the other necessary ingredients, and he will create a Christmas Tree for you."
+  },
+  {
+    "id": 5558,
+    "name": "Fir Tree Branch",
+    "additionalname": "",
+    "popup": -1,
+    "description": "An ingredient of a Christmas Tree. Take it to a Santa trainee, along with the other necessary ingredients, and he will create a Christmas Tree for you."
+  },
+  {
+    "id": 5559,
+    "name": "Flower Pot",
+    "additionalname": "",
+    "popup": -1,
+    "description": "An ingredient of a Christmas Tree. Take it to a Santa trainee, along with the other necessary ingredients, and he will create a Christmas Tree for you."
+  },
+  {
+    "id": 5560,
+    "name": "Christmas Tree",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Summons a Christmas Tree."
+  },
+  {
+    "id": 5561,
+    "name": "Special Christmas Tree",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Summons a Christmas tree that will increase HP and MP regeneration.  This effect is only produced if the Special Christmas Tree is summoned outside of a village."
+  },
+  {
+    "id": 9901,
+    "name": "Vote Coin",
+    "additionalname": "",
+    "popup": -1,
+    "description": "A coin, which is recevied by voting for the server."
+  },
+  {
+    "id": 9902,
+    "name": "Proof of Gambler",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Can be exchanged for various rewards from the Lottery Ticket Seller."
+  },
+  {
+    "id": 9903,
+    "name": "Wyvern Ride Ticket",
+    "additionalname": "",
+    "popup": -1,
+    "description": "An item that allows you to ride a wyvern."
+  },
+  {
+    "id": 9904,
+    "name": "Coin of Luck",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Magic coin, which can be exchanged for different goods and services from Erica."
+  },
+  {
+    "id": 9905,
+    "name": "Offline Shop Certificate - Blue",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Blue certificate allowing the use of offline trading."
+  },
+  {
+    "id": 9906,
+    "name": "Offline Shop Certificate - Red",
+    "additionalname": "",
+    "popup": -1,
+    "description": "Red certificate allowing the use of offline trading."
   }
 ]

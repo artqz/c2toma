@@ -31,11 +31,14 @@ export function loadMultisell(deps: { items: Map<number, Item> }) {
       };
 
       //add adena
-      if (sell.$[2]) {
-        multisell.requiredItems.push({
-          itemName: "adena",
-          count: sell.$[2].$[0],
-        });
+      // кроме са
+      if (ms.$[0] !== "weapon_variation") {
+        if (sell.$[2]) {
+          multisell.requiredItems.push({
+            itemName: "adena",
+            count: sell.$[2].$[0],
+          });
+        }
       }
 
       if (!multisell.requiredItems.length || !multisell.resultItems.length) {

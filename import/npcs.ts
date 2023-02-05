@@ -43,12 +43,10 @@ function loadTomaNpcs(deps: {
       .map((x) => [parseInt(x), parseInt(x)])
   );
 
-  for (const npcC2 of Array.from(npcnamesC2.values())) {
-    const npcId = npcC2.id;
+  for (const npcId of Array.from(tomaNpcs.values())) {
+    const npcC2 = npcnamesC2.get(npcId);
 
-    const npcById = tomaNpcs.get(npcId);
-
-    if (npcById) {
+    if (npcC2) {
       const npc = loadNpcJson(path, `${npcId}.json`);
 
       npcs.set(npcId, {
@@ -98,46 +96,49 @@ function loadC4Npcs(deps: {
   const npcsSkills = new Map<string, string>();
   for (const npc of Array.from(deps.npcsToma.values())) {
     const npcById = c4Npcs.get(npc.id);
-    if (OLD_NPCS.has(npcById!.$[2])) {
-      const npcC1 = c1Npcs.get(npc.id);
-      if (npcC1) {
-        npcs.set(npc.id, {
-          ...npc,
-          agroRange: npcC1.agro_range,
-          npcName: npcC1.$[2],
-          orgHpRegen: npcC1.org_hp_regen,
-          orgMpRegen: npcC1.org_mp_regen,
-          type: npcC1.$[0],
-          race: npcC1.race,
-          ai: npcC1.npc_ai.$[0],
-          skillList: npcById
-            ? npcById.skill_list.$!.map((x) => {
-                const skillName = x.replace("@", "");
-                npcsSkills.set(skillName, skillName);
-                return skillName;
-              })
-            : [],
-        });
-      }
-    } else {
-      if (npcById) {
-        npcs.set(npc.id, {
-          ...npc,
-          agroRange: npcById.agro_range,
-          npcName: npcById.$[2],
-          orgHpRegen: npcById.org_hp_regen,
-          orgMpRegen: npcById.org_mp_regen,
-          type: npcById.$[0],
-          race: npcById.race,
-          ai: npcById.npc_ai.$[0],
-          skillList: npcById
-            ? npcById.skill_list.$!.map((x) => {
-                const skillName = x.replace("@", "");
-                npcsSkills.set(skillName, skillName);
-                return skillName;
-              })
-            : [],
-        });
+
+    if (npcById) {
+      if (OLD_NPCS.has(npcById!.$[2])) {
+        const npcC1 = c1Npcs.get(npc.id);
+        if (npcC1) {
+          npcs.set(npc.id, {
+            ...npc,
+            agroRange: npcC1.agro_range,
+            npcName: npcC1.$[2],
+            orgHpRegen: npcC1.org_hp_regen,
+            orgMpRegen: npcC1.org_mp_regen,
+            type: npcC1.$[0],
+            race: npcC1.race,
+            ai: npcC1.npc_ai.$[0],
+            skillList: npcById
+              ? npcById.skill_list.$!.map((x) => {
+                  const skillName = x.replace("@", "");
+                  npcsSkills.set(skillName, skillName);
+                  return skillName;
+                })
+              : [],
+          });
+        }
+      } else {
+        if (npcById) {
+          npcs.set(npc.id, {
+            ...npc,
+            agroRange: npcById.agro_range,
+            npcName: npcById.$[2],
+            orgHpRegen: npcById.org_hp_regen,
+            orgMpRegen: npcById.org_mp_regen,
+            type: npcById.$[0],
+            race: npcById.race,
+            ai: npcById.npc_ai.$[0],
+            skillList: npcById
+              ? npcById.skill_list.$!.map((x) => {
+                  const skillName = x.replace("@", "");
+                  npcsSkills.set(skillName, skillName);
+                  return skillName;
+                })
+              : [],
+          });
+        }
       }
     }
   }

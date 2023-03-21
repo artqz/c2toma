@@ -40,12 +40,15 @@ function loadC4Skills() {
         icon: "",
         operateType: skillC4.operate_type,
         effectTime: skillC4.abnormal_time,
-        effectType: skillC4.debuff
-          ? "debuff"
-          : skillC4.skill_name.search("song_") > 0 ||
-            skillC4.skill_name.search("dance_") > 0
-          ? "song"
-          : "buff",
+        effectType:
+          skillC4.debuff === undefined
+            ? undefined
+            : skillC4.debuff
+            ? "debuff"
+            : skillC4.skill_name.search("song_") > 0 ||
+              skillC4.skill_name.search("dance_") > 0
+            ? "song"
+            : "buff",
       });
     }
   }

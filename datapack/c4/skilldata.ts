@@ -6,6 +6,8 @@ const SkillEntryC4 = z.object({
   skill_id: z.number(),
   level: z.number(),
   operate_type: z.string(),
+  abnormal_time: z.number().optional(),
+  debuff: z.number().optional(),
 });
 
 export type SkillEntryC4 = z.infer<typeof SkillEntryC4>;

@@ -29,6 +29,7 @@ function loadC4Skills() {
   const skills = new Map<string, Skill>();
   for (const skillC2 of Array.from(skillnamesC2.values())) {
     const skillC4 = skillsC4.get(skillC2.skill_id + "_" + skillC2.skill_level);
+
     if (skillC4) {
       skills.set(skillC2.skill_id + "_" + skillC2.skill_level, {
         id: skillC4.skill_id,
@@ -38,6 +39,13 @@ function loadC4Skills() {
         level: skillC4.level,
         icon: "",
         operateType: skillC4.operate_type,
+        effectTime: skillC4.abnormal_time,
+        effectType: skillC4.debuff
+          ? "debuff"
+          : skillC4.skill_name.search("song_") > 0 ||
+            skillC4.skill_name.search("dance_") > 0
+          ? "song"
+          : "buff",
       });
     }
   }

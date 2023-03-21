@@ -52,6 +52,8 @@ export type Skill = {
   desc: string;
   level: Int | null;
   operateType: string | null;
+  effectTime: number | undefined;
+  effectType: "debuff" | "buff" | "song" | undefined;
   icon: string;
 };
 

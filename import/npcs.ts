@@ -217,6 +217,13 @@ function skillsC4GF() {
       icon: "",
       operateType: skillData.operate_type,
       skillName: skillData.skill_name,
+      effectTime: skillData.abnormal_time,
+      effectType: skillData.debuff
+        ? "debuff"
+        : skillData.skill_name.search("song_") > 0 ||
+          skillData.skill_name.search("dance_") > 0
+        ? "song"
+        : "buff",
     });
   }
 

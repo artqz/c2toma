@@ -52,6 +52,7 @@ async function getNpc(npcId: number) {
   }
 }
 
+
 async function init() {
   const npcs = await getTomaNpcs();
 

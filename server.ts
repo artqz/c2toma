@@ -79,8 +79,11 @@ app.get("/nextNpc", (req, res) => {
   }
   
   const nextNpcId = allNpcIds.values().next().value;
+  console.log("осталось: "+Array.from(allNpcIds.values()).length);
+  if (nextNpcId !== undefined) {
+    res.json({msg: `[success]: next npc: ${nextNpcId}`, npcId: nextNpcId, v: version_game})
+  } else res.status(204)
   
-  res.json({msg: `[success]: next npc: ${nextNpcId}`, npcId: nextNpcId, v: version_game})
 })
 
 app.listen(port, () => {

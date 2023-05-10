@@ -1,2 +1,4 @@
 node_modules
-result/data
+#result/data
+npcs
+maps

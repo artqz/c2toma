@@ -84,6 +84,11 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         type: itemC4.$[0].toString(),
         weaponType: itemC4.weapon_type!,
         weight: itemC4.weight!,
+        recipe: [],
+        // product: [],
+        // material: [],
+        dropList: [],
+        spoilList: [],
         specialAbility: [],
         sets: []
       });
@@ -167,7 +172,6 @@ function loadC2Sets(items: Map<number, Item>) {
     }  
     
   }
-
   
   return itemsNew
 }
@@ -179,7 +183,7 @@ function loadC2SpecialAbility(items: Map<number, Item>) {
 
   for (const item of weapons) {
     // console.log(item.itemName);
-    const weaponsSA: ShortItem[] = weapons.filter(w => w.itemName !== item.itemName && w.itemName.indexOf(item.itemName) !== -1).map(w => {return {id: w.id, itemName: w.itemName}})
+    const weaponsSA: ShortItem[] = weapons.filter(w => w.itemName !== item.itemName && w.itemName.indexOf(`${item.itemName}_`) !== -1).map(w => {return {id: w.id, itemName: w.itemName}})
     itemsNew.set(item.id, {...item, specialAbility: weaponsSA})
     
   }

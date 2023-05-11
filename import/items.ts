@@ -4,21 +4,24 @@ import { ItemEntryC2, loadItemNamesC2 } from "../datapack/c2/itemnames";
 import { loadItemDataC4 } from "../datapack/c4/itemdata";
 import { loadItemDataGF } from "../datapack/gf/itemdata";
 import { loadItemNamesGF } from '../datapack/gf/itemnames';
-import { Item } from "../result/types";
+import { Item, Set, ShortItem } from "../result/types";
 
 export function loadItems() {
   const itemnamesC2 = new Map(loadItemNamesC2().map((npc) => [npc.id, npc]));
   let items: Map<number, Item>;
   items = loadC4Items(itemnamesC2);
   items = loadC2Icons(items);
+  items = loadC2SpecialAbility(items)
+  items = loadC2Sets(items)
   console.log("Items loaded.");
 
   return items;
 }
 
 function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
-  const items = new Map<number, Item>();
+  const items = new Map<number, Item>();  
   const itemsC4 = new Map(loadItemDataC4().map((item) => [item.$[1], item]));
+  
   const namesGF = loadNamesGf()
   // for (const tItem of loadItemDataGF()) {
   //   if (tItem.$.length > 3) {
@@ -81,6 +84,8 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         type: itemC4.$[0].toString(),
         weaponType: itemC4.weapon_type!,
         weight: itemC4.weight!,
+        specialAbility: [],
+        sets: []
       });
       // }
     }
@@ -105,6 +110,81 @@ function loadC2Icons(items: Map<number, Item>) {
     }
   }
   return itemsNew;
+}
+
+function loadC2Sets(items: Map<number, Item>) {
+  const itemsNew = items
+  const setsC4 = new Map(loadItemDataC4().filter(i => i.$.length === 1 && i.set_effect_skill !== "none").map((item) => [item.$[0], item]));
+  const setsItem = new Map<number, Item[]>()
+  for (const set of Array.from(setsC4.values())) {
+    const setItems: ShortItem[] = []
+    if (set.hasOwnProperty("slot_head") && set.slot_head) {
+      const item = itemsNew.get(set.slot_head)
+      if (item) {
+        setItems.push({id: item.id, itemName: item.itemName})     
+      } 
+    }
+    if (set.hasOwnProperty("slot_chest") && set.slot_chest) {
+      const item = itemsNew.get(set.slot_chest)
+      if (item) {
+        setItems.push({id: item.id, itemName: item.itemName})     
+      } 
+    }    
+    if (set.hasOwnProperty("slot_legs") && set.slot_legs) {
+      const item = itemsNew.get(set.slot_legs)
+      if (item) {
+        setItems.push({id: item.id, itemName: item.itemName})     
+      } 
+    }
+    if (set.hasOwnProperty("slot_gloves") && set.slot_gloves) {
+      const item = itemsNew.get(set.slot_gloves)
+      if (item) {
+        setItems.push({id: item.id, itemName: item.itemName})      
+      } 
+    }
+    if (set.hasOwnProperty("slot_feet") && set.slot_feet) {
+      const item = itemsNew.get(set.slot_feet)
+      if (item) {
+        setItems.push({id: item.id, itemName: item.itemName})   
+      } 
+    }
+    if (set.hasOwnProperty("slot_lhand") && set.slot_lhand) {
+      const item = itemsNew.get(set.slot_lhand)
+      if (item) {
+        setItems.push({id: item.id, itemName: item.itemName})      
+      } 
+    }
+    if (setItems.length > 0) {
+      if (typeof set.$[0] === 'number') {    
+        for (const si of setItems) {
+          const item = itemsNew.get(si.id)
+          if (item) {
+            item.sets.push({id: set.$[0], setEffectSkill: set.set_effect_skill ?? "", items: setItems})
+            itemsNew.set(item.id, {...item})
+          }          
+        }
+      }
+    }  
+    
+  }
+
+  
+  return itemsNew
+}
+
+function loadC2SpecialAbility(items: Map<number, Item>) {
+  const itemsNew = items
+  const weapons = Array.from(items.values()).filter(i => i.type === "weapon" && i.weaponType !== "dual")
+
+
+  for (const item of weapons) {
+    // console.log(item.itemName);
+    const weaponsSA: ShortItem[] = weapons.filter(w => w.itemName !== item.itemName && w.itemName.indexOf(item.itemName) !== -1).map(w => {return {id: w.id, itemName: w.itemName}})
+    itemsNew.set(item.id, {...item, specialAbility: weaponsSA})
+    
+  }
+  
+  return items
 }
 
 function loadNamesGf() {

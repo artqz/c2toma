@@ -105,7 +105,20 @@ export type Item = {
   magicalDefense: Int | null;
   mpBonus: Int | null;
   magicWeapon: boolean;
+  specialAbility: ShortItem[];
+  sets: Set[];
 };
+
+export type Set  = {
+  id: Int
+  setEffectSkill: string;
+  items: ShortItem[]
+}
+
+export type ShortItem = {
+  id: Int;
+  itemName: string;
+}
 
 export type NpcDrop = {
   itemName: string;

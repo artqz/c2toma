@@ -53,6 +53,17 @@ const ItemEntryC4 = z.object({
   magical_defense: z.number().optional(),
   mp_bonus: z.number().optional(),
   magic_weapon: z.number().optional(),
+  //sets
+  slot_chest: z.number().optional(),
+  slot_legs: z.number().optional(),
+  slot_head: z.number().optional(),
+  slot_lhand: z.number().optional(),
+  slot_gloves: z.number().optional(),
+  slot_feet: z.number().optional(),
+  slot_additional: z.enum(["none", "slot_lhand"]).optional(),
+  set_skill: z.string().optional(),
+  set_effect_skill: z.string().optional(),
+  set_additional_effect_skill: z.string().optional(),
 });
 
 export type ItemEntryC4 = z.infer<typeof ItemEntryC4>;

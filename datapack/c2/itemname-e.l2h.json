@@ -3049,7 +3049,7 @@
     "name": "Tunic of Knowledge",
     "additionalname": "",
     "popup": -1,
-    "description": "When worn with Stockings of Knowledge and Gloves of Knowledge, M. Def. will increase by 10% and MP recovery speed will decrease by 5%. "
+    "description": "When worn with Stockings of Knowledge and Gloves of Knowledge, M. Atk. will increase by 10% and MP recovery speed will decrease by 5%. "
   },
   {
     "id": 437,
@@ -10739,10 +10739,10 @@
   },
   {
     "id": 1535,
-    "name": "Amulet: Blaze Quake",
+    "name": "Amulet: Frost Flame",
     "additionalname": "",
     "popup": -1,
-    "description": "An amulet that is needed for the Blaze Quake spell. Used by Orc Shamans."
+    "description": "An amulet that is needed for the Frost Flame spell. Used by Orc Shamans."
   },
   {
     "id": 1536,
@@ -28820,7 +28820,7 @@
   },
   {
     "id": 4118,
-    "name": "Staff of Evil Sprit Head",
+    "name": "Staff of Evil Spirit Head",
     "additionalname": "",
     "popup": -1,
     "description": "Main ingredient definitely required for a Dwarf to make evil spirit staff. Can also be sold at ordinary shops."
@@ -34294,21 +34294,21 @@
   },
   {
     "id": 4900,
-    "name": "Staff of Evil Sprit",
+    "name": "Staff of Evil Spirit",
     "additionalname": "Magic Focus",
     "popup": -1,
     "description": "Casts Focus magic against the target with a 7% chance of success when using bad magic. Effect 3."
   },
   {
     "id": 4901,
-    "name": "Staff of Evil Sprit",
+    "name": "Staff of Evil Spirit",
     "additionalname": "Magic Bodily Blessing",
     "popup": -1,
-    "description": "15% chance that target will bleed during critical attack. Effect 5."
+    "description": "15% chance of Bodily Blessing upon target when using good magic. Effect 5."
   },
   {
     "id": 4902,
-    "name": "Staff of Evil Sprit",
+    "name": "Staff of Evil Spirit",
     "additionalname": "Magic Poison",
     "popup": -1,
     "description": "Casts Poison Curse against the target with a 4% chance of success when using bad magic. Effect 7."
@@ -35025,7 +35025,7 @@
     "name": "Recipe: Deadman's Staff",
     "additionalname": "",
     "popup": -1,
-    "description": "The recipe for a staff of evil spirit. Requires Create Item skill level 7. The success rate is 60%."
+    "description": "The recipe for a deadman's staff. Requires Create Item skill level 7. The success rate is 60%."
   },
   {
     "id": 5005,
@@ -36614,7 +36614,7 @@
     "name": "Recipe: Metal Hardener",
     "additionalname": "",
     "popup": -1,
-    "description": "The recipe for a metal hardener. Requires Create Item skill level 8. The success rate is 100%."
+    "description": "The recipe for a metal hardener. Requires Create Item skill level 4. The success rate is 100%."
   },
   {
     "id": 5232,

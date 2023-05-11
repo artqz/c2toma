@@ -27,15 +27,16 @@ function loadC4Skills() {
     ])
   );
   const skills = new Map<string, Skill>();
-  for (const skillC2 of Array.from(skillnamesC2.values())) {
-    const skillC4 = skillsC4.get(skillC2.skill_id + "_" + skillC2.skill_level);
-
-    if (skillC4) {
-      skills.set(skillC2.skill_id + "_" + skillC2.skill_level, {
+  // for (const skillC2 of Array.from(skillnamesC2.values())) {
+  for (const skillC4 of Array.from(skillsC4.values())) {  
+    // const skillC4 = skillsC4.get(skillC2.skill_id + "_" + skillC2.skill_level);
+        const skillC2 = skillnamesC2.get(skillC4.skill_id + "_" + skillC4.level);
+    // if (skillC4) {
+      skills.set(skillC4.skill_id + "_" + skillC4.level, {
         id: skillC4.skill_id,
         skillName: skillC4.skill_name.replace(" ", "_"),
-        name: skillC2.name,
-        desc: skillC2.desc ?? "",
+        name: skillC2?.name ?? "",
+        desc: skillC2?.desc ?? "",
         level: skillC4.level,
         icon: "",
         operateType: skillC4.operate_type,
@@ -50,9 +51,9 @@ function loadC4Skills() {
             ? "song"
             : "buff",
       });
-    }
+    
   }
-
+  
   return skills;
 }
 
@@ -67,12 +68,12 @@ function loadC2Icons(skills: Map<string, Skill>) {
 
   for (const skill of Array.from(skills.values())) {
     const grp = skillGrp.get(skill.id + "_" + skill.level);
-    if (grp) {
+    
       skillsNew.set(skill.id + "_" + skill.level, {
         ...skill,
-        icon: grp.icon.replace("icon.", ""),
+        icon: grp?.icon.replace("icon.", "") ?? "",
       });
-    }
+    
   }
   return skillsNew;
 }

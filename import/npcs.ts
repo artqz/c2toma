@@ -8,7 +8,6 @@ import { loadSkillDataC4 } from "../datapack/c4/skilldata";
 import { loadSkillIconsGF } from "../datapack/gf/skillgrp";
 import { loadSkillNamesGF } from "../datapack/gf/skillnames";
 import { Item, Npc, NpcDrop, Skill } from "../result/types";
-import { saveFile } from "../utils/Fs";
 import { NpcDataEntry } from "./types";
 
 function loadNpcJson(path: string, filename: string) {
@@ -22,7 +21,7 @@ export function loadNpcs(deps: {
 }) {
   let npcs = loadTomaNpcs(deps);
   npcs = loadC4Npcs({ ...deps, npcsToma: npcs });
-
+  
   console.log("NPCs loaded.");
 
   return npcs;
@@ -48,7 +47,7 @@ function loadTomaNpcs(deps: {
 
     if (npcC2) {
       const npc = loadNpcJson(path, `${npcId}.json`);
-
+      
       npcs.set(npcId, {
         id: npc.npcData.npcClassId,
         npcName: "", // нет данных у томы
@@ -75,10 +74,10 @@ function loadTomaNpcs(deps: {
         physicalAvoidModify: npc.npcData.physicalAvoidModify,
         physicalHitModify: npc.npcData.physicalHitModify,
         type: npc.npcData.npcType.toString(), // необходимо перевести в другой вид, либо взять в другом сервере
-        race: "", // нет данных у томы
+        race: "", // нет данных у томы, берем из скилов, которых нет берем из ц4
         dropList: getDrop(npc.drop, deps.items),
         spoilList: getDrop(npc.spoil, deps.items),
-        skillList: [],
+        skillList: getSkills({...deps, tomaSkills: npc.npcData.skillList}),
         spawns: [],
       });
     }
@@ -86,8 +85,20 @@ function loadTomaNpcs(deps: {
   return npcs;
 }
 
+function getSkills(deps: {skills: Map<string, Skill>, tomaSkills: {skillId: number, skillLevel: number}[]}) {
+  const skillArr: string[] = []
+  deps.tomaSkills.map(s => {    
+    const skill = deps.skills.get(s.skillId+"_"+s.skillLevel)    
+    if (skill) {
+      skillArr.push(skill.skillName)
+    }
+  })
+  return skillArr
+}
+
 function loadC4Npcs(deps: {
   npcsToma: Map<number, Npc>;
+  items: Map<number, Item>
   skills: Map<string, Skill>;
 }) {
   const npcs = new Map<number, Npc>();
@@ -108,15 +119,15 @@ function loadC4Npcs(deps: {
             orgHpRegen: npcC1.org_hp_regen,
             orgMpRegen: npcC1.org_mp_regen,
             type: npcC1.$[0],
-            race: npcC1.race,
+            race: getRace(npc.skillList, npcC1.race),
             ai: npcC1.npc_ai.$[0],
-            skillList: npcById
-              ? npcById.skill_list.$!.map((x) => {
-                  const skillName = x.replace("@", "");
-                  npcsSkills.set(skillName, skillName);
-                  return skillName;
-                })
-              : [],
+            // skillList: npcById
+            //   ? npcById.skill_list.$!.map((x) => {
+            //       const skillName = x.replace("@", "");
+            //       npcsSkills.set(skillName, skillName);
+            //       return skillName;
+            //     })
+            //   : [],
           });
         }
       } else {
@@ -128,20 +139,22 @@ function loadC4Npcs(deps: {
             orgHpRegen: npcById.org_hp_regen,
             orgMpRegen: npcById.org_mp_regen,
             type: npcById.$[0],
-            race: npcById.race,
+            race: getRace(npc.skillList, npcById.race),
             ai: npcById.npc_ai.$[0],
-            skillList: npcById
-              ? npcById.skill_list.$!.map((x) => {
-                  const skillName = x.replace("@", "");
-                  npcsSkills.set(skillName, skillName);
-                  return skillName;
-                })
-              : [],
+            // skillList: npcById
+            //   ? npcById.skill_list.$!.map((x) => {
+            //       const skillName = x.replace("@", "");
+            //       npcsSkills.set(skillName, skillName);
+            //       return skillName;
+            //     })
+            //   : [],
           });
         }
       }
     }
   }
+  //add drop in items
+  addDropInItems({...deps, npcs})
 
   //add npc skills
   addNpcSkills({ ...deps, npcsSkills });
@@ -173,23 +186,14 @@ function addNpcSkills(deps: {
 }
 
 function getDrop(
-  list: {
-    npcType: number;
-    min: number;
-    max: number;
-    chance: number;
-    npcId: number;
-    crystal: {
-      itemClassId: number;
-      crystalType: "NoGrade" | "D" | "C" | "B" | "A" | "S";
-    };
-  }[],
-  items: Map<number, Item>
+  list: DropList[],
+  items: Map<number, Item>,
 ) {
   const drop: NpcDrop[] = [];
 
   for (const item of list) {
     drop.push({
+      npcName: "",
       chance: item.chance,
       countMax: item.max,
       countMin: item.min,
@@ -254,6 +258,42 @@ function skillsC4GF() {
   }
 
   return skillsMap;
+}
+
+function addDropInItems (deps: {
+  items: Map<number, Item>,
+  npcs: Map<number, Npc>
+}) {
+  const ItemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
+  for (const npc of deps.npcs.values()) {
+    for (const drop of npc.dropList) {
+      drop.npcName = npc.npcName
+      const item = ItemByName.get(drop.itemName)
+      if (item) {
+        item.dropList.push(drop)
+      }
+    }
+
+    for (const spoil of npc.spoilList) {
+      spoil.npcName = npc.npcName
+      const item = ItemByName.get(spoil.itemName)
+      if (item) {
+        item.spoilList.push(spoil)
+      }
+    }
+  }
+}
+
+type DropList = {
+  npcType: number;
+  min: number;
+  max: number;
+  chance: number;
+  npcId: number;
+  crystal: {
+    itemClassId: number;
+    crystalType: "NoGrade" | "D" | "C" | "B" | "A" | "S";
+  };
 }
 
 const OLD_NPCS = new Set([
@@ -321,3 +361,25 @@ const OLD_NPCS = new Set([
   "__oren_default_teleporte",
   "__aden_default_teleporte",
 ]);
+
+function getRace(skills: string[], race: string) {
+  const racesMap = new Map<string, string>([
+    ["s_race_animal", "animal"], ["s_race_beast", "beast"], ["s_race_bug","bug"], 
+    ["s_race_construct", "construct"], ["s_race_demonic", "demonic"], ["s_race_dragon", "dragon"], 
+    ["s_race_elemental", "elemental"], ["s_race_fairy", "fairy"], ["s_race_giant", "giant"], 
+    ["s_race_humanoid", "humanoid"], ["s_race_plant", "plant"], ["s_race_undead", "undead"], 
+    ["s_race_divine", "divine"], 
+  ])
+
+  let newRace = race
+
+  for (const skill of skills.values()) {
+    const checkRace = racesMap.get(skill)
+    if (checkRace) {
+      newRace = checkRace      
+    }
+  }
+
+  return newRace
+}
+

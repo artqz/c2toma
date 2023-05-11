@@ -105,9 +105,35 @@ export type Item = {
   magicalDefense: Int | null;
   mpBonus: Int | null;
   magicWeapon: boolean;
+  recipe: Recipe[];
+  sellList: Merchant[];
+  // product: Product[];
+  // material: Material[];
+  dropList: NpcDrop[];
+  spoilList: NpcDrop[];
+  specialAbility: ShortItem[];
+  sets: Set[];
 };
 
+export type Merchant = {
+  npcName: string;
+  tax: number;
+  sellLists: SellList[];
+};
+
+export type Set  = {
+  id: Int
+  setEffectSkill: string;
+  items: ShortItem[]
+}
+
+export type ShortItem = {
+  id: Int;
+  itemName: string;
+}
+
 export type NpcDrop = {
+  npcName: string;
   itemName: string;
   countMin: Int;
   countMax: Int;

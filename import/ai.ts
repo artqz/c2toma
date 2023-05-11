@@ -22,6 +22,8 @@ export function loadAi(deps: {
     }
   }
 
+  addSellListInItems({...deps, ai:AiMap})
+
   console.log("AI loaded.");
   return AiMap;
 }
@@ -52,7 +54,21 @@ return Array.from(lists.values())
   
 }
 
+function addSellListInItems(deps: {ai: Map<string, Ai>, items: Map<number, Item>;}) {
+  const itemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
 
+  for (const ai of deps.ai.values()) {
+    for (const sl of ai.sell_lists) {      
+      for (const is of sl) {
+        const item = itemByName.get(is[0])
+        if (item) {
+          //item.sellList.push({npcName: ai.name, tax: ai.sell_lists[0]?.[1] ?? 0, sellLists: sl})
+        }
+      }
+    }
+  }
+  return []
+}
 
 
 // function addSellList(

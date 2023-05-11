@@ -1,5 +1,5 @@
 import { loadRecipesC2 } from "../datapack/c2/recipes";
-import { Item, Material, Recipe } from "../result/types";
+import { Item, Material, Product, Recipe } from "../result/types";
 
 export function loadRecipes(deps: { items: Map<number, Item> }) {
   const itemById = deps.items;
@@ -27,6 +27,7 @@ export function loadRecipes(deps: { items: Map<number, Item> }) {
       successRate: rec.success_rate,
     });
   }
+  addRecipesInItem({items: deps.items, recipes: recMap})
   console.log("Recipes loaded.");
 
   return recMap;
@@ -47,4 +48,56 @@ function getMaterials(deps: { materials: string[]; items: Map<number, Item> }) {
   }
 
   return materialList;
+}
+
+export async function addRecipesInItem(deps: { 
+  recipes: Map<number, Recipe>;
+  items: Map<number, Item>;
+}) {
+  const itemByName = new Map(Array.from(deps.items.values()).map((item) => [item.itemName, item]));
+  const recipes = deps.recipes 
+
+  for (const _recipe of recipes.values()) {      
+    const item = itemByName.get(_recipe.itemName);  
+    
+    if (item) {    
+    const recipe: Recipe = {
+      id: _recipe.id,
+      recipeName: _recipe.recipeName,
+      itemName: item.itemName,
+      level: _recipe.level,
+      materialList: [],
+      productList: [],
+      mpConsume: _recipe.mpConsume,
+      successRate: _recipe.successRate,
+      npcFeeList: _recipe.npcFeeList
+    }
+  
+    item.recipe.push(recipe);
+    
+    for (const material of _recipe.materialList) {       
+        const qMaterial = itemByName.get(material.itemName);
+        if (qMaterial) {
+          const mat: Material = {   
+            itemName: qMaterial.itemName,         
+            count: material.count,            
+          };
+          recipe.materialList.push(mat);
+          // qMaterial.material.push(mat);
+        }
+    }
+
+    for (const product of _recipe.productList) {        
+        const qProduct = itemByName.get(product.itemName);
+        if (qProduct) {
+          const prod: Product = {
+            itemName: qProduct.itemName,
+            count: product.count
+          };
+          recipe.productList.push(prod);
+          // qProduct.product.push(prod);
+        }
+      }
+  }
+  }
 }

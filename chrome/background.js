@@ -155,7 +155,8 @@ async function nextNpc(tabId) {
       },
     });
     const json = await res.json();
-    console.log(`redirect npcId: ${json.npcId} v: ${json.v}`);
+    setTimeout(() => {
+      console.log(`redirect npcId: ${json.npcId} v: ${json.v}`);
     // chrome.tabs.update(
     //   tabId,
     //   {
@@ -175,7 +176,12 @@ async function nextNpc(tabId) {
         chrome.tabs.remove(tabId);
       }
     );
+    }, 3000)
+    
   } catch (e) {
-    console.log(`[fail]: need update TAB`);
+    console.log(`[fail]: need update TAB 20s`);
+    setTimeout(() => {
+    chrome.tabs.reload(tabId)
+    }, 20000)
   }
 }

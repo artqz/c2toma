@@ -106,12 +106,19 @@ export type Item = {
   mpBonus: Int | null;
   magicWeapon: boolean;
   recipe: Recipe[];
+  sellList: Merchant[];
   // product: Product[];
   // material: Material[];
   dropList: NpcDrop[];
   spoilList: NpcDrop[];
   specialAbility: ShortItem[];
   sets: Set[];
+};
+
+export type Merchant = {
+  npcName: string;
+  tax: number;
+  sellLists: SellList[];
 };
 
 export type Set  = {

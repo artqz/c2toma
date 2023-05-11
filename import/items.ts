@@ -85,6 +85,7 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         weaponType: itemC4.weapon_type!,
         weight: itemC4.weight!,
         recipe: [],
+        sellList: [],
         // product: [],
         // material: [],
         dropList: [],

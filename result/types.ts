@@ -118,19 +118,18 @@ export type Item = {
 export type Merchant = {
   npcName: string;
   tax: number;
-  sellLists: SellList[];
 };
 
-export type Set  = {
-  id: Int
+export type Set = {
+  id: Int;
   setEffectSkill: string;
-  items: ShortItem[]
-}
+  items: ShortItem[];
+};
 
 export type ShortItem = {
   id: Int;
   itemName: string;
-}
+};
 
 export type NpcDrop = {
   npcName: string;

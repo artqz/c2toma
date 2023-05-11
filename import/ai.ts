@@ -22,7 +22,7 @@ export function loadAi(deps: {
     }
   }
 
-  addSellListInItems({...deps, ai:AiMap})
+  addSellListInItems({ ...deps, ai: AiMap });
 
   console.log("AI loaded.");
   return AiMap;
@@ -33,43 +33,58 @@ function filterSellList(deps: {
   items: Map<number, Item>;
 }) {
   const itemByName = new Map(
-    Array.from(deps.items.values()).map((x) => [x.itemName.replace("'", "_"), x])
+    Array.from(deps.items.values()).map((x) => [
+      x.itemName.replace("'", "_"),
+      x,
+    ])
   );
 
- 
-const lists = new Map<number, AiSellList>()
-for (const [i, list] of deps.sellLists.entries()) {
-  const newList: AiSellList = []
-  for (const x of list.values()) {
-    const item = itemByName.get(x[0])
-    if (item) {
-      newList.push([item.itemName, x[1], x[2], x[3]])
+  const lists = new Map<number, AiSellList>();
+  for (const [i, list] of deps.sellLists.entries()) {
+    const newList: AiSellList = [];
+    for (const x of list.values()) {
+      const item = itemByName.get(x[0]);
+      if (item) {
+        newList.push([item.itemName, x[1], x[2], x[3]]);
+      }
     }
+    lists.set(i, newList);
   }
-  lists.set(i, newList)
+
+  return Array.from(lists.values());
 }
 
-return Array.from(lists.values())
-
-  
-}
-
-function addSellListInItems(deps: {ai: Map<string, Ai>, items: Map<number, Item>;}) {
-  const itemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
+function addSellListInItems(deps: {
+  ai: Map<string, Ai>;
+  items: Map<number, Item>;
+  npcs: Map<number, Npc>;
+}) {
+  const itemByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
+  const npcByName = new Map(
+    Array.from(deps.npcs.values()).map((n) => [n.npcName, n])
+  );
 
   for (const ai of deps.ai.values()) {
-    for (const sl of ai.sell_lists) {      
-      for (const is of sl) {
-        const item = itemByName.get(is[0])
-        if (item) {
-          //item.sellList.push({npcName: ai.name, tax: ai.sell_lists[0]?.[1] ?? 0, sellLists: sl})
+    const npc = npcByName.get(ai.name);
+    if (npc) {
+      for (const sl of ai.sell_lists) {
+        for (const is of sl) {
+          const item = itemByName.get(is[0]);
+          if (item) {
+            item.sellList.push({
+              npcName: ai.name,
+              tax: is[1] ?? 0,
+            });
+          }
         }
       }
     }
   }
-  return []
-}
 
+  return;
+}
 
 // function addSellList(
 //   listTitle: string,

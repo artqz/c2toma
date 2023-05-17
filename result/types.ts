@@ -32,6 +32,7 @@ export type Npc = {
   dropList: NpcDrop[];
   spoilList: NpcDrop[];
   skillList: string[];
+  multisell: Multisell[];
   spawns: NpcSpawn[];
 };
 
@@ -111,6 +112,7 @@ export type Item = {
   // material: Material[];
   dropList: ItemDrop[];
   spoilList: ItemDrop[];
+  multisell: Multisell[];
   specialAbility: ShortItem[];
   sets: Set[];
 };
@@ -149,6 +151,13 @@ export type Multisell = {
   id: number;
   multisellName: string;
   sellList: SellList[];
+};
+
+export type ItemMultisell = {
+  id: number;
+  multisellName: string;
+  sellList: SellList[];
+  npcName: string;
 };
 
 export type SellList = {

@@ -78,6 +78,7 @@ function loadTomaNpcs(deps: {
         dropList: getDrop(npc.drop, deps.items),
         spoilList: getDrop(npc.spoil, deps.items),
         skillList: getSkills({...deps, tomaSkills: npc.npcData.skillList}),
+        multisell: [],
         spawns: [],
       });
     }

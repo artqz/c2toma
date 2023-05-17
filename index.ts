@@ -12,7 +12,7 @@ function init() {
   const items = loadItems();
   const skills = loadSkills();
   const npcs = loadNpcs({ items, skills });
-  const multisell = loadMultisell({ items });
+  const multisell = loadMultisell({ items, npcs });
   const recipes = loadRecipes({ items });
   loadNpcPos({ npcs });
   const profs = loadProfs({ skills, items });

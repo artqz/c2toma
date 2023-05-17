@@ -193,7 +193,6 @@ function getDrop(
 
   for (const item of list) {
     drop.push({
-      npcName: "",
       chance: item.chance,
       countMax: item.max,
       countMin: item.min,
@@ -267,18 +266,18 @@ function addDropInItems (deps: {
   const ItemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
   for (const npc of deps.npcs.values()) {
     for (const drop of npc.dropList) {
-      drop.npcName = npc.npcName
+     
       const item = ItemByName.get(drop.itemName)
       if (item) {
-        item.dropList.push(drop)
+        item.dropList.push({...drop, npcName: npc.npcName})
       }
     }
 
     for (const spoil of npc.spoilList) {
-      spoil.npcName = npc.npcName
+      
       const item = ItemByName.get(spoil.itemName)
       if (item) {
-        item.spoilList.push(spoil)
+        item.spoilList.push({...spoil, npcName: npc.npcName})
       }
     }
   }

@@ -109,8 +109,8 @@ export type Item = {
   sellList: Merchant[];
   // product: Product[];
   // material: Material[];
-  dropList: NpcDrop[];
-  spoilList: NpcDrop[];
+  dropList: ItemDrop[];
+  spoilList: ItemDrop[];
   specialAbility: ShortItem[];
   sets: Set[];
 };
@@ -132,8 +132,14 @@ export type ShortItem = {
 };
 
 export type NpcDrop = {
-  npcName: string;
   itemName: string;
+  countMin: Int;
+  countMax: Int;
+  chance: Float;
+};
+
+export type ItemDrop = {
+  npcName: string;
   countMin: Int;
   countMax: Int;
   chance: Float;

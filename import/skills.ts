@@ -1,12 +1,16 @@
 import { loadSkillGrpC2 } from "../datapack/c2/skillgrp";
 import { loadSkillNamesC2 } from "../datapack/c2/skillnames";
 import { loadSkillDataC4 } from "../datapack/c4/skilldata";
+import { loadSkillGrpC4 } from '../datapack/c4/skillgrp';
+import { loadSkillNamesC4 } from '../datapack/c4/skillnames';
 import { Skill } from "../result/types";
 
 export function loadSkills() {
   let skills: Map<string, Skill>;
   skills = loadC4Skills();
   skills = loadC2Icons(skills);
+  skills = loadC4Icons(skills);
+  skills = loadC4Names(skills);
   console.log("Skills loaded.");
 
   return skills;
@@ -74,6 +78,53 @@ function loadC2Icons(skills: Map<string, Skill>) {
         icon: grp?.icon.replace("icon.", "") ?? "",
       });
     
+  }
+  return skillsNew;
+}
+
+function loadC4Icons(skills: Map<string, Skill>) {
+  const skillGrp = new Map(
+    loadSkillGrpC4().map((skill) => [
+      skill.id + "_" + skill.level,
+      skill,
+    ])
+  );
+  const skillsNew = new Map<string, Skill>();
+
+  for (const skill of Array.from(skills.values())) {      
+      const grp = skillGrp.get(skill.id + "_" + skill.level);
+      if (grp) {
+        const icon = !skill.icon ? grp.icon.replace("icon.", "") : skill.icon
+        skillsNew.set(skill.id + "_" + skill.level, {
+        ...skill,
+        icon: icon ?? "",
+      });
+      } 
+  }
+  return skillsNew;
+}
+
+function loadC4Names(skills: Map<string, Skill>) {
+  const skillNames = new Map(
+    loadSkillNamesC4().map((skill) => [
+      skill.id + "_" + skill.level,
+      skill,
+    ]))
+  const skillsNew = new Map<string, Skill>();
+
+  for (const skill of Array.from(skills.values())) {
+      
+      const sName = skillNames.get(skill.id + "_" + skill.level);
+      if (sName) {
+        const name = !skill.name ? sName.name : skill.name
+        const desc = !skill.desc ? sName.desc : skill.desc
+
+        skillsNew.set(skill.id + "_" + skill.level, {
+        ...skill,
+        name: name ?? "",
+        desc: desc ?? "",
+      });
+      }    
   }
   return skillsNew;
 }

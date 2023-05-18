@@ -202,6 +202,39 @@ function loadNamesGf() {
   return itemnameMap
 }
 
+const sa = [
+  "guidance",
+  "evasion",
+  "focus",	
+  "anger",	
+  "health",	
+  "backblow",	
+  "crt.bleed ",
+  "crt.damage",
+  "crt.anger",
+  "crt.drain",	
+  "crt.stun",	
+  "crt.poison",	
+  "rsk.focus",
+  "rsk.evasion",	
+  "rsk.haste",
+  "mightmortal",	
+  "manaup",	
+  "light",	
+  "quickrecovery",	
+  "cheapshot",	
+  "haste",	
+  "longblow",	
+  "wideblow",	
+  "magicmentalshield",	
+  "magicfocus",	
+  "magicblessthebody",	
+  "magichold",	
+  "magicpoison",	
+  "magicweakness",	
+  "magicchaos",	
+]
+
 export const Slot = z.enum([
   "rhand",
   "lrhand",

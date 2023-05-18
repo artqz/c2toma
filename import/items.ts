@@ -180,8 +180,6 @@ function loadC2Sets(items: Map<number, Item>) {
 
 function loadC2SpecialAbility(items: Map<number, Item>) {
   const itemByNamme = new Map(Array.from(items.values()).map(i => [i.itemName, i]))
-  const weapons = Array.from(items.values()).filter(i => i.type === "weapon" && i.weaponType !== "dual")
-
 
   for (const item of items.values()) {
     // console.log(item.itemName);

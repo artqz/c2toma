@@ -1,3 +1,4 @@
+import { loadItemAbilityList } from './import/ability';
 import { loadAi } from "./import/ai";
 import { loadItems } from "./import/items";
 import { loadMultisell } from "./import/multisell";
@@ -10,6 +11,7 @@ import { createDir, saveFile } from "./utils/Fs";
 
 function init() {
   const items = loadItems();
+  const abilityList = loadItemAbilityList({items})
   const skills = loadSkills();
   const npcs = loadNpcs({ items, skills });
   const multisell = loadMultisell({ items, npcs });
@@ -24,6 +26,10 @@ function init() {
   saveFile(
     "result/data/items.json",
     JSON.stringify(Array.from(items.values()), null, 2)
+  );
+  saveFile(
+    "result/data/itemAbilityList.json",
+    JSON.stringify(Array.from(abilityList.values()), null, 2)
   );
   saveFile(
     "result/data/npcs.json",

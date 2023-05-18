@@ -128,6 +128,11 @@ export type Set = {
   items: ShortItem[];
 };
 
+export type ItemAbilityList = {
+  itemName: string;
+  abilityList: ShortItem[]
+}
+
 export type ShortItem = {
   itemName: string;
 };

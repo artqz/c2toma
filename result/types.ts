@@ -129,7 +129,6 @@ export type Set = {
 };
 
 export type ShortItem = {
-  id: Int;
   itemName: string;
 };
 

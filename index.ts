@@ -1,4 +1,4 @@
-import { loadItemAbilityList } from './import/ability';
+import { loadItemAbilityList } from './import/itemAbilityList';
 import { loadAi } from "./import/ai";
 import { loadItems } from "./import/items";
 import { loadMultisell } from "./import/multisell";
@@ -8,11 +8,13 @@ import { loadProfs } from "./import/profs";
 import { loadRecipes } from "./import/recipes";
 import { loadSkills } from "./import/skills";
 import { createDir, saveFile } from "./utils/Fs";
+import { loadItemSetList } from './import/itemSetList';
 
 function init() {
-  const items = loadItems();
-  const abilityList = loadItemAbilityList({items})
   const skills = loadSkills();
+  const items = loadItems();
+  const itemAbilityList = loadItemAbilityList({items})  
+  const itemSetList = loadItemSetList({items})  
   const npcs = loadNpcs({ items, skills });
   const multisell = loadMultisell({ items, npcs });
   const recipes = loadRecipes({ items });
@@ -29,7 +31,11 @@ function init() {
   );
   saveFile(
     "result/data/itemAbilityList.json",
-    JSON.stringify(Array.from(abilityList.values()), null, 2)
+    JSON.stringify(Array.from(itemAbilityList.values()), null, 2)
+  );
+  saveFile(
+    "result/data/itemSetList.json",
+    JSON.stringify(Array.from(itemSetList.values()), null, 2)
   );
   saveFile(
     "result/data/npcs.json",

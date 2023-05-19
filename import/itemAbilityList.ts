@@ -41,7 +41,7 @@ const saList = [
   "anger",	
   "health",	
   "backblow",	
-  "crt.bleed ",
+  "crt.bleed",
   "crt.damage",
   "crt.anger",
   "crt.drain",	
@@ -50,7 +50,7 @@ const saList = [
   "rsk.focus",
   "rsk.evasion",	
   "rsk.haste",
-  "mightmortal",	
+  "mightmotal",	//mightmortal
   "manaup",	
   "light",	
   "quickrecovery",	
@@ -58,11 +58,14 @@ const saList = [
   "haste",	
   "longblow",	
   "wideblow",	
-  "magicmentalshield",	
+  // "magicmentalshield",	
   "magicfocus",	
   "magicblessthebody",	
   "magichold",	
   "magicpoison",	
   "magicweakness",	
   "magicchaos",	
+  "magicregen", //есть в ц2?
+  "magicmshield", //есть в ц2?
+  "miser", //есть в ц2?
 ]

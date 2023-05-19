@@ -113,8 +113,6 @@ export type Item = {
   dropList: ItemDrop[];
   spoilList: ItemDrop[];
   multisell: Multisell[];
-  specialAbility: ShortItem[];
-  sets: Set[];
 };
 
 export type Merchant = {
@@ -122,15 +120,15 @@ export type Merchant = {
   tax: number;
 };
 
-export type Set = {
-  id: Int;
-  setEffectSkill: string;
-  items: ShortItem[];
-};
-
 export type ItemAbilityList = {
   itemName: string;
   abilityList: ShortItem[]
+}
+
+export type ItemSetList = {
+  id: Int;
+  setEffectSkill: string;
+  setList: ShortItem[]
 }
 
 export type ShortItem = {

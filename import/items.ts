@@ -4,15 +4,13 @@ import { ItemEntryC2, loadItemNamesC2 } from "../datapack/c2/itemnames";
 import { loadItemDataC4 } from "../datapack/c4/itemdata";
 import { loadItemDataGF } from "../datapack/gf/itemdata";
 import { loadItemNamesGF } from '../datapack/gf/itemnames';
-import { Item, Set, ShortItem } from "../result/types";
+import { Item, ShortItem } from "../result/types";
 
 export function loadItems() {
   const itemnamesC2 = new Map(loadItemNamesC2().map((npc) => [npc.id, npc]));
   let items: Map<number, Item>;
   items = loadC4Items(itemnamesC2);
   items = loadC2Icons(items);
-  items = loadC2SpecialAbility(items)
-  items = loadC2Sets(items)
   console.log("Items loaded.");
 
   return items;
@@ -90,9 +88,7 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         // product: [],
         // material: [],
         dropList: [],
-        spoilList: [],
-        specialAbility: [],
-        sets: []
+        spoilList: []
       });
       // }
     }
@@ -119,86 +115,64 @@ function loadC2Icons(items: Map<number, Item>) {
   return itemsNew;
 }
 
-function loadC2Sets(items: Map<number, Item>) {
-  const itemByName = new Map(Array.from(items.values()).map(i => [i.itemName, i]))
-  const setsC4 = new Map(loadItemDataC4().filter(i => i.$.length === 1 && i.set_effect_skill !== "none").map((item) => [item.$[0], item]));
-  const setsItem = new Map<number, Item[]>()
-  for (const set of Array.from(setsC4.values())) {
-    const setItems: ShortItem[] = []
-    if (set.hasOwnProperty("slot_head") && set.slot_head) {
-      const item = items.get(set.slot_head)
-      if (item) {
-        setItems.push({itemName: item.itemName})     
-      } 
-    }
-    if (set.hasOwnProperty("slot_chest") && set.slot_chest) {
-      const item = items.get(set.slot_chest)
-      if (item) {
-        setItems.push({itemName: item.itemName})     
-      } 
-    }    
-    if (set.hasOwnProperty("slot_legs") && set.slot_legs) {
-      const item = items.get(set.slot_legs)
-      if (item) {
-        setItems.push({itemName: item.itemName})     
-      } 
-    }
-    if (set.hasOwnProperty("slot_gloves") && set.slot_gloves) {
-      const item = items.get(set.slot_gloves)
-      if (item) {
-        setItems.push({itemName: item.itemName})      
-      } 
-    }
-    if (set.hasOwnProperty("slot_feet") && set.slot_feet) {
-      const item = items.get(set.slot_feet)
-      if (item) {
-        setItems.push({itemName: item.itemName})   
-      } 
-    }
-    if (set.hasOwnProperty("slot_lhand") && set.slot_lhand) {
-      const item = items.get(set.slot_lhand)
-      if (item) {
-        setItems.push({itemName: item.itemName})      
-      } 
-    }
-    if (setItems.length > 0) {
-      if (typeof set.$[0] === 'number') {    
-        for (const si of setItems) {
-          const item = itemByName.get(si.itemName)
-          if (item) {
-            item.sets.push({id: set.$[0], setEffectSkill: set.set_effect_skill ?? "", items: setItems})
-            items.set(item.id, {...item})
-          }          
-        }
-      }
-    }  
+// function loadC2Sets(items: Map<number, Item>) {
+//   const itemByName = new Map(Array.from(items.values()).map(i => [i.itemName, i]))
+//   const setsC4 = new Map(loadItemDataC4().filter(i => i.$.length === 1 && i.set_effect_skill !== "none").map((item) => [item.$[0], item]));
+//   const setsItem = new Map<number, Item[]>()
+//   for (const set of Array.from(setsC4.values())) {
+//     const setItems: ShortItem[] = []
+//     if (set.hasOwnProperty("slot_head") && set.slot_head) {
+//       const item = items.get(set.slot_head)
+//       if (item) {
+//         setItems.push({itemName: item.itemName})     
+//       } 
+//     }
+//     if (set.hasOwnProperty("slot_chest") && set.slot_chest) {
+//       const item = items.get(set.slot_chest)
+//       if (item) {
+//         setItems.push({itemName: item.itemName})     
+//       } 
+//     }    
+//     if (set.hasOwnProperty("slot_legs") && set.slot_legs) {
+//       const item = items.get(set.slot_legs)
+//       if (item) {
+//         setItems.push({itemName: item.itemName})     
+//       } 
+//     }
+//     if (set.hasOwnProperty("slot_gloves") && set.slot_gloves) {
+//       const item = items.get(set.slot_gloves)
+//       if (item) {
+//         setItems.push({itemName: item.itemName})      
+//       } 
+//     }
+//     if (set.hasOwnProperty("slot_feet") && set.slot_feet) {
+//       const item = items.get(set.slot_feet)
+//       if (item) {
+//         setItems.push({itemName: item.itemName})   
+//       } 
+//     }
+//     if (set.hasOwnProperty("slot_lhand") && set.slot_lhand) {
+//       const item = items.get(set.slot_lhand)
+//       if (item) {
+//         setItems.push({itemName: item.itemName})      
+//       } 
+//     }
+//     if (setItems.length > 0) {
+//       if (typeof set.$[0] === 'number') {    
+//         for (const si of setItems) {
+//           const item = itemByName.get(si.itemName)
+//           if (item) {
+//             item.sets.push({id: set.$[0], setEffectSkill: set.set_effect_skill ?? "", items: setItems})
+//             items.set(item.id, {...item})
+//           }          
+//         }
+//       }
+//     }  
     
-  }
+//   }
   
-  return items
-}
-
-function loadC2SpecialAbility(items: Map<number, Item>) {
-  const itemByNamme = new Map(Array.from(items.values()).map(i => [i.itemName, i]))
-
-  for (const item of items.values()) {
-    // console.log(item.itemName);
-    for (const sa of saList) {
-      const rItem = itemByNamme.get(`${item.itemName}_${sa}`)
-      if (rItem) {
-        const nItem = itemByNamme.get(rItem.itemName.replace(`_${sa}`, ""))
-        if (nItem) {
-          nItem.specialAbility.push({itemName: rItem.itemName})
-        }
-      }
-     
-      // itemsNew.set(item.id, {...item, specialAbility: weaponsSA})
-    }   
-    
-  }
-  
-  return items
-}
+//   return items
+// }
 
 function loadNamesGf() {
   const itemnameMap = new Map<number, {name: string, desc: string}> ()
@@ -208,39 +182,6 @@ function loadNamesGf() {
 
   return itemnameMap
 }
-
-const saList = [
-  "guidance",
-  "evasion",
-  "focus",	
-  "anger",	
-  "health",	
-  "backblow",	
-  "crt.bleed ",
-  "crt.damage",
-  "crt.anger",
-  "crt.drain",	
-  "crt.stun",	
-  "crt.poison",	
-  "rsk.focus",
-  "rsk.evasion",	
-  "rsk.haste",
-  "mightmortal",	
-  "manaup",	
-  "light",	
-  "quickrecovery",	
-  "cheapshot",	
-  "haste",	
-  "longblow",	
-  "wideblow",	
-  "magicmentalshield",	
-  "magicfocus",	
-  "magicblessthebody",	
-  "magichold",	
-  "magicpoison",	
-  "magicweakness",	
-  "magicchaos",	
-]
 
 export const Slot = z.enum([
   "rhand",
@@ -270,3 +211,9 @@ export const Slot = z.enum([
 ]);
 export type Slot = z.infer<typeof Slot>;
 export const asSlot = Slot.parse;
+
+type ItemC2 = {
+  id: number,
+  itemName: string
+}
+const itemsC2 = new Map<number, ItemC2>([[1, {id:1, itemName: ""}]])

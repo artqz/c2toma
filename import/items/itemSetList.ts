@@ -1,17 +1,21 @@
-import { loadItemDataC4 } from '../datapack/c4/itemdata';
-import { Item, ItemSetList, ShortItem } from '../result/types';
+import slug from 'slug';
+import { loadItemDataC4 } from '../../datapack/c4/itemdata';
+import { Item, Set, ShortItem, Skill } from '../../result/types';
 
-export function loadItemSetList(deps: { items: Map<number, Item>}) {
+slug.charmap["'"] = "'"
+
+export function loadItemSetList(deps: { items: Map<number, Item>, skills: Map<string, Skill>}) {
   const ability = loadC2Sets(deps)
   console.log("Items: Set list loaded.");
   
   return ability
 }
 
-function loadC2Sets(deps: {items: Map<number, Item>}) {
+function loadC2Sets(deps: {items: Map<number, Item>, skills: Map<string, Skill>}) {  
   const itemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
+  const skillByName = new Map(Array.from(deps.skills.values()).map(s => [s.skillName, s]))
   const setsC4 = new Map(loadItemDataC4().filter(i => i.$.length === 1 && i.set_effect_skill !== "none").map((item) => [item.$[0], item]));
-  const itemSetList = new Map<number, ItemSetList>()
+  const itemSetList = new Map<number, Set>()
   for (const set of setsC4.values()) {
     const setItems: ShortItem[] = []
     if (set.hasOwnProperty("slot_head") && set.slot_head) {
@@ -62,7 +66,10 @@ function loadC2Sets(deps: {items: Map<number, Item>}) {
           }          
         }
 
-       itemSetList.set(set.$[0], {id: set.$[0], setEffectSkill: set.set_effect_skill ?? "", setList})
+        const skill = skillByName.get(set.set_effect_skill!)
+        if (skill) {
+          itemSetList.set(set.$[0], {id: set.$[0], setName: slug(skill.name, '_'), name: skill.name, desc: skill.desc, setEffectSkill: skill.skillName, setList})
+        }       
       }
     }  
     

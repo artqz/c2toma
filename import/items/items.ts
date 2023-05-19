@@ -1,16 +1,19 @@
 import { string, z } from "zod";
-import { loadItemGrpC2 } from "../datapack/c2/itemgrp";
-import { ItemEntryC2, loadItemNamesC2 } from "../datapack/c2/itemnames";
-import { loadItemDataC4 } from "../datapack/c4/itemdata";
-import { loadItemDataGF } from "../datapack/gf/itemdata";
-import { loadItemNamesGF } from '../datapack/gf/itemnames';
-import { Item, ShortItem } from "../result/types";
+import { loadItemGrpC2 } from "../../datapack/c2/itemgrp";
+import { ItemEntryC2, loadItemNamesC2 } from "../../datapack/c2/itemnames";
+import { loadItemDataC4 } from "../../datapack/c4/itemdata";
+import { loadItemDataGF } from "../../datapack/gf/itemdata";
+import { loadItemNamesGF } from '../../datapack/gf/itemnames';
+import { Item, ShortItem } from "../../result/types";
+import { loadItemSetList } from './itemSetList';
+import { loadItemAbilityList } from './itemAbilityList';
 
 export function loadItems() {
   const itemnamesC2 = new Map(loadItemNamesC2().map((npc) => [npc.id, npc]));
   let items: Map<number, Item>;
   items = loadC4Items(itemnamesC2);
   items = loadC2Icons(items);
+
   console.log("Items loaded.");
 
   return items;
@@ -37,9 +40,10 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
       items.set(itemC2.id, {
         id: itemC4.$[1]!,
         itemName: itemC4.$[2]!.toString().replace(":", "_"),
-        name: itemC2.name.length ? itemC2.name : itemnameGF?.name ?? itemC4.$[2]!.toString().replace(":", "_"),
+        //name: itemC2.name.length ? itemC2.name : itemnameGF?.name ?? itemC4.$[2]!.toString().replace(":", "_"),
+        name: itemC2.name ?? "",
         addName: itemC2.name !== itemC2.additionalname ? itemC2.additionalname : "",
-        desc: itemC2.description.length ? itemC2.description : itemnameGF?.desc ?? "",
+        desc: itemC2.description  ?? "",
         icon: "",
         armorType: itemC4.armor_type!,
         attackRange: itemC4.attack_range!,
@@ -82,13 +86,13 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         type: itemC4.$[0].toString(),
         weaponType: itemC4.weapon_type!,
         weight: itemC4.weight!,
-        recipe: [],
-        sellList: [],
-        multisell:[],
+        // recipe: [],
+        // sellList: [],
+        // multisell:[],
         // product: [],
         // material: [],
-        dropList: [],
-        spoilList: []
+        // dropList: [],
+        // spoilList: []
       });
       // }
     }

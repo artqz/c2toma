@@ -1,4 +1,4 @@
-import { Item, ItemAbilityList, ShortItem } from '../result/types';
+import { Item, ItemAbilityList, ShortItem } from '../../result/types';
 
 export function loadItemAbilityList(deps: { items: Map<number, Item>}) {
   const ability = loadC2SpecialAbility(deps)
@@ -29,6 +29,10 @@ function loadC2SpecialAbility(deps: {items: Map<number, Item>}) {
     if (abilityList.length) {
       itemAbility.set(item.itemName, {itemName: item.itemName, abilityList})
     }    
+  }
+
+  for (const iterator of itemAbility.values()) {
+    
   }
   
   return itemAbility

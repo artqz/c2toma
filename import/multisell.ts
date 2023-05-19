@@ -59,47 +59,47 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
   );
 
   //add npcs
-  addInNpcsAndItems({...deps, multisell})
+  // addInNpcsAndItems({...deps, multisell})
   console.log("Multisell loaded.");
 
   return multisell;
 }
 
-function addInNpcsAndItems(deps: { items: Map<number, Item>, npcs:  Map<number, Npc>, multisell: Map<number, Multisell>}) {
-  const npcByName = new Map(Array.from(deps.npcs.values()).map(n => [n.npcName, n]))
-  const itemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
-  const filteredMultisell = new Map<string, ItemMultisell>()
+// function addInNpcsAndItems(deps: { items: Map<number, Item>, npcs:  Map<number, Npc>, multisell: Map<number, Multisell>}) {
+//   const npcByName = new Map(Array.from(deps.npcs.values()).map(n => [n.npcName, n]))
+//   const itemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
+//   const filteredMultisell = new Map<string, ItemMultisell>()
 
-  for (const ms of deps.multisell.values()) {
-     const npcNames: { npcName: string; show: boolean }[] =
-      getNpcNamesByMultisell(ms.multisellName);
+//   for (const ms of deps.multisell.values()) {
+//      const npcNames: { npcName: string; show: boolean }[] =
+//       getNpcNamesByMultisell(ms.multisellName);
 
-      for (const npcName of npcNames) {
-        const npc = npcByName.get(npcName.npcName);
-        if (npc) {          
-          filteredMultisell.set(npc.id+"_"+ms.id, {...ms, npcName: npc.npcName})         
-        }
-      }
-  }
+//       for (const npcName of npcNames) {
+//         const npc = npcByName.get(npcName.npcName);
+//         if (npc) {          
+//           filteredMultisell.set(npc.id+"_"+ms.id, {...ms, npcName: npc.npcName})         
+//         }
+//       }
+//   }
 
-  for (const ms of filteredMultisell.values()) {
-    const npc = npcByName.get(ms.npcName)
+//   for (const ms of filteredMultisell.values()) {
+//     const npc = npcByName.get(ms.npcName)
 
-    if (npc) {            
-      npc.multisell.push(ms)
-    }   
+//     if (npc) {            
+//       npc.multisell.push(ms)
+//     }   
   
-    for (const sList of ms.sellList) {
-      for (const rItem of sList.resultItems) {
-        const item =itemByName.get(rItem.itemName)
-        if (item) {          
-          const ims: ItemMultisell = {id: ms.id, sellList: [sList], multisellName: ms.multisellName, npcName:ms.npcName}
-          item.multisell.push(ims)          
-        }
-      }
-    }   
-  } 
-}
+//     for (const sList of ms.sellList) {
+//       for (const rItem of sList.resultItems) {
+//         const item =itemByName.get(rItem.itemName)
+//         if (item) {          
+//           const ims: ItemMultisell = {id: ms.id, sellList: [sList], multisellName: ms.multisellName, npcName:ms.npcName}
+//           item.multisell.push(ims)          
+//         }
+//       }
+//     }   
+//   } 
+// }
 
 //c2
 function getNpcNamesByMultisell(multisellName: string) {

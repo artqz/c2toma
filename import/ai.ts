@@ -22,7 +22,7 @@ export function loadAi(deps: {
     }
   }
 
-  addSellListInItems({ ...deps, ai: AiMap });
+  // addSellListInItems({ ...deps, ai: AiMap });
 
   console.log("AI loaded.");
   return AiMap;
@@ -42,10 +42,16 @@ function filterSellList(deps: {
   const lists = new Map<number, AiSellList>();
   for (const [i, list] of deps.sellLists.entries()) {
     const newList: AiSellList = [];
-    for (const x of list.values()) {
-      const item = itemByName.get(x[0]);
-      if (item) {
-        newList.push([item.itemName, x[1], x[2], x[3]]);
+    for (const x of list.values()) { 
+      if (!excludedItems.has(x[0])) {
+        
+        const item = itemByName.get(x[0]);
+        if (item) {
+          newList.push([item.itemName, x[1], x[2], x[3]]);
+        } 
+      }    
+      else {
+        console.log(`------------ ${x[0]}`);
       }
     }
     lists.set(i, newList);
@@ -54,37 +60,37 @@ function filterSellList(deps: {
   return Array.from(lists.values());
 }
 
-function addSellListInItems(deps: {
-  ai: Map<string, Ai>;
-  items: Map<number, Item>;
-  npcs: Map<number, Npc>;
-}) {
-  const itemByName = new Map(
-    Array.from(deps.items.values()).map((i) => [i.itemName, i])
-  );
-  const npcByName = new Map(
-    Array.from(deps.npcs.values()).map((n) => [n.npcName, n])
-  );
+// function addSellListInItems(deps: {
+//   ai: Map<string, Ai>;
+//   items: Map<number, Item>;
+//   npcs: Map<number, Npc>;
+// }) {
+//   const itemByName = new Map(
+//     Array.from(deps.items.values()).map((i) => [i.itemName, i])
+//   );
+//   const npcByName = new Map(
+//     Array.from(deps.npcs.values()).map((n) => [n.npcName, n])
+//   );
 
-  for (const ai of deps.ai.values()) {
-    const npc = npcByName.get(ai.name);
-    if (npc) {
-      for (const sl of ai.sell_lists) {
-        for (const is of sl) {
-          const item = itemByName.get(is[0]);
-          if (item) {
-            item.sellList.push({
-              npcName: ai.name,
-              tax: is[1] ?? 0,
-            });
-          }
-        }
-      }
-    }
-  }
+//   for (const ai of deps.ai.values()) {
+//     const npc = npcByName.get(ai.name);
+//     if (npc) {
+//       for (const sl of ai.sell_lists) {
+//         for (const is of sl) {
+//           const item = itemByName.get(is[0]);
+//           if (item) {
+//             item.sellList.push({
+//               npcName: ai.name,
+//               tax: is[1] ?? 0,
+//             });
+//           }
+//         }
+//       }
+//     }
+//   }
 
-  return;
-}
+//   return;
+// }
 
 // function addSellList(
 //   listTitle: string,
@@ -113,3 +119,5 @@ function addSellListInItems(deps: {
 //     npc.merchant.sellLists.push(sellList);
 //   }
 // }
+
+const excludedItems = new Set(["cursed_bone"])

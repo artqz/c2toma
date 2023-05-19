@@ -1,6 +1,6 @@
-import { loadItemAbilityList } from './import/itemAbilityList';
+import { loadItemAbilityList } from './import/items/itemAbilityList';
 import { loadAi } from "./import/ai";
-import { loadItems } from "./import/items";
+import { loadItems } from "./import/items/items";
 import { loadMultisell } from "./import/multisell";
 import { loadNpcPos } from "./import/npcpos";
 import { loadNpcs } from "./import/npcs";
@@ -8,13 +8,13 @@ import { loadProfs } from "./import/profs";
 import { loadRecipes } from "./import/recipes";
 import { loadSkills } from "./import/skills";
 import { createDir, saveFile } from "./utils/Fs";
-import { loadItemSetList } from './import/itemSetList';
+import { loadItemSetList } from './import/items/itemSetList';
 
 function init() {
   const skills = loadSkills();
   const items = loadItems();
   const itemAbilityList = loadItemAbilityList({items})  
-  const itemSetList = loadItemSetList({items})  
+  const itemSetList = loadItemSetList({items, skills})  
   const npcs = loadNpcs({ items, skills });
   const multisell = loadMultisell({ items, npcs });
   const recipes = loadRecipes({ items });
@@ -30,12 +30,12 @@ function init() {
     JSON.stringify(Array.from(items.values()), null, 2)
   );
   saveFile(
-    "result/data/itemAbilityList.json",
-    JSON.stringify(Array.from(itemAbilityList.values()), null, 2)
+    "result/data/sets.json",
+    JSON.stringify(Array.from(itemSetList.values()), null, 2)
   );
   saveFile(
-    "result/data/itemSetList.json",
-    JSON.stringify(Array.from(itemSetList.values()), null, 2)
+    "result/data/itemAbilities.json",
+    JSON.stringify(Array.from(itemAbilityList.values()), null, 2)
   );
   saveFile(
     "result/data/npcs.json",

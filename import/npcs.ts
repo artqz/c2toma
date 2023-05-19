@@ -2,7 +2,7 @@ import Fs from "fs";
 import Path from "path";
 import { loadNpcDataC1 } from "../datapack/c1/npcdata";
 
-import { loadNpcNamesC2, NpcNameEntry } from "../datapack/c2/npcnames";
+import { loadNpcNamesC2 } from "../datapack/c2/npcnames";
 import { loadNpcDataC4 } from "../datapack/c4/npcdata";
 import { loadSkillDataC4 } from "../datapack/c4/skilldata";
 import { loadSkillIconsGF } from "../datapack/gf/skillgrp";
@@ -154,8 +154,6 @@ function loadC4Npcs(deps: {
       }
     }
   }
-  //add drop in items
-  addDropInItems({...deps, npcs})
 
   //add npc skills
   addNpcSkills({ ...deps, npcsSkills });
@@ -258,28 +256,6 @@ function skillsC4GF() {
   }
 
   return skillsMap;
-}
-
-function addDropInItems (deps: {
-  items: Map<number, Item>,
-  npcs: Map<number, Npc>
-}) {
-  const ItemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
-  for (const npc of deps.npcs.values()) {
-    for (const drop of npc.dropList) {     
-      const item = ItemByName.get(drop.itemName)
-      if (item) {
-        item.dropList.push({npcName: npc.npcName, chance: drop.chance, countMin: drop.countMin, countMax: drop.countMax})
-      }
-    }
-
-    for (const spoil of npc.spoilList) {      
-      const item = ItemByName.get(spoil.itemName)
-      if (item) {        
-        item.spoilList.push({npcName: npc.npcName, chance: spoil.chance, countMin: spoil.countMin, countMax: spoil.countMax})
-      }
-    }
-  }
 }
 
 type DropList = {

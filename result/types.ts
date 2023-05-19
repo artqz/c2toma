@@ -1,6 +1,6 @@
 type Int = number;
 type Float = number;
-type lstring = { en: string; ru: string };
+export type lstring = { en: string; ru: string };
 
 export type Npc = {
   id: Int;
@@ -63,7 +63,7 @@ export type Item = {
   itemName: string;
   type: string;
   icon: string;
-  name: string;
+  name: lstring;
   addName: string;
   desc: string;
   weaponType: string;

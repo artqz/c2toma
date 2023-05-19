@@ -4,7 +4,7 @@ import { ItemEntryC2, loadItemNamesC2 } from "../../datapack/c2/itemnames";
 import { loadItemDataC4 } from "../../datapack/c4/itemdata";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemNamesGF } from '../../datapack/gf/itemnames';
-import { Item, ShortItem } from "../../result/types";
+import { Item, ShortItem, lstring } from "../../result/types";
 import { loadItemSetList } from './itemSetList';
 import { loadItemAbilityList } from './itemAbilityList';
 
@@ -41,7 +41,7 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         id: itemC4.$[1]!,
         itemName: itemC4.$[2]!.toString().replace(":", "_"),
         //name: itemC2.name.length ? itemC2.name : itemnameGF?.name ?? itemC4.$[2]!.toString().replace(":", "_"),
-        name: itemC2.name ?? "",
+        name: {en: itemC2.name ?? "", ru: itemnameGF?.name.ru ?? ""},
         addName: itemC2.name !== itemC2.additionalname ? itemC2.additionalname : "",
         desc: itemC2.description  ?? "",
         icon: "",
@@ -179,7 +179,7 @@ function loadC2Icons(items: Map<number, Item>) {
 // }
 
 function loadNamesGf() {
-  const itemnameMap = new Map<number, {name: string, desc: string}> ()
+  const itemnameMap = new Map<number, {name: lstring, desc: string}> ()
   for (const name of loadItemNamesGF()) {
     itemnameMap.set(name.id, {name:name.name, desc:name.desc})
   }

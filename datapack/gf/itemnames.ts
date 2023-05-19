@@ -2,10 +2,14 @@ import { parse as parseCsv } from "csv-parse/sync";
 import Fs from "fs";
 import { z } from "zod";
 
+type lstring = {
+  en: string,
+  ru: string
+}
 type ItemNameEntry = {
   id: number;
   add_name: string;
-  name: string;
+  name: lstring;
   desc: string;
 };
 
@@ -31,12 +35,31 @@ export function loadItemNamesGF(): ItemNameEntry[] {
     bom: true,
   });
 
-  let data = EntryGF.array().parse(json);
+  const jsonRu = parseCsv(Fs.readFileSync("datapack/gf/itemname-ru.txt", "utf8"), {
+    delimiter: "\t",
+    relaxQuotes: true,
+    columns: true,
+    bom: true,
+  });
 
-  return data.map((x) => ({
-    id: parseInt(x.id),
-    name: cleanStr(x.name),
-    add_name: cleanStr(x.add_name),
-    desc: cleanStr(x.description)
-  }));
+  let data = EntryGF.array().parse(json);
+  let dataRu = EntryGF.array().parse(jsonRu);
+
+  const langRuById = new Map(dataRu.map(d => [d.id, d]))
+
+  return data.map((x) => {
+    const itemName: ItemNameEntry = {
+      id: parseInt(x.id),
+      name: {en: cleanStr(x.name), ru: ""},
+      add_name: cleanStr(x.add_name),
+      desc: cleanStr(x.description)
+    }
+
+    const ru = langRuById.get(x.id)
+    if (ru) {
+      itemName.name.ru = ru.name
+    }
+    
+    return itemName
+  });
 }

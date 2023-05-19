@@ -5,7 +5,7 @@ import { z } from "zod";
 type SkillNameEntry = {
   id: number;
   level: number;
-  name: string;
+  name: {en: string, ru: string};
   desc: string;
 };
 
@@ -35,12 +35,32 @@ export function loadSkillNamesGF(): SkillNameEntry[] {
     }
   );
 
-  let data = EntryGF.array().parse(json);
 
-  return data.map((x) => ({
-    id: parseInt(x.id),
-    name: cleanStr(x.name),
-    level: parseInt(x.level),
-    desc: cleanStr(x.description),
-  }));
+const jsonRu = parseCsv(Fs.readFileSync("datapack/gf/skillname-ru.txt", "utf8"), {
+    delimiter: "\t",
+    relaxQuotes: true,
+    columns: true,
+    bom: true,
+  });
+
+  let data = EntryGF.array().parse(json);
+  let dataRu = EntryGF.array().parse(jsonRu);
+
+  const langRuById = new Map(dataRu.map(d => [d.id, d]))
+
+  return data.map((x) => {
+    const itemName: SkillNameEntry = {
+      id: parseInt(x.id),
+      name: {en: cleanStr(x.name), ru: ""},
+      level: parseInt(x.level),
+      desc: cleanStr(x.description),
+    }
+
+    const ru = langRuById.get(x.id)
+    if (ru) {
+      itemName.name.ru = ru.name
+    }
+    
+    return itemName
+  });
 }

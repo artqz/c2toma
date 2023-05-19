@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "tsnd --respawn server.ts",
-    "dev": "tsnd --respawn index.ts",
+    "dev": "ts-node index.ts",
     "saveProf": "ts-node saveClasses.ts",
     "saveMaps": "ts-node saveMaps.ts",
     "saveNpcs": "ts-node saveNpcs.ts",

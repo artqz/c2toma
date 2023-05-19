@@ -8,7 +8,7 @@ type lstring = {
 }
 type ItemNameEntry = {
   id: number;
-  add_name: string;
+  add_name: lstring;
   name: lstring;
   desc: string;
 };
@@ -51,13 +51,14 @@ export function loadItemNamesGF(): ItemNameEntry[] {
     const itemName: ItemNameEntry = {
       id: parseInt(x.id),
       name: {en: cleanStr(x.name), ru: ""},
-      add_name: cleanStr(x.add_name),
+      add_name: {en: cleanStr(x.add_name), ru: ""},
       desc: cleanStr(x.description)
     }
 
     const ru = langRuById.get(x.id)
     if (ru) {
       itemName.name.ru = ru.name
+      itemName.add_name.ru = ru.add_name
     }
     
     return itemName

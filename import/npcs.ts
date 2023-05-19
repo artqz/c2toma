@@ -6,9 +6,11 @@ import { loadNpcNamesC2 } from "../datapack/c2/npcnames";
 import { loadNpcDataC4 } from "../datapack/c4/npcdata";
 import { loadSkillDataC4 } from "../datapack/c4/skilldata";
 import { loadSkillIconsGF } from "../datapack/gf/skillgrp";
-import { loadSkillNamesGF } from "../datapack/gf/skillnames";
+// import { loadSkillNamesGF } from "../datapack/gf/skillnames";
 import { Item, Npc, NpcDrop, Skill } from "../result/types";
 import { NpcDataEntry } from "./types";
+import { loadNpcNamesGF } from '../datapack/gf/npcnames';
+import { loadNpcDataGF } from '../datapack/gf/npcdata';
 
 function loadNpcJson(path: string, filename: string) {
   const map = Fs.readFileSync(Path.join(path, filename), "utf8");
@@ -21,7 +23,7 @@ export function loadNpcs(deps: {
 }) {
   let npcs = loadTomaNpcs(deps);
   npcs = loadC4Npcs({ ...deps, npcsToma: npcs });
-  
+  npcs = runames({npcs})
   console.log("NPCs loaded.");
 
   return npcs;
@@ -205,7 +207,7 @@ function getDrop(
 function skillsC4GF() {
   const skillDataC4 = loadSkillDataC4();
   const skillIcons = loadSkillIconsGF();
-  const skillNames = loadSkillNamesGF();
+  // const skillNames = loadSkillNamesGF();
 
   const skillsMap = new Map<string, Skill>();
 
@@ -244,18 +246,34 @@ function skillsC4GF() {
   }
 
   //add names
-  for (const skillName of skillNames) {
-    const skill = skillsMap.get(skillName.id + "_" + skillName.level);
-    if (skill) {
-      skillsMap.set(skillName.id + "_" + skillName.level, {
-        ...skill,
-        name: skillName.name,
-        desc: skillName.desc,
-      });
-    }
-  }
+  // for (const skillName of skillNames) {
+  //   const skill = skillsMap.get(skillName.id + "_" + skillName.level);
+  //   if (skill) {
+  //     skillsMap.set(skillName.id + "_" + skillName.level, {
+  //       ...skill,
+  //       name: skillName.name,
+  //       desc: skillName.desc,
+  //     });
+  //   }
+  // }
 
   return skillsMap;
+}
+
+function runames(deps: {
+  npcs: Map<number, Npc>;
+}) {
+  const npcdataGF = new Map (loadNpcDataGF().map((npc) => [npc.$[1], npc]))
+  const npcnamesGF = new Map (loadNpcNamesGF().map((npc) => [npc.id, npc]))
+  let npcnameByName =  new Map ()
+  for (const dNpc of npcdataGF.values()) {
+    const nNpc = npcnamesGF.get(dNpc.$[1])
+    if (nNpc) {
+      npcnameByName.set(dNpc.$[2], nNpc)
+    }
+    
+  }
+  return deps.npcs
 }
 
 type DropList = {

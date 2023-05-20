@@ -5,8 +5,8 @@ export type lstring = { en: string; ru: string };
 export type Npc = {
   id: Int;
   npcName: string;
-  name: string;
-  nick: string;
+  name: lstring;
+  nick: lstring;
   nickColor: "default" | "quest" | "raid";
   type: string;
   ai: string;
@@ -49,8 +49,8 @@ export type NpcSpawn = {
 export type Skill = {
   id: Int;
   skillName: string;
-  name: string;
-  desc: string;
+  name: lstring;
+  desc: lstring;
   level: Int | null;
   operateType: string | null;
   effectTime: number | undefined;
@@ -64,8 +64,8 @@ export type Item = {
   type: string;
   icon: string;
   name: lstring;
-  addName: string;
-  desc: string;
+  addName: lstring;
+  desc: lstring;
   weaponType: string;
   armorType: string;
   etcitemType: string | null;
@@ -122,17 +122,17 @@ export type Merchant = {
 
 export type ItemAbilityList = {
   itemName: string;
-  abilityList: ShortItem[]
-}
+  abilityList: ShortItem[];
+};
 
 export type Set = {
   id: Int;
   setName: string;
-  name: string;
-  desc: string;
+  name: lstring;
+  desc: lstring;
   setEffectSkill: string;
-  setList: ShortItem[]
-}
+  setList: ShortItem[];
+};
 
 export type ShortItem = {
   itemName: string;
@@ -146,8 +146,8 @@ export type NpcDrop = {
 };
 
 export type DropList = {
-  npcName: string
-  dropList: NpcDrop[]
+  npcName: string;
+  dropList: NpcDrop[];
 };
 
 export type ItemDrop = {

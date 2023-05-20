@@ -2,10 +2,10 @@ import { parse as parseCsv } from "csv-parse/sync";
 import Fs from "fs";
 import { z } from "zod";
 
-type NpcNameEntry = {
+export type NpcNameEntry = {
   id: number;
-  name: {en: string, ru: string};
-  nick: {en: string, ru: string};
+  name: { en: string; ru: string };
+  nick: { en: string; ru: string };
   nickcolor: "default" | "quest" | "raid";
 };
 
@@ -25,8 +25,15 @@ const EntryGF = z.object({
 });
 
 export function loadNpcNamesGF(): NpcNameEntry[] {
-  const json = parseCsv(
-    Fs.readFileSync("datapack/gf/npcname-e.txt", "utf8"),
+  const json = parseCsv(Fs.readFileSync("datapack/gf/npcname-e.txt", "utf8"), {
+    delimiter: "\t",
+    relaxQuotes: true,
+    columns: true,
+    bom: true,
+  });
+
+  const jsonRu = parseCsv(
+    Fs.readFileSync("datapack/gf/npcname-ru.txt", "utf8"),
     {
       delimiter: "\t",
       relaxQuotes: true,
@@ -35,33 +42,26 @@ export function loadNpcNamesGF(): NpcNameEntry[] {
     }
   );
 
-
-const jsonRu = parseCsv(Fs.readFileSync("datapack/gf/npcname-ru.txt", "utf8"), {
-    delimiter: "\t",
-    relaxQuotes: true,
-    columns: true,
-    bom: true,
-  });
-
   let data = EntryGF.array().parse(json);
   let dataRu = EntryGF.array().parse(jsonRu);
 
-  const langRuById = new Map(dataRu.map(d => [d.id, d]))
+  const langRuById = new Map(dataRu.map((d) => [d.id, d]));
 
   return data.map((x) => {
     const itemName: NpcNameEntry = {
       id: parseInt(x.id),
-      name: {en: cleanStr(x.name), ru: ""},      
-      nick: {en: cleanStr(x.description), ru: ""},   
-      nickcolor: getNickColor(x['rgb[0]'])
+      name: { en: cleanStr(x.name), ru: "" },
+      nick: { en: cleanStr(x.description), ru: "" },
+      nickcolor: getNickColor(x["rgb[0]"]),
+    };
+
+    const ru = langRuById.get(x.id);
+    if (ru) {
+      itemName.name.ru = cleanStr(ru.name);
+      itemName.nick.ru = cleanStr(ru.description);
     }
 
-    const ru = langRuById.get(x.id)
-    if (ru) {
-      itemName.name.ru = ru.name
-    }
-    
-    return itemName
+    return itemName;
   });
 }
 

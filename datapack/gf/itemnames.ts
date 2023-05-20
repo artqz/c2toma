@@ -3,9 +3,9 @@ import Fs from "fs";
 import { z } from "zod";
 
 type lstring = {
-  en: string,
-  ru: string
-}
+  en: string;
+  ru: string;
+};
 type ItemNameEntry = {
   id: number;
   add_name: lstring;
@@ -27,7 +27,6 @@ const EntryGF = z.object({
 });
 
 export function loadItemNamesGF(): ItemNameEntry[] {
-
   const json = parseCsv(Fs.readFileSync("datapack/gf/itemname-e.txt", "utf8"), {
     delimiter: "\t",
     relaxQuotes: true,
@@ -35,32 +34,35 @@ export function loadItemNamesGF(): ItemNameEntry[] {
     bom: true,
   });
 
-  const jsonRu = parseCsv(Fs.readFileSync("datapack/gf/itemname-ru.txt", "utf8"), {
-    delimiter: "\t",
-    relaxQuotes: true,
-    columns: true,
-    bom: true,
-  });
+  const jsonRu = parseCsv(
+    Fs.readFileSync("datapack/gf/itemname-ru.txt", "utf8"),
+    {
+      delimiter: "\t",
+      relaxQuotes: true,
+      columns: true,
+      bom: true,
+    }
+  );
 
   let data = EntryGF.array().parse(json);
   let dataRu = EntryGF.array().parse(jsonRu);
 
-  const langRuById = new Map(dataRu.map(d => [d.id, d]))
+  const langRuById = new Map(dataRu.map((d) => [d.id, d]));
 
   return data.map((x) => {
     const itemName: ItemNameEntry = {
       id: parseInt(x.id),
-      name: {en: cleanStr(x.name), ru: ""},
-      add_name: {en: cleanStr(x.add_name), ru: ""},
-      desc: cleanStr(x.description)
+      name: { en: cleanStr(x.name), ru: "" },
+      add_name: { en: cleanStr(x.add_name), ru: "" },
+      desc: cleanStr(x.description),
+    };
+
+    const ru = langRuById.get(x.id);
+    if (ru) {
+      itemName.name.ru = cleanStr(ru.name);
+      itemName.add_name.ru = cleanStr(ru.add_name);
     }
 
-    const ru = langRuById.get(x.id)
-    if (ru) {
-      itemName.name.ru = ru.name
-      itemName.add_name.ru = ru.add_name
-    }
-    
-    return itemName
+    return itemName;
   });
 }

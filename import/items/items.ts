@@ -3,10 +3,10 @@ import { loadItemGrpC2 } from "../../datapack/c2/itemgrp";
 import { ItemEntryC2, loadItemNamesC2 } from "../../datapack/c2/itemnames";
 import { loadItemDataC4 } from "../../datapack/c4/itemdata";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
-import { loadItemNamesGF } from '../../datapack/gf/itemnames';
+import { loadItemNamesGF } from "../../datapack/gf/itemnames";
 import { Item, ShortItem, lstring } from "../../result/types";
-import { loadItemSetList } from './itemSetList';
-import { loadItemAbilityList } from './itemAbilityList';
+import { loadItemSetList } from "./itemSetList";
+import { loadItemAbilityList } from "./itemAbilityList";
 
 export function loadItems() {
   const itemnamesC2 = new Map(loadItemNamesC2().map((npc) => [npc.id, npc]));
@@ -20,10 +20,10 @@ export function loadItems() {
 }
 
 function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
-  const items = new Map<number, Item>();  
+  const items = new Map<number, Item>();
   const itemsC4 = new Map(loadItemDataC4().map((item) => [item.$[1], item]));
-  
-  const namesGF = loadNamesGf()
+
+  const namesGF = loadNamesGf();
   // for (const tItem of loadItemDataGF()) {
   //   if (tItem.$.length > 3) {
   //     console.log(tItem.t);
@@ -36,14 +36,18 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
       console.log("Нет", itemC2.id, itemC2.name);
     } else {
       // if (itemC4.t === "item") {
-      const itemnameGF = namesGF.get(itemC2.id)
+      const itemnameGF = namesGF.get(itemC2.id);
       items.set(itemC2.id, {
         id: itemC4.$[1]!,
         itemName: itemC4.$[2]!.toString().replace(":", "_"),
         //name: itemC2.name.length ? itemC2.name : itemnameGF?.name ?? itemC4.$[2]!.toString().replace(":", "_"),
-        name: {en: itemC2.name ?? "", ru: itemnameGF?.name.ru ?? ""},
-        addName: itemC2.name !== itemC2.additionalname ? itemC2.additionalname : "",
-        desc: itemC2.description  ?? "",
+        name: { en: itemC2.name ?? "", ru: itemnameGF?.name.ru ?? "" },
+        addName: {
+          en:
+            itemC2.name !== itemC2.additionalname ? itemC2.additionalname : "",
+          ru: itemnameGF?.add_name.ru ?? "",
+        },
+        desc: { en: itemC2.description ?? "", ru: "" },
         icon: "",
         armorType: itemC4.armor_type!,
         attackRange: itemC4.attack_range!,
@@ -128,63 +132,70 @@ function loadC2Icons(items: Map<number, Item>) {
 //     if (set.hasOwnProperty("slot_head") && set.slot_head) {
 //       const item = items.get(set.slot_head)
 //       if (item) {
-//         setItems.push({itemName: item.itemName})     
-//       } 
+//         setItems.push({itemName: item.itemName})
+//       }
 //     }
 //     if (set.hasOwnProperty("slot_chest") && set.slot_chest) {
 //       const item = items.get(set.slot_chest)
 //       if (item) {
-//         setItems.push({itemName: item.itemName})     
-//       } 
-//     }    
+//         setItems.push({itemName: item.itemName})
+//       }
+//     }
 //     if (set.hasOwnProperty("slot_legs") && set.slot_legs) {
 //       const item = items.get(set.slot_legs)
 //       if (item) {
-//         setItems.push({itemName: item.itemName})     
-//       } 
+//         setItems.push({itemName: item.itemName})
+//       }
 //     }
 //     if (set.hasOwnProperty("slot_gloves") && set.slot_gloves) {
 //       const item = items.get(set.slot_gloves)
 //       if (item) {
-//         setItems.push({itemName: item.itemName})      
-//       } 
+//         setItems.push({itemName: item.itemName})
+//       }
 //     }
 //     if (set.hasOwnProperty("slot_feet") && set.slot_feet) {
 //       const item = items.get(set.slot_feet)
 //       if (item) {
-//         setItems.push({itemName: item.itemName})   
-//       } 
+//         setItems.push({itemName: item.itemName})
+//       }
 //     }
 //     if (set.hasOwnProperty("slot_lhand") && set.slot_lhand) {
 //       const item = items.get(set.slot_lhand)
 //       if (item) {
-//         setItems.push({itemName: item.itemName})      
-//       } 
+//         setItems.push({itemName: item.itemName})
+//       }
 //     }
 //     if (setItems.length > 0) {
-//       if (typeof set.$[0] === 'number') {    
+//       if (typeof set.$[0] === 'number') {
 //         for (const si of setItems) {
 //           const item = itemByName.get(si.itemName)
 //           if (item) {
 //             item.sets.push({id: set.$[0], setEffectSkill: set.set_effect_skill ?? "", items: setItems})
 //             items.set(item.id, {...item})
-//           }          
+//           }
 //         }
 //       }
-//     }  
-    
+//     }
+
 //   }
-  
+
 //   return items
 // }
 
 function loadNamesGf() {
-  const itemnameMap = new Map<number, {name: lstring, desc: string}> ()
+  const itemnameMap = new Map<
+    number,
+    { name: lstring; add_name: lstring; desc: string }
+  >();
   for (const name of loadItemNamesGF()) {
-    itemnameMap.set(name.id, {name:name.name, desc:name.desc})
+    itemnameMap.set(name.id, {
+      name: name.name,
+      add_name: name.add_name,
+      desc: name.desc,
+    });
   }
 
-  return itemnameMap
+  return itemnameMap;
 }
 
 export const Slot = z.enum([
@@ -217,7 +228,7 @@ export type Slot = z.infer<typeof Slot>;
 export const asSlot = Slot.parse;
 
 type ItemC2 = {
-  id: number,
-  itemName: string
-}
-const itemsC2 = new Map<number, ItemC2>([[1, {id:1, itemName: ""}]])
+  id: number;
+  itemName: string;
+};
+const itemsC2 = new Map<number, ItemC2>([[1, { id: 1, itemName: "" }]]);

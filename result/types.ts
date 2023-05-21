@@ -131,7 +131,7 @@ export type Set = {
   name: lstring;
   desc: lstring;
   setEffectSkill: string;
-  setList: ShortItem[];
+  items: ShortItem[];
 };
 
 export type ShortItem = {

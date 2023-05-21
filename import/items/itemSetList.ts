@@ -71,12 +71,12 @@ function loadC2Sets(deps: {
     if (setItems.length > 0) {
       //39 и выше сеты из хроник выше
       if (typeof set.$[0] === "number" && set.$[0] < 39) {
-        const setList: ShortItem[] = [];
+        const items: ShortItem[] = [];
 
         for (const si of setItems) {
           const item = itemByName.get(si.itemName);
           if (item) {
-            setList.push({ itemName: item.itemName });
+            items.push({ itemName: item.itemName });
           }
         }
 
@@ -88,7 +88,7 @@ function loadC2Sets(deps: {
             name: skill.name,
             desc: skill.desc,
             setEffectSkill: skill.skillName,
-            setList,
+            items,
           });
         }
       }

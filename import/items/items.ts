@@ -47,7 +47,7 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
             itemC2.name !== itemC2.additionalname ? itemC2.additionalname : "",
           ru: itemnameGF?.add_name.ru ?? "",
         },
-        desc: { en: itemC2.description ?? "", ru: "" },
+        desc: { en: itemC2.description ?? "", ru: itemC2.description ?? "" },
         icon: "",
         armorType: itemC4.armor_type!,
         attackRange: itemC4.attack_range!,

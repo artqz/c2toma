@@ -120,7 +120,7 @@ function loadC4Names(skills: Map<string, Skill>) {
         skillsNew.set(skill.id + "_" + skill.level, {
           ...skill,
           name: { en: name ?? "", ru: gfName.name.ru },
-          desc: { en: desc ?? "", ru: "" },
+          desc: { en: desc ?? "", ru: desc ?? "" },
         });
       }
     }

@@ -128,6 +128,7 @@ export type ItemAbilityList = {
 export type Set = {
   id: Int;
   setName: string;
+  icon: string;
   name: lstring;
   desc: lstring;
   setEffectSkill: string;

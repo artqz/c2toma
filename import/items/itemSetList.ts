@@ -85,6 +85,7 @@ function loadC2Sets(deps: {
           itemSetList.set(set.$[0], {
             id: set.$[0],
             setName: slug(skill.name.en, "_"),
+            icon: skill.icon.replace("icon.", ""),
             name: skill.name,
             desc: skill.desc,
             setEffectSkill: skill.skillName,

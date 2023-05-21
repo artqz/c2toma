@@ -40,8 +40,8 @@ function loadC4Skills() {
     skills.set(skillC4.skill_id + "_" + skillC4.level, {
       id: skillC4.skill_id,
       skillName: skillC4.skill_name.replace(" ", "_"),
-      name: { en: skillC2?.name ?? "", ru: "" },
-      desc: { en: skillC2?.desc ?? "", ru: "" },
+      name: { en: skillC2?.name.trim() ?? "", ru: "" },
+      desc: { en: skillC2?.desc?.trim() ?? "", ru: "" },
       level: skillC4.level,
       icon: "",
       operateType: skillC4.operate_type,
@@ -119,8 +119,8 @@ function loadC4Names(skills: Map<string, Skill>) {
       if (gfName) {
         skillsNew.set(skill.id + "_" + skill.level, {
           ...skill,
-          name: { en: name ?? "", ru: gfName.name.ru },
-          desc: { en: desc ?? "", ru: desc ?? "" },
+          name: { en: name.trim() ?? "", ru: gfName.name.ru.trim() },
+          desc: { en: desc.trim() ?? "", ru: desc.trim() ?? "" },
         });
       }
     }

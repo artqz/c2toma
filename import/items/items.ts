@@ -41,13 +41,21 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         id: itemC4.$[1]!,
         itemName: itemC4.$[2]!.toString().replace(":", "_"),
         //name: itemC2.name.length ? itemC2.name : itemnameGF?.name ?? itemC4.$[2]!.toString().replace(":", "_"),
-        name: { en: itemC2.name ?? "", ru: itemnameGF?.name.ru ?? "" },
+        name: {
+          en: itemC2.name.trim() ?? "",
+          ru: itemnameGF?.name.ru.trim() ?? "",
+        },
         addName: {
           en:
-            itemC2.name !== itemC2.additionalname ? itemC2.additionalname : "",
-          ru: itemnameGF?.add_name.ru ?? "",
+            itemC2.name !== itemC2.additionalname.trim()
+              ? itemC2.additionalname.trim()
+              : "",
+          ru: itemnameGF?.add_name.ru.trim() ?? "",
         },
-        desc: { en: itemC2.description ?? "", ru: itemC2.description ?? "" },
+        desc: {
+          en: itemC2.description.trim() ?? "",
+          ru: itemC2.description.trim() ?? "",
+        },
         icon: "",
         armorType: itemC4.armor_type!,
         attackRange: itemC4.attack_range!,

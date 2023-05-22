@@ -132,6 +132,7 @@ export type Set = {
   name: lstring;
   desc: lstring;
   setEffectSkill: string;
+  setAdditionalEffectSkill: string;
   items: ShortItem[];
 };
 

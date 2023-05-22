@@ -30,7 +30,7 @@ function loadC2Sets(deps: {
       .map((item) => [item.$[0], item])
   );
   const itemSetList = new Map<number, Set>();
-  let setIcon = ""
+  let setIcon = "";
 
   for (const set of setsC4.values()) {
     const setItems: ShortItem[] = [];
@@ -43,7 +43,7 @@ function loadC2Sets(deps: {
     if (set.hasOwnProperty("slot_chest") && set.slot_chest) {
       const item = deps.items.get(set.slot_chest);
       if (item) {
-        setIcon = item.icon
+        setIcon = item.icon;
         setItems.push({ itemName: item.itemName });
       }
     }
@@ -84,6 +84,7 @@ function loadC2Sets(deps: {
         }
 
         const skill = skillByName.get(set.set_effect_skill!);
+        const skill2 = skillByName.get(set.set_additional_effect_skill!);
         if (skill) {
           itemSetList.set(set.$[0], {
             id: set.$[0],
@@ -92,6 +93,7 @@ function loadC2Sets(deps: {
             name: skill.name,
             desc: skill.desc,
             setEffectSkill: skill.skillName,
+            setAdditionalEffectSkill: skill2 ? skill2.skillName : "none",
             items,
           });
         }

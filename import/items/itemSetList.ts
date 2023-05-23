@@ -85,6 +85,7 @@ function loadC2Sets(deps: {
 
         const skill = skillByName.get(set.set_effect_skill!);
         const skill2 = skillByName.get(set.set_additional_effect_skill!);
+
         if (skill) {
           itemSetList.set(set.$[0], {
             id: set.$[0],
@@ -103,3 +104,5 @@ function loadC2Sets(deps: {
 
   return itemSetList;
 }
+
+

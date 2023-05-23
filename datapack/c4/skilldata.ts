@@ -1,14 +1,7 @@
 import Fs from "fs";
 import { z } from "zod";
 
-const SkillEntryC4 = z.object({
-  skill_name: z.string(),
-  skill_id: z.number(),
-  level: z.number(),
-  operate_type: z.string(),
-  abnormal_time: z.number().optional(),
-  debuff: z.number().optional(),
-  effect: z.object({$: z.array(z.object({
+const SkillEffect = z.object({$: z.array(z.object({
     $: z.union([     
       z.tuple([
         z.string(), 
@@ -28,10 +21,8 @@ const SkillEntryC4 = z.object({
         z.union([z.string(), z.number()])]),
       z.tuple([
         z.string(), 
-        z.union([
-          z.string(), 
-          z.number()]), 
-          z.union([z.string(), z.number()])]),
+        z.union([z.string(), z.number()]), 
+        z.union([z.string(), z.number()])]),
       z.tuple([z.string(), z.union([
         z.string(), 
         z.number(), 
@@ -41,9 +32,19 @@ const SkillEntryC4 = z.object({
   }
   )).optional()
   })
+
+const SkillEntryC4 = z.object({
+  skill_name: z.string(),
+  skill_id: z.number(),
+  level: z.number(),
+  operate_type: z.string(),
+  abnormal_time: z.number().optional(),
+  debuff: z.number().optional(),
+  effect: SkillEffect
 });
 
 export type SkillEntryC4 = z.infer<typeof SkillEntryC4>;
+export type SkillEnffect = z.infer<typeof SkillEffect>;
 
 export function loadSkillDataJson(path: string): SkillEntryC4[] {
   const src = Fs.readFileSync(path, "utf8");

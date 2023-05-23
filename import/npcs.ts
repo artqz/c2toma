@@ -212,6 +212,7 @@ function skillsC4GF() {
   const skillsMap = new Map<string, Skill>();
 
   //add data
+  // переписать без skillDataC4.values()
   for (const skillData of skillDataC4.values()) {
     skillsMap.set(skillData.skill_id + "_" + skillData.level, {
       id: skillData.skill_id,
@@ -221,6 +222,7 @@ function skillsC4GF() {
       icon: "",
       operateType: skillData.operate_type,
       skillName: skillData.skill_name,
+      effect: [],
       effectTime: skillData.abnormal_time,
       effectType:
         skillData.debuff === undefined

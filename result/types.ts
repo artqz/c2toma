@@ -53,6 +53,7 @@ export type Skill = {
   desc: lstring;
   level: Int | null;
   operateType: string | null;
+  effect: string[];
   effectTime: number | undefined;
   effectType: "debuff" | "buff" | "song" | undefined;
   icon: string;

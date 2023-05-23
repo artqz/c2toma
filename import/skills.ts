@@ -1,4 +1,4 @@
-import { number, string } from 'zod';
+import { number, string } from "zod";
 import { loadSkillGrpC2 } from "../datapack/c2/skillgrp";
 import { loadSkillNamesC2 } from "../datapack/c2/skillnames";
 import { SkillEnffect, loadSkillDataC4 } from "../datapack/c4/skilldata";
@@ -34,7 +34,7 @@ function loadC4Skills() {
   );
   const skills = new Map<string, Skill>();
   // for (const skillC2 of Array.from(skillnamesC2.values())) {
-  const effectNameMap = new Map<string, string>()
+  const effectNameMap = new Map<string, string>();
   for (const skillC4 of Array.from(skillsC4.values())) {
     // const skillC4 = skillsC4.get(skillC2.skill_id + "_" + skillC2.skill_level);
     const skillC2 = skillnamesC2.get(skillC4.skill_id + "_" + skillC4.level);
@@ -45,9 +45,9 @@ function loadC4Skills() {
       name: { en: skillC2?.name.trim() ?? "", ru: "" },
       desc: { en: skillC2?.desc?.trim() ?? "", ru: "" },
       level: skillC4.level,
-      icon: "",      
+      icon: "",
       operateType: skillC4.operate_type,
-      effect: effectReader({map: effectNameMap, effect:skillC4.effect}),
+      effect: effectReader({ map: effectNameMap, effect: skillC4.effect }),
       effectTime: skillC4.abnormal_time,
       effectType:
         skillC4.debuff === undefined
@@ -61,7 +61,7 @@ function loadC4Skills() {
     });
   }
   console.log(effectNameMap);
-  
+
   return skills;
 }
 
@@ -132,48 +132,76 @@ function loadC4Names(skills: Map<string, Skill>) {
   return skillsNew;
 }
 
-function effectReader(deps: {map: Map<string, string>, effect: SkillEnffect}) {
-  
-  deps.effect.$?.map(e => {
+function effectReader(deps: {
+  map: Map<string, string>;
+  effect: SkillEnffect;
+}) {
+  deps.effect.$?.map((e) => {
     switch (e.$[0]) {
       case "i_p_attack_over_hit":
-        // console.log(`Power: ${e.$[1]}`);        
+        // console.log(`Power: ${e.$[1]}`);
         break;
       case "p_speed":
-        // console.log(`Movement Speed: ${getParam(e.$[1])}`);        
+        // console.log(`Movement Speed: ${getParam(e.$[1])}`);
         break;
       default:
         break;
     }
-    deps.map.set(e.$[0], `${govno(e.$[0])} ${e.$[1]} ${e.$[2]} ${e.$[3]} ${e.$[4]}`)
-  }  )
-  
-  
-  return []
+    deps.map.set(
+      govno(e.$[0]),
+      `${govno(e.$[0])} ${e.$[1]} ${e.$[2]} ${e.$[3]} ${e.$[4]}`
+    );
+  });
+
+  return [];
 }
 
-function govno(param: string){
-  const split = param.split('_');
-  return `first: ${split[0]}, last: ${split[split.length - 1]}`
+function govno(param: string) {
+  const split = param.split("_");
+  const prefix = split[0];
+  const postfix = split[split.length - 1];
+  // if (prefix === "i") {
+  //   return "i";
+  // }
+  // if (prefix === "p") {
+  //   return "p";
+  // }
+  // if (prefix === "t") {
+  //   return "t";
+  // }
+  // if (prefix === "c") {
+  //   return "c";
+  // }
+  // //cub
+  // else {
+  return postfix;
+  //   return "cub";
+  // }
 }
 
-function getParam (param: string | number | {
-    $: string[];
-} | {
-    $: {
-        $: any[];
-    }[];
-} | undefined) {
+function getParam(
+  param:
+    | string
+    | number
+    | {
+        $: string[];
+      }
+    | {
+        $: {
+          $: any[];
+        }[];
+      }
+    | undefined
+) {
   if (typeof param === "string") {
-    return `string: ${param}`;    
+    return `string: ${param}`;
   }
   if (typeof param === "number") {
     return `number: ${param}`;
   }
   if (typeof param === "object") {
     return `object: ${JSON.stringify(param.$)}`;
-  }
-  else {
+  } else {
     return `govno: ${param}`;
   }
 }
@@ -369,3 +397,104 @@ function getParam (param: string | number | {
 //   'i_m_attack_by_dist' => 'i_m_attack_by_dist',
 //   'cub_block_act' => 'cub_block_act'
 // }
+
+// 'hit'
+//   'speed'
+//   'blow'
+//   'slot'
+//   'heal'
+//   'drain'
+//   'attack'
+//   'defence'
+//   'avoid'
+//   'act'
+//   'weapon'
+//   'attribute'
+//   'range'
+//   'hp'
+//   'max'
+//   'rate'
+//   'delay'
+//   'regen'
+//   'damage'
+//   'luck'
+//   'cp'
+//   'mp'
+//   'number'
+//   'rest'
+//   'penalty'
+//   'possess'
+//   'level'
+//   'cancel'
+//   'summon'
+//   'move'
+//   'mode'
+//   'camp'
+//   'hate'
+//   'unlock'
+//   'contribution'
+//   'energy'
+//   'item'
+//   'height'
+//   'breath'
+//   'crystallize'
+//   'resurrection'
+//   'away'
+//   'confuse'
+//   'body'
+//   'self'
+//   'sweeper'
+//   'spoil'
+//   'cubic'
+//   'me'
+//   'backstab'
+//   'death' => 'death 6 undefined undefined undefined',
+//   'agro' => 'agro 100 undefined undefined undefined',
+//   'shield' => 'shield 20 undefined undefined undefined',
+//   'passive' => 'passive undefined undefined undefined undefined',
+//   'mastery' => 'mastery 5 undefined undefined undefined',
+//   'limit' => 'limit 25 per undefined undefined',
+//   'escape' => 'escape castle undefined undefined undefined',
+//   'category' => 'category slot_debuff 100 undefined undefined',
+//   'spell' => 'spell undefined undefined undefined undefined',
+//   'link' => 'link 65 undefined undefined undefined',
+//   'distrust' => 'distrust 20 20 undefined undefined',
+//   'bonus' => 'bonus back 100 per undefined',
+//   'golem' => 'golem undefined undefined undefined undefined',
+//   'charge' => 'charge 81 undefined undefined undefined',
+//   'hp1' => 'hp1 215.75 diff undefined undefined',
+//   'hp2' => 'hp2 13 diff undefined undefined',
+//   'night' => 'night 3 diff undefined undefined',
+//   'effect' => 'effect -100 per undefined undefined',
+//   'power' => 'power undefined undefined undefined undefined',
+//   'all' => 'all undefined undefined undefined undefined',
+//   'single' => 'single undefined undefined undefined undefined',
+//   'random' => 'random [object Object] undefined undefined undefined',
+//   'cast' => 'cast undefined undefined undefined undefined',
+//   'pumping' => 'pumping 5 undefined undefined undefined',
+//   'reeling' => 'reeling 5 undefined undefined undefined',
+//   'recipebook' => 'recipebook undefined undefined undefined undefined',
+//   'abnormal' => 'abnormal undefined undefined undefined undefined',
+//   'ex' => 'ex undefined undefined undefined undefined',
+//   'restoration' => 'restoration blessed_spiritshot_s 1000 undefined undefined',
+//   'critical' => 'critical int undefined undefined undefined',
+//   'storage'
+//   'probability'
+//   'cost'
+//   'skill'
+//   'physical'
+//   'position'
+//   'direction'
+//   'getdamage'
+//   'buff'
+//   'debuff'
+//   'npc'
+//   'armor'
+//   'shot'
+//   'pet'
+//   'sowing'
+//   'harvesting'
+//   'face'
+//   'color'
+//   'style'
+//   'sp'

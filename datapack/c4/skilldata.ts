@@ -8,6 +8,39 @@ const SkillEntryC4 = z.object({
   operate_type: z.string(),
   abnormal_time: z.number().optional(),
   debuff: z.number().optional(),
+  effect: z.object({$: z.array(z.object({
+    $: z.union([     
+      z.tuple([
+        z.string(), 
+        z.union([z.string(), z.number()]), 
+        z.union([z.string(), z.number()]), 
+        z.union([z.string(), z.number()]), 
+        z.union([z.string(), z.number()])
+      ]),
+      z.tuple([
+        z.string(), 
+        z.union([
+          z.object({$: z.array((z.string()))}), 
+          z.string(),
+          z.number()
+        ]),
+        z.union([z.string(), z.number()]), 
+        z.union([z.string(), z.number()])]),
+      z.tuple([
+        z.string(), 
+        z.union([
+          z.string(), 
+          z.number()]), 
+          z.union([z.string(), z.number()])]),
+      z.tuple([z.string(), z.union([
+        z.string(), 
+        z.number(), 
+        z.object({$: z.array(z.object({$: z.array(z.any())}))})])]),
+      z.tuple([z.string()]),
+  ])
+  }
+  )).optional()
+  })
 });
 
 export type SkillEntryC4 = z.infer<typeof SkillEntryC4>;

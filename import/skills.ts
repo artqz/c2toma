@@ -217,10 +217,16 @@ function effect(params: {effectName: string, prop1:string|null, prop2:string|nul
     case "i_p_attack_over_hit":
       return `Power ${prop1}`
     case "p_speed":
-      return `Movement speed${prop1 ? prop1 : ''} ${prop2}`
+      return chetko(`Movement speed`, prop1, prop2, prop3)
+    case "i_fatal_blow":
+      return  `Power ${prop1}`
     default:
       return params;
   }
+}
+
+function chetko(text: string, prop1:string|null, prop2:string|null, prop3:string|null ) {
+  return `${text}${prop1 ? prop1 : ''} ${prop3 === "diff" ?"+" : ""}${prop2}${prop3 === "per" ? "%" : ""}`
 }
 
 

@@ -6,6 +6,7 @@ import { loadSkillGrpC4 } from "../datapack/c4/skillgrp";
 import { loadSkillNamesC4 } from "../datapack/c4/skillnames";
 import { loadSkillNamesGF } from "../datapack/gf/skillnames";
 import { Skill } from "../result/types";
+import { saveFile } from '../utils/Fs';
 
 export function loadSkills() {
   let skills: Map<string, Skill>;
@@ -47,7 +48,7 @@ function loadC4Skills() {
       level: skillC4.level,
       icon: "",
       operateType: skillC4.operate_type,
-      effect: effectReader({ map: effectNameMap, effect: skillC4.effect }),
+      effect: effectReader({ map: effectNameMap, effect: skillC4.effect, skillName: skillC4.skill_name }),
       effectTime: skillC4.abnormal_time,
       effectType:
         skillC4.debuff === undefined
@@ -60,8 +61,9 @@ function loadC4Skills() {
           : "buff",
     });
   }
-  console.log(effectNameMap);
-
+  //delete
+  saveFile("result/data/effects.json", JSON.stringify(Array.from(effectNameMap.values()), null, 2))
+  //
   return skills;
 }
 
@@ -135,6 +137,7 @@ function loadC4Names(skills: Map<string, Skill>) {
 function effectReader(deps: {
   map: Map<string, string>;
   effect: SkillEnffect;
+  skillName: string;
 }) {
   deps.effect.$?.map((e) => {
     switch (e.$[0]) {
@@ -148,8 +151,8 @@ function effectReader(deps: {
         break;
     }
     deps.map.set(
-      govno(e.$[0]),
-      `${govno(e.$[0])} ${getParam(e.$[1])} ${e.$[2]} ${e.$[3]} ${e.$[4]}`
+      deps.skillName,
+      `skillName: ${deps.skillName}, effect: ${e.$[0]}: ${effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3])})} (${govno(e.$[0])}) ${getParam(e.$[1])} ${e.$[2]} ${e.$[3]} ${e.$[4]}`
     );
   });
 
@@ -202,9 +205,21 @@ function getParam(
   if (typeof param === "object") {   
     // console.log(param.$.length);
     const toStr = param.$.length === 1 ? param.$.join('') : param.$.length === 2 ? param.$.join(' or ') : param.$.join(', ') 
-    return `object: ${toStr}`;
+    return toStr !== "all" ? toStr : null;
   } else {
     return `{govno: ${param}}`;
+  }
+}
+
+function effect(params: {effectName: string, prop1:string|null, prop2:string|null, prop3:string|null}) {
+  const {effectName, prop1, prop2, prop3} = params
+  switch (effectName) {
+    case "i_p_attack_over_hit":
+      return `Power ${prop1}`
+    case "p_speed":
+      return `Movement speed${prop1 ? prop1 : ''} ${prop2}`
+    default:
+      return params;
   }
 }
 

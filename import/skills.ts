@@ -149,7 +149,7 @@ function effectReader(deps: {
     }
     deps.map.set(
       govno(e.$[0]),
-      `${govno(e.$[0])} ${e.$[1]} ${e.$[2]} ${e.$[3]} ${e.$[4]}`
+      `${govno(e.$[0])} ${getParam(e.$[1])} ${e.$[2]} ${e.$[3]} ${e.$[4]}`
     );
   });
 
@@ -174,7 +174,7 @@ function govno(param: string) {
   // }
   // //cub
   // else {
-  return postfix;
+  return prefix+"_"+postfix;
   //   return "cub";
   // }
 }
@@ -194,307 +194,260 @@ function getParam(
     | undefined
 ) {
   if (typeof param === "string") {
-    return `string: ${param}`;
+    return `${param}`;
   }
   if (typeof param === "number") {
-    return `number: ${param}`;
+    return `${param}`;
   }
-  if (typeof param === "object") {
-    return `object: ${JSON.stringify(param.$)}`;
+  if (typeof param === "object") {   
+    // console.log(param.$.length);
+    const toStr = param.$.length === 1 ? param.$.join('') : param.$.length === 2 ? param.$.join(' or ') : param.$.join(', ') 
+    return `object: ${toStr}`;
   } else {
-    return `govno: ${param}`;
+    return `{govno: ${param}}`;
   }
 }
 
-// {
-//   'i_p_attack_over_hit' => 'i_p_attack_over_hit',
-//   'p_speed' => 'p_speed',
-//   'i_fatal_blow' => 'i_fatal_blow',
-//   'i_dispel_by_slot' => 'i_dispel_by_slot',
-//   'i_heal' => 'i_heal',
-//   'i_hp_drain' => 'i_hp_drain',
-//   'p_physical_attack' => 'p_physical_attack',
-//   'p_physical_defence' => 'p_physical_defence',
-//   'p_avoid' => 'p_avoid',
-//   'p_block_act' => 'p_block_act',
-//   'p_attack_speed_by_weapon' => 'p_attack_speed_by_weapon',
-//   'i_m_attack' => 'i_m_attack',
-//   'p_defence_attribute' => 'p_defence_attribute',
-//   'p_attack_range' => 'p_attack_range',
-//   'p_attack_speed' => 'p_attack_speed',
-//   'p_max_hp' => 'p_max_hp',
-//   'i_hp_per_max' => 'i_hp_per_max',
-//   't_hp' => 't_hp',
-//   'p_critical_rate' => 'p_critical_rate',
-//   'p_magical_defence' => 'p_magical_defence',
-//   'p_shield_defence_rate' => 'p_shield_defence_rate',
-//   'p_magic_speed' => 'p_magic_speed',
-//   'p_reuse_delay' => 'p_reuse_delay',
-//   'p_mp_regen' => 'p_mp_regen',
-//   'p_critical_damage' => 'p_critical_damage',
-//   'p_luck' => 'p_luck',
-//   'p_max_cp' => 'p_max_cp',
-//   'p_hp_regen' => 'p_hp_regen',
-//   'p_max_mp' => 'p_max_mp',
-//   'p_hit_number' => 'p_hit_number',
-//   'c_rest' => 'c_rest',
-//   'p_remove_equip_penalty' => 'p_remove_equip_penalty',
-//   'i_holything_possess' => 'i_holything_possess',
-//   'i_mp_by_level' => 'i_mp_by_level',
-//   'p_magical_attack' => 'p_magical_attack',
-//   'p_reduce_cancel' => 'p_reduce_cancel',
-//   'i_summon' => 'i_summon',
-//   'p_block_move' => 'p_block_move',
-//   'p_hit' => 'p_hit',
-//   'p_hp_regen_by_move_mode' => 'p_hp_regen_by_move_mode',
-//   'p_mp_regen_by_move_mode' => 'p_mp_regen_by_move_mode',
-//   'p_avoid_by_move_mode' => 'p_avoid_by_move_mode',
-//   'p_attack_attribute' => 'p_attack_attribute',
-//   'i_install_camp' => 'i_install_camp',
-//   'i_randomize_hate' => 'i_randomize_hate',
-//   'i_add_hate' => 'i_add_hate',
-//   'i_unlock' => 'i_unlock',
-//   'i_give_contribution' => 'i_give_contribution',
-//   'i_focus_energy' => 'i_focus_energy',
-//   'i_energy_attack' => 'i_energy_attack',
-//   'p_create_item' => 'p_create_item',
-//   'p_safe_fall_height' => 'p_safe_fall_height',
-//   'p_breath' => 'p_breath',
-//   'p_crystallize' => 'p_crystallize',
-//   'c_mp' => 'c_mp',
-//   'i_resurrection' => 'i_resurrection',
-//   'i_delete_hate' => 'i_delete_hate',
-//   'i_run_away' => 'i_run_away',
-//   't_mp' => 't_mp',
-//   'i_confuse' => 'i_confuse',
-//   'i_consume_body' => 'i_consume_body',
-//   'i_hp_by_level_self' => 'i_hp_by_level_self',
-//   'i_mp' => 'i_mp',
-//   'i_sweeper' => 'i_sweeper',
-//   'i_mp_by_level_self' => 'i_mp_by_level_self',
-//   'i_spoil' => 'i_spoil',
-//   'c_mp_by_level' => 'c_mp_by_level',
-//   'i_summon_dd_cubic' => 'i_summon_dd_cubic',
-//   'i_delete_hate_of_me' => 'i_delete_hate_of_me',
-//   'i_summon_drain_cubic' => 'i_summon_drain_cubic',
-//   'i_backstab' => 'i_backstab',
-//   'i_summon_debuff_cubic' => 'i_summon_debuff_cubic',
-//   'c_fake_death' => 'c_fake_death',
-//   'p_avoid_agro' => 'p_avoid_agro',
-//   'i_summon_heal_cubic' => 'i_summon_heal_cubic',
-//   'i_p_attack' => 'i_p_attack',
-//   'p_damage_shield' => 'p_damage_shield',
-//   'p_passive' => 'p_passive',
-//   'p_cubic_mastery' => 'p_cubic_mastery',
-//   'p_weight_limit' => 'p_weight_limit',
-//   'c_hp' => 'c_hp',
-//   'i_summon_poison_cubic' => 'i_summon_poison_cubic',
-//   'i_escape' => 'i_escape',
-//   'i_dispel_by_category' => 'i_dispel_by_category',
-//   'p_block_spell' => 'p_block_spell',
-//   'i_death_link' => 'i_death_link',
-//   'i_distrust' => 'i_distrust',
-//   'p_pvp_magical_skill_dmg_bonus' => 'p_pvp_magical_skill_dmg_bonus',
-//   'i_register_siege_golem' => 'i_register_siege_golem',
-//   'p_weight_penalty' => 'p_weight_penalty',
-//   'p_mana_charge' => 'p_mana_charge',
-//   'p_transfer_damage_summon' => 'p_transfer_damage_summon',
-//   'p_physical_attack_by_hp1' => 'p_physical_attack_by_hp1',
-//   'p_physical_defence_by_hp1' => 'p_physical_defence_by_hp1',
-//   'p_physical_attack_by_hp2' => 'p_physical_attack_by_hp2',
-//   'p_critical_rate_by_hp2' => 'p_critical_rate_by_hp2',
-//   'p_2h_sword_bonus' => 'p_2h_sword_bonus',
-//   'p_2h_blunt_bonus' => 'p_2h_blunt_bonus',
-//   'i_m_attack_over_hit' => 'i_m_attack_over_hit',
-//   'p_vampiric_attack' => 'p_vampiric_attack',
-//   'p_hit_at_night' => 'p_hit_at_night',
-//   'p_area_damage' => 'p_area_damage',
-//   'p_heal_effect' => 'p_heal_effect',
-//   'c_chameleon_rest' => 'c_chameleon_rest',
-//   'i_summon_paralyze_cubic' => 'i_summon_paralyze_cubic',
-//   'i_summon_water_dot_cubic' => 'i_summon_water_dot_cubic',
-//   'i_summon_shock_cubic' => 'i_summon_shock_cubic',
-//   'i_transmit_m_power' => 'i_transmit_m_power',
-//   'i_remove_m_power' => 'i_remove_m_power',
-//   'i_physical_attack_hp_link' => 'i_physical_attack_hp_link',
-//   'p_physical_shield_defence_angle_all' => 'p_physical_shield_defence_angle_all',
-//   'p_physical_polarm_target_single' => 'p_physical_polarm_target_single',
-//   'p_physical_shield_defence' => 'p_physical_shield_defence',
-//   'p_physical_armor_hit' => 'p_physical_armor_hit',
-//   'p_magic_critical_rate' => 'p_magic_critical_rate',
-//   'i_cp' => 'i_cp',
-//   'i_restoration_random' => 'i_restoration_random',
-//   'i_fishing_cast' => 'i_fishing_cast',
-//   'i_fishing_pumping' => 'i_fishing_pumping',
-//   'i_fishing_reeling' => 'i_fishing_reeling',
-//   'p_fishing_mastery' => 'p_fishing_mastery',
-//   'p_create_common_item' => 'p_create_common_item',
-//   'i_open_dwarf_recipebook' => 'i_open_dwarf_recipebook',
-//   'i_open_common_recipebook' => 'i_open_common_recipebook',
-//   'p_preserve_abnormal' => 'p_preserve_abnormal',
-//   'i_install_camp_ex' => 'i_install_camp_ex',
-//   'i_restoration' => 'i_restoration',
-//   'p_reduce_drop_penalty' => 'p_reduce_drop_penalty',
-//   'p_skill_critical' => 'p_skill_critical',
-//   'p_enlarge_storage' => 'p_enlarge_storage',
-//   'p_skill_critical_probability' => 'p_skill_critical_probability',
-//   'p_magic_mp_cost' => 'p_magic_mp_cost',
-//   'p_reflect_skill' => 'p_reflect_skill',
-//   'p_resist_dispel_by_category' => 'p_resist_dispel_by_category',
-//   'p_resist_abnormal_by_category' => 'p_resist_abnormal_by_category',
-//   'i_death' => 'i_death',
-//   'i_target_cancel' => 'i_target_cancel',
-//   'i_rebalance_hp' => 'i_rebalance_hp',
-//   'p_block_skill_physical' => 'p_block_skill_physical',
-//   'p_fatal_blow_rate' => 'p_fatal_blow_rate',
-//   'p_critical_damage_position' => 'p_critical_damage_position',
-//   'p_critical_rate_position_bonus' => 'p_critical_rate_position_bonus',
-//   'i_align_direction' => 'i_align_direction',
-//   'p_block_getdamage' => 'p_block_getdamage',
-//   'p_block_buff' => 'p_block_buff',
-//   'p_block_debuff' => 'p_block_debuff',
-//   'i_dispel_by_slot_probability' => 'i_dispel_by_slot_probability',
-//   'i_target_me' => 'i_target_me',
-//   'i_summon_npc' => 'i_summon_npc',
-//   'i_enchant_weapon' => 'i_enchant_weapon',
-//   'i_enchant_armor' => 'i_enchant_armor',
-//   'i_hp' => 'i_hp',
-//   'i_soul_shot' => 'i_soul_shot',
-//   'i_summon_pet' => 'i_summon_pet',
-//   'i_spirit_shot' => 'i_spirit_shot',
-//   'i_food_for_pet' => 'i_food_for_pet',
-//   'i_sowing' => 'i_sowing',
-//   'i_harvesting' => 'i_harvesting',
-//   'i_change_face' => 'i_change_face',
-//   'i_change_hair_color' => 'i_change_hair_color',
-//   'i_change_hair_style' => 'i_change_hair_style',
-//   'i_mp_per_max' => 'i_mp_per_max',
-//   'i_sp' => 'i_sp',
-//   'i_fishing_shot' => 'i_fishing_shot',
-//   'i_summon_soul_shot' => 'i_summon_soul_shot',
-//   'i_summon_spirit_shot' => 'i_summon_spirit_shot',
-//   'i_teleport' => 'i_teleport',
-//   'p_set_collected' => 'p_set_collected',
-//   'p_pvp_physical_attack_dmg_bonus' => 'p_pvp_physical_attack_dmg_bonus',
-//   'i_hp_self' => 'i_hp_self',
-//   'p_avoid_rate_by_hp2' => 'p_avoid_rate_by_hp2',
-//   'p_attack_speed_by_hp2' => 'p_attack_speed_by_hp2',
-//   'p_pvp_physical_skill_dmg_bonus' => 'p_pvp_physical_skill_dmg_bonus',
-//   'p_abnormal_rate_limit' => 'p_abnormal_rate_limit',
-//   'cub_m_attack' => 'cub_m_attack',
-//   'cub_hp_drain' => 'cub_hp_drain',
-//   'cub_heal' => 'cub_heal',
-//   'cub_hp' => 'cub_hp',
-//   'cub_physical_attack' => 'cub_physical_attack',
-//   'cub_physical_defence' => 'cub_physical_defence',
-//   'cub_attack_speed' => 'cub_attack_speed',
-//   't_hp_fatal' => 't_hp_fatal',
-//   'i_dispel_all' => 'i_dispel_all',
-//   'i_fly_away' => 'i_fly_away',
-//   'p_fear' => 'p_fear',
-//   'p_block_controll' => 'p_block_controll',
-//   'i_save_position' => 'i_save_position',
-//   'i_m_attack_by_dist' => 'i_m_attack_by_dist',
-//   'cub_block_act' => 'cub_block_act'
-// }
 
-// 'hit'
-//   'speed'
-//   'blow'
-//   'slot'
-//   'heal'
-//   'drain'
-//   'attack'
-//   'defence'
-//   'avoid'
-//   'act'
-//   'weapon'
-//   'attribute'
-//   'range'
-//   'hp'
-//   'max'
-//   'rate'
-//   'delay'
-//   'regen'
-//   'damage'
-//   'luck'
-//   'cp'
-//   'mp'
-//   'number'
-//   'rest'
-//   'penalty'
-//   'possess'
-//   'level'
-//   'cancel'
-//   'summon'
-//   'move'
-//   'mode'
-//   'camp'
-//   'hate'
-//   'unlock'
-//   'contribution'
-//   'energy'
-//   'item'
-//   'height'
-//   'breath'
-//   'crystallize'
-//   'resurrection'
-//   'away'
-//   'confuse'
-//   'body'
-//   'self'
-//   'sweeper'
-//   'spoil'
-//   'cubic'
-//   'me'
-//   'backstab'
-//   'death' => 'death 6 undefined undefined undefined',
-//   'agro' => 'agro 100 undefined undefined undefined',
-//   'shield' => 'shield 20 undefined undefined undefined',
-//   'passive' => 'passive undefined undefined undefined undefined',
-//   'mastery' => 'mastery 5 undefined undefined undefined',
-//   'limit' => 'limit 25 per undefined undefined',
-//   'escape' => 'escape castle undefined undefined undefined',
-//   'category' => 'category slot_debuff 100 undefined undefined',
-//   'spell' => 'spell undefined undefined undefined undefined',
-//   'link' => 'link 65 undefined undefined undefined',
-//   'distrust' => 'distrust 20 20 undefined undefined',
-//   'bonus' => 'bonus back 100 per undefined',
-//   'golem' => 'golem undefined undefined undefined undefined',
-//   'charge' => 'charge 81 undefined undefined undefined',
-//   'hp1' => 'hp1 215.75 diff undefined undefined',
-//   'hp2' => 'hp2 13 diff undefined undefined',
-//   'night' => 'night 3 diff undefined undefined',
-//   'effect' => 'effect -100 per undefined undefined',
-//   'power' => 'power undefined undefined undefined undefined',
-//   'all' => 'all undefined undefined undefined undefined',
-//   'single' => 'single undefined undefined undefined undefined',
-//   'random' => 'random [object Object] undefined undefined undefined',
-//   'cast' => 'cast undefined undefined undefined undefined',
-//   'pumping' => 'pumping 5 undefined undefined undefined',
-//   'reeling' => 'reeling 5 undefined undefined undefined',
-//   'recipebook' => 'recipebook undefined undefined undefined undefined',
-//   'abnormal' => 'abnormal undefined undefined undefined undefined',
-//   'ex' => 'ex undefined undefined undefined undefined',
-//   'restoration' => 'restoration blessed_spiritshot_s 1000 undefined undefined',
-//   'critical' => 'critical int undefined undefined undefined',
-//   'storage'
-//   'probability'
-//   'cost'
-//   'skill'
-//   'physical'
-//   'position'
-//   'direction'
-//   'getdamage'
-//   'buff'
-//   'debuff'
-//   'npc'
-//   'armor'
-//   'shot'
-//   'pet'
-//   'sowing'
-//   'harvesting'
-//   'face'
-//   'color'
-//   'style'
-//   'sp'
+function generateDesc(params: {type: string, prop1:string|number, prop2: string|number, prop3: string|number, prop4: string|number }) {
+const {type, prop1, prop2, prop3, prop4} = params
+
+switch (type) {
+  case 'i_hit': 
+  return `Power ${prop1}`;
+  case 'p_speed':
+  return `Moving speed + ${prop1}`
+  case 'blow':
+  case 'slot':
+  case 'heal':
+  case 'drain':
+  case 'attack':
+  case 'defence':
+  case 'avoid':
+  case 'act':
+  case 'weapon':
+  case 'attribute':
+  case 'range':
+  case 'hp':
+  case 'max':
+  case 'rate':
+  case 'delay':
+  case 'regen':
+  case 'damage':
+  case 'luck':
+  case 'cp':
+  case 'mp':
+  case 'number':
+  case 'rest':
+  case 'penalty':
+  case 'possess':
+  case 'level':
+  case 'cancel':
+  case 'summon':
+  case 'move':
+  case 'mode':
+  case 'camp':
+  case 'hate':
+  case 'unlock':
+  case 'contribution':
+  case 'energy':
+  case 'item':
+  case 'height':
+  case 'breath':
+  case 'crystallize':
+  case 'resurrection':
+  case 'away':
+  case 'confuse':
+  case 'body':
+  case 'self':
+  case 'sweeper':
+  case 'spoil':
+  case 'cubic':
+  case 'me':
+  case 'backstab':
+  case 'death':
+  case 'agro':
+  case 'shield':
+  case 'passive':
+  case 'mastery':
+  case 'limit': 
+  case 'escape': 
+  case 'category': 
+  case 'spell': 
+  case 'link' :
+  case 'distrust': 
+  case 'bonus' :
+  case 'golem' :
+  case 'charge':
+  case 'hp1' :
+  case 'hp2' :
+  case 'night': 
+  case 'effect': 
+  case 'power' :
+  case 'all' :
+  case 'single': 
+  case 'random' :
+  case 'cast' :
+  case 'pumping' :
+  case 'reeling' :
+  case 'recipebook':
+  case 'abnormal' :
+  case 'ex' :
+  case 'restoration' :
+  case 'critical' :
+  case 'storage':
+  case 'probability':
+  case 'cost':
+  case 'skill':
+  case 'physical':
+  case 'position':
+  case 'direction':
+  case 'getdamage':
+  case 'buff':
+  case 'debuff':
+  case 'npc':
+  case 'armor':
+  case 'shot':
+  case 'pet':
+  case 'sowing':
+  case 'harvesting':
+  case 'face':
+  case 'color':
+  case 'style':
+  case 'sp':
+  default: 
+  break
+}
+}
+
+// 'i_hit' => 'i_hit 0 0 undefined undefined',
+//   'p_speed' => 'p_speed [object Object] 50 per undefined',
+//   'i_blow' => 'i_blow 33780 670 0 undefined',
+//   'i_slot' => 'i_slot big_body 1 undefined undefined',
+//   'i_heal' => 'i_heal 5421 undefined undefined undefined',
+//   'i_drain' => 'i_drain 65 100 undefined undefined',
+//   'p_attack' => 'p_attack [object Object] 50 per undefined',
+//   'p_defence' => 'p_defence [object Object] 30 per undefined',
+//   'p_avoid' => 'p_avoid [object Object] 10 diff undefined',
+//   'p_act' => 'p_act undefined undefined undefined undefined',
+//   'p_weapon' => 'p_weapon [object Object] 12 per undefined',
+//   'i_attack' => 'i_attack 95790 0 undefined undefined',
+//   'p_attribute' => 'p_attribute attr_valakas 8 undefined undefined',
+//   'p_range' => 'p_range [object Object] 400 diff undefined',
+//   'p_hp' => 'p_hp 30 per undefined undefined',
+//   'i_max' => 'i_max 14 undefined undefined undefined',
+//   't_hp' => 't_hp 388 1 undefined undefined',
+//   'p_rate' => 'p_rate 30 per undefined undefined',
+//   'p_delay' => 'p_delay 1 -35 per undefined',
+//   'p_regen' => 'p_regen [object Object] 35 per undefined',
+//   'p_damage' => 'p_damage 25 per undefined undefined',
+//   'p_luck' => 'p_luck undefined undefined undefined undefined',
+//   'p_cp' => 'p_cp 50 per undefined undefined',
+//   'p_mp' => 'p_mp 35 per undefined undefined',
+//   'p_number' => 'p_number 4 diff undefined undefined',
+//   'c_rest' => 'c_rest -2 5 undefined undefined',
+//   'p_penalty' => 'p_penalty 9000 undefined undefined undefined',
+//   'i_possess' => 'i_possess undefined undefined undefined undefined',
+//   'i_level' => 'i_level 155 undefined undefined undefined',
+//   'p_cancel' => 'p_cancel -25 per undefined undefined',
+//   'i_summon' => 'i_summon cursed_man_ep_30 85 crystal_c 4',
+//   'p_move' => 'p_move undefined undefined undefined undefined',
+//   'p_hit' => 'p_hit [object Object] 3 diff undefined',
+//   'p_mode' => 'p_mode stand 4.9 diff undefined',
+//   'i_camp' => 'i_camp undefined undefined undefined undefined',
+//   'i_hate' => 'i_hate 100 undefined undefined undefined',
+//   'i_unlock' => 'i_unlock 100 100 100 undefined',
+//   'i_contribution' => 'i_contribution 10 undefined undefined undefined',
+//   'i_energy' => 'i_energy 2 undefined undefined undefined',
+//   'p_item' => 'p_item 9 undefined undefined undefined',
+//   'p_height' => 'p_height 100 diff undefined undefined',
+//   'p_breath' => 'p_breath 200 diff undefined undefined',
+//   'p_crystallize' => 'p_crystallize s undefined undefined undefined',
+//   'c_mp' => 'c_mp -10 5 undefined undefined',
+//   'i_resurrection' => 'i_resurrection 200 undefined undefined undefined',
+//   'i_away' => 'i_away undefined undefined undefined undefined',
+//   't_mp' => 't_mp 372.2 5 undefined undefined',
+//   'i_confuse' => 'i_confuse 20 20 undefined undefined',
+//   'i_body' => 'i_body undefined undefined undefined undefined',
+//   'i_self' => 'i_self -17.46 undefined undefined undefined',
+//   'i_mp' => 'i_mp 5 per undefined undefined',
+//   'i_sweeper' => 'i_sweeper undefined undefined undefined undefined',
+//   'i_spoil' => 'i_spoil undefined undefined undefined undefined',
+//   'c_level' => 'c_level -0.5 5 undefined undefined',
+//   'i_cubic' => 'i_cubic 20 undefined undefined undefined',
+//   'i_me' => 'i_me undefined undefined undefined undefined',
+//   'i_backstab' => 'i_backstab 5479 300 0 undefined',
+//   'c_death' => 'c_death -10 5 undefined undefined',
+//   'p_agro' => 'p_agro 100 undefined undefined undefined',
+//   'p_shield' => 'p_shield 20 undefined undefined undefined',
+//   'p_passive' => 'p_passive undefined undefined undefined undefined',
+//   'p_mastery' => 'p_mastery 5 undefined undefined undefined',
+//   'p_limit' => 'p_limit 25 per undefined undefined',
+//   'c_hp' => 'c_hp -50 5 undefined undefined',
+//   'i_escape' => 'i_escape castle undefined undefined undefined',
+//   'i_category' => 'i_category slot_debuff 100 undefined undefined',
+//   'p_spell' => 'p_spell undefined undefined undefined undefined',
+//   'i_link' => 'i_link 65 undefined undefined undefined',
+//   'i_distrust' => 'i_distrust 20 20 undefined undefined',
+//   'p_bonus' => 'p_bonus back 100 per undefined',
+//   'i_golem' => 'i_golem undefined undefined undefined undefined',
+//   'p_charge' => 'p_charge 81 undefined undefined undefined',
+//   'p_summon' => 'p_summon 50 undefined undefined undefined',
+//   'p_hp1' => 'p_hp1 215.75 diff undefined undefined',
+//   'p_hp2' => 'p_hp2 13 diff undefined undefined',
+//   'p_night' => 'p_night 3 diff undefined undefined',
+//   'p_effect' => 'p_effect -100 per undefined undefined',
+//   'i_power' => 'i_power undefined undefined undefined undefined',
+//   'p_all' => 'p_all undefined undefined undefined undefined',
+//   'p_single' => 'p_single undefined undefined undefined undefined',
+//   'i_cp' => 'i_cp 5000 diff undefined undefined',
+//   'i_random' => 'i_random [object Object] undefined undefined undefined',
+//   'i_cast' => 'i_cast undefined undefined undefined undefined',
+//   'i_pumping' => 'i_pumping 5 undefined undefined undefined',
+//   'i_reeling' => 'i_reeling 5 undefined undefined undefined',
+//   'i_recipebook' => 'i_recipebook undefined undefined undefined undefined',
+//   'p_abnormal' => 'p_abnormal undefined undefined undefined undefined',
+//   'i_ex' => 'i_ex undefined undefined undefined undefined',
+//   'i_restoration' => 'i_restoration blessed_spiritshot_s 1000 undefined undefined',
+//   'p_critical' => 'p_critical int undefined undefined undefined',
+//   'p_storage' => 'p_storage inventory_normal 8 undefined undefined',
+//   'p_probability' => 'p_probability 1000 per undefined undefined',
+//   'p_cost' => 'p_cost 1 -16 per undefined',
+//   'p_skill' => 'p_skill 1 10 undefined undefined',
+//   'p_category' => 'p_category slot_debuff -20 per undefined',
+//   'i_death' => 'i_death 6 undefined undefined undefined',
+//   'i_cancel' => 'i_cancel undefined undefined undefined undefined',
+//   'i_hp' => 'i_hp 781 diff undefined undefined',
+//   'p_physical' => 'p_physical undefined undefined undefined undefined',
+//   'p_position' => 'p_position back 20 per undefined',
+//   'i_direction' => 'i_direction undefined undefined undefined undefined',
+//   'p_getdamage' => 'p_getdamage block_mp undefined undefined undefined',
+//   'p_buff' => 'p_buff undefined undefined undefined undefined',
+//   'p_debuff' => 'p_debuff undefined undefined undefined undefined',
+//   'i_probability' => 'i_probability silence 100 undefined undefined',
+//   'i_npc' => 'i_npc x_mas_tree_b 1 undefined undefined',
+//   'i_weapon' => 'i_weapon undefined undefined undefined undefined',
+//   'i_armor' => 'i_armor undefined undefined undefined undefined',
+//   'i_shot' => 'i_shot 300 40 2.4 undefined',
+//   'i_pet' => 'i_pet 0 0 450 undefined',
+//   'i_sowing' => 'i_sowing undefined undefined undefined undefined',
+//   'i_harvesting' => 'i_harvesting undefined undefined undefined undefined',
+//   'i_face' => 'i_face 2 undefined undefined undefined',
+//   'i_color' => 'i_color 3 undefined undefined undefined',
+//   'i_style' => 'i_style 6 undefined undefined undefined',
+//   'i_sp' => 'i_sp 100000 diff undefined undefined',
+//   'i_teleport' => 'i_teleport 83378 147999 -3400 undefined',
+//   'p_collected' => 'p_collected undefined undefined undefined undefined',
+//   'cub_attack' => 'cub_attack -23 per undefined undefined',
+//   'cub_drain' => 'cub_drain 53 40 undefined undefined',
+//   'cub_heal' => 'cub_heal 68 undefined undefined undefined',
+//   'cub_hp' => 'cub_hp -118 1 undefined undefined',
+//   'cub_defence' => 'cub_defence -23 per undefined undefined',
+//   'cub_speed' => 'cub_speed -23 per undefined undefined',
+//   't_fatal' => 't_fatal -20 5 undefined undefined',
+//   'i_all' => 'i_all undefined undefined undefined undefined',
+//   'p_fear' => 'p_fear undefined undefined undefined undefined',
+//   'p_controll' => 'p_controll undefined undefined undefined undefined',
+//   'i_position' => 'i_position undefined undefined undefined undefined',
+//   'i_dist' => 'i_dist 379 undefined undefined undefined',
+//   'cub_act' => 'cub_act undefined undefined undefined undefined'

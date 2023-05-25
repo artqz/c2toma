@@ -4,6 +4,8 @@ import {
 } from "../datapack/toma/profdata";
 import { Item, Prof, Skill, ProfSkill } from "../result/types";
 
+export const profSkills = new Map<string, Skill>()
+
 export function loadProfs(deps: {
   items: Map<number, Item>;
   skills: Map<string, Skill>;
@@ -33,6 +35,11 @@ function getSkills(deps: {
   const itemById = deps.items;
 
   for (const pSkill of deps.profSkills) {
+    const skill = skillById.get(pSkill.skillId + "_" + pSkill.skillLevel)
+    if (skill) {
+      profSkills.set(pSkill.skillId + "_" + pSkill.skillLevel, skill)
+    }
+        
     skillMap.set(pSkill.skillId + "_" + pSkill.skillLevel, {
       ...pSkill,
       skillName: skillById.get(pSkill.skillId + "_" + pSkill.skillLevel)!

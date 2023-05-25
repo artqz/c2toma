@@ -4,6 +4,8 @@ import { Item, Set, ShortItem, Skill } from "../../result/types";
 
 slug.charmap["'"] = "'";
 
+export const setSkills = new Map<string, Skill>()
+
 export function loadItemSetList(deps: {
   items: Map<number, Item>;
   skills: Map<string, Skill>;
@@ -85,6 +87,9 @@ function loadC2Sets(deps: {
 
         const skill = skillByName.get(set.set_effect_skill!);
         const skill2 = skillByName.get(set.set_additional_effect_skill!);
+
+        if (skill) setSkills.set(skill.id+"_"+skill.level, skill)
+        if (skill2) setSkills.set(skill2.id+"_"+skill2.level, skill2)
 
         if (skill) {
           itemSetList.set(set.$[0], {

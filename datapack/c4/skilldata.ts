@@ -33,6 +33,17 @@ const SkillEffect = z.object({$: z.array(z.object({
   )).optional()
   })
 
+const SkillOperateCond = z.object({
+  $: z.array(
+    z.object({
+      $: z.union([
+        z.tuple([z.string(), z.union([z.number(), z.string()]), z.union([z.number(), z.string(), z.object({$: z.array(z.any())})])]), 
+        z.tuple([z.string(), z.union([z.number(), z.string(), z.object({$: z.array(z.any())})])]), 
+        z.tuple([z.string()])
+      ])
+    }))
+}).optional()
+
 const SkillEntryC4 = z.object({
   skill_name: z.string(),
   skill_id: z.number(),
@@ -40,7 +51,8 @@ const SkillEntryC4 = z.object({
   operate_type: z.string(),
   abnormal_time: z.number().optional(),
   debuff: z.number().optional(),
-  effect: SkillEffect
+  effect: SkillEffect,
+  operate_cond: SkillOperateCond
 });
 
 export type SkillEntryC4 = z.infer<typeof SkillEntryC4>;

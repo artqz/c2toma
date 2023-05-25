@@ -12,6 +12,8 @@ import { NpcDataEntry } from "./types";
 import { NpcNameEntry, loadNpcNamesGF } from "../datapack/gf/npcnames";
 import { loadNpcDataGF } from "../datapack/gf/npcdata";
 
+export const npcSkills = new Map<string, Skill>()
+
 function loadNpcJson(path: string, filename: string) {
   const map = Fs.readFileSync(Path.join(path, filename), "utf8");
   return NpcDataEntry.parse(JSON.parse(map));
@@ -96,6 +98,7 @@ function getSkills(deps: {
   deps.tomaSkills.map((s) => {
     const skill = deps.skills.get(s.skillId + "_" + s.skillLevel);
     if (skill) {
+      npcSkills.set(s.skillId + "_" + s.skillLevel, skill)
       skillArr.push(skill.skillName);
     }
   });
@@ -223,6 +226,7 @@ function skillsC4GF() {
       operateType: skillData.operate_type,
       skillName: skillData.skill_name,
       effect: [],
+      operateCond: [],
       effectTime: skillData.abnormal_time,
       effectType:
         skillData.debuff === undefined

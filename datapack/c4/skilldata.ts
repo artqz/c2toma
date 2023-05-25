@@ -57,6 +57,7 @@ const SkillEntryC4 = z.object({
 
 export type SkillEntryC4 = z.infer<typeof SkillEntryC4>;
 export type SkillEnffect = z.infer<typeof SkillEffect>;
+export type SkillOperateCond = z.infer<typeof SkillOperateCond>;
 
 export function loadSkillDataJson(path: string): SkillEntryC4[] {
   const src = Fs.readFileSync(path, "utf8");

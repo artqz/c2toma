@@ -17,7 +17,7 @@ export function loadEffects (deps: {
     }
   }
   //delete
-  saveFile("result/data/effects.json", JSON.stringify(Array.from(map.values()), null, 2))
+  saveFile("result/data/effects.json", JSON.stringify(Array.from(effectNameMap.values()), null, 2))
   //  saveFile("result/data/operateConds.json", JSON.stringify(Array.from(operateCondNameMap.values()), null, 2))
   //
   
@@ -29,40 +29,21 @@ export function effectReader(deps: {
   effect: SkillEnffect;
   skillName: string;
 }) {
+  type EffectObject = {
+    inc: string[]
+  }
+  const array: string[] = []
   deps.effect.$?.map((e) => {
-    
+    array.push(effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3])}))
     effectNameMap.set(
       // deps.skillName,
       e.$[0],
-      `skillName: ${deps.skillName}, effect: ${e.$[0]}: ${effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3])})} (${govno(e.$[0])}) ${getParam(e.$[1])} ${e.$[2]} ${e.$[3]} ${e.$[4]}`
+      `skillName: ${deps.skillName}, effect: ${e.$[0]}: ${effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3])})} ${getParam(e.$[1])} ${e.$[2]} ${e.$[3]} ${e.$[4]}`
     );
-    map.set(deps.skillName, {skillName: deps.skillName, effect: effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3])}), operateCond: ""})
+    // map.set(deps.skillName, {skillName: deps.skillName, effect: effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3])}), operateCond: ""})
   });
-
+  // map.set(deps.skillName, {skillName: deps.skillName, effect: array.join(", "), operateCond: ""})
   return [];
-}
-
-function govno(param: string) {
-  const split = param.split("_");
-  const prefix = split[0];
-  const postfix = split[split.length - 1];
-  // if (prefix === "i") {
-  //   return "i";
-  // }
-  // if (prefix === "p") {
-  //   return "p";
-  // }
-  // if (prefix === "t") {
-  //   return "t";
-  // }
-  // if (prefix === "c") {
-  //   return "c";
-  // }
-  // //cub
-  // else {
-  return prefix+"_"+postfix;
-  //   return "cub";
-  // }
 }
 
 function getParam(
@@ -117,17 +98,55 @@ function effect(params: {effectName: string, prop1:string|null, prop2:string|nul
       return chetko(`P. Atk`, prop1, prop2, prop3)
     case "p_physical_defence":
       return chetko(`P. Def`, prop1, prop2, prop3)
-    case "p_physical_defence":
-      return chetko(`P. Def`, prop1, prop2, prop3)
     case "p_avoid":
       return chetko(`Evasion`, prop1, prop2, prop3)
+    case "p_magic_speed":
+      return chetko(`Casting Spd.`, prop1, prop2, prop3)
+    case "p_attack_speed":
+      return chetko(`Atk. Spd.`, prop1, prop2, prop3)
+    case "t_hp":
+      return hpmp("HP", prop1, prop2)
+    case "i_m_attack":
+      return `Power ${prop1}`
+    case "c_mp_by_level":
+      return `MP is continuously consumed proportional to user's level`
+    case "p_critical_damage":
+      return `Power ${prop1}`
+    case "i_unlock":
+      return `Door level 1 - ${prop1}%, level 2 - ${prop2}%, and level 3 - ${prop3}%`
+    case "i_give_contribution":
+      return `i_give_contribution: ${prop1}`
+    case "c_mp":
+      return hpmp("MP", prop1, prop2)
+    case "p_avoid_agro":
+      return `Protected from a monster's pre-emptive attack (${prop1})`
+    case "i_randomize_hate":
+      return `i_randomize_hate: ${prop1}`
+    case "p_passive":
+      return `p_passive`
+    case "p_avoid_by_move_mode":
+      return moveMode(`Evasion`, prop1, prop2, prop3)
+    case "p_hp_regen_by_move_mode":
+      return moveMode(`Regen HP`, prop1, prop2, prop3)
+    case "p_mp_regen_by_move_mode":
+      return moveMode(`Regen MP`, prop1, prop2, prop3)
+    case "p_breath":
+      return `Breath ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}`
     default: 
-      return `${params}`;
+      return `${JSON.stringify(params)}`;
   }
 }
 
 function chetko(text: string, prop1:string|null, prop2:string|null, prop3:string|null ) {
-  return `${prop2?.indexOf("-") !== -1 ? 'Reduces' : 'Increases'} ${text}${prop1 ? prop1 : ''} by ${prop2}${prop3 === "per" ? "%" : ""}`
+  return `${text} ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}${prop1 ? prop1?.indexOf("armor_") !== -1 ? ` when one is wearing ${prop1}` : ` when using a ${prop1}` : ``}`
+}
+
+function moveMode(text: string, prop1:string|null, prop2:string|null, prop3:string|null ) {
+  return `${text} ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}${prop1 ? prop1 === "run" ? ` when running` : prop1 === "stand" ? ` while standing` : prop1 === "walk" ? ` while walking` : ` when sitting` : ``}`
+}
+
+function hpmp(text: string, prop1:string|null, prop2:string|null) {
+  return `${text} ${prop1?.indexOf("-") !== -1 ? '' : '+'}${prop1} every ${prop2} ${prop2 !== "1" ? 'seconds' : 'second'}`
 }
 
 
@@ -141,8 +160,8 @@ function operateCondReader(deps: {
       deps.skillName+"_"+oc.$[0],
       `skillName: ${deps.skillName}, operateCond: ${oc.$[0]}: ${operateCond({operateCondName: oc.$[0], prop1: ocGetParam(oc.$[1])})} ${oc.$[2]}`
     );
-  const m = map.get(deps.skillName)
-  if (m) map.set(deps.skillName, {skillName: deps.skillName, effect: m.effect, operateCond: operateCond({operateCondName: oc.$[0], prop1: ocGetParam(oc.$[1])})})
+  // const m = map.get(deps.skillName)
+  // if (m) map.set(deps.skillName, {skillName: deps.skillName, effect: m.effect, operateCond: operateCond({operateCondName: oc.$[0], prop1: ocGetParam(oc.$[1])})})
   })
 }
 

@@ -131,7 +131,9 @@ function effect(params: {effectName: string, prop1:string|null, prop2:string|nul
     case "p_mp_regen_by_move_mode":
       return moveMode(`Regen MP`, prop1, prop2, prop3)
     case "p_breath":
-      return `Breath ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}`
+      return `Breath ${prop1?.indexOf("-") !== -1 ? '' : '+'}${prop1}${prop2 === "per" ? "%" : ""}`
+    case "p_safe_fall_height":
+      return `Safe Fall Height ${prop1?.indexOf("-") !== -1 ? '' : '+'}${prop1}${prop2 === "per" ? "%" : ""}`
     default: 
       return `${JSON.stringify(params)}`;
   }

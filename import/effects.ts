@@ -34,11 +34,11 @@ export function effectReader(deps: {
   }
   const array: string[] = []
   deps.effect.$?.map((e) => {
-    array.push(effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3])}))
+    array.push(effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3]), prop4: getParam(e.$[4])}))
     effectNameMap.set(
       // deps.skillName,
       e.$[0],
-      `skillName: ${deps.skillName}, effect: ${e.$[0]}: ${effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3])})} ${getParam(e.$[1])} ${e.$[2]} ${e.$[3]} ${e.$[4]}`
+      `skillName: ${deps.skillName}, effect: ${e.$[0]}: ${effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3]), prop4: getParam(e.$[4])})} ${getParam(e.$[1])} ${e.$[2]} ${e.$[3]} ${e.$[4]}`
     );
     // map.set(deps.skillName, {skillName: deps.skillName, effect: effect({effectName: e.$[0], prop1: getParam(e.$[1]), prop2: getParam(e.$[2]), prop3: getParam(e.$[3])}), operateCond: ""})
   });
@@ -75,8 +75,8 @@ function getParam(
   }
 }
 
-function effect(params: {effectName: string, prop1:string|null, prop2:string|null, prop3:string|null}) {
-  const {effectName, prop1, prop2, prop3} = params
+function effect(params: {effectName: string, prop1:string|null, prop2:string|null, prop3:string|null, prop4:string|null}) {
+  const {effectName, prop1, prop2, prop3, prop4} = params
   switch (effectName) {
     case "i_p_attack_over_hit":
       return `Power ${prop1}`
@@ -105,7 +105,7 @@ function effect(params: {effectName: string, prop1:string|null, prop2:string|nul
     case "p_attack_speed":
       return chetko(`Atk. Spd.`, prop1, prop2, prop3)
     case "t_hp":
-      return hpmp("HP", prop1, prop2)
+      return tick("HP", prop1, prop2)
     case "i_m_attack":
       return `Power ${prop1}`
     case "c_mp_by_level":
@@ -117,7 +117,7 @@ function effect(params: {effectName: string, prop1:string|null, prop2:string|nul
     case "i_give_contribution":
       return `i_give_contribution: ${prop1}`
     case "c_mp":
-      return hpmp("MP", prop1, prop2)
+      return tick("MP", prop1, prop2)
     case "p_avoid_agro":
       return `Protected from a monster's pre-emptive attack (${prop1})`
     case "i_randomize_hate":
@@ -134,22 +134,57 @@ function effect(params: {effectName: string, prop1:string|null, prop2:string|nul
       return `Breath ${prop1?.indexOf("-") !== -1 ? '' : '+'}${prop1}${prop2 === "per" ? "%" : ""}`
     case "p_safe_fall_height":
       return `Safe Fall Height ${prop1?.indexOf("-") !== -1 ? '' : '+'}${prop1}${prop2 === "per" ? "%" : ""}`
+    case "p_hit_number": 
+      return `Number of targets ${prop1}`
+    case "Block": 
+      return `p_block_act`
+    case "p_max_hp":
+      return p2("Max HP", prop1, prop2)
+    case "p_max_mp":
+      return p2("Max MP", prop1, prop2)
+    case "p_create_item": 
+      return `Level ${prop1}`
+    case "p_crystallize": 
+      return `Type ${prop1}`
+    case "p_crystallize": 
+      return `Type ${prop1}`
+    case "p_hp_regen": 
+      return pRegen("Regen HP", prop1, prop2, prop3)
+    case "p_mp_regen": 
+      return pRegen("Regen MP", prop1, prop2, prop3)
+    case "p_weight_limit":
+      return `Wight limit ${prop1}`
+    case "i_summon":
+      return `${prop1} ${prop2} ${prop3} ${prop4}`
+    case "p_attack_range":
+      return chetko(`P. Atk. Range`, prop1, prop2, prop3)
+    case "p_hit":
+      return chetko(`Accuracy`, prop1, prop2, prop3)
     default: 
       return `${JSON.stringify(params)}`;
   }
 }
 
 function chetko(text: string, prop1:string|null, prop2:string|null, prop3:string|null ) {
-  return `${text} ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}${prop1 ? prop1?.indexOf("armor_") !== -1 ? ` when one is wearing ${prop1}` : ` when using a ${prop1}` : ``}`
+  return `${text} ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}${prop1 && prop1 ? prop1?.indexOf("armor_") !== -1 ? ` when one is wearing ${prop1}` : ` when using a ${prop1}` : ``}`
 }
 
 function moveMode(text: string, prop1:string|null, prop2:string|null, prop3:string|null ) {
   return `${text} ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}${prop1 ? prop1 === "run" ? ` when running` : prop1 === "stand" ? ` while standing` : prop1 === "walk" ? ` while walking` : ` when sitting` : ``}`
 }
 
-function hpmp(text: string, prop1:string|null, prop2:string|null) {
+function p2(text: string, prop1:string|null, prop2:string|null ) {
+  return `${text} ${prop1?.indexOf("-") !== -1 ? '' : '+'}${prop1}${prop2 === "per" ? "%" : ""}`
+}
+
+function tick(text: string, prop1:string|null, prop2:string|null) {
   return `${text} ${prop1?.indexOf("-") !== -1 ? '' : '+'}${prop1} every ${prop2} ${prop2 !== "1" ? 'seconds' : 'second'}`
 }
+
+function pRegen(text: string, prop1:string|null, prop2:string|null, prop3:string|null ) {
+  return `${text} ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}`
+}
+
 
 
 function operateCondReader(deps: {

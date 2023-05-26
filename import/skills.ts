@@ -48,8 +48,8 @@ function loadC4Skills() {
       level: skillC4.level,
       icon: "",
       operateType: skillC4.operate_type,
-      effect: [],
-      operateCond: [],
+      effect: JSON.stringify(skillC4.effect),
+      operateCond: JSON.stringify(skillC4.operate_cond),
       effectTime: skillC4.abnormal_time,
       effectType:
         skillC4.debuff === undefined

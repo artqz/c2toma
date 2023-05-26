@@ -225,8 +225,8 @@ function skillsC4GF() {
       icon: "",
       operateType: skillData.operate_type,
       skillName: skillData.skill_name,
-      effect: [],
-      operateCond: [],
+      effect: JSON.stringify(skillData.effect),
+      operateCond: JSON.stringify(skillData.operate_cond),
       effectTime: skillData.abnormal_time,
       effectType:
         skillData.debuff === undefined

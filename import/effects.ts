@@ -70,7 +70,11 @@ function getParam(
     // console.log(param.$.length);
     const toStr = param.$.length === 1 ? param.$.join('') : param.$.length === 2 ? param.$.join(' or ') : param.$.join(', ') 
     return toStr !== "all" ? toStr : null;
-  } else {
+  } 
+  if (param === undefined) { 
+    return  "undefined"
+  }
+  else {
     return `{gouno: ${param}}`;
   }
 }
@@ -166,6 +170,22 @@ function effect(params: {effectName: string, prop1:string|null, prop2:string|nul
       return chetko(`M. Atk.`, prop1, prop2, prop3)
     case "p_magical_defence":
       return chetko(`M. Def.`, prop1, prop2, prop3)
+    case "p_defence_attribute":
+      return pAttribute("Resistance to", prop1, prop2, prop3)
+    case "i_delete_hate":
+      return `Delete hate (${prop1})`
+    case "i_resurrection":
+      return `Resurrection (${prop1})`
+    case "p_reuse_delay":
+      return pDelay(prop1, prop2, prop3)
+    case "p_attack_attribute":
+      return pAttribute("Attack", prop1, prop2, prop3)
+    case "i_hp_per_max":
+      return `HP per max ${prop1}`
+    case "i_mp_per_max":
+      return `MP per max ${prop1}`
+    case "p_reduce_cancel":
+      return p2("Probability of canceling a magic spell", prop1, prop2)
     default: 
       return `${JSON.stringify(params)}`;
   }
@@ -179,6 +199,10 @@ function moveMode(text: string, prop1:string|null, prop2:string|null, prop3:stri
   return `${text} ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}${prop1 ? prop1 === "run" ? ` when running` : prop1 === "stand" ? ` while standing` : prop1 === "walk" ? ` while walking` : ` when sitting` : ``}`
 }
 
+function pAttribute(text:string, prop1:string|null, prop2:string|null, prop3:string|null ) {
+  return `${text} ${prop1} ${prop2 !== "undefined" ? `${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}`: ''}`
+}
+
 function p2(text: string, prop1:string|null, prop2:string|null ) {
   return `${text} ${prop1?.indexOf("-") !== -1 ? '' : '+'}${prop1}${prop2 === "per" ? "%" : ""}`
 }
@@ -189,6 +213,10 @@ function tick(text: string, prop1:string|null, prop2:string|null) {
 
 function pRegen(text: string, prop1:string|null, prop2:string|null, prop3:string|null ) {
   return `${text} ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}`
+}
+
+function pDelay(prop1:string|null, prop2:string|null, prop3:string|null ) {
+  return `Skills (type: ${prop1}) re-use time ${prop2?.indexOf("-") !== -1 ? '' : '+'}${prop2}${prop3 === "per" ? "%" : ""}`
 }
 
 

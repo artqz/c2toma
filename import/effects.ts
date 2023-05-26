@@ -162,6 +162,8 @@ function effect(params: {effectName: string, prop1:string|null, prop2:string|nul
       return chetko(`Accuracy`, prop1, prop2, prop3)
     case "p_attack_speed_by_weapon":
       return chetko(`Atk. Spd.`, prop1, prop2, prop3)
+    case "p_magical_attack":
+      return chetko(`M. Atk.`, prop1, prop2, prop3)
     default: 
       return `${JSON.stringify(params)}`;
   }

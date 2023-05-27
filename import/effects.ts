@@ -174,6 +174,8 @@ function effect(params: {
       return `i_give_contribution: ${prop1}`;
     case "c_mp":
       return tick("MP", prop1, prop2);
+    case "c_hp":
+      return tick("HP", prop1, prop2);
     case "p_avoid_agro":
       return `Protected from a monster's pre-emptive attack (${prop1})`;
     case "i_randomize_hate":
@@ -285,11 +287,61 @@ function effect(params: {
     case "p_damage_shield":
       return `Reflect Damage ${prop1}%`;
     case "p_physical_defence_by_hp1":
-      return p2("P.Def", prop1, prop2);
+      return p2("P. Def.", prop1, prop2);
+    case "p_physical_attack_by_hp2":
+      return p2("P. Atk.", prop1, prop2);
+    case "p_critical_rate_by_hp2":
+      return p2("Rate Crit", prop1, prop2);
     case "p_luck":
       return `Luck`;
     case "p_hit_at_night":
       return p2("Accuracy at night", prop1, prop2);
+    case "p_mana_charge":
+      return `Gain Mp +${prop1}`;
+    case "i_death_link":
+      return `Power ${prop1}`;
+    case "i_distrust":
+      return `Distrust ${prop1} ${prop2}`;
+    case "i_energy_attack":
+      return `Power ${prop1}`;
+    case "i_focus_energy":
+      return `Focus Force level ${prop1}`;
+    case "i_summon_dd_cubic":
+      return `Summon dd cubic`;
+    case "i_summon_paralyze_cubic":
+      return `Summon paralyze cubic`;
+    case "i_summon_heal_cubic":
+      return `Summon heal cubic`;
+    case "i_summon_water_dot_cubic":
+      return "Summon water dot cubic";
+    case "i_summon_drain_cubic":
+      return `Summon drain cubic`;
+    case "i_register_siege_golem":
+      return "Register siege golem";
+    case "p_abnormal_rate_limit":
+      return `Abnormal rate limit`;
+    case "i_remove_m_power":
+      return `Remove M. Power`;
+    case "p_block_debuff":
+      return `Block debuff`;
+    case "i_sweeper":
+      return `Sweeper`;
+    case "i_escape":
+      return `Escape (${prop1})`;
+    case "i_m_attack_over_hit":
+      return `Power ${prop1}`;
+    case "p_transfer_damage_summon":
+      return `Trans Damage ${prop1}%`;
+    case "i_add_hate":
+      return `Power ${prop1}`;
+    case "p_pvp_magical_skill_dmg_bonus":
+      return p2("PvP magic damage", prop1, prop2);
+    case "i_dispel_by_category":
+      return `Dispel category ${prop1} ${prop2}`;
+    case "i_transmit_m_power":
+      return `Transmit M. Ppower ${prop1}`;
+    case "p_cubic_mastery":
+      return `Ability to summon ${prop1} Cubics`;
     default:
       return `${JSON.stringify(params)}`;
   }

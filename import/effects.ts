@@ -290,6 +290,8 @@ function effect(params: {
       return p2("P. Def.", prop1, prop2);
     case "p_physical_attack_by_hp2":
       return p2("P. Atk.", prop1, prop2);
+    case "p_physical_attack_by_hp1":
+      return p2("P. Atk.", prop1, prop2);
     case "p_critical_rate_by_hp2":
       return p2("Rate Crit", prop1, prop2);
     case "p_luck":
@@ -305,7 +307,7 @@ function effect(params: {
     case "i_energy_attack":
       return `Power ${prop1}`;
     case "i_focus_energy":
-      return `Focus Force level ${prop1}`;
+      return `Focus energy level ${prop1}`;
     case "i_summon_dd_cubic":
       return `Summon dd cubic`;
     case "i_summon_paralyze_cubic":
@@ -316,6 +318,12 @@ function effect(params: {
       return "Summon water dot cubic";
     case "i_summon_drain_cubic":
       return `Summon drain cubic`;
+    case "i_summon_debuff_cubic":
+      return `Summon debuff cubic`;
+    case "i_summon_shock_cubic":
+      return `Summon shock cubic`;
+    case "i_summon_poison_cubic":
+      return `Summon poison cubic`;
     case "i_register_siege_golem":
       return "Register siege golem";
     case "p_abnormal_rate_limit":
@@ -342,6 +350,10 @@ function effect(params: {
       return `Transmit M. Ppower ${prop1}`;
     case "p_cubic_mastery":
       return `Ability to summon ${prop1} Cubics`;
+    case "c_rest":
+      return `Regen HP +${prop2}, MP ${prop1} every 1 second`;
+    case "c_chameleon_rest":
+      return `Regen HP +${prop2}, MP ${prop1} every 1 second`;
     default:
       return `${JSON.stringify(params)}`;
   }

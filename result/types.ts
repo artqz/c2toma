@@ -114,7 +114,7 @@ export type Item = {
   // material: Material[];
   // dropList: ItemDrop[];
   // spoilList: ItemDrop[];
-  // multisell: Multisell[];
+  // multisell: ItemMultisell[];
 };
 
 export type Merchant = {
@@ -165,6 +165,7 @@ export type Multisell = {
   id: number;
   multisellName: string;
   sellList: SellList[];
+  npcList: string[]
 };
 
 export type ItemMultisell = {

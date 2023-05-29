@@ -175,19 +175,14 @@ function addNpcSkills(deps: {
   const skillByName = new Map(
     Array.from(deps.skills.values()).map((x) => [x.skillName, x])
   );
-  const skillC4 = new Map(
-    Array.from(skillsC4GF().values()).map((x) => [x.skillName, x])
-  );
 
-  for (const npcSkill of Array.from(deps.npcsSkills.values())) {
+  for (const npcSkill of deps.npcsSkills.values()) {
     const skill = skillByName.get(npcSkill);
-    if (!skill) {
-      const _skill = skillC4.get(npcSkill);
-      if (_skill) {
-        deps.skills.set(_skill.id + "_" + _skill.level, {
-          ..._skill,
-        });
-      }
+    if (skill) {    
+      deps.skills.set(skill.id + "_" + skill.level, {
+        ...skill,
+      });      
+    } else {console.log(`------ нет нпц скилза ${npcSkill}`);
     }
   }
 }
@@ -207,64 +202,6 @@ function getDrop(list: DropList[], items: Map<number, Item>) {
   return drop;
 }
 
-function skillsC4GF() {
-  const skillDataC4 = loadSkillDataC4();
-  const skillIcons = loadSkillIconsGF();
-  // const skillNames = loadSkillNamesGF();
-
-  const skillsMap = new Map<string, Skill>();
-
-  //add data
-  // переписать без skillDataC4.values()
-  for (const skillData of skillDataC4.values()) {
-    skillsMap.set(skillData.skill_id + "_" + skillData.level, {
-      id: skillData.skill_id,
-      level: skillData.level,
-      name: { en: "", ru: "" },
-      desc: { en: "", ru: "" },
-      icon: "",
-      operateType: skillData.operate_type,
-      skillName: skillData.skill_name,
-      effect: JSON.stringify(skillData.effect),
-      operateCond: JSON.stringify(skillData.operate_cond),
-      effectTime: skillData.abnormal_time,
-      effectType:
-        skillData.debuff === undefined
-          ? undefined
-          : skillData.debuff
-          ? "debuff"
-          : skillData.skill_name.search("song_") > 0 ||
-            skillData.skill_name.search("dance_") > 0
-          ? "song"
-          : "buff",
-    });
-  }
-
-  //add skill
-  for (const skillIco of skillIcons) {
-    const skill = skillsMap.get(skillIco.id + "_" + skillIco.level);
-    if (skill) {
-      skillsMap.set(skillIco.id + "_" + skillIco.level, {
-        ...skill,
-        icon: skillIco.icon.replace("_new", ""),
-      });
-    }
-  }
-
-  //add names
-  // for (const skillName of skillNames) {
-  //   const skill = skillsMap.get(skillName.id + "_" + skillName.level);
-  //   if (skill) {
-  //     skillsMap.set(skillName.id + "_" + skillName.level, {
-  //       ...skill,
-  //       name: skillName.name,
-  //       desc: skillName.desc,
-  //     });
-  //   }
-  // }
-
-  return skillsMap;
-}
 
 function runames(deps: { npcs: Map<number, Npc> }) {
   const npcdataGF = new Map(loadNpcDataGF().map((npc) => [npc.$[1], npc]));

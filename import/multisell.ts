@@ -60,7 +60,7 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
   );
 
   for (const ms of multisell.values()) {
-    const npcList = getNpcNamesByMultisell(ms.multisellName).filter(n => n.show)
+    const npcList = getNpcNamesByMultisell(ms.multisellName)
     for (const npc of npcList) {
       ms.npcList.push({npcName: npc.npcName, show: npc.show})
     }

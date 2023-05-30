@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "generate_c1": "ts-node generate_c1.ts",
     "server": "tsnd --respawn server.ts",
     "dev": "ts-node index.ts",
     "saveProf": "ts-node saveClasses.ts",

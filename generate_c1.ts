@@ -1,9 +1,11 @@
+import { loadItems } from "./import/с1/items";
 import { loadNpcs } from "./import/с1/npcs";
 import { createDir, saveFile } from "./utils/Fs";
 
+const chronicle = "c1";
 function init() {
   // const AllSkills = loadSkills();
-  // const items = loadItems();
+  const items = loadItems();
   // const itemAbilityList = loadItemAbilityList({ items });
   // const itemSetList = loadItemSetList({ items, skills: AllSkills });
   const npcs = loadNpcs({});
@@ -15,12 +17,12 @@ function init() {
 
   // const ai = loadAi({ npcs, items });
 
-  createDir("result/data/c1");
+  createDir(`result/data/${chronicle}`);
 
-  // saveFile(
-  //   "result/data/items.json",
-  //   JSON.stringify(Array.from(items.values()), null, 2)
-  // );
+  saveFile(
+    `result/data/${chronicle}/items.json`,
+    JSON.stringify(Array.from(items.values()), null, 2)
+  );
   // saveFile(
   //   "result/data/sets.json",
   //   JSON.stringify(Array.from(itemSetList.values()), null, 2)
@@ -30,7 +32,7 @@ function init() {
   //   JSON.stringify(Array.from(itemAbilityList.values()), null, 2)
   // );
   saveFile(
-    "result/data/c1/npcs.json",
+    `result/data/${chronicle}/npcs.json`,
     JSON.stringify(Array.from(npcs.values()), null, 2)
   );
   // saveFile(

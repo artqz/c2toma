@@ -161,11 +161,16 @@ export type ItemDrop = {
   chance: Float;
 };
 
+export type MultisellNpcList = {
+  npcName: string
+  show: boolean
+}
+
 export type Multisell = {
   id: number;
   multisellName: string;
   sellList: SellList[];
-  npcList: string[]
+  npcList: MultisellNpcList[]
 };
 
 export type ItemMultisell = {

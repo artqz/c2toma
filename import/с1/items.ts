@@ -1,10 +1,11 @@
 import { z } from "zod";
 import { loadItemDataC1 } from "../../datapack/c1/itemdata";
 import { Item } from "../../result/types";
+import { loadItemNamesC1 } from "../../datapack/c1/itemnames";
 
 export function loadItems() {
   let items = loadItemData();
-
+  items = loadItemNames({ itemData: items });
   console.log("Items loaded.");
 
   return items;
@@ -79,6 +80,16 @@ function loadItemData() {
   }
 
   return items;
+}
+
+function loadItemNames(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  const itemNames = loadItemNamesC1();
+
+  for (const itemName of itemNames) {
+  }
+
+  return itemData;
 }
 
 const Slot = z.enum([

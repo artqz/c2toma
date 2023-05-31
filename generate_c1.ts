@@ -1,10 +1,11 @@
 import { loadItems } from "./import/с1/items";
 import { loadNpcs } from "./import/с1/npcs";
+import { loadSkills } from "./import/с1/skills";
 import { createDir, saveFile } from "./utils/Fs";
 
 const chronicle = "c1";
 function init() {
-  // const AllSkills = loadSkills();
+  const skills = loadSkills({ chronicle });
   const items = loadItems({ chronicle });
   // const itemAbilityList = loadItemAbilityList({ items });
   // const itemSetList = loadItemSetList({ items, skills: AllSkills });
@@ -19,6 +20,10 @@ function init() {
 
   createDir(`result/data/${chronicle}`);
 
+  saveFile(
+    `result/data/${chronicle}/skills.json`,
+    JSON.stringify(Array.from(skills.values()), null, 2)
+  );
   saveFile(
     `result/data/${chronicle}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)

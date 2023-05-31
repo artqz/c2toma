@@ -2,7 +2,7 @@ import { parse as parseCsv } from "csv-parse/sync";
 import Fs from "fs";
 import { z } from "zod";
 
-type SkillNameEntry = {
+export type SkillNameEntry = {
   id: number;
   level: number;
   name: { en: string; ru: string };

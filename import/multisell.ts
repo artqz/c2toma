@@ -11,8 +11,10 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
   const msArray: Multisell[] = [];
 
   for (const ms of multilisells) {
+    if (!excludedMultisells.has(ms.$[0])) {     
     const sellList = ms.selllist.$;
     const slArray: SellList[] = [];
+    
     for (const sell of sellList) {
       const multisell = {
         requiredItems: sell.$[1].$.filter(
@@ -53,6 +55,7 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
       sellList: slArray,
       npcList: []
     });
+    }
   }
 
   let multisell = new Map(
@@ -163,3 +166,5 @@ function getNpcNamesByMultisell(multisellName: string) {
       return [];
   }
 }
+
+const excludedMultisells = new Set(["ssq_weapon_yupgrade", "ssq_dual_for_a", "ssq_dualweapon_yupgrade", "ssq_weapon_upgrade"])

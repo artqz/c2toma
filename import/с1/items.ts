@@ -2,27 +2,26 @@ import { z } from "zod";
 import { loadItemDataC1 } from "../../datapack/c1/itemdata";
 import { Item } from "../../result/types";
 import { loadItemNamesC1 } from "../../datapack/c1/itemnames";
-import { loadItemGrpC1 } from '../../datapack/c1/itemgrp';
-import { loadItemNamesGF } from '../../datapack/gf/itemnames';
-import { Chronicle } from '../types';
+import { loadItemGrpC1 } from "../../datapack/c1/itemgrp";
+import { loadItemNamesGF } from "../../datapack/gf/itemnames";
+import { Chronicle } from "../types";
 
-
-export function loadItems(deps: {chronicle: Chronicle}) {
+export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
-  items = loadItemNames({...deps, itemData: items });
-  items = loadItemGrps({...deps, itemData: items });
-  items = loadItemRuNames({...deps, itemData: items });
+  items = loadItemNames({ ...deps, itemData: items });
+  items = loadItemGrps({ ...deps, itemData: items });
+  items = loadItemRuNames({ ...deps, itemData: items });
   console.log("Items loaded.");
 
   return items;
 }
 
-function loadItemData(deps:{ chronicle: Chronicle}) {
-  let itemData = []
+function loadItemData(deps: { chronicle: Chronicle }) {
+  let itemData = [];
   switch (deps.chronicle) {
     case "c1":
       itemData = loadItemDataC1();
-      break;  
+      break;
     default:
       itemData = loadItemDataC1();
       break;
@@ -33,7 +32,7 @@ function loadItemData(deps:{ chronicle: Chronicle}) {
     if (item.item_type) {
       items.set(item.$[1], {
         id: item.$[1]!,
-        itemName: item.$[2]!.toString().replace(":", "_"),        
+        itemName: item.$[2]!.toString().replace(/:|\s/g, "_"),
         name: {
           en: "",
           ru: "",
@@ -95,12 +94,15 @@ function loadItemData(deps:{ chronicle: Chronicle}) {
   return items;
 }
 
-function loadItemNames (deps: {chronicle: Chronicle, itemData: Map<number, Item> }) {
+function loadItemNames(deps: {
+  chronicle: Chronicle;
+  itemData: Map<number, Item>;
+}) {
   let itemNames = [];
   switch (deps.chronicle) {
     case "c1":
       itemNames = loadItemNamesC1();
-      break;  
+      break;
     default:
       itemNames = loadItemNamesC1();
       break;
@@ -121,12 +123,15 @@ function loadItemNames (deps: {chronicle: Chronicle, itemData: Map<number, Item>
   return itemData;
 }
 
-function loadItemGrps (deps: {chronicle: Chronicle, itemData: Map<number, Item> }) {
-  let itemGrps = []
+function loadItemGrps(deps: {
+  chronicle: Chronicle;
+  itemData: Map<number, Item>;
+}) {
+  let itemGrps = [];
   switch (deps.chronicle) {
     case "c1":
       itemGrps = loadItemGrpC1();
-      break;  
+      break;
     default:
       itemGrps = loadItemGrpC1();
       break;
@@ -138,16 +143,16 @@ function loadItemGrps (deps: {chronicle: Chronicle, itemData: Map<number, Item> 
     if (item) {
       itemData.set(item.id, {
         ...item,
-        icon: itemGrp.icon.$[0].replace("icon.", "")
+        icon: itemGrp.icon.$[0].replace("icon.", ""),
       });
     }
   }
   return itemData;
 }
 
-function loadItemRuNames (deps: { itemData: Map<number, Item> }) {
+function loadItemRuNames(deps: { itemData: Map<number, Item> }) {
   const itemData = deps.itemData;
-  const itemNames = loadItemNamesGF()
+  const itemNames = loadItemNamesGF();
 
   for (const itemName of itemNames) {
     const item = itemData.get(itemName.id);

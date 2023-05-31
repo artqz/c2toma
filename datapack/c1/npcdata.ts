@@ -47,6 +47,8 @@ const NpcEntryC1 = z.object({
     "etc",
   ]),
   agro_range: z.number(),
+  additional_make_multi_list: z.unknown(),
+  corpse_make_list: z.unknown(),
   npc_ai: z.object({ $: z.tuple([z.string()]).rest(z.unknown()) }),
 });
 

@@ -4,19 +4,29 @@ import { Item } from "../../result/types";
 import { loadItemNamesC1 } from "../../datapack/c1/itemnames";
 import { loadItemGrpC1 } from '../../datapack/c1/itemgrp';
 import { loadItemNamesGF } from '../../datapack/gf/itemnames';
+import { Chronicle } from '../types';
 
-export function loadItems() {
-  let items = loadItemData();
-  items = loadItemNames({ itemData: items });
-  items = loadItemGrps({ itemData: items });
-  items = loadItemRuNames({ itemData: items });
+
+export function loadItems(deps: {chronicle: Chronicle}) {
+  let items = loadItemData(deps);
+  items = loadItemNames({...deps, itemData: items });
+  items = loadItemGrps({...deps, itemData: items });
+  items = loadItemRuNames({...deps, itemData: items });
   console.log("Items loaded.");
 
   return items;
 }
 
-function loadItemData() {
-  const itemData = loadItemDataC1();
+function loadItemData(deps:{ chronicle: Chronicle}) {
+  let itemData = []
+  switch (deps.chronicle) {
+    case "c1":
+      itemData = loadItemDataC1();
+      break;  
+    default:
+      itemData = loadItemDataC1();
+      break;
+  }
   const items = new Map<number, Item>();
 
   for (const item of itemData) {
@@ -85,9 +95,17 @@ function loadItemData() {
   return items;
 }
 
-function loadItemNames (deps: { itemData: Map<number, Item> }) {
+function loadItemNames (deps: {chronicle: Chronicle, itemData: Map<number, Item> }) {
+  let itemNames = [];
+  switch (deps.chronicle) {
+    case "c1":
+      itemNames = loadItemNamesC1();
+      break;  
+    default:
+      itemNames = loadItemNamesC1();
+      break;
+  }
   const itemData = deps.itemData;
-  const itemNames = loadItemNamesC1();
 
   for (const itemName of itemNames) {
     const item = itemData.get(itemName.id);
@@ -103,9 +121,17 @@ function loadItemNames (deps: { itemData: Map<number, Item> }) {
   return itemData;
 }
 
-function loadItemGrps (deps: { itemData: Map<number, Item> }) {
+function loadItemGrps (deps: {chronicle: Chronicle, itemData: Map<number, Item> }) {
+  let itemGrps = []
+  switch (deps.chronicle) {
+    case "c1":
+      itemGrps = loadItemGrpC1();
+      break;  
+    default:
+      itemGrps = loadItemGrpC1();
+      break;
+  }
   const itemData = deps.itemData;
-  const itemGrps = loadItemGrpC1()
 
   for (const itemGrp of itemGrps) {
     const item = itemData.get(itemGrp.object_id);

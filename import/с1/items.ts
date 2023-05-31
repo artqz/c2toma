@@ -2,10 +2,14 @@ import { z } from "zod";
 import { loadItemDataC1 } from "../../datapack/c1/itemdata";
 import { Item } from "../../result/types";
 import { loadItemNamesC1 } from "../../datapack/c1/itemnames";
+import { loadItemGrpC1 } from '../../datapack/c1/itemgrp';
+import { loadItemNamesGF } from '../../datapack/gf/itemnames';
 
 export function loadItems() {
   let items = loadItemData();
   items = loadItemNames({ itemData: items });
+  items = loadItemGrps({ itemData: items });
+  items = loadItemRuNames({ itemData: items });
   console.log("Items loaded.");
 
   return items;
@@ -19,8 +23,7 @@ function loadItemData() {
     if (item.item_type) {
       items.set(item.$[1], {
         id: item.$[1]!,
-        itemName: item.$[2]!.toString().replace(":", "_"),
-        //name: itemC2.name.length ? itemC2.name : itemnameGF?.name ?? itemC4.$[2]!.toString().replace(":", "_"),
+        itemName: item.$[2]!.toString().replace(":", "_"),        
         name: {
           en: "",
           ru: "",
@@ -82,11 +85,52 @@ function loadItemData() {
   return items;
 }
 
-function loadItemNames(deps: { itemData: Map<number, Item> }) {
+function loadItemNames (deps: { itemData: Map<number, Item> }) {
   const itemData = deps.itemData;
   const itemNames = loadItemNamesC1();
 
   for (const itemName of itemNames) {
+    const item = itemData.get(itemName.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        name: { en: itemName.name, ru: itemName.name },
+        desc: { en: itemName.description, ru: itemName.description },
+      });
+    }
+  }
+
+  return itemData;
+}
+
+function loadItemGrps (deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  const itemGrps = loadItemGrpC1()
+
+  for (const itemGrp of itemGrps) {
+    const item = itemData.get(itemGrp.object_id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        icon: itemGrp.icon.$[0].replace("icon.", "")
+      });
+    }
+  }
+  return itemData;
+}
+
+function loadItemRuNames (deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  const itemNames = loadItemNamesGF()
+
+  for (const itemName of itemNames) {
+    const item = itemData.get(itemName.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        name: { ...item.name, ru: itemName.name.ru },
+      });
+    }
   }
 
   return itemData;

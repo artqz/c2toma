@@ -193,7 +193,7 @@ function loadC2Icons(items: Map<number, Item>) {
 function loadNamesGf() {
   const itemnameMap = new Map<
     number,
-    { name: lstring; add_name: lstring; desc: string }
+    { name: lstring; add_name: lstring; desc: lstring }
   >();
   for (const name of loadItemNamesGF()) {
     itemnameMap.set(name.id, {

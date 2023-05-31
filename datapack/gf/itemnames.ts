@@ -10,7 +10,7 @@ type ItemNameEntry = {
   id: number;
   add_name: lstring;
   name: lstring;
-  desc: string;
+  desc: lstring;
 };
 
 function cleanStr(s: string) {
@@ -54,12 +54,13 @@ export function loadItemNamesGF(): ItemNameEntry[] {
       id: parseInt(x.id),
       name: { en: cleanStr(x.name), ru: "" },
       add_name: { en: cleanStr(x.add_name), ru: "" },
-      desc: cleanStr(x.description),
+      desc: { en: cleanStr(x.description), ru: "" },
     };
 
     const ru = langRuById.get(x.id);
     if (ru) {
       itemName.name.ru = cleanStr(ru.name);
+      itemName.desc.ru = cleanStr(ru.description);
       itemName.add_name.ru = cleanStr(ru.add_name);
     }
 

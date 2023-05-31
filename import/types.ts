@@ -55,3 +55,4 @@ export const NpcsDataEntry = z.object({
 });
 export type NpcsDataEntry = z.infer<typeof NpcsDataEntry>;
 
+export type Chronicle = "c1"

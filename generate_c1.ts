@@ -5,10 +5,10 @@ import { createDir, saveFile } from "./utils/Fs";
 const chronicle = "c1";
 function init() {
   // const AllSkills = loadSkills();
-  const items = loadItems();
+  const items = loadItems({chronicle});
   // const itemAbilityList = loadItemAbilityList({ items });
   // const itemSetList = loadItemSetList({ items, skills: AllSkills });
-  const npcs = loadNpcs({});
+  const npcs = loadNpcs({chronicle});
   //   const multisell = loadMultisell({ items, npcs });
   //   const recipes = loadRecipes({ items });
   //   loadNpcPos({ npcs });

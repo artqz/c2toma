@@ -1,17 +1,27 @@
 import { loadNpcDataC1 } from "../../datapack/c1/npcdata";
 import { loadNpcNamesC1 } from "../../datapack/c1/npcnames";
 import { Npc } from "../../result/types";
+import { Chronicle } from '../types';
 
-export function loadNpcs(deps: {}) {
+
+export function loadNpcs(deps: {chronicle: Chronicle}) {
   let npcs = loadNpcData(deps);
-  npcs = loadNpcnames({ npcsData: npcs });
+  npcs = loadNpcnames({...deps, npcsData: npcs });
   console.log("NPCs loaded.");
 
   return npcs;
 }
 
-function loadNpcData(deps: {}) {
-  const npcsData = loadNpcDataC1();
+function loadNpcData(deps:{ chronicle: Chronicle}) {
+  let npcsData = [];
+  switch (deps.chronicle) {
+    case "c1":
+      npcsData = loadNpcDataC1();
+      break;  
+    default:
+      npcsData = loadNpcDataC1();
+      break;
+  }
   const npcs = new Map<number, Npc>();
 
   for (const npc of npcsData) {
@@ -53,11 +63,19 @@ function loadNpcData(deps: {}) {
   return npcs;
 }
 
-function loadNpcnames(deps: { npcsData: Map<number, Npc> }) {
+function loadNpcnames(deps: {chronicle: Chronicle, npcsData: Map<number, Npc> }) {
   const npcsData = deps.npcsData;
-  const npcNmes = loadNpcNamesC1();
+  let npcNames = []
+  switch (deps.chronicle) {
+    case "c1":
+      npcNames = loadNpcNamesC1();
+      break;  
+    default:
+      npcNames = loadNpcNamesC1();
+      break;
+  }
 
-  for (const npcName of npcNmes) {
+  for (const npcName of npcNames) {
     const npc = npcsData.get(npcName.id);
     if (npc) {
       npcsData.set(npc.id, {

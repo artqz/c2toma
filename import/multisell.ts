@@ -14,7 +14,7 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
     if (!excludedMultisells.has(ms.$[0])) {     
     const sellList = ms.selllist.$;
     const slArray: SellList[] = [];
-    
+
     for (const sell of sellList) {
       const multisell = {
         requiredItems: sell.$[1].$.filter(
@@ -167,4 +167,4 @@ function getNpcNamesByMultisell(multisellName: string) {
   }
 }
 
-const excludedMultisells = new Set(["ssq_weapon_yupgrade", "ssq_dual_for_a", "ssq_dualweapon_yupgrade", "ssq_weapon_upgrade"])
+const excludedMultisells = new Set(["ssq_weapon_yupgrade", "ssq_dual_for_a", "ssq_dualweapon_yupgrade", "ssq_weapon_upgrade", "weapon_variation_sep_merchant", "weapon_variation_sep_smith"])

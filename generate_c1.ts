@@ -1,3 +1,4 @@
+import { loadNpcPos } from './import/с1/npcpos';
 import { loadItems } from "./import/с1/items";
 import { loadNpcs } from "./import/с1/npcs";
 import { loadSkills } from "./import/с1/skills";
@@ -12,7 +13,7 @@ function init() {
   const npcs = loadNpcs({ chronicle, items, skills });
   //   const multisell = loadMultisell({ items, npcs });
   //   const recipes = loadRecipes({ items });
-  //   loadNpcPos({ npcs });
+  loadNpcPos({ chronicle, npcs });
   //   const profs = loadProfs({ skills: AllSkills, items });
   //  const skills = getExistingSkills({skills: new Map([...profSkills, ...npcSkills, ...setSkills])})
 

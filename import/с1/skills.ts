@@ -31,7 +31,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
   for (const skill of skillData) {
     skills.set(skill.skill_id + "_" + skill.level, {
       id: skill.skill_id,
-      skillName: skill.skill_name.replace(" ", "_"),
+      skillName: skill.skill_name.toString().replace(/:|\s/g, "_"),
       name: { en: "", ru: "" },
       desc: { en: "", ru: "" },
       level: skill.level,
@@ -40,7 +40,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       effect: "",
       operateCond: "",
       effectTime: skill.abnormal_time,
-      // нет в ц1
+      // нет в ц1 (debuff)
       effectType:
         skill.debuff === undefined
           ? undefined
@@ -117,37 +117,61 @@ function loadSkillGrps(deps: {
 function loadSkillRuNames(deps: { skillData: Map<string, Skill> }) {
   const skillData = deps.skillData;
   const skillDataGF = new Map(
-    loadSkillDataGF().map((npc) => [npc.skill_id, npc])
+    loadSkillDataGF().map((skill) => [skill.skill_id+"_"+skill.level, skill])
   );
-  const skillNamesGF = new Map(loadSkillNamesGF().map((npc) => [npc.id, npc]));
-  const skillNameByName = new Map<string, SkillNameEntry>();
+  const skillNamesGF = new Map(loadSkillNamesGF().map((skill) => [skill.id+"_"+skill.level, skill]));
+  const skillNames = new Map<string, {id: number; skillName: string; level: number; name: { en: string; ru: string;}; desc: string}>();
 
   for (const skillGF of skillDataGF.values()) {
-    const skillName = skillNamesGF.get(skillGF.skill_id);
+    const skillName = skillNamesGF.get(skillGF.skill_id+"_"+skillGF.level);
     if (skillName) {
-      skillNameByName.set(skillGF.skill_name, skillName);
+      skillNames.set(skillGF.skill_name, {...skillName, skillName: skillGF.skill_name});
     }
   }
-
-  const testMap = new Map<
-    string,
-    { id: number; skillName: string; name: lstring }
-  >();
 
   for (const skill of skillData.values()) {
-    const _skill = skillNameByName.get(skill.skillName);
-
+    const _skill = skillNames.get(skill.skillName)
     if (_skill) {
-      testMap.set(skill.skillName, {
-        skillName: skill.skillName,
-        id: skill.id,
-        name: _skill.name,
-      });
+      skillData.set(skill.id+"_"+skill.level, {...skill, name: {...skill.name, ru: _skill.name.ru}})
     }
   }
-  console.log(testMap);
-  for (const test of testMap.values()) {
-    const skill = skillData.get;
-  }
+  // добиваем то, что не смогли найти
+  const skillNamesByName = new Map(Array.from(skillNames.values()).map(s => [s.skillName.replace(/[0-9]/g, ''), s]))
+  for (const skill of skillData.values()) {
+    if (skill.name.ru === skill.name.en) {
+      const _skill = skillNamesByName.get(skill.skillName.replace(/[0-9]/g, ''))
+    if (_skill) {
+      skillData.set(skill.id+"_"+skill.level, {...skill, name: {...skill.name, ru: _skill.name.ru}})
+    }
+    }
+    
+  }  
+  for (const skill of skillData.values()) {
+    if (skill.name.ru === skill.name.en) {  
+      let skillName 
+      switch (skill.skillName) {
+        case "s_strong_to_bow":
+          skillName = "s_strong_to_bow_ex"
+          break;
+        case "s_strong_to_pdamage":
+          skillName = "s_strong_to_pdamage_ex"
+          break;
+        case "s_strong_to_mdamage":
+          skillName = "s_strong_to_mdamage_ex"
+          break;
+        default:
+          skillName = skill.skillName.replace(/_greater|_crystal/, '')
+          break;
+      }
+      const _skill = skillNames.get(skillName)
+    if (_skill) {
+      ;
+      
+      skillData.set(skill.id+"_"+skill.level, {...skill, name: {...skill.name, ru: _skill.name.ru}})
+    }
+    }
+    
+  }  
+  
   return skillData;
 }

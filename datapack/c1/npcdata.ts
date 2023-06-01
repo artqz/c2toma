@@ -1,9 +1,11 @@
 import Fs from "fs";
 import { z } from "zod";
 
+const NpcSkillsEntryC1 = z.object({ $: z.optional(z.string().array()) })
+
 const NpcEntryC1 = z.object({
   $: z.tuple([z.string(), z.number(), z.string()]),
-  skill_list: z.object({ $: z.optional(z.string().array()) }),
+  skill_list: NpcSkillsEntryC1,
   org_hp_regen: z.number(),
   org_mp_regen: z.number(),
   level: z.number(),
@@ -53,6 +55,7 @@ const NpcEntryC1 = z.object({
 });
 
 export type NpcEntryC1 = z.infer<typeof NpcEntryC1>;
+export type NpcSkillsEntryC1 = z.infer<typeof NpcSkillsEntryC1>;
 
 export function loadNpcDataJson(path: string): NpcEntryC1[] {
   const src = Fs.readFileSync(path, "utf8");

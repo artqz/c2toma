@@ -9,7 +9,7 @@ function init() {
   const items = loadItems({ chronicle });
   // const itemAbilityList = loadItemAbilityList({ items });
   // const itemSetList = loadItemSetList({ items, skills: AllSkills });
-  const npcs = loadNpcs({ chronicle, items });
+  const npcs = loadNpcs({ chronicle, items, skills });
   //   const multisell = loadMultisell({ items, npcs });
   //   const recipes = loadRecipes({ items });
   //   loadNpcPos({ npcs });

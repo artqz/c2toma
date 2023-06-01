@@ -2,12 +2,13 @@ import { loadNpcDataC1 } from "../../datapack/c1/npcdata";
 import { loadNpcNamesC1 } from "../../datapack/c1/npcnames";
 import { loadNpcDataGF } from "../../datapack/gf/npcdata";
 import { NpcNameEntry, loadNpcNamesGF } from "../../datapack/gf/npcnames";
-import { Item, Npc, NpcDrop } from "../../result/types";
+import { Item, Npc, NpcDrop, Skill } from "../../result/types";
 import { Chronicle } from "../types";
 
 export function loadNpcs(deps: {
   chronicle: Chronicle;
   items: Map<number, Item>;
+  skills: Map<string, Skill>;
 }) {
   let npcs = loadNpcData(deps);
   npcs = loadNpcnames({ ...deps, npcsData: npcs });
@@ -17,7 +18,7 @@ export function loadNpcs(deps: {
   return npcs;
 }
 
-function loadNpcData(deps: { chronicle: Chronicle; items: Map<number, Item> }) {
+function loadNpcData(deps: { chronicle: Chronicle; items: Map<number, Item>; skills: Map<string, Skill> }) {
   let npcsData = [];
   switch (deps.chronicle) {
     case "c1":
@@ -59,13 +60,25 @@ function loadNpcData(deps: { chronicle: Chronicle; items: Map<number, Item> }) {
       race: npc.race,
       dropList: getDrop({ ...deps, list: npc.additional_make_multi_list }),
       spoilList: getSpoil({ ...deps, list: npc.corpse_make_list }),
-      skillList: [], //getSkills({ ...deps, tomaSkills: npc.npcData.skillList }),
+      skillList: getSkills({ ...deps, list: npc.skill_list }),
       multisell: [],
       spawns: [],
     });
   }
 
   return npcs;
+}
+
+function getSkills(deps: { list: { $?: string[] | undefined;}; skills: Map<string, Skill> }) {
+  const skillsByName = new Map(Array.from(deps.skills.values()).map(s => [s.skillName, s]))
+  const npcSkillList: string[] = []
+  for (const npcSkill of deps.list.$ ?? []) {    
+    const skill = skillsByName.get(npcSkill.replace('@', ''))
+    if (skill) {
+      npcSkillList.push(skill.skillName)
+    }
+  }
+  return npcSkillList
 }
 
 function getDrop(deps: { list: any; items: Map<number, Item> }) {

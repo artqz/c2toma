@@ -18,7 +18,11 @@ export function loadNpcs(deps: {
   return npcs;
 }
 
-function loadNpcData(deps: { chronicle: Chronicle; items: Map<number, Item>; skills: Map<string, Skill> }) {
+function loadNpcData(deps: {
+  chronicle: Chronicle;
+  items: Map<number, Item>;
+  skills: Map<string, Skill>;
+}) {
   let npcsData = [];
   switch (deps.chronicle) {
     case "c1":
@@ -38,7 +42,7 @@ function loadNpcData(deps: { chronicle: Chronicle; items: Map<number, Item>; ski
       nick: { en: "", ru: "" },
       nickColor: "default",
       level: npc.level,
-      ai: "",
+      ai: npc.npc_ai.$[0],
       agroRange: npc.agro_range,
       baseAttackSpeed: npc.base_attack_speed,
       baseCritical: npc.base_critical,
@@ -58,6 +62,7 @@ function loadNpcData(deps: { chronicle: Chronicle; items: Map<number, Item>; ski
       physicalHitModify: npc.physical_hit_modify,
       type: npc.$[0],
       race: npc.race,
+      classes: [],
       dropList: getDrop({ ...deps, list: npc.additional_make_multi_list }),
       spoilList: getSpoil({ ...deps, list: npc.corpse_make_list }),
       skillList: getSkills({ ...deps, list: npc.skill_list }),
@@ -69,16 +74,21 @@ function loadNpcData(deps: { chronicle: Chronicle; items: Map<number, Item>; ski
   return npcs;
 }
 
-function getSkills(deps: { list: { $?: string[] | undefined;}; skills: Map<string, Skill> }) {
-  const skillsByName = new Map(Array.from(deps.skills.values()).map(s => [s.skillName, s]))
-  const npcSkillList: string[] = []
-  for (const npcSkill of deps.list.$ ?? []) {    
-    const skill = skillsByName.get(npcSkill.replace('@', ''))
+function getSkills(deps: {
+  list: { $?: string[] | undefined };
+  skills: Map<string, Skill>;
+}) {
+  const skillsByName = new Map(
+    Array.from(deps.skills.values()).map((s) => [s.skillName, s])
+  );
+  const npcSkillList: string[] = [];
+  for (const npcSkill of deps.list.$ ?? []) {
+    const skill = skillsByName.get(npcSkill.replace("@", ""));
     if (skill) {
-      npcSkillList.push(skill.skillName)
+      npcSkillList.push(skill.skillName);
     }
   }
-  return npcSkillList
+  return npcSkillList;
 }
 
 function getDrop(deps: { list: any; items: Map<number, Item> }) {

@@ -7,7 +7,6 @@ export function loadRecipes(deps: {
   items: Map<number, Item>;
 }) {
   let recipes = loadRecipesData(deps);
-  console.log(recipes);
 
   console.log("Recipes loaded.");
 

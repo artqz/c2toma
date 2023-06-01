@@ -29,6 +29,7 @@ export type Npc = {
   baseCritical: Int | null;
   magicUseSpeedModify: Float | null;
   race: string;
+  classes: string[];
   dropList: NpcDrop[];
   spoilList: NpcDrop[];
   skillList: string[];

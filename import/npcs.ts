@@ -12,7 +12,7 @@ import { NpcDataEntry } from "./types";
 import { NpcNameEntry, loadNpcNamesGF } from "../datapack/gf/npcnames";
 import { loadNpcDataGF } from "../datapack/gf/npcdata";
 
-export const npcSkills = new Map<string, Skill>()
+export const npcSkills = new Map<string, Skill>();
 
 function loadNpcJson(path: string, filename: string) {
   const map = Fs.readFileSync(Path.join(path, filename), "utf8");
@@ -79,6 +79,7 @@ function loadTomaNpcs(deps: {
         physicalHitModify: npc.npcData.physicalHitModify,
         type: npc.npcData.npcType.toString(), // необходимо перевести в другой вид, либо взять в другом сервере
         race: "", // нет данных у томы, берем из скилов, которых нет берем из ц4
+        classes: [],
         dropList: getDrop(npc.drop, deps.items),
         spoilList: getDrop(npc.spoil, deps.items),
         skillList: getSkills({ ...deps, tomaSkills: npc.npcData.skillList }),
@@ -98,7 +99,7 @@ function getSkills(deps: {
   deps.tomaSkills.map((s) => {
     const skill = deps.skills.get(s.skillId + "_" + s.skillLevel);
     if (skill) {
-      npcSkills.set(s.skillId + "_" + s.skillLevel, skill)
+      npcSkills.set(s.skillId + "_" + s.skillLevel, skill);
       skillArr.push(skill.skillName);
     }
   });
@@ -178,11 +179,12 @@ function addNpcSkills(deps: {
 
   for (const npcSkill of deps.npcsSkills.values()) {
     const skill = skillByName.get(npcSkill);
-    if (skill) {    
+    if (skill) {
       deps.skills.set(skill.id + "_" + skill.level, {
         ...skill,
-      });      
-    } else {console.log(`------ нет нпц скилза ${npcSkill}`);
+      });
+    } else {
+      console.log(`------ нет нпц скилза ${npcSkill}`);
     }
   }
 }
@@ -201,7 +203,6 @@ function getDrop(list: DropList[], items: Map<number, Item>) {
 
   return drop;
 }
-
 
 function runames(deps: { npcs: Map<number, Npc> }) {
   const npcdataGF = new Map(loadNpcDataGF().map((npc) => [npc.$[1], npc]));

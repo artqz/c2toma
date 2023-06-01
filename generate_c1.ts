@@ -1,10 +1,11 @@
-import { loadNpcPos } from './import/с1/npcpos';
+import { loadNpcPos } from "./import/с1/npcpos";
 import { loadItems } from "./import/с1/items";
 import { loadNpcs } from "./import/с1/npcs";
 import { loadSkills } from "./import/с1/skills";
 import { createDir, saveFile } from "./utils/Fs";
-import { loadMultisell } from './import/с1/multisell';
-import { loadRecipes } from './import/с1/recipes';
+import { loadMultisell } from "./import/с1/multisell";
+import { loadRecipes } from "./import/с1/recipes";
+import { loadAi } from "./import/с1/ai";
 
 const chronicle = "c1";
 function init() {
@@ -14,12 +15,12 @@ function init() {
   // const itemSetList = loadItemSetList({ items, skills: AllSkills });
   const npcs = loadNpcs({ chronicle, items, skills });
   const multisell = loadMultisell({ chronicle, items, npcs });
- const recipes = loadRecipes({ chronicle, items });
+  const recipes = loadRecipes({ chronicle, items });
   loadNpcPos({ chronicle, npcs });
   //   const profs = loadProfs({ skills: AllSkills, items });
   //  const skills = getExistingSkills({skills: new Map([...profSkills, ...npcSkills, ...setSkills])})
 
-  // const ai = loadAi({ npcs, items });
+  const ai = loadAi({ chronicle, npcs, items });
 
   createDir(`result/data/${chronicle}`);
 
@@ -59,10 +60,10 @@ function init() {
   //   "result/data/profs.json",
   //   JSON.stringify(Array.from(profs.values()), null, 2)
   // );
-  // saveFile(
-  //   "result/data/ai.json",
-  //   JSON.stringify(Array.from(ai.values()), null, 2)
-  // );
+  saveFile(
+    `result/data/${chronicle}/ai.json`,
+    JSON.stringify(Array.from(ai.values()), null, 2)
+  );
   console.log("Finish.");
 }
 

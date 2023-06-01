@@ -162,15 +162,15 @@ export type ItemDrop = {
 };
 
 export type MultisellNpcList = {
-  npcName: string
-  show: boolean
-}
+  npcName: string;
+  show: boolean;
+};
 
 export type Multisell = {
   id: number;
   multisellName: string;
   sellList: SellList[];
-  npcList: MultisellNpcList[]
+  npcList: MultisellNpcList[];
 };
 
 export type ItemMultisell = {
@@ -189,17 +189,12 @@ export type Recipe = {
   id: Int;
   recipeName: string;
   itemName: string;
-  productList: Product[];
+  productList: Material[];
   materialList: Material[];
   npcFeeList: Material[];
   successRate: Int | null;
   level: Int | null;
   mpConsume: Int | null;
-};
-
-export type Product = {
-  itemName: string;
-  count: Int;
 };
 
 export type Material = {

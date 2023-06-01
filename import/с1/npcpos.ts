@@ -7,6 +7,7 @@ export function loadNpcPos(deps: {
   npcs: Map<number, Npc>;
 }) {
   loadNpcPosData(deps);
+  console.log("NPCs position loaded.");
 }
 
 function loadNpcPosData(deps: {

@@ -4,6 +4,7 @@ import { loadNpcs } from "./import/с1/npcs";
 import { loadSkills } from "./import/с1/skills";
 import { createDir, saveFile } from "./utils/Fs";
 import { loadMultisell } from './import/с1/multisell';
+import { loadRecipes } from './import/с1/recipes';
 
 const chronicle = "c1";
 function init() {
@@ -13,7 +14,7 @@ function init() {
   // const itemSetList = loadItemSetList({ items, skills: AllSkills });
   const npcs = loadNpcs({ chronicle, items, skills });
   const multisell = loadMultisell({ chronicle, items, npcs });
-  //   const recipes = loadRecipes({ items });
+ const recipes = loadRecipes({ chronicle, items });
   loadNpcPos({ chronicle, npcs });
   //   const profs = loadProfs({ skills: AllSkills, items });
   //  const skills = getExistingSkills({skills: new Map([...profSkills, ...npcSkills, ...setSkills])})
@@ -50,10 +51,10 @@ function init() {
     `result/data/${chronicle}/multisell.json`,
     JSON.stringify(Array.from(multisell.values()), null, 2)
   );
-  // saveFile(
-  //   "result/data/recipes.json",
-  //   JSON.stringify(Array.from(recipes.values()), null, 2)
-  // );
+  saveFile(
+    `result/data/${chronicle}/recipes.json`,
+    JSON.stringify(Array.from(recipes.values()), null, 2)
+  );
   // saveFile(
   //   "result/data/profs.json",
   //   JSON.stringify(Array.from(profs.values()), null, 2)

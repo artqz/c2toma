@@ -30,14 +30,16 @@ function loadAiData(deps: { chronicle: Chronicle; npcs: Map<number, Npc> }) {
       aiData = loadAiDataC1();
       break;
   }
+  const aiMap = new Map<string, Ai>();
 
   for (const npc of deps.npcs.values()) {
-    const data: AiObjData | undefined = aiData[npc.ai];
-
-    applyAi({ ...deps, npc, aiData });
+    const list = applyAi({ ...deps, npc, aiData });
+    if (list) {
+      aiMap.set(npc.ai, list);
+    }
   }
 
-  return [];
+  return aiMap;
 }
 
 // function addSellList(listTitle: string, aiSellList: AiSellList | undefined) {
@@ -71,13 +73,14 @@ function applyAi(deps: { npc: Npc; aiData: AiObj }) {
 
   const aiMap = new Map<string, Ai>();
   if (data) {
-    aiMap.set(npc.ai, {
+    return {
       name: npc.ai,
       super: data.super,
       sell_lists: getSellList(data.props),
-    });
+    };
+  } else {
+    return null;
   }
-
   // if (data) {
   //   addSellList("SellList0", data.props?.SellList0);
   //   addSellList("SellList1", data.props?.SellList1);
@@ -91,25 +94,17 @@ function applyAi(deps: { npc: Npc; aiData: AiObj }) {
 }
 
 function getSellList(aiProps: AiProps | undefined) {
-  const lists = new Map<number, AiSL>();
-  addSellList(aiProps?.SellList0);
-  addSellList(aiProps?.SellList1);
-  addSellList(aiProps?.SellList2);
-  addSellList(aiProps?.SellList3);
-  addSellList(aiProps?.SellList4);
-  addSellList(aiProps?.SellList5);
-  addSellList(aiProps?.SellList6);
-  addSellList(aiProps?.SellList7);
-  // ["SellList0", "SellList1", "SellList2", "SellList3", "SellList4", "SellList5", "SellList6", "SellList7"].map(sl => {
-  //   const newList: AiSL = [];
-  //   if (aiProps?["sl"] ) {
-  //     // for (const [i, sell] of aiProps?[sl].entries()) {
-  //     //   newList.push([sell[0]!, sell[1]!, 0, 0]);
-  //     // }
-  //   }
-  // })
+  const newList: AiSL[] = [];
 
-  return [];
+  aiProps?.SellList0 && newList.push(addSellList(aiProps?.SellList0));
+  aiProps?.SellList1 && newList.push(addSellList(aiProps?.SellList1));
+  aiProps?.SellList2 && newList.push(addSellList(aiProps?.SellList2));
+  aiProps?.SellList3 && newList.push(addSellList(aiProps?.SellList3));
+  aiProps?.SellList4 && newList.push(addSellList(aiProps?.SellList4));
+  aiProps?.SellList5 && newList.push(addSellList(aiProps?.SellList5));
+  aiProps?.SellList6 && newList.push(addSellList(aiProps?.SellList6));
+  aiProps?.SellList7 && newList.push(addSellList(aiProps?.SellList7));
+  return newList;
 }
 
 function addSellList(aiSellList: AiSellList | undefined) {

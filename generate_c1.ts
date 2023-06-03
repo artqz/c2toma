@@ -6,13 +6,14 @@ import { createDir, saveFile } from "./utils/Fs";
 import { loadMultisell } from "./import/с1/multisell";
 import { loadRecipes } from "./import/с1/recipes";
 import { loadAi } from "./import/с1/ai";
+import { loadSets } from "./import/с1/sets";
 
 const chronicle = "c1";
 function init() {
   const skills = loadSkills({ chronicle });
   const items = loadItems({ chronicle });
   // const itemAbilityList = loadItemAbilityList({ items });
-  // const itemSetList = loadItemSetList({ items, skills: AllSkills });
+  const sets = loadSets({ chronicle, items, skills });
   const npcs = loadNpcs({ chronicle, items, skills });
   const multisell = loadMultisell({ chronicle, items, npcs });
   const recipes = loadRecipes({ chronicle, items });
@@ -32,10 +33,10 @@ function init() {
     `result/data/${chronicle}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)
   );
-  // saveFile(
-  //   "result/data/sets.json",
-  //   JSON.stringify(Array.from(itemSetList.values()), null, 2)
-  // );
+  saveFile(
+    `result/data/${chronicle}/sets.json`,
+    JSON.stringify(Array.from(sets.values()), null, 2)
+  );
   // saveFile(
   //   "result/data/weaponAbilities.json",
   //   JSON.stringify(Array.from(itemAbilityList.values()), null, 2)
@@ -44,10 +45,6 @@ function init() {
     `result/data/${chronicle}/npcs.json`,
     JSON.stringify(Array.from(npcs.values()), null, 2)
   );
-  // saveFile(
-  //   "result/data/skills.json",
-  //   JSON.stringify(Array.from(skills.values()), null, 2)
-  // );
   saveFile(
     `result/data/${chronicle}/multisell.json`,
     JSON.stringify(Array.from(multisell.values()), null, 2)

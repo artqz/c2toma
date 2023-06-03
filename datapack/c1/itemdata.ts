@@ -65,6 +65,122 @@ const ItemEntryC1 = z.object({
   set_skill: z.string().optional(),
   set_effect_skill: z.string().optional(),
   set_additional_effect_skill: z.string().optional(),
+  //c1 stats
+  p_def_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  m_def_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  hp_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  mp_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  move_speed_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  breath_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  magic_resist_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  casting_speed_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  p_attack_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  m_attack_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  hp_regen_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  mp_regen_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  str_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  con_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  dex_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  int_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  men_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  wit_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  avoid_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  shield_def_prob_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  weight_limit_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  resist_poison_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
+  p_def_vs_dagger_inc: z
+    .object({
+      $: z.tuple([z.number(), z.number()]),
+    })
+    .optional(),
 });
 
 export type ItemEntryC1 = z.infer<typeof ItemEntryC1>;

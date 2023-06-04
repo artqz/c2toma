@@ -32,10 +32,10 @@ function loadSetData(deps: {
       setData = loadItemDataC1();
       break;
   }
-  const sets = new Map<number, Set>();
-  C1sets({ ...deps, setData });
+  // const sets = new Map<number, Set>();
+  const sets = C1sets({ ...deps, setData });
 
-  return [];
+  return sets;
 }
 
 function C1sets(deps: {
@@ -115,20 +115,220 @@ function C1sets(deps: {
           }
         }
 
+        const { effects, effectsShield } = getEffectC1({
+          p_def_inc: set.p_def_inc,
+          m_def_inc: set.m_def_inc,
+          hp_inc: set.hp_inc,
+          mp_inc: set.mp_inc,
+          move_speed_inc: set.move_speed_inc,
+          breath_inc: set.breath_inc,
+          magic_resist_inc: set.magic_resist_inc,
+          casting_speed_inc: set.casting_speed_inc,
+          p_attack_inc: set.p_attack_inc,
+          m_attack_inc: set.m_attack_inc,
+          hp_regen_inc: set.hp_regen_inc,
+          mp_regen_inc: set.mp_regen_inc,
+          str_inc: set.str_inc,
+          con_inc: set.con_inc,
+          dex_inc: set.dex_inc,
+          int_inc: set.int_inc,
+          men_inc: set.men_inc,
+          wit_inc: set.wit_inc,
+          avoid_inc: set.avoid_inc,
+          shield_def_prob_inc: set.shield_def_prob_inc,
+          weight_limit_inc: set.weight_limit_inc,
+          resist_poison_inc: set.resist_poison_inc,
+          p_def_vs_dagger_inc: set.resist_poison_inc,
+        });
+
         itemSetList.set(set.$[0], {
           id: set.$[0],
           setName: setnamesC1.get(set.$[0])?.setName ?? "",
           icon: setIcon,
           name: setnamesC1.get(set.$[0])?.name ?? { en: "", ru: "" },
           desc: { en: "", ru: "" },
-          setEffectSkill: "",
-          setAdditionalEffectSkill: "",
+          setEffectSkill: effects,
+          setAdditionalEffectSkill: effectsShield,
           items,
         });
       }
     }
   }
-  console.log(itemSetList);
+
+  return itemSetList;
+}
+
+type inc = { $: [number, number] } | undefined;
+function getEffectC1(deps: {
+  p_def_inc?: inc;
+  m_def_inc?: inc;
+  hp_inc?: inc;
+  mp_inc?: inc;
+  move_speed_inc?: inc;
+  breath_inc?: inc;
+  magic_resist_inc?: inc;
+  casting_speed_inc?: inc;
+  p_attack_inc?: inc;
+  m_attack_inc?: inc;
+  hp_regen_inc?: inc;
+  mp_regen_inc?: inc;
+  str_inc?: inc;
+  con_inc?: inc;
+  dex_inc?: inc;
+  int_inc?: inc;
+  men_inc?: inc;
+  wit_inc?: inc;
+  avoid_inc?: inc;
+  shield_def_prob_inc?: inc;
+  weight_limit_inc?: inc;
+  resist_poison_inc?: inc;
+  p_def_vs_dagger_inc?: inc;
+}) {
+  const effects: string[] = [];
+  const effectsShield: string[] = [];
+
+  if (deps.p_def_inc) {
+    deps.p_def_inc.$[0] !== 0 &&
+      effects.push(`P. Def. ${inc(deps.p_def_inc.$[0])}%`);
+    deps.p_def_inc.$[1] !== 0 &&
+      effectsShield.push(`P. Def. ${inc(deps.p_def_inc.$[1])}%`);
+  }
+  if (deps.m_def_inc) {
+    deps.m_def_inc.$[0] !== 0 &&
+      effects.push(`M. Def. ${inc(deps.m_def_inc.$[0])}%`);
+    deps.m_def_inc.$[1] !== 0 &&
+      effectsShield.push(`M. Def. ${inc(deps.m_def_inc.$[1])}%`);
+  }
+  if (deps.hp_inc) {
+    deps.hp_inc.$[0] !== 0 && effects.push(`Max HP ${inc(deps.hp_inc.$[0])}`);
+    deps.hp_inc.$[1] !== 0 &&
+      effectsShield.push(`Max HP ${inc(deps.hp_inc.$[1])}`);
+  }
+  if (deps.mp_inc) {
+    deps.mp_inc.$[0] !== 0 && effects.push(`Max MP ${inc(deps.mp_inc.$[0])}`);
+    deps.mp_inc.$[1] !== 0 &&
+      effectsShield.push(`Max MP ${inc(deps.mp_inc.$[1])}`);
+  }
+  if (deps.move_speed_inc) {
+    deps.move_speed_inc.$[0] !== 0 &&
+      effects.push(`Speed ${inc(deps.move_speed_inc.$[0])}`);
+    deps.move_speed_inc.$[1] !== 0 &&
+      effectsShield.push(`Speed ${inc(deps.move_speed_inc.$[1])}`);
+  }
+  if (deps.breath_inc) {
+    deps.breath_inc.$[0] !== 0 &&
+      effects.push(`Breath ${inc(deps.breath_inc.$[0])}`);
+    deps.breath_inc.$[1] !== 0 &&
+      effectsShield.push(`Breath ${inc(deps.breath_inc.$[1])}`);
+  }
+  if (deps.magic_resist_inc) {
+    deps.magic_resist_inc.$[0] !== 0 &&
+      effects.push(`Magic Resist ${inc(deps.magic_resist_inc.$[0])}`);
+    deps.magic_resist_inc.$[1] !== 0 &&
+      effectsShield.push(`Magic Resist ${inc(deps.magic_resist_inc.$[1])}`);
+  }
+  if (deps.casting_speed_inc) {
+    deps.casting_speed_inc.$[0] !== 0 &&
+      effects.push(`Casting Spd. ${inc(deps.casting_speed_inc.$[0])}%`);
+    deps.casting_speed_inc.$[1] !== 0 &&
+      effectsShield.push(`Casting Spd. ${inc(deps.casting_speed_inc.$[1])}%`);
+  }
+  if (deps.p_attack_inc) {
+    deps.p_attack_inc.$[0] !== 0 &&
+      effects.push(`P. Atk. ${inc(deps.p_attack_inc.$[0])}%`);
+    deps.p_attack_inc.$[1] !== 0 &&
+      effectsShield.push(`P. Atk. ${inc(deps.p_attack_inc.$[1])}%`);
+  }
+  if (deps.m_attack_inc) {
+    deps.m_attack_inc.$[0] !== 0 &&
+      effects.push(`M. Atk. ${inc(deps.m_attack_inc.$[0])}%`);
+    deps.m_attack_inc.$[1] !== 0 &&
+      effectsShield.push(`M. Atk. ${inc(deps.m_attack_inc.$[1])}%`);
+  }
+  if (deps.hp_regen_inc) {
+    deps.hp_regen_inc.$[0] !== 0 &&
+      effects.push(`HP Regen ${inc(deps.hp_regen_inc.$[0])}%`);
+    deps.hp_regen_inc.$[1] !== 0 &&
+      effectsShield.push(`HP Regen ${inc(deps.hp_regen_inc.$[1])}%`);
+  }
+  if (deps.mp_regen_inc) {
+    deps.mp_regen_inc.$[0] !== 0 &&
+      effects.push(`MP Regen ${inc(deps.mp_regen_inc.$[0])}%`);
+    deps.mp_regen_inc.$[1] !== 0 &&
+      effectsShield.push(`MP Regen ${inc(deps.mp_regen_inc.$[1])}%`);
+  }
+  if (deps.str_inc) {
+    deps.str_inc.$[0] !== 0 && effects.push(`STR ${inc(deps.str_inc.$[0])}`);
+    deps.str_inc.$[1] !== 0 &&
+      effectsShield.push(`STR ${inc(deps.str_inc.$[1])}`);
+  }
+  if (deps.con_inc) {
+    deps.con_inc.$[0] !== 0 && effects.push(`CON ${inc(deps.con_inc.$[0])}`);
+    deps.con_inc.$[1] !== 0 &&
+      effectsShield.push(`CON ${inc(deps.con_inc.$[1])}`);
+  }
+  if (deps.dex_inc) {
+    deps.dex_inc.$[0] !== 0 && effects.push(`DEX ${inc(deps.dex_inc.$[0])}`);
+    deps.dex_inc.$[1] !== 0 &&
+      effectsShield.push(`DEX ${inc(deps.dex_inc.$[1])}`);
+  }
+  if (deps.int_inc) {
+    deps.int_inc.$[0] !== 0 && effects.push(`INT ${inc(deps.int_inc.$[0])}`);
+    deps.int_inc.$[1] !== 0 &&
+      effectsShield.push(`INT ${inc(deps.int_inc.$[1])}`);
+  }
+  if (deps.wit_inc) {
+    deps.wit_inc.$[0] !== 0 && effects.push(`WIT ${inc(deps.wit_inc.$[0])}`);
+    deps.wit_inc.$[1] !== 0 &&
+      effectsShield.push(`WIT ${inc(deps.wit_inc.$[1])}`);
+  }
+  if (deps.men_inc) {
+    deps.men_inc.$[0] !== 0 && effects.push(`MEN ${inc(deps.men_inc.$[0])}`);
+    deps.men_inc.$[1] !== 0 &&
+      effectsShield.push(`MEN ${inc(deps.men_inc.$[1])}`);
+  }
+  if (deps.men_inc) {
+    deps.men_inc.$[0] !== 0 && effects.push(`MEN ${inc(deps.men_inc.$[0])}`);
+    deps.men_inc.$[1] !== 0 &&
+      effectsShield.push(`MEN ${inc(deps.men_inc.$[1])}`);
+  }
+  if (deps.shield_def_prob_inc) {
+    deps.shield_def_prob_inc.$[0] !== 0 &&
+      effects.push(`Shield Def ${inc(deps.shield_def_prob_inc.$[0])}`);
+    deps.shield_def_prob_inc.$[1] !== 0 &&
+      effectsShield.push(`Shield Def ${inc(deps.shield_def_prob_inc.$[1])}`);
+  }
+  if (deps.weight_limit_inc) {
+    deps.weight_limit_inc.$[0] !== 0 &&
+      effects.push(`Weight Limit ${inc(deps.weight_limit_inc.$[0])}`);
+    deps.weight_limit_inc.$[1] !== 0 &&
+      effectsShield.push(`Weight Limit ${inc(deps.weight_limit_inc.$[1])}`);
+  }
+  if (deps.resist_poison_inc) {
+    deps.resist_poison_inc.$[0] !== 0 &&
+      effects.push(`Resist Poison ${inc(deps.resist_poison_inc.$[0])}%`);
+    deps.resist_poison_inc.$[1] !== 0 &&
+      effectsShield.push(`Resist Poison ${inc(deps.resist_poison_inc.$[1])}%`);
+  }
+  if (deps.p_def_vs_dagger_inc) {
+    deps.p_def_vs_dagger_inc.$[0] !== 0 &&
+      effects.push(
+        `P. Def. against dagger ${inc(deps.p_def_vs_dagger_inc.$[0])}%`
+      );
+    deps.p_def_vs_dagger_inc.$[1] !== 0 &&
+      effectsShield.push(
+        `P. Def. against dagger ${inc(deps.p_def_vs_dagger_inc.$[1])}%`
+      );
+  }
+
+  return {
+    effects: effects.join(", ") + ".",
+    effectsShield: effectsShield.join(", ") + ".",
+  };
+}
+
+function inc(n: number) {
+  return (n <= 0 ? "" : "+") + n;
 }
 
 const setnamesC1 = new Map([

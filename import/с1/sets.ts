@@ -323,7 +323,8 @@ function getEffectC1(deps: {
 
   return {
     effects: effects.join(", ") + ".",
-    effectsShield: effectsShield.length > 0 && effectsShield.join(", ") + ".",
+    effectsShield:
+      effectsShield.length > 0 ? effectsShield.join(", ") + "." : "",
   };
 }
 

@@ -330,7 +330,7 @@ function getEffectC1(deps: {
 }
 
 function inc(n: number) {
-  return (n <= 0 ? "" : "+") + n;
+  return (n <= 0 ? "" : "+") + Math.round(n);
 }
 
 const setnamesC1 = new Map([

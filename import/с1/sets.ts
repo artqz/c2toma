@@ -24,16 +24,17 @@ function loadSetData(deps: {
   skills: Map<string, Skill>;
 }) {
   let setData = [];
+  let sets: Map<number, Set>;
   switch (deps.chronicle) {
     case "c1":
       setData = loadItemDataC1();
+      sets = C1sets({ ...deps, setData });
       break;
     default:
       setData = loadItemDataC1();
+      sets = new Map();
       break;
   }
-  // const sets = new Map<number, Set>();
-  const sets = C1sets({ ...deps, setData });
 
   return sets;
 }

@@ -7,6 +7,7 @@ import { loadMultisell } from "./import/с1/multisell";
 import { loadRecipes } from "./import/с1/recipes";
 import { loadAi } from "./import/с1/ai";
 import { loadSets } from "./import/с1/sets";
+import { loadProfs } from "./import/с1/profs";
 
 const chronicle = "c1";
 function init() {
@@ -18,7 +19,7 @@ function init() {
   const multisell = loadMultisell({ chronicle, items, npcs });
   const recipes = loadRecipes({ chronicle, items });
   loadNpcPos({ chronicle, npcs });
-  //   const profs = loadProfs({ skills: AllSkills, items });
+  const profs = loadProfs({ chronicle, skills, items });
   //  const skills = getExistingSkills({skills: new Map([...profSkills, ...npcSkills, ...setSkills])})
 
   const ai = loadAi({ chronicle, npcs, items });
@@ -53,10 +54,10 @@ function init() {
     `result/data/${chronicle}/recipes.json`,
     JSON.stringify(Array.from(recipes.values()), null, 2)
   );
-  // saveFile(
-  //   "result/data/profs.json",
-  //   JSON.stringify(Array.from(profs.values()), null, 2)
-  // );
+  saveFile(
+    `result/data/${chronicle}/profs.json`,
+    JSON.stringify(Array.from(profs.values()), null, 2)
+  );
   saveFile(
     `result/data/${chronicle}/ai.json`,
     JSON.stringify(Array.from(ai.values()), null, 2)

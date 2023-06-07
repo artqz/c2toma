@@ -59,6 +59,10 @@ export type Skill = {
   effectTime: number | undefined;
   effectType: "debuff" | "buff" | "song" | undefined;
   icon: string;
+  castRange: number;
+  hp_consume: number;
+  mp_consume1: number;
+  mp_consume2: number;
 };
 
 export type Item = {
@@ -204,7 +208,6 @@ export type Material = {
 };
 
 export type Prof = {
-  id: number;
   profName: string;
   parent: string | null;
   skills: ProfSkill[];
@@ -214,11 +217,11 @@ export type ProfSkill = {
   skillName: string;
   skillLevel: number;
   isMagic: boolean;
-  operateType: number;
+  operateType: string;
   getLv: number;
   lvUpSp: number;
   autoGet: boolean;
-  itemNeeded: string | null;
+  itemNeeded: { itemName: string; count: number }[] | null;
   hp: number;
   mp: number;
   range: number;

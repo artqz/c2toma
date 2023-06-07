@@ -6,7 +6,7 @@ import { loadSkillGrpC4 } from "../datapack/c4/skillgrp";
 import { loadSkillNamesC4 } from "../datapack/c4/skillnames";
 import { loadSkillNamesGF } from "../datapack/gf/skillnames";
 import { Skill } from "../result/types";
-import { saveFile } from '../utils/Fs';
+import { saveFile } from "../utils/Fs";
 
 export function loadSkills() {
   let skills: Map<string, Skill>;
@@ -51,6 +51,10 @@ function loadC4Skills() {
       effect: JSON.stringify(skillC4.effect),
       operateCond: JSON.stringify(skillC4.operate_cond),
       effectTime: skillC4.abnormal_time,
+      castRange: skillC4.cast_range ?? 0,
+      hp_consume: skillC4.hp_consume ?? 0,
+      mp_consume1: skillC4.mp_consume1 ?? 0,
+      mp_consume2: skillC4.mp_consume2 ?? 0,
       effectType:
         skillC4.debuff === undefined
           ? undefined
@@ -131,6 +135,3 @@ function loadC4Names(skills: Map<string, Skill>) {
   }
   return skillsNew;
 }
-
-
-

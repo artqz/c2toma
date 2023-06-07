@@ -82,6 +82,10 @@ const SkillEntryC4 = z.object({
   effect: SkillEffect,
   operate_cond: SkillOperateCond,
   effect_point: z.number().optional(), //aggro point
+  cast_range: z.number().optional(),
+  hp_consume: z.number().optional(),
+  mp_consume1: z.number().optional(),
+  mp_consume2: z.number().optional(),
 });
 
 export type SkillEntryC4 = z.infer<typeof SkillEntryC4>;

@@ -56,7 +56,7 @@ function getSkills(deps: {
               count: 1,
             },
           ]
-        : null,
+        : [],
     });
   }
 

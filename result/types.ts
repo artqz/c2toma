@@ -221,7 +221,7 @@ export type ProfSkill = {
   getLv: number;
   lvUpSp: number;
   autoGet: boolean;
-  itemNeeded: { itemName: string; count: number }[] | null;
+  itemNeeded: { itemName: string; count: number }[];
   hp: number;
   mp: number;
   range: number;

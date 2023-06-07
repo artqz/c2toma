@@ -5,12 +5,14 @@ import { loadItemNamesC1 } from "../../datapack/c1/itemnames";
 import { loadItemGrpC1 } from "../../datapack/c1/itemgrp";
 import { loadItemNamesGF } from "../../datapack/gf/itemnames";
 import { Chronicle } from "../types";
+import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
   items = loadItemNames({ ...deps, itemData: items });
   items = loadItemGrps({ ...deps, itemData: items });
   items = loadItemRuNames({ ...deps, itemData: items });
+  items = loadItemEnchantBonuses({ ...deps, itemData: items });
   console.log("Items loaded.");
 
   return items;
@@ -55,7 +57,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
         critical: item.critical!,
         criticalAttackSkill: item.critical_attack_skill!,
         crystalCount: item.crystal_count!,
-        crystalType: item.crystal_type!,
+        crystalType: item.crystal_type ?? "none",
         damageRange: item.damage_range ? item.damage_range.$ + "" : "none",
         defaultPrice: item.default_price!,
         dualFhitRate: item.dual_fhit_rate!,
@@ -165,6 +167,36 @@ function loadItemRuNames(deps: { itemData: Map<number, Item> }) {
   }
 
   return itemData;
+}
+
+function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
+  for (const item of deps.itemData.values()) {
+    const enchant = new Map<
+      number,
+      {
+        pAtk: number;
+        mAtk: number;
+        pDef: number;
+        mDef: number;
+        crystals: number[];
+      }
+    >();
+    for (let i = 0; i <= 19; i++) {
+      if (item.type === "weapon") {
+      }
+      enchant.set(i, {
+        pAtk: calcWeaponAtk({ level: i, item }).pAtk,
+        mAtk: calcWeaponAtk({ level: i, item }).mAtk,
+        pDef: calcArmorDef({ level: i, item }).pDef,
+        mDef: calcArmorDef({ level: i, item }).mDef,
+        crystals: calcСrystals({ level: i, item }),
+      });
+    }
+
+    if (item.itemName === "necklace_of_devotion") console.log(enchant);
+  }
+
+  return deps.itemData;
 }
 
 const Slot = z.enum([

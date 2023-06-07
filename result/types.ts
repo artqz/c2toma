@@ -88,7 +88,7 @@ export type Item = {
   itemSkill: string | null;
   criticalAttackSkill: string | null;
   materialType: string | null;
-  crystalType: string | null;
+  crystalType: "none" | "d" | "c" | "b" | "a" | "s";
   crystalCount: Int | null;
   isTrade: boolean;
   isDrop: boolean;

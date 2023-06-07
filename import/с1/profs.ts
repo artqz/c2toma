@@ -35,20 +35,20 @@ function loadSkillAcquireData(deps: {
   const profMap = new Map<string, Prof>();
 
   for (const prof of profData.filter((x) => !notClass.includes(x.t))) {
-    let parentProf: { profName: string; skills: string[] } | null = null;
+    let parentProf: Prof | null = null;
 
     if (typeof prof.$[0] === "string") {
       const parentName = prof.$[0].replace("include_", "");
       const parent = profMap.get(parentName);
       if (parent) {
-        // parentProf = parent;
+        parentProf = parent;
       }
     }
 
     profMap.set(prof.t, {
       profName: prof.t,
       skills: getSkills({ ...deps, profSkills: prof.$ }),
-      parent: parentProf,
+      parent: parentProf?.profName ?? null,
     });
   }
   return profMap;
@@ -100,7 +100,7 @@ function getItems(deps: {
     if (itemData) {
       const itemName = itemData.$[0];
       const itemCount = itemData.$[1];
-      const item = itemsByName.get(itemName);
+      const item = itemsByName.get(itemName.replace(":", "_"));
       if (item) {
         return ret.push({ itemName: item.itemName, count: itemCount });
       } else {

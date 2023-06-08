@@ -8,12 +8,13 @@ import { loadRecipes } from "./import/с1/recipes";
 import { loadAi } from "./import/с1/ai";
 import { loadSets } from "./import/с1/sets";
 import { loadProfs } from "./import/с1/profs";
+import { loadWeaponAbilities } from "./import/с1/weaponAbilities";
 
 const chronicle = "c1";
 function init() {
   const skills = loadSkills({ chronicle });
   const items = loadItems({ chronicle });
-  // const itemAbilityList = loadItemAbilityList({ items });
+  const weaponAbilities = loadWeaponAbilities({ chronicle, items });
   const sets = loadSets({ chronicle, items, skills });
   const npcs = loadNpcs({ chronicle, items, skills });
   const multisell = loadMultisell({ chronicle, items, npcs });
@@ -38,10 +39,10 @@ function init() {
     `result/data/${chronicle}/sets.json`,
     JSON.stringify(Array.from(sets.values()), null, 2)
   );
-  // saveFile(
-  //   "result/data/weaponAbilities.json",
-  //   JSON.stringify(Array.from(itemAbilityList.values()), null, 2)
-  // );
+  saveFile(
+    `result/data/${chronicle}/weaponAbilities.json`,
+    JSON.stringify(Array.from(weaponAbilities.values()), null, 2)
+  );
   saveFile(
     `result/data/${chronicle}/npcs.json`,
     JSON.stringify(Array.from(npcs.values()), null, 2)

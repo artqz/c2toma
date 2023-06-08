@@ -27,7 +27,7 @@ const ItemEntryC4 = z.object({
   item_skill: z.string().optional(),
   critical_attack_skill: z.string().optional(),
   material_type: z.string().optional(),
-  crystal_type: z.string().optional(),
+  crystal_type: z.enum(["none", "d", "c", "b", "a", "s"]).optional(),
   crystal_count: z.number().optional(),
   is_trade: z.number().optional(),
   is_drop: z.number().optional(),

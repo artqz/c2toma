@@ -113,6 +113,7 @@ export type Item = {
   magicalDefense: Int | null;
   mpBonus: Int | null;
   magicWeapon: boolean;
+  enchantBonus: EnchantBonus[];
   // recipe: Recipe[];
   // sellList: Merchant[];
   // product: Product[];
@@ -120,6 +121,15 @@ export type Item = {
   // dropList: ItemDrop[];
   // spoilList: ItemDrop[];
   // multisell: ItemMultisell[];
+};
+
+export type EnchantBonus = {
+  level: number;
+  pAtk: number;
+  mAtk: number;
+  pDef: number;
+  mDef: number;
+  crystals: number[];
 };
 
 export type Merchant = {

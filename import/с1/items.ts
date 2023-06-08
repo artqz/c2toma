@@ -89,6 +89,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
         type: item.$[0].toString(),
         weaponType: item.weapon_type!,
         weight: item.weight!,
+        enchantBonus: [],
       });
     }
   }
@@ -171,29 +172,18 @@ function loadItemRuNames(deps: { itemData: Map<number, Item> }) {
 
 function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
   for (const item of deps.itemData.values()) {
-    const enchant = new Map<
-      number,
-      {
-        pAtk: number;
-        mAtk: number;
-        pDef: number;
-        mDef: number;
-        crystals: number[];
-      }
-    >();
     for (let i = 0; i <= 19; i++) {
-      if (item.type === "weapon") {
+      if (item.crystalType !== "none") {
+        item.enchantBonus.push({
+          level: i,
+          pAtk: calcWeaponAtk({ level: i, item }).pAtk,
+          mAtk: calcWeaponAtk({ level: i, item }).mAtk,
+          pDef: calcArmorDef({ level: i, item }).pDef,
+          mDef: calcArmorDef({ level: i, item }).mDef,
+          crystals: calcСrystals({ level: i, item }),
+        });
       }
-      enchant.set(i, {
-        pAtk: calcWeaponAtk({ level: i, item }).pAtk,
-        mAtk: calcWeaponAtk({ level: i, item }).mAtk,
-        pDef: calcArmorDef({ level: i, item }).pDef,
-        mDef: calcArmorDef({ level: i, item }).mDef,
-        crystals: calcСrystals({ level: i, item }),
-      });
     }
-
-    if (item.itemName === "necklace_of_devotion") console.log(enchant);
   }
 
   return deps.itemData;

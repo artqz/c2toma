@@ -1,19 +1,18 @@
-import { string, z } from "zod";
+import { z } from "zod";
 import { loadItemGrpC2 } from "../../datapack/c2/itemgrp";
 import { ItemEntryC2, loadItemNamesC2 } from "../../datapack/c2/itemnames";
 import { loadItemDataC4 } from "../../datapack/c4/itemdata";
-import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemNamesGF } from "../../datapack/gf/itemnames";
-import { Item, ShortItem, lstring } from "../../result/types";
-import { loadItemSetList } from "./itemSetList";
-import { loadItemAbilityList } from "./itemAbilityList";
+import { Item, lstring } from "../../result/types";
+
+import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
 
 export function loadItems() {
   const itemnamesC2 = new Map(loadItemNamesC2().map((npc) => [npc.id, npc]));
   let items: Map<number, Item>;
   items = loadC4Items(itemnamesC2);
   items = loadC2Icons(items);
-
+  items = loadItemEnchantBonuses({ itemData: items });
   console.log("Items loaded.");
 
   return items;
@@ -66,7 +65,7 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         critical: itemC4.critical!,
         criticalAttackSkill: itemC4.critical_attack_skill!,
         crystalCount: itemC4.crystal_count!,
-        crystalType: itemC4.crystal_type!,
+        crystalType: itemC4.crystal_type ?? "none",
         damageRange: itemC4.damage_range ? itemC4.damage_range.$ + "" : "none",
         defaultPrice: itemC4.default_price!,
         dualFhitRate: itemC4.dual_fhit_rate!,
@@ -98,6 +97,7 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         type: itemC4.$[0].toString(),
         weaponType: itemC4.weapon_type!,
         weight: itemC4.weight!,
+        enchantBonus: [],
         // recipe: [],
         // sellList: [],
         // multisell:[],
@@ -204,6 +204,25 @@ function loadNamesGf() {
   }
 
   return itemnameMap;
+}
+
+function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
+  for (const item of deps.itemData.values()) {
+    for (let i = 0; i <= 19; i++) {
+      if (item.crystalType !== "none") {
+        item.enchantBonus.push({
+          level: i,
+          pAtk: calcWeaponAtk({ level: i, item }).pAtk,
+          mAtk: calcWeaponAtk({ level: i, item }).mAtk,
+          pDef: calcArmorDef({ level: i, item }).pDef,
+          mDef: calcArmorDef({ level: i, item }).mDef,
+          crystals: calcСrystals({ level: i, item }),
+        });
+      }
+    }
+  }
+
+  return deps.itemData;
 }
 
 export const Slot = z.enum([

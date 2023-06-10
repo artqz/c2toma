@@ -6,7 +6,7 @@ import Fs, { checkFile, saveFile } from "./utils/Fs";
 const app = express();
 const port = 3000;
 
-const version_game = "c5";
+const version_game = "c3";
 
 app.use(express.json({ limit: "50mb" })); // for parsing application/json
 app.use(express.urlencoded({ extended: true, limit: "50mb" })); // for parsing application/x-www-form-urlencoded

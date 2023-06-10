@@ -1,5 +1,6 @@
 // background.js
 console.log(Date.now());
+const VERSION = "c3"
 
 //content_scripts
 // chrome.runtime.onConnect.addListener(function (port) {
@@ -46,7 +47,7 @@ chrome.runtime.onConnect.addListener(async function (port) {
           },
           body: JSON.stringify({
             data: message.data,
-            v: "c4",
+            v: VERSION,
           }),
         });
         await nextNpc(message.tabId);
@@ -73,7 +74,7 @@ chrome.runtime.onConnect.addListener(async function (port) {
             body: JSON.stringify({
               data: message.data,
               npcId: message.npcId,
-              v: "c4",
+              v: VERSION,
             }),
           });
           if (res.ok) {
@@ -110,12 +111,12 @@ chrome.runtime.onConnect.addListener(async function (port) {
             body: JSON.stringify({
               data: message.data,
               npcId: message.npcId,
-              v: "c4",
+              v: VERSION,
             }),
           });
           if (res.ok) {
             const newMap = tabData.get(message.tabId);
-            newMap.getMap = message.data != null ? true : false;
+            newMap.getMap = message.data != null && message.data.hasOwnProperty('map') ? true : false;
             tabData.set(message.tabId, newMap);
             console.log(`[success]: npcMap`);
           } else {

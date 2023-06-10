@@ -9,7 +9,8 @@ import { loadRecipes } from "./import/recipes";
 import { loadSkills } from "./import/skills";
 import { createDir, saveFile } from "./utils/Fs";
 import { loadItemSetList, setSkills } from "./import/items/itemSetList";
-import { getExistingSkills } from './import/existingSkills';
+import { getExistingSkills } from "./import/existingSkills";
+import { loadShortNpcs } from "./import/shortNpcs";
 
 function init() {
   const AllSkills = loadSkills();
@@ -17,13 +18,15 @@ function init() {
   const itemAbilityList = loadItemAbilityList({ items });
   const itemSetList = loadItemSetList({ items, skills: AllSkills });
   const npcs = loadNpcs({ items, skills: AllSkills });
+  const shortNpcs = loadShortNpcs({ npcs });
   const multisell = loadMultisell({ items, npcs });
   const recipes = loadRecipes({ items });
   loadNpcPos({ npcs });
   const profs = loadProfs({ skills: AllSkills, items });
- const skills = getExistingSkills({skills: new Map([...profSkills, ...npcSkills, ...setSkills])})
+  const skills = getExistingSkills({
+    skills: new Map([...profSkills, ...npcSkills, ...setSkills]),
+  });
 
-  
   const ai = loadAi({ npcs, items });
 
   createDir("result/data");
@@ -44,6 +47,15 @@ function init() {
     "result/data/npcs.json",
     JSON.stringify(Array.from(npcs.values()), null, 2)
   );
+  saveFile(
+    "result/data/npcs.json",
+    JSON.stringify(Array.from(npcs.values()), null, 2)
+  );
+  //dlyz enota
+  // saveFile(
+  //   "result/data/_npcs.json",
+  //   JSON.stringify(Array.from(shortNpcs.values()), null, 2)
+  // );
   saveFile(
     "result/data/skills.json",
     JSON.stringify(Array.from(skills.values()), null, 2)

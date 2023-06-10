@@ -6,6 +6,8 @@ import { loadItemGrpC1 } from "../../datapack/c1/itemgrp";
 import { loadItemNamesGF } from "../../datapack/gf/itemnames";
 import { Chronicle } from "../types";
 import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
+import { loadItemDataGF } from "../../datapack/gf/itemdata";
+import { loadItemGrpGF } from "../../datapack/gf/itemgrp";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -23,6 +25,9 @@ function loadItemData(deps: { chronicle: Chronicle }) {
   switch (deps.chronicle) {
     case "c1":
       itemData = loadItemDataC1();
+      break;
+    case "gf":
+      itemData = loadItemDataGF();
       break;
     default:
       itemData = loadItemDataC1();
@@ -101,69 +106,55 @@ function loadItemNames(deps: {
   chronicle: Chronicle;
   itemData: Map<number, Item>;
 }) {
-  let itemNames = [];
   switch (deps.chronicle) {
     case "c1":
-      itemNames = loadItemNamesC1();
+      addNamesC1(deps);
+      break;
+    case "gf":
+      addNamesGF(deps);
       break;
     default:
-      itemNames = loadItemNamesC1();
+      addNamesC1(deps);
       break;
   }
-  const itemData = deps.itemData;
 
-  for (const itemName of itemNames) {
-    const item = itemData.get(itemName.id);
-    if (item) {
-      itemData.set(item.id, {
-        ...item,
-        name: { en: itemName.name, ru: itemName.name },
-        desc: { en: itemName.description, ru: itemName.description },
-      });
-    }
-  }
-
-  return itemData;
+  return deps.itemData;
 }
 
 function loadItemGrps(deps: {
   chronicle: Chronicle;
   itemData: Map<number, Item>;
 }) {
-  let itemGrps = [];
   switch (deps.chronicle) {
     case "c1":
-      itemGrps = loadItemGrpC1();
+      addIconsC1(deps);
+      break;
+    case "gf":
+      addIconsGF(deps);
       break;
     default:
-      itemGrps = loadItemGrpC1();
+      addIconsC1(deps);
       break;
   }
-  const itemData = deps.itemData;
-
-  for (const itemGrp of itemGrps) {
-    const item = itemData.get(itemGrp.object_id);
-    if (item) {
-      itemData.set(item.id, {
-        ...item,
-        icon: itemGrp.icon.$[0].replace("icon.", ""),
-      });
-    }
-  }
-  return itemData;
+  return deps.itemData;
 }
 
-function loadItemRuNames(deps: { itemData: Map<number, Item> }) {
+function loadItemRuNames(deps: {
+  chronicle: Chronicle;
+  itemData: Map<number, Item>;
+}) {
   const itemData = deps.itemData;
-  const itemNames = loadItemNamesGF();
+  if (deps.chronicle === "c1") {
+    const itemNames = loadItemNamesGF();
 
-  for (const itemName of itemNames) {
-    const item = itemData.get(itemName.id);
-    if (item) {
-      itemData.set(item.id, {
-        ...item,
-        name: { ...item.name, ru: itemName.name.ru },
-      });
+    for (const itemName of itemNames) {
+      const item = itemData.get(itemName.id);
+      if (item) {
+        itemData.set(item.id, {
+          ...item,
+          name: { ...item.name, ru: itemName.name.ru },
+        });
+      }
     }
   }
 
@@ -171,9 +162,10 @@ function loadItemRuNames(deps: { itemData: Map<number, Item> }) {
 }
 
 function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
+  // пока только ц1 -ц2
   for (const item of deps.itemData.values()) {
     for (let i = 0; i <= 19; i++) {
-      if (item.crystalType !== "none") {
+      if (item.crystalType !== "none" && item.crystalType !== "crystal_free") {
         item.enchantBonus.push({
           level: i,
           pAtk: calcWeaponAtk({ level: i, item }).pAtk,
@@ -187,6 +179,60 @@ function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
   }
 
   return deps.itemData;
+}
+
+function addIconsC1(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemGrp of loadItemGrpC1()) {
+    const item = itemData.get(itemGrp.object_id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        icon: itemGrp.icon.$[0].replace("icon.", ""),
+      });
+    }
+  }
+}
+
+function addIconsGF(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemGrp of loadItemGrpGF()) {
+    const item = itemData.get(parseInt(itemGrp.id));
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        icon: itemGrp["icon[0]"].replace("icon.", ""),
+      });
+    }
+  }
+}
+
+function addNamesC1(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemName of loadItemNamesC1()) {
+    const item = itemData.get(itemName.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        name: { en: itemName.name, ru: itemName.name },
+        desc: { en: itemName.description, ru: itemName.description },
+      });
+    }
+  }
+}
+
+function addNamesGF(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemName of loadItemNamesGF()) {
+    const item = itemData.get(itemName.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        name: itemName.name,
+        desc: itemName.desc,
+      });
+    }
+  }
 }
 
 const Slot = z.enum([

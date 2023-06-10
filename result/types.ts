@@ -2,6 +2,18 @@ type Int = number;
 type Float = number;
 export type lstring = { en: string; ru: string };
 
+export type Crystal =
+  | "none"
+  | "d"
+  | "c"
+  | "b"
+  | "a"
+  | "s"
+  | "s80"
+  | "s84"
+  | "crystal_free"
+  | "event";
+
 export type Npc = {
   id: Int;
   npcName: string;
@@ -88,7 +100,7 @@ export type Item = {
   itemSkill: string | null;
   criticalAttackSkill: string | null;
   materialType: string | null;
-  crystalType: "none" | "d" | "c" | "b" | "a" | "s";
+  crystalType: Crystal;
   crystalCount: Int | null;
   isTrade: boolean;
   isDrop: boolean;

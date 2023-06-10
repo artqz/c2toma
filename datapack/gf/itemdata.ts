@@ -7,6 +7,7 @@ const ItemEntryGF = z.object({
     z.tuple([z.string(), z.number(), z.string(), z.number()]),
     z.array(z.number()),
   ]),
+  item_type: z.string().optional(),
   t: z.enum(["item", "set"]),
   armor_type: z.string().optional(),
   etcitem_type: z.string().optional(),
@@ -23,7 +24,20 @@ const ItemEntryGF = z.object({
   item_skill: z.string().optional(),
   critical_attack_skill: z.string().optional(),
   material_type: z.string().optional(),
-  crystal_type: z.string().optional(),
+  crystal_type: z
+    .enum([
+      "none",
+      "d",
+      "c",
+      "b",
+      "a",
+      "s",
+      "s80",
+      "s84",
+      "crystal_free",
+      "event",
+    ])
+    .optional(),
   crystal_count: z.number().optional(),
   is_trade: z.number().optional(),
   is_drop: z.number().optional(),
@@ -53,7 +67,7 @@ const ItemEntryGF = z.object({
 
 export type ItemEntryGF = z.infer<typeof ItemEntryGF>;
 
-export function loadItemDataJson(path: string): ItemEntryGF[] {
+function loadItemDataJson(path: string): ItemEntryGF[] {
   const src = Fs.readFileSync(path, "utf8");
   const json = JSON.parse(src);
   let data = ItemEntryGF.array().parse(json);

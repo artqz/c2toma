@@ -1,4 +1,4 @@
-import { Item } from "../result/types";
+import { Crystal, Item } from "../result/types";
 
 export function calcWeaponAtk(deps: { level: number; item: Item }) {
   let pAtk = 0;
@@ -120,7 +120,7 @@ export function calcСrystals(deps: { level: number; item: Item }) {
   return crystals;
 }
 
-function wcb(type: "d" | "c" | "b" | "a" | "s" | "none") {
+function wcb(type: Crystal) {
   switch (type) {
     case "d":
       return 90;
@@ -136,7 +136,7 @@ function wcb(type: "d" | "c" | "b" | "a" | "s" | "none") {
       return 1;
   }
 }
-function acb(type: "d" | "c" | "b" | "a" | "s" | "none") {
+function acb(type: Crystal) {
   switch (type) {
     case "d":
       return 11;
@@ -153,7 +153,7 @@ function acb(type: "d" | "c" | "b" | "a" | "s" | "none") {
   }
 }
 
-function watk(type: "d" | "c" | "b" | "a" | "s" | "none") {
+function watk(type: Crystal) {
   switch (type) {
     case "d":
       return [2, 2];

@@ -6,7 +6,7 @@ export type SkillNameEntry = {
   id: number;
   level: number;
   name: { en: string; ru: string };
-  desc: string;
+  desc: { en: string; ru: string };
 };
 
 function cleanStr(s: string) {
@@ -55,12 +55,13 @@ export function loadSkillNamesGF(): SkillNameEntry[] {
       id: parseInt(x.id),
       name: { en: cleanStr(x.name), ru: "" },
       level: parseInt(x.level),
-      desc: cleanStr(x.description),
+      desc: { en: cleanStr(x.description), ru: "" },
     };
 
     const ru = langRuById.get(x.id);
     if (ru) {
       itemName.name.ru = cleanStr(ru.name);
+      itemName.desc.ru = cleanStr(ru.description);
     }
 
     return itemName;

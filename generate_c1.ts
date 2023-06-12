@@ -15,14 +15,14 @@ function init() {
   const skills = loadSkills({ chronicle });
   const items = loadItems({ chronicle });
   const weaponAbilities = loadWeaponAbilities({ chronicle, items });
-  // const sets = loadSets({ chronicle, items, skills });
-  // const npcs = loadNpcs({ chronicle, items, skills });
-  // const multisell = loadMultisell({ chronicle, items, npcs });
-  // const recipes = loadRecipes({ chronicle, items });
-  // loadNpcPos({ chronicle, npcs });
-  // const profs = loadProfs({ chronicle, skills, items });
+  const sets = loadSets({ chronicle, items, skills });
+  const npcs = loadNpcs({ chronicle, items, skills });
+  const multisell = loadMultisell({ chronicle, items, npcs });
+  const recipes = loadRecipes({ chronicle, items });
+  loadNpcPos({ chronicle, npcs });
+  const profs = loadProfs({ chronicle, skills, items });
 
-  // const ai = loadAi({ chronicle, npcs, items });
+  const ai = loadAi({ chronicle, npcs, items });
 
   createDir(`result/data/${chronicle}`);
 
@@ -34,34 +34,34 @@ function init() {
     `result/data/${chronicle}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)
   );
-  // saveFile(
-  //   `result/data/${chronicle}/sets.json`,
-  //   JSON.stringify(Array.from(sets.values()), null, 2)
-  // );
-  // saveFile(
-  //   `result/data/${chronicle}/weaponAbilities.json`,
-  //   JSON.stringify(Array.from(weaponAbilities.values()), null, 2)
-  // );
-  // saveFile(
-  //   `result/data/${chronicle}/npcs.json`,
-  //   JSON.stringify(Array.from(npcs.values()), null, 2)
-  // );
-  // saveFile(
-  //   `result/data/${chronicle}/multisell.json`,
-  //   JSON.stringify(Array.from(multisell.values()), null, 2)
-  // );
-  // saveFile(
-  //   `result/data/${chronicle}/recipes.json`,
-  //   JSON.stringify(Array.from(recipes.values()), null, 2)
-  // );
-  // saveFile(
-  //   `result/data/${chronicle}/profs.json`,
-  //   JSON.stringify(Array.from(profs.values()), null, 2)
-  // );
-  // saveFile(
-  //   `result/data/${chronicle}/ai.json`,
-  //   JSON.stringify(Array.from(ai.values()), null, 2)
-  // );
+  saveFile(
+    `result/data/${chronicle}/sets.json`,
+    JSON.stringify(Array.from(sets.values()), null, 2)
+  );
+  saveFile(
+    `result/data/${chronicle}/weaponAbilities.json`,
+    JSON.stringify(Array.from(weaponAbilities.values()), null, 2)
+  );
+  saveFile(
+    `result/data/${chronicle}/npcs.json`,
+    JSON.stringify(Array.from(npcs.values()), null, 2)
+  );
+  saveFile(
+    `result/data/${chronicle}/multisell.json`,
+    JSON.stringify(Array.from(multisell.values()), null, 2)
+  );
+  saveFile(
+    `result/data/${chronicle}/recipes.json`,
+    JSON.stringify(Array.from(recipes.values()), null, 2)
+  );
+  saveFile(
+    `result/data/${chronicle}/profs.json`,
+    JSON.stringify(Array.from(profs.values()), null, 2)
+  );
+  saveFile(
+    `result/data/${chronicle}/ai.json`,
+    JSON.stringify(Array.from(ai.values()), null, 2)
+  );
   console.log("Finish.");
 }
 

@@ -2,6 +2,7 @@ import {
   ProfSkillAcquireC1,
   loadSkillAcquireDataC1,
 } from "../../datapack/c1/skillacquire";
+import { loadSkillAcquireDataGF } from "../../datapack/gf/skillacquire";
 import { Item, Prof, ProfSkill, Skill } from "../../result/types";
 import { Chronicle } from "../types";
 
@@ -26,6 +27,9 @@ function loadSkillAcquireData(deps: {
   switch (deps.chronicle) {
     case "c1":
       profData = loadSkillAcquireDataC1();
+      break;
+    case "gf":
+      profData = loadSkillAcquireDataGF();
       break;
     default:
       profData = loadSkillAcquireDataC1();

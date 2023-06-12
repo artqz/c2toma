@@ -28,6 +28,9 @@ function loadNpcData(deps: {
     case "c1":
       npcsData = loadNpcDataC1();
       break;
+    case "gf":
+      npcsData = loadNpcDataGF();
+      break;
     default:
       npcsData = loadNpcDataC1();
       break;
@@ -70,7 +73,6 @@ function loadNpcData(deps: {
       spawns: [],
     });
   }
-
   return npcs;
 }
 
@@ -160,17 +162,60 @@ function loadNpcnames(deps: {
   npcsData: Map<number, Npc>;
 }) {
   const npcsData = deps.npcsData;
-  let npcNames = [];
+
   switch (deps.chronicle) {
     case "c1":
-      npcNames = loadNpcNamesC1();
+      addNamesC1(deps);
+      break;
+    case "gf":
+      addNamesGF(deps);
       break;
     default:
-      npcNames = loadNpcNamesC1();
+      addNamesC1(deps);
       break;
   }
 
-  for (const npcName of npcNames) {
+  return npcsData;
+}
+
+function loadNpcRuNames(deps: {
+  chronicle: Chronicle;
+  npcsData: Map<number, Npc>;
+}) {
+  const npcsData = deps.npcsData;
+  if (deps.chronicle === "c1") {
+    const npcdataGF = new Map(loadNpcDataGF().map((npc) => [npc.$[1], npc]));
+    const npcNamesGF = new Map(loadNpcNamesGF().map((npc) => [npc.id, npc]));
+    const npcNameByName = new Map<string, NpcNameEntry>();
+
+    for (const npcGF of npcdataGF.values()) {
+      const npcName = npcNamesGF.get(npcGF.$[1]);
+      if (npcName) {
+        npcNameByName.set(npcGF.$[2], npcName);
+      }
+    }
+
+    for (const npcData of npcsData.values()) {
+      const npc = npcNameByName.get(npcData.npcName);
+      if (npc) {
+        npcsData.set(npcData.id, {
+          ...npcData,
+          name: { ...npcData.name, ru: npc.name.ru },
+          nick: {
+            ...npcData.nick,
+            ru: npcData.nick.en === npc.nick.en ? npc.nick.ru : npcData.nick.en,
+          },
+        });
+      }
+    }
+  }
+
+  return npcsData;
+}
+
+function addNamesC1(deps: { npcsData: Map<number, Npc> }) {
+  const npcsData = deps.npcsData;
+  for (const npcName of loadNpcNamesC1()) {
     const npc = npcsData.get(npcName.id);
     if (npc) {
       npcsData.set(npc.id, {
@@ -181,36 +226,19 @@ function loadNpcnames(deps: {
       });
     }
   }
-
-  return npcsData;
 }
 
-function loadNpcRuNames(deps: { npcsData: Map<number, Npc> }) {
+function addNamesGF(deps: { npcsData: Map<number, Npc> }) {
   const npcsData = deps.npcsData;
-  const npcdataGF = new Map(loadNpcDataGF().map((npc) => [npc.$[1], npc]));
-  const npcNamesGF = new Map(loadNpcNamesGF().map((npc) => [npc.id, npc]));
-  const npcNameByName = new Map<string, NpcNameEntry>();
-
-  for (const npcGF of npcdataGF.values()) {
-    const npcName = npcNamesGF.get(npcGF.$[1]);
-    if (npcName) {
-      npcNameByName.set(npcGF.$[2], npcName);
-    }
-  }
-
-  for (const npcData of npcsData.values()) {
-    const npc = npcNameByName.get(npcData.npcName);
+  for (const npcName of loadNpcNamesGF()) {
+    const npc = npcsData.get(npcName.id);
     if (npc) {
-      npcsData.set(npcData.id, {
-        ...npcData,
-        name: { ...npcData.name, ru: npc.name.ru },
-        nick: {
-          ...npcData.nick,
-          ru: npcData.nick.en === npc.nick.en ? npc.nick.ru : npcData.nick.en,
-        },
+      npcsData.set(npc.id, {
+        ...npc,
+        name: npcName.name,
+        nick: npcName.nick,
+        nickColor: npcName.nickcolor,
       });
     }
   }
-
-  return npcsData;
 }

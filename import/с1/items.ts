@@ -39,7 +39,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
     if (item.item_type) {
       items.set(item.$[1], {
         id: item.$[1]!,
-        itemName: item.$[2]!.toString().replace(/:|\s/g, "_"),
+        itemName: item.$[2]!.toString().replace(/:|\s/g, "_").toLowerCase(),
         name: {
           en: "",
           ru: "",
@@ -165,7 +165,11 @@ function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
   // пока только ц1 -ц2
   for (const item of deps.itemData.values()) {
     for (let i = 0; i <= 19; i++) {
-      if (item.crystalType !== "none" && item.crystalType !== "crystal_free") {
+      if (
+        (item.crystalType !== "none" && item.type === "weapon") ||
+        (item.crystalType !== "none" && item.type === "armor") ||
+        (item.crystalType !== "none" && item.type === "accessary")
+      ) {
         item.enchantBonus.push({
           level: i,
           pAtk: calcWeaponAtk({ level: i, item }).pAtk,

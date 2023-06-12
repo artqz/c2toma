@@ -162,7 +162,14 @@ export type Set = {
   desc: lstring;
   setEffectSkill: string;
   setAdditionalEffectSkill: string;
-  items: ShortItem[];
+  items: {
+    slotHead: string[];
+    slotChest: string[];
+    slotGloves: string[];
+    slotLhand: string[];
+    slotLegs: string[];
+    slotFeet: string[];
+  };
 };
 
 export type ShortItem = {
@@ -216,7 +223,7 @@ export type Recipe = {
   id: Int;
   recipeName: string;
   itemName: string;
-  productList: Material[];
+  productList: Product[];
   materialList: Material[];
   npcFeeList: Material[];
   successRate: Int | null;
@@ -227,6 +234,12 @@ export type Recipe = {
 export type Material = {
   itemName: string;
   count: Int;
+};
+
+export type Product = {
+  itemName: string;
+  count: Int;
+  chance: Int;
 };
 
 export type Prof = {

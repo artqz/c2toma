@@ -4,8 +4,6 @@ import { loadNpcDataC1 } from "../datapack/c1/npcdata";
 
 import { loadNpcNamesC2 } from "../datapack/c2/npcnames";
 import { loadNpcDataC4 } from "../datapack/c4/npcdata";
-import { loadSkillDataC4 } from "../datapack/c4/skilldata";
-import { loadSkillIconsGF } from "../datapack/gf/skillgrp";
 // import { loadSkillNamesGF } from "../datapack/gf/skillnames";
 import { Item, Npc, NpcDrop, Skill, lstring } from "../result/types";
 import { NpcDataEntry } from "./types";

@@ -18,7 +18,9 @@ function loadWeaponAbilitiesData(deps: {
 }) {
   const abilityMap = new Map<string, ItemAbilityList>();
   const itemsByNamme = new Map(
-    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+    Array.from(deps.items.values())
+      .filter((i) => i.type === "weapon")
+      .map((i) => [i.itemName, i])
   );
 
   for (const item of deps.items.values()) {
@@ -38,6 +40,11 @@ function loadWeaponAbilitiesData(deps: {
 
     if (abilityList.length) {
       abilityMap.set(item.itemName, { itemName: item.itemName, abilityList });
+    }
+  }
+  for (const a of abilityMap.values()) {
+    if (a.abilityList.length < 3) {
+      console.log(a.itemName);
     }
   }
   return abilityMap;
@@ -77,4 +84,19 @@ const saList = [
   "magicregen", //есть в ц2?
   "magicmshield", //есть в ц2?
   "miser", //есть в ц2?
+  //gf
+  "crt.slow",
+  "empower",
+  "mpregen",
+  "acumen",
+  "hpregen",
+  "hpdrain",
+  "guidance",
+  "updown",
+  "magicparalysis",
+  "crt.drain",
+  "magicpower",
+  "magicsilence",
+  "magicdamage",
+  "m.focus",
 ];

@@ -3,6 +3,7 @@ import { ItemEntryC1 } from "../../datapack/c1/itemdata";
 import { loadItemDataC1 } from "../../datapack/c1/itemdata";
 import { Item, Set, ShortItem, Skill } from "../../result/types";
 import { Chronicle } from "../types";
+import { ItemEntryGF, loadItemDataGF } from "../../datapack/gf/itemdata";
 
 export function loadSets(deps: {
   chronicle: Chronicle;
@@ -29,6 +30,10 @@ function loadSetData(deps: {
     case "c1":
       setData = loadItemDataC1();
       sets = C1sets({ ...deps, setData });
+      break;
+    case "gf":
+      setData = loadItemDataGF();
+      sets = setsGf({ ...deps, setData });
       break;
     default:
       setData = loadItemDataC1();
@@ -64,58 +69,63 @@ function C1sets(deps: {
     if (set.slot_chest === 44) {
       break;
     }
-    const setItems: ShortItem[] = [];
+    let setItems: {
+      slotHead: string[];
+      slotChest: string[];
+      slotLegs: string[];
+      slotGloves: string[];
+      slotFeet: string[];
+      slotLhand: string[];
+    } = {
+      slotHead: [],
+      slotChest: [],
+      slotLegs: [],
+      slotGloves: [],
+      slotFeet: [],
+      slotLhand: [],
+    };
     if (set.hasOwnProperty("slot_head") && set.slot_head) {
       const item = deps.items.get(set.slot_head);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotHead: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_chest") && set.slot_chest) {
       const item = deps.items.get(set.slot_chest);
       if (item) {
         setIcon = item.icon;
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotChest: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_legs") && set.slot_legs) {
       const item = deps.items.get(set.slot_legs);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotLegs: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_gloves") && set.slot_gloves) {
       const item = deps.items.get(set.slot_gloves);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotGloves: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_feet") && set.slot_feet) {
       const item = deps.items.get(set.slot_feet);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotFeet: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_lhand") && set.slot_lhand) {
       const item = deps.items.get(set.slot_lhand);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotLhand: [item.itemName] };
       }
     }
     // удаляем лишнее
 
-    if (setItems.length > 0) {
+    if (true) {
       //39 и выше сеты из хроник выше
       if (typeof set.$[0] === "number") {
-        const items: ShortItem[] = [];
-
-        for (const si of setItems) {
-          const item = itemByName.get(si.itemName);
-          if (item) {
-            items.push({ itemName: item.itemName });
-          }
-        }
-
         const { effects, effectsShield } = getEffectC1({
           p_def_inc: set.p_def_inc,
           m_def_inc: set.m_def_inc,
@@ -150,7 +160,7 @@ function C1sets(deps: {
           desc: { en: "", ru: "" },
           setEffectSkill: effects,
           setAdditionalEffectSkill: effectsShield,
-          items,
+          items: setItems,
         });
       }
     }
@@ -331,6 +341,134 @@ function getEffectC1(deps: {
 
 function inc(n: number) {
   return (n <= 0 ? "" : "+") + Math.round(n);
+}
+
+function setsGf(deps: {
+  chronicle: Chronicle;
+  items: Map<number, Item>;
+  skills: Map<string, Skill>;
+  setData: ItemEntryGF[];
+}) {
+  const itemByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
+  const skillByName = new Map(
+    Array.from(deps.skills.values()).map((s) => [s.skillName, s])
+  );
+  const sets = new Map(
+    deps.setData
+      .filter((i) => i.$.length === 1 && i.set_effect_skill !== "none")
+      .map((item) => [item.$[0], item])
+  );
+
+  const itemSetList = new Map<number, Set>();
+  let setIcon = "";
+
+  for (const set of sets.values()) {
+    let setItems: {
+      slotHead: string[];
+      slotChest: string[];
+      slotLegs: string[];
+      slotGloves: string[];
+      slotFeet: string[];
+      slotLhand: string[];
+    } = {
+      slotHead: [],
+      slotChest: [],
+      slotLegs: [],
+      slotGloves: [],
+      slotFeet: [],
+      slotLhand: [],
+    };
+    if (set.hasOwnProperty("slot_head") && set.slot_head?.$.length) {
+      const slotItems: string[] = [];
+      for (const slotItem of set.slot_head.$) {
+        const item = deps.items.get(slotItem);
+        if (item) {
+          slotItems.push(item.itemName);
+        }
+      }
+      setItems = { ...setItems, slotHead: slotItems };
+    }
+    if (set.hasOwnProperty("slot_chest") && set.slot_chest?.$.length) {
+      const slotItems: string[] = [];
+      for (const slotItem of set.slot_chest.$) {
+        const item = deps.items.get(slotItem);
+        if (item) {
+          slotItems.push(item.itemName);
+          if (item.itemName.indexOf("_high") === -1) {
+            setIcon = item.icon;
+          }
+        }
+      }
+      setItems = { ...setItems, slotChest: slotItems };
+    }
+    if (set.hasOwnProperty("slot_legs") && set.slot_legs?.$.length) {
+      const slotItems: string[] = [];
+      for (const slotItem of set.slot_legs.$) {
+        const item = deps.items.get(slotItem);
+        if (item) {
+          slotItems.push(item.itemName);
+        }
+      }
+      setItems = { ...setItems, slotLegs: slotItems };
+    }
+    if (set.hasOwnProperty("slot_gloves") && set.slot_gloves?.$.length) {
+      const slotItems: string[] = [];
+      for (const slotItem of set.slot_gloves.$) {
+        const item = deps.items.get(slotItem);
+        if (item) {
+          slotItems.push(item.itemName);
+        }
+      }
+      setItems = { ...setItems, slotGloves: slotItems };
+    }
+    if (set.hasOwnProperty("slot_feet") && set.slot_feet?.$.length) {
+      const slotItems: string[] = [];
+      for (const slotItem of set.slot_feet.$) {
+        const item = deps.items.get(slotItem);
+        if (item) {
+          slotItems.push(item.itemName);
+        }
+      }
+      setItems = { ...setItems, slotFeet: slotItems };
+    }
+    if (set.hasOwnProperty("slot_lhand") && set.slot_lhand?.$.length) {
+      const slotItems: string[] = [];
+      for (const slotItem of set.slot_lhand.$) {
+        const item = deps.items.get(slotItem);
+        if (item) {
+          slotItems.push(item.itemName);
+        }
+      }
+      setItems = { ...setItems, slotLhand: slotItems };
+    }
+    if (true) {
+      //39 и выше сеты из хроник выше
+      if (typeof set.$[0] === "number") {
+        const skill = skillByName.get(set.set_effect_skill!);
+        const skill2 = skillByName.get(set.set_additional_effect_skill!);
+
+        if (skill) setSkills.set(skill.id + "_" + skill.level, skill);
+        if (skill2) setSkills.set(skill2.id + "_" + skill2.level, skill2);
+
+        if (skill) {
+          itemSetList.set(set.$[0], {
+            id: set.$[0],
+            setName: slug(skill.name.en, "_"),
+            icon: setIcon,
+            name: skill.name,
+            desc: skill.desc,
+            setEffectSkill: skill.skillName,
+            setAdditionalEffectSkill: skill2 ? skill2.skillName : "none",
+            items: setItems,
+          });
+        }
+      }
+    }
+  }
+
+  return itemSetList;
 }
 
 const setnamesC1 = new Map([

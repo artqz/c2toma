@@ -13,6 +13,7 @@ export function loadItems() {
   items = loadC4Items(itemnamesC2);
   items = loadC2Icons(items);
   items = loadItemEnchantBonuses({ itemData: items });
+  items = adjustment({ itemData: items });
   console.log("Items loaded.");
 
   return items;
@@ -209,7 +210,11 @@ function loadNamesGf() {
 function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
   for (const item of deps.itemData.values()) {
     for (let i = 0; i <= 19; i++) {
-      if (item.crystalType !== "none") {
+      if (
+        (item.crystalType !== "none" && item.type === "weapon") ||
+        (item.crystalType !== "none" && item.type === "armor") ||
+        (item.crystalType !== "none" && item.type === "accessary")
+      ) {
         item.enchantBonus.push({
           level: i,
           pAtk: calcWeaponAtk({ level: i, item }).pAtk,
@@ -259,3 +264,20 @@ type ItemC2 = {
   itemName: string;
 };
 const itemsC2 = new Map<number, ItemC2>([[1, { id: 1, itemName: "" }]]);
+
+function adjustment(deps: { itemData: Map<number, Item> }) {
+  console.log("adjustment");
+
+  for (const item of deps.itemData.values()) {
+    if (item.itemName === "mithril_boots") {
+      deps.itemData.set(item.id, {
+        ...item,
+        crystalType: "d",
+        crystalCount: 83,
+        defaultPrice: 45900,
+      });
+      console.log("----- mithril_boots");
+    }
+  }
+  return deps.itemData;
+}

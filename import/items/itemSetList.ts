@@ -4,7 +4,7 @@ import { Item, Set, ShortItem, Skill } from "../../result/types";
 
 slug.charmap["'"] = "'";
 
-export const setSkills = new Map<string, Skill>()
+export const setSkills = new Map<string, Skill>();
 
 export function loadItemSetList(deps: {
   items: Map<number, Item>;
@@ -35,61 +35,75 @@ function loadC2Sets(deps: {
   let setIcon = "";
 
   for (const set of setsC4.values()) {
-    const setItems: ShortItem[] = [];
+    let setItems: {
+      slotHead: string[];
+      slotChest: string[];
+      slotLegs: string[];
+      slotGloves: string[];
+      slotFeet: string[];
+      slotLhand: string[];
+    } = {
+      slotHead: [],
+      slotChest: [],
+      slotLegs: [],
+      slotGloves: [],
+      slotFeet: [],
+      slotLhand: [],
+    };
     if (set.hasOwnProperty("slot_head") && set.slot_head) {
       const item = deps.items.get(set.slot_head);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotHead: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_chest") && set.slot_chest) {
       const item = deps.items.get(set.slot_chest);
       if (item) {
         setIcon = item.icon;
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotChest: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_legs") && set.slot_legs) {
       const item = deps.items.get(set.slot_legs);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotLegs: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_gloves") && set.slot_gloves) {
       const item = deps.items.get(set.slot_gloves);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotGloves: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_feet") && set.slot_feet) {
       const item = deps.items.get(set.slot_feet);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotFeet: [item.itemName] };
       }
     }
     if (set.hasOwnProperty("slot_lhand") && set.slot_lhand) {
       const item = deps.items.get(set.slot_lhand);
       if (item) {
-        setItems.push({ itemName: item.itemName });
+        setItems = { ...setItems, slotLhand: [item.itemName] };
       }
     }
-    if (setItems.length > 0) {
+    if (true) {
       //39 и выше сеты из хроник выше
       if (typeof set.$[0] === "number" && set.$[0] < 39) {
         const items: ShortItem[] = [];
 
-        for (const si of setItems) {
-          const item = itemByName.get(si.itemName);
-          if (item) {
-            items.push({ itemName: item.itemName });
-          }
-        }
+        // for (const si of setItems) {
+        //   const item = itemByName.get(si.itemName);
+        //   if (item) {
+        //     items.push({ itemName: item.itemName });
+        //   }
+        // }
 
         const skill = skillByName.get(set.set_effect_skill!);
         const skill2 = skillByName.get(set.set_additional_effect_skill!);
 
-        if (skill) setSkills.set(skill.id+"_"+skill.level, skill)
-        if (skill2) setSkills.set(skill2.id+"_"+skill2.level, skill2)
+        if (skill) setSkills.set(skill.id + "_" + skill.level, skill);
+        if (skill2) setSkills.set(skill2.id + "_" + skill2.level, skill2);
 
         if (skill) {
           itemSetList.set(set.$[0], {
@@ -100,7 +114,7 @@ function loadC2Sets(deps: {
             desc: skill.desc,
             setEffectSkill: skill.skillName,
             setAdditionalEffectSkill: skill2 ? skill2.skillName : "none",
-            items,
+            items: setItems,
           });
         }
       }
@@ -109,5 +123,3 @@ function loadC2Sets(deps: {
 
   return itemSetList;
 }
-
-

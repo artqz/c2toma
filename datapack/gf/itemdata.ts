@@ -63,6 +63,19 @@ const ItemEntryGF = z.object({
   magical_defense: z.number().optional(),
   mp_bonus: z.number().optional(),
   magic_weapon: z.number().optional(),
+  //sets
+  slot_chest: z.object({ $: z.array(z.number()) }).optional(),
+  slot_legs: z.object({ $: z.array(z.number()) }).optional(),
+  slot_head: z.object({ $: z.array(z.number()) }).optional(),
+  slot_lhand: z.object({ $: z.array(z.number()) }).optional(),
+  slot_gloves: z.object({ $: z.array(z.number()) }).optional(),
+  slot_feet: z.object({ $: z.array(z.number()) }).optional(),
+  slot_additional: z.enum(["none", "slot_lhand"]).optional(),
+  set_skill: z.string().optional(),
+  set_effect_skill: z.string().optional(),
+  set_additional_effect_skill: z.string().optional(),
+  set_additional2_condition: z.number().optional(),
+  set_additional2_effect_skill: z.string().optional(),
 });
 
 export type ItemEntryGF = z.infer<typeof ItemEntryGF>;

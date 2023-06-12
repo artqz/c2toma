@@ -1,8 +1,13 @@
-import { loadMultisellDataC1 } from '../../datapack/c1/miltisell';
-import { Item, Multisell, Npc, SellList } from '../../result/types';
-import { Chronicle } from '../types';
+import { loadMultisellDataC1 } from "../../datapack/c1/miltisell";
+import { loadMultisellDataGF } from "../../datapack/gf/miltisell";
+import { Item, Multisell, Npc, SellList } from "../../result/types";
+import { Chronicle } from "../types";
 
-export function loadMultisell(deps: { chronicle: Chronicle, items: Map<number, Item>, npcs: Map<number, Npc> }) {
+export function loadMultisell(deps: {
+  chronicle: Chronicle;
+  items: Map<number, Item>;
+  npcs: Map<number, Npc>;
+}) {
   let multisell = loadMultisellData(deps);
 
   console.log("Multisell loaded.");
@@ -10,21 +15,29 @@ export function loadMultisell(deps: { chronicle: Chronicle, items: Map<number, I
   return multisell;
 }
 
-function loadMultisellData(deps: { chronicle: Chronicle, items: Map<number, Item>, npcs: Map<number, Npc> }) {
+function loadMultisellData(deps: {
+  chronicle: Chronicle;
+  items: Map<number, Item>;
+  npcs: Map<number, Npc>;
+}) {
   let multisellData = [];
   switch (deps.chronicle) {
     case "c1":
       multisellData = loadMultisellDataC1();
       break;
+    case "gf":
+      multisellData = loadMultisellDataGF();
+      break;
     default:
       multisellData = loadMultisellDataC1();
       break;
   }
-  const itemsByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
-   const msArray: Multisell[] = [];
- 
+  const itemsByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
+  const msArray: Multisell[] = [];
+
   for (const ms of multisellData) {
-   
     const sellList = ms.selllist.$;
     const slArray: SellList[] = [];
 
@@ -45,6 +58,16 @@ function loadMultisellData(deps: { chronicle: Chronicle, items: Map<number, Item
         }),
       };
 
+      // In GF adena goes as a third tuple element
+      if (deps.chronicle === "gf") {
+        if (sell.$[2]) {
+          multisell.requiredItems.push({
+            itemName: "adena",
+            count: sell.$[2].$[0],
+          });
+        }
+      }
+
       if (!multisell.requiredItems.length || !multisell.resultItems.length) {
       } else {
         slArray.push(multisell);
@@ -55,9 +78,8 @@ function loadMultisellData(deps: { chronicle: Chronicle, items: Map<number, Item
       id: ms.$[1],
       multisellName: ms.$[0],
       sellList: slArray,
-      npcList: []
+      npcList: [],
     });
-    
   }
 
   let multisell = new Map(
@@ -65,13 +87,13 @@ function loadMultisellData(deps: { chronicle: Chronicle, items: Map<number, Item
   );
 
   for (const ms of multisell.values()) {
-    const npcList = getNpcNamesByMultisell(ms.multisellName)
+    const npcList = getNpcNamesByMultisell(ms.multisellName);
     for (const npc of npcList) {
-      ms.npcList.push({npcName: npc.npcName, show: npc.show})
+      ms.npcList.push({ npcName: npc.npcName, show: npc.show });
     }
   }
 
-  return multisell
+  return multisell;
 }
 
 function getNpcNamesByMultisell(multisellName: string) {

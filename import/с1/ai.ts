@@ -5,6 +5,7 @@ import {
   AiSellList,
   loadAiDataC1,
 } from "../../datapack/c1/ai";
+import { loadAiGf } from "../../datapack/gf/aidata";
 import { Ai, AiSellList as AiSL, Item, Npc } from "../../result/types";
 import { Chronicle } from "../types";
 
@@ -25,6 +26,9 @@ function loadAiData(deps: { chronicle: Chronicle; npcs: Map<number, Npc> }) {
   switch (deps.chronicle) {
     case "c1":
       aiData = loadAiDataC1();
+      break;
+    case "gf":
+      aiData = loadAiGf();
       break;
     default:
       aiData = loadAiDataC1();

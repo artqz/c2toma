@@ -21,6 +21,7 @@ export function loadRecipes(deps: { items: Map<number, Item> }) {
         {
           itemName: itemById.get(rec.product_id)!.itemName,
           count: rec.product_num,
+          chance: 100,
         },
       ],
       recipeName: rec.name,

@@ -1,5 +1,6 @@
 import { loadRecipeDataC1 } from "../../datapack/c1/recipe";
-import { Item, Material, Recipe } from "../../result/types";
+import { loadRecipeDataGF } from "../../datapack/gf/recipe";
+import { Item, Material, Product, Recipe } from "../../result/types";
 import { Chronicle } from "../types";
 
 export function loadRecipes(deps: {
@@ -22,6 +23,9 @@ function loadRecipesData(deps: {
     case "c1":
       recipeData = loadRecipeDataC1();
       break;
+    case "gf":
+      recipeData = loadRecipeDataGF();
+      break;
     default:
       recipeData = loadRecipeDataC1();
       break;
@@ -38,7 +42,7 @@ function loadRecipesData(deps: {
       recipeName: rec.$[0],
       materialList: getItemList({ ...deps, list: rec.material.$ }),
       npcFeeList: getItemList({ ...deps, list: rec.npc_fee.$ ?? [] }),
-      productList: getItemList({ ...deps, list: rec.product.$ }),
+      productList: getProfuctList({ ...deps, list: rec.product.$ }),
     });
   }
 
@@ -53,6 +57,23 @@ function getItemList(deps: {
 
   for (const item of deps.list) {
     itemList.push({ itemName: item.$[0], count: item.$[1] });
+  }
+
+  return itemList;
+}
+
+function getProfuctList(deps: {
+  items: Map<number, Item>;
+  list: { $: [string, number, number?] }[];
+}) {
+  const itemList: Product[] = [];
+
+  for (const item of deps.list) {
+    itemList.push({
+      itemName: item.$[0],
+      count: item.$[1],
+      chance: item.$[2] ?? 100,
+    });
   }
 
   return itemList;

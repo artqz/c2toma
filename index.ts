@@ -29,26 +29,26 @@ function init() {
 
   const ai = loadAi({ npcs, items });
 
-  createDir("result/data");
+  createDir("result/data/c2");
 
   saveFile(
-    "result/data/items.json",
+    "result/data/c2/items.json",
     JSON.stringify(Array.from(items.values()), null, 2)
   );
   saveFile(
-    "result/data/sets.json",
+    "result/data/c2/sets.json",
     JSON.stringify(Array.from(itemSetList.values()), null, 2)
   );
   saveFile(
-    "result/data/weaponAbilities.json",
+    "result/data/c2/weaponAbilities.json",
     JSON.stringify(Array.from(itemAbilityList.values()), null, 2)
   );
   saveFile(
-    "result/data/npcs.json",
+    "result/data/c2/npcs.json",
     JSON.stringify(Array.from(npcs.values()), null, 2)
   );
   saveFile(
-    "result/data/npcs.json",
+    "result/data/c2/npcs.json",
     JSON.stringify(Array.from(npcs.values()), null, 2)
   );
   //dlyz enota
@@ -57,23 +57,23 @@ function init() {
   //   JSON.stringify(Array.from(shortNpcs.values()), null, 2)
   // );
   saveFile(
-    "result/data/skills.json",
+    "result/data/c2/skills.json",
     JSON.stringify(Array.from(skills.values()), null, 2)
   );
   saveFile(
-    "result/data/multisell.json",
+    "result/data/c2/multisell.json",
     JSON.stringify(Array.from(multisell.values()), null, 2)
   );
   saveFile(
-    "result/data/recipes.json",
+    "result/data/c2/recipes.json",
     JSON.stringify(Array.from(recipes.values()), null, 2)
   );
   saveFile(
-    "result/data/profs.json",
+    "result/data/c2/profs.json",
     JSON.stringify(Array.from(profs.values()), null, 2)
   );
   saveFile(
-    "result/data/ai.json",
+    "result/data/c2/ai.json",
     JSON.stringify(Array.from(ai.values()), null, 2)
   );
   console.log("Finish.");

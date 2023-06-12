@@ -1,6 +1,7 @@
-import { loadNpcPosC1 } from '../../datapack/c1/npcpos';
-import { Npc, NpcSpawn } from '../../result/types';
-import { Chronicle } from '../types';
+import { loadNpcPosC1 } from "../../datapack/c1/npcpos";
+import { loadNpcPosGF } from "../../datapack/gf/npcpos";
+import { Npc, NpcSpawn } from "../../result/types";
+import { Chronicle } from "../types";
 
 export function loadNpcPos(deps: {
   chronicle: Chronicle;
@@ -19,11 +20,16 @@ function loadNpcPosData(deps: {
     case "c1":
       npcPosData = loadNpcPosC1();
       break;
+    case "gf":
+      npcPosData = loadNpcPosGF();
+      break;
     default:
       npcPosData = loadNpcPosC1();
       break;
   }
-  const npcsByName = new Map(Array.from(deps.npcs.values()).map(n => [n.npcName, n]))
+  const npcsByName = new Map(
+    Array.from(deps.npcs.values()).map((n) => [n.npcName, n])
+  );
 
   const terrMap = new Map<string, { shape: Array<[number, number, number]> }>();
   for (const entry of npcPosData) {

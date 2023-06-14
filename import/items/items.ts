@@ -93,8 +93,14 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
         shieldDefense: itemC4.shield_defense!,
         shieldDefenseRate: itemC4.shield_defense_rate!,
         slotBitType: asSlot(itemC4.slot_bit_type!.$.toString()),
-        soulshotCount: itemC4.soulshot_count!,
-        spiritshotCount: itemC4.spiritshot_count!,
+        soulshotCount:
+          itemC4.$[0].toString() === "weapon" && itemC4.default_price! < 54000
+            ? 0
+            : itemC4.soulshot_count!,
+        spiritshotCount:
+          itemC4.$[0].toString() === "weapon" && itemC4.default_price! < 54000
+            ? 0
+            : itemC4.spiritshot_count!,
         type: itemC4.$[0].toString(),
         weaponType: itemC4.weapon_type!,
         weight: itemC4.weight!,

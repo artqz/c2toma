@@ -44,6 +44,7 @@ function loadSkillAcquireData(deps: {
     if (typeof prof.$[0] === "string") {
       const parentName = prof.$[0].replace("include_", "");
       const parent = profMap.get(parentName);
+
       if (parent) {
         parentProf = parent;
       }

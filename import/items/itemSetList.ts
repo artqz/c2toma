@@ -73,12 +73,60 @@ function loadC2Sets(deps: {
       const item = deps.items.get(set.slot_gloves);
       if (item) {
         setItems = { ...setItems, slotGloves: [item.itemName] };
+      } else {
+        // fix c2
+        switch (set.slot_gloves) {
+          case 5718:
+          case 5719:
+          case 5720:
+            setItems = { ...setItems, slotGloves: ["blue_wolve's_gloves"] };
+            break;
+          case 5712:
+          case 5711:
+          case 5710:
+            setItems = { ...setItems, slotGloves: ["shrnoen's_gauntlet"] };
+            break;
+          case 5714:
+          case 5715:
+          case 5716:
+            setItems = { ...setItems, slotGloves: ["avadon_gloves"] };
+            break;
+          case 5722:
+          case 5723:
+          case 5724:
+            setItems = { ...setItems, slotGloves: ["doom_gloves"] };
+            break;
+        }
       }
     }
     if (set.hasOwnProperty("slot_feet") && set.slot_feet) {
       const item = deps.items.get(set.slot_feet);
       if (item) {
         setItems = { ...setItems, slotFeet: [item.itemName] };
+      } else {
+        // fix c2
+        switch (set.slot_feet) {
+          case 5734:
+          case 5735:
+          case 5736:
+            setItems = { ...setItems, slotFeet: ["blue_wolve's_boots"] };
+            break;
+          case 5726:
+          case 5727:
+          case 5728:
+            setItems = { ...setItems, slotFeet: ["shrnoen's_boots"] };
+            break;
+          case 5730:
+          case 5731:
+          case 5732:
+            setItems = { ...setItems, slotFeet: ["avadon_boots"] };
+            break;
+          case 5738:
+          case 5739:
+          case 5740:
+            setItems = { ...setItems, slotFeet: ["doom_boots"] };
+            break;
+        }
       }
     }
     if (set.hasOwnProperty("slot_lhand") && set.slot_lhand) {

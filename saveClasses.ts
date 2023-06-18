@@ -6,6 +6,8 @@ import { profNames } from "./utils/originalProfs";
 
 const races = ["Human", "Elf", "Dark Elf", "Orc", "Dwarf"];
 
+const VERSION = "c3";
+
 const ClassDataEntry = z.object({
   id: z.number(),
   name: z.string(),
@@ -31,12 +33,12 @@ type Prof = {
 };
 
 async function getTomaClasses() {
-  const path = `datapack/toma/classes/races.json`;
+  const path = `datapack/${VERSION}/profs/races.json`;
   let classes: ClassDataEntry[][] = [];
   if (checkFile(path)) {
     for (const race of races) {
       const res = await fetch(
-        `https://knowledgedb-api.elmorelab.com/database/getProfessionsByRace?race=${race}&alias=c2`
+        `https://knowledgedb-api.elmorelab.com/database/getProfessionsByRace?race=${race}&alias=${VERSION}`
       );
       const json = await res.json();
       const data = ClassDataEntry.array().parse(json);
@@ -73,7 +75,6 @@ function getClass(
   parentId?: number
 ) {
   const profs: Map<string, NorProf> = ret ? ret : new Map<string, NorProf>();
-
   for (const prof of classes) {
     const profId = prof.id;
     const profOrig = profNames.get(profId + 1);
@@ -121,10 +122,10 @@ async function getProfSkills(deps: { profs: Map<string, NorProf> }) {
     skills: SkillDataEntry["skill"][];
   }[] = [];
   for (const prof of Array.from(deps.profs.values())) {
-    const path = `datapack/toma/classes/${prof.profName}.json`;
+    const path = `datapack/${VERSION}/profs/${prof.profName}.json`;
     if (checkFile(path)) {
       const res = await fetch(
-        `https://knowledgedb-api.elmorelab.com/database/getSkillsByClassType?alias=c2&classType=${prof.id}`
+        `https://knowledgedb-api.elmorelab.com/database/getSkillsByClassType?alias=${VERSION}&classType=${prof.id}`
       );
       const json = await res.json();
       const data = SkillDataEntry.array().parse(json);

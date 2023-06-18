@@ -4,8 +4,8 @@ import { z } from "zod";
 export default Fs;
 
 export function createDir(path: string) {
-  if (!Fs.existsSync(path)){
-      Fs.mkdirSync(path, { recursive: true });
+  if (!Fs.existsSync(path)) {
+    Fs.mkdirSync(path, { recursive: true });
   }
 }
 
@@ -18,7 +18,11 @@ export function checkFile(path: string) {
 }
 
 export function loadFile(path: string) {
-  return Fs.readFileSync(path, "utf8");
+  try {
+    return Fs.readFileSync(path, "utf8");
+  } catch (err) {
+    return "none";
+  }
 }
 
 export function loadMap(path: string, filename: string) {

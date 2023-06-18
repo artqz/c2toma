@@ -10,7 +10,7 @@ import { NpcNameEntry, loadNpcNamesGF } from "../../datapack/gf/npcnames";
 import { loadNpcDataGF } from "../../datapack/gf/npcdata";
 import { loadNpcNamesC3 } from "../../datapack/c3/npcnames";
 
-export const npcSkills = new Map<string, Skill>();
+export const npcSkillsC3 = new Map<string, Skill>();
 
 function loadNpcJson(path: string, filename: string) {
   const map = Fs.readFileSync(Path.join(path, filename), "utf8");
@@ -45,8 +45,6 @@ function loadTomaNpcs(deps: {
   );
 
   for (const npcId of Array.from(tomaNpcs.values())) {
-    console.log("++++ " + npcId);
-
     const npcC3 = npcnamesC3.get(npcId);
 
     if (npcC3) {
@@ -99,7 +97,7 @@ function getSkills(deps: {
   deps.tomaSkills.map((s) => {
     const skill = deps.skills.get(s.skillId + "_" + s.skillLevel);
     if (skill) {
-      npcSkills.set(s.skillId + "_" + s.skillLevel, skill);
+      npcSkillsC3.set(s.skillId + "_" + s.skillLevel, skill);
       skillArr.push(skill.skillName);
     }
   });

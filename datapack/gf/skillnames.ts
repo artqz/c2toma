@@ -48,7 +48,7 @@ export function loadSkillNamesGF(): SkillNameEntry[] {
   let data = EntryGF.array().parse(json);
   let dataRu = EntryGF.array().parse(jsonRu);
 
-  const langRuById = new Map(dataRu.map((d) => [d.id, d]));
+  const langRuById = new Map(dataRu.map((d) => [d.id + "_" + d.level, d]));
 
   return data.map((x) => {
     const itemName: SkillNameEntry = {
@@ -58,7 +58,7 @@ export function loadSkillNamesGF(): SkillNameEntry[] {
       desc: { en: cleanStr(x.description), ru: "" },
     };
 
-    const ru = langRuById.get(x.id);
+    const ru = langRuById.get(x.id + "_" + x.level);
     if (ru) {
       itemName.name.ru = cleanStr(ru.name);
       itemName.desc.ru = cleanStr(ru.description);

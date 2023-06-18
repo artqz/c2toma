@@ -1,0 +1,1993 @@
+{
+  "id": 22,
+  "profName": "elven_scout",
+  "parent": "elven_fighter",
+  "skills": [
+    {
+      "name": 20,
+      "isGroup": true
+    },
+    {
+      "skill": {
+        "skillId": 239,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 0,
+        "autoGet": true,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 950,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 2,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 950,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 3,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 950,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 209,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 2800,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 1400,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 2,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 1400,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 10,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 1200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 19,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 11,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 1200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 20,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 12,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 1200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 20,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 10,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 1200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 43,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 11,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 1200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 44,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 12,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 1200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 44,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 4,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 1200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 53,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 5,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 1200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 57,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 6,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 1200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 59,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 1,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 950,
+        "autoGet": false,
+        "itemNeeded": 1513,
+        "hp": 0,
+        "mp": 37,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 2,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 950,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 38,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 3,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 950,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 39,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 312,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 4,
+        "getLv": 20,
+        "lvUpSp": 2800,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 4,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 91,
+        "skillLevel": 2,
+        "isMagic": true,
+        "operateType": 1,
+        "getLv": 20,
+        "lvUpSp": 2800,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 20,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 113,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 2800,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 195,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 2800,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 173,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 20,
+        "lvUpSp": 2800,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 27,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 20,
+        "lvUpSp": 2800,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 19,
+        "range": 40
+      }
+    },
+    {
+      "name": 24,
+      "isGroup": true
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 4,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 5,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 6,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 209,
+        "skillLevel": 2,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 24,
+        "lvUpSp": 5000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 3,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 24,
+        "lvUpSp": 2500,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 4,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 24,
+        "lvUpSp": 2500,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 13,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 21,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 14,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 22,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 15,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 23,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 13,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 46,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 14,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 48,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 15,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 50,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 7,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 62,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 8,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 65,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 9,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 69,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 4,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 40,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 5,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 42,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 6,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 1700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 43,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 312,
+        "skillLevel": 2,
+        "isMagic": false,
+        "operateType": 4,
+        "getLv": 24,
+        "lvUpSp": 5000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 5,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 198,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 24,
+        "lvUpSp": 5000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 61,
+        "skillLevel": 1,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 5000,
+        "autoGet": false,
+        "itemNeeded": 1379,
+        "hp": 0,
+        "mp": 22,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 21,
+        "skillLevel": 1,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 5000,
+        "autoGet": false,
+        "itemNeeded": 1377,
+        "hp": 0,
+        "mp": 20,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 96,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 1,
+        "getLv": 24,
+        "lvUpSp": 5000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 32,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 256,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 4,
+        "getLv": 24,
+        "lvUpSp": 5000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 1,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 27,
+        "skillLevel": 2,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 24,
+        "lvUpSp": 5000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 22,
+        "range": 40
+      }
+    },
+    {
+      "name": 28,
+      "isGroup": true
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 7,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 8,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 9,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 209,
+        "skillLevel": 3,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 28,
+        "lvUpSp": 4600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 209,
+        "skillLevel": 4,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 28,
+        "lvUpSp": 4600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 5,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 28,
+        "lvUpSp": 4600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 6,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 28,
+        "lvUpSp": 4600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 16,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 25,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 17,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 26,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 18,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 27,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 16,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 54,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 17,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 57,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 18,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 59,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 10,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 75,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 11,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 79,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 12,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 83,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 7,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 47,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 8,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 48,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 9,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 3100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 49,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 312,
+        "skillLevel": 3,
+        "isMagic": false,
+        "operateType": 4,
+        "getLv": 28,
+        "lvUpSp": 9200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 5,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 169,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 28,
+        "lvUpSp": 9200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 225,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 28,
+        "lvUpSp": 9200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 77,
+        "skillLevel": 2,
+        "isMagic": true,
+        "operateType": 1,
+        "getLv": 28,
+        "lvUpSp": 9200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 25,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 27,
+        "skillLevel": 3,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 28,
+        "lvUpSp": 9200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 25,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 111,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 1,
+        "getLv": 28,
+        "lvUpSp": 9200,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 25,
+        "range": -1
+      }
+    },
+    {
+      "name": 32,
+      "isGroup": true
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 10,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 11,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 12,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 209,
+        "skillLevel": 5,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 32,
+        "lvUpSp": 7700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 209,
+        "skillLevel": 6,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 32,
+        "lvUpSp": 7700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 7,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 32,
+        "lvUpSp": 7700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 8,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 32,
+        "lvUpSp": 7700,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 19,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 28,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 20,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 28,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 21,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 29,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 19,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 62,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 20,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 62,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 21,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 65,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 13,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 88,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 14,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 88,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 15,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 92,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 10,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 53,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 11,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 54,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 12,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 5100,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 55,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 312,
+        "skillLevel": 4,
+        "isMagic": false,
+        "operateType": 4,
+        "getLv": 32,
+        "lvUpSp": 15000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 6,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 137,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 32,
+        "lvUpSp": 15000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 99,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 1,
+        "getLv": 32,
+        "lvUpSp": 15000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 28,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 230,
+        "skillLevel": 1,
+        "isMagic": true,
+        "operateType": 1,
+        "getLv": 32,
+        "lvUpSp": 15000,
+        "autoGet": false,
+        "itemNeeded": 1384,
+        "hp": 0,
+        "mp": 28,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 96,
+        "skillLevel": 2,
+        "isMagic": false,
+        "operateType": 1,
+        "getLv": 32,
+        "lvUpSp": 15000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 41,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 27,
+        "skillLevel": 4,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 32,
+        "lvUpSp": 15000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 28,
+        "range": 40
+      }
+    },
+    {
+      "name": 36,
+      "isGroup": true
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 13,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 14,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 208,
+        "skillLevel": 15,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 209,
+        "skillLevel": 7,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 36,
+        "lvUpSp": 13000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 209,
+        "skillLevel": 8,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 36,
+        "lvUpSp": 13000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 9,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 36,
+        "lvUpSp": 13000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 233,
+        "skillLevel": 10,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 36,
+        "lvUpSp": 13000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 22,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 32,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 23,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 33,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 16,
+        "skillLevel": 24,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 34,
+        "range": 40
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 22,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 69,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 23,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 72,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 56,
+        "skillLevel": 24,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 74,
+        "range": 700
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 16,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 99,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 17,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 103,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 58,
+        "skillLevel": 18,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 107,
+        "range": -1
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 13,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 59,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 14,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 60,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 15,
+        "skillLevel": 15,
+        "isMagic": true,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 63,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 101,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 1,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 69,
+        "range": 900
+      }
+    },
+    {
+      "skill": {
+        "skillId": 101,
+        "skillLevel": 2,
+        "isMagic": false,
+        "operateType": 1,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 72,
+        "range": 900
+      }
+    },
+    {
+      "skill": {
+        "skillId": 101,
+        "skillLevel": 3,
+        "isMagic": false,
+        "operateType": 1,
+        "getLv": 36,
+        "lvUpSp": 8600,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 74,
+        "range": 900
+      }
+    },
+    {
+      "skill": {
+        "skillId": 312,
+        "skillLevel": 5,
+        "isMagic": false,
+        "operateType": 4,
+        "getLv": 36,
+        "lvUpSp": 26000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 7,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 102,
+        "skillLevel": 1,
+        "isMagic": true,
+        "operateType": 1,
+        "getLv": 36,
+        "lvUpSp": 26000,
+        "autoGet": false,
+        "itemNeeded": 1380,
+        "hp": 0,
+        "mp": 17,
+        "range": 600
+      }
+    },
+    {
+      "skill": {
+        "skillId": 171,
+        "skillLevel": 1,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 36,
+        "lvUpSp": 26000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "skill": {
+        "skillId": 27,
+        "skillLevel": 5,
+        "isMagic": false,
+        "operateType": 0,
+        "getLv": 36,
+        "lvUpSp": 26000,
+        "autoGet": false,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 31,
+        "range": 40
+      }
+    },
+    {
+      "name": 40,
+      "isGroup": true
+    },
+    {
+      "skill": {
+        "skillId": 239,
+        "skillLevel": 2,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 40,
+        "lvUpSp": 0,
+        "autoGet": true,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "name": 52,
+      "isGroup": true
+    },
+    {
+      "skill": {
+        "skillId": 239,
+        "skillLevel": 3,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 52,
+        "lvUpSp": 0,
+        "autoGet": true,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "name": 61,
+      "isGroup": true
+    },
+    {
+      "skill": {
+        "skillId": 239,
+        "skillLevel": 4,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 61,
+        "lvUpSp": 0,
+        "autoGet": true,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    },
+    {
+      "name": 67,
+      "isGroup": true
+    },
+    {
+      "skill": {
+        "skillId": 239,
+        "skillLevel": 5,
+        "isMagic": false,
+        "operateType": 3,
+        "getLv": 67,
+        "lvUpSp": 0,
+        "autoGet": true,
+        "itemNeeded": 0,
+        "hp": 0,
+        "mp": 0,
+        "range": 0
+      }
+    }
+  ]
+}

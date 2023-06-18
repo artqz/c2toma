@@ -18,7 +18,7 @@ function init() {
   const itemAbilityList = loadItemAbilityList({ items });
   const itemSetList = loadItemSetList({ items, skills: AllSkills });
   const npcs = loadNpcs({ items, skills: AllSkills });
-  const shortNpcs = loadShortNpcs({ npcs });
+  // const shortNpcs = loadShortNpcs({ npcs });
   const multisell = loadMultisell({ items, npcs });
   const recipes = loadRecipes({ items });
   loadNpcPos({ npcs });

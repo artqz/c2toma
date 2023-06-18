@@ -17,12 +17,12 @@ async function getNpc(npcId) {
         return data;
       } else {
         console.log(`[fail]: bad status c2, npcId: ${npcId}`);
-        await new Promise((resolve) => setTimeout(resolve, 10000));
+        await new Promise((resolve) => setTimeout(resolve, 5000));
         await getNpc(npcId);
       }
     } catch (e) {
       console.log(`[fail]: c2, npcId: ${npcId}`);
-      await new Promise((resolve) => setTimeout(resolve, 10000));
+      await new Promise((resolve) => setTimeout(resolve, 5000));
       await getNpc(npcId);
     }
   } else {

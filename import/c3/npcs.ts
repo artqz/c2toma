@@ -46,8 +46,6 @@ function loadTomaNpcs(deps: {
 
   for (const npcId of Array.from(tomaNpcs.values())) {
     const npcC3 = npcnamesC3.get(npcId);
-    console.log("============", npcId);
-
     if (npcC3) {
       const npc = loadNpcJson(path, `${npcId}.json`);
 

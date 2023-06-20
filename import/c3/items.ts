@@ -167,6 +167,7 @@ function loadItemRuNames(deps: { itemData: Map<number, Item> }) {
       itemData.set(item.id, {
         ...item,
         name: { ...item.name, ru: _item.name.ru },
+        addName: { ...item.addName, ru: _item.add_name.ru },
       });
     }
   }

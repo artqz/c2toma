@@ -16,8 +16,8 @@ export function loadProfs(deps: {
   for (const prof of profs) {
     profMap.set(prof.id, {
       // id: prof.id,
-      profName: prof.profName,
-      parent: prof.parent,
+      profName: prof.profName === "assassin" ? "assasin" : prof.profName,
+      parent: prof.parent === "assassin" ? "assasin" : prof.profName,
       skills: getSkills({ ...deps, profSkills: prof.skills }),
     });
   }

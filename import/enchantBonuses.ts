@@ -26,6 +26,32 @@ export function calcWeaponAtk(deps: { level: number; item: Item }) {
   return { pAtk, mAtk };
 }
 
+export function calcWeaponAtk2(deps: { level: number; item: Item }) {
+  let pAtk = 0;
+  let mAtk = 0;
+  if (deps.item.type === "weapon") {
+    const bonus = watk(deps.item.crystalType);
+    if (deps.level <= 3) {
+      pAtk = Math.floor(
+        bonus[0] * deps.level + (deps.item.physicalDamage ?? 0)
+      );
+      mAtk = Math.floor(bonus[1] * deps.level + (deps.item.magicalDamage ?? 0));
+    } else {
+      pAtk = Math.floor(
+        bonus[0] * 3 +
+          bonus[0] * 2 * (deps.level - 3) +
+          (deps.item.physicalDamage ?? 0)
+      );
+      mAtk = Math.floor(
+        bonus[1] * 3 +
+          bonus[1] * 2 * (deps.level - 3) +
+          (deps.item.magicalDamage ?? 0)
+      );
+    }
+  }
+  return { pAtk, mAtk };
+}
+
 export function calcArmorDef(deps: { level: number; item: Item }) {
   let pDef = 0;
   let mDef = 0;

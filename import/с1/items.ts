@@ -232,7 +232,7 @@ function addNamesGF(deps: { itemData: Map<number, Item> }) {
     if (item) {
       itemData.set(item.id, {
         ...item,
-        addName: item.addName,
+        addName: itemName.add_name,
         name: itemName.name,
         desc: itemName.desc,
       });

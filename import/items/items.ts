@@ -223,8 +223,8 @@ function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
       ) {
         item.enchantBonus.push({
           level: i,
-          pAtk: calcWeaponAtk({ level: i, item }).pAtk,
-          mAtk: calcWeaponAtk({ level: i, item }).mAtk,
+          pAtk: calcWeaponAtk({ chronicle: "c2", level: i, item }).pAtk,
+          mAtk: calcWeaponAtk({ chronicle: "c2", level: i, item }).mAtk,
           pDef: calcArmorDef({ level: i, item }).pDef,
           mDef: calcArmorDef({ level: i, item }).mDef,
           crystals: calcСrystals({ level: i, item }),

@@ -38,6 +38,10 @@ function loadNpcData(deps: {
   const npcs = new Map<number, Npc>();
 
   for (const npc of npcsData) {
+    if (IGNORE_NPCS.has(npc.$[2]) || npc.$[2].startsWith("_")) {
+      continue;
+    }
+
     npcs.set(npc.$[1], {
       id: npc.$[1],
       npcName: npc.$[2],
@@ -242,3 +246,9 @@ function addNamesGF(deps: { npcsData: Map<number, Npc> }) {
     }
   }
 }
+
+const IGNORE_NPCS = new Set([
+  "salesman_cat",
+  "test_server_helper",
+  "test_server_helper2",
+]);

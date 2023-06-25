@@ -4,7 +4,7 @@ import { loadItemDataC4 } from "../../datapack/c4/itemdata";
 import { loadItemNamesGF } from "../../datapack/gf/itemnames";
 import { Item } from "../../result/types";
 
-import { calcArmorDef, calcWeaponAtk2, calcСrystals } from "../enchantBonuses";
+import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
 import { loadItemGrpC3 } from "../../datapack/c3/itemgrp";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemGrpC4 } from "../../datapack/c4/itemgrp";
@@ -185,8 +185,8 @@ function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
       ) {
         item.enchantBonus.push({
           level: i,
-          pAtk: calcWeaponAtk2({ level: i, item }).pAtk,
-          mAtk: calcWeaponAtk2({ level: i, item }).mAtk,
+          pAtk: calcWeaponAtk({ chronicle: "c3", level: i, item }).pAtk,
+          mAtk: calcWeaponAtk({ chronicle: "c3", level: i, item }).mAtk,
           pDef: calcArmorDef({ level: i, item }).pDef,
           mDef: calcArmorDef({ level: i, item }).mDef,
           crystals: calcСrystals({ level: i, item }),

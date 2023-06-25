@@ -5,7 +5,7 @@ import { loadItemNamesC1 } from "../../datapack/c1/itemnames";
 import { loadItemGrpC1 } from "../../datapack/c1/itemgrp";
 import { loadItemNamesGF } from "../../datapack/gf/itemnames";
 import { Chronicle } from "../types";
-import { calcArmorDef, calcWeaponAtk2, calcСrystals } from "../enchantBonuses";
+import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemGrpGF } from "../../datapack/gf/itemgrp";
 
@@ -161,7 +161,10 @@ function loadItemRuNames(deps: {
   return itemData;
 }
 
-function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
+function loadItemEnchantBonuses(deps: {
+  chronicle: Chronicle;
+  itemData: Map<number, Item>;
+}) {
   // пока только ц1 -ц2
   for (const item of deps.itemData.values()) {
     for (let i = 0; i <= 19; i++) {
@@ -172,8 +175,10 @@ function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
       ) {
         item.enchantBonus.push({
           level: i,
-          pAtk: calcWeaponAtk2({ level: i, item }).pAtk,
-          mAtk: calcWeaponAtk2({ level: i, item }).mAtk,
+          pAtk: calcWeaponAtk({ chronicle: deps.chronicle, level: i, item })
+            .pAtk,
+          mAtk: calcWeaponAtk({ chronicle: deps.chronicle, level: i, item })
+            .mAtk,
           pDef: calcArmorDef({ level: i, item }).pDef,
           mDef: calcArmorDef({ level: i, item }).mDef,
           crystals: calcСrystals({ level: i, item }),

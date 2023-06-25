@@ -25,15 +25,15 @@ function compareMaps(deps: { npcs: Map<number, Npc> }) {
     const empty = MapDataEntry.parse(
       JSON.parse(loadFile(`maps/empty.json`))
     ).map;
-    const mapC1 = MapDataEntry.parse(
-      JSON.parse(loadFile(`maps/c1/${npc.id}.json`))
-    ).map;
-    const mapC2 = MapDataEntry.parse(
-      JSON.parse(loadFile(`maps/c2/${npc.id}.json`))
-    ).map;
-    const mapC4 = MapDataEntry.parse(
-      JSON.parse(loadFile(`maps/c4/${npc.id}.json`))
-    ).map;
+    const mapC1 =
+      loadFile(`maps/c1/${npc.id}.json`) !== "none" &&
+      MapDataEntry.parse(JSON.parse(loadFile(`maps/c1/${npc.id}.json`))).map;
+    const mapC2 =
+      loadFile(`maps/c2/${npc.id}.json`) !== "none" &&
+      MapDataEntry.parse(JSON.parse(loadFile(`maps/c2/${npc.id}.json`))).map;
+    const mapC4 =
+      loadFile(`maps/c4/${npc.id}.json`) !== "none" &&
+      MapDataEntry.parse(JSON.parse(loadFile(`maps/c4/${npc.id}.json`))).map;
 
     if (mapC2 !== empty) {
       if (mapC2 === mapC4) {

@@ -62,7 +62,12 @@ function loadItemData(deps: { chronicle: Chronicle }) {
         critical: item.critical!,
         criticalAttackSkill: item.critical_attack_skill!,
         crystalCount: item.crystal_count!,
-        crystalType: item.crystal_type ?? "none",
+        crystalType:
+          item.crystal_type === "crystal_free"
+            ? "none"
+            : item.crystal_type === "event"
+            ? "none"
+            : item.crystal_type ?? "none",
         damageRange: item.damage_range ? item.damage_range.$ + "" : "none",
         defaultPrice: item.default_price!,
         dualFhitRate: item.dual_fhit_rate!,

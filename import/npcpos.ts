@@ -1,4 +1,4 @@
-import { Npc, NpcSpawn } from "./../result/types";
+import { Npc, NpcSpawn, Point } from "./../result/types";
 import { loadNpcPosC1 } from "../datapack/c1/npcpos";
 import { loadFile } from "../utils/Fs";
 import { z } from "zod";
@@ -69,7 +69,7 @@ function addSpawn(deps: { npcs: Map<string, Npc>; chronicle: "c1" | "c4" }) {
       const [terrIds, ...spawns] = entry.$;
 
       for (const spawn of spawns) {
-        const posArr: Array<Array<{ x: number; y: number }>> = [];
+        const posArr: Array<Array<Point>> = [];
 
         const pos = spawn.pos;
 
@@ -77,19 +77,18 @@ function addSpawn(deps: { npcs: Map<string, Npc>; chronicle: "c1" | "c4" }) {
           for (const terrId of terrIds) {
             const terr = terrMap.get(terrId);
             if (terr) {
-              posArr.push(terr.shape.map((p) => ({ x: p[0], y: p[1] })));
+              posArr.push(terr.shape.map((p) => ({ x: p[0], y: p[1], z: 0 })));
             }
           }
         } else if (pos) {
           for (const subPos of pos.$) {
-            posArr.push([{ x: subPos.$[0], y: subPos.$[1] }]);
+            posArr.push([{ x: subPos.$[0], y: subPos.$[1], z: 0 }]);
           }
         }
         const npcName = spawn.$[0];
 
         for (const pos of posArr) {
           const spawn: NpcSpawn = {
-            npcName,
             pos,
           };
 
@@ -122,11 +121,11 @@ function addTomaSpawn(deps: { npcs: Map<string, Npc> }) {
   for (const npc of Array.from(deps.npcs.values())) {
     const tomaNpcPos: NpcSpawn[] = tomaPos[`${npc.id}.png`].map((x) => {
       return {
-        npcName: npc.npcName,
         pos: x.map((pos) => {
           const x = (pos[0] - 655 - 5) / 0.005;
           const y = (pos[1] - 1150 - 160) / 0.005;
-          return { x, y };
+          const z = 0;
+          return { x, y, z };
         }),
       };
     });

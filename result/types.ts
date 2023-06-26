@@ -52,10 +52,10 @@ export type Npc = {
 export type Point = {
   x: Float;
   y: Float;
+  z: Float;
 };
 
 export type NpcSpawn = {
-  npcName: string;
   pos: Point[];
 };
 

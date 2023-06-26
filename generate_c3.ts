@@ -2,6 +2,7 @@ import { loadAiC3 } from "./import/c3/ai";
 import { getExistingSkillsC3 } from "./import/c3/existingSkills";
 import { loadItemsC3 } from "./import/c3/items";
 import { loadMultisellC3 } from "./import/c3/multisell";
+import { loadNpcSeaLevel } from "./import/c3/npcSeaLevel";
 import { loadNpcPosC3 } from "./import/c3/npcpos";
 import { loadNpcsC3, npcSkillsC3 } from "./import/c3/npcs";
 import { loadProfsC3, profSkillsC3 } from "./import/c3/profs";
@@ -18,6 +19,7 @@ function init() {
   const allSkills = loadAllSkillsC3();
   const npcs = loadNpcsC3({ items, skills: allSkills });
   loadNpcPosC3({ npcs });
+  loadNpcSeaLevel({ npcs });
   const multisell = loadMultisellC3({ items, npcs });
   const recipes = loadRecipesC3({ items });
   const profs = loadProfsC3({ skills: allSkills, items });

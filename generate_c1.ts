@@ -10,7 +10,7 @@ import { loadSets } from "./import/с1/sets";
 import { loadProfs } from "./import/с1/profs";
 import { loadWeaponAbilities } from "./import/с1/weaponAbilities";
 
-const chronicle = "c1";
+const chronicle = "gf";
 function init() {
   const skills = loadSkills({ chronicle });
   const items = loadItems({ chronicle });

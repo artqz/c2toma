@@ -1,6 +1,6 @@
 import { loadNpcPosC1 } from "../../datapack/c1/npcpos";
 import { loadNpcPosGF } from "../../datapack/gf/npcpos";
-import { Npc, NpcSpawn } from "../../result/types";
+import { Npc, NpcSpawn, Point } from "../../result/types";
 import { Chronicle } from "../types";
 
 export function loadNpcPos(deps: {
@@ -41,7 +41,7 @@ function loadNpcPosData(deps: {
       const [terrIds, ...spawns] = entry.$;
 
       for (const spawn of spawns) {
-        const posArr: Array<Array<{ x: number; y: number }>> = [];
+        const posArr: Array<Array<Point>> = [];
 
         const pos = spawn.pos;
 
@@ -49,19 +49,18 @@ function loadNpcPosData(deps: {
           for (const terrId of terrIds) {
             const terr = terrMap.get(terrId);
             if (terr) {
-              posArr.push(terr.shape.map((p) => ({ x: p[0], y: p[1] })));
+              posArr.push(terr.shape.map((p) => ({ x: p[0], y: p[1], z: 0 })));
             }
           }
         } else if (pos) {
           for (const subPos of pos.$) {
-            posArr.push([{ x: subPos.$[0], y: subPos.$[1] }]);
+            posArr.push([{ x: subPos.$[0], y: subPos.$[1], z: 0 }]);
           }
         }
         const npcName = spawn.$[0];
 
         for (const pos of posArr) {
           const spawn: NpcSpawn = {
-            npcName,
             pos,
           };
 

@@ -1,7 +1,7 @@
-import { loadNpcPosC4 } from "../../datapack/c4/npcpos";
-import { Npc, NpcSpawn } from "../../result/types";
+import { loadNpcPosC4 } from "../datapack/c4/npcpos";
+import { Npc, NpcSpawn } from "../result/types";
 
-export function loadNpcSeaLevelC3(deps: { npcs: Map<number, Npc> }) {
+export function loadNpcSeaLevel(deps: { npcs: Map<number, Npc> }) {
   const zPos = getZpos();
 
   for (const npc of deps.npcs.values()) {
@@ -13,8 +13,8 @@ export function loadNpcSeaLevelC3(deps: { npcs: Map<number, Npc> }) {
             return { ...p, z: seaLevel };
           }),
         };
-      });  
-      npc.spawns =   npcSpawn  
+      });
+      npc.spawns = npcSpawn  
     }
   }
   console.log("NPCs Sea Level added.");

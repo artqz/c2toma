@@ -9,8 +9,10 @@ import { loadAi } from "./import/с1/ai";
 import { loadSets } from "./import/с1/sets";
 import { loadProfs } from "./import/с1/profs";
 import { loadWeaponAbilities } from "./import/с1/weaponAbilities";
+import { loadNpcSeaLevel } from './import/с1/npcSeaLevel';
+import { Chronicle } from './import/types';
 
-const chronicle = "gf";
+const chronicle: Chronicle = "c1";
 function init() {
   const skills = loadSkills({ chronicle });
   const items = loadItems({ chronicle });
@@ -20,6 +22,7 @@ function init() {
   const multisell = loadMultisell({ chronicle, items, npcs });
   const recipes = loadRecipes({ chronicle, items });
   loadNpcPos({ chronicle, npcs });
+  loadNpcSeaLevel({ chronicle, npcs });
   const profs = loadProfs({ chronicle, skills, items });
 
   const ai = loadAi({ chronicle, npcs, items });

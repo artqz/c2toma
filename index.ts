@@ -11,6 +11,7 @@ import { createDir, saveFile } from "./utils/Fs";
 import { loadItemSetList, setSkills } from "./import/items/itemSetList";
 import { getExistingSkills } from "./import/existingSkills";
 import { loadShortNpcs } from "./import/shortNpcs";
+import { loadNpcSeaLevel } from './import/npcSeaLevel';
 
 function init() {
   const AllSkills = loadSkills();
@@ -22,6 +23,7 @@ function init() {
   const multisell = loadMultisell({ items, npcs });
   const recipes = loadRecipes({ items });
   loadNpcPos({ npcs });
+  loadNpcSeaLevel({ npcs });
   const profs = loadProfs({ skills: AllSkills, items });
   const skills = getExistingSkills({
     skills: new Map([...profSkills, ...npcSkills, ...setSkills]),

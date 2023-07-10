@@ -12,10 +12,12 @@ import { loadItemSetList, setSkills } from "./import/items/itemSetList";
 import { getExistingSkills } from "./import/existingSkills";
 import { loadShortNpcs } from "./import/shortNpcs";
 import { loadNpcSeaLevel } from './import/npcSeaLevel';
+import { loadQuestsC2 } from './import/quests';
 
 function init() {
   const AllSkills = loadSkills();
   const items = loadItems();
+  const quests = loadQuestsC2({items});
   const itemAbilityList = loadItemAbilityList({ items });
   const itemSetList = loadItemSetList({ items, skills: AllSkills });
   const npcs = loadNpcs({ items, skills: AllSkills });
@@ -36,6 +38,11 @@ function init() {
   saveFile(
     "result/data/c2/items.json",
     JSON.stringify(Array.from(items.values()), null, 2)
+  );
+  createDir(`result/data/c2/quests`);
+  saveFile(
+    `result/data/c2/quests/quests.json`,
+    JSON.stringify(Array.from(quests.values()), null, 2)
   );
   saveFile(
     "result/data/c2/sets.json",

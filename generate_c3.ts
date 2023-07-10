@@ -6,13 +6,14 @@ import { loadNpcSeaLevelC3 } from "./import/c3/npcSeaLevel";
 import { loadNpcPosC3 } from "./import/c3/npcpos";
 import { loadNpcsC3, npcSkillsC3 } from "./import/c3/npcs";
 import { loadProfsC3, profSkillsC3 } from "./import/c3/profs";
+import { loadQuestsC3 } from './import/c3/quests';
 import { loadRecipesC3 } from "./import/c3/recipes";
 import { loadSetsC3, setSkillsC3 } from "./import/c3/sets";
 import { loadAllSkillsC3 } from "./import/c3/skills";
 import { loadItemAbilityListC3 } from "./import/c3/weaponAbilities";
 import { createDir, saveFile } from "./utils/Fs";
 
-const VERSION = "C3";
+const VERSION = "c3";
 function init() {
   const items = loadItemsC3();
   const itemAbilityList = loadItemAbilityListC3({ items });
@@ -25,6 +26,7 @@ function init() {
   const profs = loadProfsC3({ skills: allSkills, items });
   const sets = loadSetsC3({ items, skills: allSkills });
   const ai = loadAiC3({ items, npcs });
+  const quests = loadQuestsC3({ items });
   const skills = getExistingSkillsC3({
     skills: new Map([...profSkillsC3, ...npcSkillsC3, ...setSkillsC3]),
   });
@@ -34,6 +36,11 @@ function init() {
   saveFile(
     `result/data/${VERSION}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)
+  );
+  createDir(`result/data/${VERSION}/quests`);
+  saveFile(
+    `result/data/${VERSION}/quests/quests.json`,
+    JSON.stringify(Array.from(quests.values()), null, 2)
   );
   saveFile(
     `result/data/${VERSION}/npcs.json`,

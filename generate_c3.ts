@@ -26,10 +26,11 @@ function init() {
   const profs = loadProfsC3({ skills: allSkills, items });
   const sets = loadSetsC3({ items, skills: allSkills });
   const ai = loadAiC3({ items, npcs });
-  const quests = loadQuestsC3({ items });
-  const skills = getExistingSkillsC3({
+   const skills = getExistingSkillsC3({
     skills: new Map([...profSkillsC3, ...npcSkillsC3, ...setSkillsC3]),
   });
+  const quests = loadQuestsC3({ items });
+ 
 
   createDir(`result/data/${VERSION}`);
 

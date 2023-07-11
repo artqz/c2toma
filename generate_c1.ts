@@ -11,11 +11,13 @@ import { loadProfs } from "./import/с1/profs";
 import { loadWeaponAbilities } from "./import/с1/weaponAbilities";
 import { loadNpcSeaLevel } from "./import/с1/npcSeaLevel";
 import { Chronicle } from "./import/types";
+import { loadQuests } from './import/с1/quests';
 
-const chronicle: Chronicle = "gf";
+const chronicle: Chronicle = "c1";
 function init() {
   const skills = loadSkills({ chronicle });
   const items = loadItems({ chronicle });
+  const quests = loadQuests({ chronicle, items });
   const weaponAbilities = loadWeaponAbilities({ chronicle, items });
   const sets = loadSets({ chronicle, items, skills });
   const npcs = loadNpcs({ chronicle, items, skills });
@@ -36,6 +38,11 @@ function init() {
   saveFile(
     `result/data/${chronicle}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)
+  );
+  createDir(`result/data/${chronicle}/quests`);
+  saveFile(
+    `result/data/${chronicle}/quests/quests.json`,
+    JSON.stringify(Array.from(quests.values()), null, 2)
   );
   saveFile(
     `result/data/${chronicle}/sets.json`,

@@ -272,14 +272,14 @@ export type AiSellList = [string, number, number, number][];
 
 export type QusetProg = {
       id: number,
-      name: string
-      desc: string
+      name: lstring
+      desc: lstring
       items: {itemName: string, count: number}[]
     }
 
 export type Quest = {
       id: number,
-      name: string
-      desc: string
+      name: lstring
+      desc: lstring
       progs: QusetProg[]
     }

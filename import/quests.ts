@@ -1,5 +1,6 @@
-import { loadQuestNamesC2,  } from '../datapack/c2/questnames';
-import { Item, Quest } from '../result/types';
+import { QuestNameEntryC2, loadQuestNamesC2,  } from '../datapack/c2/questnames';
+import { loadQuestNamesGF } from '../datapack/gf/questnames';
+import { Item, Quest, QusetProg } from '../result/types';
 
 export function loadQuestsC2(deps: {
   items: Map<number, Item>;
@@ -13,11 +14,32 @@ function loadC2Quests(deps: {
   items: Map<number, Item>;
 }) {
   
-    const quests: Quest[] = [];
-    loadQuestNamesC2().forEach((q) => {
-        quests.push({id: q.id, name: q.name, desc: q.desc, progs: []})
+  const map = new Map();
+    loadQuestNamesC2().forEach((item) => {
+         const key = item.id;
+         const collection = map.get(key);
+         if (!collection) {
+             map.set(key, [item]);
+         } else {
+             collection.push(item);
+         }
     });
 
-  return quests
-}
+  const questsRuById = new Map(
+    loadQuestNamesGF().map((q) => [q.id + "_" + q.progId, q])
+  );
+  
+    const quests: Quest[] = []
+    for (const progs of Array.from(map.values()) as QuestNameEntryC2[][]) {
+       const questProgs:QusetProg[] = []
+      for (const quest of progs) {
+        const questRu = questsRuById.get(quest.id+"_"+quest.level)
+        questProgs.push({id: quest.level, name: {en: quest.name + ` (Chapter ${quest.level})`, ru: questRu?.name.ru + ` (Часть ${quest.level})` ?? quest.name + ` (Chapter ${quest.level})`}, desc: {en: quest.desc, ru: questRu?.desc.ru ?? quest.desc}, items: []})
+      }
+       const questRu = questsRuById.get(progs[0].id+"_"+progs[0].level)
+      quests.push({id: progs[0].id, name: {en: progs[0].name, ru:  questRu?.name.ru ?? progs[0].name}, desc:{en:progs[0].desc, ru: questRu?.desc.ru ?? progs[0].desc}, progs: questProgs})
+    }
 
+  return quests
+
+  }

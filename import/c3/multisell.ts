@@ -172,6 +172,8 @@ function getNpcNamesByMultisell(multisellName: string) {
       return [{ npcName: "head_blacksmith_roman", show: true }];
     case "0373_reagent_supplier_bandor":
       return [{ npcName: "bandor", show: true }];
+    case "ssq_merchant_etcsell":
+      return [{ npcName: "merchant_of_mammon", show: true }];
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];

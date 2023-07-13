@@ -174,6 +174,8 @@ function getNpcNamesByMultisell(multisellName: string) {
       return [{ npcName: "bandor", show: true }];
     case "ssq_merchant_etcsell":
       return [{ npcName: "merchant_of_mammon", show: true }];
+    case "ssq_merchant_etcsell":
+      return [{ npcName: "merchant_of_mammon", show: true }];
     case "ssq_priest":
       return [
         { npcName: "dawn_priest_gludin", show: true },
@@ -193,6 +195,13 @@ function getNpcNamesByMultisell(multisellName: string) {
         { npcName: "dusk_priestessess_aden", show: true },
         { npcName: "dusk_priestessess_hunter", show: true },
       ];
+    case "ssq_acce_exchange_for_a":
+    case "ssq_weapon_variation_a":
+    case "ssq_exchange_for_b":
+    case "ssq_exchange_for_a":
+    case "ssq_sealexchange_for_b":
+    case "ssq_sealexchange_for_a":
+      return [{ npcName: "blacksmith_of_mammon", show: false }];
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];

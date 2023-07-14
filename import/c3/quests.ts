@@ -35,10 +35,10 @@ const questsRuById = new Map(
        const questProgs:QusetProg[] = []
       for (const quest of progs) {
         const questRu = questsRuById.get(quest.id+"_"+quest.progId)
-        questProgs.push({id: quest.progId, name: {en: quest.progName, ru: questRu?.name.ru ?? ""}, desc: {en: quest.desc, ru: questRu?.desc.ru ?? ""}, items: getItems({...deps, tabs1: quest.tabs1, tabs2: quest.tabs2})})
+        questProgs.push({id: quest.progId, name: {en: quest.progName, ru: questRu?.name.ru ?? quest.progName}, desc: {en: quest.desc, ru: questRu?.desc.ru ?? quest.desc}, items: getItems({...deps, tabs1: quest.tabs1, tabs2: quest.tabs2})})
       }
       const questRu = questsRuById.get(progs[0].id+"_"+progs[0].progId)
-      quests.push({id: progs[0].id, name: {en: progs[0].name, ru: questRu?.name.ru ?? ""}, desc:{en: progs[0].desc, ru: questRu?.short_desc.ru ?? ""}, progs: questProgs})
+      quests.push({id: progs[0].id, name: {en: progs[0].name, ru: questRu?.name.ru ?? progs[0].name}, desc:{en: progs[0].desc, ru: questRu?.short_desc.ru ?? progs[0].desc}, progs: questProgs})
     }
 
 

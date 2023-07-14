@@ -55,7 +55,7 @@ function loadQuestsGf(deps: {
       for (const quest of progs) {
         questProgs.push({id: quest.progId, name: quest.progName, desc: quest.desc, items: getItems({...deps, tabs1: quest.tabs1, tabs2: quest.tabs2})})
       }
-      quests.push({id: progs[0].id, name: progs[0].name, desc:progs[0].desc, progs: questProgs})
+      quests.push({id: progs[0].id, name: progs[0].name, desc:progs[0].short_desc, progs: questProgs})
     }
 
 

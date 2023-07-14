@@ -48,11 +48,11 @@ function compareMaps(deps: { npcs: Map<number, Npc> }) {
     }
   }
   saveFile("./npcssss.json", JSON.stringify(test));
-  console.log(
-    // Array.from(npcsC1.values()).length +
-    //   Array.from(npcsC4.values()).length +
-    Array.from(npcsC3.values())[10].id
-  );
+  // console.log(
+  //   // Array.from(npcsC1.values()).length +
+  //   //   Array.from(npcsC4.values()).length +
+  //   Array.from(npcsC3.values())[10].id
+  // );
 
   npcsC4 = addSpawn({ npcs: npcsC4, chronicle: "c4" });
   npcsC1 = addSpawn({ npcs: npcsC1, chronicle: "c1" });

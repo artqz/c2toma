@@ -187,13 +187,13 @@ function getNpcNamesByMultisell(multisellName: string) {
         { npcName: "dawn_priest_aden", show: true },
         { npcName: "dawn_priest_hunter", show: true },
         { npcName: "dusk_priestessess_gludin", show: true },
-        { npcName: "dusk_priestessess_gludio", show: true },
-        { npcName: "dusk_priestessess_dion", show: true },
-        { npcName: "dusk_priestessess_giran", show: true },
-        { npcName: "dusk_priestessess_heiness", show: true },
-        { npcName: "dusk_priestessess_oren", show: true },
-        { npcName: "dusk_priestessess_aden", show: true },
-        { npcName: "dusk_priestessess_hunter", show: true },
+        { npcName: "dusk_priestess_gludio", show: true },
+        { npcName: "dusk_priestess_dion", show: true },
+        { npcName: "dusk_priestess_giran", show: true },
+        { npcName: "dusk_priestess_heiness", show: true },
+        { npcName: "dusk_priestess_oren", show: true },
+        { npcName: "dusk_priestess_aden", show: true },
+        { npcName: "dusk_priestess_hunter", show: true },
       ];
     case "ssq_acce_exchange_for_a":
     case "ssq_weapon_variation_a":

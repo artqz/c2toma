@@ -34,10 +34,10 @@ function loadC2Quests(deps: {
        const questProgs:QusetProg[] = []
       for (const quest of progs) {
         const questRu = questsRuById.get(quest.id+"_"+quest.level)
-        questProgs.push({id: quest.level, name: {en: quest.name + ` (Chapter ${quest.level})`, ru: questRu?.name.ru + ` (Часть ${quest.level})` ?? quest.name + ` (Chapter ${quest.level})`}, desc: {en: quest.desc, ru: questRu?.desc.ru ?? quest.desc}, items: []})
+        questProgs.push({id: quest.level, name: {en: `Step ${quest.level}`, ru: `Шаг ${quest.level}` ?? `Step ${quest.level}`}, desc: {en: quest.desc, ru: questRu?.desc.ru ?? quest.desc}, items: []})
       }
        const questRu = questsRuById.get(progs[0].id+"_"+progs[0].level)
-      quests.push({id: progs[0].id, name: {en: progs[0].name, ru:  questRu?.name.ru ?? progs[0].name}, desc:{en:progs[0].desc, ru: questRu?.desc.ru ?? progs[0].desc}, progs: questProgs})
+      quests.push({id: progs[0].id, name: {en: progs[0].name, ru:  questRu?.name.ru ?? progs[0].name}, desc:{en:progs[0].desc, ru: questRu?.short_desc.ru ?? progs[0].desc}, progs: questProgs})
     }
 
   return quests

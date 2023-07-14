@@ -10,6 +10,7 @@ export type QuestNameEntryGF = {
   name: {en: string, ru: string};
   progName: {en: string, ru: string};
   desc: {en: string, ru: string};
+  short_desc: {en: string, ru: string};
   tabs1: number[];
   tabs2: number[];
 };
@@ -26,6 +27,7 @@ const EntryGF = z.object({
   main_name: z.string(),
   prog_name: z.string(),
   description: z.string(),
+  short_description: z.string(),
   "tab5[0]": z.string(),
   "tab5[1]": z.string(),
   "tab5[2]": z.string(),
@@ -77,6 +79,7 @@ export function loadQuestNamesGF(): QuestNameEntryGF[] {
       name: {en: cleanStr(x.main_name), ru: cleanStr(x.main_name)},
       progName: {en: cleanStr(x.prog_name), ru: cleanStr(x.prog_name)},
       desc: {en: cleanStr(x.description), ru: cleanStr(x.description)},
+      short_desc: {en: cleanStr(x.short_description), ru: cleanStr(x.short_description)},
       tabs1: pushItems({0: x['tab5[0]'], 1: x['tab5[1]'], 2:x['tab5[2]'], 3:x['tab5[3]'], 4:x['tab5[4]'], 5:x['tab5[5]'], 6:x['tab5[6]'], 7:x['tab5[7]'], 8:x['tab5[8]'], 9:x['tab5[9]'], 10:x['tab5[10]']}),
       tabs2: pushItems({0: x['tab6[0]'], 1: x['tab6[1]'], 2:x['tab6[2]'], 3:x['tab6[3]'], 4:x['tab6[4]'], 5:x['tab6[5]'], 6:x['tab6[6]'], 7:x['tab6[7]'], 8:x['tab6[8]'], 9:x['tab6[9]'], 10:x['tab6[10]']}),
     };
@@ -86,6 +89,7 @@ export function loadQuestNamesGF(): QuestNameEntryGF[] {
       questName.name.ru = cleanStr(ru.main_name);
       questName.progName.ru = cleanStr(ru.prog_name);
       questName.desc.ru = cleanStr(ru.description);
+      questName.short_desc.ru = cleanStr(ru.short_description);
     }
 
     return questName

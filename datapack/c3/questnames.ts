@@ -71,7 +71,7 @@ export function loadQuestNamesC3(): QuestNameEntryC3[] {
       progId: parseInt(cleanStr(x.quest_prog)),
       name: cleanStr(x.main_name),
       progName: cleanStr(x.prog_name),
-      desc: cleanStr(x.description),
+      desc: cleanStr(x.description.replace(/ \\n /g, "\\\\n")),
       tabs1: pushItems({0: x['tab1[0]'], 1: x['tab1[1]'], 2:x['tab1[2]'], 3:x['tab1[3]'], 4:x['tab1[4]'], 5:x['tab1[5]'], 6:x['tab1[6]'], 7:x['tab1[7]'], 8:x['tab1[8]'], 9:x['tab1[9]'], 10:x['tab1[10]'], 11:x['tab1[11]'], 12:x['tab1[12]'], 13:x['tab1[13]']}),
       tabs2: pushItems({0: x['tab2[0]'], 1: x['tab2[1]'], 2:x['tab2[2]'], 3:x['tab2[3]'], 4:x['tab2[4]'], 5:x['tab2[5]'], 6:x['tab2[6]'], 7:x['tab2[7]'], 8:x['tab2[8]'], 9:x['tab2[9]'], 10:x['tab2[10]'], 11:x['tab2[11]'], 12:x['tab2[12]'], 13:x['tab2[13]']}),
     };

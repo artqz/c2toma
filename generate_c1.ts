@@ -11,9 +11,9 @@ import { loadProfs } from "./import/с1/profs";
 import { loadWeaponAbilities } from "./import/с1/weaponAbilities";
 import { loadNpcSeaLevel } from "./import/с1/npcSeaLevel";
 import { Chronicle } from "./import/types";
-import { loadQuests } from './import/с1/quests';
+import { loadQuests } from "./import/с1/quests";
 
-const chronicle: Chronicle = "c1";
+const chronicle: Chronicle = "gf";
 function init() {
   const skills = loadSkills({ chronicle });
   const items = loadItems({ chronicle });

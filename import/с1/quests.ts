@@ -1,13 +1,19 @@
-import { loadQuestNamesC1, QuestNameEntryC1 } from '../../datapack/c1/questnames';
-import { loadQuestNamesGF, QuestNameEntryGF } from '../../datapack/gf/questnames';
-import { Item, Quest, QusetProg } from '../../result/types';
-import { Chronicle } from '../types';
+import {
+  loadQuestNamesC1,
+  QuestNameEntryC1,
+} from "../../datapack/c1/questnames";
+import {
+  loadQuestNamesGF,
+  QuestNameEntryGF,
+} from "../../datapack/gf/questnames";
+import { Item, Quest, QusetProg } from "../../result/types";
+import { Chronicle } from "../types";
 
 export function loadQuests(deps: {
   chronicle: Chronicle;
   items: Map<number, Item>;
 }) {
-  let quests = loadQuestsData(deps)
+  let quests = loadQuestsData(deps);
 
   console.log("Quests loaded.");
 
@@ -31,82 +37,104 @@ function loadQuestsData(deps: {
       break;
   }
 
-  return questData
+  return questData;
 }
 
-function loadQuestsGf(deps: {
-  items: Map<number, Item>;
-}) {
+function loadQuestsGf(deps: { items: Map<number, Item> }) {
   const map = new Map();
-    loadQuestNamesGF().forEach((item) => {
-         const key = item.id;
-         const collection = map.get(key);
-         if (!collection) {
-             map.set(key, [item]);
-         } else {
-             collection.push(item);
-         }
-    });
-
-
-    const quests: Quest[] = []
-    for (const progs of Array.from(map.values()) as QuestNameEntryGF[][]) {
-       const questProgs:QusetProg[] = []
-      for (const quest of progs) {
-        questProgs.push({id: quest.progId, name: quest.progName, desc: quest.desc, items: getItems({...deps, tabs1: quest.tabs1, tabs2: quest.tabs2})})
-      }
-      quests.push({id: progs[0].id, name: progs[0].name, desc:progs[0].short_desc, progs: questProgs})
+  loadQuestNamesGF().forEach((item) => {
+    const key = item.id;
+    const collection = map.get(key);
+    if (!collection) {
+      map.set(key, [item]);
+    } else {
+      collection.push(item);
     }
+  });
 
+  const quests: Quest[] = [];
+  for (const progs of Array.from(map.values()) as QuestNameEntryGF[][]) {
+    const questProgs: QusetProg[] = [];
+    for (const quest of progs) {
+      questProgs.push({
+        id: quest.progId,
+        name: quest.progName,
+        desc: quest.desc,
+        items: getItems({ ...deps, tabs1: quest.tabs1, tabs2: quest.tabs2 }),
+      });
+    }
+    quests.push({
+      id: progs[0].id,
+      name: progs[0].name,
+      desc: progs[0].short_desc,
+      progs: questProgs,
+    });
+  }
 
-  return quests
+  return quests;
 }
 
 function loadQuestsC1() {
- {
-  const map = new Map();
+  {
+    const map = new Map();
     loadQuestNamesC1().forEach((item) => {
-         const key = item.id;
-         const collection = map.get(key);
-         if (!collection) {
-             map.set(key, [item]);
-         } else {
-             collection.push(item);
-         }
+      const key = item.id;
+      const collection = map.get(key);
+      if (!collection) {
+        map.set(key, [item]);
+      } else {
+        collection.push(item);
+      }
     });
 
-  const questsRuById = new Map(
-    loadQuestNamesGF().map((q) => [q.id + "_" + q.progId, q])
-  );
-  
-    const quests: Quest[] = []
+    const questsRuById = new Map(
+      loadQuestNamesGF().map((q) => [q.id + "_" + q.progId, q])
+    );
+
+    const quests: Quest[] = [];
     for (const progs of Array.from(map.values()) as QuestNameEntryC1[][]) {
-       const questProgs:QusetProg[] = []
+      const questProgs: QusetProg[] = [];
       for (const quest of progs) {
-        const questRu = questsRuById.get(quest.id+"_"+quest.level)
-        questProgs.push({id: quest.level, name: {en: quest.name + `Step ${quest.level}`, ru: `Шаг ${quest.level}` ?? `Step ${quest.level}`}, desc: {en: quest.desc, ru: questRu?.desc.ru ?? quest.desc}, items: []})
+        const questRu = questsRuById.get(quest.id + "_" + quest.level);
+        questProgs.push({
+          id: quest.level,
+          name: {
+            en: quest.name + `Step ${quest.level}`,
+            ru: `Шаг ${quest.level}` ?? `Step ${quest.level}`,
+          },
+          desc: { en: quest.desc, ru: questRu?.desc.ru ?? quest.desc },
+          items: [],
+        });
       }
-       const questRu = questsRuById.get(progs[0].id+"_"+progs[0].level)
-      quests.push({id: progs[0].id, name: {en: progs[0].name, ru:  questRu?.name.ru ?? progs[0].name}, desc:{en:progs[0].desc, ru: questRu?.short_desc.ru ?? progs[0].desc}, progs: questProgs})
+      const questRu = questsRuById.get(progs[0].id + "_" + progs[0].level);
+      quests.push({
+        id: progs[0].id,
+        name: { en: progs[0].name, ru: questRu?.name.ru ?? progs[0].name },
+        desc: {
+          en: progs[0].desc,
+          ru: questRu?.short_desc.ru ?? progs[0].desc,
+        },
+        progs: questProgs,
+      });
     }
 
-  return quests
-}
+    return quests;
+  }
 }
 
 function getItems(deps: {
   items: Map<number, Item>;
-  tabs1: number[],
-  tabs2: number[]
+  tabs1: number[];
+  tabs2: number[];
 }) {
-  const items: {itemName: string, count: number}[] = []
+  const items: { itemName: string; count: number }[] = [];
 
   deps.tabs1.forEach((_item, i) => {
-    const item = deps.items.get(_item)
+    const item = deps.items.get(_item);
     if (item) {
-      items.push({itemName: item.itemName, count: deps.tabs2[i]})
+      items.push({ itemName: item.itemName, count: deps.tabs2[i] });
     }
-  })
+  });
 
-  return items
+  return items;
 }

@@ -1840,8 +1840,8 @@
 2961	Full Plate Boots Part		a,A key material for Dwarves to make Full Plate Boots. Can be sold in any shop.\0	-1
 2962	Drake Leather Gloves Design		a,A key material for Dwarves to make Drake Leather Gloves. Can be sold in any shop.\0	-1
 2963	Full Plate Gauntlets Part		a,A key material for Dwarves to make a Full Plate Gauntlet. Can be sold in any shop.\0	-1
-2965	Divine Gloves Pattern		a,A key material for Dwarves to make Divine Gloves. Can be sold in any shop.\0	-1
-2964	Blessed Gloves Design		a,A key material for Dwarves to make Blessed Gloves. Can be sold in any shop.\0	-1
+2965	Blessed Gloves Pattern		a,A key material for Dwarves to make Blessed Gloves. Can be sold in any shop.\0	-1
+2964	Divine Gloves Design		a,A key material for Dwarves to make Divine Gloves. Can be sold in any shop.\0	-1
 2966	Full Plate Shield Fragment		a,A key material for Dwarves to make a Full Plate Shield. Can be sold in any shop.\0	-1
 2967	Elven Long Sword Blade		a,A key material for Dwarves to make a Elven Long Sword. Can be sold in any shop.\0	-1
 2968	Dwarven Warhammer Head		a,A key material for Dwarves to make a Dwarven War Hammer. Can be sold in any shop.\0	-1
@@ -1893,8 +1893,8 @@
 3014	Recipe: Full Plate Boots		a,The recipe for a pair of full plate boots. Requires Create Item skill level 6. The success rate is 100%.\0	-1
 3015	Recipe: Drake Leather Gloves		a,The recipe for a pair of drake leather gloves. Requires Create Item skill level 6. The success rate is 100%.\0	-1
 3016	Recipe: Full Plate Gauntlets		a,The recipe for a pair of full plate gauntlets. Requires Create Item skill level 6. The success rate is 100%.\0	-1
-3018	Recipe: Divine Gloves		a,The recipe for a pair of divine gloves. Requires Create Item skill level 6. The success rate is 100%.\0	-1
-3017	Recipe: Blessed Gloves		a,The recipe for a pair of blessed gloves. Requires Create Item skill level 6. The success rate is 100%.\0	-1
+3018	Recipe: Blessed Gloves		a,The recipe for a pair of blessed gloves. Requires Create Item skill level 6. The success rate is 100%.\0	-1
+3017	Recipe: Divine Gloves		a,The recipe for a pair of divine gloves. Requires Create Item skill level 6. The success rate is 100%.\0	-1
 3019	Recipe: Full Plate Shield		a,The recipe for a full plate shield. Requires Create Item skill level 6. The success rate is 100%.\0	-1
 3020	Recipe: Elven Long Sword		a,The recipe for an Elven long sword. Requires Create Item skill level 4. The success rate is 100%.\0	-1
 3021	Recipe: Dwarven War Hammer		a,The recipe for a Dwarven war hammer. Requires Create Item skill level 5. The success rate is 100%.\0	-1
@@ -4053,76 +4053,6 @@
 5546	Sword of Miracles Edge		a,An essential ingredient needed by a Dwarf to make a sword of miracles. It can be sold at a regular store.\0	-1
 5547	Elemental Sword Edge		a,An essential ingredient needed by a Dwarf to make an elemental sword. It can be sold at a regular store.\0	-1
 5548	Tallum Blade Edge		a,An essential ingredient needed by a Dwarf to make a tallum blade. It can be sold at a regular store.\0	-1
-5479	Sealed Tallum Leather Armor Pattern		a,An essential ingredient needed by a Dwarf to make a sealed tallum leather armor pattern. It can be sold at a regular store.\0	-1
-5480	Sealed Leather Armor of Nightmare Fabric		a,An essential ingredient needed by a Dwarf to make sealed leather armor of nightmare fabric. It can be sold at a regular store.\0	-1
-5481	Sealed Majestic Leather Armor Fabric		a,An essential ingredient needed by a Dwarf to make sealed majestic leather armor fabric. It can be sold at a regular store.\0	-1
-5482	Sealed Dark Crystalline Leggings Design		a,An essential ingredient needed by a Dwarf to make a sealed dark crystalline leggings Design. It can be sold at a regular store.\0	-1
-5483	Phoenix Earring Gemstone		a,An essential ingredient needed by a Dwarf to make a phoenix earring Gemstone. It can be sold at a regular store.\0	-1
-5484	Inferno Earring Gemstone		a,An essential ingredient needed by a Dwarf to make a inferno earring Gemstone. It can be sold at a regular store.\0	-1
-5485	Sealed Tallum Tunic Texture		a,An essential ingredient needed by a Dwarf to make a sealed tallum tunic texture. It can be sold at a regular store.\0	-1
-5486	Sealed Dark Crystal Robe Fabric		a,An essential ingredient needed by a Dwarf to make a sealed dark crystal robe fabric. It can be sold at a regular store.\0	-1
-5487	Sealed Robe of Nightmare Fabric		a,An essential ingredient needed by a Dwarf to make a sealed robe of nightmare fabric. It can be sold at a regular store.\0	-1
-5488	Sealed Majestic Robe Fabric		a,An essential ingredient needed by a Dwarf to make sealed majestic robe fabric. It can be sold at a regular store.\0	-1
-5489	Sealed Tallum Stockings Fabric		a,An essential ingredient needed by a Dwarf to make sealed tallum stockings fabric. It can be sold at a regular store.\0	-1
-5490	Phoenix Necklace Beads		a,An essential ingredient needed by a Dwarf to make phoenix armor pattern. It can be sold at a regular store.\0	-1
-5491	Inferno Necklace Beads		a,An essential ingredient needed by a Dwarf to make inferno necklace beads. It can be sold at a regular store.\0	-1
-5492	Phoenix Ring Gemstone		a,An essential ingredient needed by a Dwarf to make a phoenix ring gemstone. It can be sold at a regular store.\0	-1
-5493	Inferno Ring Gemstone		a,An essential ingredient needed by a Dwarf to make a inferno ring gemstone. It can be sold at a regular store.\0	-1
-5494	Sealed Dark Crystal Shield Fragment		a,An essential ingredient needed by a Dwarf to make a sealed dark crystal shield fragment. It can be sold at a regular store.\0	-1
-5495	Sealed Shield of Nightmare Fragment		a,An essential ingredient needed by a Dwarf to make a sealed shield of nightmare fragment. It can be sold at a regular store.\0	-1
-5496	Sealed Dark Crystal Boots Lining		a,An essential ingredient needed by a Dwarf to make a sealed dark crystal boots lining. It can be sold at a regular store.\0	-1
-5497	Sealed Tallum Boots Lining		a,An essential ingredient needed by a Dwarf to make a sealed tallum boots lining. It can be sold at a regular store.\0	-1
-5498	Sealed Boots of the Underworld Lining		a,An essential ingredient needed by a Dwarf to make a sealed boots of the underworld lining. It can be sold at a regular store.\0	-1
-5499	Sealed Gust Boots Lining		a,An essential ingredient needed by a Dwarf to make a sealed gust boots lining. It can be sold at a regular store.\0	-1
-5500	Sealed Red Flame Boots Lining		a,An essential ingredient needed by a Dwarf to make a sealed Red Flame boots Lining. It can be sold at a regular store.\0	-1
-5501	Sealed Phoenix Boots Lining		a,An essential ingredient needed by a Dwarf to make a sealed phoenix boots Lining. It can be sold at a regular store.\0	-1
-5502	Sealed Boots of Nightmare Lining		a,An essential ingredient needed by a Dwarf to make a sealed boots of nightmare Lining. It can be sold at a regular store.\0	-1
-5503	Sealed Majestic Boots Lining		a,An essential ingredient needed by a Dwarf to make sealed majestic boots lining. It can be sold at a regular store.\0	-1
-5504	Sealed Dark Legion Boots Lining		a,An essential ingredient needed by a Dwarf to make a sealed Dark Legion boots Lining. It can be sold at a regular store.\0	-1
-5505	Sealed Boots of Phantom Lining		a,An essential ingredient needed by a Dwarf to make a sealed boots of Phantom Lining. It can be sold at a regular store.\0	-1
-5506	Sealed Cerberus Boots Lining		a,An essential ingredient needed by a Dwarf to make a sealed Cerberus boots Lining. It can be sold at a regular store.\0	-1
-5507	Sealed Dasparion's Boots Lining		a,An essential ingredient needed by a Dwarf to make a sealed Dasparion's boots Lining. It can be sold at a regular store.\0	-1
-5508	Sealed Dark Crystal Gloves Design		a,An essential ingredient needed by a Dwarf to make a sealed dark crystal gloves Design. It can be sold at a regular store.\0	-1
-5509	Sealed Tallum Gloves Design		a,An essential ingredient needed by a Dwarf to make a sealed tallum gloves Design. It can be sold at a regular store.\0	-1
-5510	Sealed Gloves of the Underworld Design		a,An essential ingredient needed by a Dwarf to make a sealed gloves of the Underworld Design. It can be sold at a regular store.\0	-1
-5511	Sealed Gust Bracer design		a,An essential ingredient needed by a Dwarf to make a sealed Gust Bracer design. It can be sold at a regular store.\0	-1
-5512	Sealed Gloves of Black Ore Design		a,An essential ingredient needed by a Dwarf to make a sealed gloves of Black Ore Design. It can be sold at a regular store.\0	-1
-5513	Sealed Phoenix Gloves Design		a,An essential ingredient needed by a Dwarf to make a sealed phoenix gloves design. It can be sold at a regular store.\0	-1
-5514	Sealed Gloves of Nightmare Design		a,An essential ingredient needed by a Dwarf to make a sealed gloves of nightmare design. It can be sold at a regular store.\0	-1
-5515	Sealed Majestic Gloves Design		a,An essential ingredient needed by a Dwarf to make a sealed majestic gloves design. It can be sold at a regular store.\0	-1
-5516	Sealed Dark Legion Gloves Design		a,An essential ingredient needed by a Dwarf to make a sealed dark legion gloves design. It can be sold at a regular store.\0	-1
-5517	 Sealed Gloves of Phantom Design		a, An essential ingredient needed by a Dwarf to make a sealed gloves of phantom design. It can be sold at a regular store.\0	-1
-5518	Sealed Cerberus Gloves Design		a,An essential ingredient needed by a Dwarf to make a sealed Cerberus gloves design. It can be sold at a regular store.\0	-1
-5519	Sealed Dasparion's Gloves Design		a,An essential ingredient needed by a Dwarf to make a sealed Dasparion's gloves design. It can be sold at a regular store.\0	-1
-5520	Sealed Dark Crystal Breastplate Pattern		a,An essential ingredient needed by a Dwarf to make a sealed dark crystal breastplate pattern. It can be sold at a regular store.\0	-1
-5521	Sealed Tallum Plate Armor Pattern		a,An essential ingredient needed by a Dwarf to make a sealed tallum plate armor pattern. It can be sold at a regular store.\0	-1
-5522	Sealed Armor of Nightmare Pattern		a,An essential ingredient needed by a Dwarf to make a sealed armor of nightmare pattern. It can be sold at a regular store.\0	-1
-5523	Sealed Majestic Plate Armor Pattern		a,An essential ingredient needed by a Dwarf to make a sealed majestic plate armor pattern. It can be sold at a regular store.\0	-1
-5524	Sealed Dark Crystal Gaiters Pattern		a,An essential ingredient needed by a Dwarf to make a sealed dark crystal gaiters pattern. It can be sold at a regular store.\0	-1
-5525	Sealed Dark Crystal Helmet Design		a,An essential ingredient needed by a Dwarf to make sealed dark crystal helmet design. It can be sold at a regular store.\0	-1
-5526	Sealed Recipe: Tallum Helm Design		a,The recipe used to make a tallum helm design. It can be sold at a regular store.\0	-1
-5527	Sealed Helm of Nightmare Design		a,An essential ingredient needed by a Dwarf to make a sealed helm of nightmare design. It can be sold at a regular store.\0	-1
-5528	Sealed Majestic Circlet Design		a,An essential ingredient needed by a Dwarf to make a sealed majestic circlet design. It can be sold at a regular store.\0	-1
-5529	Dragon Slayer Edge		a,An essential ingredient needed by a Dwarf to make a dragon slayer edge. It can be sold at a regular store.\0	-1
-5530	Berserker Blade Edge		a,An essential ingredient needed by a Dwarf to make a berserker blade edge. It can be sold at a regular store.\0	-1
-5531	Heavy Sword Edge		a,An essential ingredient needed by a Dwarf to make a heavy sword edge. It can be sold at a regular store.\0	-1
-5532	Meteor Shower Head		a,An essential ingredient needed by a Dwarf to make a meteor shower head. It can be sold at a regular store.\0	-1
-5533	Elysian Head		a,An essential ingredient needed by a Dwarf to make a Elysian head. It can be sold at a regular store.\0	-1
-5534	Soul Bow Stave		a,An essential ingredient needed by a Dwarf to make a soul bow stave. It can be sold at a regular store.\0	-1
-5535	Carnage Bow Stave		a,An essential ingredient needed by a Dwarf to make a carnage bow stave. It can be sold at a regular store.\0	-1
-5536	Bloody Orchid Head		a,An essential ingredient needed by a Dwarf to make a bloody orchid head. It can be sold at a regular store.\0	-1
-5537	Soul Separator Head		a,An essential ingredient needed by a Dwarf to make a soul separator head. It can be sold at a regular store.\0	-1
-5538	Dragon Grinder Edge		a,An essential ingredient needed by a Dwarf to make a dragon grinder edge. It can be sold at a regular store.\0	-1
-5539	Blood Tornado Edge		a,An essential ingredient needed by a Dwarf to make a blood tornado edge. It can be sold at a regular store.\0	-1
-5540	Orcish Halberd Edge		a,An essential ingredient needed by a Dwarf to make a orcish halberd edge. It can be sold at a regular store.\0	-1
-5541	Tallum Glaive Edge		a,An essential ingredient needed by a Dwarf to make a tallum glaive edge. It can be sold at a regular store.\0	-1
-5542	Halberd Edge		a,An essential ingredient needed by a Dwarf to make a halberd edge. It can be sold at a regular store.\0	-1
-5543	Dasparion's Staff Edge		a,An essential ingredient needed by a Dwarf to make a Dasparion's staff edge. It can be sold at a regular store.\0	-1
-5544	Branch of The Mother Tree Head		a,An essential ingredient needed by a Dwarf to make a branch of the Mother Tree head. It can be sold at a regular store.\0	-1
-5545	Dark Legion's Edge Blade		a,An essential ingredient needed by a Dwarf to make a dark legion's edge blade. It can be sold at a regular store.\0	-1
-5546	Sword of Miracles Edge		a,An essential ingredient needed by a Dwarf to make a sword of miracles edge. It can be sold at a regular store.\0	-1
-5547	Elemental Sword Edge		a,An essential ingredient needed by a Dwarf to make a elemental sword edge. It can be sold at a regular store.\0	-1
-5548	Tallum Blade Edge		a,An essential ingredient needed by a Dwarf to make a tallum blade edge. It can be sold at a regular store.\0	-1
 5549	Metallic Thread		a,Material used by a Dwarf to make an item. It can be sold at a regular store.\0	-1
 5550	Reinforced Metal Plate		a,Material used by a Dwarf to make an item. It can be sold at a regular store.\0	-1
 5551	Leolin's Mold		a,Material used by a Dwarf to make an item. It can be sold at a regular store.\0	-1
@@ -5303,7 +5233,7 @@
 2394	Nightmarish Leather Armor		a,Upper and lower body armor. Produces the following effects when worn with helm of nightmare, gloves of nightmare and boots of nightmare (light): M. Def. +4%, Sleep and Hold Resistance +70%, Restores 3% of melee damage inflicted on the enemy to oneself, DEX +1, and CON -1.\0	-1
 2395	Majestic Leather Armor		a,Upper and lower body armor. Produces the following effects when worn with majestic circlet, majestic gloves and majestic boots (light): Archery P. Atk. +8%, MP +240, weight +5759, Stun Resistance +50%, DEX+1, CON-1.\0	-1
 2396	Elven Mithril Tunic		a,	-1
-2397	Tunic of Zubei		a,Produces the following effects when worn with stockings of Zubei, Zubei's helmet, Zubei's gauntlets and Zubei's boots (robe): M. Atk. +10% and MP Regeneration +5%.\0	-1
+2397	Tunic of Zubei		a,Produces the following effects when worn with stockings of Zubei, Zubei's helmet, Zubei's gauntlets and Zubei's boots (robe): M. Atk. +10% and MP Regeneration -5%.\0	-1
 2398	Blue Wolf Tunic		a,Produces the following effects when worn with blue wolf stockings, blue wolf helmet, blue wolf gloves and blue wolf boots (robe): MP +206, MP Regeneration +5.24%, INT-2, MEN-1, and WIT+3.\0	-1
 2399	Tunic of Doom		a,Produces the following effects when worn with stockings of doom, doom helmet, doom gloves and doom boots (robe): Speed + 7, increased Breath Gauge, MP Regeneration +5.24%, INT +2, MEN +1, and WIT -3.\0	-1
 2400	Tallum Tunic		a,Produces the following effects when worn with tallum stockings, tallum helm, tallum gloves and tallum boots (robe): Casting Spd. +15%, M. Def. +8%, Poison and Bleed Resistance +80%, INT-2, and WIT+2.\0	-1
@@ -5369,12 +5299,12 @@
 2460	Theca Leather Gloves		a,	-1
 2461	Drake Leather Gloves		a,	-1
 2462	Full Plate Gauntlets		a,	-1
-2468	Divine Gloves		a,Part of the divine set.\0	-1
+2468	Blessed Gloves		a,	-1
 2464	Avadon Gloves		a,	-1
 2465	Chain Gloves of Silence		a,	-1
 2466	Guardian's Gloves		a,	-1
 2467	Gloves of Blessing		a,	-1
-2463	Blessed Gloves		a,	-1
+2463	Divine Gloves		a,Part of the divine set.\0	-1
 2469	Gloves of The Underworld		a,	-1
 2470	Gloves of Phantom		a,	-1
 2471	Dark Legion Gloves		a,	-1
@@ -6469,5 +6399,10 @@
 9903	Wyvern Ride Ticket		a,An item that allows you to ride a wyvern.\0	-1
 9904	Coin of Luck		a,Magic coin, which can be exchanged for different goods and services from Erica.\0	-1
 9950	Diadem		a,Hair accessory worn by a bride at her wedding ceremony.  This hair accessory can only be worn by females only.\0	-1
+9953	Jester Hat		a,A festive jester hat with a split top. \0	-1
 9954	Wizard's Hat		a,A wizard's hat with a wide brim and bent tip.\0	-1
+9955	Dapper Cap		a,A stylish cap with a visor. \0	-1
+9956	Romantic Chapeau		a,An extravagant chapeau adorned with feathers. \0	-1
+9973	Pirate Hat		a,Hat worn by pirates. It uses 2 hair accessory slots.\0	-1
+9976	Refined Jester Hat		a,A festive jester hat with a split top.  \0	-1
 9982	Demon Horns		a,A hair accessory for the 2006 Halloween Event.\0	-1

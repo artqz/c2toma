@@ -1,6 +1,6 @@
 // background.js
 console.log(Date.now());
-const VERSION = "c4"
+const VERSION = "c1"
 
 //content_scripts
 // chrome.runtime.onConnect.addListener(function (port) {

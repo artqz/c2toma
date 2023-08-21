@@ -7,7 +7,7 @@ import { loadNpcNamesC3 } from "./datapack/c3/npcnames";
 const app = express();
 const port = 3000;
 
-const version_game = "c3";
+const version_game = "c1";
 
 app.use(express.json({ limit: "50mb" })); // for parsing application/json
 app.use(express.urlencoded({ extended: true, limit: "50mb" })); // for parsing application/x-www-form-urlencoded
@@ -15,7 +15,7 @@ app.use(cors());
 
 const allNpcIds = new Set<number>();
 
-const iskl = new Set([122, 123, 124, 125, 126, 127, 128, 129, 178]);
+const iskl = new Set();
 
 app.get("/", (req, res) => {
   res.send(`Осталось загрузить ${Array.from(allNpcIds.values()).length} НПЦ`);

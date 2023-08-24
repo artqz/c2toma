@@ -5,7 +5,7 @@ import {
   AiSellList,
   loadAiDataC1,
 } from "../../datapack/c1/ai";
-import { AiEntryC4, loadAiDataC4 } from '../../datapack/c4/aidata';
+import { AiEntryC4, loadAiDataC4 } from "../../datapack/c4/aidata";
 import { loadAiGf } from "../../datapack/gf/aidata";
 import { Ai, AiSellList as AiSL, Item, Npc } from "../../result/types";
 import { Chronicle } from "../types";
@@ -25,19 +25,23 @@ export function loadAi(deps: {
 function loadAiData(deps: { chronicle: Chronicle; npcs: Map<number, Npc> }) {
   switch (deps.chronicle) {
     case "c1":
-      return getAi({...deps, aiData: loadAiDataC1()})     
+      return getAi({ ...deps, aiData: loadAiDataC1() });
     case "c4":
-      return getAiC4({...deps, aiData: loadAiDataC4()})
+      return getAiC4({ ...deps, aiData: loadAiDataC4() });
     case "gf":
-      return getAi({...deps, aiData: loadAiGf()})
+      return getAi({ ...deps, aiData: loadAiGf() });
     default:
-      return getAi({...deps, aiData: loadAiDataC1()})
+      return getAi({ ...deps, aiData: loadAiDataC1() });
   }
 }
 
-function getAi(deps: { chronicle: Chronicle; npcs: Map<number, Npc>; aiData: AiObj }) {
+function getAi(deps: {
+  chronicle: Chronicle;
+  npcs: Map<number, Npc>;
+  aiData: AiObj;
+}) {
   const aiMap = new Map<string, Ai>();
-  
+
   for (const npc of deps.npcs.values()) {
     const list = applyAi({ ...deps, npc });
     if (list) {
@@ -48,12 +52,19 @@ function getAi(deps: { chronicle: Chronicle; npcs: Map<number, Npc>; aiData: AiO
   return aiMap;
 }
 
-function getAiC4(deps: { chronicle: Chronicle; npcs: Map<number, Npc>; aiData: AiEntryC4 }) {
+function getAiC4(deps: {
+  chronicle: Chronicle;
+  npcs: Map<number, Npc>;
+  aiData: AiEntryC4[];
+}) {
   const aiMap = new Map<string, Ai>();
- 
- aiMap.set(deps.aiData.name, {name: deps.aiData.name, super: deps.aiData.super, sell_lists: deps.aiData.sell_lists});
-    
-  
+  for (const ai of deps.aiData.values()) {
+    aiMap.set(ai.name, {
+      name: ai.name,
+      super: ai.super,
+      sell_lists: ai.sell_lists,
+    });
+  }
 
   return aiMap;
 }

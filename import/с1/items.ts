@@ -8,8 +8,9 @@ import { Chronicle } from "../types";
 import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemGrpGF } from "../../datapack/gf/itemgrp";
-import { loadItemDataC4 } from '../../datapack/c4/itemdata';
-import { loadItemGrpC4 } from '../../datapack/c4/itemgrp';
+import { loadItemDataC4 } from "../../datapack/c4/itemdata";
+import { loadItemGrpC4 } from "../../datapack/c4/itemgrp";
+import { loadItemNamesC4 } from "../../datapack/c4/itemnames";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -120,6 +121,9 @@ function loadItemNames(deps: {
     case "c1":
       addNamesC1(deps);
       break;
+    case "c4":
+      addNamesC4(deps);
+      break;
     case "gf":
       addNamesGF(deps);
       break;
@@ -157,7 +161,7 @@ function loadItemRuNames(deps: {
   itemData: Map<number, Item>;
 }) {
   const itemData = deps.itemData;
-  if (deps.chronicle === "c1") {
+  if (deps.chronicle === "c1" || deps.chronicle === "c4") {
     const itemNames = loadItemNamesGF();
 
     for (const itemName of itemNames) {
@@ -251,6 +255,20 @@ function addNamesC1(deps: { itemData: Map<number, Item> }) {
         ...item,
         name: { en: itemName.name, ru: itemName.name },
         desc: { en: itemName.description, ru: itemName.description },
+      });
+    }
+  }
+}
+
+function addNamesC4(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemName of loadItemNamesC4()) {
+    const item = itemData.get(itemName.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        name: itemName.name,
+        desc: itemName.desc,
       });
     }
   }

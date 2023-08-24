@@ -24,7 +24,7 @@ function init() {
   const multisell = loadMultisell({ chronicle, items, npcs });
   const recipes = loadRecipes({ chronicle, items });
   loadNpcPos({ chronicle, npcs });
-  // loadNpcSeaLevel({ chronicle, npcs });
+  loadNpcSeaLevel({ chronicle, npcs });
   const profs = loadProfs({ chronicle, skills, items });
 
   const ai = loadAi({ chronicle, npcs, items });

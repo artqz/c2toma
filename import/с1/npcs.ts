@@ -1,6 +1,7 @@
 import { loadNpcDataC1 } from "../../datapack/c1/npcdata";
 import { loadNpcNamesC1 } from "../../datapack/c1/npcnames";
-import { loadNpcDataC4 } from '../../datapack/c4/npcdata';
+import { loadNpcDataC4 } from "../../datapack/c4/npcdata";
+import { loadNpcNamesC4 } from "../../datapack/c4/npcnames";
 import { loadNpcDataGF } from "../../datapack/gf/npcdata";
 import { NpcNameEntry, loadNpcNamesGF } from "../../datapack/gf/npcnames";
 import { Item, Npc, NpcDrop, Skill } from "../../result/types";
@@ -176,7 +177,7 @@ function loadNpcnames(deps: {
       addNamesC1(deps);
       break;
     case "c4":
-      addNamesGF(deps);
+      addNamesC4(deps);
       break;
     case "gf":
       addNamesGF(deps);
@@ -233,6 +234,21 @@ function addNamesC1(deps: { npcsData: Map<number, Npc> }) {
         ...npc,
         name: { en: npcName.name, ru: npcName.name },
         nick: { en: npcName.nick, ru: npcName.nick },
+        nickColor: npcName.nickcolor,
+      });
+    }
+  }
+}
+
+function addNamesC4(deps: { npcsData: Map<number, Npc> }) {
+  const npcsData = deps.npcsData;
+  for (const npcName of loadNpcNamesC4()) {
+    const npc = npcsData.get(npcName.id);
+    if (npc) {
+      npcsData.set(npc.id, {
+        ...npc,
+        name: npcName.name,
+        nick: npcName.nick,
         nickColor: npcName.nickcolor,
       });
     }

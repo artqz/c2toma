@@ -1,4 +1,5 @@
 import { loadRecipeDataC1 } from "../../datapack/c1/recipe";
+import { loadRecipeDataC4 } from '../../datapack/c4/recipe';
 import { loadRecipeDataGF } from "../../datapack/gf/recipe";
 import { Item, Material, Product, Recipe } from "../../result/types";
 import { Chronicle } from "../types";
@@ -22,6 +23,9 @@ function loadRecipesData(deps: {
   switch (deps.chronicle) {
     case "c1":
       recipeData = loadRecipeDataC1();
+      break;
+    case "c4":
+      recipeData = loadRecipeDataC4();
       break;
     case "gf":
       recipeData = loadRecipeDataGF();

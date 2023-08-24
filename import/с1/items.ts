@@ -8,6 +8,8 @@ import { Chronicle } from "../types";
 import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemGrpGF } from "../../datapack/gf/itemgrp";
+import { loadItemDataC4 } from '../../datapack/c4/itemdata';
+import { loadItemGrpC4 } from '../../datapack/c4/itemgrp';
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -25,6 +27,9 @@ function loadItemData(deps: { chronicle: Chronicle }) {
   switch (deps.chronicle) {
     case "c1":
       itemData = loadItemDataC1();
+      break;
+    case "c4":
+      itemData = loadItemDataC4();
       break;
     case "gf":
       itemData = loadItemDataGF();
@@ -134,6 +139,9 @@ function loadItemGrps(deps: {
     case "c1":
       addIconsC1(deps);
       break;
+    case "c4":
+      addIconsC4(deps);
+      break;
     case "gf":
       addIconsGF(deps);
       break;
@@ -203,6 +211,19 @@ function addIconsC1(deps: { itemData: Map<number, Item> }) {
       itemData.set(item.id, {
         ...item,
         icon: itemGrp.icon.$[0].replace("icon.", ""),
+      });
+    }
+  }
+}
+
+function addIconsC4(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemGrp of loadItemGrpC4()) {
+    const item = itemData.get(parseInt(itemGrp.id));
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        icon: itemGrp["icon[0]"].replace("icon.", ""),
       });
     }
   }

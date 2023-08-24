@@ -12,6 +12,7 @@ const ItemEntryC4 = z.object({
     z.tuple([z.string(), z.number(), z.string(), z.number()]),
     z.array(z.number()),
   ]),
+  item_type: z.string().optional(),
   armor_type: z.string().optional(),
   etcitem_type: z.string().optional(),
   weapon_type: z.string().optional(),

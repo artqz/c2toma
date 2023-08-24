@@ -4,6 +4,7 @@ import { loadItemDataC1 } from "../../datapack/c1/itemdata";
 import { Item, Set, ShortItem, Skill } from "../../result/types";
 import { Chronicle } from "../types";
 import { ItemEntryGF, loadItemDataGF } from "../../datapack/gf/itemdata";
+import { loadItemDataC4 } from '../../datapack/c4/itemdata';
 
 export function loadSets(deps: {
   chronicle: Chronicle;
@@ -29,6 +30,10 @@ function loadSetData(deps: {
   switch (deps.chronicle) {
     case "c1":
       setData = loadItemDataC1();
+      sets = C1sets({ ...deps, setData });
+      break;
+    case "c4":
+      setData = loadItemDataC4();
       sets = C1sets({ ...deps, setData });
       break;
     case "gf":

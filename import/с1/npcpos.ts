@@ -1,4 +1,5 @@
 import { loadNpcPosC1 } from "../../datapack/c1/npcpos";
+import { loadNpcPosC4 } from '../../datapack/c4/npcpos';
 import { loadNpcPosGF } from "../../datapack/gf/npcpos";
 import { Npc, NpcSpawn, Point } from "../../result/types";
 import { Chronicle } from "../types";
@@ -19,6 +20,9 @@ function loadNpcPosData(deps: {
   switch (deps.chronicle) {
     case "c1":
       npcPosData = loadNpcPosC1();
+      break;
+    case "c4":
+      npcPosData = loadNpcPosC4();
       break;
     case "gf":
       npcPosData = loadNpcPosGF();

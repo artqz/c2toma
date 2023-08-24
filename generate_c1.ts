@@ -13,7 +13,7 @@ import { loadNpcSeaLevel } from "./import/с1/npcSeaLevel";
 import { Chronicle } from "./import/types";
 import { loadQuests } from "./import/с1/quests";
 
-const chronicle: Chronicle = "gf";
+const chronicle: Chronicle = "c4";
 function init() {
   const skills = loadSkills({ chronicle });
   const items = loadItems({ chronicle });
@@ -24,7 +24,7 @@ function init() {
   const multisell = loadMultisell({ chronicle, items, npcs });
   const recipes = loadRecipes({ chronicle, items });
   loadNpcPos({ chronicle, npcs });
-  loadNpcSeaLevel({ chronicle, npcs });
+  // loadNpcSeaLevel({ chronicle, npcs });
   const profs = loadProfs({ chronicle, skills, items });
 
   const ai = loadAi({ chronicle, npcs, items });

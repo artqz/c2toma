@@ -1,5 +1,6 @@
 import { loadNpcDataC1 } from "../../datapack/c1/npcdata";
 import { loadNpcNamesC1 } from "../../datapack/c1/npcnames";
+import { loadNpcDataC4 } from '../../datapack/c4/npcdata';
 import { loadNpcDataGF } from "../../datapack/gf/npcdata";
 import { NpcNameEntry, loadNpcNamesGF } from "../../datapack/gf/npcnames";
 import { Item, Npc, NpcDrop, Skill } from "../../result/types";
@@ -27,6 +28,9 @@ function loadNpcData(deps: {
   switch (deps.chronicle) {
     case "c1":
       npcsData = loadNpcDataC1();
+      break;
+    case "c4":
+      npcsData = loadNpcDataC4();
       break;
     case "gf":
       npcsData = loadNpcDataGF();
@@ -171,6 +175,9 @@ function loadNpcnames(deps: {
     case "c1":
       addNamesC1(deps);
       break;
+    case "c4":
+      addNamesGF(deps);
+      break;
     case "gf":
       addNamesGF(deps);
       break;
@@ -187,7 +194,7 @@ function loadNpcRuNames(deps: {
   npcsData: Map<number, Npc>;
 }) {
   const npcsData = deps.npcsData;
-  if (deps.chronicle === "c1") {
+  if (deps.chronicle === "c1" || deps.chronicle === "c4") {
     const npcdataGF = new Map(loadNpcDataGF().map((npc) => [npc.$[1], npc]));
     const npcNamesGF = new Map(loadNpcNamesGF().map((npc) => [npc.id, npc]));
     const npcNameByName = new Map<string, NpcNameEntry>();

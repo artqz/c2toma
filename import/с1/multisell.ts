@@ -1,4 +1,5 @@
 import { loadMultisellDataC1 } from "../../datapack/c1/miltisell";
+import { loadMultisellDataC4 } from '../../datapack/c4/miltisell';
 import { loadMultisellDataGF } from "../../datapack/gf/miltisell";
 import { Item, Multisell, Npc, SellList } from "../../result/types";
 import { Chronicle } from "../types";
@@ -24,6 +25,9 @@ function loadMultisellData(deps: {
   switch (deps.chronicle) {
     case "c1":
       multisellData = loadMultisellDataC1();
+      break;
+    case "c4":
+      multisellData = loadMultisellDataC4();
       break;
     case "gf":
       multisellData = loadMultisellDataGF();

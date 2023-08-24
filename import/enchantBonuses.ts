@@ -18,6 +18,9 @@ export function calcWeaponAtk(deps: {
       case "c3":
         bonus = watkC3(deps.item.crystalType);
         break;
+      case "c4":
+        bonus = watkC3(deps.item.crystalType);
+        break;
       case "gf":
         bonus = watkGF(deps.item.crystalType);
         break;

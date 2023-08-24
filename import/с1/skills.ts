@@ -1,6 +1,9 @@
 import { loadSkillDataC1 } from "../../datapack/c1/skilldata";
 import { loadSkillGrpC1 } from "../../datapack/c1/skillgrp";
 import { loadSkillNamesC1 } from "../../datapack/c1/skillnames";
+import { loadSkillDataC4 } from '../../datapack/c4/skilldata';
+import { loadSkillGrpC4 } from '../../datapack/c4/skillgrp';
+import { loadSkillNamesC4 } from '../../datapack/c4/skillnames';
 import { loadSkillDataGF } from "../../datapack/gf/skilldata";
 import { loadSkillIconsGF } from "../../datapack/gf/skillgrp";
 import { loadSkillNamesGF } from "../../datapack/gf/skillnames";
@@ -22,6 +25,9 @@ function loadItemData(deps: { chronicle: Chronicle }) {
   switch (deps.chronicle) {
     case "c1":
       skillData = loadSkillDataC1();
+      break;
+    case "c4":
+      skillData = loadSkillDataC4();
       break;
     case "gf":
       skillData = loadSkillDataGF();
@@ -72,6 +78,9 @@ function loadSkillNames(deps: {
     case "c1":
       addNamesC1(deps);
       break;
+    case "c4":
+      addNamesC4(deps);
+      break;
     case "gf":
       addNamesGF(deps);
       break;
@@ -91,6 +100,9 @@ function loadSkillGrps(deps: {
     case "c1":
       addIconsC1(deps);
       break;
+    case "c4":
+      addIconsC4(deps);
+      break;
     case "gf":
       addIconsGF(deps);
       break;
@@ -107,7 +119,7 @@ function loadSkillRuNames(deps: {
   skillData: Map<string, Skill>;
 }) {
   const skillData = deps.skillData;
-  if (deps.chronicle === "c1") {
+  if (deps.chronicle === "c1" || deps.chronicle === "c4") {
     const skillDataGF = new Map(
       loadSkillDataGF().map((skill) => [
         skill.skill_id + "_" + skill.level,
@@ -215,6 +227,21 @@ function addNamesC1(deps: { skillData: Map<string, Skill> }) {
   }
 }
 
+function addNamesC4(deps: { skillData: Map<string, Skill> }) {
+  for (const skillName of loadSkillNamesC4()) {
+    const skill = deps.skillData.get(
+      skillName.id + "_" + skillName.level
+    );
+    if (skill) {
+      deps.skillData.set(skillName.id + "_" + skillName.level, {
+        ...skill,
+        name: { en: skillName.name, ru: skillName.name },
+        desc: { en: skillName.desc, ru: skillName.desc },
+      });
+    }
+  }
+}
+
 function addNamesGF(deps: { skillData: Map<string, Skill> }) {
   for (const skillName of loadSkillNamesGF()) {
     const skill = deps.skillData.get(skillName.id + "_" + skillName.level);
@@ -235,6 +262,20 @@ function addIconsC1(deps: { skillData: Map<string, Skill> }) {
     const skill = skillData.get(skillGrp.skill_id + "_" + skillGrp.skill_level);
     if (skill) {
       skillData.set(skillGrp.skill_id + "_" + skillGrp.skill_level, {
+        ...skill,
+        icon: skillGrp.icon.replace("icon.", ""),
+      });
+    }
+  }
+}
+
+function addIconsC4(deps: { skillData: Map<string, Skill> }) {
+  const skillData = deps.skillData;
+
+  for (const skillGrp of loadSkillGrpC4()) {
+    const skill = skillData.get(skillGrp.id + "_" + skillGrp.level);
+    if (skill) {
+      skillData.set(skillGrp.id + "_" + skillGrp.level, {
         ...skill,
         icon: skillGrp.icon.replace("icon.", ""),
       });

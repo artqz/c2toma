@@ -5,6 +5,7 @@ import {
   AiSellList,
   loadAiDataC1,
 } from "../../datapack/c1/ai";
+import { AiEntryC4, loadAiDataC4 } from '../../datapack/c4/aidata';
 import { loadAiGf } from "../../datapack/gf/aidata";
 import { Ai, AiSellList as AiSL, Item, Npc } from "../../result/types";
 import { Chronicle } from "../types";
@@ -22,26 +23,37 @@ export function loadAi(deps: {
 }
 
 function loadAiData(deps: { chronicle: Chronicle; npcs: Map<number, Npc> }) {
-  let aiData;
   switch (deps.chronicle) {
     case "c1":
-      aiData = loadAiDataC1();
-      break;
+      return getAi({...deps, aiData: loadAiDataC1()})     
+    case "c4":
+      return getAiC4({...deps, aiData: loadAiDataC4()})
     case "gf":
-      aiData = loadAiGf();
-      break;
+      return getAi({...deps, aiData: loadAiGf()})
     default:
-      aiData = loadAiDataC1();
-      break;
+      return getAi({...deps, aiData: loadAiDataC1()})
   }
-  const aiMap = new Map<string, Ai>();
+}
 
+function getAi(deps: { chronicle: Chronicle; npcs: Map<number, Npc>; aiData: AiObj }) {
+  const aiMap = new Map<string, Ai>();
+  
   for (const npc of deps.npcs.values()) {
-    const list = applyAi({ ...deps, npc, aiData });
+    const list = applyAi({ ...deps, npc });
     if (list) {
       aiMap.set(npc.ai, list);
     }
   }
+
+  return aiMap;
+}
+
+function getAiC4(deps: { chronicle: Chronicle; npcs: Map<number, Npc>; aiData: AiEntryC4 }) {
+  const aiMap = new Map<string, Ai>();
+ 
+ aiMap.set(deps.aiData.name, {name: deps.aiData.name, super: deps.aiData.super, sell_lists: deps.aiData.sell_lists});
+    
+  
 
   return aiMap;
 }

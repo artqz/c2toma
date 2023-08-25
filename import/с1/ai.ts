@@ -22,7 +22,11 @@ export function loadAi(deps: {
   return ai;
 }
 
-function loadAiData(deps: { chronicle: Chronicle; npcs: Map<number, Npc> }) {
+function loadAiData(deps: {
+  chronicle: Chronicle;
+  npcs: Map<number, Npc>;
+  items: Map<number, Item>;
+}) {
   switch (deps.chronicle) {
     case "c1":
       return getAi({ ...deps, aiData: loadAiDataC1() });
@@ -55,14 +59,16 @@ function getAi(deps: {
 function getAiC4(deps: {
   chronicle: Chronicle;
   npcs: Map<number, Npc>;
+  items: Map<number, Item>;
   aiData: AiEntryC4[];
 }) {
   const aiMap = new Map<string, Ai>();
+
   for (const ai of deps.aiData.values()) {
     aiMap.set(ai.name, {
       name: ai.name,
       super: ai.super,
-      sell_lists: ai.sell_lists,
+      sell_lists: filterSellList({ ...deps, sellLists: ai.sell_lists }),
     });
   }
 
@@ -143,3 +149,32 @@ function addSellList(aiSellList: AiSellList | undefined) {
   }
   return newList;
 }
+
+function filterSellList(deps: { sellLists: AiSL[]; items: Map<number, Item> }) {
+  const itemByName = new Map(
+    Array.from(deps.items.values()).map((x) => [
+      x.itemName.replace("'", "_"),
+      x,
+    ])
+  );
+
+  const lists = new Map<number, AiSL>();
+  for (const [i, list] of deps.sellLists.entries()) {
+    const newList: AiSL = [];
+    for (const x of list.values()) {
+      if (!excludedItems.has(x[0])) {
+        const item = itemByName.get(x[0]);
+        if (item) {
+          newList.push([item.itemName, x[1], x[2], x[3]]);
+        }
+      } else {
+        console.log(`------------ ${x[0]}`);
+      }
+    }
+    lists.set(i, newList);
+  }
+
+  return Array.from(lists.values());
+}
+
+const excludedItems = new Set([""]);

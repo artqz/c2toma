@@ -11,7 +11,7 @@ export function loadItemsC6() {
   let items: Map<number, Item>;
   items = getItems();
   items = getIcons({ items });
-  items = getItemRuNames({ items});
+  items = getItemRuNames({ items });
 
   console.log("Items loaded.");
   return items;
@@ -69,7 +69,7 @@ function getItems() {
 
   // console.log(loadItemNamesC6().length, Array.from(items.values()).length);
 
-  return  new Map(Array.from(items.values()).map(i => [i.id, i]));
+  return new Map(Array.from(items.values()).map((i) => [i.id, i]));
 }
 
 function getIcons(deps: { items: Map<number, Item> }) {

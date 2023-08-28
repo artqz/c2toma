@@ -90,3 +90,10 @@ export type ItemGrp = {
   id: number;
   icon: string;
 };
+
+export type NpcNameEntry = {
+  id: number;
+  name: lstring;
+  nick: lstring;
+  nickcolor: "default" | "quest" | "raid";
+};

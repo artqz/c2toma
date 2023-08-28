@@ -1,12 +1,15 @@
 import { loadSkillDataC1 } from "../../datapack/c1/skilldata";
 import { loadSkillGrpC1 } from "../../datapack/c1/skillgrp";
 import { loadSkillNamesC1 } from "../../datapack/c1/skillnames";
-import { loadSkillDataC4 } from '../../datapack/c4/skilldata';
-import { loadSkillGrpC4 } from '../../datapack/c4/skillgrp';
-import { loadSkillNamesC4 } from '../../datapack/c4/skillnames';
+import { loadSkillDataC4 } from "../../datapack/c4/skilldata";
+import { loadSkillGrpC4 } from "../../datapack/c4/skillgrp";
+import { loadSkillNamesC4 } from "../../datapack/c4/skillnames";
 import { loadSkillDataGF } from "../../datapack/gf/skilldata";
 import { loadSkillIconsGF } from "../../datapack/gf/skillgrp";
 import { loadSkillNamesGF } from "../../datapack/gf/skillnames";
+import { loadSkillDataIL } from "../../datapack/il/skilldata";
+import { loadSkillGrpIL } from "../../datapack/il/skillgrp";
+import { loadSkillNamesIL } from "../../datapack/il/skillnames";
 import { Skill } from "../../result/types";
 import { Chronicle } from "../types";
 
@@ -15,7 +18,7 @@ export function loadSkills(deps: { chronicle: Chronicle }) {
   skills = loadSkillNames({ ...deps, skillData: skills });
   skills = loadSkillGrps({ ...deps, skillData: skills });
   skills = loadSkillRuNames({ ...deps, skillData: skills });
-  console.log("Skills loaded.");
+  console.log(`Skills loaded (${Array.from(skills.values()).length}).`);
 
   return skills;
 }
@@ -28,6 +31,9 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       break;
     case "c4":
       skillData = loadSkillDataC4();
+      break;
+    case "il":
+      skillData = loadSkillDataIL();
       break;
     case "gf":
       skillData = loadSkillDataGF();
@@ -81,6 +87,9 @@ function loadSkillNames(deps: {
     case "c4":
       addNamesC4(deps);
       break;
+    case "il":
+      addNamesIL(deps);
+      break;
     case "gf":
       addNamesGF(deps);
       break;
@@ -103,6 +112,9 @@ function loadSkillGrps(deps: {
     case "c4":
       addIconsC4(deps);
       break;
+    case "il":
+      addIconsIL(deps);
+      break;
     case "gf":
       addIconsGF(deps);
       break;
@@ -119,7 +131,11 @@ function loadSkillRuNames(deps: {
   skillData: Map<string, Skill>;
 }) {
   const skillData = deps.skillData;
-  if (deps.chronicle === "c1" || deps.chronicle === "c4") {
+  if (
+    deps.chronicle === "c1" ||
+    deps.chronicle === "c4" ||
+    deps.chronicle === "il"
+  ) {
     const skillDataGF = new Map(
       loadSkillDataGF().map((skill) => [
         skill.skill_id + "_" + skill.level,
@@ -229,14 +245,25 @@ function addNamesC1(deps: { skillData: Map<string, Skill> }) {
 
 function addNamesC4(deps: { skillData: Map<string, Skill> }) {
   for (const skillName of loadSkillNamesC4()) {
-    const skill = deps.skillData.get(
-      skillName.id + "_" + skillName.level
-    );
+    const skill = deps.skillData.get(skillName.id + "_" + skillName.level);
     if (skill) {
       deps.skillData.set(skillName.id + "_" + skillName.level, {
         ...skill,
         name: { en: skillName.name, ru: skillName.name },
         desc: { en: skillName.desc, ru: skillName.desc },
+      });
+    }
+  }
+}
+
+function addNamesIL(deps: { skillData: Map<string, Skill> }) {
+  for (const skillName of loadSkillNamesIL()) {
+    const skill = deps.skillData.get(skillName.id + "_" + skillName.level);
+    if (skill) {
+      deps.skillData.set(skillName.id + "_" + skillName.level, {
+        ...skill,
+        name: skillName.name,
+        desc: skillName.desc,
       });
     }
   }
@@ -278,6 +305,20 @@ function addIconsC4(deps: { skillData: Map<string, Skill> }) {
       skillData.set(skillGrp.id + "_" + skillGrp.level, {
         ...skill,
         icon: skillGrp.icon.replace("icon.", ""),
+      });
+    }
+  }
+}
+
+function addIconsIL(deps: { skillData: Map<string, Skill> }) {
+  const skillData = deps.skillData;
+
+  for (const skillGrp of loadSkillGrpIL()) {
+    const skill = skillData.get(skillGrp.id + "_" + skillGrp.level);
+    if (skill) {
+      skillData.set(skillGrp.id + "_" + skillGrp.level, {
+        ...skill,
+        icon: skillGrp.icon,
       });
     }
   }

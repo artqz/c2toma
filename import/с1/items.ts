@@ -11,6 +11,9 @@ import { loadItemGrpGF } from "../../datapack/gf/itemgrp";
 import { loadItemDataC4 } from "../../datapack/c4/itemdata";
 import { loadItemGrpC4 } from "../../datapack/c4/itemgrp";
 import { loadItemNamesC4 } from "../../datapack/c4/itemnames";
+import { loadItemDataIL } from "../../datapack/il/itemdata";
+import { loadItemNamesIL } from "../../datapack/il/itemnames";
+import { loadItemGrpIL } from "../../datapack/il/itemgrp";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -18,7 +21,7 @@ export function loadItems(deps: { chronicle: Chronicle }) {
   items = loadItemGrps({ ...deps, itemData: items });
   items = loadItemRuNames({ ...deps, itemData: items });
   items = loadItemEnchantBonuses({ ...deps, itemData: items });
-  console.log("Items loaded.");
+  console.log(`Items loaded (${Array.from(items.values()).length}).`);
 
   return items;
 }
@@ -31,6 +34,9 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       break;
     case "c4":
       itemData = loadItemDataC4();
+      break;
+    case "il":
+      itemData = loadItemDataIL();
       break;
     case "gf":
       itemData = loadItemDataGF();
@@ -124,6 +130,9 @@ function loadItemNames(deps: {
     case "c4":
       addNamesC4(deps);
       break;
+    case "il":
+      addNamesIL(deps);
+      break;
     case "gf":
       addNamesGF(deps);
       break;
@@ -146,6 +155,9 @@ function loadItemGrps(deps: {
     case "c4":
       addIconsC4(deps);
       break;
+    case "il":
+      addIconsIL(deps);
+      break;
     case "gf":
       addIconsGF(deps);
       break;
@@ -161,7 +173,11 @@ function loadItemRuNames(deps: {
   itemData: Map<number, Item>;
 }) {
   const itemData = deps.itemData;
-  if (deps.chronicle === "c1" || deps.chronicle === "c4") {
+  if (
+    deps.chronicle === "c1" ||
+    deps.chronicle === "c4" ||
+    deps.chronicle === "il"
+  ) {
     const itemNames = loadItemNamesGF();
 
     for (const itemName of itemNames) {
@@ -233,6 +249,19 @@ function addIconsC4(deps: { itemData: Map<number, Item> }) {
   }
 }
 
+function addIconsIL(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemGrp of loadItemGrpIL()) {
+    const item = itemData.get(itemGrp.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        icon: itemGrp.icon,
+      });
+    }
+  }
+}
+
 function addIconsGF(deps: { itemData: Map<number, Item> }) {
   const itemData = deps.itemData;
   for (const itemGrp of loadItemGrpGF()) {
@@ -267,6 +296,21 @@ function addNamesC4(deps: { itemData: Map<number, Item> }) {
     if (item) {
       itemData.set(item.id, {
         ...item,
+        name: itemName.name,
+        desc: itemName.desc,
+      });
+    }
+  }
+}
+
+function addNamesIL(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemName of loadItemNamesIL()) {
+    const item = itemData.get(itemName.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        addName: itemName.add_name,
         name: itemName.name,
         desc: itemName.desc,
       });

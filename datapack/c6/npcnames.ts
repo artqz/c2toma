@@ -1,13 +1,7 @@
 import { parse as parseCsv } from "csv-parse/sync";
 import Fs from "fs";
 import { z } from "zod";
-
-export type NpcNameEntry = {
-  id: number;
-  name: { en: string; ru: string };
-  nick: { en: string; ru: string };
-  nickcolor: "default" | "quest" | "raid";
-};
+import { NpcNameEntry } from "../types";
 
 function cleanStr(s: string) {
   const left = s.match(/[au],(.*?)$/)?.[1] ?? s;

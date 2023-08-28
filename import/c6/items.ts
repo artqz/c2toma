@@ -11,8 +11,9 @@ export function loadItemsC6() {
   let items: Map<number, Item>;
   items = getItems();
   items = getIcons({ items });
-  items = getItemRuNames({ items });
+  items = getItemRuNames({ items});
 
+  console.log("Items loaded.");
   return items;
 }
 
@@ -25,7 +26,7 @@ type ItemNameC6 = {
 };
 
 function getItems() {
-  const items = new Map<number, Item>();
+  const items = new Map<string, Item>();
   const itemNames = new Map<number, ItemNameC6>();
 
   const ItemC4ByName = new Map(loadItemDataC4().map((i) => [i.$[2], i]));
@@ -49,26 +50,26 @@ function getItems() {
     const itemC4 = ItemC4ByName.get(itemName.itemName);
     if (itemC4) {
       const { id, item } = addItem(itemC4, itemName);
-      items.set(id, item);
+      items.set(itemC4.$[2].toString(), item);
     } else {
       const itemGF = ItemGFByName.get(itemName.itemName);
       if (itemGF) {
         const { id, item } = addItem(itemGF, itemName);
-        items.set(id, item);
+        items.set(itemGF.$[2].toString(), item);
       }
     }
   }
 
-  for (const item of itemNames.values()) {
-    if (!items.has(item.id)) {
-      console.log(item.itemName, item.id);
-    }
-  }
-  console.log();
+  // for (const item of itemNames.values()) {
+  //   if (!items.has(item.itemName)) {
+  //     console.log(item.itemName, item.id);
+  //   }
+  // }
+  // console.log();
 
-  console.log(loadItemNamesC6().length, Array.from(items.values()).length);
+  // console.log(loadItemNamesC6().length, Array.from(items.values()).length);
 
-  return items;
+  return  new Map(Array.from(items.values()).map(i => [i.id, i]));
 }
 
 function getIcons(deps: { items: Map<number, Item> }) {

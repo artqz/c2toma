@@ -11,6 +11,13 @@ export type ItemNameEntry = {
   desc: lstring;
 };
 
+export type SkillNameEntry = {
+  id: number;
+  level: number;
+  name: lstring;
+  desc: lstring;
+};
+
 const ItemDataEntry = z.object({
   // $: z.union([
   //   z.tuple([z.string(), z.number(), z.string()]),

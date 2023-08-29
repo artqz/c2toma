@@ -2,8 +2,9 @@ import {
   ProfSkillAcquireC1,
   loadSkillAcquireDataC1,
 } from "../../datapack/c1/skillacquire";
-import { loadSkillAcquireDataC4 } from '../../datapack/c4/skillacquire';
+import { loadSkillAcquireDataC4 } from "../../datapack/c4/skillacquire";
 import { loadSkillAcquireDataGF } from "../../datapack/gf/skillacquire";
+import { loadSkillAcquireDataIL } from "../../datapack/il/skillacquire";
 import { Item, Prof, ProfSkill, Skill } from "../../result/types";
 import { Chronicle } from "../types";
 
@@ -31,6 +32,9 @@ function loadSkillAcquireData(deps: {
       break;
     case "c4":
       profData = loadSkillAcquireDataC4();
+      break;
+    case "il":
+      profData = loadSkillAcquireDataIL();
       break;
     case "gf":
       profData = loadSkillAcquireDataGF();

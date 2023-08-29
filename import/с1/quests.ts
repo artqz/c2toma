@@ -2,11 +2,15 @@ import {
   loadQuestNamesC1,
   QuestNameEntryC1,
 } from "../../datapack/c1/questnames";
-import { loadQuestNamesC4, QuestNameEntryC4 } from '../../datapack/c4/questnames';
+import {
+  loadQuestNamesC4,
+  QuestNameEntryC4,
+} from "../../datapack/c4/questnames";
 import {
   loadQuestNamesGF,
   QuestNameEntryGF,
 } from "../../datapack/gf/questnames";
+import { loadQuestNamesIL } from "../../datapack/il/questnames";
 import { Item, Quest, QusetProg } from "../../result/types";
 import { Chronicle } from "../types";
 
@@ -33,6 +37,9 @@ function loadQuestsData(deps: {
     case "c4":
       questData = loadQuestsC4(deps);
       break;
+    case "il":
+      questData = loadQuestsIL(deps);
+      break;
     case "gf":
       questData = loadQuestsGf(deps);
       break;
@@ -46,15 +53,15 @@ function loadQuestsData(deps: {
 
 function loadQuestsC4(deps: { items: Map<number, Item> }) {
   const map = new Map();
-    loadQuestNamesC4().forEach((item) => {
-      const key = item.id;
-      const collection = map.get(key);
-      if (!collection) {
-        map.set(key, [item]);
-      } else {
-        collection.push(item);
-      }
-    });
+  loadQuestNamesC4().forEach((item) => {
+    const key = item.id;
+    const collection = map.get(key);
+    if (!collection) {
+      map.set(key, [item]);
+    } else {
+      collection.push(item);
+    }
+  });
 
   const quests: Quest[] = [];
   for (const progs of Array.from(map.values()) as QuestNameEntryC4[][]) {
@@ -62,15 +69,58 @@ function loadQuestsC4(deps: { items: Map<number, Item> }) {
     for (const quest of progs) {
       questProgs.push({
         id: quest.progId,
-        name: {en: quest.progName, ru: quest.progName},
-        desc: {en: quest.desc, ru: quest.desc},
+        name: { en: quest.progName, ru: quest.progName },
+        desc: { en: quest.desc, ru: quest.desc },
         items: getItems({ ...deps, tabs1: quest.tabs1, tabs2: quest.tabs2 }),
       });
     }
     quests.push({
       id: progs[0].id,
-      name: {en: progs[0].name, ru: progs[0].name},
-      desc: {en: progs[0].short_desc, ru: progs[0].short_desc},
+      name: { en: progs[0].name, ru: progs[0].name },
+      desc: { en: progs[0].short_desc, ru: progs[0].short_desc },
+      progs: questProgs,
+    });
+  }
+
+  return quests;
+}
+
+function loadQuestsIL(deps: { items: Map<number, Item> }) {
+  const map = new Map();
+  loadQuestNamesIL().forEach((item) => {
+    const key = item.id;
+    const collection = map.get(key);
+    if (!collection) {
+      map.set(key, [item]);
+    } else {
+      collection.push(item);
+    }
+  });
+
+  const questRuById = new Map(
+    loadQuestNamesGF().map((q) => [q.id + "_" + q.progId, q])
+  );
+
+  const quests: Quest[] = [];
+  for (const progs of Array.from(map.values()) as QuestNameEntryGF[][]) {
+    const questProgs: QusetProg[] = [];
+    for (const quest of progs) {
+      const questRu = questRuById.get(quest.id + "_" + quest.progId);
+      questProgs.push({
+        id: quest.progId,
+        name: { ...quest.progName, ru: questRu?.name.ru ?? quest.name.en },
+        desc: { ...quest.desc, ru: questRu?.desc.ru ?? quest.desc.en },
+        items: getItems({ ...deps, tabs1: quest.tabs1, tabs2: quest.tabs2 }),
+      });
+    }
+    const questRu = questRuById.get(progs[0].id + "_" + progs[0].progId);
+    quests.push({
+      id: progs[0].id,
+      name: { ...progs[0].name, ru: questRu?.name.ru ?? progs[0].name.en },
+      desc: {
+        ...progs[0].short_desc,
+        ru: questRu?.short_desc.ru ?? progs[0].short_desc.en,
+      },
       progs: questProgs,
     });
   }

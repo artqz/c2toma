@@ -4,6 +4,8 @@ import { loadNpcDataC4 } from "../../datapack/c4/npcdata";
 import { loadNpcNamesC4 } from "../../datapack/c4/npcnames";
 import { loadNpcDataGF } from "../../datapack/gf/npcdata";
 import { NpcNameEntry, loadNpcNamesGF } from "../../datapack/gf/npcnames";
+import { loadNpcDataIL } from "../../datapack/il/npcdata";
+import { loadNpcNamesIL } from "../../datapack/il/npcnames";
 import { Item, Npc, NpcDrop, Skill } from "../../result/types";
 import { Chronicle } from "../types";
 
@@ -32,6 +34,9 @@ function loadNpcData(deps: {
       break;
     case "c4":
       npcsData = loadNpcDataC4();
+      break;
+    case "il":
+      npcsData = loadNpcDataIL();
       break;
     case "gf":
       npcsData = loadNpcDataGF();
@@ -73,7 +78,7 @@ function loadNpcData(deps: {
       physicalAvoidModify: npc.physical_avoid_modify,
       physicalHitModify: npc.physical_hit_modify,
       type: npc.$[0],
-      race: npc.race,
+      race: npc.race == "angel" ? "divine" : npc.race, //fix interlude
       classes: [],
       dropList: getDrop({ ...deps, list: npc.additional_make_multi_list }),
       spoilList: getSpoil({ ...deps, list: npc.corpse_make_list }),
@@ -195,7 +200,11 @@ function loadNpcRuNames(deps: {
   npcsData: Map<number, Npc>;
 }) {
   const npcsData = deps.npcsData;
-  if (deps.chronicle === "c1" || deps.chronicle === "c4") {
+  if (
+    deps.chronicle === "c1" ||
+    deps.chronicle === "c4" ||
+    deps.chronicle === "il"
+  ) {
     const npcdataGF = new Map(loadNpcDataGF().map((npc) => [npc.$[1], npc]));
     const npcNamesGF = new Map(loadNpcNamesGF().map((npc) => [npc.id, npc]));
     const npcNameByName = new Map<string, NpcNameEntry>();
@@ -243,6 +252,21 @@ function addNamesC1(deps: { npcsData: Map<number, Npc> }) {
 function addNamesC4(deps: { npcsData: Map<number, Npc> }) {
   const npcsData = deps.npcsData;
   for (const npcName of loadNpcNamesC4()) {
+    const npc = npcsData.get(npcName.id);
+    if (npc) {
+      npcsData.set(npc.id, {
+        ...npc,
+        name: npcName.name,
+        nick: npcName.nick,
+        nickColor: npcName.nickcolor,
+      });
+    }
+  }
+}
+
+function addNamesIL(deps: { npcsData: Map<number, Npc> }) {
+  const npcsData = deps.npcsData;
+  for (const npcName of loadNpcNamesIL()) {
     const npc = npcsData.get(npcName.id);
     if (npc) {
       npcsData.set(npc.id, {

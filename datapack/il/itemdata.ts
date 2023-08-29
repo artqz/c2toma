@@ -1,7 +1,7 @@
 import Fs from "fs";
 import { z } from "zod";
 
-const ItemEntryGF = z.object({
+const ItemEntryIL = z.object({
   $: z.union([
     z.tuple([z.string(), z.number(), z.string()]),
     z.tuple([z.string(), z.number(), z.string(), z.number()]),
@@ -78,12 +78,12 @@ const ItemEntryGF = z.object({
   set_additional2_effect_skill: z.string().optional(),
 });
 
-export type ItemEntryGF = z.infer<typeof ItemEntryGF>;
+export type ItemEntryIL = z.infer<typeof ItemEntryIL>;
 
-function loadItemDataJson(path: string): ItemEntryGF[] {
+function loadItemDataJson(path: string): ItemEntryIL[] {
   const src = Fs.readFileSync(path, "utf8");
   const json = JSON.parse(src);
-  let data = ItemEntryGF.array().parse(json);
+  let data = ItemEntryIL.array().parse(json);
 
   return data;
 }

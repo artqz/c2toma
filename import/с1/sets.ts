@@ -1,10 +1,12 @@
+import { ItemEntryC4 } from "./../../datapack/c4/itemdata";
 import slug from "slug";
 import { ItemEntryC1 } from "../../datapack/c1/itemdata";
 import { loadItemDataC1 } from "../../datapack/c1/itemdata";
 import { Item, Set, ShortItem, Skill } from "../../result/types";
 import { Chronicle } from "../types";
 import { ItemEntryGF, loadItemDataGF } from "../../datapack/gf/itemdata";
-import { loadItemDataC4 } from '../../datapack/c4/itemdata';
+import { loadItemDataC4 } from "../../datapack/c4/itemdata";
+import { ItemEntryIL, loadItemDataIL } from "../../datapack/il/itemdata";
 
 export function loadSets(deps: {
   chronicle: Chronicle;
@@ -35,6 +37,10 @@ function loadSetData(deps: {
     case "c4":
       setData = loadItemDataC4();
       sets = C1sets({ ...deps, setData });
+      break;
+    case "il":
+      setData = loadItemDataIL();
+      sets = setsIL({ ...deps, setData });
       break;
     case "gf":
       setData = loadItemDataGF();
@@ -445,6 +451,132 @@ function setsGf(deps: {
         if (item) {
           slotItems.push(item.itemName);
         }
+      }
+      setItems = { ...setItems, slotLhand: slotItems };
+    }
+    if (true) {
+      //39 и выше сеты из хроник выше
+      if (typeof set.$[0] === "number") {
+        const skill = skillByName.get(set.set_effect_skill!);
+        const skill2 = skillByName.get(set.set_additional_effect_skill!);
+
+        if (skill) setSkills.set(skill.id + "_" + skill.level, skill);
+        if (skill2) setSkills.set(skill2.id + "_" + skill2.level, skill2);
+
+        if (skill) {
+          itemSetList.set(set.$[0], {
+            id: set.$[0],
+            setName: slug(skill.name.en, "_"),
+            icon: setIcon,
+            name: skill.name,
+            desc: skill.desc,
+            setEffectSkill: skill.skillName,
+            setAdditionalEffectSkill: skill2 ? skill2.skillName : "none",
+            items: setItems,
+          });
+        }
+      }
+    }
+  }
+
+  return itemSetList;
+}
+
+function setsIL(deps: {
+  chronicle: Chronicle;
+  items: Map<number, Item>;
+  skills: Map<string, Skill>;
+  setData: ItemEntryIL[];
+}) {
+  const itemByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
+  const skillByName = new Map(
+    Array.from(deps.skills.values()).map((s) => [s.skillName, s])
+  );
+  const sets = new Map(
+    deps.setData
+      .filter((i) => i.$.length === 1 && i.set_effect_skill !== "none")
+      .map((item) => [item.$[0], item])
+  );
+
+  const itemSetList = new Map<number, Set>();
+  let setIcon = "";
+
+  for (const set of sets.values()) {
+    let setItems: {
+      slotHead: string[];
+      slotChest: string[];
+      slotLegs: string[];
+      slotGloves: string[];
+      slotFeet: string[];
+      slotLhand: string[];
+    } = {
+      slotHead: [],
+      slotChest: [],
+      slotLegs: [],
+      slotGloves: [],
+      slotFeet: [],
+      slotLhand: [],
+    };
+    if (set.slot_head) {
+      const slotItems: string[] = [];
+
+      const item = deps.items.get(set.slot_head);
+      if (item) {
+        slotItems.push(item.itemName);
+      }
+
+      setItems = { ...setItems, slotHead: slotItems };
+    }
+    if (set.slot_chest) {
+      const slotItems: string[] = [];
+
+      const item = deps.items.get(set.slot_chest);
+      if (item) {
+        slotItems.push(item.itemName);
+        if (item.itemName.indexOf("_high") === -1) {
+          setIcon = item.icon;
+        }
+      }
+
+      setItems = { ...setItems, slotChest: slotItems };
+    }
+    if (set.slot_legs) {
+      const slotItems: string[] = [];
+
+      const item = deps.items.get(set.slot_legs);
+      if (item) {
+        slotItems.push(item.itemName);
+      }
+
+      setItems = { ...setItems, slotLegs: slotItems };
+    }
+    if (set.slot_gloves) {
+      const slotItems: string[] = [];
+
+      const item = deps.items.get(set.slot_gloves);
+      if (item) {
+        slotItems.push(item.itemName);
+      }
+
+      setItems = { ...setItems, slotGloves: slotItems };
+    }
+    if (set.slot_feet) {
+      const slotItems: string[] = [];
+
+      const item = deps.items.get(set.slot_feet);
+      if (item) {
+        slotItems.push(item.itemName);
+      }
+
+      setItems = { ...setItems, slotFeet: slotItems };
+    }
+    if (set.slot_lhand) {
+      const slotItems: string[] = [];
+      const item = deps.items.get(set.slot_lhand);
+      if (item) {
+        slotItems.push(item.itemName);
       }
       setItems = { ...setItems, slotLhand: slotItems };
     }

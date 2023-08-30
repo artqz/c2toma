@@ -32,6 +32,8 @@ function loadAiData(deps: {
       return getAi({ ...deps, aiData: loadAiDataC1() });
     case "c4":
       return getAiC4({ ...deps, aiData: loadAiDataC4() });
+    case "il":
+      return getAi({ ...deps, aiData: loadAiGf() });
     case "gf":
       return getAi({ ...deps, aiData: loadAiGf() });
     default:

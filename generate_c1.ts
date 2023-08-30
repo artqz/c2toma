@@ -54,34 +54,22 @@ function init() {
     `result/data/${chronicle}/multisell.json`,
     JSON.stringify(Array.from(multisell.values()), null, 2)
   );
-  // const recipes = loadRecipes({ chronicle, items });
-
+  const recipes = loadRecipes({ chronicle, items });
+  saveFile(
+    `result/data/${chronicle}/recipes.json`,
+    JSON.stringify(Array.from(recipes.values()), null, 2)
+  );
   const profs = loadProfs({ chronicle, skills, items });
   saveFile(
     `result/data/${chronicle}/profs.json`,
     JSON.stringify(Array.from(profs.values()), null, 2)
   );
-  // const ai = loadAi({ chronicle, npcs, items });
+  const ai = loadAi({ chronicle, npcs, items });
+  saveFile(
+    `result/data/${chronicle}/ai.json`,
+    JSON.stringify(Array.from(ai.values()), null, 2)
+  );
 
-  // saveFile(
-  //   `result/data/${chronicle}/skills.json`,
-  //   JSON.stringify(Array.from(skills.values()), null, 2)
-  // );
-
-  // saveFile(
-  //   `result/data/${chronicle}/npcs.json`,
-  //   JSON.stringify(Array.from(npcs.values()), null, 2)
-  // );
-
-  // saveFile(
-  //   `result/data/${chronicle}/recipes.json`,
-  //   JSON.stringify(Array.from(recipes.values()), null, 2)
-  // );
-
-  // saveFile(
-  //   `result/data/${chronicle}/ai.json`,
-  //   JSON.stringify(Array.from(ai.values()), null, 2)
-  // );
   console.log("Finish.");
 }
 

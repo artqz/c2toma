@@ -52,7 +52,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       desc: { en: "", ru: "" },
       level: skill.level,
       icon: "",
-      operateType: skill.operate_type,
+      operateType: skill.operate_type.toUpperCase(),
       effect: "",
       operateCond: "",
       effectTime: skill.abnormal_time,

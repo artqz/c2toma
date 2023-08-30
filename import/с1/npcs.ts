@@ -184,6 +184,9 @@ function loadNpcnames(deps: {
     case "c4":
       addNamesC4(deps);
       break;
+    case "il":
+      addNamesIL(deps);
+      break;
     case "gf":
       addNamesGF(deps);
       break;

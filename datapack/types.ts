@@ -45,7 +45,20 @@ const ItemDataEntry = z.object({
   item_skill: z.string().optional(),
   critical_attack_skill: z.string().optional(),
   material_type: z.string().optional(),
-  crystal_type: z.enum(["none", "d", "c", "b", "a", "s"]).optional(),
+  crystal_type: z
+    .enum([
+      "none",
+      "d",
+      "c",
+      "b",
+      "a",
+      "s",
+      "s80",
+      "s84",
+      "crystal_free",
+      "event",
+    ])
+    .optional(),
   crystal_count: z.number().optional(),
   is_trade: z.number().optional(),
   is_drop: z.number().optional(),
@@ -72,16 +85,36 @@ const ItemDataEntry = z.object({
   mp_bonus: z.number().optional(),
   magic_weapon: z.number().optional(),
   //sets
-  slot_chest: z.number().optional(),
-  slot_legs: z.number().optional(),
-  slot_head: z.number().optional(),
-  slot_lhand: z.number().optional(),
-  slot_gloves: z.number().optional(),
-  slot_feet: z.number().optional(),
+  slot_chest: z.union([
+    z.number().optional(),
+    z.object({ $: z.array(z.number()) }).optional(),
+  ]),
+  slot_legs: z.union([
+    z.number().optional(),
+    z.object({ $: z.array(z.number()) }).optional(),
+  ]),
+  slot_head: z.union([
+    z.number().optional(),
+    z.object({ $: z.array(z.number()) }).optional(),
+  ]),
+  slot_lhand: z.union([
+    z.number().optional(),
+    z.object({ $: z.array(z.number()) }).optional(),
+  ]),
+  slot_gloves: z.union([
+    z.number().optional(),
+    z.object({ $: z.array(z.number()) }).optional(),
+  ]),
+  slot_feet: z.union([
+    z.number().optional(),
+    z.object({ $: z.array(z.number()) }).optional(),
+  ]),
   slot_additional: z.enum(["none", "slot_lhand"]).optional(),
   set_skill: z.string().optional(),
   set_effect_skill: z.string().optional(),
   set_additional_effect_skill: z.string().optional(),
+  set_additional2_condition: z.number().optional(),
+  set_additional2_effect_skill: z.string().optional(),
 });
 
 export type ItemDataEntry = z.infer<typeof ItemDataEntry>;

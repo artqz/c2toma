@@ -14,6 +14,7 @@ import { loadItemNamesC4 } from "../../datapack/c4/itemnames";
 import { loadItemDataIL } from "../../datapack/il/itemdata";
 import { loadItemNamesIL } from "../../datapack/il/itemnames";
 import { loadItemGrpIL } from "../../datapack/il/itemgrp";
+import { ItemDataEntry } from "../../datapack/types";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -27,27 +28,25 @@ export function loadItems(deps: { chronicle: Chronicle }) {
 }
 
 function loadItemData(deps: { chronicle: Chronicle }) {
-  let itemData = [];
   switch (deps.chronicle) {
     case "c1":
-      itemData = loadItemDataC1();
-      break;
+      return addItems(loadItemDataC1());
     case "c4":
-      itemData = loadItemDataC4();
-      break;
+      return addItems(loadItemDataC4());
     case "il":
-      itemData = loadItemDataIL();
-      break;
+      return addItemsIL();
     case "gf":
-      itemData = loadItemDataGF();
-      break;
+      return addItems(loadItemDataGF());
+
     default:
-      itemData = loadItemDataC1();
-      break;
+      return addItems(loadItemDataC1());
   }
+}
+
+function addItems(itemsData: ItemDataEntry[]) {
   const items = new Map<number, Item>();
 
-  for (const item of itemData) {
+  for (const item of itemsData) {
     if (item.item_type) {
       items.set(item.$[1], {
         id: item.$[1]!,
@@ -74,12 +73,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
         critical: item.critical!,
         criticalAttackSkill: item.critical_attack_skill!,
         crystalCount: item.crystal_count!,
-        crystalType:
-          item.crystal_type === "crystal_free"
-            ? "none"
-            : item.crystal_type === "event"
-            ? "none"
-            : item.crystal_type ?? "none",
+        crystalType: item.crystal_type ?? "none",
         damageRange: item.damage_range ? item.damage_range.$ + "" : "none",
         defaultPrice: item.default_price!,
         dualFhitRate: item.dual_fhit_rate!,
@@ -115,7 +109,75 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       });
     }
   }
+  return items;
+}
 
+function addItemsIL() {
+  const items = new Map<number, Item>();
+
+  for (const item of loadItemDataIL()) {
+    if (item.item_type) {
+      items.set(item.$[1], {
+        id: item.$[1]!,
+        itemName: item.$[2]!.toString().replace(/:|\s/g, "_").toLowerCase(),
+        name: {
+          en: "",
+          ru: "",
+        },
+        addName: {
+          en: "",
+          ru: "",
+        },
+        desc: {
+          en: "",
+          ru: "",
+        },
+        icon: "",
+        armorType: item.armor_type!,
+        attackRange: item.attack_range!,
+        attackSpeed: item.attack_speed!,
+        avoidModify: item.avoid_modify!,
+        canPenetrate: Boolean(item.can_penetrate!),
+        consumeType: item.consume_type!,
+        critical: item.critical!,
+        criticalAttackSkill: item.critical_attack_skill!,
+        crystalCount: item.crystal_count!,
+        crystalType: item.crystal_type ?? "none",
+        damageRange: item.damage_range ? item.damage_range.$ + "" : "none",
+        defaultPrice: item.default_price!,
+        dualFhitRate: item.dual_fhit_rate!,
+        durability: item.durability!,
+        etcitemType: item.etcitem_type!,
+        hitModify: item.hit_modify!,
+        immediateEffect: Boolean(item.immediate_effect!),
+        initialCount: item.initial_count!,
+        isDestruct: Boolean(item.is_destruct!),
+        isDrop: Boolean(item.is_drop!),
+        isTrade: Boolean(item.is_trade!),
+        itemSkill: item.item_skill!,
+        magicalDamage: item.magical_damage!,
+        magicalDefense: item.magical_defense!,
+        magicWeapon: Boolean(item.magic_weapon!),
+        materialType: item.material_type!,
+        maximumCount: item.maximum_count!,
+        mpBonus: item.mp_bonus!,
+        mpConsume: item.mp_consume!,
+        physicalDamage: item.physical_damage!,
+        physicalDefense: item.physical_defense!,
+        randomDamage: item.random_damage!,
+        reuseDelay: item.reuse_delay!,
+        shieldDefense: item.shield_defense!,
+        shieldDefenseRate: item.shield_defense_rate!,
+        slotBitType: asSlot(item.slot_bit_type!.$.toString()),
+        soulshotCount: item.soulshot_count!,
+        spiritshotCount: item.spiritshot_count!,
+        type: item.$[0].toString(),
+        weaponType: item.weapon_type!,
+        weight: item.weight!,
+        enchantBonus: [],
+      });
+    }
+  }
   return items;
 }
 

@@ -115,6 +115,7 @@ function getSkills(npcId: number, skills: Map<string, Skill>) {
       skillList.push(skillId1.skillName);
     }
   }
+  console.log(npcId);
 
   return skillList;
 }

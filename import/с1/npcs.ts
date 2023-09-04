@@ -35,7 +35,7 @@ function loadNpcData(deps: {
     case "c4":
       return addNpcs({ ...deps, npcsData: loadNpcDataC4() });
     case "il":
-      return addNpcsIL();
+      return addNpcsIL(deps);
     case "gf":
       return addNpcs({ ...deps, npcsData: loadNpcDataGF() });
     default:
@@ -94,8 +94,8 @@ function addNpcs(deps: {
   return npcs;
 }
 
-function addNpcsIL() {
-  const npcs = generateNpcsIL();
+function addNpcsIL(deps: { skills: Map<string, Skill> }) {
+  const npcs = generateNpcsIL(deps);
   return npcs;
 }
 

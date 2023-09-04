@@ -1,13 +1,14 @@
 import { loadNpcDataC4 } from "../../../datapack/c4/npcdata";
 import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
+import { loadNpcGrpIL } from "../../../datapack/il/npcgrp";
 import { loadNpcNamesIL } from "../../../datapack/il/npcnames";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
-import { Npc } from "../../../result/types";
+import { Npc, Skill } from "../../../result/types";
 type NpcNameC6 = NpcNameEntry & {
   npcName: string;
 };
 
-export function generateNpcsIL() {
+export function generateNpcsIL(deps: { skills: Map<string, Skill> }) {
   const npcs = new Map<number, Npc>();
   const npcsNames = new Map<number, NpcNameC6>();
 
@@ -31,12 +32,12 @@ export function generateNpcsIL() {
   for (const npcName of npcsNames.values()) {
     const npcC4 = npcC4ByName.get(npcName.npcName);
     if (npcC4) {
-      const { id, npc } = addNpc(npcC4, npcName);
+      const { id, npc } = addNpc(npcC4, npcName, deps.skills);
       npcs.set(id, npc);
     } else {
       const npcGF = npcGFByName.get(npcName.npcName);
       if (npcGF) {
-        const { id, npc } = addNpc(npcGF, npcName);
+        const { id, npc } = addNpc(npcGF, npcName, deps.skills);
         npcs.set(id, npc);
       }
     }
@@ -47,9 +48,13 @@ export function generateNpcsIL() {
   return npcs;
 }
 
-function addNpc(npcData: NpcDataEntry, npcName: NpcNameC6) {
+function addNpc(
+  npcData: NpcDataEntry,
+  npcName: NpcNameC6,
+  skills: Map<string, Skill>
+) {
   const id = npcName.id;
-  const npc = {
+  const npc: Npc = {
     id: npcName.id,
     npcName: "",
     name: npcName.name,
@@ -79,10 +84,11 @@ function addNpc(npcData: NpcDataEntry, npcName: NpcNameC6) {
     classes: [],
     dropList: [],
     spoilList: [],
-    skillList: [],
+    skillList: getSkills(npcName.id, skills),
     multisell: [],
     spawns: [],
   };
+
   return { id, npc };
 }
 
@@ -97,3 +103,18 @@ const addNpcName = new Map([
   [25518, "brilliance_apostle"],
   [25519, "brilliance_follower"],
 ]);
+
+function getSkills(npcId: number, skills: Map<string, Skill>) {
+  const skillList: string[] = [];
+  const npcGrp = new Map(loadNpcGrpIL().map((ng) => [ng.id, ng]));
+
+  const grp = npcGrp.get(npcId);
+  if (grp) {
+    const skillId1 = skills.get(grp["dtab1[0]"] + "_" + grp["dtab1[0]"]);
+    if (skillId1) {
+      skillList.push(skillId1.skillName);
+    }
+  }
+
+  return skillList;
+}

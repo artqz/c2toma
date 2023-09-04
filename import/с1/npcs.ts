@@ -6,8 +6,10 @@ import { loadNpcDataGF } from "../../datapack/gf/npcdata";
 import { NpcNameEntry, loadNpcNamesGF } from "../../datapack/gf/npcnames";
 import { loadNpcDataIL } from "../../datapack/il/npcdata";
 import { loadNpcNamesIL } from "../../datapack/il/npcnames";
+import { NpcDataEntry } from "../../datapack/types";
 import { Item, Npc, NpcDrop, Skill } from "../../result/types";
 import { Chronicle } from "../types";
+import { generateNpcsIL } from "./il/npcs";
 
 export function loadNpcs(deps: {
   chronicle: Chronicle;
@@ -27,27 +29,29 @@ function loadNpcData(deps: {
   items: Map<number, Item>;
   skills: Map<string, Skill>;
 }) {
-  let npcsData = [];
   switch (deps.chronicle) {
     case "c1":
-      npcsData = loadNpcDataC1();
-      break;
+      return addNpcs({ ...deps, npcsData: loadNpcDataC1() });
     case "c4":
-      npcsData = loadNpcDataC4();
-      break;
+      return addNpcs({ ...deps, npcsData: loadNpcDataC4() });
     case "il":
-      npcsData = loadNpcDataIL();
-      break;
+      return addNpcsIL();
     case "gf":
-      npcsData = loadNpcDataGF();
-      break;
+      return addNpcs({ ...deps, npcsData: loadNpcDataGF() });
     default:
-      npcsData = loadNpcDataC1();
-      break;
+      return addNpcs({ ...deps, npcsData: loadNpcDataC1() });
   }
+}
+
+function addNpcs(deps: {
+  chronicle: Chronicle;
+  items: Map<number, Item>;
+  skills: Map<string, Skill>;
+  npcsData: NpcDataEntry[];
+}) {
   const npcs = new Map<number, Npc>();
 
-  for (const npc of npcsData) {
+  for (const npc of deps.npcsData) {
     if (IGNORE_NPCS.has(npc.$[2]) || npc.$[2].startsWith("_")) {
       continue;
     }
@@ -78,7 +82,7 @@ function loadNpcData(deps: {
       physicalAvoidModify: npc.physical_avoid_modify,
       physicalHitModify: npc.physical_hit_modify,
       type: npc.$[0],
-      race: npc.race == "angel" ? "divine" : npc.race, //fix interlude
+      race: npc.race, //fix interlude
       classes: [],
       dropList: getDrop({ ...deps, list: npc.additional_make_multi_list }),
       spoilList: getSpoil({ ...deps, list: npc.corpse_make_list }),
@@ -87,6 +91,11 @@ function loadNpcData(deps: {
       spawns: [],
     });
   }
+  return npcs;
+}
+
+function addNpcsIL() {
+  const npcs = generateNpcsIL();
   return npcs;
 }
 

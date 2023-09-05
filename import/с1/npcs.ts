@@ -94,7 +94,10 @@ function addNpcs(deps: {
   return npcs;
 }
 
-function addNpcsIL(deps: { skills: Map<string, Skill> }) {
+function addNpcsIL(deps: {
+  skills: Map<string, Skill>;
+  items: Map<number, Item>;
+}) {
   const npcs = generateNpcsIL(deps);
   return npcs;
 }

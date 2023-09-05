@@ -3,12 +3,15 @@ import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
 import { loadNpcGrpIL } from "../../../datapack/il/npcgrp";
 import { loadNpcNamesIL } from "../../../datapack/il/npcnames";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
-import { Npc, Skill } from "../../../result/types";
+import { Item, Npc, Skill } from "../../../result/types";
 type NpcNameC6 = NpcNameEntry & {
   npcName: string;
 };
 
-export function generateNpcsIL(deps: { skills: Map<string, Skill> }) {
+export function generateNpcsIL(deps: {
+  skills: Map<string, Skill>;
+  items: Map<number, Item>;
+}) {
   const npcs = new Map<number, Npc>();
   const npcsNames = new Map<number, NpcNameC6>();
 
@@ -44,8 +47,11 @@ export function generateNpcsIL(deps: { skills: Map<string, Skill> }) {
   }
 
   console.log(loadNpcNamesIL().length, Array.from(npcs.values()).length);
-
+  // add skills
   addSkills({ ...deps, npcs });
+
+  // add drop and spoil
+  addDropAndSpoil({ ...deps, npcs });
 
   return npcs;
 }
@@ -121,6 +127,67 @@ function addSkills(deps: {
           npc.skillList.push(skill.skillName);
         }
       }
+    }
+  }
+}
+
+function addDropAndSpoil(deps: {
+  npcs: Map<number, Npc>;
+  items: Map<number, Item>;
+}) {
+  const npcGFById = new Map(loadNpcDataGF().map((n) => [n.$[1], n]));
+  const itemByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
+
+  for (const npc of deps.npcs.values()) {
+    const npcGF = npcGFById.get(npc.id);
+    if (npcGF) {
+      (npcGF.additional_make_multi_list as any).$?.map((mainGroup: any) => {
+        const mainGroupChanceDrop = Number(mainGroup.$[1]);
+        return mainGroup.$.map((subGroup: any) => {
+          return (
+            subGroup.$ &&
+            subGroup.$.map((itemData: any) => {
+              if (itemData.$) {
+                const itemChanceDrop = Number(itemData.$[3]);
+                const chance = (itemChanceDrop * mainGroupChanceDrop) / 100;
+
+                const itemName = itemData.$[0].replace(/\s/g, "_");
+                const item = itemByName.get(itemName);
+
+                if (!item) {
+                  console.log("Drop list item not found: " + itemName);
+                } else {
+                  npc.dropList.push({
+                    itemName: item.itemName,
+                    countMin: itemData.$[1],
+                    countMax: itemData.$[2],
+                    chance,
+                  });
+                }
+              }
+            })
+          );
+        });
+      });
+
+      (npcGF.corpse_make_list as any).$?.map((itemData: any) => {
+        if (itemData) {
+          const itemName = itemData.$[0];
+          const item = itemByName.get(itemName);
+          if (!item) {
+            console.log("Spoil list item not found: " + itemName);
+          } else {
+            npc.spoilList.push({
+              itemName: item.itemName,
+              countMin: itemData.$[1],
+              countMax: itemData.$[2],
+              chance: itemData.$[3],
+            });
+          }
+        }
+      });
     }
   }
 }

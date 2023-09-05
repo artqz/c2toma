@@ -45,6 +45,8 @@ export function generateNpcsIL(deps: { skills: Map<string, Skill> }) {
 
   console.log(loadNpcNamesIL().length, Array.from(npcs.values()).length);
 
+  addSkills({...deps, npcs}) 
+
   return npcs;
 }
 
@@ -84,7 +86,7 @@ function addNpc(
     classes: [],
     dropList: [],
     spoilList: [],
-    skillList: getSkills(npcName.id, skills),
+    skillList: [],
     multisell: [],
     spawns: [],
   };
@@ -104,18 +106,22 @@ const addNpcName = new Map([
   [25519, "brilliance_follower"],
 ]);
 
-function getSkills(npcId: number, skills: Map<string, Skill>) {
-  const skillList: string[] = [];
+function addSkills(deps:{npcs: Map<number, Npc>, skills: Map<string, Skill>}) {
+  
   const npcGrp = new Map(loadNpcGrpIL().map((ng) => [ng.id, ng]));
 
-  const grp = npcGrp.get(npcId);
+  for (const npc of deps.npcs.values()) {
+
+    const grp = npcGrp.get(npc.id);
   if (grp) {
-    const skillId1 = skills.get(grp["dtab1[0]"] + "_" + grp["dtab1[0]"]);
+    const skillId1 = deps.skills.get(grp["dtab1[0]"] + "_" + grp["dtab1[1]"]);
     if (skillId1) {
-      skillList.push(skillId1.skillName);
+      console.log(skillId1.skillName);
+      
+      npc.skillList.push(skillId1.skillName);
     }
   }
-  console.log(npcId);
 
-  return skillList;
+  }
+  
 }

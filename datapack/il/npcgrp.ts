@@ -42,34 +42,50 @@ export function loadNpcGrpIL(): NpcGrpEntry[] {
   const skills = NpcGrpItem.array().parse(skillsRaw);
 
   return skills.map((x) => {
+    const skillList: string[] = [];
+    if (x["dtab1[0]"] && x["dtab1[1]"]) {
+      skillList.push(x["dtab1[0]"] + "_" + x["dtab1[1]"]);
+    }
+    if (x["dtab1[2]"] && x["dtab1[3]"]) {
+      skillList.push(x["dtab1[2]"] + "_" + x["dtab1[3]"]);
+    }
+    if (x["dtab1[4]"] && x["dtab1[5]"]) {
+      skillList.push(x["dtab1[4]"] + "_" + x["dtab1[5]"]);
+    }
+    if (x["dtab1[6]"] && x["dtab1[7]"]) {
+      skillList.push(x["dtab1[6]"] + "_" + x["dtab1[7]"]);
+    }
+    if (x["dtab1[8]"] && x["dtab1[9]"]) {
+      skillList.push(x["dtab1[8]"] + "_" + x["dtab1[9]"]);
+    }
+    if (x["dtab1[10]"] && x["dtab1[11]"]) {
+      skillList.push(x["dtab1[10]"] + "_" + x["dtab1[11]"]);
+    }
+    if (x["dtab1[12]"] && x["dtab1[13]"]) {
+      skillList.push(x["dtab1[12]"] + "_" + x["dtab1[13]"]);
+    }
+    if (x["dtab1[14]"] && x["dtab1[15]"]) {
+      skillList.push(x["dtab1[14]"] + "_" + x["dtab1[15]"]);
+    }
+    if (x["dtab1[16]"] && x["dtab1[17]"]) {
+      skillList.push(x["dtab1[16]"] + "_" + x["dtab1[17]"]);
+    }
+    if (x["dtab1[18]"] && x["dtab1[19]"]) {
+      skillList.push(x["dtab1[18]"] + "_" + x["dtab1[19]"]);
+    }
+    if (x["dtab1[20]"] && x["dtab1[21]"]) {
+      skillList.push(x["dtab1[20]"] + "_" + x["dtab1[21]"]);
+    }
+    if (x["dtab1[22]"] && x["dtab1[23]"]) {
+      skillList.push(x["dtab1[22]"] + "_" + x["dtab1[23]"]);
+    }
+    if (x["dtab1[24]"] && x["dtab1[25]"]) {
+      skillList.push(x["dtab1[24]"] + "_" + x["dtab1[25]"]);
+    }
+
     return {
       id: parseInt(x.tag),
-      "dtab1[0]": parseInt(x["dtab1[0]"]),
-      "dtab1[1]": parseInt(x["dtab1[1]"]),
-      "dtab1[2]": parseInt(x["dtab1[2]"]),
-      "dtab1[3]": parseInt(x["dtab1[3]"]),
-      "dtab1[4]": parseInt(x["dtab1[4]"]),
-      "dtab1[5]": parseInt(x["dtab1[5]"]),
-      "dtab1[6]": parseInt(x["dtab1[6]"]),
-      "dtab1[7]": parseInt(x["dtab1[7]"]),
-      "dtab1[8]": parseInt(x["dtab1[8]"]),
-      "dtab1[9]": parseInt(x["dtab1[9]"]),
-      "dtab1[10]": parseInt(x["dtab1[10]"]),
-      "dtab1[11]": parseInt(x["dtab1[11]"]),
-      "dtab1[12]": parseInt(x["dtab1[12]"]),
-      "dtab1[13]": parseInt(x["dtab1[13]"]),
-      "dtab1[14]": parseInt(x["dtab1[14]"]),
-      "dtab1[15]": parseInt(x["dtab1[15]"]),
-      "dtab1[16]": parseInt(x["dtab1[16]"]),
-      "dtab1[17]": parseInt(x["dtab1[17]"]),
-      "dtab1[18]": parseInt(x["dtab1[18]"]),
-      "dtab1[19]": parseInt(x["dtab1[19]"]),
-      "dtab1[20]": parseInt(x["dtab1[20]"]),
-      "dtab1[21]": parseInt(x["dtab1[21]"]),
-      "dtab1[22]": parseInt(x["dtab1[22]"]),
-      "dtab1[23]": parseInt(x["dtab1[23]"]),
-      "dtab1[24]": parseInt(x["dtab1[24]"]),
-      "dtab1[25]": parseInt(x["dtab1[25]"]),
+      skillList,
     };
   });
 }

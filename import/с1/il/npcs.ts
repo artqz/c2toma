@@ -69,8 +69,8 @@ function addNpc(
     nick: npcName.nick,
     nickColor: npcName.nickcolor,
     level: npcData.level,
-    ai: "",
-    agroRange: 0,
+    ai: npcData.npc_ai.$[0],
+    agroRange: npcData.agro_range,
     baseAttackSpeed: npcData.base_attack_speed,
     baseCritical: npcData.base_critical,
     baseDefend: npcData.base_defend,
@@ -136,14 +136,29 @@ function addDropAndSpoil(deps: {
   items: Map<number, Item>;
 }) {
   const npcGFById = new Map(loadNpcDataGF().map((n) => [n.$[1], n]));
+  const npcC4ByName = new Map(loadNpcDataC4().map((n) => [n.$[2], n]));
   const itemByName = new Map(
     Array.from(deps.items.values()).map((i) => [i.itemName, i])
   );
 
   for (const npc of deps.npcs.values()) {
+    const npcC4 = npcC4ByName.get(npc.npcName);
+    if (npcC4) {
+      addDrop({dropList:npcC4.additional_make_multi_list, itemByName, npc })
+      addSpoil({spoilList:npcC4.corpse_make_list, itemByName, npc })
+    } else {
     const npcGF = npcGFById.get(npc.id);
     if (npcGF) {
-      (npcGF.additional_make_multi_list as any).$?.map((mainGroup: any) => {
+      addDrop({dropList:npcGF.additional_make_multi_list, itemByName, npc })
+      addSpoil({spoilList:npcGF.corpse_make_list, itemByName, npc })
+    }
+  }
+  }
+}
+
+
+function addDrop(deps:{npc: Npc; itemByName: Map<string, Item>; dropList: any}) {
+  deps.dropList.$?.map((mainGroup: any) => {
         const mainGroupChanceDrop = Number(mainGroup.$[1]);
         return mainGroup.$.map((subGroup: any) => {
           return (
@@ -154,12 +169,12 @@ function addDropAndSpoil(deps: {
                 const chance = (itemChanceDrop * mainGroupChanceDrop) / 100;
 
                 const itemName = itemData.$[0].replace(/\s/g, "_");
-                const item = itemByName.get(itemName.replace("_low", ""));
+                const item = deps.itemByName.get(itemName.replace("_low", ""));
 
                 if (!item) {
-                  console.log(`Drop list (NPC: ${npc.id}) item not found: ${itemName}`);
+                  console.log(`Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`);
                 } else {
-                  npc.dropList.push({
+                  deps.npc.dropList.push({
                     itemName: item.itemName,
                     countMin: itemData.$[1],
                     countMax: itemData.$[2],
@@ -171,15 +186,17 @@ function addDropAndSpoil(deps: {
           );
         });
       });
+    }
 
-      (npcGF.corpse_make_list as any).$?.map((itemData: any) => {
+    function addSpoil(deps:{npc: Npc; itemByName: Map<string, Item>; spoilList: any}) {
+  deps.spoilList.$?.map((itemData: any) => {
         if (itemData) {
           const itemName = itemData.$[0];
-          const item = itemByName.get(itemName);
+          const item = deps.itemByName.get(itemName);
           if (!item) {
-            console.log(`Spoil list (NPC: ${npc.id}) item not found: ${itemName}`);
+            console.log(`Spoil list (NPC: ${deps.npc.id}) item not found: ${itemName}`);
           } else {
-            npc.spoilList.push({
+            deps.npc.spoilList.push({
               itemName: item.itemName,
               countMin: itemData.$[1],
               countMax: itemData.$[2],
@@ -189,5 +206,3 @@ function addDropAndSpoil(deps: {
         }
       });
     }
-  }
-}

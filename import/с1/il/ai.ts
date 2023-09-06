@@ -1,26 +1,33 @@
-import { AiProps } from '../../../datapack/c1/ai';
-import { AiObjData, loadAiGf, AiSellList } from '../../../datapack/gf/aidata';
-import { Ai, Item, Npc, AiSellList as AiSL } from '../../../result/types';
+import { AiProps } from "../../../datapack/c1/ai";
+import {
+  AiObjData,
+  loadAiGf,
+  AiSellList,
+  AiObj,
+} from "../../../datapack/gf/aidata";
+import { Ai, Item, Npc, AiSellList as AiSL } from "../../../result/types";
 
-export function generaAiIL(deps:{items: Map <number, Item>, npcs: Map <number, Npc>}) {
-  const aiMap = new Map<string, Ai>();
-  
+export function generaAiIL(deps: {
+  items: Map<number, Item>;
+  npcs: Map<number, Npc>;
+}) {
+  let aiMap = new Map<string, Ai>();
+  const aiData = loadAiGf();
+
   for (const npc of deps.npcs.values()) {
-    const list = applyAi(npc)
+    const list = applyAi(aiData, npc);
     if (list) {
       aiMap.set(npc.ai, list);
     }
   }
 
-  filterAi({...deps, aiMap})
-  
-  return aiMap
+  aiMap = filterAi({ ...deps, aiMap });
+
+  return aiMap;
 }
 
-function applyAi(npc: Npc): Ai | undefined {
-  const aiData = loadAiGf() 
+function applyAi(aiData: AiObj, npc: Npc): Ai | undefined {
   const data: AiObjData | undefined = aiData[npc.ai];
-
   if (data) {
     return {
       name: npc.ai,
@@ -30,7 +37,6 @@ function applyAi(npc: Npc): Ai | undefined {
   } else {
     return undefined;
   }
-
 }
 
 function getSellList(aiProps: AiProps | undefined) {
@@ -57,10 +63,29 @@ function addSellList(aiSellList: AiSellList | undefined) {
   return newList;
 }
 
-function filterAi(deps: {items: Map <number, Item>, aiMap: Map<string, Ai>}) {
-  const itemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
+function filterAi(deps: { items: Map<number, Item>; aiMap: Map<string, Ai> }) {
+  const itemByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
 
+  const newMapAi = new Map<string, Ai>();
   for (const ai of deps.aiMap.values()) {
-    ai.sell_lists.map(i => i.filter(j => itemByName.get(j[0])))
+    const newList: AiSL[] = [];
+    for (const list of ai.sell_lists) {
+      const newSell: AiSL = [];
+      for (const item of list) {
+        if (itemByName.has(item[0])) {
+          newSell.push([item[0], item[1], item[2], item[3]]);
+        }
+      }
+      newList.push(newSell);
+    }
+    newMapAi.set(ai.name, {
+      name: ai.name,
+      super: ai.super,
+      sell_lists: newList,
+    });
   }
+
+  return newMapAi;
 }

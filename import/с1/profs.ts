@@ -4,7 +4,7 @@ import {
 } from "../../datapack/c1/skillacquire";
 import { loadSkillAcquireDataC4 } from "../../datapack/c4/skillacquire";
 import { loadSkillAcquireDataGF } from "../../datapack/gf/skillacquire";
-import { loadItemDataIL } from '../../datapack/il/itemdata';
+import { loadItemDataIL } from "../../datapack/il/itemdata";
 import { loadSkillAcquireDataIL } from "../../datapack/il/skillacquire";
 import { Item, Prof, ProfSkill, Skill } from "../../result/types";
 import { Chronicle } from "../types";
@@ -46,6 +46,7 @@ function loadSkillAcquireData(deps: {
   }
 
   const profMap = new Map<string, Prof>();
+  const itemsILByName = new Map(loadItemDataIL().map((i) => [i.$[2], i.$[1]]));
 
   for (const prof of profData.filter((x) => !notClass.includes(x.t))) {
     let parentProf: Prof | null = null;
@@ -64,11 +65,13 @@ function loadSkillAcquireData(deps: {
           getSkills({
             ...deps,
             profSkills: prof.$,
+            itemsILByName,
           })
         )
       : getSkills({
           ...deps,
           profSkills: prof.$,
+          itemsILByName,
         });
 
     profMap.set(prof.t, {
@@ -85,6 +88,7 @@ function getSkills(deps: {
   items: Map<number, Item>;
   skills: Map<string, Skill>;
   profSkills: ProfSkillAcquireC1;
+  itemsILByName: Map<string | number, number>;
 }) {
   const skillMap = new Map<string, ProfSkill>();
   const skillsByName = new Map(
@@ -143,6 +147,7 @@ function getItems(deps: {
   chronicle: Chronicle;
   itemsNeeded: { $?: { $: [string, number] }[] };
   items: Map<number, Item>;
+  itemsILByName: Map<string | number, number>;
 }) {
   const ret: { itemName: string; count: number }[] = [];
   const itemsByName = new Map(
@@ -157,12 +162,15 @@ function getItems(deps: {
         return ret.push({ itemName: item.itemName, count: itemCount });
       } else {
         if (deps.chronicle === "il") {
-          const normItemName = checkILitems({...deps, itemName: itemName.replace(":", "_")})
-          if(normItemName) {
+          const normItemName = checkILitems({
+            ...deps,
+            itemName: itemName.replace(":", "_"),
+          });
+          if (normItemName) {
             return ret.push({ itemName: normItemName, count: itemCount });
           }
         } else {
-        console.log("нет такого говна: " + itemName);
+          console.log("нет такого говна: " + itemName);
         }
       }
     } else {
@@ -287,14 +295,16 @@ const profRank = new Map([
   ["judicator", 3],
 ]);
 
-function checkILitems(deps: {items: Map<number, Item>; itemName: string}): string | undefined {
-  const itemsILByName = new Map (loadItemDataIL().map(i => [i.$[2], i.$[1]]))
-
-  const itemIdIL = itemsILByName.get(deps.itemName)
+function checkILitems(deps: {
+  items: Map<number, Item>;
+  itemName: string;
+  itemsILByName: Map<string | number, number>;
+}): string | undefined {
+  const itemIdIL = deps.itemsILByName.get(deps.itemName);
   if (itemIdIL) {
-    const item = deps.items.get(itemIdIL)
+    const item = deps.items.get(itemIdIL);
     if (item) {
-      return item.itemName
+      return item.itemName;
     }
   }
 }

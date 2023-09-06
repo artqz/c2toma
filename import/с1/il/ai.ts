@@ -11,6 +11,8 @@ export function generaAiIL(deps:{items: Map <number, Item>, npcs: Map <number, N
       aiMap.set(npc.ai, list);
     }
   }
+
+  filterAi({...deps, aiMap})
   
   return aiMap
 }
@@ -24,7 +26,7 @@ function applyAi(deps: { items: Map <number, Item>, npc: Npc }): Ai | undefined 
     return {
       name: npc.ai,
       super: data.super,
-      sell_lists: getSellList({...deps, aiProps: data.props}),
+      sell_lists: getSellList(data.props),
     };
   } else {
     return undefined;
@@ -32,32 +34,34 @@ function applyAi(deps: { items: Map <number, Item>, npc: Npc }): Ai | undefined 
 
 }
 
-function getSellList(deps: {items: Map <number, Item>, aiProps: AiProps | undefined}): AiSL[] {
+function getSellList(aiProps: AiProps | undefined) {
   const newList: AiSL[] = [];
-  const {aiProps} = deps
-  aiProps?.SellList0 && newList.push(addSellList({...deps, aiSellList: aiProps?.SellList0}));
-  aiProps?.SellList1 && newList.push(addSellList({...deps, aiSellList: aiProps?.SellList1}));
-  aiProps?.SellList2 && newList.push(addSellList({...deps, aiSellList: aiProps?.SellList2}));
-  aiProps?.SellList3 && newList.push(addSellList({...deps, aiSellList: aiProps?.SellList3}));
-  aiProps?.SellList4 && newList.push(addSellList({...deps, aiSellList: aiProps?.SellList4}));
-  aiProps?.SellList5 && newList.push(addSellList({...deps, aiSellList: aiProps?.SellList5}));
-  aiProps?.SellList6 && newList.push(addSellList({...deps, aiSellList: aiProps?.SellList6}));
-  aiProps?.SellList7 && newList.push(addSellList({...deps, aiSellList: aiProps?.SellList7}));
+
+  aiProps?.SellList0 && newList.push(addSellList(aiProps?.SellList0));
+  aiProps?.SellList1 && newList.push(addSellList(aiProps?.SellList1));
+  aiProps?.SellList2 && newList.push(addSellList(aiProps?.SellList2));
+  aiProps?.SellList3 && newList.push(addSellList(aiProps?.SellList3));
+  aiProps?.SellList4 && newList.push(addSellList(aiProps?.SellList4));
+  aiProps?.SellList5 && newList.push(addSellList(aiProps?.SellList5));
+  aiProps?.SellList6 && newList.push(addSellList(aiProps?.SellList6));
+  aiProps?.SellList7 && newList.push(addSellList(aiProps?.SellList7));
   return newList;
 }
 
-function addSellList(deps: {items: Map <number, Item>, aiSellList: AiSellList | undefined}) {
-  const itemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
-
+function addSellList(aiSellList: AiSellList | undefined) {
   const newList: AiSL = [];
-  if (deps.aiSellList && deps.aiSellList.length > 0) {
-    for (const [i, sell] of deps.aiSellList.entries()) {
-      const item = itemByName.get(sell[0]!)
-      if (item) {
-        newList.push([sell[0]!, sell[1]!, 0, 0]);
-      }
-      
+  if (aiSellList && aiSellList.length > 0) {
+    for (const [i, sell] of aiSellList.entries()) {
+      newList.push([sell[0]!, sell[1]!, 0, 0]);
     }
   }
   return newList;
+}
+
+function filterAi(deps: {items: Map <number, Item>, aiMap: Map<string, Ai>}) {
+  const itemByName = new Map(Array.from(deps.items.values()).map(i => [i.itemName, i]))
+
+  for (const ai of deps.aiMap.values()) {
+    ai.sell_lists.map(i => i.filter(j => itemByName.get(j[0])))
+  }
 }

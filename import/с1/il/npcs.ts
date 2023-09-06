@@ -64,7 +64,7 @@ function addNpc(
   const id = npcName.id;
   const npc: Npc = {
     id: npcName.id,
-    npcName: "",
+    npcName: npcData.$[2],
     name: npcName.name,
     nick: npcName.nick,
     nickColor: npcName.nickcolor,

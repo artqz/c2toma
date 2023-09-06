@@ -6,7 +6,7 @@ export function generaAiIL(deps:{items: Map <number, Item>, npcs: Map <number, N
   const aiMap = new Map<string, Ai>();
   
   for (const npc of deps.npcs.values()) {
-    const list = applyAi({...deps, npc})
+    const list = applyAi(npc)
     if (list) {
       aiMap.set(npc.ai, list);
     }
@@ -17,8 +17,7 @@ export function generaAiIL(deps:{items: Map <number, Item>, npcs: Map <number, N
   return aiMap
 }
 
-function applyAi(deps: { items: Map <number, Item>, npc: Npc }): Ai | undefined {
-    const { npc } = deps;
+function applyAi(npc: Npc): Ai | undefined {
   const aiData = loadAiGf() 
   const data: AiObjData | undefined = aiData[npc.ai];
 

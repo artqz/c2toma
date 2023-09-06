@@ -154,10 +154,10 @@ function addDropAndSpoil(deps: {
                 const chance = (itemChanceDrop * mainGroupChanceDrop) / 100;
 
                 const itemName = itemData.$[0].replace(/\s/g, "_");
-                const item = itemByName.get(itemName);
+                const item = itemByName.get(itemName.replace("_low", ""));
 
                 if (!item) {
-                  console.log("Drop list item not found: " + itemName);
+                  console.log(`Drop list (NPC: ${npc.id}) item not found: ${itemName}`);
                 } else {
                   npc.dropList.push({
                     itemName: item.itemName,
@@ -177,7 +177,7 @@ function addDropAndSpoil(deps: {
           const itemName = itemData.$[0];
           const item = itemByName.get(itemName);
           if (!item) {
-            console.log("Spoil list item not found: " + itemName);
+            console.log(`Spoil list (NPC: ${npc.id}) item not found: ${itemName}`);
           } else {
             npc.spoilList.push({
               itemName: item.itemName,

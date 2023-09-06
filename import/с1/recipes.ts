@@ -1,9 +1,10 @@
 import { loadRecipeDataC1 } from "../../datapack/c1/recipe";
 import { loadRecipeDataC4 } from "../../datapack/c4/recipe";
 import { loadRecipeDataGF } from "../../datapack/gf/recipe";
-import { loadRecipeDataIL } from "../../datapack/il/recipe";
+import { RecipeEntry } from '../../datapack/types';
 import { Item, Material, Product, Recipe } from "../../result/types";
 import { Chronicle } from "../types";
+import { generateRecipesIL } from './il/recipe';
 
 export function loadRecipes(deps: {
   chronicle: Chronicle;
@@ -20,27 +21,26 @@ function loadRecipesData(deps: {
   chronicle: Chronicle;
   items: Map<number, Item>;
 }) {
-  let recipeData = [];
   switch (deps.chronicle) {
-    case "c1":
-      recipeData = loadRecipeDataC1();
-      break;
-    case "c4":
-      recipeData = loadRecipeDataC4();
-      break;
+    case "c1":      
+      return addRecipe({...deps, recipeData: loadRecipeDataC1()})
+    case "c4":   
+      return addRecipe({...deps, recipeData: loadRecipeDataC4()})
     case "il":
-      recipeData = loadRecipeDataIL();
-      break;
+      return addRecipeIL(deps)
     case "gf":
-      recipeData = loadRecipeDataGF();
-      break;
+      return addRecipe({...deps, recipeData: loadRecipeDataGF()})
     default:
-      recipeData = loadRecipeDataC1();
-      break;
+      return addRecipe({...deps, recipeData: loadRecipeDataC1()})
+  
   }
+  
+}
+
+function addRecipe(deps: {items: Map<number, Item>; recipeData:RecipeEntry[]}) {
   const recMap = new Map<number, Recipe>();
 
-  for (const rec of recipeData.values()) {
+  for (const rec of deps.recipeData) {
     recMap.set(rec.$[1], {
       id: rec.$[1],
       level: rec.level,
@@ -55,6 +55,10 @@ function loadRecipesData(deps: {
   }
 
   return recMap;
+}
+
+function addRecipeIL(deps: {items: Map<number, Item>; }) {
+  return generateRecipesIL(deps)
 }
 
 function getItemList(deps: {

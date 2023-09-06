@@ -188,3 +188,31 @@ export type NpcGrpEntry = {
   id: number;
   skillList: string[];
 };
+
+
+const RecipeEntry = z.object({
+  $: z.tuple([z.string(), z.number()]),
+  t: z.enum(["recipe"]),
+  level: z.number(),
+  material: z.object({
+    $: z.array(z.object({ $: z.tuple([z.string(), z.number()]) })),
+  }),
+  product: z.object({
+    $: z.array(
+      z.object({
+        $: z.union([
+          z.tuple([z.string(), z.number(), z.number()]),
+          z.tuple([z.string(), z.number()]),
+        ]),
+      })
+    ),
+  }),
+  npc_fee: z.object({
+    $: z.array(z.object({ $: z.tuple([z.string(), z.number()]) })).optional(),
+  }),
+  mp_consume: z.number(),
+  success_rate: z.number(),
+  item_id: z.number(),
+});
+
+export type RecipeEntry = z.infer<typeof RecipeEntry>;

@@ -6,10 +6,11 @@ import { loadNpcSeaLevelC3 } from "./import/c3/npcSeaLevel";
 import { loadNpcPosC3 } from "./import/c3/npcpos";
 import { loadNpcsC3, npcSkillsC3 } from "./import/c3/npcs";
 import { loadProfsC3, profSkillsC3 } from "./import/c3/profs";
-import { loadQuestsC3 } from './import/c3/quests';
+import { loadQuestsC3 } from "./import/c3/quests";
 import { loadRecipesC3 } from "./import/c3/recipes";
 import { loadSetsC3, setSkillsC3 } from "./import/c3/sets";
 import { loadAllSkillsC3 } from "./import/c3/skills";
+import { getSkillsClientC3 } from "./import/c3/skillsClient";
 import { loadItemAbilityListC3 } from "./import/c3/weaponAbilities";
 import { createDir, saveFile } from "./utils/Fs";
 
@@ -26,11 +27,16 @@ function init() {
   const profs = loadProfsC3({ skills: allSkills, items });
   const sets = loadSetsC3({ items, skills: allSkills });
   const ai = loadAiC3({ items, npcs });
-   const skills = getExistingSkillsC3({
-    skills: new Map([...profSkillsC3, ...npcSkillsC3, ...setSkillsC3]),
+  const skillClientC3 = getSkillsClientC3({ skills: allSkills });
+  const skills = getExistingSkillsC3({
+    skills: new Map([
+      ...profSkillsC3,
+      ...npcSkillsC3,
+      ...setSkillsC3,
+      ...skillClientC3,
+    ]),
   });
   const quests = loadQuestsC3({ items });
- 
 
   createDir(`result/data/${VERSION}`);
 

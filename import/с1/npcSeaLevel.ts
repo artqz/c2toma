@@ -29,6 +29,9 @@ function getZpos(deps: { chronicle: Chronicle;}) {
     case "c1":
       npcPosData = loadNpcPosC1();
       break;
+    case "c4":
+      npcPosData = loadNpcPosC4();
+      break;
     case "gf":
       npcPosData = loadNpcPosGF();
       break;

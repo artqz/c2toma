@@ -8,6 +8,7 @@
     "generate_c1": "ts-node generate_c1.ts",
     "generate_c3": "ts-node generate_c3.ts",
     "generate_c6": "ts-node generate_c6.ts",
+    "generate_skills": "ts-node generate_skills.ts",
     "server": "tsnd --respawn server.ts",
     "dev": "ts-node index.ts",
     "test": "ts-node test.ts",

@@ -16,6 +16,7 @@ import { loadItemNamesIL } from "../../datapack/il/itemnames";
 import { loadItemGrpIL } from "../../datapack/il/itemgrp";
 import { ItemDataEntry } from "../../datapack/types";
 import { generateItemsIL } from "./il/items";
+import { generateItemsC5 } from './c5/items';
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -34,6 +35,8 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       return addItems(loadItemDataC1());
     case "c4":
       return addItems(loadItemDataC4());
+    case "c5":
+      return addItemsC5();
     case "il":
       return addItemsIL();
     case "gf":
@@ -111,6 +114,10 @@ function addItems(itemsData: ItemDataEntry[]) {
     }
   }
   return items;
+}
+
+function addItemsC5() {
+  return generateItemsC5();
 }
 
 function addItemsIL() {

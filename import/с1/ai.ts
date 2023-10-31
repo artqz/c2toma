@@ -9,6 +9,7 @@ import { AiEntryC4, loadAiDataC4 } from "../../datapack/c4/aidata";
 import { loadAiGf } from "../../datapack/gf/aidata";
 import { Ai, AiSellList as AiSL, Item, Npc } from "../../result/types";
 import { Chronicle } from "../types";
+import { generaAiC5 } from './c5/ai';
 import { generaAiIL } from './il/ai';
 
 export function loadAi(deps: {
@@ -33,6 +34,8 @@ function loadAiData(deps: {
       return getAi({ ...deps, aiData: loadAiDataC1() });
     case "c4":
       return getAiC4({ ...deps, aiData: loadAiDataC4() });
+    case "c5":
+      return addAiC5(deps);
     case "il":
       return addAiIL(deps);
     case "gf":
@@ -57,6 +60,14 @@ function getAi(deps: {
   }
 
   return aiMap;
+}
+
+function addAiC5(deps: {
+  chronicle: Chronicle;
+  npcs: Map<number, Npc>;
+  items: Map<number, Item>;
+}) {
+  return generaAiC5(deps)
 }
 
 function addAiIL(deps: {

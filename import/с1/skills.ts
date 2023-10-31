@@ -32,6 +32,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
     case "c4":
       skillData = loadSkillDataC4();
       break;
+      
     case "il":
       skillData = loadSkillDataIL();
       break;

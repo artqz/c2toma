@@ -12,6 +12,8 @@ const SkillGrpItem = z.object({
   skill_id: z.string(),
   skill_level: z.string(),
   icon_name: z.string()
+  //
+  
 });
 
 export function loadSkillGrpC6(): SkillGrpEntry[] {

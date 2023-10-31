@@ -4,6 +4,7 @@ import { loadRecipeDataGF } from "../../datapack/gf/recipe";
 import { RecipeEntry } from '../../datapack/types';
 import { Item, Material, Product, Recipe } from "../../result/types";
 import { Chronicle } from "../types";
+import { generateRecipesC5 } from './c5/recipe';
 import { generateRecipesIL } from './il/recipe';
 
 export function loadRecipes(deps: {
@@ -26,6 +27,8 @@ function loadRecipesData(deps: {
       return addRecipe({...deps, recipeData: loadRecipeDataC1()})
     case "c4":   
       return addRecipe({...deps, recipeData: loadRecipeDataC4()})
+    case "c5":
+      return addRecipeC5(deps)
     case "il":
       return addRecipeIL(deps)
     case "gf":
@@ -55,6 +58,10 @@ function addRecipe(deps: {items: Map<number, Item>; recipeData:RecipeEntry[]}) {
   }
 
   return recMap;
+}
+
+function addRecipeC5(deps: {items: Map<number, Item>; }) {
+  return generateRecipesC5(deps)
 }
 
 function addRecipeIL(deps: {items: Map<number, Item>; }) {

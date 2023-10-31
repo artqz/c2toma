@@ -38,6 +38,11 @@ function loadSetData(deps: {
       setData = loadItemDataC4();
       sets = C1sets({ ...deps, setData });
       break;
+    case "c5":
+      // нужно исправить
+      setData = loadItemDataC4();
+      sets = C1sets({ ...deps, setData });
+      break;
     case "il":
       setData = loadItemDataIL();
       sets = setsIL({ ...deps, setData });

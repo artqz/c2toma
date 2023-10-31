@@ -30,6 +30,10 @@ function loadMultisellData(deps: {
     case "c4":
       multisellData = loadMultisellDataC4();
       break;
+    case "c5":
+      // нужен фикс
+      multisellData = loadMultisellDataC4();
+      break;
     case "il":
       multisellData = loadMultisellDataIL();
       break;

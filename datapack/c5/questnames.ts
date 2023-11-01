@@ -7,10 +7,10 @@ import { z } from "zod";
 export type QuestNameEntryC4 = {
   id: number;
   progId: number;
-  name: string;
-  progName: string;
-  desc: string;
-  short_desc: string,
+  name: { en: string; ru: string };
+  progName: { en: string; ru: string };
+  desc: { en: string; ru: string };
+  short_desc: { en: string; ru: string };
   tabs1: number[];
   tabs2: number[];
 };
@@ -28,34 +28,34 @@ const Entry = z.object({
   prog_name: z.string(),
   description: z.string(),
   short_description: z.string(),
-  "tab1[0]": z.string(),
-  "tab1[1]": z.string(),
-  "tab1[2]": z.string(),
-  "tab1[3]": z.string(),
-  "tab1[4]": z.string(),
-  "tab1[5]": z.string(),
-  "tab1[6]": z.string(),
-  "tab1[7]": z.string(),
-  "tab1[8]": z.string(),
-  "tab1[9]": z.string(),
-  "tab1[10]": z.string(),
-  "tab1[11]": z.string(),
-  "tab1[12]": z.string(),
-  "tab1[13]": z.string(),
-  "tab2[0]": z.string(),
-  "tab2[1]": z.string(),
-  "tab2[2]": z.string(),
-  "tab2[3]": z.string(),
-  "tab2[4]": z.string(),
-  "tab2[5]": z.string(),
-  "tab2[6]": z.string(),
-  "tab2[7]": z.string(),
-  "tab2[8]": z.string(),
-  "tab2[9]": z.string(),
-  "tab2[10]": z.string(),
-  "tab2[11]": z.string(),
-  "tab2[12]": z.string(),
-  "tab2[13]": z.string(),
+"items[0]": z.string(),
+  "items[1]": z.string(),
+  "items[2]": z.string(),
+  "items[3]": z.string(),
+  "items[4]": z.string(),
+  "items[5]": z.string(),
+  "items[6]": z.string(),
+  "items[7]": z.string(),
+  "items[8]": z.string(),
+  "items[9]": z.string(),
+  "items[10]": z.string(),
+  "items[11]": z.string(),
+  "items[12]": z.string(),
+  "items[13]": z.string(),
+  "num_items[0]": z.string(),
+  "num_items[1]": z.string(),
+  "num_items[2]": z.string(),
+  "num_items[3]": z.string(),
+  "num_items[4]": z.string(),
+  "num_items[5]": z.string(),
+  "num_items[6]": z.string(),
+  "num_items[7]": z.string(),
+  "num_items[8]": z.string(),
+  "num_items[9]": z.string(),
+  "num_items[10]": z.string(),
+  "num_items[11]": z.string(),
+  "num_items[12]": z.string(),
+  "num_items[13]": z.string(),
 });
 
 export function loadQuestNamesC5(): QuestNameEntryC4[] {
@@ -71,27 +71,68 @@ export function loadQuestNamesC5(): QuestNameEntryC4[] {
     return {
       id: parseInt(cleanStr(x.quest_id)),
       progId: parseInt(cleanStr(x.quest_prog)),
-      name: cleanStr(x.main_name),
-      progName: cleanStr(x.prog_name),
-      desc: cleanStr(x.description.replace(/ \\n /g, "\\\\n")),
-      short_desc: cleanStr(x.short_description.replace(/ \\n /g, "\\\\n")),
-      tabs1: pushItems({0: x['tab1[0]'], 1: x['tab1[1]'], 2:x['tab1[2]'], 3:x['tab1[3]'], 4:x['tab1[4]'], 5:x['tab1[5]'], 6:x['tab1[6]'], 7:x['tab1[7]'], 8:x['tab1[8]'], 9:x['tab1[9]'], 10:x['tab1[10]'], 11:x['tab1[11]'], 12:x['tab1[12]'], 13:x['tab1[13]']}),
-      tabs2: pushItems({0: x['tab2[0]'], 1: x['tab2[1]'], 2:x['tab2[2]'], 3:x['tab2[3]'], 4:x['tab2[4]'], 5:x['tab2[5]'], 6:x['tab2[6]'], 7:x['tab2[7]'], 8:x['tab2[8]'], 9:x['tab2[9]'], 10:x['tab2[10]'], 11:x['tab2[11]'], 12:x['tab2[12]'], 13:x['tab2[13]']}),
+      name: { en: cleanStr(x.main_name), ru: cleanStr(x.main_name) },
+      progName: { en: cleanStr(x.prog_name), ru: cleanStr(x.prog_name) },
+      desc: { en: cleanStr(x.description), ru: cleanStr(x.description) },
+      short_desc: {
+        en: cleanStr(x.short_description),
+        ru: cleanStr(x.short_description),
+      },
+      tabs1: pushItems({
+        0: x["items[0]"],
+        1: x["items[1]"],
+        2: x["items[2]"],
+        3: x["items[3]"],
+        4: x["items[4]"],
+        5: x["items[5]"],
+        6: x["items[6]"],
+        7: x["items[7]"],
+        8: x["items[8]"],
+        9: x["items[9]"],
+        10: x["items[10]"],
+      }),
+      tabs2: pushItems({
+        0: x["num_items[0]"],
+        1: x["num_items[1]"],
+        2: x["num_items[2]"],
+        3: x["num_items[3]"],
+        4: x["num_items[4]"],
+        5: x["num_items[5]"],
+        6: x["num_items[6]"],
+        7: x["num_items[7]"],
+        8: x["num_items[8]"],
+        9: x["num_items[9]"],
+        10: x["num_items[10]"],
+      }),
     };
   });
 }
 
-type Tab = {0: string, 1: string, 2: string, 3: string, 4: string, 5: string, 6: string, 7: string, 8: string, 9: string, 10: string, 11: string, 12: string, 13: string,}
+type Tab = {
+  0: string;
+  1: string;
+  2: string;
+  3: string;
+  4: string;
+  5: string;
+  6: string;
+  7: string;
+  8: string;
+  9: string;
+  10: string;
+};
 
 function pushItems(tab: Tab) {
-  const _tab = JSON.parse(JSON.stringify(tab))  
-  const arr: number[] = []
+  const _tab = JSON.parse(JSON.stringify(tab));
+  const arr: number[] = [];
 
-  for (let i = 0; i < 13; i++) {     
+  for (let i = 0; i < 13; i++) {
     if (_tab[i]) {
-     arr.push(parseInt(_tab[i])) 
+      arr.push(parseInt(_tab[i]));
     }
   }
 
-  return arr
+  return arr;
 }
+
+

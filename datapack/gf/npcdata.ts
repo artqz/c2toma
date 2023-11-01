@@ -49,6 +49,7 @@ const NpcEntryGF = z.object({
   agro_range: z.number(),
   additional_make_multi_list: z.unknown(),
   corpse_make_list: z.unknown(),
+  ex_item_drop_list: z.unknown(),
   npc_ai: z.object({ $: z.tuple([z.string()]).rest(z.unknown()) }),
 });
 

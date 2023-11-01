@@ -92,6 +92,7 @@ function addNpc(
     classes: [],
     dropList: [],
     spoilList: [],
+    herbList:[],
     skillList: [],
     multisell: [],
     spawns: [],

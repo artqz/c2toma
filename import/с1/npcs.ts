@@ -89,6 +89,7 @@ function addNpcs(deps: {
       classes: [],
       dropList: getDrop({ ...deps, list: npc.additional_make_multi_list }),
       spoilList: getSpoil({ ...deps, list: npc.corpse_make_list }),
+      herbList:[],
       skillList: getSkills({ ...deps, list: npc.skill_list }),
       multisell: [],
       spawns: [],

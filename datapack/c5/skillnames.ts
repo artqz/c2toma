@@ -33,7 +33,9 @@ export function loadSkillNamesC5(): SkillNameEntry[] {
 
   let data = EntryC5.array().parse(json);
 
-  return data.map((x) => ({
+  return data
+  .filter(x => x.id < "50000") // тома пидор (убираем дроп и спойл из скилзов)
+  .map((x) => ({
     id: parseInt(x.id),
     name: {ru: cleanStr(x.name), en:cleanStr(x.name)},
     level: parseInt(x.level),

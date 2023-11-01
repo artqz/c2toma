@@ -13,7 +13,7 @@ import { loadNpcSeaLevel } from "./import/с1/npcSeaLevel";
 import { Chronicle } from "./import/types";
 import { loadQuests } from "./import/с1/quests";
 
-const chronicle: Chronicle = "il";
+const chronicle: Chronicle = "c5";
 function init() {
   createDir(`result/data/${chronicle}`);
   const skills = loadSkills({ chronicle });

@@ -44,6 +44,7 @@ export type Npc = {
   classes: string[];
   dropList: NpcDrop[];
   spoilList: NpcDrop[];
+  herbList: NpcDrop[];
   skillList: string[];
   multisell: Multisell[];
   spawns: NpcSpawn[];

@@ -53,6 +53,9 @@ export function generateNpcsC5(deps: {
   // add drop and spoil
   addDropAndSpoil({ ...deps, npcs });
 
+  // add herbs
+  addHerbs({ ...deps, npcs })
+
   return npcs;
 }
 
@@ -92,6 +95,7 @@ function addNpc(
     classes: [],
     dropList: [],
     spoilList: [],
+    herbList: [],
     skillList: [],
     multisell: [],
     spawns: [],
@@ -189,7 +193,7 @@ function addDrop(deps:{npc: Npc; itemByName: Map<string, Item>; dropList: any}) 
     }
 
     function addSpoil(deps:{npc: Npc; itemByName: Map<string, Item>; spoilList: any}) {
-  deps.spoilList.$?.map((itemData: any) => {
+      deps.spoilList.$?.map((itemData: any) => {
         if (itemData) {
           const itemName = itemData.$[0];
           const item = deps.itemByName.get(itemName);
@@ -204,5 +208,55 @@ function addDrop(deps:{npc: Npc; itemByName: Map<string, Item>; dropList: any}) 
             });
           }
         }
+      });
+    }
+
+function addHerbs(deps: {
+  npcs: Map<number, Npc>;
+  items: Map<number, Item>;
+}) {
+  const npcGFById = new Map(loadNpcDataGF().map((n) => [n.$[1], n]));
+  const itemByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
+
+  for (const npc of deps.npcs.values()) {
+ 
+    const npcGF = npcGFById.get(npc.id);
+    if (npcGF) {
+      addDropHerbs({dropHerbList:npcGF.ex_item_drop_list, itemByName, npc })
+    }
+  
+  }
+}
+
+function addDropHerbs(deps:{npc: Npc; itemByName: Map<string, Item>; dropHerbList: any}) {
+  deps.dropHerbList.$?.map((mainGroup: any) => {
+        const mainGroupChanceDrop = Number(mainGroup.$[1]);
+        return mainGroup.$.map((subGroup: any) => {
+          return (
+            subGroup.$ &&
+            subGroup.$.map((itemData: any) => {
+              if (itemData.$) {
+                const itemChanceDrop = Number(itemData.$[3]);
+                const chance = (itemChanceDrop * mainGroupChanceDrop) / 100;
+
+                const itemName = itemData.$[0].replace(/\s/g, "_");
+                const item = deps.itemByName.get(itemName);
+
+                if (!item) {
+                  console.log(`Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`);
+                } else {
+                  deps.npc.herbList.push({
+                    itemName: item.itemName,
+                    countMin: itemData.$[1],
+                    countMax: itemData.$[2],
+                    chance,
+                  });
+                }
+              }
+            })
+          );
+        });
       });
     }

@@ -4,8 +4,8 @@ import { loadSkillDataGF } from '../../../datapack/gf/skilldata';
 import { SkillEntry } from '../../../datapack/types';
 
 export function generateSkillDataC5 () {
-    const skillByIdC4 = new Map(loadSkillDataC4().map(s => [s.skill_id+"_"+s.level, s]))
-  const skillByIdGF= new Map(loadSkillDataGF().map(s => [s.skill_id+"_"+s.level, s]))
+  const skillByIdC4 = new Map(loadSkillDataC4().map(s => [s.skill_id+"_"+s.level, s]))
+  const skillByIdGF = new Map(loadSkillDataGF().map(s => [s.skill_id+"_"+s.level, s]))
   const skills: SkillEntry[] = []
 
   for (const skillGrp of loadSkillGrpC5()) {

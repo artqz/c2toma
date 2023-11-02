@@ -16,8 +16,8 @@ import { loadItemNamesIL } from "../../datapack/il/itemnames";
 import { loadItemGrpIL } from "../../datapack/il/itemgrp";
 import { ItemDataEntry } from "../../datapack/types";
 import { generateItemsIL } from "./il/items";
-import { generateItemsC5 } from './c5/items';
-import { loadItemGrpC5 } from '../../datapack/c5/itemgrp';
+import { generateItemsC5 } from "./c5/items";
+import { loadItemGrpC5 } from "../../datapack/c5/itemgrp";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -266,7 +266,7 @@ function addIconsC5(deps: { itemData: Map<number, Item> }) {
     if (item) {
       itemData.set(item.id, {
         ...item,
-        icon: itemGrp.icon,
+        icon: addIcon(itemGrp.icon, item.itemName),
       });
     }
   }
@@ -279,7 +279,7 @@ function addIconsIL(deps: { itemData: Map<number, Item> }) {
     if (item) {
       itemData.set(item.id, {
         ...item,
-        icon: itemGrp.icon,
+        icon: addIcon(itemGrp.icon, item.itemName),
       });
     }
   }
@@ -296,6 +296,21 @@ function addIconsGF(deps: { itemData: Map<number, Item> }) {
       });
     }
   }
+}
+
+function addIcon(icon: string, itemName: string) {
+  let _icon: string = "";
+  if (icon !== "") {
+    _icon = icon;
+  } else {
+    if (itemName.includes("herb_of_hp_a")) {
+      _icon = "etc_hp_herb_i00";
+    }
+    if (itemName.includes("herb_of_mp_a")) {
+      _icon = "etc_mp_herb_i00";
+    }
+  }
+  return _icon;
 }
 
 function addNamesC1(deps: { itemData: Map<number, Item> }) {

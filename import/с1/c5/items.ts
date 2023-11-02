@@ -5,7 +5,7 @@ import { ItemDataEntry, ItemNameEntry } from "../../../datapack/types";
 import { Item } from "../../../result/types";
 import { asSlot } from "../../slots";
 
-type ItemNameC6 = {
+type ItemNameC5 = {
   id: number;
   itemName: string;
   name: { en: string; ru: string };
@@ -15,7 +15,7 @@ type ItemNameC6 = {
 
 export function generateItemsC5() {
   const items = new Map<string, Item>();
-  const itemNames = new Map<number, ItemNameC6>();
+  const itemNames = new Map<number, ItemNameC5>();
 
   const ItemC4ByName = new Map(loadItemDataC4().map((i) => [i.$[2], i]));
   const ItemGFByName = new Map(loadItemDataGF().map((i) => [i.$[2], i]));

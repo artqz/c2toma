@@ -9,35 +9,30 @@ import { Npc, NpcSpawn, Point } from '../../../result/types';
 export function generateNpcposC5 (deps: { npcs: Map<number, Npc>;}) {   
   const npcposC4 = getPos(loadNpcPosC4())
   const npcposGF = getPos(loadNpcPosGF())
-  const npcByIdC4 = new Map(loadNpcDataC4().map(n=> [n.$[1], n]))
-  const npcByIdGF = new Map(loadNpcDataGF().map(n=> [n.$[1], n]))
-
+  const npcByNameC4 = new Map(loadNpcDataC4().map(n=> [n.$[2], n]))
+  const npcByNameGF = new Map(loadNpcDataGF().map(n=> [n.$[2], n]))
+  
+  
   for (const npc of deps.npcs.values()) {    
-    // const npcC4 = npcByIdC4.get(npc.id)
-    
-    // if (npcC4) {
-    //   const posC4 = npcposC4.get(npc.npcName)
-    //   if (posC4) {
-    //    for (const pos of posC4) {
-    //     npc.spawns.push(pos);
-    //    }
-      
-      
-    //   }
-      
-    // } else {      
-    //   const npcGF = npcByIdGF.get(npc.id)
-    //   if (npcGF) {
-    //     const posGF = npcposGF.get(npc.npcName)
-    //     if (posGF) {
-    //       for (const pos of posGF) {
-    //     npc.spawns.push(pos);
-    //    }
-    //     }
-        
-    //   }
-    // }
-  }
+    const npcC4 = npcByNameC4.get(npc.npcName)    
+    if (npcC4) {
+      const posC4 = npcposC4.get(npc.npcName)
+      if (posC4)
+        for (const pos of posC4) {       
+          npc.spawns.push(pos);
+      }  
+    }    
+    else {
+      const npcGF = npcByNameGF.get(npc.npcName)
+      if (npcGF) {
+        const posGF = npcposC4.get(npc.npcName)
+        if(posGF)
+          for (const pos of posGF) {       
+            npc.spawns.push(pos);
+          }  
+        }
+      }
+    }
 }
 
 function getPos(npcPosData: NpcPosEntry[]) {
@@ -77,7 +72,8 @@ function getPos(npcPosData: NpcPosEntry[]) {
             pos,
           };
 
-          npcpos.push({npcName, spawn})
+          npcpos.push({npcName, spawn})        
+          
           // const npc = npcsByName.get(npcName);
           // if (npc) {
           //   npc.spawns.push(spawn);
@@ -86,10 +82,20 @@ function getPos(npcPosData: NpcPosEntry[]) {
       }
     }
 
-    const arr = _.groupBy(npcpos, (d) => d.npcName)
-    console.log(arr);
     
-    return npcpos
-  }
+  }    
+  const arr = _.chain(npcpos).groupBy((d) => d.npcName).map(g => {
+    const spawns: NpcSpawn[] = []
+    for (const h of g) {
+      spawns.push(h.spawn)
+    }
+    return {
+      npcName: g[0].npcName,
+      spawns
+    }
+  } ).value()
+ 
+  
+    return new Map(arr.map(x => [x.npcName, x.spawns]));
   //
 }

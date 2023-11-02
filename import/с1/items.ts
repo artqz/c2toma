@@ -17,6 +17,7 @@ import { loadItemGrpIL } from "../../datapack/il/itemgrp";
 import { ItemDataEntry } from "../../datapack/types";
 import { generateItemsIL } from "./il/items";
 import { generateItemsC5 } from './c5/items';
+import { loadItemGrpC5 } from '../../datapack/c5/itemgrp';
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -160,6 +161,9 @@ function loadItemGrps(deps: {
     case "c4":
       addIconsC4(deps);
       break;
+    case "c5":
+      addIconsC5(deps);
+      break;
     case "il":
       addIconsIL(deps);
       break;
@@ -181,6 +185,7 @@ function loadItemRuNames(deps: {
   if (
     deps.chronicle === "c1" ||
     deps.chronicle === "c4" ||
+    deps.chronicle === "c5" ||
     deps.chronicle === "il"
   ) {
     const itemNames = loadItemNamesGF();
@@ -249,6 +254,19 @@ function addIconsC4(deps: { itemData: Map<number, Item> }) {
       itemData.set(item.id, {
         ...item,
         icon: itemGrp["icon[0]"].replace("icon.", ""),
+      });
+    }
+  }
+}
+
+function addIconsC5(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemGrp of loadItemGrpC5()) {
+    const item = itemData.get(itemGrp.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        icon: itemGrp.icon,
       });
     }
   }

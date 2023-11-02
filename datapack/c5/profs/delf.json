@@ -1,0 +1,108 @@
+[
+    {
+        "name": "Dark Fighter",
+        "id": 31,
+        "childs": [
+            {
+                "name": "Palus Knight",
+                "id": 32,
+                "childs": [
+                    {
+                        "name": "Shillien Knight",
+                        "id": 33,
+                        "childs": [
+                            {
+                                "name": "Shillien Templar",
+                                "id": 106
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bladedancer",
+                        "id": 34,
+                        "childs": [
+                            {
+                                "name": "Spectral Dancer",
+                                "id": 107
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Assassin",
+                "id": 35,
+                "childs": [
+                    {
+                        "name": "Abyss Walker",
+                        "id": 36,
+                        "childs": [
+                            {
+                                "name": "Ghost Hunter",
+                                "id": 108
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Phantom Ranger",
+                        "id": 37,
+                        "childs": [
+                            {
+                                "name": "Ghost Sentinel",
+                                "id": 109
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Dark Mystic",
+        "id": 38,
+        "childs": [
+            {
+                "name": "Dark Wizard",
+                "id": 39,
+                "childs": [
+                    {
+                        "name": "Spellhowler",
+                        "id": 40,
+                        "childs": [
+                            {
+                                "name": "Storm Screamer",
+                                "id": 110
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Phantom Summoner",
+                        "id": 41,
+                        "childs": [
+                            {
+                                "name": "Spectral Master",
+                                "id": 111
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Shillien Oracle",
+                "id": 42,
+                "childs": [
+                    {
+                        "name": "Shillien Elder",
+                        "id": 43,
+                        "childs": [
+                            {
+                                "name": "Shillien Saint",
+                                "id": 112
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

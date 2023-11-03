@@ -4,6 +4,7 @@ import { loadMultisellDataGF } from "../../datapack/gf/miltisell";
 import { loadMultisellDataIL } from "../../datapack/il/miltisell";
 import { Item, Multisell, Npc, SellList } from "../../result/types";
 import { Chronicle } from "../types";
+import { fixC5Multisell } from './c5/multisell';
 
 export function loadMultisell(deps: {
   chronicle: Chronicle;
@@ -11,6 +12,7 @@ export function loadMultisell(deps: {
   npcs: Map<number, Npc>;
 }) {
   let multisell = loadMultisellData(deps);
+  handFix({...deps, multisell});
 
   console.log("Multisell loaded.");
 
@@ -159,5 +161,12 @@ function getNpcNamesByMultisell(multisellName: string) {
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];
+  }
+}
+
+
+function handFix(deps: {chronicle: Chronicle, multisell: Map<number, Multisell>}) {
+  if (deps.chronicle === "c5") {
+    fixC5Multisell(deps.multisell)
   }
 }

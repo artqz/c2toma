@@ -149,6 +149,12 @@ const NpcDataEntry = z.object({
   org_mp: z.number(),
   physical_avoid_modify: z.number(),
   physical_hit_modify: z.number(),
+  "str": z.number(),
+    "int": z.number(),
+    "dex": z.number(),
+    "wit": z.number(),
+    "con": z.number(),
+    "men": z.number(),
   race: z.enum([
     "animal",
     "beast",

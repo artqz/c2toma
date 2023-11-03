@@ -25,6 +25,7 @@
     "csv-parse": "^5.3.4",
     "express": "^4.18.2",
     "lodash": "^4.17.21",
+    "mathjs": "^12.0.0",
     "node-fetch": "^2.6.7",
     "slug": "^8.2.2",
     "svg-png-converter": "^0.0.9",

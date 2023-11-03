@@ -20,6 +20,12 @@ const NpcEntryC1 = z.object({
   org_hp: z.number(),
   org_mp: z.number(),
   physical_avoid_modify: z.number(),
+  "str": z.number(),
+    "int": z.number(),
+    "dex": z.number(),
+    "wit": z.number(),
+    "con": z.number(),
+    "men": z.number(),
   physical_hit_modify: z.number(),
   race: z.enum([
     "animal",

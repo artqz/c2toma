@@ -309,6 +309,12 @@ function addIcon(icon: string, itemName: string) {
     if (itemName.includes("herb_of_mp_a")) {
       _icon = "etc_mp_herb_i00";
     }
+    if (itemName.includes("herb_of_pa")) {
+      _icon = "etc_herb_red_i00";
+    }
+    if (itemName.includes("herb_of_ma")) {
+      _icon = "etc_herb_blue_i00";
+    }
   }
   return _icon;
 }

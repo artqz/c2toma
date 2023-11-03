@@ -10,6 +10,7 @@ import { NpcDataEntry } from "../../datapack/types";
 import { Item, Npc, NpcDrop, Skill } from "../../result/types";
 import { Chronicle } from "../types";
 import { generateNpcsC5 } from './c5/npcs';
+import { calcHP, calcHPRegen, calcMP, calcMPRegen } from './func';
 import { generateNpcsIL } from "./il/npcs";
 
 export function loadNpcs(deps: {
@@ -78,10 +79,10 @@ function addNpcs(deps: {
       exp: npc.level ** 2 * npc.acquire_exp_rate,
       sp: npc.acquire_sp,
       magicUseSpeedModify: 0,
-      orgHp: npc.org_hp,
-      orgHpRegen: npc.org_hp_regen,
-      orgMp: npc.org_mp,
-      orgMpRegen: npc.org_mp_regen,
+      orgHp: calcHP(npc.org_hp, npc.con),
+      orgHpRegen: calcHPRegen(npc.org_hp_regen, npc.con, npc.level), // нет данных у томы
+      orgMp: calcMP(npc.org_mp, npc.men),
+      orgMpRegen: calcMPRegen(npc.org_mp_regen, npc.men, npc.level),
       physicalAvoidModify: npc.physical_avoid_modify,
       physicalHitModify: npc.physical_hit_modify,
       type: npc.$[0],

@@ -4,7 +4,7 @@ import { loadNpcNamesC5 } from '../../../datapack/c5/npcnames';
 import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
 import { Item, Npc, Skill } from "../../../result/types";
-import { calcHp } from '../func';
+import { calcHP, calcHPRegen, calcMP, calcMPRegen } from '../func';
 type NpcNameC6 = NpcNameEntry & {
   npcName: string;
 };
@@ -85,10 +85,10 @@ function addNpc(
     exp: npcData.level ** 2 * npcData.acquire_exp_rate,
     sp: npcData.acquire_sp,
     magicUseSpeedModify: 0,
-    orgHp: calcHp(npcData.org_hp, npcData.con),
-    orgHpRegen: npcData.org_hp_regen, // нет данных у томы
-    orgMp: npcData.org_mp,
-    orgMpRegen: npcData.org_mp_regen, // нет данных у томы
+    orgHp: calcHP(npcData.org_hp, npcData.con),
+    orgHpRegen: calcHPRegen(npcData.org_hp_regen, npcData.con, npcData.level), // нет данных у томы
+    orgMp: calcMP(npcData.org_mp, npcData.men),
+    orgMpRegen: calcMPRegen(npcData.org_mp_regen, npcData.men, npcData.level),
     physicalAvoidModify: npcData.physical_avoid_modify,
     physicalHitModify: npcData.physical_hit_modify,
     type: npcData.$[0],

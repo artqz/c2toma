@@ -77,16 +77,16 @@
     {
         "name": 0,
         "hp": 0,
-        "skillID": 1342,
+        "skillID": 1350,
         "autoGet": false,
-        "mp": 105,
+        "mp": 70,
         "getLv": 76,
         "isMagic": true,
-        "itemNeeded": 7652,
+        "itemNeeded": 7660,
         "lvUpSp": 12500000,
-        "operateType": 1,
+        "operateType": 0,
         "skillLevel": 1,
-        "range": 900,
+        "range": 600,
         "isGroup": false
     },
     {
@@ -122,16 +122,16 @@
     {
         "name": 0,
         "hp": 0,
-        "skillID": 1340,
+        "skillID": 1347,
         "autoGet": false,
-        "mp": 105,
+        "mp": 70,
         "getLv": 77,
         "isMagic": true,
-        "itemNeeded": 7650,
+        "itemNeeded": 7657,
         "lvUpSp": 14670000,
         "operateType": 1,
         "skillLevel": 1,
-        "range": 900,
+        "range": 400,
         "isGroup": false
     },
     {
@@ -152,7 +152,7 @@
     {
         "name": 0,
         "hp": 0,
-        "skillID": 337,
+        "skillID": 338,
         "autoGet": false,
         "mp": 36,
         "getLv": 78,
@@ -167,16 +167,16 @@
     {
         "name": 0,
         "hp": 0,
-        "skillID": 1338,
+        "skillID": 1349,
         "autoGet": false,
         "mp": 72,
         "getLv": 78,
         "isMagic": true,
-        "itemNeeded": 7648,
+        "itemNeeded": 7659,
         "lvUpSp": 21340000,
         "operateType": 1,
         "skillLevel": 1,
-        "range": 600,
+        "range": 400,
         "isGroup": false
     }
 ]

@@ -14,7 +14,7 @@ import { Chronicle } from "./import/types";
 import { loadQuests } from "./import/с1/quests";
 import { loadNpcBuffs } from './import/с1/npcBuffs';
 
-const chronicle: Chronicle = "c4";
+const chronicle: Chronicle = "c5";
 function init() {
   createDir(`result/data/${chronicle}`);
   const skills = loadSkills({ chronicle });

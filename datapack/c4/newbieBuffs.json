@@ -1,0 +1,15 @@
+[
+  {"skill":"s_wind_walk_for_newbie", "minLvl": 8, "maxLvl": 24, "group":"fighter"},
+  {"skill":"s_shield_for_newbie", "minLvl": 11, "maxLvl": 23, "group":"fighter"},
+  {"skill":"s_vampiric_rage_for_newbie", "minLvl": 13, "maxLvl": 21, "group":"fighter"},
+  {"skill":"s_regeneration_for_newbie", "minLvl": 14, "maxLvl": 20, "group":"fighter"},
+  {"skill":"s_haste_for_newbie", "minLvl": 15, "maxLvl": 19, "group":"fighter"},
+  {"skill":"s_life_cubic_for_newbie", "minLvl": 16, "maxLvl": 19, "group":"fighter"},
+  {"skill":"s_wind_walk_for_newbie", "minLvl": 8, "maxLvl": 24, "group":"mage"},
+  {"skill":"s_shield_for_newbie", "minLvl": 11, "maxLvl": 23, "group":"mage"},
+  {"skill":"s_bless_the_soul_for_newbie", "minLvl": 12, "maxLvl": 22, "group":"mage"},
+  {"skill":"s_acumen_for_newbie", "minLvl": 13, "maxLvl": 21, "group":"mage"},
+  {"skill":"s_concentration_for_newbie", "minLvl": 14, "maxLvl": 20, "group":"mage"},
+  {"skill":"s_empower_for_newbie", "minLvl": 15, "maxLvl": 19, "group":"mage"},
+  {"skill":"s_life_cubic_for_newbie", "minLvl": 16, "maxLvl": 19, "group":"mage"}
+]

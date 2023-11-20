@@ -12,8 +12,9 @@ import { loadWeaponAbilities } from "./import/с1/weaponAbilities";
 import { loadNpcSeaLevel } from "./import/с1/npcSeaLevel";
 import { Chronicle } from "./import/types";
 import { loadQuests } from "./import/с1/quests";
+import { loadNpcBuffs } from './import/с1/npcBuffs';
 
-const chronicle: Chronicle = "c5";
+const chronicle: Chronicle = "c4";
 function init() {
   createDir(`result/data/${chronicle}`);
   const skills = loadSkills({ chronicle });
@@ -43,6 +44,7 @@ function init() {
     JSON.stringify(Array.from(quests.values()), null, 2)
   );
   const npcs = loadNpcs({ chronicle, items, skills });
+  loadNpcBuffs({ chronicle, npcs, skills });
   loadNpcPos({ chronicle, npcs });
   loadNpcSeaLevel({ chronicle, npcs });
   saveFile(

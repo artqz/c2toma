@@ -396,3 +396,13 @@ const NpcPosEntry = z.discriminatedUnion("t", [
 ]);
 
 export type NpcPosEntry = z.infer<typeof NpcPosEntry>;
+
+
+export const NpcBuffsEntry = z.object({
+  skill: z.string(),
+  minLvl: z.number(),
+  maxLvl: z.number(),
+  group: z.enum(["fighter", "mage"])
+});
+
+export type NpcBuffsEntry = z.infer<typeof NpcBuffsEntry>;

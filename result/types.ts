@@ -48,6 +48,7 @@ export type Npc = {
   skillList: string[];
   multisell: Multisell[];
   spawns: NpcSpawn[];
+  buffList?: NpcBuff[]
 };
 
 export type Point = {
@@ -175,6 +176,13 @@ export type Set = {
 
 export type ShortItem = {
   itemName: string;
+};
+
+export type NpcBuff = {
+  skillName: string;
+  minLevel: Int;
+  maxLevel: Int;
+  group: "fighter" | "mage";
 };
 
 export type NpcDrop = {

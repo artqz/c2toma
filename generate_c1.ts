@@ -13,8 +13,9 @@ import { loadNpcSeaLevel } from "./import/с1/npcSeaLevel";
 import { Chronicle } from "./import/types";
 import { loadQuests } from "./import/с1/quests";
 import { loadNpcBuffs } from './import/с1/npcBuffs';
+import { loadSkillEnchants } from './import/с1/skillsEnchant';
 
-const chronicle: Chronicle = "c5";
+const chronicle: Chronicle = "c4";
 function init() {
   createDir(`result/data/${chronicle}`);
   const skills = loadSkills({ chronicle });
@@ -71,7 +72,7 @@ function init() {
     `result/data/${chronicle}/ai.json`,
     JSON.stringify(Array.from(ai.values()), null, 2)
   );
-
+    loadSkillEnchants({skills})
   console.log("Finish.");
 }
 

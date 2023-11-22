@@ -23,6 +23,11 @@ function init() {
     `result/data/${chronicle}/skills.json`,
     JSON.stringify(Array.from(skills.values()), null, 2)
   );
+  const skillEnchant = loadSkillEnchants({chronicle, skills})
+  saveFile(
+    `result/data/${chronicle}/skillEnchant.json`,
+    JSON.stringify(skillEnchant, null, 2)
+  );
   const items = loadItems({ chronicle });
   saveFile(
     `result/data/${chronicle}/items.json`,
@@ -71,8 +76,7 @@ function init() {
   saveFile(
     `result/data/${chronicle}/ai.json`,
     JSON.stringify(Array.from(ai.values()), null, 2)
-  );
-    loadSkillEnchants({skills})
+  );    
   console.log("Finish.");
 }
 

@@ -292,3 +292,5 @@ export type Quest = {
       desc: lstring
       progs: QusetProg[]
     }
+
+    export type SkillEnchant = Record<number,Record<string, {skillName: string}[]>>

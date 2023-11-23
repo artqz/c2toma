@@ -25,7 +25,7 @@ function init() {
   );
   const skillEnchant = loadSkillEnchants({chronicle, skills})
   saveFile(
-    `result/data/${chronicle}/skillEnchant.json`,
+    `result/data/${chronicle}/skillEnchants.json`,
     JSON.stringify(skillEnchant, null, 2)
   );
   const items = loadItems({ chronicle });

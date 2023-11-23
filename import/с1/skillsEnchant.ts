@@ -21,13 +21,13 @@ export function loadSkillEnchants (deps: {
   }
 
   const arr = Array.from(list.values());
-  
-  return arr.reduce<SkillEnchant>((group, {skillId, enchantType, skillName}) => {   
-    group[skillId] = group[skillId] ?? {};  
-    group[skillId][enchantType] = group[skillId][enchantType] ?? [];  
-    group[skillId][enchantType].push({skillName});
-    return group;
-}, {});
+  return arr
+//   return arr.reduce<SkillEnchant>((group, {skillId, enchantType, skillName}) => {   
+//     group[skillId] = group[skillId] ?? {};  
+//     group[skillId][enchantType] = group[skillId][enchantType] ?? [];  
+//     group[skillId][enchantType].push({skillName});
+//     return group;
+// }, {});
 
   
 }

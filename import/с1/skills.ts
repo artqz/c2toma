@@ -4,7 +4,7 @@ import { loadSkillNamesC1 } from "../../datapack/c1/skillnames";
 import { loadSkillDataC4 } from "../../datapack/c4/skilldata";
 import { loadSkillGrpC4 } from "../../datapack/c4/skillgrp";
 import { loadSkillNamesC4 } from "../../datapack/c4/skillnames";
-import { loadSkillNamesC5 } from '../../datapack/c5/skillnames';
+import { loadSkillNamesC5 } from "../../datapack/c5/skillnames";
 import { loadSkillDataGF } from "../../datapack/gf/skilldata";
 import { loadSkillIconsGF } from "../../datapack/gf/skillgrp";
 import { loadSkillNamesGF } from "../../datapack/gf/skillnames";
@@ -13,7 +13,7 @@ import { loadSkillGrpIL } from "../../datapack/il/skillgrp";
 import { loadSkillNamesIL } from "../../datapack/il/skillnames";
 import { Skill } from "../../result/types";
 import { Chronicle } from "../types";
-import { generateSkillDataC5 } from './c5/skills';
+import { generateSkillDataC5 } from "./c5/skills";
 
 export function loadSkills(deps: { chronicle: Chronicle }) {
   let skills = loadItemData(deps);
@@ -36,7 +36,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       break;
     case "c5":
       skillData = generateSkillDataC5();
-      break;  
+      break;
     case "il":
       skillData = loadSkillDataIL();
       break;
@@ -248,7 +248,7 @@ function addNamesC1(deps: { skillData: Map<string, Skill> }) {
       deps.skillData.set(skillName.skill_id + "_" + skillName.skill_level, {
         ...skill,
         name: { en: skillName.name, ru: skillName.name },
-        desc: { en: skillName.desc, ru: skillName.desc },
+        desc: { en: skillName.desc.trim(), ru: skillName.desc.trim() },
       });
     }
   }
@@ -261,7 +261,7 @@ function addNamesC4(deps: { skillData: Map<string, Skill> }) {
       deps.skillData.set(skillName.id + "_" + skillName.level, {
         ...skill,
         name: { en: skillName.name, ru: skillName.name },
-        desc: { en: skillName.desc, ru: skillName.desc },
+        desc: { en: skillName.desc.trim(), ru: skillName.desc.trim() },
       });
     }
   }

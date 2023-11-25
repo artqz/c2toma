@@ -12,21 +12,17 @@ import { loadWeaponAbilities } from "./import/с1/weaponAbilities";
 import { loadNpcSeaLevel } from "./import/с1/npcSeaLevel";
 import { Chronicle } from "./import/types";
 import { loadQuests } from "./import/с1/quests";
-import { loadNpcBuffs } from './import/с1/npcBuffs';
-import { loadSkillEnchants } from './import/с1/skillsEnchant';
+import { loadNpcBuffs } from "./import/с1/npcBuffs";
+import { loadSkillCard } from "./import/с1/skillCard";
 
-const chronicle: Chronicle = "c4";
+const chronicle: Chronicle = "gf";
 function init() {
   createDir(`result/data/${chronicle}`);
   const skills = loadSkills({ chronicle });
+  const skillCard = loadSkillCard({ chronicle, skills });
   saveFile(
     `result/data/${chronicle}/skills.json`,
-    JSON.stringify(Array.from(skills.values()), null, 2)
-  );
-  const skillEnchant = loadSkillEnchants({chronicle, skills})
-  saveFile(
-    `result/data/${chronicle}/skillEnchants.json`,
-    JSON.stringify(skillEnchant, null, 2)
+    JSON.stringify(Array.from(skillCard.values()), null, 2)
   );
   const items = loadItems({ chronicle });
   saveFile(
@@ -76,7 +72,7 @@ function init() {
   saveFile(
     `result/data/${chronicle}/ai.json`,
     JSON.stringify(Array.from(ai.values()), null, 2)
-  );    
+  );
   console.log("Finish.");
 }
 

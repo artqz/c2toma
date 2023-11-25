@@ -48,7 +48,7 @@ export type Npc = {
   skillList: string[];
   multisell: Multisell[];
   spawns: NpcSpawn[];
-  buffList?: NpcBuff[]
+  buffList?: NpcBuff[];
 };
 
 export type Point = {
@@ -258,8 +258,7 @@ export type Prof = {
 };
 
 export type ProfSkill = {
-  skillName: string;
-  skillLevel: number;
+  skill: string;
   isMagic: boolean;
   operateType: string;
   getLv: number;
@@ -280,17 +279,20 @@ export type Ai = {
 export type AiSellList = [string, number, number, number][];
 
 export type QusetProg = {
-      id: number,
-      name: lstring
-      desc: lstring
-      items: {itemName: string, count: number}[]
-    }
+  id: number;
+  name: lstring;
+  desc: lstring;
+  items: { itemName: string; count: number }[];
+};
 
 export type Quest = {
-      id: number,
-      name: lstring
-      desc: lstring
-      progs: QusetProg[]
-    }
+  id: number;
+  name: lstring;
+  desc: lstring;
+  progs: QusetProg[];
+};
 
-    export type SkillEnchant = Record<number,Record<string, {skillName: string}[]>>
+export type SkillEnchant = Record<
+  number,
+  Record<string, { skillName: string }[]>
+>;

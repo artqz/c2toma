@@ -14,7 +14,7 @@ export function loadSkillCard(deps: {
       id: number;
       cardName: string;
       name: lstring;
-      levels: Skill[];
+      levels: Record<number, Skill>[];
       enchanting: { enchantName: string; skills: Skill[] }[];
     }
   >();
@@ -59,11 +59,11 @@ function getCardName(skill: { id: number; skillName: string }) {
 function getLevels(skillId: number, skills: Map<string, Skill>) {
   const map = Array.from(skills.values())
     .filter((s) => s.level != null && s.level < 100)
-    .reduce<Map<number, Skill[]>>((map, skill) => {
+    .reduce<Map<number, Record<number, Skill>[]>>((map, skill) => {
       if (!map.has(skill.id)) {
-        return map.set(skill.id, [skill]);
+        return map.set(skill.id, [{ [skill.level!]: skill }]);
       }
-      map.get(skill.id)?.push(skill);
+      map.get(skill.id)?.push({ [skill.level!]: skill });
       return map;
     }, new Map());
 

@@ -2,15 +2,15 @@ import { loadNpcDataC1 } from "../../datapack/c1/npcdata";
 import { loadNpcNamesC1 } from "../../datapack/c1/npcnames";
 import { loadNpcDataC4 } from "../../datapack/c4/npcdata";
 import { loadNpcNamesC4 } from "../../datapack/c4/npcnames";
-import { loadNpcNamesC5 } from '../../datapack/c5/npcnames';
+import { loadNpcNamesC5 } from "../../datapack/c5/npcnames";
 import { loadNpcDataGF } from "../../datapack/gf/npcdata";
 import { NpcNameEntry, loadNpcNamesGF } from "../../datapack/gf/npcnames";
 import { loadNpcNamesIL } from "../../datapack/il/npcnames";
 import { NpcDataEntry } from "../../datapack/types";
 import { Item, Npc, NpcDrop, Skill } from "../../result/types";
 import { Chronicle } from "../types";
-import { generateNpcsC5 } from './c5/npcs';
-import { calcHP, calcHPRegen, calcMP, calcMPRegen } from './func';
+import { generateNpcsC5 } from "./c5/npcs";
+import { calcHP, calcHPRegen, calcMP, calcMPRegen } from "./func";
 import { generateNpcsIL } from "./il/npcs";
 
 export function loadNpcs(deps: {
@@ -54,6 +54,12 @@ function addNpcs(deps: {
   npcsData: NpcDataEntry[];
 }) {
   const npcs = new Map<number, Npc>();
+  const skillsByName = new Map(
+    Array.from(deps.skills.values()).map((s) => [s.skillName, s])
+  );
+  const itemByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
 
   for (const npc of deps.npcsData) {
     if (IGNORE_NPCS.has(npc.$[2]) || npc.$[2].startsWith("_")) {
@@ -88,10 +94,22 @@ function addNpcs(deps: {
       type: npc.$[0],
       race: npc.race, //fix interlude
       classes: [],
-      dropList: getDrop({ ...deps, list: npc.additional_make_multi_list }),
-      spoilList: getSpoil({ ...deps, list: npc.corpse_make_list }),
-      herbList:[],
-      skillList: getSkills({ ...deps, list: npc.skill_list }),
+      dropList: getDrop({
+        ...deps,
+        list: npc.additional_make_multi_list,
+        items: itemByName,
+      }),
+      spoilList: getSpoil({
+        ...deps,
+        list: npc.corpse_make_list,
+        items: itemByName,
+      }),
+      herbList: [],
+      skillList: getSkills({
+        ...deps,
+        list: npc.skill_list,
+        skills: skillsByName,
+      }),
       multisell: [],
       spawns: [],
     });
@@ -119,24 +137,18 @@ function getSkills(deps: {
   list: { $?: string[] | undefined };
   skills: Map<string, Skill>;
 }) {
-  const skillsByName = new Map(
-    Array.from(deps.skills.values()).map((s) => [s.skillName, s])
-  );
   const npcSkillList: string[] = [];
   for (const npcSkill of deps.list.$ ?? []) {
-    const skill = skillsByName.get(npcSkill.replace("@", ""));
+    const skill = deps.skills.get(npcSkill.replace("@", ""));
     if (skill) {
-      npcSkillList.push(skill.skillName);
+      npcSkillList.push(skill.id + "_" + skill.level);
     }
   }
   return npcSkillList;
 }
 
-function getDrop(deps: { list: any; items: Map<number, Item> }) {
+function getDrop(deps: { list: any; items: Map<string, Item> }) {
   const drop: NpcDrop[] = [];
-  const itemByName = new Map(
-    Array.from(deps.items.values()).map((i) => [i.itemName, i])
-  );
 
   (deps.list as any).$?.map((mainGroup: any) => {
     const mainGroupChanceDrop = Number(mainGroup.$[1]);
@@ -149,7 +161,7 @@ function getDrop(deps: { list: any; items: Map<number, Item> }) {
             const chance = (itemChanceDrop * mainGroupChanceDrop) / 100;
 
             const itemName = itemData.$[0].replace(/\s/g, "_");
-            const item = itemByName.get(itemName);
+            const item = deps.items.get(itemName);
 
             if (!item) {
               console.log("Drop list item not found: " + itemName);
@@ -170,16 +182,13 @@ function getDrop(deps: { list: any; items: Map<number, Item> }) {
   return drop;
 }
 
-function getSpoil(deps: { list: any; items: Map<number, Item> }) {
+function getSpoil(deps: { list: any; items: Map<string, Item> }) {
   const spoil: NpcDrop[] = [];
-  const itemByName = new Map(
-    Array.from(deps.items.values()).map((i) => [i.itemName, i])
-  );
 
   (deps.list as any).$?.map((itemData: any) => {
     if (itemData) {
       const itemName = itemData.$[0];
-      const item = itemByName.get(itemName);
+      const item = deps.items.get(itemName);
       if (!item) {
         console.log("Spoil list item not found: " + itemName);
       } else {

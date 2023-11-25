@@ -45,8 +45,7 @@ function getSkills(deps: {
       operateType:
         skillById.get(pSkill.skillId + "_" + pSkill.skillLevel)!.operateType ??
         "null",
-      skillName: skillById.get(pSkill.skillId + "_" + pSkill.skillLevel)!
-        .skillName,
+      skill: pSkill.skillId + "_" + pSkill.skillLevel,
       itemNeeded: pSkill.itemNeeded
         ? [
             {

@@ -8,7 +8,7 @@ import { loadItemDataIL } from "../../datapack/il/itemdata";
 import { loadSkillAcquireDataIL } from "../../datapack/il/skillacquire";
 import { Item, Prof, ProfSkill, Skill } from "../../result/types";
 import { Chronicle } from "../types";
-import { generateProfsC5 } from './c5/profs';
+import { generateProfsC5 } from "./c5/profs";
 
 export function loadProfs(deps: {
   chronicle: Chronicle;
@@ -105,8 +105,7 @@ function getSkills(deps: {
       const skill = skillsByName.get(pSkill.skill_name);
       if (skill) {
         skillMap.set(skill.skillName, {
-          skillName: pSkill.skill_name,
-          skillLevel: pSkill.get_lv,
+          skill: skill.id + "_" + skill.level,
           autoGet: pSkill.auto_get === "true",
           getLv: pSkill.get_lv,
           lvUpSp: pSkill.lv_up_sp,

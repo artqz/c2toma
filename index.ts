@@ -101,10 +101,19 @@ init();
 
 function fixSkills(deps: { skills: Map<string, Skill> }) {
   const fixSkills = new Map<string, Skill>();
-  for (const idlvl of ["4275_1", "4275_2"]) {
-    const skill = deps.skills.get(idlvl);
-    if (skill) {
-      fixSkills.set(idlvl, skill);
+  const arr: { id: number; lvl: number }[] = [];
+  for (const nSkill of npcSkills.values()) {
+    if (nSkill.level !== 1) {
+      arr.push({ id: nSkill.id, lvl: nSkill.level ?? 1 });
+    }
+  }
+
+  for (const s of arr) {
+    for (let i = 0; i < s.lvl; i++) {
+      const skill = deps.skills.get(s.id + "_" + i);
+      if (skill) {
+        fixSkills.set(s.id + "_" + i, skill);
+      }
     }
   }
   return fixSkills;

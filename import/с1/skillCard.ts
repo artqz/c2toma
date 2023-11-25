@@ -9,7 +9,7 @@ export function loadSkillCard(deps: {
   skills: Map<string, Skill>;
 }) {
   const cards = new Map<
-    number,
+    string,
     {
       id: number;
       cardName: string;
@@ -25,7 +25,7 @@ export function loadSkillCard(deps: {
       skill.name = { en: "Expertise", ru: "Квалификация" };
     }
     if (skill.level === 1) {
-      cards.set(skill.id, {
+      cards.set(skill.id + "_" + skill.level, {
         id: skill.id,
         cardName: getCardName(skill),
         name: skill.name,

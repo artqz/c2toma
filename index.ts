@@ -14,6 +14,7 @@ import { loadShortNpcs } from "./import/shortNpcs";
 import { loadNpcSeaLevel } from "./import/npcSeaLevel";
 import { loadQuestsC2 } from "./import/quests";
 import { loadSkillCard } from "./import/с1/skillCard";
+import { Skill } from "./result/types";
 
 function init() {
   const AllSkills = loadSkills();
@@ -29,7 +30,12 @@ function init() {
   loadNpcSeaLevel({ npcs });
   const profs = loadProfs({ skills: AllSkills, items });
   const skills = getExistingSkills({
-    skills: new Map([...profSkills, ...npcSkills, ...setSkills]),
+    skills: new Map([
+      ...profSkills,
+      ...npcSkills,
+      ...setSkills,
+      ...fixSkills({ skills: AllSkills }),
+    ]),
   });
 
   const skillCards = loadSkillCard({ chronicle: "c2", skills });
@@ -92,3 +98,14 @@ function init() {
 }
 
 init();
+
+function fixSkills(deps: { skills: Map<string, Skill> }) {
+  const fixSkills = new Map<string, Skill>();
+  for (const idlvl of ["4275_1", "4275_2"]) {
+    const skill = deps.skills.get(idlvl);
+    if (skill) {
+      fixSkills.set(idlvl, skill);
+    }
+  }
+  return fixSkills;
+}

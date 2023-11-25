@@ -25,7 +25,6 @@ export function loadNpcs(deps: {
   npcs = loadC4Npcs({ ...deps, npcsToma: npcs });
   npcs = runames({ npcs });
   console.log("NPCs loaded.");
-
   return npcs;
 }
 

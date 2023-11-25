@@ -83,6 +83,7 @@ function loadTomaNpcs(deps: {
         skillList: getSkills({ ...deps, tomaSkills: npc.npcData.skillList }),
         multisell: [],
         spawns: [],
+        herbList: [],
       });
     }
   }

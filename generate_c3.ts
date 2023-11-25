@@ -12,6 +12,7 @@ import { loadSetsC3, setSkillsC3 } from "./import/c3/sets";
 import { loadAllSkillsC3 } from "./import/c3/skills";
 import { getSkillsClientC3 } from "./import/c3/skillsClient";
 import { loadItemAbilityListC3 } from "./import/c3/weaponAbilities";
+import { loadSkillCard } from "./import/с1/skillCard";
 import { createDir, saveFile } from "./utils/Fs";
 
 const VERSION = "c3";
@@ -37,7 +38,7 @@ function init() {
     ]),
   });
   const quests = loadQuestsC3({ items });
-
+  const skillCards = loadSkillCard({ chronicle: "c3", skills });
   createDir(`result/data/${VERSION}`);
 
   saveFile(
@@ -71,7 +72,7 @@ function init() {
   );
   saveFile(
     `result/data/${VERSION}/skills.json`,
-    JSON.stringify(Array.from(skills.values()), null, 2)
+    JSON.stringify(Array.from(skillCards.values()), null, 2)
   );
   saveFile(
     `result/data/${VERSION}/weaponAbilities.json`,

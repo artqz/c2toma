@@ -11,13 +11,14 @@ import { createDir, saveFile } from "./utils/Fs";
 import { loadItemSetList, setSkills } from "./import/items/itemSetList";
 import { getExistingSkills } from "./import/existingSkills";
 import { loadShortNpcs } from "./import/shortNpcs";
-import { loadNpcSeaLevel } from './import/npcSeaLevel';
-import { loadQuestsC2 } from './import/quests';
+import { loadNpcSeaLevel } from "./import/npcSeaLevel";
+import { loadQuestsC2 } from "./import/quests";
+import { loadSkillCard } from "./import/с1/skillCard";
 
 function init() {
   const AllSkills = loadSkills();
   const items = loadItems();
-  const quests = loadQuestsC2({items});
+  const quests = loadQuestsC2({ items });
   const itemAbilityList = loadItemAbilityList({ items });
   const itemSetList = loadItemSetList({ items, skills: AllSkills });
   const npcs = loadNpcs({ items, skills: AllSkills });
@@ -30,6 +31,8 @@ function init() {
   const skills = getExistingSkills({
     skills: new Map([...profSkills, ...npcSkills, ...setSkills]),
   });
+
+  const skillCards = loadSkillCard({ chronicle: "c2", skills });
 
   const ai = loadAi({ npcs, items });
 
@@ -67,7 +70,7 @@ function init() {
   // );
   saveFile(
     "result/data/c2/skills.json",
-    JSON.stringify(Array.from(skills.values()), null, 2)
+    JSON.stringify(Array.from(skillCards.values()), null, 2)
   );
   saveFile(
     "result/data/c2/multisell.json",

@@ -15,7 +15,7 @@ import { loadItemAbilityListC3 } from "./import/c3/weaponAbilities";
 import { loadSkillCard } from "./import/с1/skillCard";
 import { createDir, saveFile } from "./utils/Fs";
 
-const VERSION = "gf";
+const VERSION = "c3";
 function init() {
   const items = loadItemsC3();
   const itemAbilityList = loadItemAbilityListC3({ items });

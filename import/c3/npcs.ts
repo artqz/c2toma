@@ -98,7 +98,7 @@ function getSkills(deps: {
     const skill = deps.skills.get(s.skillId + "_" + s.skillLevel);
     if (skill) {
       npcSkillsC3.set(s.skillId + "_" + s.skillLevel, skill);
-      skillArr.push(skill.skillName);
+      skillArr.push(s.skillId + "_" + s.skillLevel);
     }
   });
   return skillArr;

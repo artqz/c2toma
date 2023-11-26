@@ -68,6 +68,7 @@ export type Skill = {
   desc: lstring;
   level: Int | null;
   operateType: string | null;
+  enchantType?: "power" | "cost" | "chance" | "recovery" | "time";
   effect: string;
   operateCond: string;
   effectTime: number | undefined;

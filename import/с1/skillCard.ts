@@ -3,6 +3,7 @@ import { Skill, lstring } from "../../result/types";
 import { saveFile } from "../../utils/Fs";
 
 const ECHANT_ONLY = new Set(["c4", "c5", "il", "gf"]);
+const SKILL_ENCHANT_TYPES = ["power", "cost", "chance", "recovery", "time"];
 
 export function loadSkillCard(deps: {
   chronicle: Chronicle;
@@ -80,26 +81,16 @@ function getLevels(skillId: number, skills: Map<string, Skill>) {
 }
 
 function getEnchanting(skillId: number, skills: Map<string, Skill>) {
-  const skillNyName = new Map(
-    Array.from(skills.values()).map((s) => [s.skillName, s])
-  );
-  const SKILL_ENCHANT_TYPES: (
-    | "power"
-    | "cost"
-    | "chance"
-    | "recovery"
-    | "time"
-  )[] = ["power", "cost", "chance", "recovery", "time"];
   const enchantList: Skill[] = [];
 
   for (const enchantType of SKILL_ENCHANT_TYPES) {
     for (const skill of Array.from(skills.values()).filter(
-      (s) => s.level != null && s.level >= 100
+      (s) => s.level != null && s.level >= 100 && s.id === skillId
     )) {
       if (skill.skillName.includes(`_${enchantType}_`)) {
         enchantList.push({
           ...skill,
-          enchantType: enchantType,
+          enchantType: enchantType as any,
         });
       }
     }

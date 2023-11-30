@@ -302,7 +302,7 @@ function watkC1(type: Crystal) {
 function watkC3(type: Crystal) {
   switch (type) {
     case "d":
-      return { oneHand: 3, twoHand: 2, bow: 4, magic: 2 };
+      return { oneHand: 2, twoHand: 2, bow: 4, magic: 2 };
     case "c":
       return { oneHand: 3, twoHand: 4, bow: 6, magic: 3 };
     case "b":

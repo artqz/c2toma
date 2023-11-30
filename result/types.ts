@@ -91,6 +91,7 @@ export type Item = {
   weaponType: string;
   armorType: string;
   etcitemType: string | null;
+  kind?: string;
   slotBitType: string;
   weight: Int | null;
   consumeType: string | null;

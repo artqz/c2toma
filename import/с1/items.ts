@@ -11,13 +11,13 @@ import { loadItemGrpGF } from "../../datapack/gf/itemgrp";
 import { loadItemDataC4 } from "../../datapack/c4/itemdata";
 import { loadItemGrpC4 } from "../../datapack/c4/itemgrp";
 import { loadItemNamesC4 } from "../../datapack/c4/itemnames";
-import { loadItemDataIL } from "../../datapack/il/itemdata";
 import { loadItemNamesIL } from "../../datapack/il/itemnames";
 import { loadItemGrpIL } from "../../datapack/il/itemgrp";
 import { ItemDataEntry } from "../../datapack/types";
 import { generateItemsIL } from "./il/items";
 import { generateItemsC5 } from "./c5/items";
 import { loadItemGrpC5 } from "../../datapack/c5/itemgrp";
+import { getTypeMaterials } from "./items/materials";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -25,6 +25,7 @@ export function loadItems(deps: { chronicle: Chronicle }) {
   items = loadItemGrps({ ...deps, itemData: items });
   items = loadItemRuNames({ ...deps, itemData: items });
   items = loadItemEnchantBonuses({ ...deps, itemData: items });
+  getTypeMaterials({ items });
   console.log(`Items loaded (${Array.from(items.values()).length}).`);
 
   return items;

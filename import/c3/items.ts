@@ -8,6 +8,7 @@ import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
 import { loadItemGrpC3 } from "../../datapack/c3/itemgrp";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemGrpC4 } from "../../datapack/c4/itemgrp";
+import { getTypeMaterials } from "../с1/items/materials";
 
 export function loadItemsC3() {
   let items: Map<number, Item>;
@@ -15,6 +16,7 @@ export function loadItemsC3() {
   items = loadC2Icons(items);
   items = loadItemEnchantBonuses({ itemData: items });
   items = loadItemRuNames({ itemData: items });
+  getTypeMaterials({ items });
   // items = adjustment({ itemData: items });
   console.log("Items loaded. " + Array.from(items.values()).length);
 

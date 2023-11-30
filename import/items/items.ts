@@ -6,6 +6,7 @@ import { loadItemNamesGF } from "../../datapack/gf/itemnames";
 import { Item, lstring } from "../../result/types";
 
 import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
+import { getTypeMaterials } from "../с1/items/materials";
 
 export function loadItems() {
   const itemnamesC2 = new Map(loadItemNamesC2().map((npc) => [npc.id, npc]));
@@ -14,6 +15,7 @@ export function loadItems() {
   items = loadC2Icons(items);
   items = loadItemEnchantBonuses({ itemData: items });
   items = adjustment({ itemData: items });
+  getTypeMaterials({ items });
   console.log("Items loaded.");
 
   return items;

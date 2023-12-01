@@ -11,10 +11,16 @@ export function loadProfsC3(deps: {
   const profs = loadProfDataC3();
 
   for (const prof of profs) {
+    let profName = prof.profName;
+    let parent = prof.parent;
+    if (profName === "assassin") profName = "assasin";
+    if (profName === "plains_walker") profName = "plain_walker";
+    if (parent === "assassin") parent = "assasin";
+    if (parent === "plains_walker") parent = "plain_walker";
     profMap.set(prof.id, {
       // id: prof.id,
-      profName: prof.profName === "assassin" ? "assasin" : prof.profName,
-      parent: prof.parent === "assassin" ? "assasin" : prof.profName,
+      profName,
+      parent,
       skills: getSkills({ ...deps, profSkills: prof.skills }),
     });
   }

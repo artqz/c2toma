@@ -12,6 +12,7 @@ import { loadSetsC3, setSkillsC3 } from "./import/c3/sets";
 import { loadAllSkillsC3 } from "./import/c3/skills";
 import { getSkillsClientC3 } from "./import/c3/skillsClient";
 import { loadItemAbilityListC3 } from "./import/c3/weaponAbilities";
+import { loadNpcBuffs } from "./import/с1/npcBuffs";
 import { loadSkillCard } from "./import/с1/skillCard";
 import { createDir, saveFile } from "./utils/Fs";
 
@@ -39,6 +40,7 @@ function init() {
   });
   const quests = loadQuestsC3({ items });
   const skillCards = loadSkillCard({ chronicle: "c3", skills });
+  loadNpcBuffs({ chronicle: "c3", npcs, skills });
   createDir(`result/data/${VERSION}`);
 
   saveFile(

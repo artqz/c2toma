@@ -14,10 +14,21 @@ export function loadProfs(deps: {
   const profs = loadProfData();
 
   for (const prof of profs) {
+    if (prof.id === 23) {
+      console.log(prof.profName, prof.parent);
+    }
+
+    let profName = prof.profName;
+    let parent = prof.parent;
+    if (profName === "assassin") profName = "assasin";
+    if (profName === "plains_walker") profName = "plain_walker";
+    if (parent === "assassin") parent = "assasin";
+    if (parent === "plains_walker") parent = "plain_walker";
+
     profMap.set(prof.id, {
       // id: prof.id,
-      profName: prof.profName === "assassin" ? "assasin" : prof.profName,
-      parent: prof.parent === "assassin" ? "assasin" : prof.profName,
+      profName,
+      parent,
       skills: getSkills({ ...deps, profSkills: prof.skills }),
     });
   }

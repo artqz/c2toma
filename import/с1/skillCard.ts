@@ -14,7 +14,9 @@ export function loadSkillCard(deps: {
     {
       id: number;
       cardName: string;
+      icon: string;
       name: lstring;
+      operateType: string | null;
       levels: Record<number, Skill>;
       enchanting: Skill[];
     }
@@ -25,7 +27,9 @@ export function loadSkillCard(deps: {
       cards.set(skill.id + "_" + skill.level, {
         id: skill.id,
         cardName: getCardName(skill),
+        icon: skill.icon,       
         name: getName(skill),
+         operateType: skill.operateType,  
         levels: getLevels(skill.id, deps.skills),
         enchanting: ECHANT_ONLY.has(deps.chronicle)
           ? getEnchanting(skill.id, deps.skills)

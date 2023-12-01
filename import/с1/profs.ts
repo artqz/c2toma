@@ -49,6 +49,12 @@ function loadSkillAcquireData(deps: {
   }
 
   const profMap = new Map<string, Prof>();
+  const skillsByName = new Map(
+    Array.from(deps.skills.values()).map((s) => [s.skillName, s])
+  );
+  const itemsByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
   const itemsILByName = new Map(loadItemDataIL().map((i) => [i.$[2], i.$[1]]));
 
   for (const prof of profData.filter((x) => !notClass.includes(x.t))) {
@@ -67,12 +73,16 @@ function loadSkillAcquireData(deps: {
       ? parentProf.skills.concat(
           getSkills({
             ...deps,
+            itemsByName,
+            skills: skillsByName,
             profSkills: prof.$,
             itemsILByName,
           })
         )
       : getSkills({
           ...deps,
+          itemsByName,
+          skills: skillsByName,
           profSkills: prof.$,
           itemsILByName,
         });
@@ -91,21 +101,16 @@ function getSkills(deps: {
   items: Map<number, Item>;
   skills: Map<string, Skill>;
   profSkills: ProfSkillAcquireC1;
+  itemsByName: Map<string, Item>;
   itemsILByName: Map<string | number, number>;
 }) {
   const skillMap = new Map<string, ProfSkill>();
-  const skillsByName = new Map(
-    Array.from(deps.skills.values()).map((s) => [s.skillName, s])
-  );
-  const itemsByName = new Map(
-    Array.from(deps.items.values()).map((i) => [i.itemName, i])
-  );
 
   for (const pSkill of deps.profSkills) {
     if (typeof pSkill !== "string") {
       const reqLvl = pSkill.get_lv;
 
-      const skill = skillsByName.get(pSkill.skill_name);
+      const skill = deps.skills.get(pSkill.skill_name);
       if (skill) {
         skillMap.set(skill.skillName, {
           skill: skill.id + "_" + skill.level,
@@ -115,7 +120,7 @@ function getSkills(deps: {
           hp: skill.hp_consume,
           mp: skill.mp_consume1 + skill.mp_consume2,
           isMagic: true,
-          itemNeeded: getItems({ ...deps, itemsNeeded: pSkill.item_needed, itemsByName }),
+          itemNeeded: getItems({ ...deps, itemsNeeded: pSkill.item_needed }),
           operateType: skill.operateType ?? "",
           range: skill.castRange,
         });
@@ -156,7 +161,7 @@ function getItems(deps: {
   itemsILByName: Map<string | number, number>;
 }) {
   const ret: { itemName: string; count: number }[] = [];
-  
+
   deps.itemsNeeded.$?.map((itemData: { $: [string, number] }) => {
     if (itemData) {
       const itemName = itemData.$[0];

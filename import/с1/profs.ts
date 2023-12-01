@@ -97,6 +97,9 @@ function getSkills(deps: {
   const skillsByName = new Map(
     Array.from(deps.skills.values()).map((s) => [s.skillName, s])
   );
+  const itemsByName = new Map(
+    Array.from(deps.items.values()).map((i) => [i.itemName, i])
+  );
 
   for (const pSkill of deps.profSkills) {
     if (typeof pSkill !== "string") {
@@ -112,7 +115,7 @@ function getSkills(deps: {
           hp: skill.hp_consume,
           mp: skill.mp_consume1 + skill.mp_consume2,
           isMagic: true,
-          itemNeeded: getItems({ ...deps, itemsNeeded: pSkill.item_needed }),
+          itemNeeded: getItems({ ...deps, itemsNeeded: pSkill.item_needed, itemsByName }),
           operateType: skill.operateType ?? "",
           range: skill.castRange,
         });
@@ -147,19 +150,18 @@ function skillsLevelFilter(deps: { profs: Map<string, Prof> }) {
 
 function getItems(deps: {
   chronicle: Chronicle;
-  itemsNeeded: { $?: { $: [string, number] }[] };
   items: Map<number, Item>;
+  itemsNeeded: { $?: { $: [string, number] }[] };
+  itemsByName: Map<string, Item>;
   itemsILByName: Map<string | number, number>;
 }) {
   const ret: { itemName: string; count: number }[] = [];
-  const itemsByName = new Map(
-    Array.from(deps.items.values()).map((i) => [i.itemName, i])
-  );
+  
   deps.itemsNeeded.$?.map((itemData: { $: [string, number] }) => {
     if (itemData) {
       const itemName = itemData.$[0];
       const itemCount = itemData.$[1];
-      const item = itemsByName.get(itemName.replace(":", "_"));
+      const item = deps.itemsByName.get(itemName.replace(":", "_"));
       if (item) {
         return ret.push({ itemName: item.itemName, count: itemCount });
       } else {

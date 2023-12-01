@@ -181,7 +181,7 @@ export type ShortItem = {
 };
 
 export type NpcBuff = {
-  skillName: string;
+  skill: string;
   minLevel: Int;
   maxLevel: Int;
   group: "fighter" | "mage";

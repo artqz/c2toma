@@ -88,4 +88,4 @@ export const PROFS: Record<number, string> = {
   116: "doomcryer",
   117: "fortune_seeker",
   118: "maestro",
-}
+};

@@ -4,7 +4,15 @@ import { saveFile } from "../../utils/Fs";
 
 const ECHANT_ONLY = new Set(["c4", "c5", "il", "gf"]);
 const SKILL_ENCHANT_TYPES = ["power", "cost", "chance", "recovery", "time"];
+const ENCHANT_CHANCE: Record<string,number[]> = {
+    "76": [82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0],
+    "77": [92,90,88,82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0],
+    "78": [97,95,93,92,90,88,82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0],
+    "79": [99,99,99,97,95,93,92,90,88,82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1,1,1,1],
+    "80": [100,100,100,99,99,99,97,95,93,92,90,88,82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1],
+}
 
+type Enchant = {type: string, level:number, chance:Record<number,number>, skill: Skill}
 export function loadSkillCard(deps: {
   chronicle: Chronicle;
   skills: Map<string, Skill>;
@@ -18,7 +26,7 @@ export function loadSkillCard(deps: {
       name: lstring;
       operateType: string | null;
       levels: Record<number, Skill>;
-      enchanting: Skill[];
+      enchanting: Enchant[];
     }
   >();
 
@@ -32,7 +40,7 @@ export function loadSkillCard(deps: {
          operateType: skill.operateType,  
         levels: getLevels(skill.id, deps.skills),
         enchanting: ECHANT_ONLY.has(deps.chronicle)
-          ? getEnchanting(skill.id, deps.skills)
+          ? getEnchanting(skill.id, deps.skills, deps.chronicle)
           : [],
       });
     }
@@ -84,17 +92,20 @@ function getLevels(skillId: number, skills: Map<string, Skill>) {
   return Object.values(map.get(skillId) ?? []);
 }
 
-function getEnchanting(skillId: number, skills: Map<string, Skill>) {
-  const enchantList: Skill[] = [];
+function getEnchanting(skillId: number, skills: Map<string, Skill>, chronicle: Chronicle) {
+  const enchantList: Enchant[] = []; 
 
   for (const enchantType of SKILL_ENCHANT_TYPES) {
     for (const skill of Array.from(skills.values()).filter(
       (s) => s.level != null && s.level >= 100 && s.id === skillId
     )) {
       if (skill.skillName.includes(`_${enchantType}_`)) {
+        const level = parseInt(skill.skillName.split("_").at(-1)!);
         enchantList.push({
-          ...skill,
-          enchantType: enchantType as any,
+          level: level,
+          chance: getEnchantChance(level, chronicle),
+          type: enchantType,
+          skill
         });
       }
     }
@@ -123,4 +134,23 @@ function getEnchanting(skillId: number, skills: Map<string, Skill>) {
   // return enchantById.get(skillId) ?? [];
 
   return enchantList;
+}
+
+function getEnchantChance(level: number, chronicle: Chronicle) {
+  const charLevels:number[] = []
+  switch (chronicle) {
+    case "c4":
+      charLevels.push(76,77,78);
+      break;
+    case "c5":
+    case "il":
+    case "gf":
+      charLevels.push(76,77,78,79,80); 
+      break;
+  }
+  const chance: Record<number,number> = {}
+  for (const cLevel of charLevels) {
+    chance[cLevel] = ENCHANT_CHANCE[cLevel][level-1]
+  }
+  return chance
 }

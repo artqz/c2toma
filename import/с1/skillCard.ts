@@ -100,9 +100,9 @@ function getEnchanting(skillId: number, skills: Map<string, Skill>, chronicle: C
       (s) => s.level != null && s.level >= 100 && s.id === skillId
     )) {
       if (skill.skillName.includes(`_${enchantType}_`)) {
-        const level = parseInt(skill.skillName.split("_").at(-1)!);
+        const level = getEnchantLevel(skill.level ?? 1, chronicle);
         enchantList.push({
-          level: level,
+          level,
           chance: getEnchantChance(level, chronicle),
           type: enchantType,
           skill
@@ -134,6 +134,15 @@ function getEnchanting(skillId: number, skills: Map<string, Skill>, chronicle: C
   // return enchantById.get(skillId) ?? [];
 
   return enchantList;
+}
+
+function getEnchantLevel(level: number, chronicle: Chronicle) {
+  if (chronicle === "gf") {
+    return level < 200 ? level - 100 : level < 300 ? level - 200 : level < 400 ? level - 300 : level < 500 ? level - 400 : level < 600 ? level - 500 : level < 700 ? level - 600 : level < 800 ? level - 700 : level - 800
+  } else {
+    return level < 140 ? level - 100 : level - 140
+  }
+  
 }
 
 function getEnchantChance(level: number, chronicle: Chronicle) {

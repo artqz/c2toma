@@ -4,15 +4,35 @@ import { saveFile } from "../../utils/Fs";
 
 const ECHANT_ONLY = new Set(["c4", "c5", "il", "gf"]);
 const SKILL_ENCHANT_TYPES = ["power", "cost", "chance", "recovery", "time"];
-const ENCHANT_CHANCE: Record<string,number[]> = {
-    "76": [82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0],
-    "77": [92,90,88,82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0],
-    "78": [97,95,93,92,90,88,82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0],
-    "79": [99,99,99,97,95,93,92,90,88,82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1,1,1,1],
-    "80": [100,100,100,99,99,99,97,95,93,92,90,88,82,80,78,40,30,20,14,10,6,2,2,2,1,1,1,1,1,1],
-}
+const ENCHANT_CHANCE: Record<string, number[]> = {
+  "76": [
+    82, 80, 78, 40, 30, 20, 14, 10, 6, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    0, 0, 0, 0, 0, 0, 0,
+  ],
+  "77": [
+    92, 90, 88, 82, 80, 78, 40, 30, 20, 14, 10, 6, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 0, 0, 0, 0,
+  ],
+  "78": [
+    97, 95, 93, 92, 90, 88, 82, 80, 78, 40, 30, 20, 14, 10, 6, 2, 2, 2, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 1, 1, 0,
+  ],
+  "79": [
+    99, 99, 99, 97, 95, 93, 92, 90, 88, 82, 80, 78, 40, 30, 20, 14, 10, 6, 2, 2,
+    2, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+  ],
+  "80": [
+    100, 100, 100, 99, 99, 99, 97, 95, 93, 92, 90, 88, 82, 80, 78, 40, 30, 20,
+    14, 10, 6, 2, 2, 2, 1, 1, 1, 1, 1, 1,
+  ],
+};
 
-type Enchant = {type: string, level:number, chance:Record<number,number>, skill: Skill}
+type Enchant = {
+  type: string;
+  level: number;
+  chance: number[][];
+  skill: Skill;
+};
 export function loadSkillCard(deps: {
   chronicle: Chronicle;
   skills: Map<string, Skill>;
@@ -35,9 +55,9 @@ export function loadSkillCard(deps: {
       cards.set(skill.id + "_" + skill.level, {
         id: skill.id,
         cardName: getCardName(skill),
-        icon: skill.icon,       
+        icon: skill.icon,
         name: getName(skill),
-         operateType: skill.operateType,  
+        operateType: skill.operateType,
         levels: getLevels(skill.id, deps.skills),
         enchanting: ECHANT_ONLY.has(deps.chronicle)
           ? getEnchanting(skill.id, deps.skills, deps.chronicle)
@@ -92,8 +112,12 @@ function getLevels(skillId: number, skills: Map<string, Skill>) {
   return Object.values(map.get(skillId) ?? []);
 }
 
-function getEnchanting(skillId: number, skills: Map<string, Skill>, chronicle: Chronicle) {
-  const enchantList: Enchant[] = []; 
+function getEnchanting(
+  skillId: number,
+  skills: Map<string, Skill>,
+  chronicle: Chronicle
+) {
+  const enchantList: Enchant[] = [];
 
   for (const enchantType of SKILL_ENCHANT_TYPES) {
     for (const skill of Array.from(skills.values()).filter(
@@ -105,7 +129,7 @@ function getEnchanting(skillId: number, skills: Map<string, Skill>, chronicle: C
           level,
           chance: getEnchantChance(level, chronicle),
           type: enchantType,
-          skill
+          skill,
         });
       }
     }
@@ -138,28 +162,41 @@ function getEnchanting(skillId: number, skills: Map<string, Skill>, chronicle: C
 
 function getEnchantLevel(level: number, chronicle: Chronicle) {
   if (chronicle === "gf") {
-    return level < 200 ? level - 100 : level < 300 ? level - 200 : level < 400 ? level - 300 : level < 500 ? level - 400 : level < 600 ? level - 500 : level < 700 ? level - 600 : level < 800 ? level - 700 : level - 800
+    return level < 200
+      ? level - 100
+      : level < 300
+      ? level - 200
+      : level < 400
+      ? level - 300
+      : level < 500
+      ? level - 400
+      : level < 600
+      ? level - 500
+      : level < 700
+      ? level - 600
+      : level < 800
+      ? level - 700
+      : level - 800;
   } else {
-    return level < 140 ? level - 100 : level - 140
+    return level < 140 ? level - 100 : level - 140;
   }
-  
 }
 
 function getEnchantChance(level: number, chronicle: Chronicle) {
-  const charLevels:number[] = []
+  const charLevels: number[] = [];
   switch (chronicle) {
     case "c4":
-      charLevels.push(76,77,78);
+      charLevels.push(76, 77, 78);
       break;
     case "c5":
     case "il":
     case "gf":
-      charLevels.push(76,77,78,79,80); 
+      charLevels.push(76, 77, 78, 79, 80);
       break;
   }
-  const chance: Record<number,number> = {}
+  const chance: number[][] = [];
   for (const cLevel of charLevels) {
-    chance[cLevel] = ENCHANT_CHANCE[cLevel][level-1]
+    chance.push([cLevel, ENCHANT_CHANCE[cLevel][level - 1]]);
   }
-  return chance
+  return chance;
 }

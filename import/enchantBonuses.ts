@@ -360,12 +360,12 @@ export function calcChance(deps: { level: number; item: Item }): number {
       if (level === -1) {
         level = 0;
       }
-      let g_armorEnchantFailureChances = armorEnchantFailureChances;
+
       if (deps.item.slotBitType === "onepiece") {
-        g_armorEnchantFailureChances.unshift(0.0);
+        chance = 100 - fullarmorEnchantFailureChances[level] * 100;
+      } else {
+        chance = 100 - armorEnchantFailureChances[level] * 100;
       }
-      console.log(g_armorEnchantFailureChances.length);
-      chance = 100 - g_armorEnchantFailureChances[level] * 100;
     }
 
     if (level >= 15) {
@@ -376,6 +376,30 @@ export function calcChance(deps: { level: number; item: Item }): number {
 }
 
 const armorEnchantFailureChances = [
+  0.0, // 0
+  0.0, // 1
+  0.0, // 2
+  0.333333, // 3
+  0.666667, // 4
+  0.75, // 5
+  0.8, // 6
+  0.833333, // 7
+  0.857143, // 8
+  0.875, // 9
+  0.888889, // 10
+  0.9, // 11
+  0.909091, // 12
+  0.916667, // 13
+  0.923077, // 14
+  0.928571, // 15
+  0.933333, // 16
+  0.9375, // 17
+  0.941176, // 18
+  0.944444, // 19
+];
+
+const fullarmorEnchantFailureChances = [
+  0.0, // fix
   0.0, // 0
   0.0, // 1
   0.0, // 2

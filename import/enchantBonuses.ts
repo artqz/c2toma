@@ -335,7 +335,7 @@ function watkGF(type: Crystal) {
 }
 
 export function calcChance(deps: { level: number; item: Item }): number {
-  const level = deps.level - 1;
+  let level = deps.level - 1;
   let chance = 100;
   if (deps.item.weaponType !== "none") {
     if (deps.item.crystalType !== "d" && deps.item.magicWeapon) {
@@ -351,14 +351,23 @@ export function calcChance(deps: { level: number; item: Item }): number {
     }
     chance;
   } else {
-    if (level < (deps.item.slotBitType !== "onepiece" ? 3 : 4)) {
+    if (level < 3) {
       chance = 100;
     }
     if (level >= 20) {
       chance = 0;
     } else {
-      chance = 100 - armorEnchantFailureChances[level] * 100;
+      if (level === -1) {
+        level = 0;
+      }
+      let g_armorEnchantFailureChances = armorEnchantFailureChances;
+      if (deps.item.slotBitType === "onepiece") {
+        g_armorEnchantFailureChances.unshift(0.0);
+      }
+      console.log(g_armorEnchantFailureChances.length);
+      chance = 100 - g_armorEnchantFailureChances[level] * 100;
     }
+
     if (level >= 15) {
       chance *= 0.5;
     }

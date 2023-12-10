@@ -146,6 +146,7 @@ export type EnchantBonus = {
   pDef: number;
   mDef: number;
   crystals: number[];
+  chance: number;
 };
 
 export type Merchant = {

@@ -4,7 +4,12 @@ import { loadItemDataC4 } from "../../datapack/c4/itemdata";
 import { loadItemNamesGF } from "../../datapack/gf/itemnames";
 import { Item } from "../../result/types";
 
-import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
+import {
+  calcArmorDef,
+  calcChance,
+  calcWeaponAtk,
+  calcСrystals,
+} from "../enchantBonuses";
 import { loadItemGrpC3 } from "../../datapack/c3/itemgrp";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemGrpC4 } from "../../datapack/c4/itemgrp";
@@ -179,7 +184,7 @@ function loadItemRuNames(deps: { itemData: Map<number, Item> }) {
 
 function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
   for (const item of deps.itemData.values()) {
-    for (let i = 0; i <= 19; i++) {
+    for (let i = 0; i <= 20; i++) {
       if (
         (item.crystalType !== "none" && item.type === "weapon") ||
         (item.crystalType !== "none" && item.type === "armor") ||
@@ -192,6 +197,7 @@ function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
           pDef: calcArmorDef({ level: i, item }).pDef,
           mDef: calcArmorDef({ level: i, item }).mDef,
           crystals: calcСrystals({ level: i, item }),
+          chance: calcChance({ level: i, item }),
         });
       }
     }

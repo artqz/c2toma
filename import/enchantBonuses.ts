@@ -1,3 +1,4 @@
+import { round } from "lodash";
 import { Crystal, Item } from "../result/types";
 import { Chronicle } from "./types";
 
@@ -332,3 +333,58 @@ function watkGF(type: Crystal) {
       return { oneHand: 1, twoHand: 1, bow: 1, magic: 1 };
   }
 }
+
+export function calcChance(deps: { level: number; item: Item }): number {
+  const level = deps.level - 1;
+  let chance = 100;
+  if (deps.item.weaponType !== "none") {
+    if (deps.item.crystalType !== "d" && deps.item.magicWeapon) {
+      chance -= 60;
+    } else {
+      chance -= 30;
+    }
+    if (level < 3) {
+      chance = 100;
+    }
+    if (level >= 15) {
+      chance *= 0.5;
+    }
+    chance;
+  } else {
+    if (level < (deps.item.slotBitType !== "onepiece" ? 3 : 4)) {
+      chance = 100;
+    }
+    if (level >= 20) {
+      chance = 0;
+    } else {
+      chance = 100 - armorEnchantFailureChances[level] * 100;
+    }
+    if (level >= 15) {
+      chance *= 0.5;
+    }
+  }
+  return round(chance, 2);
+}
+
+const armorEnchantFailureChances = [
+  0.0, // 0
+  0.0, // 1
+  0.0, // 2
+  0.333333, // 3
+  0.666667, // 4
+  0.75, // 5
+  0.8, // 6
+  0.833333, // 7
+  0.857143, // 8
+  0.875, // 9
+  0.888889, // 10
+  0.9, // 11
+  0.909091, // 12
+  0.916667, // 13
+  0.923077, // 14
+  0.928571, // 15
+  0.933333, // 16
+  0.9375, // 17
+  0.941176, // 18
+  0.944444, // 19
+];

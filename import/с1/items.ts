@@ -5,7 +5,12 @@ import { loadItemNamesC1 } from "../../datapack/c1/itemnames";
 import { loadItemGrpC1 } from "../../datapack/c1/itemgrp";
 import { loadItemNamesGF } from "../../datapack/gf/itemnames";
 import { Chronicle } from "../types";
-import { calcArmorDef, calcWeaponAtk, calcСrystals } from "../enchantBonuses";
+import {
+  calcArmorDef,
+  calcChance,
+  calcWeaponAtk,
+  calcСrystals,
+} from "../enchantBonuses";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemGrpGF } from "../../datapack/gf/itemgrp";
 import { loadItemDataC4 } from "../../datapack/c4/itemdata";
@@ -211,7 +216,7 @@ function loadItemEnchantBonuses(deps: {
 }) {
   // пока только ц1 -ц2
   for (const item of deps.itemData.values()) {
-    for (let i = 0; i <= 19; i++) {
+    for (let i = 0; i <= 20; i++) {
       if (
         (item.crystalType !== "none" && item.type === "weapon") ||
         (item.crystalType !== "none" && item.type === "armor") ||
@@ -226,6 +231,7 @@ function loadItemEnchantBonuses(deps: {
           pDef: calcArmorDef({ level: i, item }).pDef,
           mDef: calcArmorDef({ level: i, item }).mDef,
           crystals: calcСrystals({ level: i, item }),
+          chance: calcChance({ level: i, item }),
         });
       }
     }

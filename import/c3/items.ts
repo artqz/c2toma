@@ -184,7 +184,7 @@ function loadItemRuNames(deps: { itemData: Map<number, Item> }) {
 
 function loadItemEnchantBonuses(deps: { itemData: Map<number, Item> }) {
   for (const item of deps.itemData.values()) {
-    for (let i = 0; i <= 20; i++) {
+    for (let i = 1; i <= 20; i++) {
       if (
         (item.crystalType !== "none" && item.type === "weapon") ||
         (item.crystalType !== "none" && item.type === "armor") ||

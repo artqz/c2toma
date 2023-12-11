@@ -334,7 +334,7 @@ function watkGF(type: Crystal) {
   }
 }
 
-export function calcChance(deps: { level: number; item: Item }): number {
+export function calcChance(deps: { level: number; item: Item, chronicle: Chronicle, }): number {
   let level = deps.level - 1;
   let chance = 100;
   if (deps.item.weaponType !== "none") {
@@ -361,7 +361,7 @@ export function calcChance(deps: { level: number; item: Item }): number {
         level = 0;
       }
 
-      if (deps.item.slotBitType === "onepiece") {
+      if (deps.chronicle !== "c1" && deps.item.slotBitType === "onepiece") {
         chance = 100 - fullarmorEnchantFailureChances[level] * 100;
       } else {
         chance = 100 - armorEnchantFailureChances[level] * 100;

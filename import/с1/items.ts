@@ -231,7 +231,7 @@ function loadItemEnchantBonuses(deps: {
           pDef: calcArmorDef({ level: i, item }).pDef,
           mDef: calcArmorDef({ level: i, item }).mDef,
           crystals: calcСrystals({ level: i, item }),
-          chance: calcChance({ level: i, item }),
+          chance: calcChance({ level: i, item, chronicle: deps.chronicle}),
         });
       }
     }

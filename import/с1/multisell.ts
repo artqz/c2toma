@@ -158,6 +158,27 @@ function getNpcNamesByMultisell(multisellName: string) {
       return [{ npcName: "warehouse_keeper_sorint", show: true }];
     case "0351_head_blacksmith_vergara":
       return [{ npcName: "head_blacksmith_roman", show: true }];
+    case "0426_get_fishing_shot":
+      return [
+        { npcName: "fisher_klufe", show: true },
+        { npcName: "fisher_perelin", show: true },
+        { npcName: "fisher_mishini", show: true },
+        { npcName: "fisher_ogord", show: true },
+        { npcName: "fisher_ropfi", show: true },
+        { npcName: "fisher_bleaker", show: true },
+        { npcName: "fisher_pamfus", show: true },
+        { npcName: "fisher_cyano", show: true },
+        { npcName: "fisher_lanosco", show: true },
+        { npcName: "fisher_ofulle", show: true },
+        { npcName: "fisher_monakan", show: true },
+        { npcName: "fisher_willeri", show: true },
+        { npcName: "fisher_litulon", show: true },
+        { npcName: "fisher_berix", show: true },
+        { npcName: "fisher_linneaus", show: true },
+        { npcName: "fisher_hilgendorf", show: true },
+        { npcName: "fisher_klaw", show: true },
+        { npcName: "fisher_platis", show: true }
+    ];
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];

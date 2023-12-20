@@ -202,6 +202,7 @@ function loadItemRuNames(deps: {
         itemData.set(item.id, {
           ...item,
           name: { ...item.name, ru: itemName.name.ru },
+          desc: {...item.name, ru: itemName.desc.en }
         });
       }
     }

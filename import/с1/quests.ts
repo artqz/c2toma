@@ -68,20 +68,27 @@ function loadQuestsC4(deps: { items: Map<number, Item> }) {
   });
 
   const quests: Quest[] = [];
+
+  const questRuById = new Map(
+    loadQuestNamesGF().map((q) => [q.id + "_" + q.progId, q])
+  );
+
   for (const progs of Array.from(map.values()) as QuestNameEntryC4[][]) {
     const questProgs: QusetProg[] = [];
     for (const quest of progs) {
+      const questRu = questRuById.get(quest.id + "_" + quest.progId);
       questProgs.push({
         id: quest.progId,
-        name: { en: quest.progName, ru: quest.progName },
-        desc: { en: quest.desc, ru: quest.desc },
+        name: { en: quest.progName, ru: questRu?.progName.ru ?? quest.progName },
+        desc: { en: quest.desc, ru: questRu?.desc.ru ?? quest.desc },
         items: getItems({ ...deps, tabs1: quest.tabs1, tabs2: quest.tabs2 }),
       });
     }
+    const questRu = questRuById.get(progs[0].id + "_" + progs[0].progId);
     quests.push({
       id: progs[0].id,
-      name: { en: progs[0].name, ru: progs[0].name },
-      desc: { en: progs[0].short_desc, ru: progs[0].short_desc },
+      name: { en: progs[0].name, ru: questRu?.progName.ru ?? progs[0].name },
+      desc: { en: progs[0].short_desc, ru: questRu?.desc.ru ?? progs[0].short_desc },
       progs: questProgs,
     });
   }

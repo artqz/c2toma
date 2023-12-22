@@ -87,7 +87,7 @@ function loadQuestsC4(deps: { items: Map<number, Item> }) {
     const questRu = questRuById.get(progs[0].id + "_" + progs[0].progId);
     quests.push({
       id: progs[0].id,
-      name: { en: progs[0].name, ru: questRu?.progName.ru ?? progs[0].name },
+      name: { en: progs[0].name, ru: questRu?.name.ru ?? progs[0].name },
       desc: { en: progs[0].short_desc, ru: questRu?.desc.ru ?? progs[0].short_desc },
       progs: questProgs,
     });
@@ -119,7 +119,7 @@ function loadQuestsC5(deps: { items: Map<number, Item> }) {
       const questRu = questRuById.get(quest.id + "_" + quest.progId);
       questProgs.push({
         id: quest.progId,
-        name: { ...quest.progName, ru: questRu?.name.ru ?? quest.name.en },
+        name: { ...quest.progName, ru: questRu?.progName.ru ?? quest.progName.en },
         desc: { ...quest.desc, ru: questRu?.desc.ru ?? quest.desc.en },
         items: getItems({ ...deps, tabs1: quest.tabs1, tabs2: quest.tabs2 }),
       });
@@ -162,7 +162,7 @@ function loadQuestsIL(deps: { items: Map<number, Item> }) {
       const questRu = questRuById.get(quest.id + "_" + quest.progId);
       questProgs.push({
         id: quest.progId,
-        name: { ...quest.progName, ru: questRu?.name.ru ?? quest.name.en },
+        name: { ...quest.progName, ru: questRu?.progName.ru ?? quest.progName.en },
         desc: { ...quest.desc, ru: questRu?.desc.ru ?? quest.desc.en },
         items: getItems({ ...deps, tabs1: quest.tabs1, tabs2: quest.tabs2 }),
       });

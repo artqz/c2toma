@@ -18,6 +18,24 @@ export type SkillNameEntry = {
   desc: lstring;
 };
 
+export const ZoneNameEntry = z.object({
+  // x_world_grid: z.string(),
+  // y_world_grid: z.string(),
+  // top_z: z.string(),
+  // bottom_z: z.string(),
+  zone_name: z.string(),
+  "coords?[0]": z.string(),
+  "coords?[1]": z.string(),
+  "coords?[2]": z.string(),
+  "coords?[3]": z.string(),
+  "coords?[4]": z.string(),
+  "coords?[5]": z.string(),
+  // unk01: z.string(),
+  map: z.string().optional(),
+});
+
+export type ZoneNameEntry = z.infer<typeof ZoneNameEntry>;
+
 const ItemDataEntry = z.object({
   // $: z.union([
   //   z.tuple([z.string(), z.number(), z.string()]),
@@ -149,12 +167,12 @@ const NpcDataEntry = z.object({
   org_mp: z.number(),
   physical_avoid_modify: z.number(),
   physical_hit_modify: z.number(),
-  "str": z.number(),
-    "int": z.number(),
-    "dex": z.number(),
-    "wit": z.number(),
-    "con": z.number(),
-    "men": z.number(),
+  str: z.number(),
+  int: z.number(),
+  dex: z.number(),
+  wit: z.number(),
+  con: z.number(),
+  men: z.number(),
   race: z.enum([
     "animal",
     "beast",
@@ -195,7 +213,6 @@ export type NpcGrpEntry = {
   skillList: string[];
 };
 
-
 const RecipeEntry = z.object({
   $: z.tuple([z.string(), z.number()]),
   t: z.enum(["recipe"]),
@@ -222,7 +239,6 @@ const RecipeEntry = z.object({
 });
 
 export type RecipeEntry = z.infer<typeof RecipeEntry>;
-
 
 const SkillEffect = z.object({
   $: z
@@ -304,7 +320,7 @@ const SkillOperateCond = z
   })
   .optional();
 const SkillEntry = z.object({
-skill_name: z.string(),
+  skill_name: z.string(),
   skill_id: z.number(),
   level: z.number(),
   operate_type: z.string(),
@@ -317,7 +333,7 @@ skill_name: z.string(),
   mp_consume1: z.number().optional(),
   mp_consume2: z.number().optional(),
   cast_range: z.number().optional(),
-})
+});
 
 export type SkillEntry = z.infer<typeof SkillEntry>;
 
@@ -397,12 +413,11 @@ const NpcPosEntry = z.discriminatedUnion("t", [
 
 export type NpcPosEntry = z.infer<typeof NpcPosEntry>;
 
-
 export const NpcBuffsEntry = z.object({
   skill: z.string(),
   minLvl: z.number(),
   maxLvl: z.number(),
-  group: z.enum(["fighter", "mage"])
+  group: z.enum(["fighter", "mage"]),
 });
 
 export type NpcBuffsEntry = z.infer<typeof NpcBuffsEntry>;

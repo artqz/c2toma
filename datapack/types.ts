@@ -19,6 +19,7 @@ export type SkillNameEntry = {
 };
 
 export const ZoneNameEntry = z.object({
+  nbr: z.string(),
   // x_world_grid: z.string(),
   // y_world_grid: z.string(),
   // top_z: z.string(),

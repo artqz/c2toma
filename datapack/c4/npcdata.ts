@@ -19,12 +19,12 @@ const NpcEntryC4 = z.object({
   org_mp: z.number(),
   physical_avoid_modify: z.number(),
   physical_hit_modify: z.number(),
-  "str": z.number(),
-    "int": z.number(),
-    "dex": z.number(),
-    "wit": z.number(),
-    "con": z.number(),
-    "men": z.number(),
+  str: z.number(),
+  int: z.number(),
+  dex: z.number(),
+  wit: z.number(),
+  con: z.number(),
+  men: z.number(),
   race: z.enum([
     "animal",
     "beast",
@@ -55,7 +55,9 @@ const NpcEntryC4 = z.object({
   agro_range: z.number(),
   additional_make_multi_list: z.unknown(),
   corpse_make_list: z.unknown(),
-  npc_ai: z.object({ $: z.tuple([z.string()]).rest(z.unknown()) }),
+  npc_ai: z.object({
+    $: z.tuple([z.string()]).rest(z.unknown()),
+  }),
 });
 
 export type NpcEntryC4 = z.infer<typeof NpcEntryC4>;

@@ -16,14 +16,14 @@ import { loadNpcBuffs } from "./import/с1/npcBuffs";
 import { loadSkillCard } from "./import/с1/skillCard";
 import { loadZones } from "./import/с1/zones";
 
-const chronicle: Chronicle = "c5";
+const chronicle: Chronicle = "c4";
 function init() {
-  createDir(`result/data/${chronicle}`);
-  const zones = loadZones({ chronicle });
-  saveFile(
-    `result/data/${chronicle}/zones.json`,
-    JSON.stringify(zones, null, 2)
-  );
+  // createDir(`result/data/${chronicle}`);
+  // const zones = loadZones({ chronicle });
+  // saveFile(
+  //   `result/data/${chronicle}/zones.json`,
+  //   JSON.stringify(zones, null, 2)
+  // );
   const skills = loadSkills({ chronicle });
   const skillCard = loadSkillCard({ chronicle, skills });
   saveFile(

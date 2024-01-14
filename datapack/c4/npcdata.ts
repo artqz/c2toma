@@ -25,6 +25,8 @@ const NpcEntryC4 = z.object({
   wit: z.number(),
   con: z.number(),
   men: z.number(),
+  ground_high: z.object({ $: z.tuple([z.number()]).rest(z.number()) }),
+  ground_low: z.object({ $: z.tuple([z.number()]).rest(z.number()) }),
   race: z.enum([
     "animal",
     "beast",

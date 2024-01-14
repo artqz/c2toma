@@ -1,7 +1,7 @@
 import Fs from "fs";
 import { z } from "zod";
 
-const NpcSkillsEntryC1 = z.object({ $: z.optional(z.string().array()) })
+const NpcSkillsEntryC1 = z.object({ $: z.optional(z.string().array()) });
 
 const NpcEntryC1 = z.object({
   $: z.tuple([z.string(), z.number(), z.string()]),
@@ -15,17 +15,19 @@ const NpcEntryC1 = z.object({
   base_magic_attack: z.number(),
   base_magic_defend: z.number(),
   base_physical_attack: z.number(),
+  ground_high: z.object({ $: z.tuple([z.number()]).rest(z.number()) }),
+  ground_low: z.object({ $: z.tuple([z.number()]).rest(z.number()) }),
   acquire_exp_rate: z.number(),
   acquire_sp: z.number(),
   org_hp: z.number(),
   org_mp: z.number(),
   physical_avoid_modify: z.number(),
-  "str": z.number(),
-    "int": z.number(),
-    "dex": z.number(),
-    "wit": z.number(),
-    "con": z.number(),
-    "men": z.number(),
+  str: z.number(),
+  int: z.number(),
+  dex: z.number(),
+  wit: z.number(),
+  con: z.number(),
+  men: z.number(),
   physical_hit_modify: z.number(),
   race: z.enum([
     "animal",

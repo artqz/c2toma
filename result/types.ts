@@ -25,6 +25,12 @@ export type Npc = {
   level: Int | null;
   exp: Float | null;
   sp: Float | null;
+  str: Int;
+  int: Int;
+  dex: Int;
+  wit: Int;
+  con: Int;
+  men: Int;
   orgHp: Float | null;
   orgMp: Float | null;
   orgHpRegen: Float | null;
@@ -39,6 +45,7 @@ export type Npc = {
   baseAttackSpeed: Int | null;
   baseReuseDelay: Int | null;
   baseCritical: Int | null;
+  baseMovingSpeed: Int[];
   magicUseSpeedModify: Float | null;
   race: string;
   classes: string[];

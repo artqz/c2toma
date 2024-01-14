@@ -65,6 +65,7 @@ function loadTomaNpcs(deps: {
         baseMagicDefend: npc.npcData.baseMagicDefend,
         basePhysicalAttack: npc.npcData.basePhysicalAttack,
         baseReuseDelay: 0, // нет данных у томы
+        baseMovingSpeed: [0, 0],
         exp: npc.npcData.acquireExpRate,
         sp: npc.npcData.acquireSp,
         magicUseSpeedModify: 0, // нет данных у томы
@@ -74,6 +75,12 @@ function loadTomaNpcs(deps: {
         orgMpRegen: 0, // нет данных у томы
         physicalAvoidModify: npc.npcData.physicalAvoidModify,
         physicalHitModify: npc.npcData.physicalHitModify,
+        con: 0,
+        dex: 0,
+        int: 0,
+        men: 0,
+        str: 0,
+        wit: 0,
         type: npc.npcData.npcType.toString(), // необходимо перевести в другой вид, либо взять в другом сервере
         race: "", // нет данных у томы, берем из скилов, которых нет берем из ц4
         classes: [],
@@ -129,6 +136,13 @@ function loadC4Npcs(deps: {
             type: npcC1.$[0],
             race: getRace(npc.skillList, npcC1.race),
             ai: npcC1.npc_ai.$[0],
+            con: npcC1.con,
+            dex: npcC1.dex,
+            int: npcC1.int,
+            men: npcC1.men,
+            str: npcC1.str,
+            wit: npcC1.wit,
+            baseMovingSpeed: [npcC1.ground_low.$[0], npcC1.ground_high.$[0]],
             // skillList: npcById
             //   ? npcById.skill_list.$!.map((x) => {
             //       const skillName = x.replace("@", "");
@@ -149,6 +163,16 @@ function loadC4Npcs(deps: {
             type: npcById.$[0],
             race: getRace(npc.skillList, npcById.race),
             ai: npcById.npc_ai.$[0],
+            con: npcById.con,
+            dex: npcById.dex,
+            int: npcById.int,
+            men: npcById.men,
+            str: npcById.str,
+            wit: npcById.wit,
+            baseMovingSpeed: [
+              npcById.ground_low.$[0],
+              npcById.ground_high.$[0],
+            ],
             // skillList: npcById
             //   ? npcById.skill_list.$!.map((x) => {
             //       const skillName = x.replace("@", "");

@@ -162,6 +162,8 @@ const NpcDataEntry = z.object({
   base_magic_attack: z.number(),
   base_magic_defend: z.number(),
   base_physical_attack: z.number(),
+  ground_high: z.object({ $: z.tuple([z.number()]).rest(z.number()) }),
+  ground_low: z.object({ $: z.tuple([z.number()]).rest(z.number()) }),
   acquire_exp_rate: z.number(),
   acquire_sp: z.number(),
   org_hp: z.number(),

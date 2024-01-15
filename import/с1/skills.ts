@@ -14,6 +14,7 @@ import { loadSkillNamesIL } from "../../datapack/il/skillnames";
 import { Skill } from "../../result/types";
 import { Chronicle } from "../types";
 import { generateSkillDataC5 } from "./c5/skills";
+import { getEffects } from './skillEffects';
 
 export function loadSkills(deps: { chronicle: Chronicle }) {
   let skills = loadItemData(deps);
@@ -50,6 +51,10 @@ function loadItemData(deps: { chronicle: Chronicle }) {
   const skills = new Map<string, Skill>();
 
   for (const skill of skillData) {
+    if (skill.skill_id === 4084 && skill.level === 4) {
+      
+      getEffects(skill.effect.$)
+    }
     skills.set(skill.skill_id + "_" + skill.level, {
       id: skill.skill_id,
       skillName: skill.skill_name.toString().replace(/:|\s/g, "_"),

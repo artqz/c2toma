@@ -13,6 +13,7 @@ const NpcEntryC4 = z.object({
   base_magic_attack: z.number(),
   base_magic_defend: z.number(),
   base_physical_attack: z.number(),
+  base_attack_type: z.string(),
   acquire_exp_rate: z.number(),
   acquire_sp: z.number(),
   org_hp: z.number(),
@@ -59,7 +60,7 @@ const NpcEntryC4 = z.object({
   corpse_make_list: z.unknown(),
   npc_ai: z.object({
     $: z.tuple([z.string()]).rest(z.unknown()),
-  }),
+  }),  
 });
 
 export type NpcEntryC4 = z.infer<typeof NpcEntryC4>;

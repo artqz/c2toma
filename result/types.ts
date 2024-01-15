@@ -46,6 +46,15 @@ export type Npc = {
   baseReuseDelay: Int | null;
   baseCritical: Int | null;
   baseMovingSpeed: Int[];
+  pAtk?: Int;
+  pDef?: Int;
+  mAtk?: Int;
+  mDef?: Int;
+  pSpd?: Int;
+  mSpd?: Int;
+  pCritical?: Int;
+  accuracy?: Int;
+  evasion?: Int;
   magicUseSpeedModify: Float | null;
   race: string;
   classes: string[];

@@ -12,14 +12,19 @@ import { Item, Npc, NpcDrop, Skill } from "../../result/types";
 import { Chronicle } from "../types";
 import { generateNpcsC5 } from "./c5/npcs";
 import {
+  calcAccuracy,
+  calcEvasion,
   calcHP,
   calcHPRegen,
   calcMATK,
   calcMDEF,
   calcMP,
   calcMPRegen,
-  calcPATK,
+  calcMSpd,
+  calcPAtk,
+  calcPCritical,
   calcPDEF,
+  calcPSpd,
 } from "./func";
 import { generateNpcsIL } from "./il/npcs";
 
@@ -76,6 +81,10 @@ function addNpcs(deps: {
       continue;
     }
 
+    if (npc.$[2] === "") {
+      
+    }
+
     npcs.set(npc.$[1], {
       id: npc.$[1],
       npcName: npc.$[2],
@@ -87,14 +96,23 @@ function addNpcs(deps: {
       agroRange: npc.agro_range,
       baseAttackSpeed: npc.base_attack_speed,
       baseCritical: npc.base_critical,
-      baseDefend: calcPDEF(npc.base_defend, npc.level),
-      baseMagicAttack: calcMATK(npc.base_magic_attack, npc.int, npc.level),
-      baseMagicDefend: calcMDEF(npc.base_magic_defend, npc.men, npc.level),
-      basePhysicalAttack: calcPATK(
+      baseDefend: npc.base_defend, 
+      baseMagicAttack: npc.base_magic_attack, 
+      baseMagicDefend: npc.base_magic_defend,
+      basePhysicalAttack: npc.base_physical_attack,
+      pAtk: calcPAtk(
         npc.base_physical_attack,
         npc.str,
         npc.level
       ),
+      pDef: calcPDEF(npc.base_defend, npc.level),
+      mAtk: calcMATK(npc.base_magic_attack, npc.int, npc.level),
+      mDef: calcMDEF(npc.base_magic_defend, npc.men, npc.level),
+      pSpd: calcPSpd(npc.base_attack_speed, npc.dex),
+      mSpd: calcMSpd(npc.wit, npc.level),
+      pCritical: calcPCritical(npc.base_critical, npc.dex),
+      accuracy: calcAccuracy(npc.dex, npc.level),
+      evasion: calcEvasion(npc.dex, npc.level),
       baseReuseDelay: 0,
       baseMovingSpeed: [npc.ground_low.$[0], npc.ground_high.$[0]],
       exp: npc.level ** 2 * npc.acquire_exp_rate,

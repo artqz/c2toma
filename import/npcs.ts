@@ -9,6 +9,7 @@ import { Item, Npc, NpcDrop, Skill, lstring } from "../result/types";
 import { NpcDataEntry } from "./types";
 import { NpcNameEntry, loadNpcNamesGF } from "../datapack/gf/npcnames";
 import { loadNpcDataGF } from "../datapack/gf/npcdata";
+import { calcMAtk, calcMDef, calcMSpd, calcPAtk, calcPDef, calcPSpd, getSkillMod } from './с1/func';
 
 export const npcSkills = new Map<string, Skill>();
 
@@ -143,6 +144,17 @@ function loadC4Npcs(deps: {
             str: npcC1.str,
             wit: npcC1.wit,
             baseMovingSpeed: [npcC1.ground_low.$[0], npcC1.ground_high.$[0]],
+            pAtk: calcPAtk(
+        npcC1.base_physical_attack,
+        npcC1.str,
+        npcC1.level,
+        getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_attack"})
+      ),
+      pDef: calcPDef(npcC1.base_defend, npcC1.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_defence"})),
+      mAtk: calcMAtk(npcC1.base_magic_attack, npcC1.int, npcC1.level),
+      mDef: calcMDef(npcC1.base_magic_defend, npcC1.men, npcC1.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"})),
+      pSpd: calcPSpd(npcC1.base_attack_speed, npcC1.dex),
+      mSpd: calcMSpd(npcC1.wit, npcC1.level),
             // skillList: npcById
             //   ? npcById.skill_list.$!.map((x) => {
             //       const skillName = x.replace("@", "");
@@ -173,6 +185,17 @@ function loadC4Npcs(deps: {
               npcById.ground_low.$[0],
               npcById.ground_high.$[0],
             ],
+            pAtk: calcPAtk(
+        npcById.base_physical_attack,
+        npcById.str,
+        npcById.level,
+        getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_attack"})
+      ),
+      pDef: calcPDef(npcById.base_defend, npcById.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_defence"})),
+      mAtk: calcMAtk(npcById.base_magic_attack, npcById.int, npcById.level),
+      mDef: calcMDef(npcById.base_magic_defend, npcById.men, npcById.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"})),
+      pSpd: calcPSpd(npcById.base_attack_speed, npcById.dex),
+      mSpd: calcMSpd(npcById.wit, npcById.level),
             // skillList: npcById
             //   ? npcById.skill_list.$!.map((x) => {
             //       const skillName = x.replace("@", "");

@@ -25,6 +25,7 @@ import {
   calcPCritical,
   calcPDef,
   calcPSpd,
+  getSkillMod,
 } from "./func";
 import { generateNpcsIL } from "./il/npcs";
 
@@ -409,19 +410,3 @@ const IGNORE_NPCS = new Set([
   "test_server_helper",
   "test_server_helper2",
 ]);
-
-
-function getSkillMod(deps: {skills: Map<string, Skill>; skillList: string[]; effectName: string}) {
-  const arr:{type: "per" | "diff"; value: number}[] = []
-  for (const id_lvl of deps.skillList) {
-    const skill = deps.skills.get(id_lvl)
-    if (skill && skill.effects && skill.operateType === "P") {
-      for (const effect of skill.effects) {
-        if (effect.effectName === deps.effectName) {
-          arr.push({type: effect.per ? "per" : "diff", value: effect.value})          
-        }
-      }      
-    }
-  }
-  return arr
-}

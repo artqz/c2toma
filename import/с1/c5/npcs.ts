@@ -4,7 +4,7 @@ import { loadNpcNamesC5 } from "../../../datapack/c5/npcnames";
 import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
 import { Item, Npc, Skill } from "../../../result/types";
-import { calcHP, calcHPRegen, calcMP, calcMPRegen } from "../func";
+import { calcHP, calcHPRegen, calcMAtk, calcMDef, calcMP, calcMPRegen, calcMSpd, calcPAtk, calcPDef, calcPSpd, getSkillMod } from "../func";
 type NpcNameC6 = NpcNameEntry & {
   npcName: string;
 };
@@ -56,6 +56,9 @@ export function generateNpcsC5(deps: {
 
   // add herbs
   addHerbs({ ...deps, npcs });
+
+  // add stats
+  addStats({...deps, npcs})
 
   return npcs;
 }
@@ -283,4 +286,22 @@ function addDropHerbs(deps: {
       );
     });
   });
+}
+
+
+function addStats(deps: {npcs: Map<number, Npc>; skills: Map<string, Skill>;}) {
+  for (const npc of deps.npcs.values()) {
+    npc.pAtk = calcPAtk(
+        npc.basePhysicalAttack ?? 0,
+        npc.str,
+        npc.level ?? 0,
+        getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_attack"})
+      )
+      npc.pDef = calcPDef(npc.baseDefend ?? 0, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_defence"}))
+      npc.mAtk = calcMAtk(npc.baseMagicAttack ?? 0, npc.int, npc.level ?? 0)
+      npc.mDef = calcMDef(npc.baseMagicDefend ?? 0, npc.men, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"}))
+      npc.pSpd = calcPSpd(npc.baseAttackSpeed?? 0, npc.dex)
+      npc.mSpd = calcMSpd(npc.wit, npc.level?? 0)
+  }
+
 }

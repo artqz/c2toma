@@ -20,7 +20,7 @@ export function generateSkillDataC5() {
         skill_id: skillGrp.id,
         level: skillGrp.level,
         skill_name: skillC4.skill_name,
-        effect: skillC4.effect,
+        effect: skillC4.effect,        
         operate_type: skillGrp.operType,
         abnormal_time: skillC4.abnormal_time,
         cast_range: skillGrp.castRange,

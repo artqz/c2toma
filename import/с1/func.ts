@@ -1,3 +1,4 @@
+import { Skill } from '../../result/types';
 import { CON_MOD } from "./mods/conMod";
 import { DEX_MOD } from './mods/dexMod';
 import { INT_MOD } from "./mods/intMod";
@@ -108,3 +109,18 @@ Number.prototype.percent = function(percent = 100) {
 	const result = this.valueOf() / 100 * Math.abs(parseFloat(percent.toString()));
 	return Math.sign(parseFloat(percent.toString())) === -1 ? this.valueOf() - result : result;
 };
+
+export function getSkillMod(deps: {skills: Map<string, Skill>; skillList: string[]; effectName: string}) {
+  const arr:{type: "per" | "diff"; value: number}[] = []
+  for (const id_lvl of deps.skillList) {
+    const skill = deps.skills.get(id_lvl)
+    if (skill && skill.effects && skill.operateType === "P") {
+      for (const effect of skill.effects) {
+        if (effect.effectName === deps.effectName) {
+          arr.push({type: effect.per ? "per" : "diff", value: effect.value})          
+        }
+      }      
+    }
+  }
+  return arr
+}

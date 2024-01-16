@@ -7,6 +7,7 @@ import { loadSkillNamesC4 } from "../datapack/c4/skillnames";
 import { loadSkillNamesGF } from "../datapack/gf/skillnames";
 import { Skill } from "../result/types";
 import { saveFile } from "../utils/Fs";
+import { getEffects } from './с1/skillEffects';
 
 export function loadSkills() {
   let skills: Map<string, Skill>;
@@ -49,6 +50,7 @@ function loadC4Skills() {
       icon: "",
       operateType: skillC4.operate_type,
       effect: JSON.stringify(skillC4.effect),
+      effects: getEffects(skillC4.effect.$),
       operateCond: JSON.stringify(skillC4.operate_cond),
       effectTime: skillC4.abnormal_time,
       castRange: skillC4.cast_range ?? 0,

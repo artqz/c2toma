@@ -51,10 +51,10 @@ function loadItemData(deps: { chronicle: Chronicle }) {
   const skills = new Map<string, Skill>();
 
   for (const skill of skillData) {
-    if (skill.skill_id === 4084 && skill.level === 4) {
+    // if (skill.skill_id === 4084 && skill.level === 4) {
       
-      getEffects(skill.effect.$)
-    }
+    //   getEffects(skill.effect.$)
+    // }
     skills.set(skill.skill_id + "_" + skill.level, {
       id: skill.skill_id,
       skillName: skill.skill_name.toString().replace(/:|\s/g, "_"),
@@ -64,6 +64,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       icon: "",
       operateType: skill.operate_type.toUpperCase(),
       effect: "",
+      effects: getEffects(skill.effect.$),
       operateCond: "",
       effectTime: skill.abnormal_time,
       // нет в ц1 (debuff)

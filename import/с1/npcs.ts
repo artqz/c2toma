@@ -16,14 +16,14 @@ import {
   calcEvasion,
   calcHP,
   calcHPRegen,
-  calcMATK,
-  calcMDEF,
+  calcMAtk,
+  calcMDef,
   calcMP,
   calcMPRegen,
   calcMSpd,
   calcPAtk,
   calcPCritical,
-  calcPDEF,
+  calcPDef,
   calcPSpd,
 } from "./func";
 import { generateNpcsIL } from "./il/npcs";
@@ -81,9 +81,12 @@ function addNpcs(deps: {
       continue;
     }
 
-    if (npc.$[2] === "") {
-      
-    }
+    const skillList = getSkills({
+        ...deps,
+        list: npc.skill_list,
+        ai: npc.npc_ai.$,
+        skills: skillsByName,
+      })
 
     npcs.set(npc.$[1], {
       id: npc.$[1],
@@ -103,11 +106,12 @@ function addNpcs(deps: {
       pAtk: calcPAtk(
         npc.base_physical_attack,
         npc.str,
-        npc.level
+        npc.level,
+        getSkillMod({...deps, skillList, effectName: "p_physical_attack"})
       ),
-      pDef: calcPDEF(npc.base_defend, npc.level),
-      mAtk: calcMATK(npc.base_magic_attack, npc.int, npc.level),
-      mDef: calcMDEF(npc.base_magic_defend, npc.men, npc.level),
+      pDef: calcPDef(npc.base_defend, npc.level, getSkillMod({...deps, skillList, effectName: "p_physical_defence"})),
+      mAtk: calcMAtk(npc.base_magic_attack, npc.int, npc.level),
+      mDef: calcMDef(npc.base_magic_defend, npc.men, npc.level, getSkillMod({...deps, skillList, effectName: "p_magical_defence"})),
       pSpd: calcPSpd(npc.base_attack_speed, npc.dex),
       mSpd: calcMSpd(npc.wit, npc.level),
       pCritical: calcPCritical(npc.base_critical, npc.dex),
@@ -144,12 +148,7 @@ function addNpcs(deps: {
         items: itemByName,
       }),
       herbList: [],
-      skillList: getSkills({
-        ...deps,
-        list: npc.skill_list,
-        ai: npc.npc_ai.$,
-        skills: skillsByName,
-      }),
+      skillList,
       multisell: [],
       spawns: [],
     });
@@ -410,3 +409,19 @@ const IGNORE_NPCS = new Set([
   "test_server_helper",
   "test_server_helper2",
 ]);
+
+
+function getSkillMod(deps: {skills: Map<string, Skill>; skillList: string[]; effectName: string}) {
+  const arr:{type: "per" | "diff"; value: number}[] = []
+  for (const id_lvl of deps.skillList) {
+    const skill = deps.skills.get(id_lvl)
+    if (skill && skill.effects && skill.operateType === "P") {
+      for (const effect of skill.effects) {
+        if (effect.effectName === deps.effectName) {
+          arr.push({type: effect.per ? "per" : "diff", value: effect.value})          
+        }
+      }      
+    }
+  }
+  return arr
+}

@@ -8,6 +8,11 @@ import { STR_MOD } from "./mods/strMod";
 import { WEAPON_CRIT } from './mods/weaponCrit';
 import { WIT_MOD } from './mods/witMod';
 
+type SkillMod = {
+    type: "per" | "diff";
+    value: number;
+}
+
 export function calcHP(baseHP: number, CON: number) {
   return round(baseHP * CON_MOD[CON]);
 }
@@ -24,20 +29,47 @@ export function calcMPRegen(baseMP: number, MEN: number, LVL: number) {
   return round(baseMP * LVL_MOD[LVL] * MEN_MOD[MEN]);
 }
 
-export function calcPAtk(basePhysicalAttack: number, STR: number, LVL: number) {
-  return round(basePhysicalAttack * LVL_MOD[LVL] * STR_MOD[STR]);
+export function calcPAtk(basePhysicalAttack: number, STR: number, LVL: number, skillMods: SkillMod[]) {
+  let stat = basePhysicalAttack * LVL_MOD[LVL] * STR_MOD[STR];
+  for (const sm of skillMods) {
+    if (sm.type === "per") {
+      stat = stat.percent(sm.value)
+    } else {
+      stat = stat + sm.value
+    }
+  }
+  return round(stat)
 }
 
-export function calcMATK(baseMagicAttack: number, INT: number, LVL: number) {
-  return round(baseMagicAttack * LVL_MOD[LVL]^2 * INT_MOD[INT]^2);
+export function calcMAtk(baseMagicAttack: number, INT: number, LVL: number) {
+  let stat =  round(baseMagicAttack * INT_MOD[INT]**2 * LVL_MOD[LVL]**2);
+  return stat
 }
 
-export function calcPDEF(baseDefend: number, LVL: number) {
-  return round((4 + baseDefend) * LVL_MOD[LVL]);
+export function calcPDef(baseDefend: number, LVL: number, skillMods: SkillMod[]) {
+  // не сходится с томой
+  // let stat = round((4 + baseDefend) * LVL_MOD[LVL]);
+  let stat = baseDefend * LVL_MOD[LVL];
+  for (const sm of skillMods) {
+    if (sm.type === "per") {
+      stat += stat.percent(sm.value)
+    } else {
+      stat = stat + sm.value
+    }
+  }
+  return round(stat)
 }
 
-export function calcMDEF(baseMagicDefend: number, MEN: number, LVL: number) {
-  return round(baseMagicDefend * LVL_MOD[LVL] * MEN_MOD[MEN]);
+export function calcMDef(baseMagicDefend: number, MEN: number, LVL: number, skillMods: SkillMod[]) {
+  let stat =  round(baseMagicDefend * LVL_MOD[LVL] * MEN_MOD[MEN]);
+  for (const sm of skillMods) {
+    if (sm.type === "per") {
+      stat += stat.percent(sm.value)
+    } else {
+      stat = stat + sm.value
+    }
+  }
+  return round(stat)
 }
 
 export function calcMSpd(WIT: number, LVL: number) {
@@ -63,5 +95,16 @@ export function calcEvasion (DEX: number, LVL: number) {
 }
 
 function round (int: number) {
-  return Math.round(int) 
+  return Math.floor(int) 
 }
+
+declare global { // to access the global type String
+  interface Number {
+      percent(percent: number): number;
+  }
+}
+
+Number.prototype.percent = function(percent = 100) {
+	const result = this.valueOf() / 100 * Math.abs(parseFloat(percent.toString()));
+	return Math.sign(parseFloat(percent.toString())) === -1 ? this.valueOf() - result : result;
+};

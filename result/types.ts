@@ -94,6 +94,7 @@ export type Skill = {
   hp_consume: number;
   mp_consume1: number;
   mp_consume2: number;
+  effects?: {effectName: string, app: string[], value: number, per: boolean}[]
 };
 
 export type Item = {

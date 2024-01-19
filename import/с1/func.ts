@@ -34,7 +34,7 @@ export function calcPAtk(basePhysicalAttack: number, STR: number, LVL: number, s
   let stat = basePhysicalAttack * LVL_MOD[LVL] * STR_MOD[STR];
   for (const sm of skillMods) {
     if (sm.type === "per") {
-      stat = stat.percent(sm.value)
+      stat += stat.percent(sm.value)
     } else {
       stat = stat + sm.value
     }
@@ -42,8 +42,15 @@ export function calcPAtk(basePhysicalAttack: number, STR: number, LVL: number, s
   return round(stat)
 }
 
-export function calcMAtk(baseMagicAttack: number, INT: number, LVL: number) {
+export function calcMAtk(baseMagicAttack: number, INT: number, LVL: number, skillMods: SkillMod[]) {
   let stat =  round(baseMagicAttack * INT_MOD[INT]**2 * LVL_MOD[LVL]**2);
+  for (const sm of skillMods) {
+    if (sm.type === "per") {
+      stat += stat.percent(sm.value)
+    } else {
+      stat = stat + sm.value
+    }
+  }
   return stat
 }
 

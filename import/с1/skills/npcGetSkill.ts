@@ -4,9 +4,10 @@ export function getSkills(deps: {
   list: string[];
   skills: Map<string, Skill>;
   ai: [string, ...unknown[]];
+  npcName?: string
 }) {
   const npcSkillList: string[] = [];
-  for (const npcSkill of deps.list) {
+  for (const npcSkill of deps.list) { 
     const skill = deps.skills.get(npcSkill.replace("@", ""));
     if (skill) {
       npcSkillList.push(skill.id + "_" + skill.level);
@@ -17,7 +18,8 @@ export function getSkills(deps: {
       if (ai) {
         const npcSkill: string = Object.values(ai)[0].toString();
         if (npcSkill.includes("@s_")) {
-          const skill = deps.skills.get(npcSkill.replace("@", ""));
+          const skillName = npcSkill.replace("@", "")          
+          const skill = deps.skills.get(skillName);
           if (skill) {
             npcSkillList.push(skill.id + "_" + skill.level);
           }

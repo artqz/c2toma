@@ -151,7 +151,7 @@ function loadC4Npcs(deps: {
         getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_attack"})
       ),
       pDef: calcPDef(npcC1.base_defend, npcC1.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_defence"})),
-      mAtk: calcMAtk(npcC1.base_magic_attack, npcC1.int, npcC1.level),
+      mAtk: calcMAtk(npcC1.base_magic_attack, npcC1.int, npcC1.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_attack"})),
       mDef: calcMDef(npcC1.base_magic_defend, npcC1.men, npcC1.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"})),
       pSpd: calcPSpd(npcC1.base_attack_speed, npcC1.dex),
       mSpd: calcMSpd(npcC1.wit, npcC1.level),
@@ -195,7 +195,7 @@ function loadC4Npcs(deps: {
         getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_attack"})
       ),
       pDef: calcPDef(npcById.base_defend, npcById.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_defence"})),
-      mAtk: calcMAtk(npcById.base_magic_attack, npcById.int, npcById.level),
+      mAtk: calcMAtk(npcById.base_magic_attack, npcById.int, npcById.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_attack"})),
       mDef: calcMDef(npcById.base_magic_defend, npcById.men, npcById.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"})),
       pSpd: calcPSpd(npcById.base_attack_speed, npcById.dex),
       mSpd: calcMSpd(npcById.wit, npcById.level),

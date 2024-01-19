@@ -135,8 +135,9 @@ function addSkills(deps: {
   const npcGrp = new Map(loadNpcGrpC5().map((ng) => [ng.id, ng]));
   const npcC4ByName = new Map(loadNpcDataC4().map(n => [n.$[2], n]))
   const npcGFByName = new Map(loadNpcDataGF().map(n => [n.$[2], n]))
-  
-  
+  const skillsByName = new Map(
+    Array.from(deps.skills.values()).map((s) => [s.skillName, s])
+  );  
 
   for (const npc of deps.npcs.values()) {
     const skillList = []
@@ -144,23 +145,21 @@ function addSkills(deps: {
     if (grp) {
       for (const skillIdLvl of grp.skillList) {
         const skill = deps.skills.get(skillIdLvl);
-        if (skill) {
-          skillList.push(skillIdLvl);
+        if (skill) {          
+          skillList.push(skill.skillName.replace("@", ""));
         }
       }
     }
     const npcC4 = npcC4ByName.get(npc.npcName)
     if (npcC4) {
-      npc.skillList = getSkills({ai: npcC4.npc_ai.$, list: skillList, skills: deps.skills })
+      npc.skillList = getSkills({ai: npcC4.npc_ai.$, list: skillList, skills: skillsByName })
     } else {
       const npcGF = npcGFByName.get(npc.npcName)
       if (npcGF) {
-        npc.skillList = getSkills({ai: npcGF.npc_ai.$, list: skillList, skills: deps.skills })
+        npc.skillList = getSkills({ai: npcGF.npc_ai.$, list: skillList, skills: skillsByName })
       }
     }
   }
-
-  
 }
 
 function addDropAndSpoil(deps: {
@@ -307,7 +306,7 @@ function addDropHerbs(deps: {
 
 
 function addStats(deps: {npcs: Map<number, Npc>; skills: Map<string, Skill>;}) {
-  for (const npc of deps.npcs.values()) {
+  for (const npc of deps.npcs.values()) {    
     npc.pAtk = calcPAtk(
         npc.basePhysicalAttack ?? 0,
         npc.str,
@@ -315,7 +314,7 @@ function addStats(deps: {npcs: Map<number, Npc>; skills: Map<string, Skill>;}) {
         getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_attack"})
       )
       npc.pDef = calcPDef(npc.baseDefend ?? 0, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_defence"}))
-      npc.mAtk = calcMAtk(npc.baseMagicAttack ?? 0, npc.int, npc.level ?? 0)
+      npc.mAtk = calcMAtk(npc.baseMagicAttack ?? 0, npc.int, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_attack"}))
       npc.mDef = calcMDef(npc.baseMagicDefend ?? 0, npc.men, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"}))
       npc.pSpd = calcPSpd(npc.baseAttackSpeed?? 0, npc.dex)
       npc.mSpd = calcMSpd(npc.wit, npc.level?? 0)

@@ -5,6 +5,7 @@ import { loadNpcNamesIL } from "../../../datapack/il/npcnames";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
 import { Item, Npc, Skill } from "../../../result/types";
 import { calcAccuracy, calcEvasion, calcHP, calcHPRegen, calcMAtk, calcMDef, calcMP, calcMPRegen, calcMSpd, calcPAtk, calcPCritical, calcPDef, calcPSpd, getSkillMod } from "../func";
+import { getSkills } from '../skills/npcGetSkill';
 type NpcNameC6 = NpcNameEntry & {
   npcName: string;
 };
@@ -12,6 +13,7 @@ type NpcNameC6 = NpcNameEntry & {
 export function generateNpcsIL(deps: {
   skills: Map<string, Skill>;
   items: Map<number, Item>;
+  ignoreNpcList: Set<string>
 }) {
   const npcs = new Map<number, Npc>();
   const npcsNames = new Map<number, NpcNameC6>();
@@ -21,9 +23,9 @@ export function generateNpcsIL(deps: {
   const npcGFById = new Map(loadNpcDataGF().map((n) => [n.$[1], n]));
 
   // Находим все игровые имена в грации
-  for (const npcName of loadNpcNamesIL()) {
-    const npcGF = npcGFById.get(npcName.id);
-    if (npcGF) {
+  for (const npcName of loadNpcNamesIL()) {    
+    const npcGF = npcGFById.get(npcName.id);      
+    if (npcGF) {      
       npcsNames.set(npcName.id, { ...npcName, npcName: npcGF.$[2] });
     } else {
       npcsNames.set(npcName.id, {
@@ -36,11 +38,21 @@ export function generateNpcsIL(deps: {
   for (const npcName of npcsNames.values()) {
     const npcC4 = npcC4ByName.get(npcName.npcName);
     if (npcC4) {
+      //
+      if (deps.ignoreNpcList.has(npcC4.$[2]) || npcC4.$[2].startsWith("_")) {
+      continue;
+    }  
+    //
       const { id, npc } = addNpc(npcC4, npcName, deps.skills);
       npcs.set(id, npc);
     } else {
       const npcGF = npcGFByName.get(npcName.npcName);
       if (npcGF) {
+        //
+      if (deps.ignoreNpcList.has(npcGF.$[2]) || npcGF.$[2].startsWith("_")) {
+      continue;
+    }  
+    //
         const { id, npc } = addNpc(npcGF, npcName, deps.skills);
         npcs.set(id, npc);
       }
@@ -129,15 +141,30 @@ function addSkills(deps: {
   skills: Map<string, Skill>;
 }) {
   const npcGrp = new Map(loadNpcGrpIL().map((ng) => [ng.id, ng]));
+  const npcC4ByName = new Map(loadNpcDataC4().map(n => [n.$[2], n]))
+  const npcGFByName = new Map(loadNpcDataGF().map(n => [n.$[2], n]))
+  const skillsByName = new Map(
+    Array.from(deps.skills.values()).map((s) => [s.skillName, s])
+  );  
 
   for (const npc of deps.npcs.values()) {
+    const skillList = []
     const grp = npcGrp.get(npc.id);
     if (grp) {
       for (const skillIdLvl of grp.skillList) {
         const skill = deps.skills.get(skillIdLvl);
-        if (skill) {
-          npc.skillList.push(skillIdLvl);
+        if (skill) {          
+          skillList.push(skill.skillName.replace("@", ""));
         }
+      }
+    }
+    const npcC4 = npcC4ByName.get(npc.npcName)
+    if (npcC4) {
+      npc.skillList = getSkills({ai: npcC4.npc_ai.$, list: skillList, skills: skillsByName})
+    } else {
+      const npcGF = npcGFByName.get(npc.npcName)
+      if (npcGF) {
+        npc.skillList = getSkills({ai: npcGF.npc_ai.$, list: skillList, skills: skillsByName })
       }
     }
   }
@@ -237,14 +264,19 @@ function addSpoil(deps: {
 
 function addStats(deps: {npcs: Map<number, Npc>; skills: Map<string, Skill>;}) {
   for (const npc of deps.npcs.values()) {
+     npc.npcName === "zombie_warrior" && console.log(npc.basePhysicalAttack,
+        npc.str,
+        npc.level,
+        getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_attack"}));
     npc.pAtk = calcPAtk(
         npc.basePhysicalAttack ?? 0,
         npc.str,
         npc.level ?? 0,
         getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_attack"})
       )
+      
       npc.pDef = calcPDef(npc.baseDefend ?? 0, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_defence"}))
-      npc.mAtk = calcMAtk(npc.baseMagicAttack ?? 0, npc.int, npc.level ?? 0)
+      npc.mAtk = calcMAtk(npc.baseMagicAttack ?? 0, npc.int, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_attack"}))
       npc.mDef = calcMDef(npc.baseMagicDefend ?? 0, npc.men, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"}))
       npc.pSpd = calcPSpd(npc.baseAttackSpeed?? 0, npc.dex)
       npc.mSpd = calcMSpd(npc.wit, npc.level?? 0)

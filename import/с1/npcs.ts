@@ -112,7 +112,7 @@ function addNpcs(deps: {
         getSkillMod({...deps, skillList, effectName: "p_physical_attack"})
       ),
       pDef: calcPDef(npc.base_defend, npc.level, getSkillMod({...deps, skillList, effectName: "p_physical_defence"})),
-      mAtk: calcMAtk(npc.base_magic_attack, npc.int, npc.level),
+      mAtk: calcMAtk(npc.base_magic_attack, npc.int, npc.level, getSkillMod({...deps, skillList: skillList, effectName: "p_magical_attack"})),
       mDef: calcMDef(npc.base_magic_defend, npc.men, npc.level, getSkillMod({...deps, skillList, effectName: "p_magical_defence"})),
       pSpd: calcPSpd(npc.base_attack_speed, npc.dex),
       mSpd: calcMSpd(npc.wit, npc.level),
@@ -169,9 +169,9 @@ function addNpcsС5(deps: {
 
 function addNpcsIL(deps: {
   skills: Map<string, Skill>;
-  items: Map<number, Item>;
+  items: Map<number, Item>;  
 }) {
-  const npcs = generateNpcsIL(deps);
+  const npcs = generateNpcsIL({...deps, ignoreNpcList: IGNORE_NPCS});
   return npcs;
 }
 

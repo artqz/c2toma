@@ -4,7 +4,8 @@ import { loadNpcNamesC5 } from "../../../datapack/c5/npcnames";
 import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
 import { Item, Npc, Skill } from "../../../result/types";
-import { calcHP, calcHPRegen, calcMAtk, calcMDef, calcMP, calcMPRegen, calcMSpd, calcPAtk, calcPDef, calcPSpd, getSkillMod } from "../func";
+import { calcAccuracy, calcEvasion, calcHP, calcHPRegen, calcMAtk, calcMDef, calcMP, calcMPRegen, calcMSpd, calcPAtk, calcPCritical, calcPDef, calcPSpd, getSkillMod } from "../func";
+import { getSkills } from '../skills/npcGetSkill';
 type NpcNameC6 = NpcNameEntry & {
   npcName: string;
 };
@@ -132,18 +133,34 @@ function addSkills(deps: {
   skills: Map<string, Skill>;
 }) {
   const npcGrp = new Map(loadNpcGrpC5().map((ng) => [ng.id, ng]));
+  const npcC4ByName = new Map(loadNpcDataC4().map(n => [n.$[2], n]))
+  const npcGFByName = new Map(loadNpcDataGF().map(n => [n.$[2], n]))
+  
+  
 
   for (const npc of deps.npcs.values()) {
+    const skillList = []
     const grp = npcGrp.get(npc.id);
     if (grp) {
       for (const skillIdLvl of grp.skillList) {
         const skill = deps.skills.get(skillIdLvl);
         if (skill) {
-          npc.skillList.push(skillIdLvl);
+          skillList.push(skillIdLvl);
         }
       }
     }
+    const npcC4 = npcC4ByName.get(npc.npcName)
+    if (npcC4) {
+      npc.skillList = getSkills({ai: npcC4.npc_ai.$, list: skillList, skills: deps.skills })
+    } else {
+      const npcGF = npcGFByName.get(npc.npcName)
+      if (npcGF) {
+        npc.skillList = getSkills({ai: npcGF.npc_ai.$, list: skillList, skills: deps.skills })
+      }
+    }
   }
+
+  
 }
 
 function addDropAndSpoil(deps: {
@@ -302,6 +319,9 @@ function addStats(deps: {npcs: Map<number, Npc>; skills: Map<string, Skill>;}) {
       npc.mDef = calcMDef(npc.baseMagicDefend ?? 0, npc.men, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"}))
       npc.pSpd = calcPSpd(npc.baseAttackSpeed?? 0, npc.dex)
       npc.mSpd = calcMSpd(npc.wit, npc.level?? 0)
+      npc.pCritical = calcPCritical(npc.baseCritical ?? 0, npc.dex ?? 0)
+      npc.accuracy = calcAccuracy(npc.dex, npc.level ?? 0)
+      npc.evasion = calcEvasion(npc.dex, npc.level ?? 0)
   }
 
 }

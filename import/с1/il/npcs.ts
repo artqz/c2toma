@@ -4,7 +4,7 @@ import { loadNpcGrpIL } from "../../../datapack/il/npcgrp";
 import { loadNpcNamesIL } from "../../../datapack/il/npcnames";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
 import { Item, Npc, Skill } from "../../../result/types";
-import { calcHP, calcHPRegen, calcMAtk, calcMDef, calcMP, calcMPRegen, calcMSpd, calcPAtk, calcPDef, calcPSpd, getSkillMod } from "../func";
+import { calcAccuracy, calcEvasion, calcHP, calcHPRegen, calcMAtk, calcMDef, calcMP, calcMPRegen, calcMSpd, calcPAtk, calcPCritical, calcPDef, calcPSpd, getSkillMod } from "../func";
 type NpcNameC6 = NpcNameEntry & {
   npcName: string;
 };
@@ -248,6 +248,9 @@ function addStats(deps: {npcs: Map<number, Npc>; skills: Map<string, Skill>;}) {
       npc.mDef = calcMDef(npc.baseMagicDefend ?? 0, npc.men, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"}))
       npc.pSpd = calcPSpd(npc.baseAttackSpeed?? 0, npc.dex)
       npc.mSpd = calcMSpd(npc.wit, npc.level?? 0)
+      npc.pCritical = calcPCritical(npc.baseCritical ?? 0, npc.dex ?? 0)
+      npc.accuracy = calcAccuracy(npc.dex, npc.level ?? 0)
+      npc.evasion = calcEvasion(npc.dex, npc.level ?? 0)
   }
 
 }

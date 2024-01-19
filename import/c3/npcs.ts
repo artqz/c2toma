@@ -9,7 +9,7 @@ import { NpcDataEntry } from "../types";
 import { NpcNameEntry, loadNpcNamesGF } from "../../datapack/gf/npcnames";
 import { loadNpcDataGF } from "../../datapack/gf/npcdata";
 import { loadNpcNamesC3 } from "../../datapack/c3/npcnames";
-import { calcMAtk, calcMDef, calcMSpd, calcPAtk, calcPDef, calcPSpd, getSkillMod } from '../с1/func';
+import { calcAccuracy, calcEvasion, calcMAtk, calcMDef, calcMSpd, calcPAtk, calcPCritical, calcPDef, calcPSpd, getSkillMod } from '../с1/func';
 
 export const npcSkillsC3 = new Map<string, Skill>();
 
@@ -155,6 +155,9 @@ function loadC4Npcs(deps: {
       mDef: calcMDef(npcC1.base_magic_defend, npcC1.men, npcC1.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"})),
       pSpd: calcPSpd(npcC1.base_attack_speed, npcC1.dex),
       mSpd: calcMSpd(npcC1.wit, npcC1.level),
+      pCritical: calcPCritical(npcC1.base_critical, npcC1.dex),
+      accuracy: calcAccuracy(npcC1.dex, npcC1.level),
+      evasion: calcEvasion(npcC1.dex, npcC1.level),
             // skillList: npcById
             //   ? npcById.skill_list.$!.map((x) => {
             //       const skillName = x.replace("@", "");
@@ -196,6 +199,9 @@ function loadC4Npcs(deps: {
       mDef: calcMDef(npcById.base_magic_defend, npcById.men, npcById.level, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"})),
       pSpd: calcPSpd(npcById.base_attack_speed, npcById.dex),
       mSpd: calcMSpd(npcById.wit, npcById.level),
+      pCritical: calcPCritical(npcById.base_critical, npcById.dex),
+      accuracy: calcAccuracy(npcById.dex, npcById.level),
+      evasion: calcEvasion(npcById.dex, npcById.level),
             // skillList: npcById
             //   ? npcById.skill_list.$!.map((x) => {
             //       const skillName = x.replace("@", "");

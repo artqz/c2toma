@@ -28,6 +28,7 @@ import {
   getSkillMod,
 } from "./func";
 import { generateNpcsIL } from "./il/npcs";
+import { getSkills } from './skills/npcGetSkill';
 
 export function loadNpcs(deps: {
   chronicle: Chronicle;
@@ -84,7 +85,7 @@ function addNpcs(deps: {
 
     const skillList = getSkills({
         ...deps,
-        list: npc.skill_list,
+        list: npc.skill_list.$ ?? [],
         ai: npc.npc_ai.$,
         skills: skillsByName,
       })
@@ -172,34 +173,6 @@ function addNpcsIL(deps: {
 }) {
   const npcs = generateNpcsIL(deps);
   return npcs;
-}
-
-function getSkills(deps: {
-  list: { $?: string[] | undefined };
-  skills: Map<string, Skill>;
-  ai: [string, ...unknown[]];
-}) {
-  const npcSkillList: string[] = [];
-  for (const npcSkill of deps.list.$ ?? []) {
-    const skill = deps.skills.get(npcSkill.replace("@", ""));
-    if (skill) {
-      npcSkillList.push(skill.id + "_" + skill.level);
-    }
-  }
-  for (const ai of deps.ai) {
-    if (typeof ai === "object") {
-      if (ai) {
-        const npcSkill: string = Object.values(ai)[0].toString();
-        if (npcSkill.includes("@s_")) {
-          const skill = deps.skills.get(npcSkill.replace("@", ""));
-          if (skill) {
-            npcSkillList.push(skill.id + "_" + skill.level);
-          }
-        }
-      }
-    }
-  }
-  return npcSkillList;
 }
 
 function getDrop(deps: { list: any; items: Map<string, Item> }) {

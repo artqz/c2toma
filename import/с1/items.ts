@@ -203,7 +203,7 @@ function loadItemRuNames(deps: {
           ...item,
           addName: { ...item.addName, ru: itemName.add_name.ru },
           name: { ...item.name, ru: itemName.name.ru },
-          desc: {...item.name, ru: item.desc.en }
+          desc: {...item.desc, ru: item.desc.en }
         });
       }
     }

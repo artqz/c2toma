@@ -15,16 +15,17 @@ import { loadNpcSeaLevel } from "./import/npcSeaLevel";
 import { loadQuestsC2 } from "./import/quests";
 import { loadSkillCard } from "./import/с1/skillCard";
 import { Skill } from "./result/types";
+import { loadWeaponAbilities } from './import/с1/weaponAbilities';
 
 function init() {
   const AllSkills = loadSkills();
   const items = loadItems();
-  const quests = loadQuestsC2({ items });
-  const itemAbilityList = loadItemAbilityList({ items });
+  const quests = loadQuestsC2({ items });  
   const itemSetList = loadItemSetList({ items, skills: AllSkills });
   const npcs = loadNpcs({ items, skills: AllSkills });
   // const shortNpcs = loadShortNpcs({ npcs });
   const multisell = loadMultisell({ items, npcs });
+  const itemAbilityList = loadWeaponAbilities({ chronicle: "c2", items, multisell });
   const recipes = loadRecipes({ items });
   loadNpcPos({ npcs });
   loadNpcSeaLevel({ npcs });

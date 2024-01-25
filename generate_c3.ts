@@ -14,17 +14,18 @@ import { getSkillsClientC3 } from "./import/c3/skillsClient";
 import { loadItemAbilityListC3 } from "./import/c3/weaponAbilities";
 import { loadNpcBuffs } from "./import/с1/npcBuffs";
 import { loadSkillCard } from "./import/с1/skillCard";
+import { loadWeaponAbilities } from './import/с1/weaponAbilities';
 import { createDir, saveFile } from "./utils/Fs";
 
 const VERSION = "c3";
 function init() {
-  const items = loadItemsC3();
-  const itemAbilityList = loadItemAbilityListC3({ items });
+  const items = loadItemsC3(); 
   const allSkills = loadAllSkillsC3();
   const npcs = loadNpcsC3({ items, skills: allSkills });
   loadNpcPosC3({ npcs });
   loadNpcSeaLevelC3({ npcs });
   const multisell = loadMultisellC3({ items, npcs });
+   const itemAbilityList = loadWeaponAbilities({ chronicle: VERSION, items, multisell });
   const recipes = loadRecipesC3({ items });
   const profs = loadProfsC3({ skills: allSkills, items });
   const sets = loadSetsC3({ items, skills: allSkills });

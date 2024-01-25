@@ -1,9 +1,10 @@
-import { Item, ItemAbilityList, ShortItem } from "../../result/types";
+import { AbilityItem, Item, ItemAbilityList, Multisell, ShortItem } from "../../result/types";
 import { Chronicle } from "../types";
 
 export function loadWeaponAbilities(deps: {
   chronicle: Chronicle;
   items: Map<number, Item>;
+  multisell: Map<number, Multisell>
 }) {
   let items = loadWeaponAbilitiesData(deps);
 
@@ -15,7 +16,11 @@ export function loadWeaponAbilities(deps: {
 function loadWeaponAbilitiesData(deps: {
   chronicle: Chronicle;
   items: Map<number, Item>;
+  multisell: Map<number, Multisell>
 }) {
+  const multisellSA =  deps.multisell.get(4)
+  const msMap = new Map(multisellSA && multisellSA.sellList.map(sl => [sl.resultItems[0].itemName, sl.requiredItems.filter(ri => ri.itemName.includes("_soul_crystal_"))[0].itemName]))
+  
   const abilityMap = new Map<string, ItemAbilityList>();
   const itemsByNamme = new Map(
     Array.from(deps.items.values())
@@ -24,7 +29,8 @@ function loadWeaponAbilitiesData(deps: {
   );
 
   for (const item of deps.items.values()) {
-    const abilityList: ShortItem[] = [];
+    const abilityList: AbilityItem[] = [];
+    let level: number = 0
 
     for (const sa of saList) {
       const rItem = itemsByNamme.get(`${item.itemName}_${sa}`);
@@ -32,14 +38,19 @@ function loadWeaponAbilitiesData(deps: {
       if (rItem) {
         const nItem = itemsByNamme.get(rItem.itemName.replace(`_${sa}`, ""));
 
-        if (nItem) {
-          abilityList.push({ itemName: rItem.itemName });
+        if (nItem) {     
+          const crystal = msMap.get(rItem.itemName)     
+          if (crystal) {            
+            level = parseInt(crystal.replace(/.*\D/, ''))
+            abilityList.push({ soulCrystal:  crystal, itemName: rItem.itemName });
+          }
+          
         }
       }
     }
 
     if (abilityList.length) {
-      abilityMap.set(item.itemName, { itemName: item.itemName, abilityList });
+      abilityMap.set(item.itemName, { itemName: item.itemName, type: item.weaponType, level, abilityList });
     }
   }
   for (const a of abilityMap.values()) {

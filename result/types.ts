@@ -173,8 +173,15 @@ export type Merchant = {
 
 export type ItemAbilityList = {
   itemName: string;
-  abilityList: ShortItem[];
+  type: string;
+  level: number;
+  abilityList: AbilityItem[];
 };
+
+export type AbilityItem = {
+  soulCrystal: string,
+  itemName: string
+}
 
 export type Set = {
   id: Int;

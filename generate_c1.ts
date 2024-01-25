@@ -16,7 +16,7 @@ import { loadNpcBuffs } from "./import/с1/npcBuffs";
 import { loadSkillCard } from "./import/с1/skillCard";
 import { loadZones } from "./import/с1/zones";
 
-const chronicle: Chronicle = "c5";
+const chronicle: Chronicle = "gf";
 function init() {
   createDir(`result/data/${chronicle}`);
   // const zones = loadZones({ chronicle });
@@ -34,12 +34,7 @@ function init() {
   saveFile(
     `result/data/${chronicle}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)
-  );
-  const weaponAbilities = loadWeaponAbilities({ chronicle, items });
-  saveFile(
-    `result/data/${chronicle}/weaponAbilities.json`,
-    JSON.stringify(Array.from(weaponAbilities.values()), null, 2)
-  );
+  );  
   const sets = loadSets({ chronicle, items, skills });
   saveFile(
     `result/data/${chronicle}/sets.json`,
@@ -63,6 +58,11 @@ function init() {
   saveFile(
     `result/data/${chronicle}/multisell.json`,
     JSON.stringify(Array.from(multisell.values()), null, 2)
+  );
+  const weaponAbilities = loadWeaponAbilities({ chronicle, items, multisell });
+  saveFile(
+    `result/data/${chronicle}/weaponAbilities.json`,
+    JSON.stringify(Array.from(weaponAbilities.values()), null, 2)
   );
   const recipes = loadRecipes({ chronicle, items });
   saveFile(

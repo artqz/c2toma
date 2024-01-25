@@ -201,6 +201,7 @@ function loadItemRuNames(deps: {
       if (item) {
         itemData.set(item.id, {
           ...item,
+          addName: { ...item.addName, ru: itemName.add_name.ru },
           name: { ...item.name, ru: itemName.name.ru },
           desc: {...item.name, ru: item.desc.en }
         });
@@ -348,6 +349,7 @@ function addNamesC4(deps: { itemData: Map<number, Item> }) {
     if (item) {
       itemData.set(item.id, {
         ...item,
+        addName: itemName.add_name,
         name: itemName.name,
         desc: itemName.desc,
       });

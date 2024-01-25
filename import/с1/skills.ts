@@ -12,6 +12,7 @@ import { loadSkillDataIL } from "../../datapack/il/skilldata";
 import { loadSkillGrpIL } from "../../datapack/il/skillgrp";
 import { loadSkillNamesIL } from "../../datapack/il/skillnames";
 import { Skill } from "../../result/types";
+import { saveFile } from '../../utils/Fs';
 import { Chronicle } from "../types";
 import { generateSkillDataC5 } from "./c5/skills";
 import { getEffects } from './skillEffects';
@@ -49,12 +50,15 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       break;
   }
   const skills = new Map<string, Skill>();
-
+  const _effectsMap = new Map<string, string>()
   for (const skill of skillData) {
     // if (skill.skill_id === 4084 && skill.level === 4) {
       
     //   getEffects(skill.effect.$)
     // }
+
+    // getAllEffects(skill.effect.$).map(e => _effectsMap.set(e, e))
+
     skills.set(skill.skill_id + "_" + skill.level, {
       id: skill.skill_id,
       skillName: skill.skill_name.toString().replace(/:|\s/g, "_"),
@@ -83,7 +87,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
           : "buff",
     });
   }
-
+  // saveFile("allEffects.json", JSON.stringify(Array.from(_effectsMap.values()), null, 2))
   return skills;
 }
 
@@ -380,4 +384,16 @@ function addIconsGF(deps: { skillData: Map<string, Skill> }) {
       });
     }
   }
+}
+
+
+function getAllEffects(effects: any) {
+  const arr: string[] = []
+  if (effects) {
+    for (const effect of effects) {
+      const effectName: string = effect.$[0];
+      arr.push(effectName)
+    }
+  }
+  return arr
 }

@@ -218,7 +218,7 @@ const fixMs = [
         ],
         resultItems: [
           {
-            itemName: "darkelven_dagger_focus",
+            itemName: "darkelven_dagger_mightmotal",
             count: 1,
           },
         ],

@@ -18,15 +18,15 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
     for (const sell of sellList) {
       const multisell = {
         requiredItems: sell.$[1].$.filter(
-          (item) => itemByName.get(item.$[0]) && item
+          (item) => itemByName.get(item.$[0].toLowerCase()) && item
         ).map((item) => {
           return { itemName: item.$[0], count: item.$[1] };
         }),
         resultItems: sell.$[0].$.filter(
-          (item) => itemByName.get(item.$[0]) && item
+          (item) => itemByName.get(item.$[0].toLowerCase()) && item
         ).map((item) => {
           return {
-            itemName: item.$[0],
+            itemName: item.$[0].toLowerCase(),
             count: item.$[1],
           };
         }),

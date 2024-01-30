@@ -38,9 +38,9 @@ function loadWeaponAbilitiesData(deps: {
       if (rItem) {
         const nItem = itemsByNamme.get(rItem.itemName.replace(`_${sa}`, ""));
 
-        if (nItem) {     
+        if (nItem) {           
           const crystal = msMap.get(rItem.itemName)     
-          if (crystal) {            
+          if (crystal) {           
             level = parseInt(crystal.replace(/.*\D/, ''))
             abilityList.push({ soulCrystal:  crystal, itemName: rItem.itemName });
           }
@@ -53,11 +53,7 @@ function loadWeaponAbilitiesData(deps: {
       abilityMap.set(item.itemName, { itemName: item.itemName, type: item.weaponType, level, abilityList });
     }
   }
-  for (const a of abilityMap.values()) {
-    if (a.abilityList.length < 3) {
-      console.log(a.itemName);
-    }
-  }
+
   return abilityMap;
 }
 
@@ -105,7 +101,6 @@ const saList = [
   "guidance",
   "updown",
   "magicparalysis",
-  "crt.drain",
   "magicpower",
   "magicsilence",
   "magicdamage",

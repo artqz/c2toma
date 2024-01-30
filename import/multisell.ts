@@ -1,7 +1,16 @@
-import { Item, ItemMultisell, Multisell, Npc, SellList } from "./../result/types";
+import {
+  Item,
+  ItemMultisell,
+  Multisell,
+  Npc,
+  SellList,
+} from "./../result/types";
 import { loadMultisellDataC4 } from "./../datapack/c4/miltisell";
 
-export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<number, Npc>}) {
+export function loadMultisell(deps: {
+  items: Map<number, Item>;
+  npcs: Map<number, Npc>;
+}) {
   const itemByName = new Map(
     Array.from(deps.items.values()).map((item) => [item.itemName, item])
   );
@@ -11,50 +20,50 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
   const msArray: Multisell[] = [];
 
   for (const ms of multilisells) {
-    if (!excludedMultisells.has(ms.$[0])) {     
-    const sellList = ms.selllist.$;
-    const slArray: SellList[] = [];
+    if (!excludedMultisells.has(ms.$[0])) {
+      const sellList = ms.selllist.$;
+      const slArray: SellList[] = [];
 
-    for (const sell of sellList) {
-      const multisell = {
-        requiredItems: sell.$[1].$.filter(
-          (item) => itemByName.get(item.$[0].toLowerCase()) && item
-        ).map((item) => {
-          return { itemName: item.$[0], count: item.$[1] };
-        }),
-        resultItems: sell.$[0].$.filter(
-          (item) => itemByName.get(item.$[0].toLowerCase()) && item
-        ).map((item) => {
-          return {
-            itemName: item.$[0].toLowerCase(),
-            count: item.$[1],
-          };
-        }),
-      };
+      for (const sell of sellList) {
+        const multisell = {
+          requiredItems: sell.$[1].$.filter(
+            (item) => itemByName.get(item.$[0].toLowerCase()) && item
+          ).map((item) => {
+            return { itemName: item.$[0], count: item.$[1] };
+          }),
+          resultItems: sell.$[0].$.filter(
+            (item) => itemByName.get(item.$[0].toLowerCase()) && item
+          ).map((item) => {
+            return {
+              itemName: item.$[0].toLowerCase(),
+              count: item.$[1],
+            };
+          }),
+        };
 
-      //add adena
-      // кроме са
-      if (ms.$[0] !== "weapon_variation") {
-        if (sell.$[2]) {
-          multisell.requiredItems.push({
-            itemName: "adena",
-            count: sell.$[2].$[0],
-          });
+        //add adena
+        // кроме са
+        if (ms.$[0] !== "weapon_variation") {
+          if (sell.$[2]) {
+            multisell.requiredItems.push({
+              itemName: "adena",
+              count: sell.$[2].$[0],
+            });
+          }
+        }
+
+        if (!multisell.requiredItems.length || !multisell.resultItems.length) {
+        } else {
+          slArray.push(multisell);
         }
       }
 
-      if (!multisell.requiredItems.length || !multisell.resultItems.length) {
-      } else {
-        slArray.push(multisell);
-      }
-    }
-
-    msArray.push({
-      id: ms.$[1],
-      multisellName: ms.$[0],
-      sellList: slArray,
-      npcList: []
-    });
+      msArray.push({
+        id: ms.$[1],
+        multisellName: ms.$[0],
+        sellList: slArray,
+        npcList: [],
+      });
     }
   }
 
@@ -63,15 +72,17 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
   );
 
   for (const ms of multisell.values()) {
-    const npcList = getNpcNamesByMultisell(ms.multisellName)
+    const npcList = getNpcNamesByMultisell(ms.multisellName);
     for (const npc of npcList) {
-      ms.npcList.push({npcName: npc.npcName, show: npc.show})
+      ms.npcList.push({ npcName: npc.npcName, show: npc.show });
     }
   }
 
   //add npcs
   // addInNpcsAndItems({...deps, multisell})
   console.log("Multisell loaded.");
+
+  addC2items(multisell);
 
   return multisell;
 }
@@ -87,8 +98,8 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
 
 //       for (const npcName of npcNames) {
 //         const npc = npcByName.get(npcName.npcName);
-//         if (npc) {          
-//           filteredMultisell.set(npc.id+"_"+ms.id, {...ms, npcName: npc.npcName})         
+//         if (npc) {
+//           filteredMultisell.set(npc.id+"_"+ms.id, {...ms, npcName: npc.npcName})
 //         }
 //       }
 //   }
@@ -96,20 +107,20 @@ export function loadMultisell(deps: { items: Map<number, Item>, npcs:  Map<numbe
 //   for (const ms of filteredMultisell.values()) {
 //     const npc = npcByName.get(ms.npcName)
 
-//     if (npc) {            
+//     if (npc) {
 //       npc.multisell.push(ms)
-//     }   
-  
+//     }
+
 //     for (const sList of ms.sellList) {
 //       for (const rItem of sList.resultItems) {
 //         const item =itemByName.get(rItem.itemName)
-//         if (item) {          
+//         if (item) {
 //           const ims: ItemMultisell = {id: ms.id, sellList: [sList], multisellName: ms.multisellName, npcName:ms.npcName}
-//           item.multisell.push(ims)          
+//           item.multisell.push(ims)
 //         }
 //       }
-//     }   
-//   } 
+//     }
+//   }
 // }
 
 //c2
@@ -167,4 +178,51 @@ function getNpcNamesByMultisell(multisellName: string) {
   }
 }
 
-const excludedMultisells = new Set(["ssq_weapon_yupgrade", "ssq_dual_for_a", "ssq_dualweapon_yupgrade", "ssq_weapon_upgrade", "weapon_variation_sep_merchant", "weapon_variation_sep_smith"])
+const excludedMultisells = new Set([
+  "ssq_weapon_yupgrade",
+  "ssq_dual_for_a",
+  "ssq_dualweapon_yupgrade",
+  "ssq_weapon_upgrade",
+  "weapon_variation_sep_merchant",
+  "weapon_variation_sep_smith",
+]);
+
+function addC2items(ms: Map<number, Multisell>) {
+  for (const f of fixMs) {
+    const _ms = ms.get(f.id);
+    if (_ms) {
+      f.sellList.map((sl) => _ms.sellList.push(sl));
+    }
+  }
+}
+
+const fixMs = [
+  {
+    id: 1,
+    multisellName: "blackmerchant_weapon",
+    sellList: [
+      {
+        requiredItems: [
+          {
+            itemName: "darkelven_dagger",
+            count: 1,
+          },
+          {
+            itemName: "blue_soul_crystal_5",
+            count: 1,
+          },
+          {
+            itemName: "gemstone_c",
+            count: 97,
+          },
+        ],
+        resultItems: [
+          {
+            itemName: "darkelven_dagger_focus",
+            count: 1,
+          },
+        ],
+      },
+    ],
+  },
+];

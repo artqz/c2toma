@@ -54508,7 +54508,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "doom_crusher_rsk.focus", 1 ] } ] },
+            { "$": [ { "$": [ "doom_crusher_rsk.haste", 1 ] } ] },
             {
               "$": [
                 { "$": [ "doom_crusher", 1 ] },
@@ -54520,7 +54520,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "doom_crusher_haste", 1 ] } ] },
+            { "$": [ { "$": [ "doom_crusher_anger", 1 ] } ] },
             {
               "$": [
                 { "$": [ "doom_crusher", 1 ] },
@@ -64543,7 +64543,7 @@
             { "$": [ { "$": [ "doom_crusher", 1 ] } ] },
             {
               "$": [
-                { "$": [ "doom_crusher_haste", 1 ] },
+                { "$": [ "doom_crusher_anger", 1 ] },
                 { "$": [ "adena_of_ancient", 200000 ] }
               ]
             }
@@ -64554,7 +64554,7 @@
             { "$": [ { "$": [ "doom_crusher", 1 ] } ] },
             {
               "$": [
-                { "$": [ "doom_crusher_rsk.focus", 1 ] },
+                { "$": [ "doom_crusher_rsk.haste", 1 ] },
                 { "$": [ "adena_of_ancient", 200000 ] }
               ]
             }
@@ -67349,13 +67349,13 @@
         {
           "$": [
             { "$": [ { "$": [ "doom_crusher", 1 ] } ] },
-            { "$": [ { "$": [ "doom_crusher_haste", 1 ] } ] }
+            { "$": [ { "$": [ "doom_crusher_anger", 1 ] } ] }
           ]
         },
         {
           "$": [
             { "$": [ { "$": [ "doom_crusher", 1 ] } ] },
-            { "$": [ { "$": [ "doom_crusher_rsk.focus", 1 ] } ] }
+            { "$": [ { "$": [ "doom_crusher_rsk.haste", 1 ] } ] }
           ]
         },
         {
@@ -73316,13 +73316,13 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "doom_crusher_haste", 1 ] } ] },
+            { "$": [ { "$": [ "doom_crusher_anger", 1 ] } ] },
             { "$": [ { "$": [ "adena", 54000000 ] } ] }
           ]
         },
         {
           "$": [
-            { "$": [ { "$": [ "doom_crusher_rsk.focus", 1 ] } ] },
+            { "$": [ { "$": [ "doom_crusher_rsk.haste", 1 ] } ] },
             { "$": [ { "$": [ "adena", 54000000 ] } ] }
           ]
         },

@@ -64,7 +64,7 @@ function addItem(itemData: ItemDataEntry, itemName: ItemNameEntry) {
   const id = itemData.$[1];
   const item: Item = {
     id: itemData.$[1]!,
-    itemName: itemData.$[2]!.toString().replace(":", "_"),
+    itemName: itemData.$[2]!.toString().replace(":", "_").toLowerCase(),
     name: itemName.name,
     addName: itemName.add_name,
     desc: itemName.desc,

@@ -179,6 +179,8 @@ function getNpcNamesByMultisell(multisellName: string) {
         { npcName: "fisher_klaw", show: true },
         { npcName: "fisher_platis", show: true }
     ];
+    case "ssq_weapon_variation_a":
+      return [{npcName: "blacksmith_of_mammon", show: false}]
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];

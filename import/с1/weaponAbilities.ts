@@ -18,8 +18,14 @@ function loadWeaponAbilitiesData(deps: {
   items: Map<number, Item>;
   multisell: Map<number, Multisell>
 }) {
-  const multisellSA =  deps.multisell.get(4)
-  const msMap = new Map(multisellSA && multisellSA.sellList.map(sl => [sl.resultItems[0].itemName, sl.requiredItems.filter(ri => ri.itemName.includes("_soul_crystal_"))[0].itemName]))
+  const msMap = new Map<string, string>()
+  for (const i of [4, 204]) {
+    const multisellSA = deps.multisell.get(i)
+    if (multisellSA) {      
+      multisellSA.sellList.map(sl => msMap.set(sl.resultItems[0].itemName, sl.requiredItems.filter(ri => ri.itemName.includes("_soul_crystal_"))[0].itemName))
+    }  
+  }
+  
   
   const abilityMap = new Map<string, ItemAbilityList>();
   const itemsByNamme = new Map(

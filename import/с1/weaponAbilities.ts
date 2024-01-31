@@ -35,7 +35,7 @@ function loadWeaponAbilitiesData(deps: {
     for (const sa of saList) {
       const rItem = itemsByNamme.get(`${item.itemName}_${sa}`);
 
-      if (rItem) {
+      if (rItem) {       
         const nItem = itemsByNamme.get(rItem.itemName.replace(`_${sa}`, ""));
 
         if (nItem) {           

@@ -198,8 +198,8 @@ function addC2items(ms: Map<number, Multisell>) {
 
 const fixMs = [
   {
-    id: 1,
-    multisellName: "blackmerchant_weapon",
+    id: 4,
+    multisellName: "weapon_variation",
     sellList: [
       {
         requiredItems: [
@@ -222,6 +222,50 @@ const fixMs = [
             count: 1,
           },
         ],
+      },
+      {
+        "requiredItems": [
+          {
+            "itemName": "demon's_sword",
+            "count": 1
+          },
+          {
+            "itemName": "blue_soul_crystal_10",
+            "count": 1
+          },
+          {
+            "itemName": "gemstone_b",
+            "count": 339
+          }
+        ],
+        "resultItems": [
+          {
+            "itemName": "demon's_sword_mightmotal",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "requiredItems": [
+          {
+            "itemName": "stiletto",
+            "count": 1
+          },
+          {
+            "itemName": "blue_soul_crystal_6",
+            "count": 1
+          },
+          {
+            "itemName": "gemstone_c",
+            "count": 238
+          }
+        ],
+        "resultItems": [
+          {
+            "itemName": "stiletto_mightmotal",
+            "count": 1
+          }
+        ]
       },
     ],
   },

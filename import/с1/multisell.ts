@@ -179,6 +179,46 @@ function getNpcNamesByMultisell(multisellName: string) {
         { npcName: "fisher_klaw", show: true },
         { npcName: "fisher_platis", show: true }
     ];
+    case "ssq_exchange_for_a": 
+    case "ssq_exchange_for_b": 
+    case "ssq_weapon_yupgrade": 
+    case "ssq_weapon_upgrade": 
+    case "ssq_acce_exchange_for_a": 
+    case "ssq_sealexchange_for_a": 
+    case "ssq_acce_exchange_for_s": 
+    case "ssq_exchange_for_s": 
+    case "ssq_dual_for_s": 
+    case "ssq_weapon_variation_s": 
+    case "ssq_dualweapon_yupgrade": 
+    case "ssq_sealexchange_for_b":      
+    case "ssq_dual_for_a":
+    case "ssq_weapon_variation_a":
+      return [{npcName: "blacksmith_of_mammon", show: false}]
+    case "ssq_merchant_etcsell":
+      return [{npcName: "merchant_of_mammon", show: true}]
+    case "ssq_priest":
+      return [
+        {npcName: "dusk_priestessess_gludin", show: true},
+        {npcName: "dusk_priestessess_godard", show: true},
+        {npcName: "dusk_priestessess_rune", show: true},
+        {npcName: "dusk_priestess_gludio", show: true},
+        {npcName: "dusk_priestess_dion", show: true},
+        {npcName: "dusk_priestess_giran", show: true},
+        {npcName: "dusk_priestess_heiness", show: true},
+        {npcName: "dusk_priestess_oren", show: true},
+        {npcName: "dusk_priestess_aden", show: true},
+        {npcName: "dusk_priestess_hunter", show: true},
+        {npcName: "dawn_priest_gludin", show: true},
+        {npcName: "dawn_priest_godard", show: true},
+        {npcName: "dawn_priest_rune", show: true},
+        {npcName: "dawn_priest_gludio", show: true},
+        {npcName: "dawn_priest_dion", show: true},
+        {npcName: "dawn_priest_giran", show: true},
+        {npcName: "dawn_priest_heiness", show: true},
+        {npcName: "dawn_priest_oren", show: true},
+        {npcName: "dawn_priest_aden", show: true},
+        {npcName: "dawn_priest_hunter", show: true},
+      ]
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];

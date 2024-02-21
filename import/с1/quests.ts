@@ -88,7 +88,7 @@ function loadQuestsC4(deps: { items: Map<number, Item> }) {
     quests.push({
       id: progs[0].id,
       name: { en: progs[0].name, ru: questRu?.name.ru ?? progs[0].name },
-      desc: { en: progs[0].short_desc, ru: questRu?.desc.ru ?? progs[0].short_desc },
+      desc: { en: progs[0].short_desc, ru: questRu?.short_desc.ru ?? progs[0].short_desc },
       progs: questProgs,
     });
   }

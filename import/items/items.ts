@@ -46,7 +46,7 @@ function loadC4Items(itemnamesC2: Map<number, ItemEntryC2>) {
       const itemnameGF = namesGF.get(itemC2.id);
       items.set(itemC2.id, {
         id: itemC4.$[1]!,
-        itemName: itemC4.$[2]!.toString().replace(":", "_"),
+        itemName: itemC4.$[2]!.toString().replace(":", "_").toLowerCase(),
         //name: itemC2.name.length ? itemC2.name : itemnameGF?.name ?? itemC4.$[2]!.toString().replace(":", "_"),
         name: {
           en: itemC2.name.trim() ?? "",

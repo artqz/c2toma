@@ -3550,7 +3550,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "eclipse_axe_conversion", 1 ] } ] },
+            { "$": [ { "$": [ "eclipse_axe_updown", 1 ] } ] },
             {
               "$": [
                 { "$": [ "eclipse_axe", 1 ] },
@@ -4616,7 +4616,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "star_buster_anger", 1 ] } ] },
+            { "$": [ { "$": [ "star_buster_haste", 1 ] } ] },
             {
               "$": [
                 { "$": [ "star_buster", 1 ] },
@@ -4629,7 +4629,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "star_buster_crt.bleed", 1 ] } ] },
+            { "$": [ { "$": [ "star_buster_rsk.focus", 1 ] } ] },
             {
               "$": [
                 { "$": [ "star_buster", 1 ] },
@@ -4668,7 +4668,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "tears_of_wizard_conversion", 1 ] } ] },
+            { "$": [ { "$": [ "tears_of_wizard_updown", 1 ] } ] },
             {
               "$": [
                 { "$": [ "tears_of_wizard", 1 ] },
@@ -4707,7 +4707,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "bone_of_kaim_vanul_conversion", 1 ] } ] },
+            { "$": [ { "$": [ "bone_of_kaim_vanul_updown", 1 ] } ] },
             {
               "$": [
                 { "$": [ "bone_of_kaim_vanul", 1 ] },
@@ -4945,7 +4945,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "sword_of_eclipse_magicweakness", 1 ] } ] },
+            { "$": [ { "$": [ "sword_of_eclipse_magicsilence", 1 ] } ] },
             {
               "$": [
                 { "$": [ "sword_of_eclipse", 1 ] },
@@ -54508,7 +54508,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "doom_crusher_rsk.focus", 1 ] } ] },
+            { "$": [ { "$": [ "doom_crusher_rsk.haste", 1 ] } ] },
             {
               "$": [
                 { "$": [ "doom_crusher", 1 ] },
@@ -54520,7 +54520,7 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "doom_crusher_haste", 1 ] } ] },
+            { "$": [ { "$": [ "doom_crusher_anger", 1 ] } ] },
             {
               "$": [
                 { "$": [ "doom_crusher", 1 ] },
@@ -64543,7 +64543,7 @@
             { "$": [ { "$": [ "doom_crusher", 1 ] } ] },
             {
               "$": [
-                { "$": [ "doom_crusher_haste", 1 ] },
+                { "$": [ "doom_crusher_anger", 1 ] },
                 { "$": [ "adena_of_ancient", 200000 ] }
               ]
             }
@@ -64554,7 +64554,7 @@
             { "$": [ { "$": [ "doom_crusher", 1 ] } ] },
             {
               "$": [
-                { "$": [ "doom_crusher_rsk.focus", 1 ] },
+                { "$": [ "doom_crusher_rsk.haste", 1 ] },
                 { "$": [ "adena_of_ancient", 200000 ] }
               ]
             }
@@ -64983,7 +64983,7 @@
             { "$": [ { "$": [ "sword_of_eclipse", 1 ] } ] },
             {
               "$": [
-                { "$": [ "sword_of_eclipse_magicweakness", 1 ] },
+                { "$": [ "sword_of_eclipse_magicsilence", 1 ] },
                 { "$": [ "adena_of_ancient", 83250 ] }
               ]
             }
@@ -65060,7 +65060,7 @@
             { "$": [ { "$": [ "eclipse_axe", 1 ] } ] },
             {
               "$": [
-                { "$": [ "eclipse_axe_conversion", 1 ] },
+                { "$": [ "eclipse_axe_updown", 1 ] },
                 { "$": [ "adena_of_ancient", 83250 ] }
               ]
             }
@@ -65137,7 +65137,7 @@
             { "$": [ { "$": [ "star_buster", 1 ] } ] },
             {
               "$": [
-                { "$": [ "star_buster_anger", 1 ] },
+                { "$": [ "star_buster_haste", 1 ] },
                 { "$": [ "adena_of_ancient", 169500 ] }
               ]
             }
@@ -65148,7 +65148,7 @@
             { "$": [ { "$": [ "star_buster", 1 ] } ] },
             {
               "$": [
-                { "$": [ "star_buster_crt.bleed", 1 ] },
+                { "$": [ "star_buster_rsk.focus", 1 ] },
                 { "$": [ "adena_of_ancient", 169500 ] }
               ]
             }
@@ -65159,7 +65159,7 @@
             { "$": [ { "$": [ "tears_of_wizard", 1 ] } ] },
             {
               "$": [
-                { "$": [ "tears_of_wizard_conversion", 1 ] },
+                { "$": [ "tears_of_wizard_updown", 1 ] },
                 { "$": [ "adena_of_ancient", 169500 ] }
               ]
             }
@@ -65225,7 +65225,7 @@
             { "$": [ { "$": [ "bone_of_kaim_vanul", 1 ] } ] },
             {
               "$": [
-                { "$": [ "bone_of_kaim_vanul_conversion", 1 ] },
+                { "$": [ "bone_of_kaim_vanul_updown", 1 ] },
                 { "$": [ "adena_of_ancient", 169500 ] }
               ]
             }
@@ -67349,13 +67349,13 @@
         {
           "$": [
             { "$": [ { "$": [ "doom_crusher", 1 ] } ] },
-            { "$": [ { "$": [ "doom_crusher_haste", 1 ] } ] }
+            { "$": [ { "$": [ "doom_crusher_anger", 1 ] } ] }
           ]
         },
         {
           "$": [
             { "$": [ { "$": [ "doom_crusher", 1 ] } ] },
-            { "$": [ { "$": [ "doom_crusher_rsk.focus", 1 ] } ] }
+            { "$": [ { "$": [ "doom_crusher_rsk.haste", 1 ] } ] }
           ]
         },
         {
@@ -73316,13 +73316,13 @@
         },
         {
           "$": [
-            { "$": [ { "$": [ "doom_crusher_haste", 1 ] } ] },
+            { "$": [ { "$": [ "doom_crusher_anger", 1 ] } ] },
             { "$": [ { "$": [ "adena", 54000000 ] } ] }
           ]
         },
         {
           "$": [
-            { "$": [ { "$": [ "doom_crusher_rsk.focus", 1 ] } ] },
+            { "$": [ { "$": [ "doom_crusher_rsk.haste", 1 ] } ] },
             { "$": [ { "$": [ "adena", 54000000 ] } ] }
           ]
         },

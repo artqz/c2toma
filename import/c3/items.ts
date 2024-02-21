@@ -40,7 +40,7 @@ function loadC4Items() {
     } else {
       items.set(itemC3.id, {
         id: itemC4.$[1]!,
-        itemName: itemC4.$[2]!.toString().replace(":", "_"),
+        itemName: itemC4.$[2]!.toString().replace(":", "_").toLowerCase(),
         name: {
           en: itemC3.name.trim() ?? "",
           ru: itemC3.name.trim() ?? "",

@@ -29,6 +29,7 @@ import {
 } from "./func";
 import { generateNpcsIL } from "./il/npcs";
 import { getSkills } from "./skills/npcGetSkill";
+import { canUseSA } from "./npc/canUseSA";
 
 export function loadNpcs(deps: {
   chronicle: Chronicle;
@@ -168,6 +169,7 @@ function addNpcs(deps: {
         items: itemByName,
       }),
       herbList: [],
+      ...(canUseSA(npc) && { canUseSA: canUseSA(npc) }),
       skillList,
       multisell: [],
       spawns: [],

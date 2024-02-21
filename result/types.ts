@@ -64,6 +64,7 @@ export type Npc = {
   skillList: string[];
   multisell: Multisell[];
   spawns: NpcSpawn[];
+  canUseSA?: number;
   buffList?: NpcBuff[];
 };
 
@@ -94,7 +95,12 @@ export type Skill = {
   hp_consume: number;
   mp_consume1: number;
   mp_consume2: number;
-  effects?: {effectName: string, app: string[], value: number, per: boolean}[]
+  effects?: {
+    effectName: string;
+    app: string[];
+    value: number;
+    per: boolean;
+  }[];
 };
 
 export type Item = {
@@ -179,9 +185,9 @@ export type ItemAbilityList = {
 };
 
 export type AbilityItem = {
-  soulCrystal: string,
-  itemName: string
-}
+  soulCrystal: string;
+  itemName: string;
+};
 
 export type Set = {
   id: Int;

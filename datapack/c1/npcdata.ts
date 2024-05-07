@@ -1,5 +1,6 @@
 import Fs from "fs";
 import { z } from "zod";
+import { NpcDataEntry } from "../types";
 
 const NpcSkillsEntryC1 = z.object({ $: z.optional(z.string().array()) });
 
@@ -61,17 +62,23 @@ const NpcEntryC1 = z.object({
   additional_make_multi_list: z.unknown(),
   corpse_make_list: z.unknown(),
   npc_ai: z.object({ $: z.tuple([z.string()]).rest(z.unknown()) }),
+  collision_radius: z.number(),
+  collision_height: z.number(),
 });
 
 export type NpcEntryC1 = z.infer<typeof NpcEntryC1>;
 export type NpcSkillsEntryC1 = z.infer<typeof NpcSkillsEntryC1>;
 
-export function loadNpcDataJson(path: string): NpcEntryC1[] {
+export function loadNpcDataJson(path: string): NpcDataEntry[] {
   const src = Fs.readFileSync(path, "utf8");
   const json = JSON.parse(src);
   let data = NpcEntryC1.array().parse(json);
 
-  return data;
+  return data.map((d) => ({
+    ...d,
+    collision_height: { $: [d.collision_height, 0] },
+    collision_radius: { $: [d.collision_radius, 0] },
+  }));
 }
 
 export function loadNpcDataC1() {

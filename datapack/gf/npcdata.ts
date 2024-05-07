@@ -60,6 +60,8 @@ const NpcEntryGF = z.object({
   corpse_make_list: z.unknown(),
   ex_item_drop_list: z.unknown(),
   npc_ai: z.object({ $: z.tuple([z.string()]).rest(z.unknown()) }),
+  collision_radius: z.object({ $: z.tuple([z.number(), z.number()]) }),
+  collision_height: z.object({ $: z.tuple([z.number(), z.number()]) }),
 });
 
 export type NpcEntryGF = z.infer<typeof NpcEntryGF>;

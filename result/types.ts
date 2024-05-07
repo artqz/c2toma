@@ -55,6 +55,8 @@ export type Npc = {
   pCritical?: Int;
   accuracy?: Int;
   evasion?: Int;
+  collisionRadius: Int[];
+  collisionHeight: Int[];
   magicUseSpeedModify: Float | null;
   race: string;
   classes: string[];

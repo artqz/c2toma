@@ -149,6 +149,8 @@ function addNpcs(deps: {
       orgMpRegen: calcMPRegen(npc.org_mp_regen, npc.men, npc.level),
       physicalAvoidModify: npc.physical_avoid_modify,
       physicalHitModify: npc.physical_hit_modify,
+      collisionRadius: npc.collision_radius.$,
+      collisionHeight: npc.collision_height.$,
       con: npc.con,
       dex: npc.dex,
       int: npc.int,

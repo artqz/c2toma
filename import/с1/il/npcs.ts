@@ -122,6 +122,8 @@ function addNpc(
     orgMpRegen: calcMPRegen(npcData.org_mp_regen, npcData.men, npcData.level),
     physicalAvoidModify: npcData.physical_avoid_modify,
     physicalHitModify: npcData.physical_hit_modify,
+    collisionHeight: npcData.collision_height.$,
+    collisionRadius: npcData.collision_radius.$,
     con: npcData.con,
     dex: npcData.dex,
     int: npcData.int,

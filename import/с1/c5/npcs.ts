@@ -4,8 +4,23 @@ import { loadNpcNamesC5 } from "../../../datapack/c5/npcnames";
 import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
 import { Item, Npc, Skill } from "../../../result/types";
-import { calcAccuracy, calcEvasion, calcHP, calcHPRegen, calcMAtk, calcMDef, calcMP, calcMPRegen, calcMSpd, calcPAtk, calcPCritical, calcPDef, calcPSpd, getSkillMod } from "../func";
-import { getSkills } from '../skills/npcGetSkill';
+import {
+  calcAccuracy,
+  calcEvasion,
+  calcHP,
+  calcHPRegen,
+  calcMAtk,
+  calcMDef,
+  calcMP,
+  calcMPRegen,
+  calcMSpd,
+  calcPAtk,
+  calcPCritical,
+  calcPDef,
+  calcPSpd,
+  getSkillMod,
+} from "../func";
+import { getSkills } from "../skills/npcGetSkill";
 type NpcNameC6 = NpcNameEntry & {
   npcName: string;
 };
@@ -59,7 +74,7 @@ export function generateNpcsC5(deps: {
   addHerbs({ ...deps, npcs });
 
   // add stats
-  addStats({...deps, npcs})
+  addStats({ ...deps, npcs });
 
   return npcs;
 }
@@ -96,6 +111,8 @@ function addNpc(
     orgMpRegen: calcMPRegen(npcData.org_mp_regen, npcData.men, npcData.level),
     physicalAvoidModify: npcData.physical_avoid_modify,
     physicalHitModify: npcData.physical_hit_modify,
+    collisionHeight: npcData.collision_height.$,
+    collisionRadius: npcData.collision_radius.$,
     con: npcData.con,
     dex: npcData.dex,
     int: npcData.int,
@@ -133,30 +150,38 @@ function addSkills(deps: {
   skills: Map<string, Skill>;
 }) {
   const npcGrp = new Map(loadNpcGrpC5().map((ng) => [ng.id, ng]));
-  const npcC4ByName = new Map(loadNpcDataC4().map(n => [n.$[2], n]))
-  const npcGFByName = new Map(loadNpcDataGF().map(n => [n.$[2], n]))
+  const npcC4ByName = new Map(loadNpcDataC4().map((n) => [n.$[2], n]));
+  const npcGFByName = new Map(loadNpcDataGF().map((n) => [n.$[2], n]));
   const skillsByName = new Map(
     Array.from(deps.skills.values()).map((s) => [s.skillName, s])
-  );  
+  );
 
   for (const npc of deps.npcs.values()) {
-    const skillList = []
+    const skillList = [];
     const grp = npcGrp.get(npc.id);
     if (grp) {
       for (const skillIdLvl of grp.skillList) {
         const skill = deps.skills.get(skillIdLvl);
-        if (skill) {          
+        if (skill) {
           skillList.push(skill.skillName.replace("@", ""));
         }
       }
     }
-    const npcC4 = npcC4ByName.get(npc.npcName)
+    const npcC4 = npcC4ByName.get(npc.npcName);
     if (npcC4) {
-      npc.skillList = getSkills({ai: npcC4.npc_ai.$, list: skillList, skills: skillsByName })
+      npc.skillList = getSkills({
+        ai: npcC4.npc_ai.$,
+        list: skillList,
+        skills: skillsByName,
+      });
     } else {
-      const npcGF = npcGFByName.get(npc.npcName)
+      const npcGF = npcGFByName.get(npc.npcName);
       if (npcGF) {
-        npc.skillList = getSkills({ai: npcGF.npc_ai.$, list: skillList, skills: skillsByName })
+        npc.skillList = getSkills({
+          ai: npcGF.npc_ai.$,
+          list: skillList,
+          skills: skillsByName,
+        });
       }
     }
   }
@@ -304,23 +329,54 @@ function addDropHerbs(deps: {
   });
 }
 
-
-function addStats(deps: {npcs: Map<number, Npc>; skills: Map<string, Skill>;}) {
-  for (const npc of deps.npcs.values()) {    
+function addStats(deps: {
+  npcs: Map<number, Npc>;
+  skills: Map<string, Skill>;
+}) {
+  for (const npc of deps.npcs.values()) {
     npc.pAtk = calcPAtk(
-        npc.basePhysicalAttack ?? 0,
-        npc.str,
-        npc.level ?? 0,
-        getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_attack"})
-      )
-      npc.pDef = calcPDef(npc.baseDefend ?? 0, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_physical_defence"}))
-      npc.mAtk = calcMAtk(npc.baseMagicAttack ?? 0, npc.int, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_attack"}))
-      npc.mDef = calcMDef(npc.baseMagicDefend ?? 0, npc.men, npc.level ?? 0, getSkillMod({...deps, skillList: npc.skillList, effectName: "p_magical_defence"}))
-      npc.pSpd = calcPSpd(npc.baseAttackSpeed?? 0, npc.dex)
-      npc.mSpd = calcMSpd(npc.wit, npc.level?? 0)
-      npc.pCritical = calcPCritical(npc.baseCritical ?? 0, npc.dex ?? 0)
-      npc.accuracy = calcAccuracy(npc.dex, npc.level ?? 0)
-      npc.evasion = calcEvasion(npc.dex, npc.level ?? 0)
+      npc.basePhysicalAttack ?? 0,
+      npc.str,
+      npc.level ?? 0,
+      getSkillMod({
+        ...deps,
+        skillList: npc.skillList,
+        effectName: "p_physical_attack",
+      })
+    );
+    npc.pDef = calcPDef(
+      npc.baseDefend ?? 0,
+      npc.level ?? 0,
+      getSkillMod({
+        ...deps,
+        skillList: npc.skillList,
+        effectName: "p_physical_defence",
+      })
+    );
+    npc.mAtk = calcMAtk(
+      npc.baseMagicAttack ?? 0,
+      npc.int,
+      npc.level ?? 0,
+      getSkillMod({
+        ...deps,
+        skillList: npc.skillList,
+        effectName: "p_magical_attack",
+      })
+    );
+    npc.mDef = calcMDef(
+      npc.baseMagicDefend ?? 0,
+      npc.men,
+      npc.level ?? 0,
+      getSkillMod({
+        ...deps,
+        skillList: npc.skillList,
+        effectName: "p_magical_defence",
+      })
+    );
+    npc.pSpd = calcPSpd(npc.baseAttackSpeed ?? 0, npc.dex);
+    npc.mSpd = calcMSpd(npc.wit, npc.level ?? 0);
+    npc.pCritical = calcPCritical(npc.baseCritical ?? 0, npc.dex ?? 0);
+    npc.accuracy = calcAccuracy(npc.dex, npc.level ?? 0);
+    npc.evasion = calcEvasion(npc.dex, npc.level ?? 0);
   }
-
 }

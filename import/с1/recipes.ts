@@ -60,6 +60,7 @@ function addRecipe(deps: {items: Map<number, Item>; recipeData:RecipeEntry[]}) {
   return recMap;
 }
 
+
 function addRecipeC5(deps: {items: Map<number, Item>; }) {
   return generateRecipesC5(deps)
 }

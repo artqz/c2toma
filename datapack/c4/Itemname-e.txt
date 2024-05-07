@@ -421,41 +421,41 @@
 1242	Arachnid Tracker Silk		a,Arachnid tracker web threads. Take five of these and a giant poison spider carapace to Abyssal Celebrant Kalinta.\0	-1
 1243	Coffin of Eternal Rest		a,A coffin used in funeral of Dark Elven Knight. Take this to Master Virgil.\0	-1
 1244	Gaze of Abyss		a,Take this token to the Grand Master of the Fighter Guild to change your occupation to a Knight.\0	-1
-1245	Shilen's Call		a,A letter received from Triskel. Go to female shaman Arkenia of the Altar of Rites.\0	-1
-1246	Arkenia's Letter		a,A letter received from Arkenia. Take this to Guard Leikan to hear about information on thief.\0	-1
+1245	Shilen's Call		a,A letter received from Triskel. Go to Witch Arkenia of the Altar of Rites.\0	-1
+1246	Arkenia's Letter		a,A letter received from Arkenia. Take this to Guard Leikan to obtain information about the thief.\0	-1
 1247	Leikan's Note		a,A simple contract given by Guard Leikan. Must hunt moonstone beasts and collect their molars.\0	-1
 1248	Moonstone Beast's Molar		a,A molar obtained after killing a moonstone beast. Collect 10 of these to take to Guard Leikan.\0	-1
 1249	Leikan's Knife		a,A knife received as present from Leikan. They say it works well against the Calpicos.\0	-1
-1250	Shilen's Tears		a,Magic liquid stolen from the Altar of Rites. Give this to the female shaman Arkenia.\0	-1
+1250	Shilen's Tears		a,Magic liquid stolen from the Altar of Rites. Give this to Witch Arkenia.\0	-1
 1251	Arkenia's Recommendation		a,A token of thanks received from Arkenia. Take this to Triskel.\0	-1
 1252	Iron Heart		a,Take this to the Grand Master of the Dark Elven Guild to change your occupation to an Assassin.\0	-1
-1253	Seeds of Anger		a,A seed that can be obtained from Charkeren, who is full of anger. Take this to female shaman Varika.\0	-1
-1254	Seeds of Despair		a,Seeds of despair given by female shaman Varika. You must have them to earn the jewel of darkness.\0	-1
-1255	Seeds of Horror		a,A seed that can be obtained from Annika, who is full of horror. Take this to female shaman Varika.\0	-1
-1256	Seeds of Lunacy		a,A seed that can be obtained from a lunatic. Take this to female shaman Varika.\0	-1
-1257	Family's Ashes		a,Ashes of Charkeren's slain family. Find 3 and return to Charkeren.\0	-1
-1258	Varika's Liquor		a,A medicine Varika made for the son of Duchess Dwell. If you give it to Duchess, you can obtain the seeds of despair.\0	-1
-1259	Knee Bone		a,The knee bone of undead that Annika was looking for. Give this to Annika to obtain seeds of horror.\0	-1
-1260	Heart of Lunacy		a,The hearts of those who have been turned into skeletons by a sorcerer of lunacy. Collect 3 hearts of lunacy and take them to Arkenia.\0	-1
+1253	Seed of Anger		a,A seed obtained from Charkeren, who is full of anger. Take this to Witch Varika.\0	-1
+1254	Seed of Despair		a,A seed obtained from Witch Varika. You must obtain all four seeds to earn the Jewel of Darkness.\0	-1
+1255	Seed of Horror		a,A seed obtained from Annika, who is full of horror. Take this to Witch Varika.\0	-1
+1256	Seed of Lunacy		a,A seed obtained from a lunatic. Take this to Witch Varika.\0	-1
+1257	Family's Remains		a,Remains of Charkeren's slain family. Find 3 and return to Charkeren.\0	-1
+1258	Varika's Liquor		a,A medicine Varika made for the son of Duchess Dwell. If you give it to Duchess, you can obtain the Seed of Despair.\0	-1
+1259	Knee Bone		a,The knee bone of undead that Annika was looking for. Give this to Annika to obtain the Seed of Horror.\0	-1
+1260	Heart of Lunacy		a,The hearts of those who have been turned into skeletons by a sorcerer of lunacy. Collect 3 Hearts of Lunacy and take them to Arkenia.\0	-1
 1261	Jewel of Darkness		a,Take this token to the Grand Master of the Dark Elven guild to change your occupation to a Dark Wizard.\0	-1
 1262	Sidra's Letter		a,The letter of introduction written by Magister Sidra. Take this to Magister Talbot.\0	-1
 1263	Blank Sheet 		a,A blank scroll. Take this and hunt dark succubus to obtain bloody runes.\0	-1
 1264	Bloody Rune		a,Runes written with the blood of dark succubus. Collect 5 and take to Magister Talbot.\0	-1
 1265	Garmiel Book		a,The sacred book of Gran Kain, god of darkness, written in elven language. One of two books Sidra told you to find.\0	-1
 1266	Prayer of Adonius		a,The widely beloved prayer book. Take this to Priest Adonius in the village of Gludin.\0	-1
-1267	Penitent's Mark		a,The mark that shows one is in the course of repenting one's sins. Carry this and hunt undead skeletons in the Ruins of Despair.\0	-1
-1268	Ashen Bones		a,Bones from undead skeletons in Ruins of Despair. Gather 10 and take to Priest Adonius.\0	-1
+1267	Penitent's Mark		a,The mark that shows one is in the course of repenting one's sins. Carry this and hunt skeletons and zombies in the Ruins of Despair.\0	-1
+1268	Ashen Bones		a,Bones from the skeletons and zombies in the Ruins of Despair. Gather 10 and take them to Priest Adonius.\0	-1
 1269	Andariel Book		a,The sacred book of Einhasad, goddess of light, written in the Elven language. One of two books Sidra told you to find.\0	-1
-1270	Orb of Abyss		a,Take this token to the Grand Master of the Dark Elven Guild to change your occupation to a Shilien Oracle.\0	-1
+1270	Orb of Abyss		a,Take this token to a Grand Master of the Dark Elven Guild in any major city to change your occupation to a Shillien Oracle.\0	-1
 1271	Mark of Esquire		a,A mark that indicates an esquire. Wander around the villages in Gludio and meet with guard captains and high priests.\0	-1
 1272	Charm of Grain		a,Greenis's good luck charm. Kill pincer spiders and give 5 red down to Greenis.\0	-1
 1273	Sap of the Mother Tree		a,Sap of Mother Tree that dryad elders like. Find 5 gold leaves and give them to Thalia.\0	-1
 1274	Lucky Potpourri		a,Northwind's lucky potpourri. Give Northwind 2 amethysts obtained from killing sukar wererats.\0	-1
 1275	Tamil's Necklace		a,A necklace of Tamato, Perrin's guard. Show it to Perrin.\0	-1
 1276	Kluto's Memo		a,A memo from Blacksmith Kluto asking to defeat the ol mahum novices.\0	-1
-1277	Lucky Key		a,A bronze key. Hunt zombies in the swamp area, collect 3 bones, and take them to Charkeren.\0	-1
-1278	Candle		a,A candle that lights up the dark. Collect 2 knee bones from the undeads and give them to Annika for the seeds of horror.\0	-1
-1279	Hub Scent		a,Fragrant herb potpourri. Obtain 3 hearts of lunacy from a skeleton scout and take them to Arkenia.\0	-1
+1277	Lucky Key		a,A bronze key. Hunt zombies in the swamp area, collect 3 remains, and take them to Charkeren.\0	-1
+1278	Candle		a,A candle that lights up the dark. Collect 2 knee bones from the undead and give them to Annika for the Seed of Horror.\0	-1
+1279	Hub Scent		a,Fragrant herb potpourri. Obtain 3 Hearts of Lunacy from a skeleton scout and take them to Arkenia.\0	-1
 1280	Map of Luster		a,A map given by the Flame Salamander. Kill ratman fighters and give the key of flame to the salamander in exchange for the token of fire. \0	-1
 1281	Key of Flame		a,The key that can be obtained by killing a ratman fighter. When you give it to a salamander, he will give you the token of fire.\0	-1
 1282	Flame Earring		a,The token of fire given by fire spirit salamander. Collect four tokens and give them to Parina to receive the token that enables changing occupations. \0	-1
@@ -482,7 +482,7 @@
 1342	Fine Steel Arrow		a,A powerful arrow made of steel. It is used as an arrow for a C grade bow.\0	-1
 1343	Silver Arrow		a,A steel arrow plated with silver.\0	-1
 1344	Mithril Arrow		a,A steel arrow plated with mithril.\0	-1
-1345	Shining Arrow		a,The most powerful arrow. Unknown material.J1359\0	-1
+1345	Shining Arrow		a,The most powerful arrow. Unknown material.\0	-1
 1346	Golem's Stoneheart		a,A stone found within the remains of a destroyed golem. Take this to Trader Rorento.\0	-1
 1347	Monster Eye Carcass		a,The carcass of monster eye. Take this to Trader Sarien.\0	-1
 1348	Basilisk's Gizzard		a,The digestive organ of a basilisk. Take this to Trader Sarien.\0	-1
@@ -542,7 +542,7 @@
 1403	Spellbook: Summon Kat the Cat		a,Spellbook required for Summon Kat the Cat magic. Used by Human Wizards.\0	-1
 1404	Spellbook: Servitor Recharge		a,Spellbook required for Servitor Recharge magic. Used by Human Wizards, Elven Wizards, and Dark Wizards.\0	-1
 1405	Spellbook: Servitor Heal		a,Spellbook required for Servitor Heal magic. Used by Human Wizards, Elven Wizards, and Dark Wizards.\0	-1
-1406	Spellbook: Hasten Servitor		a,Spellbook required for Hasten Servitor magic. Used by Human Wizards.\0	-1
+1406	Spellbook: Servitor Wind Walk		a,Spellbook required for Servitor Wind Walk magic. Used by Human Wizards.\0	-1
 1407	Spellbook: Servitor Magic Boost		a,Spellbook required for Servitor Magic Boost. Used by Elven Wizards.\0	-1
 1408	Spellbook: Mighty Servitor		a,Spellbook required for Mighty Servitor magic. Used by Dark Wizards.\0	-1
 1409	Spellbook: Slow		a,Spellbook required for Slow magic. Used by Human Wizards and Dark Wizards. \0	-1
@@ -799,8 +799,8 @@
 1669	Spellbook: Summon Unicorn Boxer		a,Spellbook required for Summon Unicorn Boxer magic. Used by Elven Wizards.\0	-1
 1670	Spellbook: Summon Unicorn Mirage		a,Spellbook required for Summon Unicorn Mirage magic. Used by Elven Wizards.\0	-1
 1671	Spellbook: Summon Silhouette		a,Spellbook required for Summon Silhouette magic. Used by Dark Wizards.\0	-1
-1672			a,none\0	-1
-1673			a,none\0	-1
+1672	__		a,	-1
+1673	__		a,	-1
 1674	Twig of Treant		a,A material used to make dwarven items. Can be sold in any shop.\0	-1
 1675	Beast Blood		a,A material used to make dwarven items. Can be sold in any shop.\0	-1
 1676	Beast Bone		a,A material used to make dwarven items. Can be sold in any shop.\0	-1
@@ -974,7 +974,7 @@
 1844	Kaboo Chief's 1st Torque		a,A necklace taken by killing the chief of Kaboo orcs. Take this to Sentinel Kendell.\0	-1
 1845	Kaboo Chief's 2nd Torque		a,A necklace taken by killing the chief of Kaboo orcs. Take this to Sentinel Kendell.\0	-1
 1846	Turek Dog Tag		a,A military identification necklace of Turek orc fighters. Collect these and take them to Piotur for a reward.\0	-1
-1847	Turek Medallion		a,A necklace of Turek orc officers. Collect these and take them to Piotur for a reward.\0	-1
+1847	Turek Medallion		a,A military identification necklace of Turek orc officers. Collect these and take them to Piotur for a reward.\0	-1
 1848	Clay Urn Fragment		a,A relic of the Elmoreden empire. A piece of a broken clay urn.\0	-1
 1849	Brass Trinket Piece		a,A relic of the Elmoreden empire. A part of a brass trinket.\0	-1
 1850	Bronze Mirror Piece		a,A relic of the Elmoreden empire. A part of a bronze mirror.\0	-1
@@ -983,7 +983,7 @@
 1853	Ancient Brass Tiara		a,A relic of the Elmoreden empire. A formal brass tiara.\0	-1
 1854	Ancient Bronze Mirror		a,A relic of the Elmoreden empire. A bronze mirror.\0	-1
 1855	Ancient Jade Necklace		a,A relic of the Elmoreden empire. A jade necklace.\0	-1
-1856	Spellbook: Chant of Life		a,Spellbook required for the Chant of Life spell. Used by Orc Shamans.\0	-1
+1856	Amulet: Chant of Life		a,Amulet required for the Chant of Life spell. Used by Orc Shamans.\0	-1
 1857	Keltir Fang		a,A fang taken by killing keltirs. Collect 4 and take them to any of the Masters.\0	-1
 1858	Keltir Fang		a,A fang taken by killing keltirs. Collect 4 and take them to any of the Magisters.\0	-1
 1859	Keltir Fang		a,A fang taken by killing keltirs. Collect 4 and take them to any Guardian of the Mother Tree.\0	-1
@@ -1592,7 +1592,7 @@
 2712	Scripture of Knowledge		a,A scripture edited by Wiseman Cronos. It is said to contain all the knowledge of the past. It is comprised of a total of 4 books.\0	-1
 2713	Strong Liquor		a,As its name indicates, a strong liquor. Take this to Drunkard Triff at the harbor.\0	-1
 2714	Crystal of Purity		a,An item that Warehouse Keeper Valkon in Giran Castle Town agreed to trade with you for scripture chapter 2.\0	-1
-2715	Casian's List		u,10 ghoul’s skins, 12 units of medusa’s blood, 5 units of fettered soul's ichor, and 5 enchanted gargoyle's nails.\0	-1
+2715	Casian's List		a,10 ghoul's skins, 12 units of medusa's blood, 5 units of fettered soul's ichor, and 5 enchanted gargoyle's nails.\0	-1
 2716	Ghoul's Skin		a,The skin of a ghoul. Gather 10 of these and take them to Wiseman Casian.\0	-1
 2717	Medusa's Blood		a,Medusa blood. Gather 12 bottles and take them to Wiseman Casian.\0	-1
 2718	Fettered Soul's Ichor		a,The ichor of a fettered soul. Gather 5 units and take them to Wiseman Casian.\0	-1
@@ -1752,15 +1752,15 @@
 2872	Teleport Device		a,A teleport device given by Master Toma. Deliver this to Black Anvil's Arin.\0	-1
 2873	Architecture of Kruma		a,A simple explanation of Cruman architecture. Take this to the research team stationed at the entrance of the Cruma Tower.\0	-1
 2874	Report of Kruma		a,A report recording the results of investigations made by the Cruma reasearch team. Deliver this to Eldar Filaur.\0	-1
-2875	Ingredients of Antidote		a,Gather 10 stinger wasp needles, 10 marsh spider webs, and 10 leech bloods and deliver them to Researcher Loraine.\0	-1
-2876	Stinger Wasp Needle		a,Gather 10 of these and deliver them along with the other ingredients to Researcher Loraine.\0	-1
-2877	Marsh Spider's Web		a,Gather 10 of these and deliver them along with the other ingredients to Researcher Loraine.\0	-1
-2878	Blood of Leech		a,Gather 10 of these and deliver them along with the other ingredients to Researcher Loraine.\0	-1
+2875	Ingredients of Antidote		a,Gather 10 stinger wasp needles, 10 marsh spider webs, and 10 leech bloods and deliver them to Researcher Lorain.\0	-1
+2876	Stinger Wasp Needle		a,Gather 10 of these and deliver them along with the other ingredients to Researcher Lorain.\0	-1
+2877	Marsh Spider's Web		a,Gather 10 of these and deliver them along with the other ingredients to Researcher Lorain.\0	-1
+2878	Blood of Leech		a,Gather 10 of these and deliver them along with the other ingredients to Researcher Lorain.\0	-1
 2879	Mark of Warspirit		a,A mark given to those who have passed the Test of the War Spirit. An item for occupational change.\0	-1
 2880	Vendetta Totem		a,A totem given to the Orcs who seek to punish betrayers of their race. Take this and hunt the Tamlin Orcs.\0	-1
 2881	Tamlin Orc Head		a,The head of a slain Tamlin Orc. Gather 13 of these and take them to Seer Somak.\0	-1
 2882	Warspirit Totem		a,A totem used in the Ritual of the War Spirit. Take this to Ancestor Martankus in the Cave of Trials.\0	-1
-2883	Orim's Contract		u,I will give you Braki’s remains in return for 10 porta eyes, 10 excuro scales and 10 mordeo talons.\0	-1
+2883	Orim's Contract		a,I will give you Braki's remains in return for 10 porta eyes, 10 excuro scales and 10 mordeo talons.\0	-1
 2884	Porta's Eye		a,A jewel pried from the porta's eye. Gather 10 of these and take them to Orim of the Shadow.\0	-1
 2885	Excuro's Scale		a,The scales of an excuro. Gather 10 of these and take them to Orim of the Shadow.\0	-1
 2886	Mordeos Talon		a,The talons of a mordeo. Gather 10 of these and take them to Orim of the Shadow.\0	-1
@@ -2049,7 +2049,7 @@
 3174	Metheus's Funeral Jar		a,A jar for storing the remains of the dead. Take this to the Execution Ground and search for the remains of Metheus' sister.\0	-1
 3175	Kasandra's Remains		a,The remains of Kasandra, Metheus's sister. Take this back to Brother Metheus.\0	-1
 3176	Herbalism Textbook		a,A textbook of various herbs and their usages. It also contains information about the deadly poison belladonna.\0	-1
-3177	Ixia's List		u,10 units each of medusa’s blood, marsh spider fluids, dead seeker’s dung, tyrant's blood and nightshade root. \0	-1
+3177	Ixia's List		a,10 units each of medusa's blood, marsh spider fluids, dead seeker's dung, tyrant's blood and nightshade root. \0	-1
 3178	Medusa's Ichor		a,The bottled blood of a medusa. Collect 10 of these and take them back to Master Ixia\0	-1
 3179	Marsh Spider Fluids		a,The bottled fluids of a marsh spider. Collect 10 of these and take them back to Master Ixia.\0	-1
 3180	Dead Seeker Dung		a,The dung of dead seeker bats. Collect 10 of these and take them back to Master Ixia.\0	-1
@@ -2219,11 +2219,11 @@
 3344	Wings of Droneant		a,Wings obtained after slaying Noble Ants at the Ant's Nest. Gather 30 of these and take them back to Trader Lara.\0	-1
 3345	Tusk of Windsus		a,The tusks of a slain windsus. Gather 30 of these and take them back to Trader Lara.\0	-1
 3346	Fangs of Wyrm		a,The fangs of a slain wyrm. Gather 30 of these and take them back to Trader Lara.\0	-1
-3347	Lara's 1st List		u,“Collect 30 Leto lizardman amulets from the Plains of the Lizardmen and 30 units of red spore dust from the giant fungus in the Sea of Spores.”\0	-1
-3348	Lara's 2nd List		u,“Collect 30 Karul bugbear totems from Hunters Valley and 30 shards of manashen from the Crater of the Ivory Tower.”\0	-1
-3349	Lara's 3rd List		u,“Collect 30 Breka orc totems from Breka's Stronghold and 30 crimson bloodstones of fettered soul from Death Pass.”\0	-1
-3350	Lara's 4th List		u,“Collect 30 tyrant talons from the Wasteland and 30 windsus tusks from Death Pass.”\0	-1
-3351	Lara's 5th List		u,“Collect 30 noble ant wings from the Ant Nest and 30 wyrm fangs from Gorgon's Flower Garden.”\0	-1
+3347	Lara's 1st List		a,"Collect 30 Leto lizardman amulets from the Plains of the Lizardmen and 30 units of red spore dust from the giant fungus in the Sea of Spores."\0	-1
+3348	Lara's 2nd List		a,"Collect 30 Karul bugbear totems from Hunters Valley and 30 shards of manashen from the Crater of the Ivory Tower."\0	-1
+3349	Lara's 3rd List		a,"Collect 30 Breka orc totems from Breka's Stronghold and 30 crimson bloodstones of fettered soul from Death Pass."\0	-1
+3350	Lara's 4th List		a,"Collect 30 tyrant talons from the Wasteland and 30 windsus tusks from Death Pass."\0	-1
+3351	Lara's 5th List		a,"Collect 30 noble ant wings from the Ant Nest and 30 wyrm fangs from Gorgon's Flower Garden."\0	-1
 3352	Galatea's Letter		a,A letter from Head Summoner Galatea to Trader Lara at Dion Castle Town.\0	-1
 3353	Beginner's Arcana		a,An Arcana card used by apprentice Summoners. You must have this in order to participate in Summoner battles.\0	-1
 3354	Almors's Arcana		a,Summoner Almors's Arcana. The proof of victory from a battle. Take this to Head Summoner Galatea.\0	-1
@@ -2621,15 +2621,15 @@
 3748	2nd Circle Request: 1C		a,Kill rot tree in the Sea of Spores and gather and bring 40 seeds.\0	-1
 3749	2nd Circle Request 2C		a,Gather and bring 40 trisalim venom sacs.\0	-1
 3750	2nd Circle Request 3C		a,Kill taik orc shaman or captain and get 50 taik orc totems.\0	-1
-3751	2nd Circle Request: 4C		a,Kill harit lizardman soldier, archer and warrior and collect and bring 40 harit barbed necklaces.\0	-1
-3752	2nd Circle Request: 5C		a,Kill the Harit ratmen on the Plains of Fierce Battle, collect 20 coins of the ancient empire and take them to Guild Member Tor.\0	-1
+3751	2nd Circle Request: 4C		a,Kill Harit Lizardman Soldier, Archer and Warrior and collect and bring 40 Harit Barbed Necklaces.\0	-1
+3752	2nd Circle Request: 5C		a,Kill the Harat ratmen on the Plains of Fierce Battle, collect 20 coins of the ancient empire and take them to Guild Member Tor.\0	-1
 3753	2nd Circle Request: 6C		a,Bring 30 farcran leathers.\0	-1
 3754	2nd Circle Request: 7C		a,Kill flines in the Enchanted Valley, collect and bring back 40 tempest shards.\0	-1
 3755	2nd Circle Request: 8C		a,Kill lieles in the Enchanted Valley, collect and bring back 40 tsunami shards.\0	-1
 3756	2nd Circle Request: 9C		a,Kill satyr or satyr elder and collect and bring 40 manes that were obtained.\0	-1
 3757	2nd Circle Request: 10C		a,Kill forest runner and collect and bring 40 hamadryadesung shards.\0	-1
 3758	2nd Circle Request: 11C		a,Kill vanor silenos soldier, scout or warrior and collect and bring 30 of their manes.\0	-1
-3759	2nd Circle Request: 12C		a,Kill talk bugbear warriors and collect and bring 30 talk bugbear totems.\0	-1
+3759	2nd Circle Request: 12C		a,Kill taik bugbear warriors and collect and bring 30 talk bugbear totems.\0	-1
 3760	2nd Circle Request: 1B		a,Kill timak overlord okun and bring the head.\0	-1
 3761	2nd Circle Request: 2B		a,Kill taik overlord kakran and bring the head.\0	-1
 3762	2nd Circle Request: 3B		a,Destroy mirrors of the Forest of Mirrors and collect and bring 40 narcissus soulstones.\0	-1
@@ -2777,8 +2777,8 @@
 3942	Spellbook: Party Return		a,Spellbook required for Party Return magic. Used by Elven Elders.\0	-1
 3943	Amulet: Heart of Paagrio		a,Spellbook required for Heart Of Paagrio magic. Used by Overlords.\0	-1
 3944	Spellbook: Decrease Weight		a,Spellbook required for Decrease Weight magic. Used by Elven Oracles.\0	-1
-3945	Boat Ticket		u,Ship ticket: From Talking Island – To Giran\0	-1
-3946	Boat Ticket		u,Ship ticket: From Giran – To Talking Island\0	-1
+3945	Boat Ticket		a,Ship ticket: From Talking Island - To Giran\0	-1
+3946	Boat Ticket		a,Ship ticket: From Giran - To Talking Island\0	-1
 3947	Blessed Spiritshot: No Grade		a,The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its magic significantly. Used with No Grade weapons.\0	-1
 3948	Blessed Spiritshot: D Grade		a,The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its magic significantly. Used with D-grade weapons.\0	-1
 3949	Blessed Spiritshot: C Grade		a,The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its magic significantly. Used with C-grade weapons.\0	-1
@@ -3029,7 +3029,7 @@
 4196	Recipe: Staff of Evil Spirit		a,For Dwarves only. The recipe for a staff of evil spirit. Requires Create Item Skill Level 7. The success rate is 100%.\0	-1
 4197	Recipe: Demon's Sword		a,For Dwarves only. The recipe for a demon's sword. Requires Create Item Skill Level 7. The success rate is 100%.\0	-1
 4198	Recipe: Bellion Cestus		a,For Dwarves only. The recipe for a bellion cestus. Requires Create Item Skill Level 7. The success rate is 100%.\0	-1
-4199	Recipe: Bow of Peril		a,For Dwarves only. The recipe for a hazard bow. Requires Create Item Skill Level 7. The success rate is 100%.\0	-1
+4199	Recipe: Bow of Peril		a,For Dwarves only. The recipe for a bow of peril. Requires Create Item Skill Level 7. The success rate is 100%.\0	-1
 4200	Spellbook: Restore Life		a,Spellbook required for Restore Life magic. Used by Bishops.\0	-1
 4201	Spellbook: Resist Shock		a,Spellbook required for Resist Shock magic. Used by Elven Elders.\0	-1
 4203	Spellbook: Life Leech		a,Spellbook required for Life Leech magic. Used by Shillien Knights.\0	-1
@@ -3252,7 +3252,7 @@
 4439	Avadon Shield Fragment		a,An essential ingredient needed by a Dwarf to make an Avadon shield. It can be bought from a regular store.\0	-1
 4440	Recipe: Knuckle Duster		a,For Dwarves only. The recipe for a knuckle duster. Requires Create Item Skill Level 5. The success rate is 100%.\0	-1
 4441	Recipe: Avadon Shield		a,For Dwarves only. The recipe for an avadon shield. Requires Create Item Skill Level 6. The success rate is 100%.\0	-1
-4442	Lottery Ticket		a,A lottery ticket from Aden, redeemable at any lottery sales location. Winning numbers are posted every Saturday at 7 p.m. You can't win if you don't play! Good luck!\0	-1
+4442	Lottery Ticket		a,A lottery ticket from Aden, redeemable at any lottery sales location. Winning numbers are posted every day at 7 p.m. You can't win if you don't play! Good luck!\0	-1
 4443	Monster Race Ticket - Single		a,A winning ticket from the monster race. Redeemable at the cashier of the race.. \0	-1
 4444	Monster Race Ticket - Double		a,A winning daily double ticket from the monster race. Redeemable at the cashier of the race.\0	-1
 4445	Dye of Strength <Str+1 Con-3>		a,Dye of Strength <Str+1 Con-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes. \0	-1
@@ -3591,7 +3591,7 @@
 5004	Recipe: Staff of Evil Spirit (60%)		a,For Dwarves only. The recipe for the staff of evil spirit. Requires Create Item Skill Level 7. The success rate is 60%.\0	-1
 5005	Recipe: Demon's Sword (60%)		a,For Dwarves only. The recipe for the demon's sword. Requires Create Item Skill Level 7. The success rate is 60%.\0	-1
 5006	Recipe: Bellion Cestus (60%)		a,For Dwarves only. The recipe for the bellion cestus. Requires Create Item Skill Level 7. The success rate is 60%.\0	-1
-5007	Recipe: Bow of Peril (60%)		a,For Dwarves only. The recipe for a hazard bow. Requires Create Item Skill Level 7. The success rate is 60%.\0	-1
+5007	Recipe: Bow of Peril (60%)		a,For Dwarves only. The recipe for a bow of peril. Requires Create Item Skill Level 7. The success rate is 60%.\0	-1
 5008	Recipe: Pata (60%)		a,For Dwarves only. The recipe for a pata. Requires Create Item Skill Level 6. The success rate is 60%.\0	-1
 5009	Trophy of Alliance		a,A mark that is needed to participate in a clan hall war.\0	-1
 5010	Echo Crystal - Theme of Victory		a,An echo crystal that plays the theme music of victory. Will work once and then disappear.\0	-1
@@ -3612,7 +3612,7 @@
 5025	Seed: Golden Coda		a,If you plant this seed onto a monster in the Dion area, it will bear the fruit of the Golden Coda. To guarantee success, it must be planted by a character whose level is between 17 and 27, onto a monster within the same range of levels.\0	-1
 5026	Seed: Lute Coda		a,If you plant this seed onto a monster in the Dion area, it will bear the fruit of the Lute Coda. To guarantee success, it must be planted by a character whose level is between 20 and 30, onto a monster within the same range of levels.\0	-1
 5027	Seed: Desert Coda 		a,If you plant this seed onto a monster in the Dion area, it will bear the fruit of the Desert Coda. To guarantee success, it must be planted by a character whose level is between 23 and 33, onto a monster within the same range of levels.\0	-1
-5028	Seed: Red Cobol		a,If you plant this seed onto a monster in the Dion area, it will bear the fruit of the Red Cobol. To guarantee success, it must be planted by a character whose level is between 32 and 42, onto a monster within the same range of levels.\0	-1
+5028	Seed: Red Cobol		a,If you plant this seed onto a monster in the Dion area, it will bear the fruit of the Red Cobol. To guarantee success, it must be planted by a character whose level is between 26 and 36, onto a monster within the same range of levels.\0	-1
 5029	Seed: Chilly Cobol		a,If you plant this seed onto a monster in the Dion area, it will bear the fruit of the Chilly Cobol. To guarantee success, it must be planted by a character whose level is between 29 and 39, onto a monster within the same range of levels.\0	-1
 5030	Seed: Thorn Cobol 		a,If you plant this seed onto a monster in the Dion area, it will bear the fruit of the Thorn Cobol. To guarantee success, it must be planted by a character whose level is between 35 and 45, onto a monster within the same range of levels.\0	-1
 5031	Seed: Golden Cobol 		a,If you plant this seed onto a monster in the Dion area, it will bear the fruit of the Golden Cobol. To guarantee success, it must be planted by a character whose level is between 38 and 48, onto a monster within the same range of levels.\0	-1
@@ -4060,12 +4060,12 @@
 5553	Arcsmith's Anvil		a,Material used by a Dwarf to make an item. It can be sold at a regular store.\0	-1
 5554	Warsmith's Holder		a,Material used by a Dwarf to make an item. It can be sold at a regular store.\0	-1
 5555	Token of Love		a,A commemorative item for Christmas, 2004.\0	-1
-5556	Star Ornament		a,An ingredient of a Christmas Tree. Take it to a Santa trainee, along with the other necessary ingredients, and he will create a Christmas Tree for you.\0	-1
+5556	Star Ornament		a,An essential ingredient needed to make a Christmas Tree. Take it to a Santa trainee, and he will create a Christmas Tree for you.\0	-1
 5557	Bead Ornament		a,An ingredient of a Christmas Tree. Take it to a Santa trainee, along with the other necessary ingredients, and he will create a Christmas Tree for you.\0	-1
 5558	Fir Tree Branch		a,An ingredient of a Christmas Tree. Take it to a Santa trainee, along with the other necessary ingredients, and he will create a Christmas Tree for you.\0	-1
 5559	Flower Pot		a,An ingredient of a Christmas Tree. Take it to a Santa trainee, along with the other necessary ingredients, and he will create a Christmas Tree for you.\0	-1
 5560	Christmas Tree		a,Summons a Christmas Tree.\0	-1
-5561	Special Christmas Tree		a,Summons a Special Christmas Tree.\0	-1
+5561	Special Christmas Tree		a,Summons a Christmas tree that will increase HP and MP regeneration.  This effect is only produced if the Special Christmas Tree is summoned outside of a village.\0	-1
 5562	Echo Crystal - 1st Carol		a,An echo crystal that plays the 1st carol. It disappears after one use.\0	-1
 5563	Echo Crystal - 2nd Carol		a,An echo crystal that plays the 2nd carol. It disappears after one use.\0	-1
 5564	Echo Crystal - 3rd Carol		a,An echo crystal that plays the 3rd carol. It disappears after one use.\0	-1
@@ -4273,7 +4273,7 @@
 5895	Ritron's Fruit		a,A fruit that has a tough hard outer skin with a fragrant smell. Collect 4 of these and take them to Magister Rollant of Dion Castle Town.\0	-1
 5896	Moon Face Flower		a,A flower that is said to bloom only under moonlight. Collect 20 and take them to Magister Rollant of Dion Castle Town.\0	-1
 5897	Leech Fluids		a,The body fluids of a leech that can be obtained from the Cruma Marshlands. Collect 10 of these and  take them to Magister Rollant of Dion Castle Town.\0	-1
-5898	Royal Membership		u,It's a coin collectors’ dream! Take it to Head Blacksmith Vergara.\0	-1
+5898	Royal Membership		a,It's a coin collectors' dream! Take it to Head Blacksmith Vergara.\0	-1
 5899	Kail's Coin		a,A coin owned by Sorcerer Kail who used to be an aid of Beleth. Take it to Warehouse Keeper Sorint.\0	-1
 5900	Coin Collecting Album		a,A high quality coin collecting album made of leather.\0	-1
 5901	Blood Offering		a,Blood that can be obtained by killing a Monster of Offering. The number of this item will determine your score.\0	-1
@@ -4685,7 +4685,7 @@
 6316	Food for Wyvern		a,When the hunger gauge of a wyvern drops to 55% or below, its food will be consumed automatically. \0	-1
 6317	Mixing Manual		a,A manual received from Magic Trader Wesley, with instructions for using the material mixing urn located in the basement of  the Ivory Tower.\0	-1
 6318	Blood Fire		a,Dark flames from Purgatory. The only way to melt true gold. \0	-1
-6319	Mimir's Elixir		a,A legendary elixir said to bestow ultimate wisdom. Take it to Grand Magister Scraide.\0	-1
+6319	Mimir's Elixir		a,A legendary elixir said to bestow ultimate wisdom. Take it to Magister Ladd.\0	-1
 6320	Pure Silver		a,An essential ingredient of Mimir's Elixir. Take it to Magister Ladd.\0	-1
 6321	True Gold		a,An essential ingredient of Mimir's Elixir. Take it to Magister Ladd.\0	-1
 6322	Sage's Stone		a,An essential ingredient of Mimir's Elixir. Take it to Magister Joan.\0	-1
@@ -4720,19 +4720,19 @@
 6389	Pumpkin Seed		a,L2 Jackpot Event - Double-click it and a young pumpkin will appear.\0	-1
 6390	Large Pumpkin Seed		a,L2 Jackpot Event - Double-click it and a young large pumpkin will appear.\0	-1
 6391	Nectar		a,L2 Jackpot Event - Puss the Cat will give you a pumpkin seed for it, or it can be also used to raise a pumpkin.\0	-1
-6392	Event - Medal		u,L2 Medal Collection Event – If you take it to an Event Manager, he will trade it for a prize item of your choice.\0	-1
-6393	Event - Glittering Medal		u,L2 Medal Collection Event – It is used to raise the grade of a collector during the event.\0	-1
+6392	Event - Medal		a,L2 Medal Collection Event - If you take it to an Event Manager, he will trade it for a prize item of your choice.\0	-1
+6393	Event - Glittering Medal		a,L2 Medal Collection Event - It is used to raise the grade of a collector during the event.\0	-1
 6395	Amulet: Chant of Predator		a,Amulet required for the Chant of Predator spell. Used by Warcryers.\0	-1
 6396	Amulet: Chant of Eagle		a,Amulet required for the Chant of Eagle spell. Used by Warcryers.\0	-1
 6397	Amulet: Chant of Vampire		a,Amulet required for the Chant of Vampire spell. Used by Warcryers.\0	-1
 6398	Spellbook: Body of Avatar		a,Spellbook that is needed to learn the Body of Avatar magic. Used by Bishops.\0	-1
-6399	Badge of Rabbit		u,The badge that indicates that its bearer’s event collector grade is “rabbit.”  Without this badge, one cannot prove one’s grade.\0	-1
-6400	Badge of Hyena		u,The badge that indicates that its bearer’s event collector grade is “hyena.”  Without this badge, one cannot prove one’s grade.\0	-1
-6401	Badge of Fox		u,The badge that indicates that its bearer’s event collector grade is “fox.”  Without this badge, one cannot prove one’s grade.\0	-1
-6402	Badge of Wolf		u,The badge that indicates that its bearer’s event collector grade is “wolf.”  Without this badge, one cannot prove one’s grade.\0	-1
-6403	Elven Firecracker		u,L2 Firework Event – A toy for elves. When it is thrown, it creates a small explosion. It is used as an ingredient for making other type of fireworks as well.\0	-1
-6404	Gunpowder		u,L2 Firework Event – Black powder. The ingredient that is used to make larger sized fireworks.\0	-1
-6405	Magnesium		u,L2 Firework Event – A chemical compound that generates a powerful flash when ignited. It is needed to make large size fireworks.\0	-1
+6399	Badge of Rabbit		a,The badge that indicates that its bearer's event collector grade is "rabbit."  Without this badge, one cannot prove one's grade.\0	-1
+6400	Badge of Hyena		a,The badge that indicates that its bearer's event collector grade is "hyena."  Without this badge, one cannot prove one's grade.\0	-1
+6401	Badge of Fox		a,The badge that indicates that its bearer's event collector grade is "fox."  Without this badge, one cannot prove one's grade.\0	-1
+6402	Badge of Wolf		a,The badge that indicates that its bearer's event collector grade is "wolf."  Without this badge, one cannot prove one's grade.\0	-1
+6403	Elven Firecracker		a,L2 Firework Event - A toy for elves. When it is thrown, it creates a small explosion. It is used as an ingredient for making other type of fireworks as well.\0	-1
+6404	Gunpowder		a,L2 Firework Event - Black powder. The ingredient that is used to make larger sized fireworks.\0	-1
+6405	Magnesium		a,L2 Firework Event - A chemical compound that generates a powerful flash when ignited. It is needed to make large size fireworks.\0	-1
 6406	Firework		a,L2 Firework Event - Large fireworks that brilliantly light up the sky.\0	-1
 6407	Large Firework		a,L2 Firework Event - Large fireworks that explode into brilliant multiple colors that light up the sky.\0	-1
 6409	2005 Battle Tournament - CP Potion		a,Restores CP by 200.\0	-1
@@ -4889,16 +4889,16 @@
 6566	Ripe Alternative Sea Coba		a,	-1
 6567	Ripe Alternative Twin Coba		a,	-1
 6568	Ripe Alternative King Coba		a,	-1
-6569	Blessed Scroll: Enchant Weapon (Grade A)		a,Increases the P.Atk of an A grade weapons such as sword/one-handed, blunt/one handed, dagger, spear and etc. type by 4. The P.Atk of sword/two-handed, blunt/two-handed, dual swords, and fists type will increase by 5 and bow type by 8. The M.Atk of all wea\0	-1
-6570	Blessed Scroll: Enchant Armor (Grade A)		a,Increases the P. Def. of an A Grade armor or accessory by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4. When fail on enchanting, item does not get crystallized bu\0	-1
-6571	Blessed Scroll: Enchant Weapon (Grade B)		a,Increases the P.Atk of a B grade weapons such as sword/one-handed, blunt/one handed, dagger, spear and etc. type by 3. The P.Atk of sword/two-handed, blunt/two-handed, dual swords, and fists type will increase by 4 and bow type by 6. The M.Atk of all weap\0	-1
-6572	Blessed Scroll: Enchant Armor (Grade B)		a,Increases the P. Def. of a B Grade armor or accessory by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4. When fail on enchanting, item does not get crystallized but\0	-1
-6573	Blessed Scroll: Enchant Weapon (Grade C)		a,Increases the P.Atk of a C grade weapons such as sword/one-handed, blunt/one handed, dagger, spear and etc. type by 3. The P.Atk of sword/two-handed, blunt/two-handed, dual swords, and fists type will increase by 4 and bow type by 6. The M.Atk of all weap\0	-1
-6574	Blessed Scroll: Enchant Armor (Grade C)		a,Increases the P. Def. of a C Grade armor or accessory by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4. When fail on enchanting, item does not get crystallized but\0	-1
-6575	Blessed Scroll: Enchant Weapon (Grade D)		a,Increases the P.Atk of a D grade weapons such as sword/one-handed, blunt/one handed, dagger, spear, sword/two-handed, blunt/two-handed, dual swords, and fists, etc. type will increase by 2 and bow type by 4. The M.Atk of all weapons will increase by 2. Fr\0	-1
-6576	Blessed Scroll: Enchant Armor (Grade D)		a,Increases the P. Def. of a D Grade armor or accessory by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4. When fail on enchanting, item does not get crystallized but\0	-1
-6577	Blessed Scroll: Enchant Weapon (Grade S)		a,Increases the P.Atk of a S grade weapons such as sword/one-handed, blunt/one handed, dagger, spear and etc. type by 5. The P.Atk of sword/two-handed, blunt/two-handed, dual swords, and fists type will increase by 6 and bow type by 10. The M.Atk of all wea\0	-1
-6578	Blessed Scroll: Enchant Armor (Grade S)		a,Increases the P. Def. of a S Grade armor or accessory by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4. When fail on enchanting, item does not get crystallized but\0	-1
+6569	Blessed Scroll: Enchant Weapon (Grade A)		a,Increases the P.Atk of an A grade weapons such as sword/one-handed, blunt/one handed, dagger, spear and etc. type by 4. The P.Atk of sword/two-handed, blunt/two-handed, dual swords, and fists type will increase by 5 and bow type by 8. The M.Atk of all weapons will increase by 3. From +4, the added bonuses for P.Atk/M.Atk are double the above value. When fail on enchanting, item does not get crystallized but it's enchant value will return to 0.\0	-1
+6570	Blessed Scroll: Enchant Armor (Grade A)		a,Increases the P. Def. of A Grade armor or accessories by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4. If one's attempt for enchanting fails, an item will not become crystallized.  However, the current enchant value will be set to 0.\0	-1
+6571	Blessed Scroll: Enchant Weapon (Grade B)		a,Increases the P.Atk of a B grade weapons such as sword/one-handed, blunt/one handed, dagger, spear and etc. type by 3. The P.Atk of sword/two-handed, blunt/two-handed, dual swords, and fists type will increase by 4 and bow type by 6. The M.Atk of all weapons will increase by 3. From +4, the added bonuses for P.Atk/M.Atk are double the above value. When fail on enchanting, item does not get crystallized but it's enchant value will return to 0.\0	-1
+6572	Blessed Scroll: Enchant Armor (Grade B)		a,Increases the P. Def. of B Grade armor or accessories by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4. If one's attempt for enchanting fails, an item will not become crystallized.  However, the current enchant value will be set to 0.\0	-1
+6573	Blessed Scroll: Enchant Weapon (Grade C)		a,Increases the P.Atk of a C grade weapons such as sword/one-handed, blunt/one handed, dagger, spear and etc. type by 3. The P.Atk of sword/two-handed, blunt/two-handed, dual swords, and fists type will increase by 4 and bow type by 6. The M.Atk of all weapons will increase by 3. From +4, the added bonuses for P.Atk/M.Atk are double the above value. When fail on enchanting, item does not get crystallized but it's enchant value will return to 0.\0	-1
+6574	Blessed Scroll: Enchant Armor (Grade C)		a,Increases the P. Def. of C Grade armor or accessories by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4.  If one's attempt for enchanting fails, an item will not become crystallized.  However, the current enchant value will be set to 0.\0	-1
+6575	Blessed Scroll: Enchant Weapon (Grade D)		a,Increases the P.Atk of a D grade weapons such as sword/one-handed, blunt/one handed, dagger, spear, sword/two-handed, blunt/two-handed, dual swords, and fists, etc. type will increase by 2 and bow type by 4. The M.Atk of all weapons will increase by 2. From +4, the added bonuses for P.Atk/M.Atk are double the above value. When fail on enchanting, item does not get crystallized but it's enchant value will return to 0.\0	-1
+6576	Blessed Scroll: Enchant Armor (Grade D)		a,Increases the P. Def. of D Grade armor or accessories by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4. If one's attempt for enchanting fails, an item will not become crystallized.  However, the current enchant value will be set to 0.\0	-1
+6577	Blessed Scroll: Enchant Weapon (Grade S)		a,Increases the P.Atk of a S grade weapons such as sword/one-handed, blunt/one handed, dagger, spear and etc. type by 5. The P.Atk of sword/two-handed, blunt/two-handed, dual swords, and fists type will increase by 6 and bow type by 10. The M.Atk of all weapons will increase by 4. From +4, the added bonuses for P.Atk/M.Atk are double the above value. When fail on enchanting, item does not get crystallized but it's enchant value will return to 0.\0	-1
+6578	Blessed Scroll: Enchant Armor (Grade S)		a,Increases the P. Def. of S Grade armor or accessories by 1, and from +4, the P. Def will increase by 3. It can be safely enchanted up to +3. One-piece type armor can be safely enchanted up to +4. If one's attempt for enchanting fails, an item will not become crystallized.  However, the current enchant value will be set to 0.\0	-1
 6622	Secret Book of Giants		a,Giants' Scroll. Take it to a certain NPC to enchant skills.\0	-1
 6623	Dummy - Quest Item 1		a,Testing purpose - Quest Item\0	-1
 6624	Dummy - Quest Item 2		a,Testing purpose - Quest Item\0	-1
@@ -4920,12 +4920,12 @@
 6640	Dummy - General Item 8		a,Testing purpose - General Item\0	-1
 6641	Dummy - General Item 9		a,Testing purpose - General Item\0	-1
 6642	Dummy - General Item 10		a,Testing purpose - General Item\0	-1
-6643	Golden Spice		u,Food for wild beasts on the Beast Farm. – When this food is fed to monsters that are capable of evolving, they will evolve at a certain rate of probability.  When a monster reaches a certain level of growth, it can become a pet. This food also produces the effect of causing monsters to drop adena only.\0	-1
-6644	Crystal Spice		u,Food for wild beasts on the Beast Farm. – When this food is fed to monsters that are capable of evolving, they will evolve at a certain rate of probability.  When a monster reaches a certain level of growth, it can become a pet. This food also produces the effect of causing monsters to drop adena only.\0	-1
-6645	Beast Soulshot		u,The light of a spirit is bestowed upon a pet/servitor and temporarily increases the power of attack. The number of soulshots consumption can be checked in the Pet/Servitor Info window. (Used in the master’s inventory.)\0	-1
-6646	Beast Spiritshot		u,The light of a spirit is bestowed upon a pet/servitor and temporarily increases the power of M. Atk. The number of spiritshots consumption can be checked in the Pet/Servitor Info window. (Used in the master’s inventory.)\0	-1
-6647	Blessed Beast Spiritshot		u,The light of a higher-level spirit is bestowed upon a pet/servitor and temporarily increases the power of M. Atk. The number of blessed spiritshots consumption can be checked in the Pet/Servitor Info window. (Used in the master’s inventory.)\0	-1
-6648	Baby Buffalo Panpipe		a,A panpipe that is used to call a baby buffalo.  The baby bufalo will take away 10% of the Exp its master acquires.\0	-1
+6643	Golden Spice		a,Food for wild beasts on the Beast Farm. - When this food is fed to monsters that are capable of evolving, they will evolve at a certain rate of probability.  When a monster reaches a certain level of growth, it can become a pet. This food also produces the effect of causing monsters to drop adena only.\0	-1
+6644	Crystal Spice		a,Food for wild beasts on the Beast Farm. - When this food is fed to monsters that are capable of evolving, they will evolve at a certain rate of probability.  When a monster reaches a certain level of growth, it can become a pet. This food also produces the effect of causing monsters to drop adena only.\0	-1
+6645	Beast Soulshot		a,The light of a spirit is bestowed upon a pet/servitor and temporarily increases the power of attack. The number of soulshots consumption can be checked in the Pet/Servitor Info window. (Used in the master's inventory.)\0	-1
+6646	Beast Spiritshot		a,The light of a spirit is bestowed upon a pet/servitor and temporarily increases the power of M. Atk. The number of spiritshots consumption can be checked in the Pet/Servitor Info window. (Used in the master's inventory.)\0	-1
+6647	Blessed Beast Spiritshot		a,The light of a higher-level spirit is bestowed upon a pet/servitor and temporarily increases the power of M. Atk. The number of blessed spiritshots consumption can be checked in the Pet/Servitor Info window. (Used in the master's inventory.)\0	-1
+6648	Baby Buffalo Panpipe		a,A panpipe that is used to call a baby buffalo.  The baby buffalo will take away 10% of the Exp its master acquires.\0	-1
 6649	Baby Cougar Chime		a,A chime that is used to call a baby cougar.  The baby cougar will take away 10% of the Exp its master acquires.\0	-1
 6650	Baby Kookaburra Ocarina		a,A ocarina that is used to call a baby Kookaburra.  The baby Kookaburra will take away 10% of the Exp its master acquires.\0	-1
 6651	Noblesse Gate Pass		a,	-1
@@ -4955,8 +4955,8 @@
 6696	Heavens Divider Edge		a,Main ingredient required for a Dwarf to make a Heaven's divider. Can also be sold at ordinary shops.\0	-1
 6697	Arcana Mace Head		a,Main ingredient required for a Dwarf to make the sealed Arcana mace. Can also be sold at ordinary shops.\0	-1
 6698	Sealed Tateossian Earring  Part		a,Main ingredient required for a Dwarf to make the sealed Tateossian earrings. Can also be sold at ordinary shops.\0	-1
-6699	Sealed Tateossian Ring Gem		a,Main ingredient required for a Dwarf to make the sealed Tateossian earrings. Can also be sold at ordinary shops.\0	-1
-6700	Sealed Tateossian Ring Wire		a,Main ingredient required for a Dwarf to make the sealed Tateossian necklace. Can also be sold at ordinary shops.\0	-1
+6699	Sealed Tateossian Ring Gem		a,Main ingredient required for a Dwarf to make the sealed Tateossian ring. Can also be sold at ordinary shops.\0	-1
+6700	Sealed Tateossian Necklace Chain		a,Main ingredient required for a Dwarf to make the sealed Tateossian ring. Can also be sold at ordinary shops.\0	-1
 6701	Sealed Imperial Crusader Breastplate Part		a,Main ingredient required for a Dwarf to make the sealed imperial crusader breastplate. Can also be sold at ordinary shops.\0	-1
 6702	Sealed Imperial Crusader Gaiters Pattern		a,Main ingredient required for a Dwarf to make the sealed imperial crusader gaiters. Can also be sold at ordinary shops.\0	-1
 6703	Sealed Imperial Crusader Gauntlets Design		a,Main ingredient required for a Dwarf to make the sealed imperial crusader gauntlet. Can also be sold at ordinary shops.\0	-1
@@ -5082,28 +5082,28 @@
 6848	Recipe: Sealed Tateossian Earring (100%)		a,For Dwarves only. The recipe for sealed Tateossian earrings. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
 6849	Recipe: Sealed Tateossian Ring(70%)		a,For Dwarves only. The recipe for a sealed Tateossian ring. Requires Create Item Skill Level 9. The success rate is 70%.\0	-1
 6850	Recipe: Sealed Tateossian Ring(100%)		a,For Dwarves only. The recipe for a sealed Tateossian ring. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
-6851	Recipe: Sealed Tateossian Ring(70%)		a,For Dwarves only. The recipe for a sealed Tateossian necklace. Requires Create Item Skill Level 9. The success rate is 70%.\0	-1
-6852	Recipe: Sealed Tateossian Ring(100%)		a,For Dwarves only. The recipe for a sealed Tateossian necklace. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
+6851	Recipe: Sealed Tateossian Necklace(70%)		a,For Dwarves only. The recipe for a sealed Tateossian necklace. Requires Create Item Skill Level 9. The success rate is 70%.\0	-1
+6852	Recipe: Sealed Tateossian Necklace(100%)		a,For Dwarves only. The recipe for a sealed Tateossian necklace. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
 6853	Recipe: Sealed Imperial Crusader Breastplate (60%)		a,For Dwarves only. The recipe for a sealed imperial crusader breastplate. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
 6854	Recipe: Sealed Imperial Crusader Breastplate (100%)		a,For Dwarves only. The recipe for a sealed imperial crusader breastplate. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
 6855	Recipe: Sealed Imperial Crusader Gaiters (60%)		a,For Dwarves only. The recipe for sealed imperial crusader gaiters. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
 6856	Recipe: Sealed Imperial Crusader Gaiters (100%)		a,For Dwarves only. The recipe for sealed imperial crusader gaiters. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
-6857	Recipe: Sealed Imperial Crusader Gauntlets (60%)		a,For Dwarves only. The recipe for sealed imperial crusader boots. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
-6858	Recipe: Sealed Imperial Crusader Gauntlets (100%)		a,For Dwarves only. The recipe for sealed imperial crusader boots. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
-6859	Recipe: Sealed Imperial Crusader Boots (60%)		a,For Dwarves only. The recipe for a sealed imperial crusader gauntlet. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
-6860	Recipe: Sealed Imperial Crusader Boots (100%)		a,For Dwarves only. The recipe for a sealed imperial crusader gauntlet. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
+6857	Recipe: Sealed Imperial Crusader Gauntlets (60%)		a,For Dwarves only. The recipe for sealed imperial crusader gauntlets. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
+6858	Recipe: Sealed Imperial Crusader Gauntlets (100%)		a,For Dwarves only. The recipe for sealed imperial crusader gauntlets. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
+6859	Recipe: Sealed Imperial Crusader Boots (60%)		a,For Dwarves only. The recipe for a sealed imperial crusader boots. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
+6860	Recipe: Sealed Imperial Crusader Boots (100%)		a,For Dwarves only. The recipe for a sealed imperial crusader boots. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
 6861	Recipe: Sealed Imperial Crusader Shield (60%)		a,For Dwarves only. The recipe for a sealed imperial crusader shield. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
 6862	Recipe: Sealed Imperial Crusader Shield (100%)		a,For Dwarves only. The recipe for a sealed imperial crusader shield. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
 6863	Recipe: Sealed Imperial Crusader Helmet (60%)		a,For Dwarves only. The recipe for a sealed imperial crusader helmet. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
 6864	Recipe: Sealed Imperial Crusader Helmet (100%)		a,For Dwarves only. The recipe for a sealed imperial crusader helmet. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
 6865	Recipe: Sealed Draconic Leather Armor (60%)		a,For Dwarves only. The recipe for sealed draconic leather armor. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
 6866	Recipe: Sealed Draconic Leather Armor (100%)		a,For Dwarves only. The recipe for sealed draconic leather armor. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
-6867	Recipe: Sealed Draconic Leather Gloves (60%)		a,For Dwarves only. The recipe for sealed draconic leather gloves. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
-6868	Recipe: Sealed Draconic Leather Gloves (100%)		a,For Dwarves only. The recipe for sealed draconic leather gloves. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
-6869	Recipe: Sealed Draconic Leather Boots (60%)		a,For Dwarves only. The recipe for sealed draconic leather boots. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
-6870	Recipe: Sealed Draconic Leather Boots (100%)		a,For Dwarves only. The recipe for sealed draconic leather boots. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
-6871	Recipe: Sealed Draconic Leather Helmet (60%)		a,For Dwarves only. The recipe for a sealed draconic leather helmet. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
-6872	Recipe: Sealed Draconic Leather Helmet (100%)		a,For Dwarves only. The recipe for a sealed draconic leather helmet. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
+6867	Recipe: Sealed Draconic Leather Gloves (60%)		a,For Dwarves only. The recipe for sealed draconic leather gloves. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
+6868	Recipe: Sealed Draconic Leather Gloves (100%)		a,For Dwarves only. The recipe for sealed draconic leather gloves. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
+6869	Recipe: Sealed Draconic Leather Boots (60%)		a,For Dwarves only. The recipe for sealed draconic leather boots. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
+6870	Recipe: Sealed Draconic Leather Boots (100%)		a,For Dwarves only. The recipe for sealed draconic leather boots. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
+6871	Recipe: Sealed Draconic Leather Helmet (60%)		a,For Dwarves only. The recipe for a sealed draconic leather helmet. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
+6872	Recipe: Sealed Draconic Leather Helmet (100%)		a,For Dwarves only. The recipe for a sealed draconic leather helmet. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
 6873	Recipe: Sealed Major Arcana Robe (60%)		a,For Dwarves only. The recipe for a sealed major arcana robe. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
 6874	Recipe: Sealed Major Arcana Robe (100%)		a,For Dwarves only. The recipe for a sealed major arcana robe. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
 6875	Recipe: Sealed Major Arcana Gloves (60%)		a,For Dwarves only. The recipe for sealed major arcana gloves. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
@@ -5301,7 +5301,7 @@
 7076	Mysterious Cloth		a,Premium fabric used for the formal wear\0	-1
 7077	Jewel Box		a,Contains the jewels to adorn the formal wear\0	-1
 7078	Sewing kit		a,Contains tools necessary to sew the formal wear \0	-1
-7079	Fragment of Dimension		u,Jewel that diffuses the dimension’s energy. Required to survive in the rift of the dimension.\0	-1
+7079	Fragment of Dimension		a,Jewel that diffuses the dimension's energy. Required to survive in the rift of the dimension.\0	-1
 7080	Cryolite		a,Bizarre entity that constantly emits cold air \0	-1
 7081	Divine Stone of Wisdom		a,Rock fragment emanating a mysterious energy\0	-1
 7082	Guild Report		a,Document containing information regarding Demon Allector. Double-click to view contents.\0	-1
@@ -5330,15 +5330,15 @@
 7105	Guardian Angel of the Tablet - Vol. 2		a,Contains information on how to defeat the Guardian Angel of the Tablet. Double click to view contents.\0	-1
 7106	Guardian Angel of the Tablet - Vol. 2		a,Contains information on how to defeat the Guardian Angel of the Tablet. Double click to view contents.\0	-1
 7107	Guardian Angel of the Tablet - Vol. 2		a,Contains information on how to defeat the Guardian Angel of the Tablet. Double click to view contents.\0	-1
-7108	Guild’s Secret Report		a,Document containing information regarding the great angel, Iconoclasis. Double click to view contents.\0	-1
-7109	Guild’s Secret Report		a,Document containing information regarding the great angel, Iconoclasis. Double click to view contents.\0	-1
+7108	Guild's Secret Report		a,Document containing information regarding the great angel, Iconoclasis. Double click to view contents.\0	-1
+7109	Guild's Secret Report		a,Document containing information regarding the great angel, Iconoclasis. Double click to view contents.\0	-1
 7110	Research Report		a,Document containing info regarding Shakiel, the guardian of vision. Double click to view contents.\0	-1
 7111	Research Report		a,Document containing info regarding Shakiel, the guardian of vision. Double click to view contents.\0	-1
 7112	Research Report		a,Document containing info regarding Shakiel, the guardian of vision. Double click to view contents.\0	-1
 7113	Dress Shoe Box		a,Box containing fragile dress shoes.\0	-1
-7114	Voucher - Buffalo		u,Pet Voucher – Discount on the purchase of buffalos at Dion Castle Town.\0	-1
-7115	Voucher - Cougar		u,Pet Voucher – Discount on the purchase of cougars at Giran Castle Town.\0	-1
-7116	Voucher - Kookaburra		u,Pet Voucher – Discount on the purchase of kookaburras at Gludio Castle Town.\0	-1
+7114	Voucher - Buffalo		a,Pet Voucher - Discount on the purchase of buffalos at Dion Castle Town.\0	-1
+7115	Voucher - Cougar		a,Pet Voucher - Discount on the purchase of cougars at Giran Castle Town.\0	-1
+7116	Voucher - Kookaburra		a,Pet Voucher - Discount on the purchase of kookaburras at Gludio Castle Town.\0	-1
 7117	Scroll of Escape to Talking Island		a,A magical scroll that relocates you to Talking Island.\0	-1
 7118	Scroll of Escape to Elven Village		a,A magical scroll that relocates you to Elven Village.\0	-1
 7119	Scroll of Escape to Dark Elven Village		a,A magical scroll that relocates you to Dark Elven Village.\0	-1
@@ -5433,21 +5433,21 @@
 7208	Hot Food Box		a,Box of delicious food. Very hot.\0	-1
 7209	Food for Bumbalump		a,Favorite food of Icicle Prince Bumbalump.\0	-1
 7210	Special Yeti Meat		a,Legendary ingredient that can only be attained from the strongest Yeti.\0	-1
-7211	Mark of Ketra's Alliance – Level 1		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 1 - Prudent alliance relations.\0	-1
-7212	Mark of Ketra's Alliance – Level 2		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 2 - Dependent alliance relations.\0	-1
-7213	Mark of Ketra's Alliance – Level 3		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 3 - Friendly alliance relations.\0	-1
-7214	Mark of Ketra's Alliance – Level 4		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 4 - Firm alliance relations.\0	-1
-7215	Mark of Ketra's Alliance – Level 5		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 5 - Steadfast firm alliance relations.\0	-1
+7211	Mark of Ketra's Alliance - Level 1		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 1 - Prudent alliance relations.\0	-1
+7212	Mark of Ketra's Alliance - Level 2		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 2 - Dependent alliance relations.\0	-1
+7213	Mark of Ketra's Alliance - Level 3		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 3 - Friendly alliance relations.\0	-1
+7214	Mark of Ketra's Alliance - Level 4		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 4 - Firm alliance relations.\0	-1
+7215	Mark of Ketra's Alliance - Level 5		a,A necklace given to those who build an alliance with the Ketra Orc Tribe. Stage 5 - Steadfast firm alliance relations.\0	-1
 7216	Varka's Badge - Soldier		a,A badge attained by slaying Varka Silenos Soldiers.\0	-1
 7217	Varka's Badge - Captain		a,A badge attained by slaying Varka Silenos Captains.\0	-1
 7218	Varka's Badge - General		a,A badge attained by slaying Varka Silenos Generals.\0	-1
 7219	Totem of Valor		a,A totem presented to the warriors of the Ketra Orc tribe to attest their valor.\0	-1
 7220	Totem of Wisdom		a,A totem presented to the warriors of the Ketra Orc tribe to attest their wisdom.\0	-1
-7221	Mark of Varka's Alliance – Level 1		a,A charm given to those who build an alliance with the Varka tribe. Stage 1 - Prudent alliance relations.\0	-1
-7222	Mark of Varka's Alliance – Level 2		a,A charm given to those who build an alliance with the Varka tribe. Stage 2 - Dependent alliance relations.\0	-1
-7223	Mark of Varka's Alliance – Level 3		a,A charm given to those who build an alliance with the Varka tribe. Stage 3 - Friendly alliance relations.\0	-1
-7224	Mark of Varka's Alliance – Level 4		a,A charm given to those who build an alliance with the Varka tribe. Stage 4 - Firm alliance relations.\0	-1
-7225	Mark of Varka's Alliance – Level 5		a,A charm given to those who build an alliance with the Varka tribe. Stage 5 - Steadfast firm alliance relations.\0	-1
+7221	Mark of Varka's Alliance - Level 1		a,A charm given to those who build an alliance with the Varka tribe. Stage 1 - Prudent alliance relations.\0	-1
+7222	Mark of Varka's Alliance - Level 2		a,A charm given to those who build an alliance with the Varka tribe. Stage 2 - Dependent alliance relations.\0	-1
+7223	Mark of Varka's Alliance - Level 3		a,A charm given to those who build an alliance with the Varka tribe. Stage 3 - Friendly alliance relations.\0	-1
+7224	Mark of Varka's Alliance - Level 4		a,A charm given to those who build an alliance with the Varka tribe. Stage 4 - Firm alliance relations.\0	-1
+7225	Mark of Varka's Alliance - Level 5		a,A charm given to those who build an alliance with the Varka tribe. Stage 5 - Steadfast firm alliance relations.\0	-1
 7226	Ketra's Badge - Soldier		a,A badge attained by slaying Ketra Orc Soldiers.\0	-1
 7227	Ketra's Badge - Captain		a,A badge attained by slaying Ketra Orc Captains.\0	-1
 7228	Ketra's Badge - General		a,A badge attained by slaying Ketra Orc Generals.\0	-1
@@ -5475,7 +5475,7 @@
 7250	Talon of Stakato		a,A talon from Stakatos in Swamp of Scream.\0	-1
 7251	Golden Ram Coin		a,A coin used by Golden Ram Army as currency.\0	-1
 7252	Krorin's Journal		a,A journal found in body of Krorin.\0	-1
-7253	Letter to archaeologist		a,A letter to an archaeologist who left to Imperial Tomb to explore.\0	-1
+7253	Letter to Archaeologist		a,A letter to an archaeologist who left to Imperial Tomb to explore.\0	-1
 7254	Broken Relic Part		a,A fragment of relic found in Imperial Tomb. Looks like it has no value because it is broken.\0	-1
 7255	Sealed Box		a,A sealed box found in the 4th sepulcher. This box is sealed with a mysterious power.\0	-1
 7256	Goblet of Alectia		a,A goblet attained by slaying Shadow of Halisha in the 4th sepulcher.\0	-1
@@ -5739,9 +5739,9 @@
 7514	Halisha's Mark		a,Cursed mark that summons minion of Halisha.\0	-1
 7515	Halisha's Mark		a,Cursed mark that summons minion of Halisha.\0	-1
 7516	Ice Wine		a,Mysterious wine made with cryolite.\0	-1
-7517	Donath's' Dish		a,A dish made by Donath's.\0	-1
+7517	Donath's' Dish		a,A dish made by Donath.\0	-1
 7518	Donath's' Note - Vol.1		a,A note that has cooking tips written by Donath. \0	-1
-7519	Shaved Ice		u,Lilly’s most favorite dessert that is made of a mixture of shaved ice and sweet flavorings.\0	-1
+7519	Shaved Ice		a,Lilly's most favorite dessert that is made of a mixture of shaved ice and sweet flavorings.\0	-1
 7520	Ice Cream		a,Sweet, soft and cold scoop of ice cream.\0	-1
 7521	Ice Crystal Gemstone		a,When sunlight reflects on it, it shines brightly with a rainbow of colors.\0	-1
 7522	Offering		a,Food that is dedicated to Saint Agnes.  It is tightly sealed to preserve its freshness.\0	-1
@@ -5750,7 +5750,7 @@
 7525	Offering		a,Food that is dedicated to Saint Agnes.  It is tightly sealed to preserve its freshness.\0	-1
 7526	Ancient Language Dictionary		a,A dictionary that is used to decipher an ancient language.\0	-1
 7527	Ancient Language Dictionary		a,A dictionary that is used to decipher an ancient language.\0	-1
-7528	Spinneret		u,A spider’s anatomical structure from which spider web is produced.\0	-1
+7528	Spinneret		a,A spider's anatomical structure from which spider web is produced.\0	-1
 7529	Investigative Report		a,A document received from Information Broker Mist. It contains the results of an investigation requested by Magister Justin.\0	-1
 7530	Investigative Report		a,A document received from Information Broker Mist. It contains the results of an investigation requested by Magister Alminas.\0	-1
 7531	Investigative Report		a,A document received from Information Broker Mist. It contains the results of an investigation requested by Magister Kamilen.\0	-1
@@ -5774,7 +5774,7 @@
 7549	Yellow Map		a,A map that contains a plot of the beasts. Take it to Mercenary Captain Sophya.\0	-1
 7550	Map Piece		a,A piece of a map that was possessed by Sorrow Maiden, a specter that haunts the Execution Ground.\0	-1
 7551	Ivory Colored Map		a,A map that contains strange information. By the way, sometime ago, Trader Galladucci complained that one of the maps he was supposed to receive didn't arrive...?\0	-1
-7552	Broken Gemstone Fragment		a,A fragment of gemstone that can be obtained by hunting Male Lizardmen.\0	-1
+7552	Broken Gemstone Fragment		a,A fragment of gemstone that can be obtained by hunting Maille Lizardmen.\0	-1
 7553	Gold Colored Gemstone		a,A gold colored orb. High Priest Drikus is supposed to be looking for it.\0	-1
 7554	Scroll of Escape to Talking Island		a,A magical scroll that relocates you to Talking Island.\0	-1
 7555	Scroll of Escape to Elven Village		a,A magical scroll that relocates you to Elven Village.\0	-1
@@ -5784,10 +5784,10 @@
 7559	Scroll of Escape to Giran Castle Town		a,A magical scroll that relocates you to Giran Castle Town.\0	-1
 7561	Fishing Manual		a,An instructional book of fishing techniques. You can double-click it to read it.\0	-1
 7562	Dimension Diamond		a,A crystal that is filled with magical power. It is needed when casting Instant Move magic. If you collect this item and take them to a gatekeeper, you can trade them for various types of Scroll of Escape.\0	-1
-7563	Galladucci's Order Document		u,A document describing Galladucci’s order. Take it to Trader Gentler at his magic shop.\0	-1
-7564	Galladucci's Order Document		u,A document describing Galladucci’s order. Take it to Trader Sandra at his magic shop.\0	-1
-7565	Galladucci's Order Document		u,A document describing Galladucci’s order. Take it to Priest Dustin at his magic shop.\0	-1
-7566	Purified Magic Necklace		u,It’s the item given by Priest Dustin. It seems to be the item Trader Galladucci has been looking for.\0	-1
+7563	Galladucci's Order Document		a,A document describing Galladucci's order. Take it to Trader Gentler at his magic shop.\0	-1
+7564	Galladucci's Order Document		a,A document describing Galladucci's order. Take it to Trader Sandra at his magic shop.\0	-1
+7565	Galladucci's Order Document		a,A document describing Galladucci's order. Take it to Priest Dustin at his magic shop.\0	-1
+7566	Purified Magic Necklace		a,It's the item given by Priest Dustin. It seems to be the item Trader Galladucci has been looking for.\0	-1
 7567	Gemstone Powder		a,The item given by Trader Sandra. This seems to be the item Trader Galladucci has been looking for.\0	-1
 7568	Magic Sword Hilt		a,An item given by Trader Gentler. This seems to be the item Trader Galladucci has been looking for.\0	-1
 7569	Four-leaf Golden Clover Coin		a,A gold coin that is engraved with a four-leaf clover design.\0	-1
@@ -5796,9 +5796,9 @@
 7572	Ariel's Recommendation		a,A letter of recommendation Trader Ariel wrote for you to be sent to Hierarch Asterios.\0	-1
 7573	Roselyn's Note		a,A note Roselyn wrote while being angry and wrathful. You should deliver it to Magister Harne.\0	-1
 7574	Very Expensive Necklace		a,A gift from Head Blacksmith Reed for Priest of the Earth Gerald. It looks very expensive.\0	-1
-7579	Draconic Bow Shaft		a,Main ingredient essentially required for a Dwarf to make a draconic bow. Can also be sold at ordinary shops.\0	-1
-7580	Recipe: Draconic Bow (60%)		a,For Dwarves only. The recipe for a draconic bow. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
-7581	Recipe: Draconic Bow (100%)		a,For Dwarves only. The recipe for a draconic bow. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
+7579	Draconic Bow Shaft		a,Main ingredient essentially required for a Dwarf to make a Draconic Bow. Can also be sold at ordinary shops.\0	-1
+7580	Recipe: Draconic Bow (60%)		a,For Dwarves only. The recipe for a Draconic Bow. Requires Create Item Skill Level 9. The success rate is 60%.\0	-1
+7581	Recipe: Draconic Bow (100%)		a,For Dwarves only. The recipe for a Draconic Bow. Requires Create Item Skill Level 9. The success rate is 100%.\0	-1
 7582	Baby Spice		a,When the food gauge of a baby buffalo, a baby cougar or a baby kookaburra drops to 55% or below, this feed will be consumed automatically.\0	-1
 7583	Pet Exchange Ticket: Buffalo		a,	-1
 7584	Pet Exchange Ticket: Cougar		a,	-1
@@ -5814,7 +5814,7 @@
 7594	Relic Box		a,Box containing 3 relics of Goddess\0	-1
 7595	Orb of Binding		a,A silver colored orb that emanates a strong feeling of magical power.\0	-1
 7596	Sorcery Ingredient		a,A sorcery ingredient that is used by Witch  Kalis.\0	-1
-7597	Malruk Succubus Talon		a,Thin and sharp claw obtained from Malruk Succubus\0	-1
+7597	Malruk Succubus Claw		a,Thin and sharp claw obtained from Malruk Succubus\0	-1
 7598	Crimson Moss		a,Crimson Moss obtained from Swamp of Screams\0	-1
 7599	Rahorakti's Miraculous Medicine		a,Remedy prescribed by Grand Seer Rahorakti for Dwarf Girl Kassandra\0	-1
 7600	Worn Tarot Card - Wealth		a,An old and worn out tarot card given by the Lady of the Lake.  This card symbolizes wealth.\0	-1
@@ -5824,9 +5824,9 @@
 7604	Summoner Keats' Letter		a,A clumsily written letter written by Summoner Keats who was turned into a frog.\0	-1
 7605	Miracle Potion of Transferred Life		a,An Elven miracle cure mixed by Priest Cerenas.\0	-1
 7606	Kamilen's Antidote		a,A medicine made by Magister Kamilen to cure Summoner Noctisse.\0	-1
-7607	Coolant of the Repaired Wilma #3		u,The cooling system refrigerant of repaired time machine “Wilma 3”.\0	-1
+7607	Coolant of the Repaired Wilma #3		a,The cooling system refrigerant of repaired time machine "Wilma 3".\0	-1
 7608	Sealed Envelope		a,A sealed envelope given by Information Broker Bavarin.\0	-1
-7609	Proof of Catching a Fish		u,Certificate of a fisherman. If you collect it and take them to a member of the fisherman’s guild, you can learn a skill that is related to expanding a slot.\0	-1
+7609	Proof of Catching a Fish		a,Certificate of a fisherman. If you collect it and take them to a member of the fisherman's guild, you can learn a skill that is related to expanding a slot.\0	-1
 7610	Wind Fishing Lure		a,A lure that was given out by Lanosco.  It contains the hidden power of wind. It is not easy to use this lure. Only those who are highly skilled in fishing should use it.\0	-1
 7611	Icy Air Fishing Lure		a,A lure that was given out by O'Fulle.  It contains the hidden power of icy air. It is not easy to use this lure. Only those who are highly skilled in fishing should use it.\0	-1
 7612	Earth Fishing Lure		a,A lure that was given out by Willie.  It contains the hidden power of earth. It is not easy to use this lure. Only those who are highly skilled in fishing should use it.\0	-1
@@ -5996,10 +5996,10 @@
 7807	Green Colored Lure - For Beginners		a,A lure used by beginners. Since only the fish intended for beginners take the bait, a player can easily learn how to fish. This bait is preferred by fast moving fish.\0	-1
 7808	Purple Colored Lure - For Beginners		a,A lure used by beginners. Since only the fish intended for beginners take the bait, a player can easily learn how to fish. This bait is preferred by fat fish.\0	-1
 7809	Yellow Colored Lure - For Beginners		a,A lure used by beginners. Since only the fish intended for beginners take the bait, a player can easily learn how to fish. This bait is preferred by ugly fish.\0	-1
-7832	Apprentice Adventurer's Weapon Exchange Coupon		u,An exchange coupon that is needed to borrow weapons for apprentice adventurers from the Adventurers’ Guild.\0	-1
-7833	Adventurer's Weapon Exchange Coupon		u,An exchange coupon that is needed to borrow weapons for apprentice adventurers from the Adventurers’ Guild.\0	-1
+7832	Apprentice Adventurer's Weapon Exchange Coupon		a,An exchange coupon that is needed to borrow weapons for apprentice adventurers from the Adventurers' Guild.\0	-1
+7833	Adventurer's Weapon Exchange Coupon		a,An exchange coupon that is needed to borrow weapons for apprentice adventurers from the Adventurers' Guild.\0	-1
 7835	Amulet: Seal of Disease		a,Amulet required for the Seal of Disease spell. Used by Dominators.\0	-1
-7838	NoItemName		a,	0
+7838	Santa's Hat		a,A Santa Claus hat that was created to celebrate the holiday.  This hat can be worn only during the end of year holiday season.\0	-1
 21	Shirt		a,	-1
 22	Leather Shirt		a,	-1
 23	Wooden Breastplate		a,Produces the following effects when worn with wooden gaiters and a wooden helmet: P. Def. +2% and HP +41.\0	-1
@@ -6764,19 +6764,19 @@
 6380	Draconic Leather Gloves		a,	-1
 6381	Draconic Leather Boots		a,	-1
 6382	Draconic Leather Helmet		a,	-1
-6383	Major Acarna Robe		a,Upper and lower body armor. Produces the following effects when worn with Major Arcarna Circlet, Major Arcarna Gloves and Major Arcarna Boots: Wit +1, Int+1, Men -2, M.Atk +8%, moving speed +7, casting cancel chance -50%, weight limit +5759.\0	-1
-6384	Major Acarna Gloves		a,	-1
-6385	Major Acarna Boots		a,	-1
-6386	Major Acarna Circlet		a,	-1
+6383	Major Arcana Robe		a,Upper and lower body armor. Produces the following effects when worn with Major Arcana Circlet, Major Arcana Gloves and Major Arcana Boots: Wit +1, Int+1, Men -2, M.Atk +8%, moving speed +7, casting cancel chance -50%, weight limit +5759.\0	-1
+6384	Major Arcana Gloves		a,	-1
+6385	Major Arcana Boots		a,	-1
+6386	Major Arcana Circlet		a,	-1
 6394	Red Party Mask		a,A fashion accessory item that allows you to show a unique appearance. \0	-1
-6408	Formal Wear		a,Formal wear for both male (tuxedo) and female (dress) characters. Equipped armors and weapons will be unequipped and cannot be used when formal wear is worn. Hair accessories and accessories (necklace, earrings, rings) will not be unequipped.\0	-1
-6656	Earring of Antharas		a,Produces the following effects: MP +31, 80% increase in resistance to bleeding, increase in the amount of heal, vampiric rage effect, 60% increase in resistance to stun/silence, decrease in MP consumption, and increase in resistance to earth-type attack.\0	-1
+6408	Formal Wear		a,Formal wear for both male (tuxedo) and female (wedding dress) characters. Currently equipped armor and weapons will be unequipped and cannot be used while the character is wearing formal wear. Hair accessories and magic items will not be unequipped.\0	-1
+6656	Earring of Antharas		a,Produces the following effects: MP +31, 80% increase in resistance to bleeding, increase in the amount of heal, vampiric rage effect, 60% increase in resistance to stun/silence, decrease in MP consumption, and increase in resistance to earth-type attack. If a character wears two identical earrings, the effect of only one earring will be applied.\0	-1
 6657	Necklace of Valakas		a,Produces the following effects: MP+42, 80% increase in sleep resistance, HP +445, decrease in reuse delay, increase in P. Atk. and M. Atk. wild magic effect, damage shield effect and increase in resistance to fire-type attack.\0	-1
-6658	Ring of Baium		a,Produces the following effects: MP +21, 80% increase in resistance to poisoning, increase in Accuracy, increase in critical damage, 60% increase in resistance to hold, and increase in Atk. Spd. and Casting Spd.\0	-1
-6659	Zaken's Earring		a,Produces the following effects: MP + 31, 60% increase in resistance to bleeding, increase in the amount of heal, vampiric rage, and 60% increase in resistance to stun/silence.\0	-1
-6660	Ring of Queen Ant		a,Produces the following effects: MP +21, 60% increase in resistance to poisoning, increase in accuracy, increase in critical damage, and 40% increase in resistance to hold.\0	-1
-6661	Earring of Orfen		a,Produces the following effects: MP+31, 40% increase in resistance to bleeding and increase in the amount of heal.\0	-1
-6662	Ring of Core		a,Produces the following effects: MP+21, 40% increase in resistance to poisoning and increase in accuracy.\0	-1
+6658	Ring of Baium		a,Produces the following effects: MP +21, 80% increase in resistance to poisoning, increase in Accuracy, increase in critical damage, 60% increase in resistance to hold, and increase in Atk. Spd. and Casting Spd.  If a character wears two identical rings, only the effect of one ring will be applied.\0	-1
+6659	Zaken's Earring		a,Produces the following effects: MP + 31, 60% increase in resistance to bleeding, increase in the amount of heal, vampiric rage, and 60% increase in resistance to stun/silence.  If a character wears two identical earrings, the effect of only one earring will be applied.\0	-1
+6660	Ring of Queen Ant		a,Produces the following effects: MP +21, 60% increase in resistance to poisoning, increase in accuracy, increase in critical damage, and 40% increase in resistance to hold.  If a character wears two identical rings, only the effect of one ring will be applied.\0	-1
+6661	Earring of Orfen		a,Produces the following effects: MP+31, 40% increase in resistance to bleeding and increase in the amount of heal. If a character wears two identical earrings, the effect of only one earring will be applied.\0	-1
+6662	Ring of Core		a,Produces the following effects: MP+21, 40% increase in resistance to poisoning and increase in accuracy.  If a character wears two identical rings, only the effect of one ring will be applied.\0	-1
 6674	Sealed Imperial Crusader Breastplate		a,Sealed Imperial Crusader Breastplate. Its seal can be broken with the help of the Blacksmith of Mammon.\0	-1
 6675	Sealed Imperial Crusader Gaiters		a,Sealed Imperial Crusader Gaiters. Its seal can be broken with the help of the Blacksmith of Mammon.\0	-1
 6676	Sealed Imperial Crusader Gauntlet		a,Sealed Imperial Crusader Gauntlets. Its seal can be broken with the help of the Blacksmith of Mammon.\0	-1
@@ -6800,11 +6800,11 @@
 6838	Circlet of Gludio		a,Three-swords Mark Circlet. Can be worn by the lord of Gludio Castle and clan members. Not by alliances.\0	-1
 6839	Circlet of Giran		a,Cross Mark Circlet. Can be worn by the lord of Giran Castle and clan members. Not by alliances.\0	-1
 6840	Circlet of Aden		a,Lion Mark Circlet. Can be worn by the lord of Aden Castle and clan members. Not by alliances.\0	-1
-6841	Crown of Lord		a,Hair accessory for castle lords\0	-1
+6841	Crown of Lord		a,Hair accessory that is a crown of a lord.\0	-1
 6842	Wings of Destiny Circlet		a,Hair accessory exclusively used by Heroes.\0	-1
-6843	Cat Ear		a,Cat ear shaped hair accessory\0	-1
-6844	Lady’s Hair Pin		a,Hair accessory exclusive for women\0	-1
-6845	Pirate’s Eye Patch		a,Eye patch accessory\0	-1
+6843	Cat Ear		a,Cat-ear shaped hair accessory\0	-1
+6844	Lady's Hair Pin		a,Hair accessory exclusive for women\0	-1
+6845	Pirate's Eye Patch		a,Eye patch accessory\0	-1
 6846	Monocle		a,Monocle accessory with attached ring\0	-1
 7059	Hair Accessory for Events		a,This item is used in Taiwan only.\0	-1
 7060	Tateossian Hairband		a,Tateossian Hairband\0	-1
@@ -6815,8 +6815,19 @@
 7694	Noblesse Tiara		a,Hair accessory exclusively used by the Noblesse.\0	-1
 7695	Forget-me-not Hairpin		a,A hairpin with a forget-me-not flower pattern. Hair accessory exclusively for women.\0	-1
 7696	Daisy Hairpin		a,A hairpin with a daisy pattern. Hair accessory exclusively for women.\0	-1
-7836	Santa's Hat		a,A Santa Claus hat that was created to celebrate the holiday.\0	-1
+7836	Santa's Hat		a,A Santa Claus hat that was created to celebrate the holiday.  This hat can be worn only during the end of year holiday season.\0	-1
 7837	Gold-line Mask		a,A half mask made of silver. A gold line is etched around the eyes to give it a chic, stylish look.\0	-1
+7839	Gold-line Mask - Black		a,A half mask made of obsidian. A gold line is etched around the eyes to give it a chic, stylish look.\0	-1
+7840	Rabbit Ears - For Event		a,for Japan\0	-1
+7841	Racoon Ears - For Event		a,for Japan\0	-1
+7842	Cat Ears - For Event		a,for Japan\0	-1
+7843	Pirate's Eyepatch - For Event		a,for Japan\0	-1
+7844	Monocle - For Event		a,for Japan\0	-1
+7845	Outlaw's Eyepatch - For Event		a,Purple eyepatch accessory.  It cannot be exchanged for an event item and can't be dropped.\0	-1
+7846	Lady's Hairpin - For Event		a,for Japan\0	-1
+7847	Noblewoman's Hairpin - For Event		a,for Japan\0	-1
+7848	Forget-me-not Hairpin - For Event		a,for Japan\0	-1
+7849	Daisy Hairpin - For Event		a,for Japan\0	-1
 1	Short Sword		a,	-1
 2	Long Sword		a,	-1
 3	Broadsword		a,	-1
@@ -6846,7 +6857,7 @@
 73	Shamshir		a,Bestows one of the following functions: Guidance, Back Blow, Rsk. Or Evasion.\0	-1
 74	Katana		a,Bestows one of the following functions: Focus, Critical Damage or Haste.\0	-1
 75	Caliburs		a,Bestows either Guidance, Focus or Critical Damage.\0	-1
-76	Sword of Delusion		a,Bestows one of the following functions: Focus, Health, Rsk. Or Haste.\0	-1
+76	Sword of Delusion		a,Bestows one of the following functions: Focus, Health, or Rsk. Haste.\0	-1
 77	Tsurugi		a,Bestows one of the following functions: Focus, Critical Damage or Haste.\0	-1
 78	Great Sword		a,Bestows one of the following functions: Health, Critical Damage or Focus.\0	-1
 79	Sword of Damascus		a,Bestows one of the following functions: Focus, Critical Damage or Haste.\0	-1
@@ -7719,13 +7730,13 @@
 6371	Demon Splinter		a,Bestows one of the following functions: Focus, Health or Crt. Stun.\0	-1
 6372	Heaven's Divider		a,Bestows one of the following functions: Haste, Health or Focus.\0	-1
 6377	Imperial Crusader Shield		a,	-1
-6529	Baby Duck Rod		u,Non-grade fishing rod. It can’t launch a general attack. Consumes one non-grade Fishing Shot.\0	-1
-6530	Albatross Rod		u,D-grade fishing rod. It can’t launch a general attack. Consumes one D-grade Fishing Shot.\0	-1
-6531	Pelican Rod		u,C-grade fishing rod. It can’t launch a general attack. Consumes one C-grade Fishing Shot.\0	-1
-6532	Kingfisher Rod		u,B-grade fishing rod. It can’t launch a general attack. Consumes one B-grade Fishing Shot.\0	-1
-6533	Cygnus Pole		u,A-grade fishing rod. It can’t launch a general attack. Consumes one A-grade Fishing Shot.\0	-1
-6534	Triton Pole		u,S-grade fishing rod. It can’t launch a general attack. Consumes one S-grade Fishing Shot.\0	-1
-6579	Arcarna Mace		a,Bestows one of the following functions: Acumen, MP Regeneration or Mana Up.\0	-1
+6529	Baby Duck Rod		a,Non-grade fishing rod. It can't launch a general attack. Consumes one non-grade Fishing Shot.\0	-1
+6530	Albatross Rod		a,D-grade fishing rod. It can't launch a general attack. Consumes one D-grade Fishing Shot.\0	-1
+6531	Pelican Rod		a,C-grade fishing rod. It can't launch a general attack. Consumes one C-grade Fishing Shot.\0	-1
+6532	Kingfisher Rod		a,B-grade fishing rod. It can't launch a general attack. Consumes one B-grade Fishing Shot.\0	-1
+6533	Cygnus Pole		a,A-grade fishing rod. It can't launch a general attack. Consumes one A-grade Fishing Shot.\0	-1
+6534	Triton Pole		a,S-grade fishing rod. It can't launch a general attack. Consumes one S-grade Fishing Shot.\0	-1
+6579	Arcana Mace		a,Bestows one of the following functions: Acumen, MP Regeneration or Mana Up.\0	-1
 6580	Tallum Blade*Dark Legion's Edge		a,P.Atk of dual swords will increase more than one-handed type weapon when enchanted. MaxHP +15%, MaxMP +20%, MaxCP +30% when enchanted by 4 or more. Also enhances damage to target during PvP.\0	-1
 6581	Forgotten Blade	Haste	a,Increases attack speed by about 7%.  Also enhances damage to target during PvP.\0	-1
 6582	Forgotten Blade	Health	a,Increases MaxHP by 25%.  Also enhances damage to target during PvP.\0	-1
@@ -7754,12 +7765,12 @@
 6605	Heavens Divider	Haste	a,Increases attack speed by about 7%.  Also enhances damage to target during PvP.\0	-1
 6606	Heavens Divider	Health	a,Increases MaxHP by 25%.  Also enhances damage to target during PvP.\0	-1
 6607	Heavens Divider	Focus	a,Increases critical chance by 84.  Also enhances damage to target during PvP.\0	-1
-6608	Arcarna Mace	Acumen	a,Increases casting speed by 15%. Also enhances damage to target during PvP.\0	-1
-6609	Arcarna Mace	MP Regeneration	a,Increases MP regeneration rate. Also enhances damage to target during PvP.\0	-1
-6610	Arcarna Mace	Mana Up	a,Increases MaxMP by 30%. Also enhances damage to target during PvP.\0	-1
-6611	Infinity Blade		u,During a critical attack, decreases one’s P. Def and increases de-buff casting ability, damage shield effect, Max HP, Max MP, Max CP, and shield defense power. Also enhances damage to target during PvP.\0	-1
+6608	Arcana Mace	Acumen	a,Increases casting speed by 15%. Also enhances damage to target during PvP.\0	-1
+6609	Arcana Mace	MP Regeneration	a,Increases MP regeneration rate. Also enhances damage to target during PvP.\0	-1
+6610	Arcana Mace	Mana Up	a,Increases MaxMP by 30%. Also enhances damage to target during PvP.\0	-1
+6611	Infinity Blade		a,During a critical attack, decreases one's P. Def and increases de-buff casting ability, damage shield effect, Max HP, Max MP, Max CP, and shield defense power. Also enhances damage to target during PvP.\0	-1
 6612	Infinity Cleaver		a,Increases Max HP, Max CP, critical power and critical chance. Inflicts extra damage when a critical attack occurs and has possibility of reflecting the skill back on the player. Also enhances damage to target during PvP.\0	-1
-6613	Infinity Axe		u,During a critical attack, it bestows one the ability to cause internal conflict to one’s opponent. Damage shield function, Max HP, Max MP, Max CP as well as one’s shield defense rate are increased. It also enhances damage to one’s opponent during PvP.\0	-1
+6613	Infinity Axe		a,During a critical attack, it bestows one the ability to cause internal conflict to one's opponent. Damage shield function, Max HP, Max MP, Max CP as well as one's shield defense rate are increased. It also enhances damage to one's opponent during PvP.\0	-1
 6614	Infinity Rod		a,When good magic is casted upon a target, increases MaxMP, MaxCP, Casting Spd, and MP regeneration rate. Also recovers HP 100%  and enhances damage to target during PvP.\0	-1
 6615	Infinity Crusher		a,Increases MaxHP, MaxCP, and Atk. Spd. Stuns a target when a critical attack occurs and has possibility of reflecting the skill back on the player. Also enhances damage to target during PvP. \0	-1
 6616	Infinity Scepter		a,When casting good magic, it can recover HP by 100% at a certain rate, increases MAX MP, MaxCP, M. Atk., lower MP Consumption, increases the Magic Critical rate, and reduce the Magic Cancel. Enhances damage to target during PvP.\0	-1
@@ -7784,7 +7795,7 @@
 6919	Monster Only (Shield of Ketra Orc)		a,	-1
 7014	Monster Only (Shield of Dark Dragon)		a,	-1
 7015	Shield of Castle Pledge		a,A shield that can only be used by the members of a clan that owns a castle.\0	-1
-7058	Chrono Darbuka		a,Hair Accessory given in an event.\0	-1
+7058	Chrono Darbuka		a,Chronicle IV Souvenir!!!\0	-1
 7560	Monster Only (Fishing Rod)		a,	-1
 7575	Draconic Bow		a,It can bestow one of the following functions: Cheap Shot, Focus, or Critical Slow.\0	-1
 7576	Draconic Bow	Cheap Shot	a,During a general attack, 1 MP will be consumed at the probability rate of 26%. Enhances damage to target during PvP.\0	-1
@@ -7820,20 +7831,53 @@
 7813	Hell Knife	Magic Regeneration	a,Casts HP Regeneration magic upon the target with a 30% chance of success when using good magic. Effect 3.\0	-1
 7814	Hell Knife	Mental Shield	a,Casts Mental Shield magic upon the target with a 50% chance of success when using good magic. Effect 4.\0	-1
 7815	Hell Knife	Magic Weakness	a,Casts Curse Weakness against the target with a 7% chance of success when using bad magic. Effect 3.\0	-1
-7816	Apprentice Adventurer's Staff		u,Apprentice Adventurer's Staff. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7817	Apprentice Adventurer's Bone Club		u,Apprentice Adventurer's Bone Club. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7818	Apprentice Adventurer's Knife		u,Apprentice Adventurer's Knife. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7819	Apprentice Adventurer's Cestus		u,Apprentice Adventurer's Cestus. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7820	Apprentice Adventurer's Bow		u,Apprentice Adventurer's Bow. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7821	Apprentice Adventurer's Long Sword		u,Apprentice Adventurer's Long Sword. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7822	Traveler's Mace		u,Traveler's Mace. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7823	Traveler's Dark Elven Bow		u,Traveler's Dark Elven Bow. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7824	Traveler's Long Bow		u,Traveler's Long Bow. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7825	Traveler's Staff		u,Traveler's Staff. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7826	Traveler's Bastard Sword		u,Traveler's Bastard Sword. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7827	Traveler's Spellbook		u,Traveler's Spellbook. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7828	Traveler's Jamadhar		u,Traveler's Jamadhar. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7829	Traveler's Tomahawk		u,Traveler's Tomahawk. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7830	Traveler's Poniard Dagger		u,Traveler's Poniard Dagger. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
-7831	Traveler's Pike		u,Traveler's Pike. Does not allow one to exchange, drop, use crystallization or enchant.  If one’s PK count is one or more, it cannot be used.\0	-1
+7816	Apprentice Adventurer's Staff		a,Apprentice Adventurer's Staff. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7817	Apprentice Adventurer's Bone Club		a,Apprentice Adventurer's Bone Club. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7818	Apprentice Adventurer's Knife		a,Apprentice Adventurer's Knife. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7819	Apprentice Adventurer's Cestus		a,Apprentice Adventurer's Cestus. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7820	Apprentice Adventurer's Bow		a,Apprentice Adventurer's Bow. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7821	Apprentice Adventurer's Long Sword		a,Apprentice Adventurer's Long Sword. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7822	Traveler's Mace		a,Traveler's Mace. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7823	Traveler's Dark Elven Bow		a,Traveler's Dark Elven Bow. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7824	Traveler's Long Bow		a,Traveler's Long Bow. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7825	Traveler's Staff		a,Traveler's Staff. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7826	Traveler's Bastard Sword		a,Traveler's Bastard Sword. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7827	Traveler's Spellbook		a,Traveler's Spellbook. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7828	Traveler's Jamadhar		a,Traveler's Jamadhar. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7829	Traveler's Tomahawk		a,Traveler's Tomahawk. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7830	Traveler's Poniard Dagger		a,Traveler's Poniard Dagger. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
+7831	Traveler's Pike		a,Traveler's Pike. Does not allow one to exchange, drop, use crystallization or enchant.  If one's PK count is one or more, it cannot be used.\0	-1
 7834	Art of Battle Axe		a,	-1
+9901	Vote Coin		a,A coin, which is recevied by voting for the server.\0	-1
+9902	Proof of Gambler		a,Can be exchanged for various rewards from the Lottery Ticket Seller.\0	-1
+9903	Wyvern Ride Ticket		a,An item that allows you to ride a wyvern.\0	-1
+9904	Coin of Luck		a,Magic coin, which can be exchanged for different goods and services from Erica.\0	-1
+9910	Potion of Charm		a,This potion will make you more noticeable in the eyes of other people. Increases character recommendations by 50.\0	-1
+9911	Symbol of Fellowship		a,The owner of this symbol receives family access to ElmoreLab world.\0	-1
+9912	Symbol of Kinship		a,The owner of this symbol receives family access to ElmoreLab world.\0	-1
+9913	Symbol of Companionship		a,The owner of this symbol receives family access to ElmoreLab world.\0	-1
+9914	Symbol of Society		a,The owner of this symbol receives family access to ElmoreLab world.\0	-1
+9915	Symbol of Togetherness		a,The owner of this symbol receives family access to ElmoreLab world.\0	-1
+9916	Symbol of Amity		a,The owner of this symbol receives family access to ElmoreLab world.\0	-1
+9950	Diadem		a,Hair accessory worn by a bride at her wedding ceremony.  This hair accessory can only be worn by females only.\0	-1
+9953	Jester Hat		a,A festive jester hat with a split top. \0	-1
+9954	Wizard's Hat		a,A wizard's hat with a wide brim and bent tip.\0	-1
+9955	Dapper Cap		a,A stylish cap with a visor. \0	-1
+9956	Romantic Chapeau		a,An extravagant chapeau adorned with feathers. \0	-1
+9973	Pirate Hat		a,Hat worn by pirates. It uses 2 hair accessory slots.\0	-1
+9975	Refined Wizard's Hat		a,A wizard's hat with a wide brim and bent tip.\0	-1
+9976	Refined Jester Hat		a,A festive jester hat with a split top.  \0	-1
+9982	Demon Horns		a,A hair accessory for the 2006 Halloween Event.\0	-1
+9985	Romantic Chapeau - Gold		a,An extravagant chapeau adorned with feathers.\0	-1
+9986	Romantic Chapeau - Silver		a,An extravagant chapeau adorned with feathers.\0	-1
+9987	Red Festival Hat		a,A magic cap, enchanted with good kind of magic. It was received on the first anniversary in 2023. Can only be worn during the anniversary days.\0	-1
+9988	Blue Festival Hat		a,A magic cap, enchanted with good kind of magic. It was received on the first anniversary in 2023. Can only be worn during the anniversary days.\0	-1
+9989	Straw Hat		a,Best defense for those who prefers strolling on a sunny day.\0	-1
+9990	Adventurer Hat		a,This stylish and practical hat will let everyone know that you're a true adventure lover.\0	-1
+9991	Assasin's Bamboo Hat		a,This simple-looking hat hides more than you think.\0	-1
+9992	Forest Forget-me-not Hat		a,And who is so handsome among us?.\0	-1
+9993	Warrior's Helmet		a,Helmet of a brave ancient warrior.\0	-1
+9994	Napoleon Hat		a,A Napoleon Hat accessory that has world conquering energy.\0	-1
+9995	Top Hat		a,A hat of a mysterious magician.\0	-1
+9996	Uniform Hat		a,A uniform hat that makes you feel like a proper seaman.\0	-1
+9997	White Uniform Hat		a,A white uniform hat that makes you feel like a proper seaman.\0	-1

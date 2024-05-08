@@ -20,6 +20,7 @@ import {
   calcPSpd,
   getSkillMod,
 } from "../func";
+import { getClan } from "../npc/getters";
 import { getSkills } from "../skills/npcGetSkill";
 type NpcNameC6 = NpcNameEntry & {
   npcName: string;
@@ -113,6 +114,8 @@ function addNpc(
     physicalHitModify: npcData.physical_hit_modify,
     collisionHeight: npcData.collision_height.$,
     collisionRadius: npcData.collision_radius.$,
+    clan: getClan(npcData.clan),
+    clanHelpRange: npcData.clan_help_range,
     con: npcData.con,
     dex: npcData.dex,
     int: npcData.int,

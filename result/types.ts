@@ -57,6 +57,8 @@ export type Npc = {
   evasion?: Int;
   collisionRadius: Int[];
   collisionHeight: Int[];
+  clan?: string;
+  clanHelpRange: Int;
   magicUseSpeedModify: Float | null;
   race: string;
   classes: string[];

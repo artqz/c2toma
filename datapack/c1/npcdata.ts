@@ -64,6 +64,10 @@ const NpcEntryC1 = z.object({
   npc_ai: z.object({ $: z.tuple([z.string()]).rest(z.unknown()) }),
   collision_radius: z.number(),
   collision_height: z.number(),
+  clan: z.object({
+    $: z.union([z.string().array(), z.number().array()]).optional(),
+  }),
+  clan_help_range: z.number(),
 });
 
 export type NpcEntryC1 = z.infer<typeof NpcEntryC1>;

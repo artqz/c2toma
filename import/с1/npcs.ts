@@ -1,4 +1,4 @@
-import { object, unknown } from "zod";
+import { number, object, unknown } from "zod";
 import { loadNpcDataC1 } from "../../datapack/c1/npcdata";
 import { loadNpcNamesC1 } from "../../datapack/c1/npcnames";
 import { loadNpcDataC4 } from "../../datapack/c4/npcdata";
@@ -30,6 +30,7 @@ import {
 import { generateNpcsIL } from "./il/npcs";
 import { getSkills } from "./skills/npcGetSkill";
 import { canUseSA } from "./npc/canUseSA";
+import { getClan } from "./npc/getters";
 
 export function loadNpcs(deps: {
   chronicle: Chronicle;
@@ -151,6 +152,8 @@ function addNpcs(deps: {
       physicalHitModify: npc.physical_hit_modify,
       collisionRadius: npc.collision_radius.$,
       collisionHeight: npc.collision_height.$,
+      clan: getClan(npc.clan),
+      clanHelpRange: npc.clan_help_range,
       con: npc.con,
       dex: npc.dex,
       int: npc.int,

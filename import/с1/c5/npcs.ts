@@ -240,6 +240,7 @@ function addDrop(deps: {
               );
             } else {
               deps.npc.dropList.push({
+                itemId: item.id,
                 itemName: item.itemName,
                 countMin: itemData.$[1],
                 countMax: itemData.$[2],
@@ -268,6 +269,7 @@ function addSpoil(deps: {
         );
       } else {
         deps.npc.spoilList.push({
+          itemId: item.id,
           itemName: item.itemName,
           countMin: itemData.$[1],
           countMax: itemData.$[2],
@@ -316,6 +318,7 @@ function addDropHerbs(deps: {
               );
             } else {
               deps.npc.herbList.push({
+                itemId: item.id,
                 itemName: item.itemName,
                 countMin: itemData.$[1],
                 countMax: itemData.$[2],

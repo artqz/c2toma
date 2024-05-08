@@ -68,6 +68,7 @@ export type Npc = {
   spawns: NpcSpawn[];
   canUseSA?: number;
   buffList?: NpcBuff[];
+  newDropList?: [NpcDrop[], Int][];
 };
 
 export type Point = {
@@ -221,6 +222,7 @@ export type NpcBuff = {
 };
 
 export type NpcDrop = {
+  itemId: number;
   itemName: string;
   countMin: Int;
   countMax: Int;

@@ -16,7 +16,7 @@ import { loadNpcBuffs } from "./import/с1/npcBuffs";
 import { loadSkillCard } from "./import/с1/skillCard";
 import { loadZones } from "./import/с1/zones";
 
-const chronicle: Chronicle = "c4";
+const chronicle: Chronicle = "c1";
 
 function init() {
   createDir(`result/data/${chronicle}`);

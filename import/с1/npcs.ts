@@ -175,6 +175,11 @@ function addNpcs(deps: {
       skillList,
       multisell: [],
       spawns: [],
+      newDropList: getNewDrop({
+        ...deps,
+        list: npc.additional_make_multi_list,
+        items: itemByName,
+      }),
     });
   }
 
@@ -217,6 +222,7 @@ function getDrop(deps: { list: any; items: Map<string, Item> }) {
               console.log("Drop list item not found: " + itemName);
             } else {
               drop.push({
+                itemId: item.id,
                 itemName: item.itemName,
                 countMin: itemData.$[1],
                 countMax: itemData.$[2],
@@ -227,6 +233,41 @@ function getDrop(deps: { list: any; items: Map<string, Item> }) {
         })
       );
     });
+  });
+
+  return drop;
+}
+
+function getNewDrop(deps: { list: any; items: Map<string, Item> }) {
+  const drop: [NpcDrop[], number][] = [];
+
+  (deps.list as any).$?.map((mainGroup: any) => {
+    const mainGroupChanceDrop = Number(mainGroup.$[1]);
+    const arr: NpcDrop[] = [];
+    mainGroup.$.map((subGroup: any) => {
+      subGroup.$ &&
+        subGroup.$.map((itemData: any) => {
+          if (itemData.$) {
+            const itemChanceDrop = Number(itemData.$[3]);
+
+            const itemName = itemData.$[0].replace(/\s/g, "_");
+            const item = deps.items.get(itemName);
+
+            if (!item) {
+              console.log("Drop list item not found: " + itemName);
+            } else {
+              arr.push({
+                itemId: item.id,
+                itemName: item.itemName,
+                countMin: itemData.$[1],
+                countMax: itemData.$[2],
+                chance: itemChanceDrop,
+              });
+            }
+          }
+        });
+    });
+    drop.push([arr, mainGroupChanceDrop]);
   });
 
   return drop;
@@ -243,6 +284,7 @@ function getSpoil(deps: { list: any; items: Map<string, Item> }) {
         console.log("Spoil list item not found: " + itemName);
       } else {
         spoil.push({
+          itemId: item.id,
           itemName: item.itemName,
           countMin: itemData.$[1],
           countMax: itemData.$[2],

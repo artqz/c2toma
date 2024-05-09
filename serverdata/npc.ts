@@ -2,28 +2,15 @@ import Fs from "fs";
 import { Builder } from "../lib/build";
 import { Drop, Npc, Spoil } from "./schemas/npc";
 import { loadNpcDataC1 } from "../datapack/c1/npcdata";
-import { getClan, getDrop } from "./getters/npc";
+import { getClan, getDrop, getSpoil } from "./getters/npc";
 import { itemdata } from "./items";
+import { loadNpcNamesC1 } from "../datapack/c1/npcnames";
+import slug from "slug";
 
 export function npcdataC1() {
   const npcdata = loadNpcDataC1();
+  const npcNameById = new Map(loadNpcNamesC1().map((n) => [n.id, n]));
   const { itemByName } = itemdata();
-
-  // function spoil(list: NpcDrop[]): Spoil {
-  //   return {
-  //     item: (list ?? []).map((i) => {
-  //       return {
-  //         _com: i.itemName,
-  //         $: {
-  //           id: i.itemId,
-  //           min: i.countMin,
-  //           max: i.countMax,
-  //           chance: i.chance,
-  //         },
-  //       };
-  //     }),
-  //   };
-  // }
 
   const npc = Npc.array().parse(
     Array.from(npcdata).map((npc): Npc => {
@@ -32,14 +19,21 @@ export function npcdataC1() {
         list: npc.additional_make_multi_list,
         itemByName,
       });
+      const spoil = getSpoil({
+        list: npc.corpse_make_list,
+        itemByName,
+      });
+      const id = npc.$[1];
+      const npcName = slug(npc.$[2], "_");
+      const { name, nick } = npcNameById.get(id) ?? { name: npcName };
       return {
         npc: {
           $: {
-            id: npc.$[1],
+            id,
             level: npc.level ?? 1,
             type: "Monster",
-            name: "npc.name.en",
-            // ...(npc.nick.en !== "" && { title: npc.nick.en }),
+            name,
+            ...(nick && { title: nick }),
           },
           ai: {
             $: {
@@ -66,10 +60,13 @@ export function npcdataC1() {
               },
             },
           },
-          dropLists: {
-            ...(drop.group.length && { drop }),
-            // spoil: spoil(npc.corpse_make_list),
-          },
+          ...(drop.group.length &&
+            spoil && {
+              dropLists: {
+                drop,
+                spoil,
+              },
+            }),
         },
       };
     })

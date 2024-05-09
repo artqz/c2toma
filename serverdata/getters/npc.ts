@@ -32,15 +32,18 @@ export function getDrop(deps: { list: any; itemByName: Map<string, Item> }) {
       subGroup.$ &&
         subGroup.$.map((itemData: any) => {
           if (itemData.$) {
+            const itemName = slug(itemData.$[0], "_");
             const itemChanceDrop = Number(itemData.$[3]);
-            const item = deps.itemByName.get(slug(itemData.$[0], "_"));
-            if (item) {
+            const item = deps.itemByName.get(itemName);
+            if (!item) {
+              console.log("Drop list item not found: " + itemName);
+            } else {
               arr.push({
                 id: item.id,
                 min: itemData.$[1],
                 max: itemData.$[2],
                 chance: itemChanceDrop,
-                name: item.itemName,
+                name: item.name,
               });
             }
           }
@@ -64,6 +67,50 @@ export function getDrop(deps: { list: any; itemByName: Map<string, Item> }) {
             },
           };
         }),
+      };
+    }),
+  };
+}
+
+export function getSpoil(deps: { list: any; itemByName: Map<string, Item> }) {
+  type SpoilItem = {
+    id: number;
+    min: number;
+    max: number;
+    chance: number;
+    name: string;
+  };
+  const spoil: SpoilItem[] = [];
+
+  (deps.list as any).$?.map((itemData: any) => {
+    if (itemData) {
+      const itemName = slug(itemData.$[0], "_");
+      const item = deps.itemByName.get(itemName);
+      if (!item) {
+        console.log("Spoil list item not found: " + itemName);
+      } else {
+        const itemChanceDrop = Number(itemData.$[3]);
+        spoil.push({
+          id: item.id,
+          min: itemData.$[1],
+          max: itemData.$[2],
+          chance: itemChanceDrop,
+          name: item.name,
+        });
+      }
+    }
+  });
+
+  return {
+    item: (spoil ?? []).map((i) => {
+      return {
+        _com: i.name,
+        $: {
+          id: i.id,
+          min: i.min,
+          max: i.max,
+          chance: i.chance,
+        },
       };
     }),
   };

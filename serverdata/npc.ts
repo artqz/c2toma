@@ -61,10 +61,10 @@ export function npcdataC1() {
             },
           },
           ...(drop.group.length &&
-            spoil && {
+            spoil.item.length && {
               dropLists: {
-                drop,
-                spoil,
+                ...(drop.group.length && { spoil }),
+                ...(spoil.item.length && { spoil }),
               },
             }),
         },

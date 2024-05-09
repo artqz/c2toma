@@ -69,8 +69,8 @@ export const Npc = z.object({
     }),
     dropLists: z
       .object({
-        drop: Drop,
-        spoil: Spoil,
+        drop: Drop.optional(),
+        spoil: Spoil.optional(),
       })
       .optional(),
   }),

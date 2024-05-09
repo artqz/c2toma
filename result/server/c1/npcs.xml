@@ -9108,7 +9108,6 @@
           <!-- Recipe: Elven Earring -->
         </group>
       </drop>
-      <spoil/>
     </dropLists>
   </npc>
   <npc id="259" level="35" type="Monster" name="Batur Orc Overlord">
@@ -38602,7 +38601,6 @@
           <!-- Greater Healing Potion -->
         </group>
       </drop>
-      <spoil/>
     </dropLists>
   </npc>
   <npc id="12212" level="65" type="Monster" name="Duke Balthus Vanik">

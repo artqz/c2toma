@@ -84,6 +84,31 @@ export const Npc = z.object({
     }),
     sex: Sex,
     race: Race,
+    acquire: z.object({
+      $: z.object({
+        exp: z.number(),
+        sp: z.number(),
+        attributeExp: z.number().optional(),
+      }),
+    }),
+    stats: z.object({
+      $: z.object({
+        str: z.number(),
+        int: z.number(),
+        dex: z.number(),
+        wit: z.number(),
+        con: z.number(),
+        men: z.number(),
+      }),
+      vitals: z.object({
+        $: z.object({
+          hp: z.number(),
+          hpRegen: z.number(),
+          mp: z.number(),
+          mpRegen: z.number(),
+        }),
+      }),
+    }),
     ai: Ai,
     collision: z.object({
       radius: z.object({

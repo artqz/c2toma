@@ -15,6 +15,7 @@ import { itemdata } from "./items";
 import { loadNpcNamesC1 } from "../datapack/c1/npcnames";
 import slug from "slug";
 import { loadAiDataC1 } from "../datapack/c1/ai";
+import _ from "lodash";
 
 export function npcdataC1() {
   const npcdata = loadNpcDataC1();
@@ -51,6 +52,30 @@ export function npcdataC1() {
           },
           sex: getSex("male"),
           race: getRace(npc.race),
+          acquire: {
+            $: {
+              exp: npc.acquire_exp_rate,
+              sp: npc.acquire_sp,
+            },
+          },
+          stats: {
+            $: {
+              con: npc.con,
+              dex: npc.dex,
+              int: npc.int,
+              men: npc.men,
+              str: npc.str,
+              wit: npc.wit,
+            },
+            vitals: {
+              $: {
+                hp: _.round(npc.org_hp, 3),
+                hpRegen: _.round(npc.org_hp_regen, 3),
+                mp: _.round(npc.org_mp, 3),
+                mpRegen: _.round(npc.org_mp_regen, 3),
+              },
+            },
+          },
           ai: {
             $: {
               clanHelpRange: npc.clan_help_range,

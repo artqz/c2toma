@@ -2,7 +2,15 @@ import Fs from "fs";
 import { Builder } from "../lib/build";
 import { Drop, Npc, Spoil } from "./schemas/npc";
 import { loadNpcDataC1 } from "../datapack/c1/npcdata";
-import { getClan, getDrop, getSpoil, getType, getAggr } from "./getters/npc";
+import {
+  getClan,
+  getDrop,
+  getSpoil,
+  getType,
+  getAggr,
+  getSex,
+  getRace,
+} from "./getters/npc";
 import { itemdata } from "./items";
 import { loadNpcNamesC1 } from "../datapack/c1/npcnames";
 import slug from "slug";
@@ -41,6 +49,8 @@ export function npcdataC1() {
             name,
             ...(nick && { title: nick }),
           },
+          sex: getSex("male"),
+          race: getRace(npc.race),
           ai: {
             $: {
               clanHelpRange: npc.clan_help_range,

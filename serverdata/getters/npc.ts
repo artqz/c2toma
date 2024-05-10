@@ -1,3 +1,4 @@
+import { Race, Sex } from "../schemas/npc";
 import slug from "slug";
 import { Item } from "../schemas/items";
 
@@ -157,4 +158,15 @@ export function getAggr(deps: {
   } else {
     return false;
   }
+}
+
+export function getRace(value: string) {
+  if (value === "darkelf") {
+    return Race.parse("DARK_ELF");
+  }
+  return Race.parse(value.toUpperCase());
+}
+
+export function getSex(value: string) {
+  return Sex.parse(value.toUpperCase());
 }

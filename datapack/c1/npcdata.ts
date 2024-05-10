@@ -7,6 +7,7 @@ const NpcSkillsEntryC1 = z.object({ $: z.optional(z.string().array()) });
 const NpcEntryC1 = z.object({
   $: z.tuple([z.string(), z.number(), z.string()]),
   skill_list: NpcSkillsEntryC1,
+  sex: z.string(),
   org_hp_regen: z.number(),
   org_mp_regen: z.number(),
   level: z.number(),

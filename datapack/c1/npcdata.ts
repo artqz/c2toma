@@ -80,8 +80,8 @@ export function loadNpcDataJson(path: string): NpcDataEntry[] {
 
   return data.map((d) => ({
     ...d,
-    collision_height: { $: [d.collision_height, 0] },
-    collision_radius: { $: [d.collision_radius, 0] },
+    collision_height: { $: [d.collision_height, d.collision_height] },
+    collision_radius: { $: [d.collision_radius, d.collision_radius] },
   }));
 }
 

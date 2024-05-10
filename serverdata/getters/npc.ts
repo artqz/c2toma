@@ -115,3 +115,46 @@ export function getSpoil(deps: { list: any; itemByName: Map<string, Item> }) {
     }),
   };
 }
+
+export function getType(value: string) {
+  type Type =
+    | "Monster"
+    | "Merchant"
+    | "Warehouse"
+    | "Teleporter"
+    | "Guard"
+    | "Folk";
+
+  let type: Type = "Folk";
+
+  switch (value) {
+    case "warrior":
+      type = "Monster";
+      break;
+    case "merchant":
+      type = "Merchant";
+      break;
+    case "guard":
+      type = "Guard";
+      break;
+    case "warehouse_keeper":
+      type = "Warehouse";
+      break;
+    case "teleporter":
+      type = "Teleporter";
+  }
+  return type;
+}
+
+export function getAggr(deps: {
+  npcName: string;
+  npcAiByName: Map<string, { super: string }>;
+}) {
+  const ai = deps.npcAiByName.get(deps.npcName)?.super;
+
+  if (ai?.includes("aggressive")) {
+    return true;
+  } else {
+    return false;
+  }
+}

@@ -2,14 +2,16 @@ import Fs from "fs";
 import { Builder } from "../lib/build";
 import { Drop, Npc, Spoil } from "./schemas/npc";
 import { loadNpcDataC1 } from "../datapack/c1/npcdata";
-import { getClan, getDrop, getSpoil } from "./getters/npc";
+import { getClan, getDrop, getSpoil, getType, getAggr } from "./getters/npc";
 import { itemdata } from "./items";
 import { loadNpcNamesC1 } from "../datapack/c1/npcnames";
 import slug from "slug";
+import { loadAiDataC1 } from "../datapack/c1/ai";
 
 export function npcdataC1() {
   const npcdata = loadNpcDataC1();
   const npcNameById = new Map(loadNpcNamesC1().map((n) => [n.id, n]));
+  const npcAiByName = new Map(Object.entries(loadAiDataC1()));
   const { itemByName } = itemdata();
 
   const npc = Npc.array().parse(
@@ -23,15 +25,19 @@ export function npcdataC1() {
         list: npc.corpse_make_list,
         itemByName,
       });
+
       const id = npc.$[1];
       const npcName = slug(npc.$[2], "_");
       const { name, nick } = npcNameById.get(id) ?? { name: npcName };
+      const type = getType(npc.$[0]);
+      const isAggressive = getAggr({ npcName, npcAiByName });
+
       return {
         npc: {
           $: {
             id,
             level: npc.level ?? 1,
-            type: "Monster",
+            type,
             name,
             ...(nick && { title: nick }),
           },
@@ -39,6 +45,7 @@ export function npcdataC1() {
             $: {
               clanHelpRange: npc.clan_help_range,
               aggroRange: npc.agro_range,
+              ...(isAggressive && { isAggressive }),
             },
             ...(npcClan && { clanList: { clan: npcClan } }),
           },
@@ -63,7 +70,7 @@ export function npcdataC1() {
           ...(drop.group.length &&
             spoil.item.length && {
               dropLists: {
-                ...(drop.group.length && { spoil }),
+                ...(drop.group.length && { drop }),
                 ...(spoil.item.length && { spoil }),
               },
             }),

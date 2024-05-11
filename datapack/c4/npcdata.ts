@@ -69,6 +69,7 @@ const NpcEntryC4 = z.object({
   clan_help_range: z.number(),
   base_reuse_delay: z.number(),
   base_rand_dam: z.number(),
+  base_attack_range: z.number(),
 });
 
 export type NpcEntryC4 = z.infer<typeof NpcEntryC4>;

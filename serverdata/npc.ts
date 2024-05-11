@@ -99,6 +99,7 @@ export function npcdataC1() {
                   attackSpeed: npc.base_attack_speed,
                   type: npc.base_attack_type.toUpperCase(),
                   random: npc.base_rand_dam,
+                  range: npc.base_attack_range,
                 },
               },
             },

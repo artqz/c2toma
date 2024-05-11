@@ -67,6 +67,8 @@ const NpcEntryC4 = z.object({
     $: z.union([z.string().array(), z.number().array()]).optional(),
   }),
   clan_help_range: z.number(),
+  base_reuse_delay: z.number(),
+  base_rand_dam: z.number(),
 });
 
 export type NpcEntryC4 = z.infer<typeof NpcEntryC4>;

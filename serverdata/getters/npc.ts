@@ -2,6 +2,18 @@ import { Race, Sex } from "../schemas/npc";
 import slug from "slug";
 import { Item } from "../schemas/items";
 
+export function getId(deps: {
+  npcName: string;
+  npcNewIdByName: Map<string, { $: [string, number, string] }>;
+}) {
+  const npc = deps.npcNewIdByName.get(deps.npcName);
+  if (!npc) {
+    console.log("Npc not found: " + deps.npcName);
+  } else {
+    return npc.$[1];
+  }
+}
+
 export function getClan(params: { $?: string[] | number[] }) {
   const { $ } = params;
   if ($) {

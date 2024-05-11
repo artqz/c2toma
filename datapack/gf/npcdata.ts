@@ -66,6 +66,8 @@ const NpcEntryGF = z.object({
     $: z.union([z.string().array(), z.number().array()]).optional(),
   }),
   clan_help_range: z.number(),
+  base_reuse_delay: z.number(),
+  base_rand_dam: z.number(),
 });
 
 export type NpcEntryGF = z.infer<typeof NpcEntryGF>;

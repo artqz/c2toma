@@ -108,6 +108,21 @@ export const Npc = z.object({
           mpRegen: z.number(),
         }),
       }),
+      attack: z.object({
+        $: z.object({
+          magical: z.number().optional(),
+          random: z.number().optional(),
+          physical: z.number().optional(),
+          critical: z.number().optional(),
+          accuracy: z.number().optional(),
+          attackSpeed: z.number().optional(),
+          reuseDelay: z.number().optional(),
+          type: z.string().optional(),
+          range: z.number().optional(),
+          distance: z.number().optional(),
+          width: z.number().optional(),
+        }),
+      }),
     }),
     ai: Ai,
     collision: z.object({

@@ -123,6 +123,12 @@ export const Npc = z.object({
           width: z.number().optional(),
         }),
       }),
+      defence: z.object({
+        $: z.object({
+          physical: z.number(),
+          magical: z.number(),
+        }),
+      }),
     }),
     ai: Ai,
     collision: z.object({

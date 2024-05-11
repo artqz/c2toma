@@ -102,6 +102,12 @@ export function npcdataC1() {
                   range: npc.base_attack_range,
                 },
               },
+              defence: {
+                $: {
+                  physical: npc.base_defend,
+                  magical: npc.base_magic_defend,
+                },
+              },
             },
             ai: {
               $: {
@@ -147,12 +153,18 @@ export function npcdataC1() {
   const builder = new Builder({
     attrkey: "$",
     charkey: "_",
-    rootName: "root",
+    // rootName: "list",
     cdata: true,
     com: "_com",
     // Другие параметры...
   });
-  var xml = builder.buildObject(npc);
+
+  var xml = builder.buildObject({
+    list: [...npc],
+  });
+  const obj = { dollsr: 1 };
+
+  console.log({ obj: { ...obj } });
 
   Fs.writeFileSync("./result/server/c1/npcs.xml", xml);
   console.log("Npcdata saved.");

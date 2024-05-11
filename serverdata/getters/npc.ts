@@ -176,6 +176,9 @@ export function getRace(value: string) {
   if (value === "darkelf") {
     return Race.parse("DARK_ELF");
   }
+  if (value === "monster") {
+    return Race.parse("ETC");
+  }
   return Race.parse(value.toUpperCase());
 }
 

@@ -17,6 +17,15 @@ function makeNpcType<S extends string>(suffix: S) {
         z.object({
           t: z.literal(`npc${suffix}` as const),
           $: z.tuple([z.string()]).rest(z.unknown()),
+          total: z.number().optional(),
+          respawn: z.union([
+            z.object({
+              t: z.string(),
+              value: z.number(),
+              unit: z.string(),
+            }),
+            z.string(),
+          ]),
           pos: z
             .union([
               z.literal("anywhere"),

@@ -153,18 +153,20 @@ export function npcdataC1() {
   const builder = new Builder({
     attrkey: "$",
     charkey: "_",
-    // rootName: "list",
+    rootName: "list",
     cdata: true,
     com: "_com",
     // Другие параметры...
   });
 
-  var xml = builder.buildObject({
-    list: [...npc],
-  });
-  const obj = { dollsr: 1 };
+  const list = {
+    $: {
+      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+      "xsi:noNamespaceSchemaLocation": "../../../xsd/npcs.xsd",
+    },
+  };
 
-  console.log({ obj: { ...obj } });
+  var xml = builder.buildObject(npc);
 
   Fs.writeFileSync("./result/server/c1/npcs.xml", xml);
   console.log("Npcdata saved.");

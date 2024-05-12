@@ -1,6 +1,7 @@
-import _ from "lodash";
+import Fs from "fs";
 import { loadNpcPosC1 } from "../datapack/c1/npcpos";
 import { NpcPos, Territory } from "./schemas/npcpos";
+import { Builder } from "../lib/build";
 
 export function npcpos() {
   const spawnMap = new Map<string, NpcPos["spawn"]>();
@@ -68,13 +69,6 @@ export function npcpos() {
                 });
                 spawnMap.set(terrId, { ..._spawn, npc });
               }
-              // npcs.push({
-              //   $: {
-              //     id: spawn.$[0],
-              //     count: spawn.total ?? 1,
-              //     respawnTime: spawn.respawn.value + spawn.respawn.unit,
-              //   },
-              // });
             }
           }
         }
@@ -123,7 +117,35 @@ export function npcpos() {
     // }
   }
 
-  // NpcPos.array().parse({})
+  // const npcpos: NpcPos = NpcPos.parse(
+  //   Array.from(spawnMap.values()).map((s): NpcPos => {
+  //     return { spawn: { npc: s.npc, territories: s.territories } };
+  //   })
+  // );
 
-  console.log(JSON.stringify(spawnMap.get("oren_t20_18_002"), null, 2));
+  // NpcPos.array().parse({})
+  // var builder = new xml2js.Builder();
+  const builder = new Builder({
+    attrkey: "$",
+    charkey: "_",
+    rootName: "list",
+    cdata: true,
+    com: "_com",
+    // Другие параметры...
+  });
+
+  const list = {
+    $: {
+      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+      "xsi:noNamespaceSchemaLocation": "../../../xsd/npcs.xsd",
+    },
+  };
+
+  // var xml = builder.buildObject(npcpos);
+
+  Fs.writeFileSync(
+    "./result/server/c1/npcspos.json",
+    JSON.stringify(Array.from(spawnMap.values()), null, 2)
+  );
+  console.log("Npcpos saved.");
 }

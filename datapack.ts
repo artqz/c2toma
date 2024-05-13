@@ -1,4 +1,4 @@
-import { npcdataC1 } from "./serverdata/npc";
+import { npcdata } from "./serverdata/npcdata";
 import { npcpos } from "./serverdata/npcpos";
 
 function init() {

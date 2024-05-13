@@ -1,7 +1,7 @@
 import Fs from "fs";
 import { z } from "zod";
 
-type NpcNameEntry = {
+export type NpcNameEntry = {
   id: number;
   name: string;
   nick: string;
@@ -23,5 +23,5 @@ export function loadNpcNamesJson(path: string): NpcNameEntry[] {
 }
 
 export function loadNpcNamesC1() {
-    return loadNpcNamesJson("datapack/c1/npcname-e.txt.l2h.json");
+  return loadNpcNamesJson("datapack/c1/npcname-e.txt.l2h.json");
 }

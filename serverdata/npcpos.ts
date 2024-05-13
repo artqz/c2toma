@@ -2,8 +2,11 @@ import Fs from "fs";
 import { loadNpcPosC1 } from "../datapack/c1/npcpos";
 import { NpcPos, Territory } from "./schemas/npcpos";
 import { Builder } from "../lib/build";
+import { npcdata } from "./npcdata";
+import slug from "slug";
 
 export function npcpos() {
+  const { npcByName } = npcdata();
   const spawnMap = new Map<string, NpcPos["spawn"]>();
 
   for (const entry of loadNpcPosC1()) {
@@ -53,39 +56,43 @@ export function npcpos() {
 
       for (const spawn of spawns) {
         const pos = spawn.pos;
-
-        for (const terrId of terrIds) {
-          const _spawn = spawnMap.get(terrId);
-          if (_spawn) {
-            const npc = _spawn.npc;
-            if (pos === "anywhere") {
-              if (typeof spawn.respawn !== "string") {
-                npc.push({
-                  $: {
-                    id: spawn.$[0],
-                    count: spawn.total ?? 1,
-                    respawnTime: spawn.respawn.value + spawn.respawn.unit,
-                  },
-                });
-              }
-            } else if (pos) {
-              if (typeof spawn.respawn !== "string") {
-                for (const subPos of pos.$) {
+        const npcdata = npcByName.get(slug(spawn.$[0], "_"));
+        if (npcdata) {
+          for (const terrId of terrIds) {
+            const _spawn = spawnMap.get(terrId);
+            if (_spawn) {
+              const npc = _spawn.npc;
+              if (pos === "anywhere") {
+                if (typeof spawn.respawn !== "string") {
                   npc.push({
+                    _com: npcdata.$[2],
                     $: {
-                      id: spawn.$[0],
+                      id: npcdata.$[1]!,
                       count: spawn.total ?? 1,
                       respawnTime: spawn.respawn.value + spawn.respawn.unit,
-                      x: subPos.$[0],
-                      y: subPos.$[1],
-                      z: subPos.$[2],
-                      heading: subPos.$[3],
                     },
                   });
                 }
+              } else if (pos) {
+                if (typeof spawn.respawn !== "string") {
+                  for (const subPos of pos.$) {
+                    npc.push({
+                      _com: npcdata.$[2],
+                      $: {
+                        id: npcdata.$[1]!,
+                        count: spawn.total ?? 1,
+                        x: subPos.$[0],
+                        y: subPos.$[1],
+                        z: subPos.$[2],
+                        heading: subPos.$[3],
+                        respawnTime: spawn.respawn.value + spawn.respawn.unit,
+                      },
+                    });
+                  }
+                }
               }
+              spawnMap.set(terrId, { ..._spawn, npc });
             }
-            spawnMap.set(terrId, { ..._spawn, npc });
           }
         }
       }

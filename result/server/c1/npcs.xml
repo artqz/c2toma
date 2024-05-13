@@ -1529,7 +1529,7 @@
       </spoil>
     </dropLists>
   </npc>
-  <npc id="20034" level="17" type="Monster" name="Prowler">
+  <npc id="20034" level="17" type="Monster" name="Sting Spider">
     <sex>MALE</sex>
     <race>BUG</race>
     <acquire exp="1.73" sp="21"/>
@@ -10839,7 +10839,7 @@
       <height normal="22"/>
     </collision>
   </npc>
-  <npc id="27038" level="15" type="Monster" name="Cat's Eye Bandit">
+  <npc id="27038" level="15" type="Monster" name="Cat'S Eye Bandit" title="Quest Monster">
     <sex>MALE</sex>
     <race>HUMANOID</race>
     <acquire exp="1.96" sp="18"/>

@@ -23,9 +23,10 @@ export const NpcPos = z.object({
     }),
     npc: z
       .object({
+        _com: z.string().optional(),
         $: z.object({
           //id: z.number(),
-          id: z.string(),
+          id: z.number(),
           count: z.number(),
           respawnTime: z.string(),
           x: z.number().optional(),

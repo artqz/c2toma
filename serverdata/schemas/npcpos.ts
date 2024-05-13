@@ -28,6 +28,10 @@ export const NpcPos = z.object({
           id: z.string(),
           count: z.number(),
           respawnTime: z.string(),
+          x: z.number().optional(),
+          y: z.number().optional(),
+          z: z.number().optional(),
+          heading: z.number().optional(),
         }),
       })
       .array(),

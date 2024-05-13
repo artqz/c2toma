@@ -54,12 +54,12 @@ export function npcpos() {
       for (const spawn of spawns) {
         const pos = spawn.pos;
 
-        if (pos === "anywhere") {
-          for (const terrId of terrIds) {
-            const _spawn = spawnMap.get(terrId);
-            if (_spawn) {
+        for (const terrId of terrIds) {
+          const _spawn = spawnMap.get(terrId);
+          if (_spawn) {
+            const npc = _spawn.npc;
+            if (pos === "anywhere") {
               if (typeof spawn.respawn !== "string") {
-                const npc = _spawn.npc;
                 npc.push({
                   $: {
                     id: spawn.$[0],
@@ -67,64 +67,31 @@ export function npcpos() {
                     respawnTime: spawn.respawn.value + spawn.respawn.unit,
                   },
                 });
-                spawnMap.set(terrId, { ..._spawn, npc });
+              }
+            } else if (pos) {
+              if (typeof spawn.respawn !== "string") {
+                for (const subPos of pos.$) {
+                  npc.push({
+                    $: {
+                      id: spawn.$[0],
+                      count: spawn.total ?? 1,
+                      respawnTime: spawn.respawn.value + spawn.respawn.unit,
+                      x: subPos.$[0],
+                      y: subPos.$[1],
+                      z: subPos.$[2],
+                      heading: subPos.$[3],
+                    },
+                  });
+                }
               }
             }
+            spawnMap.set(terrId, { ..._spawn, npc });
           }
         }
       }
     }
-    // console.log(territories);
-
-    // if (entry.t === "territory") {
-    //   terrMap.set(entry.$[0], {
-    //     shape: entry.$[1].$.map((x) => [x.$[0], x.$[1], x.$[2]]),
-    //   });
-    // } else if (entry.t === "npcmaker" || entry.t === "npcmaker_ex") {
-    //   const [terrIds, ...spawns] = entry.$;
-
-    //   for (const spawn of spawns) {
-    //     const posArr: Array<Array<{ x: number; y: number; z: number }>> = [];
-
-    //     const pos = spawn.pos;
-
-    //     if (pos === "anywhere") {
-    //       for (const terrId of terrIds) {
-    //         const terr = terrMap.get(terrId);
-    //         if (terr) {
-    //           posArr.push(terr.shape.map((p) => ({ x: p[0], y: p[1], z: 0 })));
-    //         }
-    //       }
-    //     } else if (pos) {
-    //       for (const subPos of pos.$) {
-    //         posArr.push([{ x: subPos.$[0], y: subPos.$[1], z: 0 }]);
-    //       }
-    //     }
-    //     const npcName = spawn.$[0];
-
-    //     for (const pos of posArr) {
-    //       const spawn = {
-    //         pos,
-    //       };
-    //       console.log(npcName, spawn);
-
-    //       // const npc = npcsByName.get(npcName);
-    //       // if (npc) {
-    //       //   npc.spawns.push(spawn);
-    //       // }
-    //     }
-    //   }
-    // }
   }
 
-  // const npcpos: NpcPos = NpcPos.parse(
-  //   Array.from(spawnMap.values()).map((s): NpcPos => {
-  //     return { spawn: { npc: s.npc, territories: s.territories } };
-  //   })
-  // );
-
-  // NpcPos.array().parse({})
-  // var builder = new xml2js.Builder();
   const builder = new Builder({
     attrkey: "$",
     charkey: "_",
@@ -137,15 +104,18 @@ export function npcpos() {
   const list = {
     $: {
       "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-      "xsi:noNamespaceSchemaLocation": "../../../xsd/npcs.xsd",
+      "xsi:noNamespaceSchemaLocation": "../../../xsd/spawns.xsd",
     },
   };
 
-  // var xml = builder.buildObject(npcpos);
-
-  Fs.writeFileSync(
-    "./result/server/c1/npcspos.json",
-    JSON.stringify(Array.from(spawnMap.values()), null, 2)
+  const spawns = NpcPos.array().parse(
+    Array.from(spawnMap.values()).map((s): NpcPos => {
+      return { spawn: { npc: s.npc, territories: s.territories } };
+    })
   );
+
+  var xml = builder.buildObject(spawns);
+
+  Fs.writeFileSync("./result/server/c1/npcspos.xml", xml);
   console.log("Npcpos saved.");
 }

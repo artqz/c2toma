@@ -12,7 +12,7 @@ import {
   getRace,
   getId,
 } from "./getters/npc";
-import { itemdata } from "./items";
+import { itemdata } from "./itemdata";
 import { loadNpcNamesC1 } from "../datapack/c1/npcnames";
 import slug from "slug";
 import { loadAiDataC1 } from "../datapack/c1/ai";

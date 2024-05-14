@@ -1,4 +1,4 @@
-package quests.Q00001_LettersOfLove;
+package quests.1_LettersOfLove;
 
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;

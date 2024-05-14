@@ -1,4 +1,4 @@
-package quests.Q00001_LettersOfLove;
+package quests.201_FightersTutorial;
 
 import org.l2jmobius.gameserver.enums.ClassId;
 import org.l2jmobius.gameserver.model.actor.Npc;
@@ -17,13 +17,16 @@ public class _201_FightersTutorial extends Quest
 	private static final int FOX_FANG = 1857;
 	// Reward
 	private static final int WORLD_MAP = 1665;
+	// Kill
+	private static final int TUTO_KELTIR = 30008
 	
 	public _201_FightersTutorial()
 	{
 		super(201);
-		registerQuestItems(RECOMMENDATION);
+		registerQuestItems(RECOMMENDATION, FOX_FANG);
 		addStartNpc(CARL);
 		addTalkId(CARL, ROIEN);
+		addKillId(TUTO_KELTIR);
 	}
 	
 	@Override
@@ -78,7 +81,7 @@ public class _201_FightersTutorial extends Quest
 					{
 						if (cond == 2)
 						{
-							if (!hasQuestItems(player, TUTO_KELTIR) < 4)
+							if (!hasQuestItems(player, FOX_FANG) < 4)
 							{
 								htmltext = "carl_q0201_03.htm";
 							}
@@ -86,7 +89,7 @@ public class _201_FightersTutorial extends Quest
 							{
 								htmltext = "carl_q0201_02.htm";
 								st.setCond(3, true);	
-								takeItems(player, TUTO_KELTIR, 4);
+								takeItems(player, FOX_FANG, 4);
 								giveItems(player, RECOMMENDATION, 1);
 								giveItems(player, WORLD_MAP, 1);															
 							}
@@ -132,7 +135,7 @@ public class _201_FightersTutorial extends Quest
 		
 		switch (npc.getId())
 		{
-			case 18003:
+			case TUTO_KELTIR:
 			{
 				if (st.isCond(1))
 				{

@@ -4,6 +4,7 @@ import { loadNpcGrpIL } from "../../../datapack/il/npcgrp";
 import { loadNpcNamesIL } from "../../../datapack/il/npcnames";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
 import { Item, Npc, Skill } from "../../../result/types";
+import { tomaNpcsParser } from "../../../utils/tomaParser";
 import {
   calcAccuracy,
   calcEvasion,
@@ -228,6 +229,9 @@ function addDropAndSpoil(deps: {
       }
     }
   }
+
+  tomaNpcsParser("./npcs");
+  throw Error;
 }
 
 function addDrop(deps: {

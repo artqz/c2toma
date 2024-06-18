@@ -205,19 +205,19 @@ function addDropAndSpoil(deps: {
   npcs: Map<number, Npc>;
   items: Map<number, Item>;
 }) {
-  const npcGFById = new Map(loadNpcDataGF().map((n) => [n.$[1], n]));
-  const npcC4ByName = new Map(loadNpcDataC4().map((n) => [n.$[2], n]));
+  const npcGFByName = new Map(loadNpcDataGF().map((n) => [n.$[2], n]));
+  const npcC4ById = new Map(loadNpcDataC4().map((n) => [n.$[1], n]));
   const itemByName = new Map(
     Array.from(deps.items.values()).map((i) => [i.itemName, i])
   );
 
   for (const npc of deps.npcs.values()) {
-    const npcGF = npcC4ByName.get(npc.npcName);
+    const npcGF = npcGFByName.get(npc.npcName);
     if (npcGF) {
       addDrop({ dropList: npcGF.additional_make_multi_list, itemByName, npc });
       addSpoil({ spoilList: npcGF.corpse_make_list, itemByName, npc });
     } else {
-      const npcC4 = npcGFById.get(npc.id);
+      const npcC4 = npcC4ById.get(npc.id);
       if (npcC4) {
         addDrop({
           dropList: npcC4.additional_make_multi_list,

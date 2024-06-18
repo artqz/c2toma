@@ -212,19 +212,19 @@ function addDropAndSpoil(deps: {
   );
 
   for (const npc of deps.npcs.values()) {
-    const npcC4 = npcC4ByName.get(npc.npcName);
-    if (npcC4) {
-      addDrop({ dropList: npcC4.additional_make_multi_list, itemByName, npc });
-      addSpoil({ spoilList: npcC4.corpse_make_list, itemByName, npc });
+    const npcGF = npcC4ByName.get(npc.npcName);
+    if (npcGF) {
+      addDrop({ dropList: npcGF.additional_make_multi_list, itemByName, npc });
+      addSpoil({ spoilList: npcGF.corpse_make_list, itemByName, npc });
     } else {
-      const npcGF = npcGFById.get(npc.id);
-      if (npcGF) {
+      const npcC4 = npcGFById.get(npc.id);
+      if (npcC4) {
         addDrop({
-          dropList: npcGF.additional_make_multi_list,
+          dropList: npcC4.additional_make_multi_list,
           itemByName,
           npc,
         });
-        addSpoil({ spoilList: npcGF.corpse_make_list, itemByName, npc });
+        addSpoil({ spoilList: npcC4.corpse_make_list, itemByName, npc });
       }
     }
   }

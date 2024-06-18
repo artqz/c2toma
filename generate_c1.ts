@@ -1,20 +1,20 @@
-import { loadNpcPos } from "./import/с1/npcpos";
-import { loadItems } from "./import/с1/items";
-import { loadNpcs } from "./import/с1/npcs";
-import { loadSkills } from "./import/с1/skills";
+import { loadNpcPos } from "./import/c1/npcpos";
+import { loadItems } from "./import/c1/items";
+import { loadNpcs } from "./import/c1/npcs";
+import { loadSkills } from "./import/c1/skills";
 import { createDir, saveFile } from "./utils/Fs";
-import { loadMultisell } from "./import/с1/multisell";
-import { loadRecipes } from "./import/с1/recipes";
-import { loadAi } from "./import/с1/ai";
-import { loadSets } from "./import/с1/sets";
-import { loadProfs } from "./import/с1/profs";
-import { loadWeaponAbilities } from "./import/с1/weaponAbilities";
-import { loadNpcSeaLevel } from "./import/с1/npcSeaLevel";
+import { loadMultisell } from "./import/c1/multisell";
+import { loadRecipes } from "./import/c1/recipes";
+import { loadAi } from "./import/c1/ai";
+import { loadSets } from "./import/c1/sets";
+import { loadProfs } from "./import/c1/profs";
+import { loadWeaponAbilities } from "./import/c1/weaponAbilities";
+import { loadNpcSeaLevel } from "./import/c1/npcSeaLevel";
 import { Chronicle } from "./import/types";
-import { loadQuests } from "./import/с1/quests";
-import { loadNpcBuffs } from "./import/с1/npcBuffs";
-import { loadSkillCard } from "./import/с1/skillCard";
-import { loadZones } from "./import/с1/zones";
+import { loadQuests } from "./import/c1/quests";
+import { loadNpcBuffs } from "./import/c1/npcBuffs";
+import { loadSkillCard } from "./import/c1/skillCard";
+import { loadZones } from "./import/c1/zones";
 
 const chronicle: Chronicle = "il";
 

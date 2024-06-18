@@ -1,3 +1,4 @@
+import _ from "lodash";
 import { loadNpcDataC4 } from "../../../datapack/c4/npcdata";
 import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
 import { loadNpcGrpIL } from "../../../datapack/il/npcgrp";
@@ -230,7 +231,15 @@ function addDropAndSpoil(deps: {
     }
   }
 
-  tomaNpcsParser("./npcs");
+  const npcById = deps.npcs;
+
+  for (const tomaNpc of tomaNpcsParser("import/c1/il/npcs")) {
+    const npc = npcById.get(tomaNpc.npc.npcClassId);
+    if (npc) {
+      console.log(_.intersectionBy());
+    }
+  }
+
   throw Error;
 }
 

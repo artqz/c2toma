@@ -4,7 +4,7 @@ import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
 import { loadNpcGrpIL } from "../../../datapack/il/npcgrp";
 import { loadNpcNamesIL } from "../../../datapack/il/npcnames";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
-import { Item, Npc, Skill } from "../../../result/types";
+import { Item, Npc, NpcDrop, Skill } from "../../../result/types";
 import { tomaNpcsParser } from "../../../utils/tomaParser";
 import {
   calcAccuracy,
@@ -231,16 +231,74 @@ function addDropAndSpoil(deps: {
     }
   }
 
+  // добавляем недостающие предметы из базы томы
   const npcById = deps.npcs;
 
-  for (const tomaNpc of tomaNpcsParser("import/c1/il/npcs")) {
+  for (const tomaNpc of tomaNpcsParser({
+    path: "import/c1/il/npcs",
+  })) {
     const npc = npcById.get(tomaNpc.npc.npcClassId);
     if (npc) {
-      console.log(_.intersectionBy());
+      npc.dropList = checkTomaDrop({
+        dropList: npc.dropList,
+        tomaDropList: tomaNpc.npc.additionalMakeMultiList,
+        itemById: deps.items,
+      });
+      npc.spoilList = checkTomaDrop({
+        dropList: npc.spoilList,
+        tomaDropList: tomaNpc.npc.corpseMakeList,
+        itemById: deps.items,
+      });
     }
   }
+}
 
-  throw Error;
+function checkTomaDrop(deps: {
+  dropList: NpcDrop[];
+  tomaDropList: {
+    itemClassId: number;
+    min: number;
+    max: number;
+    chance: number;
+  }[];
+  itemById: Map<number, Item>;
+}) {
+  const tomaDropListMap = new Map<
+    number,
+    {
+      itemClassId: number;
+      min: number;
+      max: number;
+      chance: number;
+    }
+  >(deps.tomaDropList.map((item) => [item.itemClassId, item]));
+
+  const filteredItemData = deps.dropList.filter((item) =>
+    tomaDropListMap.has(item.itemId)
+  );
+
+  const filteredItemDataMap = new Map<number, NpcDrop>(
+    filteredItemData.map((item) => [item.itemId, item])
+  );
+
+  deps.tomaDropList.forEach((_item) => {
+    if (!filteredItemDataMap.has(_item.itemClassId)) {
+      const item = deps.itemById.get(_item.itemClassId);
+      if (!item) {
+        console.log(`--------------- нет предмета в базе ${_item.itemClassId}`);
+      } else {
+        const newItem: NpcDrop = {
+          itemId: _item.itemClassId,
+          itemName: item.itemName,
+          countMin: _item.min,
+          countMax: _item.max,
+          chance: _item.chance / 3,
+        };
+        filteredItemData.push(newItem);
+      }
+    }
+  });
+  return filteredItemData;
 }
 
 function addDrop(deps: {

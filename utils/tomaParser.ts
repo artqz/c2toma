@@ -15,6 +15,12 @@ const NpcDataEntry = z.object({
     npcClassId: z.number(),
     additionalMakeMultiList: z.array(NpcDrop),
     corpseMakeList: z.array(NpcDrop),
+    skillList: z.array(
+      z.object({
+        skillId: z.number(),
+        skillLevel: z.number(),
+      })
+    ),
   }),
 });
 

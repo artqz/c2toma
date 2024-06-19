@@ -120,14 +120,6 @@
 20119	a,Elder Fox\0	a,	9C	E8	A9	-1
 20120	a,Wolf\0	a,	9C	E8	A9	-1
 20121	a,Giant Toad\0	a,	9C	E8	A9	-1
-20122	a,Arachne\0	a,	9C	E8	A9	-1
-20123	a,Bloody Pixy\0	a,	9C	E8	A9	-1
-20124	a,Dark Pan\0	a,	9C	E8	A9	-1
-20125	a,Pan\0	a,	9C	E8	A9	-1
-20126	a,Pixy\0	a,	9C	E8	A9	-1
-20127	a,Red Arachne\0	a,	9C	E8	A9	-1
-20128	a,Blight Treant\0	a,	9C	E8	A9	-1
-20129	a,Treant\0	a,	9C	E8	A9	-1
 20130	a,Orc\0	a,	9C	E8	A9	-1
 20131	a,Orc Grunt\0	a,	9C	E8	A9	-1
 20132	a,Werewolf\0	a,	9C	E8	A9	-1
@@ -176,25 +168,12 @@
 20175	a,Walking Fungus\0	a,	9C	E8	A9	-1
 20176	a,Wyrm\0	a,	9C	E8	A9	-1
 20177	a,Zombie\0	a,	9C	E8	A9	-1
-20178	a,	a,	9C	E8	A9	-1
-20179	a,	a,	9C	E8	A9	-1
-20180	a,	a,	9C	E8	A9	-1
-20181	a,	a,	9C	E8	A9	-1
-20182	a,	a,	9C	E8	A9	-1
-20183	a,	a,	9C	E8	A9	-1
-20184	a,	a,	9C	E8	A9	-1
-20185	a,	a,	9C	E8	A9	-1
-20186	a,	a,	9C	E8	A9	-1
-20187	a,	a,	9C	E8	A9	-1
-20188	a,Stopper\0	a,	9C	E8	A9	-1
 20189	a,Puma\0	a,	9C	E8	A9	-1
 20190	a,Skeleton Marauder\0	a,	9C	E8	A9	-1
 20191	a,Skeleton Raider\0	a,	9C	E8	A9	-1
 20192	a,Tyrant\0	a,	9C	E8	A9	-1
 20193	a,Tyrant Kingpin\0	a,	9C	E8	A9	-1
 20194	a,Queen Undine\0	a,	9C	E8	A9	-1
-20195	a,Pixy Murika\0	a,	9C	E8	A9	-1
-20196	a,Treant Bremec\0	a,	9C	E8	A9	-1
 20197	a,Sorrow Maiden\0	a,	9C	E8	A9	-1
 20198	a,Neer Ghoul Berserker\0	a,	9C	E8	A9	-1
 20199	a,Amber Basilisk\0	a,	9C	E8	A9	-1
@@ -245,7 +224,6 @@
 20244	a,Malruk Succubus\0	a,	9C	E8	A9	-1
 20245	a,Malruk Succubus Turen\0	a,	9C	E8	A9	-1
 20246	a,Cave Keeper\0	a,	9C	E8	A9	-1
-20247	a,Blood Queen\0	a,	9C	E8	A9	-1
 20248	a,Turak Bugbear\0	a,	9C	E8	A9	-1
 20249	a,Turak Bugbear Warrior\0	a,	9C	E8	A9	-1
 20250	a,Glass Jaguar\0	a,	9C	E8	A9	-1
@@ -260,9 +238,6 @@
 20259	a,Batur Orc Overlord\0	a,	9C	E8	A9	-1
 20260	a,Orc Champion\0	a,	9C	E8	A9	-1
 20261	a,Orc Shaman\0	a,	9C	E8	A9	-1
-20262	a,	a,	9C	E8	A9	-1
-20263	a,Ol Mahum Novice\0	a,	9C	E8	A9	-1
-20264	a,Dark Succubus\0	a,	9C	E8	A9	-1
 20265	a,Monster Eye Searcher\0	a,	9C	E8	A9	-1
 20266	a,Monster Eye Gazer\0	a,	9C	E8	A9	-1
 20267	a,Breka Orc\0	a,	9C	E8	A9	-1
@@ -276,7 +251,6 @@
 20275	a,Cave Servant Captain\0	a,	9C	E8	A9	-1
 20276	a,Royal Cave Servant\0	a,	9C	E8	A9	-1
 20277	a,Cave Keeper\0	a,	9C	E8	A9	-1
-20278	a,Blood Queen\0	a,	9C	E8	A9	-1
 20279	a,Shackle\0	a,	9C	E8	A9	-1
 20280	a,Headless Knight\0	a,	9C	E8	A9	-1
 20281	a,Dustwind Gargoyle\0	a,	9C	E8	A9	-1
@@ -286,9 +260,6 @@
 20285	a,Drake\0	a,	9C	E8	A9	-1
 20286	a,Hunter Gargoyle\0	a,	9C	E8	A9	-1
 20287	a,Cave Maiden\0	a,	9C	E8	A9	-1
-20288	a,Cat's Eye Bandit\0	a,	9C	E8	A9	-1
-20289	a,Ol Mahum Novice\0	a,	9C	E8	A9	-1
-20290	a,Dark Succubus\0	a,	9C	E8	A9	-1
 20291	a,Enku Orc Champion\0	a,	9C	E8	A9	-1
 20292	a,Enku Orc Shaman\0	a,	9C	E8	A9	-1
 20293	a,Virud Lizardman\0	a,	9C	E8	A9	-1
@@ -304,7 +275,6 @@
 20303	a,Zenta Lizardman Shaman\0	a,	9C	E8	A9	-1
 20304	a,Marsh Stakato Queen\0	a,	9C	E8	A9	-1
 20305	a,Grave\0	a,	9C	E8	A9	-1
-20306	a, \0	a,	9C	E8	A9	-1
 20307	a,Garum Werewolf\0	a,	9C	E8	A9	-1
 20308	a,Hook Spider\0	a,	9C	E8	A9	-1
 20309	a,Brown Fox\0	a,	9C	E8	A9	-1
@@ -313,7 +283,6 @@
 20312	a,Rakeclaw Imp Hunter\0	a,	9C	E8	A9	-1
 20313	a,Rakeclaw Imp Chieftain\0	a,	9C	E8	A9	-1
 20314	a,Great White Shark\0	a,	9C	E8	A9	-1
-20315	a,	a,	9C	E8	A9	-1
 20316	a,Darkwing Bat\0	a,	9C	E8	A9	-1
 20317	a,Black Wolf\0	a,	9C	E8	A9	-1
 20318	a,Black Timber Wolf\0	a,	9C	E8	A9	-1
@@ -330,19 +299,16 @@
 20329	a,Ghost Guardian\0	a,	9C	E8	A9	-1
 20330	a,Mineshaft Bat\0	a,	9C	E8	A9	-1
 20331	a,Monster Eye Tracker\0	a,	9C	E8	A9	-1
-20332	a,	a,	9C	E8	A9	-1
 20333	a,Greystone Golem\0	a,	9C	E8	A9	-1
 20334	a,Gremlin Scavenger\0	a,	9C	E8	A9	-1
 20335	a,Grizzly Bear\0	a,	9C	E8	A9	-1
 20336	a,Green Dryad\0	a,	9C	E8	A9	-1
 20337	a,Longtail Fox\0	a,	9C	E8	A9	-1
 20338	a,Nightmare Weaver\0	a,	9C	E8	A9	-1
-20339	a,	a,	9C	E8	A9	-1
 20340	a,Slave Skeleton\0	a,	9C	E8	A9	-1
 20341	a,Undead Slave\0	a,	9C	E8	A9	-1
 20342	a,Werewolf Chieftain\0	a,	9C	E8	A9	-1
 20343	a,Werewolf Hunter\0	a,	9C	E8	A9	-1
-20344	a,	a,	9C	E8	A9	-1
 20345	a,Dark Terror\0	a,	9C	E8	A9	-1
 20346	a,Darkstone Golem\0	a,	9C	E8	A9	-1
 20347	a,Death Wraith\0	a,	9C	E8	A9	-1
@@ -353,7 +319,6 @@
 20352	a,Dre Vanul Slayer\0	a,	9C	E8	A9	-1
 20353	a,Dre Vanul Beholder\0	a,	9C	E8	A9	-1
 20354	a,Dwarf Ghost\0	a,	9C	E8	A9	-1
-20355	a,	a,	9C	E8	A9	-1
 20356	a,Langk Lizardman Leader\0	a,	9C	E8	A9	-1
 20357	a,Langk Lizardman Lieutenant\0	a,	9C	E8	A9	-1
 20358	a,Ratman Hunter\0	a,	9C	E8	A9	-1
@@ -364,7 +329,6 @@
 20363	a,Maraku Werewolf\0	a,	9C	E8	A9	-1
 20364	a,Maraku Werewolf Chieftain\0	a,	9C	E8	A9	-1
 20365	a,Mountain Fungus\0	a,	9C	E8	A9	-1
-20366	a,	a,	9C	E8	A9	-1
 20367	a,Merkenis Escort\0	a,	9C	E8	A9	-1
 20368	a,Grave Keeper\0	a,	9C	E8	A9	-1
 20369	a,Moonstone Beast\0	a,	9C	E8	A9	-1
@@ -382,7 +346,6 @@
 20381	a,Vaiss Orc\0	a,	9C	E8	A9	-1
 20382	a,Vaiss Orc Warrior Leader\0	a,	9C	E8	A9	-1
 20383	a,Arachnid Hunter\0	a,	9C	E8	A9	-1
-20384	a,	a,	9C	E8	A9	-1
 20385	a,Balor Orc Archer\0	a,	9C	E8	A9	-1
 20386	a,Balor Orc Fighter\0	a,	9C	E8	A9	-1
 20387	a,Balor Orc Fighter Leader\0	a,	9C	E8	A9	-1
@@ -393,9 +356,6 @@
 20392	a,Redeye Bat\0	a,	9C	E8	A9	-1
 20393	a,Red Scavenger Spider\0	a,	9C	E8	A9	-1
 20394	a,Crimson Tarantula\0	a,	9C	E8	A9	-1
-20395	a,	a,	9C	E8	A9	-1
-20396	a,	a,	9C	E8	A9	-1
-20397	a,	a,	9C	E8	A9	-1
 20398	a,Vrykolakas\0	a,	9C	E8	A9	-1
 20399	a,Vrykolakas Wolfkin\0	a,	9C	E8	A9	-1
 20400	a,Blood Fungus\0	a,	9C	E8	A9	-1
@@ -406,16 +366,11 @@
 20405	a,Young Brown Fox\0	a,	9C	E8	A9	-1
 20406	a,Young Red Fox\0	a,	9C	E8	A9	-1
 20407	a,Young Crimson Fox\0	a,	9C	E8	A9	-1
-20408	a,Sharuk's Henchmen\0	a,	9C	E8	A9	-1
-20409	a,Soul Scavenger\0	a,	9C	E8	A9	-1
 20410	a,Scavenger Spider\0	a,	9C	E8	A9	-1
 20411	a,Scavenger Bat\0	a,	9C	E8	A9	-1
 20412	a,Susceptor\0	a,	9C	E8	A9	-1
-20413	a,	a,	9C	E8	A9	-1
-20414	a,Sukar Wererat Chief\0	a,	9C	E8	A9	-1
 20415	a,Scarlet Salamander\0	a,	9C	E8	A9	-1
 20416	a,Scarlet Salamander Elder\0	a,	9C	E8	A9	-1
-20417	a,Sirocco Gargoyle\0	a,	9C	E8	A9	-1
 20418	a,Crystalline Beast\0	a,	9C	E8	A9	-1
 20419	a,Akaste Succubus\0	a,	9C	E8	A9	-1
 20420	a,Akaste Succubus Turen\0	a,	9C	E8	A9	-1
@@ -428,11 +383,9 @@
 20427	a,Evil Eye Watcher\0	a,	9C	E8	A9	-1
 20428	a,Evil Eye Patroller\0	a,	9C	E8	A9	-1
 20429	a,Evil Eye Lookout\0	a,	9C	E8	A9	-1
-20430	a,Abyss Flyer\0	a,	9C	E8	A9	-1
 20431	a,Elf Ghost\0	a,	9C	E8	A9	-1
 20432	a,Elpy\0	a,	9C	E8	A9	-1
 20433	a,Festering Bat\0	a,	9C	E8	A9	-1
-20434	a,Yellow Hornet\0	a,	9C	E8	A9	-1
 20435	a,Opal Beast\0	a,	9C	E8	A9	-1
 20436	a,Ol Mahum Supplier\0	a,	9C	E8	A9	-1
 20437	a,Ol Mahum Recruit\0	a,	9C	E8	A9	-1
@@ -450,14 +403,12 @@
 20449	a,Will-O-Wisp\0	a,	9C	E8	A9	-1
 20450	a,Relic Werewolf\0	a,	9C	E8	A9	-1
 20451	a,Relic Spartoi\0	a,	9C	E8	A9	-1
-20452	a,Kaysha Herald Of Ikaros\0	a,	9C	E8	A9	-1
 20453	a,Human Ghost\0	a,	9C	E8	A9	-1
 20454	a,Oblivion Watcher\0	a,	9C	E8	A9	-1
 20455	a,Doom Soldier\0	a,	9C	E8	A9	-1
 20456	a,Ashen Wolf\0	a,	9C	E8	A9	-1
 20457	a,Zombie Soldier\0	a,	9C	E8	A9	-1
 20458	a,Zombie Warrior\0	a,	9C	E8	A9	-1
-20459	a,Zombie Lord Farakelsus\0	a,	9C	E8	A9	-1
 20460	a,Crimson Spider\0	a,	9C	E8	A9	-1
 20461	a,Dungeon Spider\0	a,	9C	E8	A9	-1
 20462	a,Cave Blade Spider\0	a,	9C	E8	A9	-1
@@ -465,7 +416,6 @@
 20464	a,Dungeon Skeleton\0	a,	9C	E8	A9	-1
 20465	a,Prairie Fox\0	a,	9C	E8	A9	-1
 20466	a,Pincer Spider\0	a,	9C	E8	A9	-1
-20467	a,Tracker Sharuk\0	a,	9C	E8	A9	-1
 20468	a,Kaboo Orc\0	a,	9C	E8	A9	-1
 20469	a,Kaboo Orc Archer\0	a,	9C	E8	A9	-1
 20470	a,Kaboo Orc Grunt\0	a,	9C	E8	A9	-1
@@ -480,18 +430,13 @@
 20479	a,Kasha Bear\0	a,	9C	E8	A9	-1
 20480	a,Blade Bat\0	a,	9C	E8	A9	-1
 20481	a,Bearded Keltir\0	a,	9C	E8	A9	-1
-20482	a,Corpse Scavenger\0	a,	9C	E8	A9	-1
 20483	a,Corpse Candle\0	a,	9C	E8	A9	-1
-20484	a,Follower Of Kuroboros\0	a,	9C	E8	A9	-1
-20485	a,Priest Of Kuroboros\0	a,	9C	E8	A9	-1
-20486	a,Soldier Of Kuroboros\0	a,	9C	E8	A9	-1
 20487	a,Kuruka Ratman\0	a,	9C	E8	A9	-1
 20488	a,Kuruka Ratman Hunter\0	a,	9C	E8	A9	-1
 20489	a,Quicksilver Beast\0	a,	9C	E8	A9	-1
 20490	a,Death Doll\0	a,	9C	E8	A9	-1
 20491	a,Crypt Horror\0	a,	9C	E8	A9	-1
 20492	a,Kirunak's Guards\0	a,	9C	E8	A9	-1
-20493	a,Tiger Hornet\0	a,	9C	E8	A9	-1
 20494	a,Turek War Hound\0	a,	9C	E8	A9	-1
 20495	a,Turek Orc Warlord\0	a,	9C	E8	A9	-1
 20496	a,Turek Orc Archer\0	a,	9C	E8	A9	-1
@@ -501,7 +446,6 @@
 20500	a,Turek Orc Sentinel\0	a,	9C	E8	A9	-1
 20501	a,Turek Orc Shaman\0	a,	9C	E8	A9	-1
 20502	a,Twink Puma\0	a,	9C	E8	A9	-1
-20503	a,Farakelsus Zombie\0	a,	9C	E8	A9	-1
 20504	a,Dread Soldier\0	a,	9C	E8	A9	-1
 20505	a,Ruin Bat\0	a,	9C	E8	A9	-1
 20506	a,Ruin Imp\0	a,	9C	E8	A9	-1
@@ -521,7 +465,6 @@
 20520	a,Pirate Captain Uthanka\0	a,	9C	E8	A9	-1
 20521	a,Whinstone Golem\0	a,	9C	E8	A9	-1
 20522	a,White Fang\0	a,	9C	E8	A9	-1
-20523	a,Wasteland Basilisk\0	a,	9C	E8	A9	-1
 20524	a,Grey Wolf Elder\0	a,	9C	E8	A9	-1
 20525	a,Gray Wolf\0	a,	9C	E8	A9	-1
 20526	a,Obsidian Golem\0	a,	9C	E8	A9	-1
@@ -572,7 +515,7 @@
 20571	a,Tarlk Bugbear Warrior\0	a,	9C	E8	A9	-1
 20572	a,Tarlk Bugbear High Warrior\0	a,	9C	E8	A9	-1
 20573	a,Tarlk Basilisk\0	a,	9C	E8	A9	-1
-20574	a,Elder Tarlk Basilisk\0	a,	9C	E8	A9	-1
+20574	a,Elder Tarlk Basilisk \0	a,	9C	E8	A9	-1
 20575	a,Oel Mahum Warrior\0	a,	9C	E8	A9	-1
 20576	a,Oel Mahum Witch Doctor\0	a,	9C	E8	A9	-1
 20577	a,Leto Lizardman\0	a,	9C	E8	A9	-1
@@ -676,7 +619,7 @@
 20675	a,Tairim\0	a,	9C	E8	A9	-1
 20676	a,Judge of Marsh\0	a,	9C	E8	A9	-1
 20677	a,Tulben\0	a,	9C	E8	A9	-1
-20678	a,Punishment of Undead\0	a,	9C	E8	A9	-1
+20678	a,Tortured Undead\0	a,	9C	E8	A9	-1
 20679	a,Marsh Stalker\0	a,	9C	E8	A9	-1
 20680	a,Marsh Drake\0	a,	9C	E8	A9	-1
 20681	a,Vanor Silenos\0	a,	9C	E8	A9	-1
@@ -685,61 +628,8 @@
 20684	a,Vanor Silenos Warrior\0	a,	9C	E8	A9	-1
 20685	a,Vanor Silenos Shaman\0	a,	9C	E8	A9	-1
 20686	a,Vanor Silenos Chieftain\0	a,	9C	E8	A9	-1
-20687	a,Revenant of Sir Calibus\0	a,	9C	E8	A9	-1
-20688	a,Squire of Calibus\0	a,	9C	E8	A9	-1
-20689	a,Demon Tempest\0	a,	9C	E8	A9	-1
-20690	a,Revenant of The Executed\0	a,	9C	E8	A9	-1
-20691	a,Trakia\0	a,	9C	E8	A9	-1
-20692	a,Red Eye Guards\0	a,	9C	E8	A9	-1
-20693	a,Nurka's Messenger\0	a,	9C	E8	A9	-1
-20694	a,Messenger Escort\0	a,	9C	E8	A9	-1
-20695	a,Captain of Queen's Royal Guard\0	a,	9C	E8	A9	-1
-20696	a,Marsh Stakato Noble\0	a,	9C	E8	A9	-1
-20697	a,Premo Prime\0	a,	9C	E8	A9	-1
-20698	a,Titan's Creation, Bemos\0	a,	9C	E8	A9	-1
-20699	a,Archon Susceptor\0	a,	9C	E8	A9	-1
-20700	a,Gustos Susceptor\0	a,	9C	E8	A9	-1
-20701	a,Eye of Beleth\0	a,	9C	E8	A9	-1
-20702	a,Follower of The Eye\0	a,	9C	E8	A9	-1
-20703	a,Skyla\0	a,	9C	E8	A9	-1
-20704	a,Skyla's Retainer\0	a,	9C	E8	A9	-1
-20705	a,Corsair Captain Kylon\0	a,	9C	E8	A9	-1
-20706	a,Kylon's Pirate\0	a,	9C	E8	A9	-1
-20707	a,Lord Ishka\0	a,	9C	E8	A9	-1
-20708	a,Cave Servant General\0	a,	9C	E8	A9	-1
-20709	a,Rinoket\0	a,	9C	E8	A9	-1
-20710	a,Rinoket's Henchman\0	a,	9C	E8	A9	-1
-20711	a,Necrosentinel Guard\0	a,	9C	E8	A9	-1
-20712	a,Necrosentinel Archer\0	a,	9C	E8	A9	-1
-20713	a,Nakondas\0	a,	9C	E8	A9	-1
-20714	a,Nakonda's Slave\0	a,	9C	E8	A9	-1
-20715	a,Dread Avenger Kraven\0	a,	9C	E8	A9	-1
-20716	a,Dread Panther\0	a,	9C	E8	A9	-1
-20717	a,Handmaiden of Orfen\0	a,	9C	E8	A9	-1
-20718	a,Trisalim Escort\0	a,	9C	E8	A9	-1
-20719	a,Fairy Queen Timiniel\0	a,	9C	E8	A9	-1
-20720	a,Timiniel's Escort\0	a,	9C	E8	A9	-1
-20721	a,	a,	9C	E8	A9	-1
-20722	a,	a,	9C	E8	A9	-1
-20723	a,Centaurus\0	a,	9C	E8	A9	-1
-20724	a,Crimson Bear\0	a,	9C	E8	A9	-1
-20725	a,Devastator\0	a,	9C	E8	A9	-1
-20726	a,Saber Toothed Tiger\0	a,	9C	E8	A9	-1
-20727	a,Liviona\0	a,	9C	E8	A9	-1
-20728	a,Heltor Silenos\0	a,	9C	E8	A9	-1
-20729	a,Heltor Silenos Chieftain\0	a,	9C	E8	A9	-1
-20730	a,Heltor Silenos Hunter\0	a,	9C	E8	A9	-1
-20731	a,Heltor Silenos Shaman\0	a,	9C	E8	A9	-1
-20732	a,Heltor Silenos Warrior\0	a,	9C	E8	A9	-1
-20733	a,Ketra Orc\0	a,	9C	E8	A9	-1
-20734	a,Ketra Orc Archer\0	a,	9C	E8	A9	-1
-20735	a,Ketra Orc Overload\0	a,	9C	E8	A9	-1
-20736	a,Ketra Orc Shaman\0	a,	9C	E8	A9	-1
-20737	a,Ketra Orc Warrior\0	a,	9C	E8	A9	-1
 20738	a,Kobold Looter Bepook\0	a,	9C	E8	A9	-1
 20739	a,Bepook's Pet\0	a,	9C	E8	A9	-1
-20740	a,Leader Talloth\0	a,	9C	E8	A9	-1
-20741	a,Rampage Golem\0	a,	9C	E8	A9	-1
 20742	a,Mystical Weaver\0	a,	9C	E8	A9	-1
 20743	a,Howler\0	a,	9C	E8	A9	-1
 20744	a,Red Eye Vampire Bat\0	a,	9C	E8	A9	-1
@@ -861,62 +751,6 @@
 20860	a,Seal Angel\0	a,	9C	E8	A9	-1
 20861	a,Oel Mahum Champion\0	a,	9C	E8	A9	-1
 20862	a,Death Lord\0	a,	9C	E8	A9	-1
-20863	a,Magic Golem Gonhirim\0	a,	9C	E8	A9	-1
-20864	a,Gonhirim's Magic Golem\0	a,	9C	E8	A9	-1
-20865	a,Gonhirim's Golem\0	a,	9C	E8	A9	-1
-20866	a,Bandit Leader Barda\0	a,	9C	E8	A9	-1
-20867	a,Barda's Bandit\0	a,	9C	E8	A9	-1
-20868	a,Timak Orc Gosmos\0	a,	9C	E8	A9	-1
-20869	a,Gosmos's Inferiors\0	a,	9C	E8	A9	-1
-20870	a,Thief Kelbar\0	a,	9C	E8	A9	-1
-20871	a,Kelbar's Inferiors\0	a,	9C	E8	A9	-1
-20872	a,Evil Creature Cyrion\0	a,	9C	E8	A9	-1
-20873	a,Evil Creatures of Forest\0	a,	9C	E8	A9	-1
-20874	a,Enmity Ghost Ramdal\0	a,	9C	E8	A9	-1
-20875	a,Enmity Ghosts\0	a,	9C	E8	A9	-1
-20876	a,Immortal Savior Mardil\0	a,	9C	E8	A9	-1
-20877	a,Immortal Savior\0	a,	9C	E8	A9	-1
-20878	a,Cherub Galaxia\0	a,	9C	E8	A9	-1
-20879	a,Galaxia's Escort\0	a,	9C	E8	A9	-1
-20880	a,Cherub's Messenger\0	a,	9C	E8	A9	-1
-20881	a,Meanas Anor\0	a,	9C	E8	A9	-1
-20882	a,Marsh's Wyvern\0	a,	9C	E8	A9	-1
-20883	a,Oblivion's Mirror\0	a,	9C	E8	A9	-1
-20884	a,Deprived Men\0	a,	9C	E8	A9	-1
-20885	a,Deprived Men\0	a,	9C	E8	A9	-1
-20886	a,Deprived Men\0	a,	9C	E8	A9	-1
-20887	a,Deadman Ereve\0	a,	9C	E8	A9	-1
-20888	a,Ereve's Knight\0	a,	9C	E8	A9	-1
-20889	a,Ereve's Follower\0	a,	9C	E8	A9	-1
-20890	a,Harit Guardian Garangky\0	a,	9C	E8	A9	-1
-20891	a,Garangky's Guard Leader\0	a,	9C	E8	A9	-1
-20892	a,Garangky's Guard Shaman\0	a,	9C	E8	A9	-1
-20893	a,Garangky's Guard\0	a,	9C	E8	A9	-1
-20894	a,Gorgolos\0	a,	9C	E8	A9	-1
-20895	a,Cursed Souls\0	a,	9C	E8	A9	-1
-20896	a,Last Titan Utenus\0	a,	9C	E8	A9	-1
-20897	a,Utenus' Guard\0	a,	9C	E8	A9	-1
-20898	a,Grave Robber Kim\0	a,	9C	E8	A9	-1
-20899	a,Kim's Gang\0	a,	9C	E8	A9	-1
-20900	a,Ghost Knight Kabed\0	a,	9C	E8	A9	-1
-20901	a,Kabed's Soldiers\0	a,	9C	E8	A9	-1
-20902	a,Priest of Shilen, Hisilrome\0	a,	9C	E8	A9	-1
-20903	a,Hisilrome's Servitor\0	a,	9C	E8	A9	-1
-20904	a,Magician Kenishee\0	a,	9C	E8	A9	-1
-20905	a,Kenishee's Servitor\0	a,	9C	E8	A9	-1
-20906	a,Zaken's Chief Mate Tillion\0	a,	9C	E8	A9	-1
-20907	a,Tilion's Inferiors\0	a,	9C	E8	A9	-1
-20908	a,Tilion's Bat\0	a,	9C	E8	A9	-1
-20909	a,Water Spirit Lian\0	a,	9C	E8	A9	-1
-20910	a,Lian's Water Spirit\0	a,	9C	E8	A9	-1
-20911	a,Gwindorr\0	a,	9C	E8	A9	-1
-20912	a,Gwindorr's Snake\0	a,	9C	E8	A9	-1
-20913	a,Eva's Spirit Niniel\0	a,	9C	E8	A9	-1
-20914	a,Niniel's Spirits\0	a,	9C	E8	A9	-1
-20915	a,Pingolpin\0	a,	9C	E8	A9	-1
-20916	a,Fafurion's Envoy\0	a,	9C	E8	A9	-1
-20917	a,Istary\0	a,	9C	E8	A9	-1
-20918	a,Istary's Alligators\0	a,	9C	E8	A9	-1
 20919	a,Maille Lizardman\0	a,	9C	E8	A9	-1
 20920	a,Maille Lizardman Scout\0	a,	9C	E8	A9	-1
 20921	a,Maille Lizardman Guard\0	a,	9C	E8	A9	-1
@@ -952,11 +786,11 @@
 20951	a,Pobby's Maid\0	a,	9C	E8	A9	-1
 20952	a,Pobby Escort\0	a,	9C	E8	A9	-1
 20953	a,Pobby\0	a,	9C	E8	A9	-1
-20954	a,Hungry Corpse\0	a,	9C	E8	A9	-1
-20955	a,Ghost War\0	a,	9C	E8	A9	-1
+20954	a,Hungered Corpse\0	a,	9C	E8	A9	-1
+20955	a,Ghostly Warrior\0	a,	9C	E8	A9	-1
 20956	a,Past Knight\0	a,	9C	E8	A9	-1
 20957	a,Nihil Invader\0	a,	9C	E8	A9	-1
-20958	a,Death Blade\0	a,	9C	E8	A9	-1
+20958	a,Death Agent\0	a,	9C	E8	A9	-1
 20959	a,Dark Guard\0	a,	9C	E8	A9	-1
 20960	a,Bloody Ghost\0	a,	9C	E8	A9	-1
 20961	a,Bloody Knight\0	a,	9C	E8	A9	-1
@@ -975,9 +809,9 @@
 20974	a,Spiteful Soul Leader\0	a,	9C	E8	A9	-1
 20975	a,Spiteful Soul Wizard\0	a,	9C	E8	A9	-1
 20976	a,Spiteful Soul Fighter\0	a,	9C	E8	A9	-1
-20977	a,Elmo-Aden's Lady\0	a,	9C	E8	A9	-1
-20978	a,Elmo-Aden's Archer Escort\0	a,	9C	E8	A9	-1
-20979	a,Elmo-Aden's Maid\0	a,	9C	E8	A9	-1
+20977	a,Elmoradan's Lady\0	a,	9C	E8	A9	-1
+20978	a,Elmoradan's Archer Escort\0	a,	9C	E8	A9	-1
+20979	a,Elmoradan's Maid\0	a,	9C	E8	A9	-1
 20980	a,Hallate's Follower Mul\0	a,	9C	E8	A9	-1
 20981	a,Mul's Wizard\0	a,	9C	E8	A9	-1
 20982	a,Mul's Knight\0	a,	9C	E8	A9	-1
@@ -996,7 +830,7 @@
 20995	a,Garden Guard\0	a,	9C	E8	A9	-1
 20996	a,Spiteful Ghost of Ruins\0	a,	9C	E8	A9	-1
 20997	a,Soldier of Grief\0	a,	9C	E8	A9	-1
-20998	a,Cruel Punishment\0	a,	9C	E8	A9	-1
+20998	a,Cruel Punisher\0	a,	9C	E8	A9	-1
 20999	a,Roving Soul\0	a,	9C	E8	A9	-1
 21000	a,Soul of Ruins\0	a,	9C	E8	A9	-1
 21001	a,Wretched Archer\0	a,	9C	E8	A9	-1
@@ -1007,7 +841,7 @@
 21006	a,Doom Servant\0	a,	9C	E8	A9	-1
 21007	a,Doom Guard\0	a,	9C	E8	A9	-1
 21008	a,Doom Archer\0	a,	9C	E8	A9	-1
-21009	a,Doom Trooper\0	a,	9C	E8	A9	-1
+21009	a,Doom Trooper \0	a,	9C	E8	A9	-1
 21010	a,Doom Warrior\0	a,	9C	E8	A9	-1
 21011	a,Ol Mahum Van Grunt\0	a,	9C	E8	A9	-1
 21012	a,Magical Eye\0	a,	9C	E8	A9	-1
@@ -1025,13 +859,6 @@
 21024	a,Babbling Wind\0	a,	9C	E8	A9	-1
 21025	a,Giggling Wind\0	a,	9C	E8	A9	-1
 21026	a,Singing Wind\0	a,	9C	E8	A9	-1
-21027	a,Bear Prince Malcolm\0	a,	9C	E8	A9	-1
-21028	a,Succubus Handmaiden\0	a,	9C	E8	A9	-1
-21029	a,Goblin Servant\0	a,	9C	E8	A9	-1
-21030	a,Julie The Ripper \0	a,	9C	E8	A9	-1
-21031	a,Lesser Noble Ant\0	a,	9C	E8	A9	-1
-21032	a,Blueback Alligator\0	a,	9C	E8	A9	-1
-21033	a,Jewel Alligator\0	a,	9C	E8	A9	-1
 21034	a,Ogre\0	a,	9C	E8	A9	-1
 21035	a,Catherok\0	a,	9C	E8	A9	-1
 21036	a,Shindebarn\0	a,	9C	E8	A9	-1
@@ -1039,23 +866,6 @@
 21038	a,Liangma\0	a,	9C	E8	A9	-1
 21039	a,Snipe Cohort\0	a,	9C	E8	A9	-1
 21040	a,Soldier of Darkness\0	a,	9C	E8	A9	-1
-21041	a,Kusion Suscepter\0	a,	9C	E8	A9	-1
-21042	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21043	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21044	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21045	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21046	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21047	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21048	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21049	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21050	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21051	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21052	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21053	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21054	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21055	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21056	a,Treasure Chest\0	a,	9C	E8	A9	-1
-21057	a,Treasure Chest\0	a,	9C	E8	A9	-1
 21058	a,Beast Lord\0	a,	9C	E8	A9	-1
 21059	a,Beast Guardian\0	a,	9C	E8	A9	-1
 21060	a,Beast Seer\0	a,	9C	E8	A9	-1
@@ -1094,7 +904,7 @@
 21093	a,Ratman Sub Chieftain\0	a,	9C	E8	A9	-1
 21094	a,Ratman Chieftain\0	a,	9C	E8	A9	-1
 21095	a,Giant Poison Bee\0	a,	9C	E8	A9	-1
-21096	a,Cloudy Beast\0	a,	9C	E8	A9	-1
+21096	a,Cloudy Beast \0	a,	9C	E8	A9	-1
 21097	a,Young Araneid\0	a,	9C	E8	A9	-1
 21098	a,Plain Grizzly\0	a,	9C	E8	A9	-1
 21099	a,Cloudy Beast Turen\0	a,	9C	E8	A9	-1
@@ -1328,7 +1138,7 @@
 21327	a,Ketra Orc Raider\0	a,	9C	E8	A9	-1
 21328	a,Ketra Orc Scout\0	a,	9C	E8	A9	-1
 21329	a,Ketra Orc Shaman\0	a,	9C	E8	A9	-1
-21330	a,Grazing Kookaburra\0	a,	9C	E8	A9	-1
+21330	a,Grazing Buffalo\0	a,	9C	E8	A9	-1
 21331	a,Ketra Orc Warrior\0	a,	9C	E8	A9	-1
 21332	a,Ketra Orc Lieutenant\0	a,	9C	E8	A9	-1
 21333	a,Grazing Windsus\0	a,	9C	E8	A9	-1
@@ -1432,7 +1242,7 @@
 21431	a,Arimanes\0	a,	9C	E8	A9	-1
 21432	a,Chakram Beetle\0	a,	9C	E8	A9	-1
 21433	a,Jamadar Beetle\0	a,	9C	E8	A9	-1
-21434	a,Seer of Blood\0	a,	9C	E8	A9	-1
+21434	a,Seer of Blood \0	a,	9C	E8	A9	-1
 21435	a,Guide of Offering\0	a,	9C	E8	A9	-1
 21436	a,Leader of Offering\0	a,	9C	E8	A9	-1
 21437	a,Offering Bug\0	a,	9C	E8	A9	-1
@@ -1939,9 +1749,9 @@
 22109	a,Male Spiked Stakato\0	a,	9C	E8	A9	-1
 22110	a,Male Spiked Stakato\0	a,	9C	E8	A9	-1
 22111	a,Spiked Stakato Sorcerer\0	a,	9C	E8	A9	-1
-22112	a,Cannibalistic Stakato Follower\0	a,	9C	E8	A9	-1
+22112	a,Cannibalistic Stakato Follower \0	a,	9C	E8	A9	-1
 22113	a,Cannibalistic Stakato Leader\0	a,	9C	E8	A9	-1
-22114	a,Cannibalistic Stakato Leader\0	a,	9C	E8	A9	-1
+22114	a,Cannibalistic Stakato Leader \0	a,	9C	E8	A9	-1
 22115	a,Spiked Stakato Soldier\0	a,	9C	E8	A9	-1
 22116	a,Spiked Stakato Drone\0	a,	9C	E8	A9	-1
 22117	a,Spiked Stakato Captain\0	a,	9C	E8	A9	-1
@@ -2004,17 +1814,6 @@
 22174	a,Triol's Priest\0	a,	9C	E8	A9	-1
 22175	a,Andreas' Captain of the Royal Guard\0	a,	9C	E8	A9	-1
 22176	a,Andreas' Royal Guards\0	a,	9C	E8	A9	-1
-22177	a,Hall Keeper Captain\0	a,	9C	E8	A9	-1
-22178	a,Hall Keeper Wizard\0	a,	9C	E8	A9	-1
-22179	a,Hall Keeper Guard\0	a,	9C	E8	A9	-1
-22180	a,Hall Keeper Patrol\0	a,	9C	E8	A9	-1
-22181	a,Hall Keeper Suicidal Soldier\0	a,	9C	E8	A9	-1
-22182	a,Dark Choir Captain\0	a,	9C	E8	A9	-1
-22183	a,Dark Choir Prima Donna\0	a,	9C	E8	A9	-1
-22184	a,Dark Choir Lancer\0	a,	9C	E8	A9	-1
-22185	a,Dark Choir Archer\0	a,	9C	E8	A9	-1
-22186	a,Dark Choir Witch Doctor\0	a,	9C	E8	A9	-1
-22187	a,Dark Choir Player\0	a,	9C	E8	A9	-1
 22188	a,Andreas' Captain of the Royal Guard\0	a,	9C	E8	A9	-1
 22189	a,Andreas' Royal Guards\0	a,	9C	E8	A9	-1
 22190	a,Ritual Sacrifice\0	a,	9C	E8	A9	-1
@@ -2023,6 +1822,36 @@
 22193	a,Andreas' Royal Guards\0	a,	9C	E8	A9	-1
 22194	a,Penance Guard\0	a,	9C	E8	A9	-1
 22195	a,Ritual Sacrifice\0	a,	9C	E8	A9	-1
+22196	a,Velociraptor\0	a,	9C	E8	A9	-1
+22197	a,Velociraptor\0	a,	9C	E8	A9	-1
+22198	a,Velociraptor\0	a,	9C	E8	A9	-1
+22199	a,Pterosaur\0	a,	9C	E8	A9	-1
+22200	a,Ornithomimus\0	a,	9C	E8	A9	-1
+22201	a,Ornithomimus\0	a,	9C	E8	A9	-1
+22202	a,Ornithomimus\0	a,	9C	E8	A9	-1
+22203	a,Deinonychus\0	a,	9C	E8	A9	-1
+22204	a,Deinonychus\0	a,	9C	E8	A9	-1
+22205	a,Deinonychus\0	a,	9C	E8	A9	-1
+22208	a,Pachycephalosaurus\0	a,	9C	E8	A9	-1
+22209	a,Pachycephalosaurus\0	a,	9C	E8	A9	-1
+22210	a,Pachycephalosaurus\0	a,	9C	E8	A9	-1
+22211	a,Wild Strider\0	a,	9C	E8	A9	-1
+22212	a,Wild Strider\0	a,	9C	E8	A9	-1
+22213	a,Wild Strider\0	a,	9C	E8	A9	-1
+22214	a,Elroki\0	a,	9C	E8	A9	-1
+22215	a,Tyrannosaurus\0	a,	9C	E8	A9	-1
+22216	a,Tyrannosaurus\0	a,	9C	E8	A9	-1
+22217	a,Tyrannosaurus\0	a,	9C	E8	A9	-1
+22218	a,Velociraptor\0	a,	9C	E8	A9	-1
+22219	a,Ornithomimus\0	a,	9C	E8	A9	-1
+22220	a,Deinonychus\0	a,	9C	E8	A9	-1
+22221	a,Pachycephalosaurus\0	a,	9C	E8	A9	-1
+22222	a,Wild Strider\0	a,	9C	E8	A9	-1
+22223	a,Velociraptor\0	a,	9C	E8	A9	-1
+22224	a,Ornithomimus\0	a,	9C	E8	A9	-1
+22225	a,Deinonychus\0	a,	9C	E8	A9	-1
+22226	a,Pachycephalosaurus\0	a,	9C	E8	A9	-1
+22227	a,Wild Strider\0	a,	9C	E8	A9	-1
 25001	a,Greyclaw Kutus\0	a,Raid Boss\0	3F	8B	FE	-1
 25002	a,Guard of Kutus\0	a,Raid Fighter\0	3F	8B	FE	-1
 25003	a,Pawn of Kutus\0	a,Raid Fighter\0	3F	8B	FE	-1
@@ -2181,13 +2010,11 @@
 25156	a,Fanatic Shaman\0	a,Raid Fighter\0	3F	8B	FE	-1
 25157	a,Fanatic Soldier\0	a,Raid Fighter\0	3F	8B	FE	-1
 25158	a,King Tarlk\0	a,Raid Boss\0	3F	8B	FE	-1
-25159	a,Unicorn Paniel\0	a,Raid Boss\0	3F	8B	FE	-1
-25160	a,Unicorn Rapini\0	a,Raid Fighter\0	3F	8B	FE	-1
-25161	a,Unicorn Ririf\0	a,Raid Fighter\0	3F	8B	FE	-1
+25159	a,Paniel the Unicorn\0	a,Raid Boss\0	3F	8B	FE	-1
+25160	a,Rapini the Unicorn\0	a,Raid Fighter\0	3F	8B	FE	-1
+25161	a,Ririf the Unicorn\0	a,Raid Fighter\0	3F	8B	FE	-1
 25162	a,Giant Marpanak\0	a,Raid Boss\0	3F	8B	FE	-1
 25163	a,Roaring Skylancer\0	a,Raid Boss\0	3F	8B	FE	-1
-25164	a,Pet of Skylancer\0	a,Raid Fighter\0	3F	8B	FE	-1
-25165	a,Slave Warrior of Skylancer\0	a,Raid Fighter\0	3F	8B	FE	-1
 25166	a,Ikuntai\0	a,Raid Boss\0	3F	8B	FE	-1
 25167	a,Ikuntai's Servitor\0	a,Raid Fighter\0	3F	8B	FE	-1
 25168	a,Pawn of Ikuntai\0	a,Raid Fighter\0	3F	8B	FE	-1
@@ -2217,9 +2044,6 @@
 25192	a,Earth Protector Panathen\0	a,Raid Boss\0	3F	8B	FE	-1
 25193	a,Panathen's Knight\0	a,Raid Fighter\0	3F	8B	FE	-1
 25194	a,Panathen's Protectors\0	a,Raid Fighter\0	3F	8B	FE	-1
-25195	a,	a,	9C	E8	A9	-1
-25196	a,	a,	9C	E8	A9	-1
-25197	a,	a,	9C	E8	A9	-1
 25198	a,Fafurion's Herald Lokness\0	a,Raid Boss\0	3F	8B	FE	-1
 25199	a,Water Dragon Seer Sheshark\0	a,Raid Boss\0	3F	8B	FE	-1
 25200	a,Family of Sheshark\0	a,Raid Fighter\0	3F	8B	FE	-1
@@ -2272,7 +2096,7 @@
 25247	a,Glaki's Servant\0	a,Raid Fighter\0	3F	8B	FE	-1
 25248	a,Doom Blade Tanatos\0	a,Raid Boss\0	3F	8B	FE	-1
 25249	a,Palatanos of Horrific Power\0	a,Raid Boss\0	3F	8B	FE	-1
-25250	a,Bloodsucking Plant of Palatanos\0	a,Raid Fighter\0	3F	8B	FE	-1
+25250	a,Man-Eating Plant of Palatanos\0	a,Raid Fighter\0	3F	8B	FE	-1
 25251	a,Sapling of Palatanos\0	a,Raid Fighter\0	3F	8B	FE	-1
 25252	a,Palibati Queen Themis\0	a,Raid Boss\0	3F	8B	FE	-1
 25253	a,Handmaiden of Themis\0	a,Raid Fighter\0	3F	8B	FE	-1
@@ -2429,7 +2253,7 @@
 25404	a,Corsair Captain Kylon\0	a,Raid Boss\0	3F	8B	FE	-1
 25405	a,Kylon's Pirate\0	a,Raid Fighter\0	3F	8B	FE	-1
 25406	a,Kylon's Mate\0	a,Raid Fighter\0	3F	8B	FE	-1
-25407	a,Lord Ishka\0	a,Raid Boss\0	3F	8B	FE	-1
+25407	a,Lord Ishka \0	a,Raid Boss\0	3F	8B	FE	-1
 25408	a,Ishka's Elite Officer\0	a,Raid Fighter\0	3F	8B	FE	-1
 25409	a,Ishka's Elite Soldier\0	a,Raid Fighter\0	3F	8B	FE	-1
 25410	a,Road Scavenger Leader\0	a,Raid Boss\0	3F	8B	FE	-1
@@ -2529,26 +2353,23 @@
 25504	a,Nellis' Vengeful Spirit\0	a,Raid Boss\0	3F	8B	FE	-1
 25505	a,Nellis' Follower\0	a,Raid Fighter\0	3F	8B	FE	-1
 25506	a,Rayito the Looter\0	a,Raid Boss\0	3F	8B	FE	-1
-25507	u,Rayito’s Henchman\0	a,Raid Fighter\0	3F	8B	FE	-1
+25507	a,Rayito's Henchman\0	a,Raid Fighter\0	3F	8B	FE	-1
 25508	a,Rayito's Henchman\0	a,Raid Fighter\0	3F	8B	FE	-1
 25509	a,Dark Shaman Varangka \0	a,Raid Boss\0	3F	8B	FE	-1
 25510	a,Varangka's Descendant\0	a,Raid Fighter\0	3F	8B	FE	-1
 25511	a,Varangka's Page\0	a,Raid Fighter\0	3F	8B	FE	-1
 25512	a,Gigantic Chaos Golem\0	a,Raid Boss\0	3F	8B	FE	-1
-25513	a,Captain of the Ice Queen's Royal Guard\0	a,Raid Boss\0	9C	E8	A9	-1
 25514	a,Queen Shyeed\0	a,Raid Boss\0	3F	8B	FE	-1
 25515	a,Spiked Stakato  \0	a,Raid Fighter\0	3F	8B	FE	-1
 25516	a,Spiked Stakato  \0	a,Raid Fighter\0	3F	8B	FE	-1
-25517	a,Master Anays\0	a,Raid Boss\0	3F	8B	FE	-1
-25518	a,Splendor Disciple\0	a,Raid Fighter\0	3F	8B	FE	-1
-25519	a,Splendor Worshiper\0	a,Raid Fighter\0	3F	8B	FE	-1
-25520	a,Andreas van Halter\0	a,Raid Boss\0	9C	E8	A9	-1
-25521	a,Andreas' Acolyte\0	a,Raid Fighter\0	9C	E8	A9	-1
-25522	a,Andreas' Acolyte\0	a,Raid Fighter\0	9C	E8	A9	-1
+25517	a,Master Anays\0	a,Raid Boss\0	9C	E8	A9	-1
+25518	a,Splendor Disciple\0	a,Raid Fighter\0	9C	E8	A9	-1
+25519	a,Splendor Worshiper\0	a,Raid Fighter\0	9C	E8	A9	-1
 25523	a,Plague Golem\0	a,Raid Boss\0	3F	8B	FE	-1
 25524	a,Flamestone Giant\0	a,Raid Boss\0	3F	8B	FE	-1
 25525	a,Flame Spirit\0	a,Raid Fighter\0	3F	8B	FE	-1
 25526	a,Charged Spirit\0	a,Raid Fighter\0	3F	8B	FE	-1
+25527	a,Uruka\0	a,Raid Boss\0	3F	8B	FE	-1
 29001	a,Queen Ant\0	a,	9C	E8	A9	-1
 29002	a,Queen Ant Larva\0	a,	9C	E8	A9	-1
 29003	a,Nurse Ant\0	a,	9C	E8	A9	-1
@@ -2613,6 +2434,40 @@
 29062	a,High Priestess van Halter\0	a,Raid Boss\0	3F	8B	FE	-1
 29063	a,Andreas' Acolyte\0	a,Raid Fighter\0	3F	8B	FE	-1
 29064	a,Andreas' Acolyte\0	a,Raid Fighter\0	3F	8B	FE	-1
+29065	a,Sailren\0	a,Sealed Evil Power\0	3F	8B	FE	-1
+29066	a,Antharas\0	a,	3F	8B	FE	-1
+29067	a,Antharas\0	a,	3F	8B	FE	-1
+29068	a,Antharas\0	a,	3F	8B	FE	-1
+29069	a,Behemoth Dragon\0	a,	3F	8B	FE	-1
+29070	a,Dragon Bomber\0	a,	9C	E8	A9	-1
+29071	a,Dragon Bomber\0	a,	9C	E8	A9	-1
+29072	a,Dragon Bomber\0	a,	9C	E8	A9	-1
+29073	a,Dragon Bomber\0	a,	9C	E8	A9	-1
+29074	a,Dragon Bomber\0	a,	9C	E8	A9	-1
+29075	a,Dragon Bomber\0	a,	9C	E8	A9	-1
+29076	a,Dragon Bomber\0	a,	9C	E8	A9	-1
+29077	a,	a,	9C	E8	A9	-1
+29078	a,	a,	9C	E8	A9	-1
+29079	a,	a,	9C	E8	A9	-1
+29080	a,	a,	9C	E8	A9	-1
+29081	a,	a,	9C	E8	A9	-1
+29082	a,	a,	9C	E8	A9	-1
+29083	a,	a,	9C	E8	A9	-1
+29084	a,	a,	9C	E8	A9	-1
+29085	a,	a,	9C	E8	A9	-1
+29086	a,	a,	9C	E8	A9	-1
+29087	a,	a,	9C	E8	A9	-1
+29088	a,	a,	9C	E8	A9	-1
+29089	a,	a,	9C	E8	A9	-1
+29090	a,	a,	9C	E8	A9	-1
+29091	a,	a,	9C	E8	A9	-1
+29092	a,	a,	9C	E8	A9	-1
+29093	a,	a,	9C	E8	A9	-1
+29094	a,	a,	9C	E8	A9	-1
+29095	a,Gordon\0	a,Knight of Destruction\0	3F	8B	FE	-1
+29096	a,Lord of Splendor Anays\0	a,Raid Boss\0	3F	8B	FE	-1
+29097	a,Splendor Disciple\0	a,Raid Fighter\0	3F	8B	FE	-1
+29098	a,Splendor Worshiper\0	a,Raid Fighter\0	3F	8B	FE	-1
 18001	a,Blood Queen\0	a,	9C	E8	A9	-1
 18002	a,Blood Queen\0	a,	9C	E8	A9	-1
 18003	a,Bearded Keltir\0	a,	9C	E8	A9	-1
@@ -2956,6 +2811,9 @@
 18341	a,Hall Keeper Suicidal Soldier\0	a,	9C	E8	A9	-1
 18342	a,Gremlin\0	a,	9C	E8	A9	-1
 18343	a,Gatekeeper Zombie\0	a,	9C	E8	A9	-1
+18344	a,Ancient Egg\0	a,	9C	E8	A9	-1
+18345	a,Sprigant\0	a,	9C	E8	A9	-1
+18346	a,Sprigant\0	a,	9C	E8	A9	-1
 27001	a,Orc Sniper\0	a,	9C	E8	A9	-1
 27002	a,Orc Fighter\0	a,	9C	E8	A9	-1
 27003	a,Spirit Of Mirrors\0	a,Quest Monster\0	0	80	FF	-1
@@ -2965,12 +2823,6 @@
 27007	a,Tanuki Skullcrusher\0	a,	9C	E8	A9	-1
 27008	a,Kraacul Blackskull\0	a,	9C	E8	A9	-1
 27009	a,Taarq Blackskull\0	a,	9C	E8	A9	-1
-27010	a,	a,	9C	E8	A9	-1
-27011	a,	a,	9C	E8	A9	-1
-27012	a,	a,	9C	E8	A9	-1
-27013	a,	a,	9C	E8	A9	-1
-27014	a,	a,	9C	E8	A9	-1
-27015	a,	a,	9C	E8	A9	-1
 27016	a,Nerkas\0	a,Quest Monster\0	0	80	FF	-1
 27017	a,Plague Zombie\0	a,Quest Monster\0	0	80	FF	-1
 27018	a,Orc Warrior\0	a,	9C	E8	A9	-1
@@ -2978,13 +2830,8 @@
 27020	a,Varool Foulclaw\0	a,Quest Monster\0	0	80	FF	-1
 27021	a,Kirunak\0	a,Quest Monster\0	0	80	FF	-1
 27022	a,Merkenis\0	a,Quest Monster\0	0	80	FF	-1
-27023	a,	a,	9C	E8	A9	-1
 27024	a,Undead Priest\0	a,Quest Monster\0	0	80	FF	-1
-27025	a,	a,	9C	E8	A9	-1
-27026	a,	a,	9C	E8	A9	-1
-27027	a,	a,	9C	E8	A9	-1
-27028	a,	a,	9C	E8	A9	-1
-27029	a,phantom salamander\0	a,Quest Monster\0	0	80	FF	-1
+27029	a,Phantom Salamander\0	a,Quest Monster\0	0	80	FF	-1
 27030	a,Water Seer\0	a,Quest Monster\0	0	80	FF	-1
 27031	a,Ol Mahum Sentry\0	a,Quest Monster\0	0	80	FF	-1
 27032	a,Lizardman Warrior\0	a,Quest Monster\0	0	80	FF	-1
@@ -2994,8 +2841,6 @@
 27036	a,Calpico\0	a,Quest Monster\0	0	80	FF	-1
 27037	a,Calpico's Goons\0	a,Quest Monster\0	0	80	FF	-1
 27038	a,Cat's Eye Bandit\0	a,Quest Monster\0	0	80	FF	-1
-27039	a,	a,	9C	E8	A9	-1
-27040	a,	a,	9C	E8	A9	-1
 27041	a,Baranka's Messenger\0	a,Quest Monster\0	0	80	FF	-1
 27042	a,Orc Escort\0	a,Quest Monster\0	0	80	FF	-1
 27043	a,Varangka's Tracker\0	a,Quest Monster\0	0	80	FF	-1
@@ -3012,7 +2857,6 @@
 27054	a,Umbar Orc\0	a,Quest Monster\0	0	80	FF	-1
 27055	a,Zakan\0	a,Orc Betrayer\0	9C	E8	A9	-1
 27056	a,Durka Spirit\0	a,Quest Monster\0	0	80	FF	-1
-27057	a,	a,	9C	E8	A9	-1
 27058	a,Honey Bear\0	a,Quest Monster\0	0	80	FF	-1
 27059	a,Uoph\0	a,Kaboo Chief\0	9C	E8	A9	-1
 27060	a,Kracha\0	a,Kaboo Chief\0	9C	E8	A9	-1
@@ -3026,12 +2870,6 @@
 27068	a,Murtika\0	a,Kaboo Chief\0	9C	E8	A9	-1
 27069	a,Murtika's Warhound\0	a,Quest Monster\0	0	80	FF	-1
 27070	a,Tumran Orc Brigand\0	a,Quest Monster\0	0	80	FF	-1
-27071	a,	a,	9C	E8	A9	-1
-27072	a,	a,	9C	E8	A9	-1
-27073	a,	a,	9C	E8	A9	-1
-27074	a,	a,	9C	E8	A9	-1
-27075	a,	a,	9C	E8	A9	-1
-27076	a,	a,	9C	E8	A9	-1
 27077	a,Unicorn Of Eva\0	a,Quest Monster\0	0	80	FF	-1
 27078	a,Trimden Lord \0	a,Quest Monster\0	0	80	FF	-1
 27079	a,Black Willow Lurker\0	a,Quest Monster\0	0	80	FF	-1
@@ -3039,14 +2877,10 @@
 27081	a,Vultus Son Of Voltar\0	a,Quest Monster\0	0	80	FF	-1
 27082	a,Enku Orc Overlord\0	a,Quest Monster\0	0	80	FF	-1
 27083	a,Makum Bugbear Thug\0	a,Quest Monster\0	0	80	FF	-1
-27084	a,	a,	9C	E8	A9	-1
-27085	a,	a,	9C	E8	A9	-1
 27086	a,Revenant of Tantos Chief\0	a,Quest Monster\0	0	80	FF	-1
-27087	a,	a,	9C	E8	A9	-1
 27088	a,Harpy Matriarch\0	a,Quest Monster\0	0	80	FF	-1
 27089	a,Road Collector\0	a,Quest Monster\0	0	80	FF	-1
 27090	a,Serpent Demon Kadesh\0	a,Quest Monster\0	0	80	FF	-1
-27091	a,	a,	9C	E8	A9	-1
 27092	a,Neer Bodyguard\0	a,Quest Monster\0	0	80	FF	-1
 27093	a,Delu Chief Kalkis\0	a,Quest Monster\0	0	80	FF	-1
 27094	a,Delu Lizardman Assassin\0	a,Quest Monster\0	0	80	FF	-1
@@ -3153,7 +2987,6 @@
 27195	a,Male Ant\0	a,Quest Monster\0	0	80	FF	-1
 27196	a,Bluebacked Alligator\0	a,Quest Monster\0	0	80	FF	-1
 27197	a,Bejewelled Alligator\0	a,Quest Monster\0	0	80	FF	-1
-27198	a,Gremlin\0	a,	9C	E8	A9	-1
 27199	a,Crimson Werewolf\0	a,Quest Monster\0	0	80	FF	-1
 27200	a,Krudel Lizardman\0	a,Quest Monster\0	0	80	FF	-1
 27201	a,	a,	0	80	FF	-1
@@ -3229,10 +3062,10 @@
 27271	a,Chimera Golem\0	a,Quest Monster\0	0	80	FF	-1
 27272	a,Hallate's Dancer Lillian\0	a,Quest Monster\0	0	80	FF	-1
 27273	a,Assassin Pezel\0	a,Quest Monster\0	0	80	FF	-1
-27274	a,Fallen angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
-27275	a,Fallen angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
-27276	a,Fallen angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
-27277	a,Fallen angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
+27274	a,Fallen Angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
+27275	a,Fallen Angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
+27276	a,Fallen Angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
+27277	a,Fallen Angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
 27278	a,Shadow of Beleth\0	a,Quest Monster\0	0	80	FF	-1
 27279	a,Cursed Kesadein\0	a,Quest Monster\0	0	80	FF	-1
 27280	a,Fallen Angel Narcissus\0	a,Quest Monster\0	0	80	FF	-1
@@ -3284,25 +3117,13 @@
 30004	a,Katerina\0	a,Trader\0	9C	E8	A9	-1
 30005	a,Wilford\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30006	a,Roxxy\0	a,Gatekeeper\0	9C	E8	A9	-1
-30007	a,	a, \0	9C	E8	A9	-1
 30008	a,Roien\0	a,Grand Master\0	9C	E8	A9	-1
 30009	a,Newbie Helper\0	a,	9C	E8	A9	-1
 30010	a,Auron\0	a,Master\0	9C	E8	A9	-1
-30011	a,	a,	9C	E8	A9	-1
-30012	a,	a,	9C	E8	A9	-1
-30013	a,	a,	9C	E8	A9	-1
 30014	a,Celma\0	a,Master\0	9C	E8	A9	-1
-30015	a,	a,	9C	E8	A9	-1
-30016	a,	a,	9C	E8	A9	-1
 30017	a,Gallint\0	a,Grand Magister\0	9C	E8	A9	-1
-30018	a,Newbie Helper\0	a,	9C	E8	A9	-1
 30019	a,Newbie Helper\0	a,	9C	E8	A9	-1
-30020	a,Newbie Helper\0	a,	9C	E8	A9	-1
-30021	a,Newbie Helper\0	a,	9C	E8	A9	-1
 30022	a,Zigaunt\0	a,Priest\0	9C	E8	A9	-1
-30023	a,	a,	9C	E8	A9	-1
-30024	a,	a,	9C	E8	A9	-1
-30025	a,	a,	9C	E8	A9	-1
 30026	a,Bitz\0	a,Grand Master\0	9C	E8	A9	-1
 30027	a,Gwinter\0	a,Master\0	9C	E8	A9	-1
 30028	a,Pintage\0	a,Master\0	9C	E8	A9	-1
@@ -3315,7 +3136,6 @@
 30035	a,Harrys\0	a,Magister\0	9C	E8	A9	-1
 30036	a,Petron\0	a,Priest\0	9C	E8	A9	-1
 30037	a,Levian\0	a,High Priestess\0	9C	E8	A9	-1
-30038	a,	a,	9C	E8	A9	-1
 30039	a,Gilbert\0	a,Captain\0	9C	E8	A9	-1
 30040	a,Leon\0	a,Guard\0	9C	E8	A9	-1
 30041	a,Arnold\0	a,Guard\0	9C	E8	A9	-1
@@ -3329,11 +3149,8 @@
 30049	a,Bonnie\0	a,	9C	E8	A9	-1
 30050	a,Elias\0	a,	9C	E8	A9	-1
 30051	a,Cristel\0	a,	9C	E8	A9	-1
-30052	a,	a,	9C	E8	A9	-1
-30053	a,	a,	9C	E8	A9	-1
 30054	a,Rant\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30055	a,Rolfe\0	a,Warehouse Keeper\0	9C	E8	A9	-1
-30056	a,	a,	9C	E8	A9	-1
 30057	a,Aldo\0	a,Warehouse Freightman\0	9C	E8	A9	-1
 30058	a,Holvas\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30059	a,Trisha\0	a,Gatekeeper\0	9C	E8	A9	-1
@@ -3354,7 +3171,6 @@
 30074	a,Harlan\0	a,Guard\0	9C	E8	A9	-1
 30075	a,Xaber\0	a,Guard\0	9C	E8	A9	-1
 30076	a,Liam\0	a,Guard\0	9C	E8	A9	-1
-30077	a,	a,	9C	E8	A9	-1
 30078	a,Pano\0	a,Grocer\0	9C	E8	A9	-1
 30079	a,Barder\0	a,Warehouse Freightman\0	9C	E8	A9	-1
 30080	a,Clarissa\0	a,Gatekeeper\0	9C	E8	A9	-1
@@ -3366,20 +3182,14 @@
 30086	a,Taurin\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30087	a,Peta\0	a,Armor Trader\0	9C	E8	A9	-1
 30088	a,Radia\0	a,Armor Trader\0	9C	E8	A9	-1
-30089	a,	a,	9C	E8	A9	-1
 30090	a,Sandra\0	a,Jeweler \0	9C	E8	A9	-1
 30091	a,Ellie\0	a,Jeweler \0	9C	E8	A9	-1
 30092	a,Collob\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30093	a,Groot\0	a,Magic Trader\0	9C	E8	A9	-1
 30094	a,Gentler\0	a,Magic Trader\0	9C	E8	A9	-1
 30095	a,Randolf\0	a,Warehouse Keeper\0	9C	E8	A9	-1
-30096	a,	a,	9C	E8	A9	-1
 30097	a,Galladucci\0	a,Trader\0	9C	E8	A9	-1
 30098	a,Alexandria\0	a,Trader\0	9C	E8	A9	-1
-30099	a,	a,	9C	E8	A9	-1
-30100	a,	a,	9C	E8	A9	-1
-30101	a,	a,	9C	E8	A9	-1
-30102	a,	a,	9C	E8	A9	-1
 30103	a,Valkon\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30104	a,Parman\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30105	a,Genwitter\0	a,Master\0	9C	E8	A9	-1
@@ -3404,7 +3214,6 @@
 30124	a,Zerome\0	a,Guard\0	9C	E8	A9	-1
 30125	a,Belton\0	a,Guard\0	9C	E8	A9	-1
 30126	a,Rath\0	a,Guard\0	9C	E8	A9	-1
-30127	a,	a,	9C	E8	A9	-1
 30128	a,Atanas\0	a,Guard\0	9C	E8	A9	-1
 30129	a,Mitraell\0	a,Hierarch \0	9C	E8	A9	-1
 30130	a,Undrias\0	a,Abyssal Celebrant\0	9C	E8	A9	-1
@@ -3419,7 +3228,6 @@
 30139	a,Dorankus\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30140	a,Erviante\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30141	a,Talloth\0	a,Tetrarch \0	9C	E8	A9	-1
-30142	a,	a,	9C	E8	A9	-1
 30143	a,Trudy\0	a,Master\0	9C	E8	A9	-1
 30144	a,Harne\0	a,Magister\0	9C	E8	A9	-1
 30145	a,Vlasty\0	a,Magister\0	9C	E8	A9	-1
@@ -3436,21 +3244,14 @@
 30156	a,Cobendell\0	a,Master\0	9C	E8	A9	-1
 30157	a,Greenis\0	a,Magister\0	9C	E8	A9	-1
 30158	a,Esrandell\0	a,Magister\0	9C	E8	A9	-1
-30159	a,	a,	9C	E8	A9	-1
-30160	a,	a,	9C	E8	A9	-1
-30161	a,	a,	9C	E8	A9	-1
 30162	a,Karin\0	a,Gatekeeper\0	9C	E8	A9	-1
 30163	a,Rex\0	a,Trader\0	9C	E8	A9	-1
 30164	a,Ian\0	a,Trader\0	9C	E8	A9	-1
 30165	a,Ralford\0	a,Trader\0	9C	E8	A9	-1
 30166	a,Wesley\0	a,Magic Trader\0	9C	E8	A9	-1
-30167	a,	a,	9C	E8	A9	-1
-30168	a,	a,	9C	E8	A9	-1
 30169	a,Marty\0	a,Warehouse Freightman\0	9C	E8	A9	-1
 30170	a,Radic\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30171	a,Galios\0	a,Magister\0	9C	E8	A9	-1
-30172	a,	a,	9C	E8	A9	-1
-30173	a,	a,	9C	E8	A9	-1
 30174	a,Arkenias\0	a,Grand Magister\0	9C	E8	A9	-1
 30175	a,Fairen\0	a,Grand Magister\0	9C	E8	A9	-1
 30176	a,Valleria\0	a,Grand Magister\0	9C	E8	A9	-1
@@ -3470,7 +3271,6 @@
 30190	a,Phanovia\0	a,Magister\0	9C	E8	A9	-1
 30191	a,Hollint\0	a,High Priest\0	9C	E8	A9	-1
 30192	a,Darya\0	a,Master\0	9C	E8	A9	-1
-30193	a,	a,	9C	E8	A9	-1
 30194	a,Gideon\0	a,Magister\0	9C	E8	A9	-1
 30195	a,Brecson\0	a,Grand Master\0	9C	E8	A9	-1
 30196	a,Mouen\0	a,Captain\0	9C	E8	A9	-1
@@ -3479,20 +3279,10 @@
 30199	a,Yates\0	a,Guard\0	9C	E8	A9	-1
 30200	a,Stan\0	a,Guard\0	9C	E8	A9	-1
 30201	a,Pinaps\0	a,Guard\0	9C	E8	A9	-1
-30202	a,	a,	9C	E8	A9	-1
-30203	a,	a,	9C	E8	A9	-1
-30204	a,	a,	9C	E8	A9	-1
-30205	a,	a,	9C	E8	A9	-1
-30206	a,	a,	9C	E8	A9	-1
 30207	a,Arodin\0	a,Trader\0	9C	E8	A9	-1
 30208	a,Damion\0	a,Trader\0	9C	E8	A9	-1
 30209	a,Colleen\0	a,Trader\0	9C	E8	A9	-1
 30210	a,Norman\0	a,Warehouse Keeper\0	9C	E8	A9	-1
-30211	a,	a,	9C	E8	A9	-1
-30212	a,	a,	9C	E8	A9	-1
-30213	a,	a,	9C	E8	A9	-1
-30214	a,	a,	9C	E8	A9	-1
-30215	a,	a,	9C	E8	A9	-1
 30216	a,Wheeler\0	a,Sentinel\0	9C	E8	A9	-1
 30217	a,Berros\0	a,Sentinel\0	9C	E8	A9	-1
 30218	a,Kendell\0	a,Sentinel\0	9C	E8	A9	-1
@@ -3502,92 +3292,29 @@
 30222	a,Alshupes\0	a,	9C	E8	A9	-1
 30223	a,Arujien\0	a,	9C	E8	A9	-1
 30224	a,Rayla\0	a,Sentry Knight \0	9C	E8	A9	-1
-30225	a,	a,	9C	E8	A9	-1
-30226	a,	a,	9C	E8	A9	-1
-30227	a,	a,	9C	E8	A9	-1
-30228	a,	a,	9C	E8	A9	-1
-30229	a,	a,	9C	E8	A9	-1
 30230	a,Edroc\0	a,Trader\0	9C	E8	A9	-1
 30231	a,Garette\0	a,Trader\0	9C	E8	A9	-1
 30232	a,Sorint\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30233	a,Esmeralda\0	a,Gatekeeper\0	9C	E8	A9	-1
-30234	a,	a,	9C	E8	A9	-1
-30235	a,	a,	9C	E8	A9	-1
-30236	a,	a,	9C	E8	A9	-1
-30237	a,	a,	9C	E8	A9	-1
-30238	a,	a,	9C	E8	A9	-1
-30239	a,	a,	9C	E8	A9	-1
-30240	a,	a,	9C	E8	A9	-1
-30241	a,	a,	9C	E8	A9	-1
-30242	a,	a,	9C	E8	A9	-1
-30243	a,	a,	9C	E8	A9	-1
-30244	a,	a,	9C	E8	A9	-1
-30245	a,	a,	9C	E8	A9	-1
-30246	a,	a,	9C	E8	A9	-1
-30247	a,	a,	9C	E8	A9	-1
-30248	a,	a,	9C	E8	A9	-1
-30249	a,	a,	9C	E8	A9	-1
-30250	a,Gludio Holy Artifact\0	a,	9C	E8	A9	-1
-30251	a,	a,	9C	E8	A9	-1
-30252	a,	a,	9C	E8	A9	-1
 30253	a,Simplon\0	a,Trader\0	9C	E8	A9	-1
 30254	a,Harmony\0	a,Trader\0	9C	E8	A9	-1
 30255	a,Haprock\0	a,Warehouse Keeper\0	9C	E8	A9	-1
 30256	a,Bella\0	a,Gatekeeper\0	9C	E8	A9	-1
-30257	a,	a,	9C	E8	A9	-1
-30258	a,	a,	9C	E8	A9	-1
-30259	a,	a,	9C	E8	A9	-1
-30260	a,	a,	9C	E8	A9	-1
-30261	a,	a,	9C	E8	A9	-1
-30262	a,	a,	9C	E8	A9	-1
-30263	a,	a,	9C	E8	A9	-1
-30264	a,	a,	9C	E8	A9	-1
-30265	a,	a,	9C	E8	A9	-1
-30266	a,	a,	9C	E8	A9	-1
-30267	a,	a,	9C	E8	A9	-1
-30268	a,	a,	9C	E8	A9	-1
-30269	a,	a,	9C	E8	A9	-1
-30270	a,	a,	9C	E8	A9	-1
-30271	a,	a,	9C	E8	A9	-1
-30272	a,	a,	9C	E8	A9	-1
-30273	a,	a,	9C	E8	A9	-1
-30274	a,	a,	9C	E8	A9	-1
-30275	a,	a,	9C	E8	A9	-1
-30276	a,	a,	9C	E8	A9	-1
-30277	a,	a,	9C	E8	A9	-1
-30278	a,	a,	9C	E8	A9	-1
-30279	a,	a,	9C	E8	A9	-1
-30280	a,	a,	9C	E8	A9	-1
-30281	a,	a,	9C	E8	A9	-1
-30282	a,	a,	9C	E8	A9	-1
 30283	a,Altran\0	a,Blacksmith\0	9C	E8	A9	-1
 30284	a,Alberius\0	a,Sentinel Knight\0	9C	E8	A9	-1
 30285	a,Gartrandell\0	a,Sentinel\0	9C	E8	A9	-1
-30286	a,	a,	9C	E8	A9	-1
-30287	a,	a,	9C	E8	A9	-1
 30288	a,Rains\0	a,Grand Master\0	9C	E8	A9	-1
 30289	a,Raymond\0	a,High Priest\0	9C	E8	A9	-1
 30290	a,Xenos\0	a,Grand Master\0	9C	E8	A9	-1
 30291	a,Alex\0	a,Captain\0	9C	E8	A9	-1
-30292	a,	a,	9C	E8	A9	-1
 30293	a,Manuel\0	a,Priest\0	9C	E8	A9	-1
 30294	a,Varan\0	a,Trader\0	9C	E8	A9	-1
-30295	a,	a,	9C	E8	A9	-1
-30296	a,	a,	9C	E8	A9	-1
 30297	a,Tobias\0	a,Grand Master\0	9C	E8	A9	-1
 30298	a,Pinter\0	a,Blacksmith\0	9C	E8	A9	-1
-30299	a,	a,	9C	E8	A9	-1
 30300	a,Pushkin\0	a,Blacksmith\0	9C	E8	A9	-1
 30301	a,Hally\0	a,Trader\0	9C	E8	A9	-1
-30302	a,	a,	9C	E8	A9	-1
-30303	a,	a,	9C	E8	A9	-1
-30304	a,	a,	9C	E8	A9	-1
 30305	a,Vellior\0	a,Tetrarch\0	9C	E8	A9	-1
-30306	a,	a,	9C	E8	A9	-1
 30307	a,Karrod\0	a,Blacksmith\0	9C	E8	A9	-1
-30308	a,	a,	9C	E8	A9	-1
-30309	a,	a,	9C	E8	A9	-1
-30310	a,	a,	9C	E8	A9	-1
 30311	a,Sir Collin Windawood\0	a,	9C	E8	A9	-1
 30312	a,Rockswell\0	a,Lighthouse Keeper\0	9C	E8	A9	-1
 30313	a,Asha\0	a,Trader\0	9C	E8	A9	-1
@@ -3595,13 +3322,9 @@
 30315	a,Poesia\0	a,Trader\0	9C	E8	A9	-1
 30316	a,Raut\0	a,Warehouse Freightman\0	9C	E8	A9	-1
 30317	a,Kluto\0	a,Blacksmith\0	9C	E8	A9	-1
-30318	a,	a,	9C	E8	A9	-1
-30319	a,	a,	9C	E8	A9	-1
 30320	a,Richlin\0	a,Gatekeeper\0	9C	E8	A9	-1
 30321	a,Sydnia\0	a,Trader\0	9C	E8	A9	-1
 30322	a,Ballin\0	a,Warehouse Freightman\0	9C	E8	A9	-1
-30323	a,	a,	9C	E8	A9	-1
-30324	a,	a,	9C	E8	A9	-1
 30325	a,Audiberti\0	a,Master\0	9C	E8	A9	-1
 30326	a,Leona\0	a,Master\0	9C	E8	A9	-1
 30327	a,Sorius\0	a,Master\0	9C	E8	A9	-1
@@ -3616,18 +3339,14 @@
 30336	a,Curtis\0	a,Guard\0	9C	E8	A9	-1
 30337	a,Moretti\0	a,Guard\0	9C	E8	A9	-1
 30338	a,Melville\0	a,Guard\0	9C	E8	A9	-1
-30339	a,	a,	9C	E8	A9	-1
-30340	a,	a,	9C	E8	A9	-1
-30341	a,	a,	9C	E8	A9	-1
 30342	a,Varsak\0	a,	9C	E8	A9	-1
-30343	a,	a,	9C	E8	A9	-1
 30344	a,Rohmer\0	a,Magister\0	9C	E8	A9	-1
 30345	a,Ramoniell\0	a,Magister\0	9C	E8	A9	-1
 30346	a,Kayleen\0	a,Sentry\0	9C	E8	A9	-1
 30347	a,Marion\0	a,Sentry\0	9C	E8	A9	-1
 30348	a,Nelsya\0	a,Sentry\0	9C	E8	A9	-1
 30349	a,Jenna\0	a,Sentry\0	9C	E8	A9	-1
-30350	a,Collette\0	a,Warehouse Freightman\0	9C	E8	A9	-1
+30350	a,Carlon\0	a,Warehouse Freightman\0	9C	E8	A9	-1
 30351	a,Astaron\0	a,	9C	E8	A9	-1
 30352	a,Karina\0	a,	9C	E8	A9	-1
 30353	a,Jughead\0	a,	9C	E8	A9	-1
@@ -3641,15 +3360,10 @@
 30361	a,Rizraell\0	a,	9C	E8	A9	-1
 30362	a,Andellia\0	a,	9C	E8	A9	-1
 30363	a,Aios\0	a,Blacksmith\0	9C	E8	A9	-1
-30364	a,	a,	9C	E8	A9	-1
-30365	a,	a,	9C	E8	A9	-1
-30366	a,	a,	9C	E8	A9	-1
-30367	a,	a,	9C	E8	A9	-1
 30368	a,Lilith\0	a,	9C	E8	A9	-1
 30369	a,Baenedes\0	a,Master\0	9C	E8	A9	-1
 30370	a,Nerupa\0	a,	9C	E8	A9	-1
 30371	a,Thalia\0	a,	9C	E8	A9	-1
-30372	a,	a,	9C	E8	A9	-1
 30373	a,Ramos\0	a,Grand Master\0	9C	E8	A9	-1
 30374	a,Rhodiell\0	a,Master\0	9C	E8	A9	-1
 30375	a,Adonius\0	a,Priest\0	9C	E8	A9	-1
@@ -3665,18 +3379,7 @@
 30385	a,Weisz\0	a,Guard\0	9C	E8	A9	-1
 30386	a,Luis\0	a,Guard\0	9C	E8	A9	-1
 30387	a,Clancy\0	a,Wharf Manager \0	9C	E8	A9	-1
-30388	a,	a,	9C	E8	A9	-1
-30389	a,	a,	9C	E8	A9	-1
-30390	a,	a,	9C	E8	A9	-1
 30391	a,Parina\0	a,	9C	E8	A9	-1
-30392	a,	a,	9C	E8	A9	-1
-30393	a,	a,	9C	E8	A9	-1
-30394	a,	a,	9C	E8	A9	-1
-30395	a,	a,	9C	E8	A9	-1
-30396	a,	a,	9C	E8	A9	-1
-30397	a,	a,	9C	E8	A9	-1
-30398	a,	a,	9C	E8	A9	-1
-30399	a,	a,	9C	E8	A9	-1
 30400	a,Newbie Helper\0	a,	9C	E8	A9	-1
 30401	a,Newbie Helper\0	a,	9C	E8	A9	-1
 30402	a,Newbie Helper\0	a,	9C	E8	A9	-1
@@ -3715,26 +3418,7 @@
 30435	a,Leopold\0	a,	9C	E8	A9	-1
 30436	a,Sarien\0	a,Trader\0	9C	E8	A9	-1
 30437	a,Rolento\0	a,Trader\0	9C	E8	A9	-1
-30438	a,	a,	9C	E8	A9	-1
-30439	a,	a,	9C	E8	A9	-1
-30440	a,	a,	9C	E8	A9	-1
-30441	a,	a,	9C	E8	A9	-1
-30442	a,	a,	9C	E8	A9	-1
-30443	a,	a,	9C	E8	A9	-1
-30444	a,Duke Lewin Waldner\0	a,	9C	E8	A9	-1
-30445	a,Cronenberg\0	a,	9C	E8	A9	-1
-30446	a,	a,	9C	E8	A9	-1
-30447	a,	a,	9C	E8	A9	-1
-30448	a,	a,	9C	E8	A9	-1
-30449	a,	a,	9C	E8	A9	-1
-30450	a,	a,	9C	E8	A9	-1
-30451	a,	a,	9C	E8	A9	-1
 30452	a,Kurt\0	a,Guard\0	9C	E8	A9	-1
-30453	a,	a,	9C	E8	A9	-1
-30454	a,	a,	9C	E8	A9	-1
-30455	a,	a,	9C	E8	A9	-1
-30456	a,	a,	9C	E8	A9	-1
-30457	a,	a,	9C	E8	A9	-1
 30458	a,Poitan\0	a,Blacksmith\0	9C	E8	A9	-1
 30459	a,Wandius\0	a,Master\0	9C	E8	A9	-1
 30460	a,Cardien\0	a,Master\0	9C	E8	A9	-1
@@ -3744,10 +3428,7 @@
 30464	a,Clayton\0	a,Magister\0	9C	E8	A9	-1
 30465	a,Herven\0	a,Guard\0	9C	E8	A9	-1
 30466	a,Bright\0	a,Guard\0	9C	E8	A9	-1
-30467	a,	a,	9C	E8	A9	-1
-30468	a,	a,	9C	E8	A9	-1
 30469	a,Jonas\0	a,	9C	E8	A9	-1
-30470	a,	a,	9C	E8	A9	-1
 30471	a,Rupio\0	a,Blacksmith\0	9C	E8	A9	-1
 30472	a,Rosheria\0	a,Master\0	9C	E8	A9	-1
 30473	a,Bandellos\0	a,Priest\0	9C	E8	A9	-1
@@ -3756,24 +3437,11 @@
 30476	a,Kaira\0	a,Magister\0	9C	E8	A9	-1
 30477	a,Sir Ortho Lancer\0	a,	9C	E8	A9	-1
 30478	a,Reikin\0	a,Guard\0	9C	E8	A9	-1
-30479	a,	a,	9C	E8	A9	-1
-30480	a,	a,	9C	E8	A9	-1
-30481	a,	a,	9C	E8	A9	-1
-30482	a,	a,	9C	E8	A9	-1
 30483	a,Mozella\0	a,Gatekeeper\0	9C	E8	A9	-1
 30484	a,Ponti\0	a,Gatekeeper\0	9C	E8	A9	-1
 30485	a,Capella\0	a,Gatekeeper\0	9C	E8	A9	-1
 30486	a,Hanna\0	a,Gatekeeper\0	9C	E8	A9	-1
 30487	a,Penelope\0	a,Gatekeeper\0	9C	E8	A9	-1
-30488	a,Gatekeeper\0	a,	9C	E8	A9	-1
-30489	a,Gatekeeper\0	a,	9C	E8	A9	-1
-30490	a,Gatekeeper\0	a,	9C	E8	A9	-1
-30491	a,Mass Gatekeeper\0	a,	9C	E8	A9	-1
-30492	a,Outer Doorman\0	a,	9C	E8	A9	-1
-30493	a,Inner Doorman\0	a,	9C	E8	A9	-1
-30494	a,Brighum\0	a,Trader\0	9C	E8	A9	-1
-30495	a,Tamutak\0	a,	9C	E8	A9	-1
-30496	a,Brakel\0	a,	9C	E8	A9	-1
 30497	a,Edmond\0	a,	9C	E8	A9	-1
 30498	a,Moke\0	a,Warehouse Chief \0	9C	E8	A9	-1
 30499	a,Tapoy\0	a,Head Blacksmith\0	9C	E8	A9	-1
@@ -3851,7 +3519,6 @@
 30571	a,Tanapi\0	a,Seer\0	9C	E8	A9	-1
 30572	a,Livina\0	a,Seer\0	9C	E8	A9	-1
 30573	a,Vulkus\0	a,Flame Guardian \0	9C	E8	A9	-1
-30574	a,	a,	9C	E8	A9	-1
 30575	a,Newbie Helper\0	a,	9C	E8	A9	-1
 30576	a,Tamil\0	a,Gatekeeper\0	9C	E8	A9	-1
 30577	a,Rukain\0	a,Praetorian\0	9C	E8	A9	-1
@@ -3880,11 +3547,6 @@
 30600	a,Newbie Guide\0	a,	9C	E8	A9	-1
 30601	a,Newbie Guide\0	a,	9C	E8	A9	-1
 30602	a,Newbie Guide\0	a,	9C	E8	A9	-1
-30603	a,	a,	9C	E8	A9	-1
-30604	a,	a,	9C	E8	A9	-1
-30605	a,Temporary Teleporter\0	a,	9C	E8	A9	-1
-30606	a,	a,	9C	E8	A9	-1
-30607	a,	a,	9C	E8	A9	-1
 30608	a,Maria\0	a,	9C	E8	A9	-1
 30609	a,Creta\0	a,Astrologer\0	9C	E8	A9	-1
 30610	a,Cronos\0	a,Elder\0	9C	E8	A9	-1
@@ -3968,7 +3630,7 @@
 30688	a,Duning\0	a,Blacksmith\0	9C	E8	A9	-1
 30689	a,Siria\0	a,Grand Master\0	9C	E8	A9	-1
 30690	a,Luther\0	a,Master\0	9C	E8	A9	-1
-30691	a,Aren Atebalt\0	a,Master\0	9C	E8	A9	-1
+30691	a,Aren Athebalt\0	a,Master\0	9C	E8	A9	-1
 30692	a,Stedmiel\0	a,Master\0	9C	E8	A9	-1
 30693	a,Queenien\0	a,Master\0	9C	E8	A9	-1
 30694	a,Scraide\0	a,Grand Magister\0	9C	E8	A9	-1
@@ -4051,59 +3713,6 @@
 30771	a,Auctioneer\0	a,	9C	E8	A9	-1
 30772	a,Wilson\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
 30773	a,Todd\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30774	a,Ruben\0	a,	9C	E8	A9	-1
-30775	a,Luce\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30776	a,Horner\0	a,	9C	E8	A9	-1
-30777	a,Amiel\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30778	a,Bremmer\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30779	a,Faolan\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30780	a,Callum\0	a,	9C	E8	A9	-1
-30781	a,Kogan\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30782	a,Winker\0	a,	9C	E8	A9	-1
-30783	a,Merton\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30784	a,Black\0	a,	9C	E8	A9	-1
-30785	a,Renny\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30786	a,Dillon\0	a,	9C	E8	A9	-1
-30787	a,Latif\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30788	a,Boyer\0	a,	9C	E8	A9	-1
-30789	a,Baback\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30790	a,Tim\0	a,	9C	E8	A9	-1
-30791	a,Loring\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30792	a,Lowell\0	a,	9C	E8	A9	-1
-30793	a,Paranos\0	a,	9C	E8	A9	-1
-30794	a,Klingel\0	a,	9C	E8	A9	-1
-30795	a,Keffer\0	a,	9C	E8	A9	-1
-30796	a,Sand\0	a,	9C	E8	A9	-1
-30797	a,Teters\0	a,	9C	E8	A9	-1
-30798	a,Seth\0	a,	9C	E8	A9	-1
-30799	a,Jabilo\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30800	a,Ron\0	a,	9C	E8	A9	-1
-30801	a,Borna\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30802	a,Flynn\0	a,	9C	E8	A9	-1
-30803	a,Jamal\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-30804	a,Watkins\0	a,	9C	E8	A9	-1
-30805	a,Cohen\0	a,	9C	E8	A9	-1
-30806	a,Bint\0	a,	9C	E8	A9	-1
-30807	a,Bourdon\0	a,	9C	E8	A9	-1
-30808	a,Pery\0	a,	9C	E8	A9	-1
-30809	a,Gampert\0	a,	9C	E8	A9	-1
-30810	a,Gonti\0	a,	9C	E8	A9	-1
-30811	a,Baraha\0	a,	9C	E8	A9	-1
-30812	a,Vanhal\0	a,	9C	E8	A9	-1
-30813	a,Dan\0	a,	9C	E8	A9	-1
-30814	a,Briggs\0	a,	9C	E8	A9	-1
-30815	a,Stegmann\0	a,	9C	E8	A9	-1
-30816	a,Randolph\0	a,	9C	E8	A9	-1
-30817	a,Trotter\0	a,	9C	E8	A9	-1
-30818	a,Veder\0	a,	9C	E8	A9	-1
-30819	a,Danas\0	a,	9C	E8	A9	-1
-30820	a,Corey\0	a,	9C	E8	A9	-1
-30821	a,Barney\0	a,	9C	E8	A9	-1
-30822	a,Krett\0	a,	9C	E8	A9	-1
-30823	a,Tairee\0	a,	9C	E8	A9	-1
-30824	a,Tanner\0	a,	9C	E8	A9	-1
-30825	a,Cresson\0	a,	9C	E8	A9	-1
-30826	a,Crothers\0	a,	9C	E8	A9	-1
 30827	a,Lundy\0	a,Pet Manager \0	9C	E8	A9	-1
 30828	a,Waters\0	a,Pet Manager \0	9C	E8	A9	-1
 30829	a,Cooper\0	a,Pet Manager \0	9C	E8	A9	-1
@@ -4273,11 +3882,6 @@
 30993	a,Lottery Ticket Seller\0	a,	9C	E8	A9	-1
 30994	a,Lottery Ticket Seller\0	a,	9C	E8	A9	-1
 30995	a,Race Manager\0	a,	9C	E8	A9	-1
-30996	a,Manor Manager\0	a,Gludio\0	9C	E8	A9	-1
-30997	a,Manor Manager\0	a,Dion\0	9C	E8	A9	-1
-30998	a,Manor Manager\0	a,Giran\0	9C	E8	A9	-1
-30999	a,Manor Manager\0	a,Innadril\0	9C	E8	A9	-1
-31000	a,Manor Manager\0	a,Aden\0	9C	E8	A9	-1
 31001	a,Claudia Athebalt\0	a,	9C	E8	A9	-1
 31002	a,Reorin\0	a,Maestro\0	9C	E8	A9	-1
 31003	a,Here I Come\0	a,	9C	E8	A9	-1
@@ -4314,11 +3918,6 @@
 31034	a,Sentry\0	a,	9C	E8	A9	-1
 31035	a,Defender\0	a,	9C	E8	A9	-1
 31036	a,Centurion\0	a,	9C	E8	A9	-1
-31037	a,Lionel Hunter\0	a,	9C	E8	A9	-1
-31038	a,Neurath\0	a,	9C	E8	A9	-1
-31039	a,Schacht\0	a,	9C	E8	A9	-1
-31040	a,Raybell\0	a,	9C	E8	A9	-1
-31041	a,Solinus\0	a,	9C	E8	A9	-1
 31042	a,Kantabilon\0	a,Melody Maestro\0	9C	E8	A9	-1
 31043	a,Octavia\0	a,Melody Maestro\0	9C	E8	A9	-1
 31044	a,Galman\0	a,Valley Trader\0	9C	E8	A9	-1
@@ -4331,26 +3930,7 @@
 31051	a,Keach\0	a,Symbol Maker\0	9C	E8	A9	-1
 31052	a,Heid\0	a,Symbol Maker\0	9C	E8	A9	-1
 31053	a,Kidder\0	a,Symbol Maker\0	9C	E8	A9	-1
-31054	a,Biggerstaff\0	a,	9C	E8	A9	-1
-31055	a,Doorman of Hell\0	a,	9C	E8	A9	-1
-31056	a,Doorman of Hell\0	a,	9C	E8	A9	-1
-31057	a,Loken\0	a,	9C	E8	A9	-1
-31058	a,Manor Manager\0	a,Oren\0	9C	E8	A9	-1
-31059	a,Manor Manager\0	a,Oren\0	9C	E8	A9	-1
-31060	a,Manor Manager\0	a,Oren\0	9C	E8	A9	-1
-31061	a,Blacksmith\0	a,Gludio\0	9C	E8	A9	-1
-31062	a,Blacksmith\0	a,Dion\0	9C	E8	A9	-1
-31063	a,Blacksmith\0	a,Giran\0	9C	E8	A9	-1
-31064	a,Blacksmith\0	a,Oren\0	9C	E8	A9	-1
-31065	a,Blacksmith\0	a,Aden\0	9C	E8	A9	-1
-31066	a,Blacksmith\0	a,Innadril\0	9C	E8	A9	-1
 31067	a,Rood\0	a,Pet Manager\0	9C	E8	A9	-1
-31068	a,Warehouse Keeper\0	a,Gludio\0	9C	E8	A9	-1
-31069	a,Warehouse Keeper\0	a,Dion\0	9C	E8	A9	-1
-31070	a,Warehouse Keeper\0	a,Giran\0	9C	E8	A9	-1
-31071	a,Warehouse Keeper\0	a,Oren\0	9C	E8	A9	-1
-31072	a,Warehouse Keeper\0	a,Aden\0	9C	E8	A9	-1
-31073	a,Warehouse Keeper\0	a,Innadril\0	9C	E8	A9	-1
 31074	a,Corpse of Hutaku\0	a,	9C	E8	A9	-1
 31075	a,Sales Cat of Ivory Tower\0	a,	9C	E8	A9	-1
 31076	a,Newbie Guide\0	a,	9C	E8	A9	-1
@@ -4427,24 +4007,6 @@
 31147	a,Sobling\0	a,Head Researcher\0	9C	E8	A9	-1
 31148	a,Pirate's Chest\0	a,	9C	E8	A9	-1
 31149	a,Alchemist's Mixing Urn\0	a,	9C	E8	A9	-1
-31150	a,Carey\0	a,	9C	E8	A9	-1
-31151	a,Daniel\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31152	a,Dianne\0	a,	9C	E8	A9	-1
-31153	a,Jacques\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31154	a,Crissy\0	a,	9C	E8	A9	-1
-31155	a,Joff\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31156	a,Albert\0	a,	9C	E8	A9	-1
-31157	a,Niels\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31158	a,Korgen\0	a,	9C	E8	A9	-1
-31159	a,Rudy\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31160	a,Dimaggio\0	a,	9C	E8	A9	-1
-31161	a,Gellar\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31162	a,Grad\0	a,Wyvern Manager\0	9C	E8	A9	-1
-31163	a,Bryce\0	a,Wyvern Manager\0	9C	E8	A9	-1
-31164	a,Hodler\0	a,Wyvern Manager\0	9C	E8	A9	-1
-31165	a,Finrod\0	a,Wyvern Manager\0	9C	E8	A9	-1
-31166	a,Tate\0	a,Wyvern Manager\0	9C	E8	A9	-1
-31167	a,Kruger\0	a,Wyvern Manager\0	9C	E8	A9	-1
 31168	a,Priest of Dawn\0	a,	9C	E8	A9	-1
 31169	a,Dusk Priestess\0	a,	9C	E8	A9	-1
 31170	a,Crest of Dawn\0	a,	9C	E8	A9	-1
@@ -4504,7 +4066,7 @@
 31224	a,Event Gatekeeper\0	a,	9C	E8	A9	-1
 31225	a,Arena Manager\0	a,	9C	E8	A9	-1
 31226	a,Arena Director\0	a,	9C	E8	A9	-1
-31227	a,Sprockets the Cat\0	a,Event Manager\0	9C	E8	A9	-1
+31227	a,Orion the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31228	a,Roy the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31229	a,Winnie the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31230	a,Louie the Cat\0	a,Event Manager\0	9C	E8	A9	-1
@@ -4532,7 +4094,7 @@
 31252	a,Orator of Revelations\0	a,	9C	E8	A9	-1
 31253	a,Orator of Revelations\0	a,	9C	E8	A9	-1
 31254	a,Orator of Revelations\0	a,	9C	E8	A9	-1
-31255	a,Sprockets the Cat\0	a,Event Manager\0	9C	E8	A9	-1
+31255	a,Orion the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31256	a,Leon\0	a,Trader\0	9C	E8	A9	-1
 31257	a,Veronica\0	a,Trader\0	9C	E8	A9	-1
 31258	a,Helmut\0	a,Trader\0	9C	E8	A9	-1
@@ -4629,10 +4191,6 @@
 31349	a,Benedict\0	a,Priest\0	9C	E8	A9	-1
 31350	a,Dominic\0	a,Priest\0	9C	E8	A9	-1
 31351	a,Volker\0	a,Wharf Manager\0	9C	E8	A9	-1
-31352	a,Lambert\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31353	a,Gerard\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31354	a,Volfrem\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31355	a,Kalmer\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
 31356	a,Remy\0	a,Porter\0	9C	E8	A9	-1
 31357	a,Leandro\0	a,Secretary\0	9C	E8	A9	-1
 31358	a,Kasiel\0	a,Bard\0	9C	E8	A9	-1
@@ -4679,8 +4237,6 @@
 31399	a,Dummy - Lady J\0	a,Ch4 Test\0	9C	E8	A9	-1
 31400	a,Dummy - Sword Guard\0	a,Ch4 Test\0	9C	E8	A9	-1
 31401	a,Dummy - Bow Guard\0	a,Ch4 Test\0	9C	E8	A9	-1
-31402	a,Manor Manager\0	a,Goddard\0	9C	E8	A9	-1
-31403	a,Manor Manager\0	a,Rune \0	9C	E8	A9	-1
 31404	a,Monster Race Guide\0	a,Town of Gludio\0	9C	E8	A9	-1
 31405	a,Monster Race Guide\0	a,Town of Dion\0	9C	E8	A9	-1
 31406	a,Monster Race Guide\0	a,Town of Giran\0	9C	E8	A9	-1
@@ -4723,12 +4279,6 @@
 31443	a,Raban\0	a,Mineral Trader\0	9C	E8	A9	-1
 31444	a,Cona\0	a,Mineral Trader\0	9C	E8	A9	-1
 31445	a,Shutner\0	a,Mineral Trader\0	9C	E8	A9	-1
-31446	a,Hadley\0	a,Wyvern Manager\0	9C	E8	A9	-1
-31447	a,Rosconne\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31448	a,Stewart\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31449	a,Theobolt\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31450	a,Theron\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
-31451	a,Trey\0	a,Clan Hall Gatekeeper\0	9C	E8	A9	-1
 31452	a,Ghost of Wigoth\0	a,	9C	E8	A9	-1
 31453	a,Nameless Spirit\0	a,	9C	E8	A9	-1
 31454	a,Ghost of Wigoth\0	a,	9C	E8	A9	-1
@@ -4766,7 +4316,7 @@
 31486	a,Mysterious Box\0	a,	9C	E8	A9	-1
 31487	a,Mysterious Box\0	a,	9C	E8	A9	-1
 31488	a,Rift Post Recruit\0	a,	9C	E8	A9	-1
-31489	a,Rift Post Soldier\0	a,	9C	E8	A9	-1
+31489	a,Rift Post Private\0	a,	9C	E8	A9	-1
 31490	a,Rift Post Officer\0	a,	9C	E8	A9	-1
 31491	a,Rift Post Captain\0	a,	9C	E8	A9	-1
 31492	a,Rift Post Commander\0	a,	9C	E8	A9	-1
@@ -4886,7 +4436,7 @@
 31606	a,Alice de Catrina\0	a,Kinsley's Servitor\0	9C	E8	A9	-1
 31607	a,Sake Dun Zu Hestui\0	a,	9C	E8	A9	-1
 31608	a,Belinda\0	a,Summoner\0	9C	E8	A9	-1
-31609	a,Unicorn Aurora\0	a,Belinda Servitor\0	9C	E8	A9	-1
+31609	a,Aurora the Unicorn\0	a,Belinda Servitor\0	9C	E8	A9	-1
 31610	a,Shiken Gloomdrake\0	a,	9C	E8	A9	-1
 31611	a,Scryde Heartseeker\0	a,	9C	E8	A9	-1
 31612	a,Eternity Wanderer Staris\0	a,	9C	E8	A9	-1
@@ -4906,8 +4456,8 @@
 31626	a,Duncan\0	a,Chef\0	9C	E8	A9	-1
 31627	a,Mist\0	a,Information Broker\0	9C	E8	A9	-1
 31628	a,Lilly\0	a,Mist's Granddaughter\0	9C	E8	A9	-1
-31629	a,Unicorn Kaleidos\0	a,	9C	E8	A9	-1
-31630	a,Unicorn Kaleidos\0	a,	9C	E8	A9	-1
+31629	a,Kaleidos the Unicorn\0	a,	9C	E8	A9	-1
+31630	a,Kaleidos the Unicorn\0	a,	9C	E8	A9	-1
 31631	a,Eric Ramsheart\0	a,	9C	E8	A9	-1
 31632	a,Mysterious Servitor\0	a,	9C	E8	A9	-1
 31633	a,Winter Hunter Kadyth\0	a,	9C	E8	A9	-1
@@ -4986,7 +4536,7 @@
 31706	a,Miki the Cat\0	a,	9C	E8	A9	-1
 31707	a,Ketra Van Grunt\0	a,	9C	E8	A9	-1
 31708	a,Ketra Van Shaman\0	a,	9C	E8	A9	-1
-31709	a,Ketra Van Captain\0	a,	9C	E8	A9	-1
+31709	a,Ketra Van Captain \0	a,	9C	E8	A9	-1
 31710	a,Ketra Van Commander\0	a,	9C	E8	A9	-1
 31711	a,Ketra Van Shaman\0	a,	9C	E8	A9	-1
 31712	a,Varka Raider\0	a,	9C	E8	A9	-1
@@ -5026,12 +4576,9 @@
 31746	a,Fallen Unicorn\0	a,	9C	E8	A9	-1
 31747	a,Pure White Unicorn\0	a,	9C	E8	A9	-1
 31748	a,Cornerstone of Restraining\0	a,	9C	E8	A9	-1
-31749	a,Hephaeston\0	a,Wyvern Manager\0	9C	E8	A9	-1
 31750	a,Mysterious Woman\0	a,	9C	E8	A9	-1
 31751	a,Mysterious Dark Knight\0	a,	9C	E8	A9	-1
 31752	a,Corpse of Angel\0	a,	9C	E8	A9	-1
-31753	a,Blacksmith\0	a,Goddard\0	9C	E8	A9	-1
-31754	a,Warehouse Keeper\0	a,Goddard\0	9C	E8	A9	-1
 31755	a,Halaster\0	a,Grand Magister\0	9C	E8	A9	-1
 31756	a,Mr. Cat\0	a,Test Server Helper\0	9C	E8	A9	-1
 31757	a,Miss Queen\0	a,Test Server Helper\0	9C	E8	A9	-1
@@ -5137,7 +4684,7 @@
 31857	a,Event Manager\0	a,	9C	E8	A9	-1
 31858	a,Event Manager\0	a,	9C	E8	A9	-1
 31859	a,Teleport Cube\0	a,	9C	E8	A9	-1
-31860	a,Sprockets the Cat\0	a,Event Manager\0	9C	E8	A9	-1
+31860	a,Orion the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31861	a,Gatekeeper\0	a,	9C	E8	A9	-1
 31862	a,Angelic Vortex\0	a,	9C	E8	A9	-1
 31863	a,Santa Trainee\0	a,	9C	E8	A9	-1
@@ -5357,8 +4904,6 @@
 32077	a,Ice Sculpture\0	a,	9C	E8	A9	-1
 32078	a,Ice Sculpture\0	a,	9C	E8	A9	-1
 32079	a,Ice Sculpture\0	a,	9C	E8	A9	-1
-32080	a,Merchant of Mammon\0	a,	9C	E8	A9	-1
-32081	a,Blacksmith of Mammon\0	a,	9C	E8	A9	-1
 32082	a,Dion Territory Manager\0	a,Adventure Guildsman\0	9C	E8	A9	-1
 32083	a,Giran Territory Manager\0	a,Adventure Guildsman\0	9C	E8	A9	-1
 32084	a,Oren Territory Manager\0	a,Adventure Guildsman\0	9C	E8	A9	-1
@@ -5367,7 +4912,7 @@
 32087	a,Schuttgart Territory Manager\0	a,Adventure Guildsman\0	9C	E8	A9	-1
 32088	a,Goddard Territory Manager\0	a,Adventure Guildsman\0	9C	E8	A9	-1
 32089	a,Rune Territory Manager\0	a,Adventure Guildsman\0	9C	E8	A9	-1
-32090	u,Dead Leopard’s Carcass\0	a,	9C	E8	A9	-1
+32090	a,Dead Leopard's Carcass\0	a,	9C	E8	A9	-1
 32091	a,Omega's Cat\0	a,Event Manager\0	9C	E8	A9	-1
 32092	a,Alder\0	a,Warehouse Chief\0	9C	E8	A9	-1
 32093	a,Bolin\0	a,Head Blacksmith\0	9C	E8	A9	-1
@@ -5381,15 +4926,35 @@
 32101	a,Tony the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 32102	a,Tony the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 32103	a,Telling the Cat\0	a,Event Manager\0	9C	E8	A9	-1
-35001	a,Royal Gatekeeper\0	a,Gludio\0	9C	E8	A9	-1
-35002	a,Royal Gatekeeper\0	a,Dion\0	9C	E8	A9	-1
-35003	a,Royal Gatekeeper\0	a,Giran\0	9C	E8	A9	-1
-35004	a,Royal Gatekeeper\0	a,Oren\0	9C	E8	A9	-1
-35005	a,Royal Gatekeeper\0	a,Aden\0	9C	E8	A9	-1
-35006	a,Radcliff\0	a,Chamberlain\0	9C	E8	A9	-1
-35007	a,Rodd\0	a,Mercenary Manager\0	9C	E8	A9	-1
-35008	a,Shamus\0	a,Sir\0	9C	E8	A9	-1
-35009	a,Morpheus\0	a,Sir\0	9C	E8	A9	-1
+32104	a,Vervato\0	a,	9C	E8	A9	-1
+32105	a,Dinn\0	a,	9C	E8	A9	-1
+32106	a,Singsing\0	a,	9C	E8	A9	-1
+32107	a,Teleport Cube\0	a,	9C	E8	A9	-1
+32108	a,	a,	9C	E8	A9	-1
+32109	a,Shilen's Stone Statue\0	a,	9C	E8	A9	-1
+32110	a,	a,	9C	E8	A9	-1
+32111	a,Orahochin\0	a,	9C	E8	A9	-1
+32112	a,Gariachin\0	a,	9C	E8	A9	-1
+32113	a,Marquez\0	a,	9C	E8	A9	-1
+32114	a,Mushika\0	a,	9C	E8	A9	-1
+32115	a,Asamah\0	a,	9C	E8	A9	-1
+32116	a,Kirikachin\0	a,	9C	E8	A9	-1
+32117	a,Karakawei\0	a,	9C	E8	A9	-1
+32118	a,Mantarasa Egg\0	a,	9C	E8	A9	-1
+32119	a,Ulu Kaimu\0	a,	9C	E8	A9	-1
+32120	a,Balu Kaimu\0	a,	9C	E8	A9	-1
+32121	a,Chuta Kaimu\0	a,	9C	E8	A9	-1
+32122	a,Warrior's Grave\0	a,	9C	E8	A9	-1
+32123	a,Valakas\0	a,	9C	E8	A9	-1
+32124	a,Great Soul\0	a,	9C	E8	A9	-1
+32125	a,Great Soul\0	a,	9C	E8	A9	-1
+32126	a,Priest Guard\0	a,	9C	E8	A9	-1
+32127	a,Priest Guard\0	a,	9C	E8	A9	-1
+32128	a,Guardian Wizard of the Cloth\0	a,	9C	E8	A9	-1
+32129	a,	a,	9C	E8	A9	-1
+32130	a,Looney the Cat\0	a,Event Manager\0	9C	E8	A9	-1
+32131	a,Bonny\0	a,Event Manager\0	9C	E8	A9	-1
+32132	a,Alchemist's Servitor\0	a,	9C	E8	A9	-1
 35010	a,Mercenary\0	a,	9C	E8	A9	-1
 35011	a,Mercenary\0	a,	9C	E8	A9	-1
 35012	a,Mercenary\0	a,	9C	E8	A9	-1
@@ -5701,7 +5266,6 @@
 35318	a,Solinus\0	a,Mercenary Manager\0	9C	E8	A9	-1
 35319	a,Manor Manager\0	a,Innadril\0	9C	E8	A9	-1
 35320	a,Raybell\0	a,Sir\0	9C	E8	A9	-1
-35321	a,Royal Gatekeeper\0	a,Innadril\0	9C	E8	A9	-1
 35322	a,Altar of Fire\0	a,	9C	E8	A9	-1
 35323	a,Altar of Water\0	a,	9C	E8	A9	-1
 35324	a,Heinz\0	a,Royal Guard Captain\0	9C	E8	A9	-1
@@ -5794,7 +5358,7 @@
 35411	a,Doom Servant\0	a,	9C	E8	A9	-1
 35412	a,Doom Guard\0	a,	9C	E8	A9	-1
 35413	a,Doom Archer\0	a,	9C	E8	A9	-1
-35414	a,Doom Trooper\0	a,	9C	E8	A9	-1
+35414	a,Doom Trooper \0	a,	9C	E8	A9	-1
 35415	a,Doom Warrior\0	a,	9C	E8	A9	-1
 35416	a,Doom Knight\0	a,	9C	E8	A9	-1
 35417	a,Doorman of Hell\0	a,	9C	E8	A9	-1
@@ -6028,6 +5592,15 @@
 35645	a,Manor Manager\0	a,Schuttgart\0	9C	E8	A9	-1
 35646	a,Vampire Caster\0	a,	9C	E8	A9	-1
 35647	a,Vampire Leader\0	a,	9C	E8	A9	-1
+35648	a,Court Magician\0	a,Gludio\0	9C	E8	A9	-1
+35649	a,Court Magician\0	a,Dion\0	9C	E8	A9	-1
+35650	a,Court Magician\0	a,Giran\0	9C	E8	A9	-1
+35651	a,Court Magician\0	a,Oren\0	9C	E8	A9	-1
+35652	a,Court Magician\0	a,Aden\0	9C	E8	A9	-1
+35653	a,Court Magician\0	a,Innadril\0	9C	E8	A9	-1
+35654	a,Court Magician\0	a,Goddard\0	9C	E8	A9	-1
+35655	a,Court Magician\0	a,Rune\0	9C	E8	A9	-1
+35656	a,Court Magician\0	a,Schuttgart\0	9C	E8	A9	-1
 14001	a,Reanimated Man\0	a,	9C	E8	A9	-1
 14002	a,Reanimated Man\0	a,	9C	E8	A9	-1
 14003	a,Reanimated Man\0	a,	9C	E8	A9	-1
@@ -6278,190 +5851,186 @@
 14248	a,Kai the Cat\0	a,	9C	E8	A9	-1
 14249	a,Kai the Cat\0	a,	9C	E8	A9	-1
 14250	a,Kai the Cat\0	a,	9C	E8	A9	-1
-14251	a,Cat Queen\0	a,	9C	E8	A9	-1
-14252	a,Cat Queen\0	a,	9C	E8	A9	-1
-14253	a,Cat Queen\0	a,	9C	E8	A9	-1
-14254	a,Cat Queen\0	a,	9C	E8	A9	-1
-14255	a,Cat Queen\0	a,	9C	E8	A9	-1
-14256	a,Cat Queen\0	a,	9C	E8	A9	-1
-14257	a,Cat Queen\0	a,	9C	E8	A9	-1
-14258	a,Cat Queen\0	a,	9C	E8	A9	-1
-14259	a,Cat Queen\0	a,	9C	E8	A9	-1
-14260	a,Cat Queen\0	a,	9C	E8	A9	-1
-14261	a,Cat Queen\0	a,	9C	E8	A9	-1
-14262	a,Cat Queen\0	a,	9C	E8	A9	-1
-14263	a,Cat Queen\0	a,	9C	E8	A9	-1
-14264	a,Cat Queen\0	a,	9C	E8	A9	-1
-14265	a,Cat Queen\0	a,	9C	E8	A9	-1
-14266	a,Cat Queen\0	a,	9C	E8	A9	-1
-14267	a,Cat Queen\0	a,	9C	E8	A9	-1
-14268	a,Cat Queen\0	a,	9C	E8	A9	-1
-14269	a,Cat Queen\0	a,	9C	E8	A9	-1
-14270	a,Cat Queen\0	a,	9C	E8	A9	-1
-14271	a,Cat Queen\0	a,	9C	E8	A9	-1
-14272	a,Cat Queen\0	a,	9C	E8	A9	-1
-14273	a,Cat Queen\0	a,	9C	E8	A9	-1
-14274	a,Cat Queen\0	a,	9C	E8	A9	-1
-14275	a,Cat Queen\0	a,	9C	E8	A9	-1
-14276	a,Cat Queen\0	a,	9C	E8	A9	-1
-14277	a,Cat Queen\0	a,	9C	E8	A9	-1
-14278	a,Cat Queen\0	a,	9C	E8	A9	-1
-14279	a,Cat Queen\0	a,	9C	E8	A9	-1
-14280	a,Cat Queen\0	a,	9C	E8	A9	-1
-14281	a,Cat Queen\0	a,	9C	E8	A9	-1
-14282	a,Cat Queen\0	a,	9C	E8	A9	-1
-14283	a,Cat Queen\0	a,	9C	E8	A9	-1
-14284	a,Cat Queen\0	a,	9C	E8	A9	-1
-14285	a,Cat Queen\0	a,	9C	E8	A9	-1
-14286	a,Cat Queen\0	a,	9C	E8	A9	-1
-14287	a,Cat Queen\0	a,	9C	E8	A9	-1
-14288	a,Cat Queen\0	a,	9C	E8	A9	-1
-14289	a,Cat Queen\0	a,	9C	E8	A9	-1
-14290	a,Cat Queen\0	a,	9C	E8	A9	-1
-14291	a,Cat Queen\0	a,	9C	E8	A9	-1
-14292	a,Cat Queen\0	a,	9C	E8	A9	-1
-14293	a,Cat Queen\0	a,	9C	E8	A9	-1
-14294	a,Cat Queen\0	a,	9C	E8	A9	-1
-14295	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14296	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14297	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14298	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14299	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14300	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14301	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14302	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14303	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14304	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14305	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14306	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14307	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14308	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14309	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14310	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14311	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14312	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14313	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14314	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14315	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14316	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14317	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14318	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14319	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14320	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14321	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14322	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14323	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14324	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14325	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14326	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14327	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14328	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14329	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14330	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14331	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14332	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14333	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14334	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14335	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14336	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14337	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14338	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14339	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14340	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14341	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14342	a,Unicorn Boxer\0	a,	9C	E8	A9	-1
-14343	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14344	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14345	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14346	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14347	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14348	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14349	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14350	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14351	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14352	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14353	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14354	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14355	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14356	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14357	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14358	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14359	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14360	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14361	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14362	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14363	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14364	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14365	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14366	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14367	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14368	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14369	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14370	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14371	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14372	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14373	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14374	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14375	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14376	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14377	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14378	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14379	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14380	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14381	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14382	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14383	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14384	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14385	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14386	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14387	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14388	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14389	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14390	a,Unicorn Mirage\0	a,	9C	E8	A9	-1
-14391	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14392	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14393	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14394	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14395	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14396	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14397	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14398	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14399	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14400	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14401	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14402	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14403	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14404	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14405	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14406	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14407	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14408	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14409	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14410	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14411	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14412	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14413	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14414	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14415	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14416	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14417	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14418	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14419	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14420	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14421	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14422	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14423	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14424	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14425	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14426	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14427	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14428	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14429	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14430	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14431	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14432	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14433	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
-14434	a,Unicorn Merrow\0	a,	9C	E8	A9	-1
+14251	a,Feline Queen\0	a,	9C	E8	A9	-1
+14252	a,Feline Queen\0	a,	9C	E8	A9	-1
+14253	a,Feline Queen\0	a,	9C	E8	A9	-1
+14254	a,Feline Queen\0	a,	9C	E8	A9	-1
+14255	a,Feline Queen\0	a,	9C	E8	A9	-1
+14256	a,Feline Queen\0	a,	9C	E8	A9	-1
+14257	a,Feline Queen\0	a,	9C	E8	A9	-1
+14258	a,Feline Queen\0	a,	9C	E8	A9	-1
+14259	a,Feline Queen\0	a,	9C	E8	A9	-1
+14260	a,Feline Queen\0	a,	9C	E8	A9	-1
+14265	a,Feline Queen\0	a,	9C	E8	A9	-1
+14266	a,Feline Queen\0	a,	9C	E8	A9	-1
+14267	a,Feline Queen\0	a,	9C	E8	A9	-1
+14268	a,Feline Queen\0	a,	9C	E8	A9	-1
+14269	a,Feline Queen\0	a,	9C	E8	A9	-1
+14270	a,Feline Queen\0	a,	9C	E8	A9	-1
+14271	a,Feline Queen\0	a,	9C	E8	A9	-1
+14272	a,Feline Queen\0	a,	9C	E8	A9	-1
+14273	a,Feline Queen\0	a,	9C	E8	A9	-1
+14274	a,Feline Queen\0	a,	9C	E8	A9	-1
+14275	a,Feline Queen\0	a,	9C	E8	A9	-1
+14276	a,Feline Queen\0	a,	9C	E8	A9	-1
+14277	a,Feline Queen\0	a,	9C	E8	A9	-1
+14278	a,Feline Queen\0	a,	9C	E8	A9	-1
+14279	a,Feline Queen\0	a,	9C	E8	A9	-1
+14280	a,Feline Queen\0	a,	9C	E8	A9	-1
+14281	a,Feline Queen\0	a,	9C	E8	A9	-1
+14282	a,Feline Queen\0	a,	9C	E8	A9	-1
+14283	a,Feline Queen\0	a,	9C	E8	A9	-1
+14284	a,Feline Queen\0	a,	9C	E8	A9	-1
+14285	a,Feline Queen\0	a,	9C	E8	A9	-1
+14286	a,Feline Queen\0	a,	9C	E8	A9	-1
+14287	a,Feline Queen\0	a,	9C	E8	A9	-1
+14288	a,Feline Queen\0	a,	9C	E8	A9	-1
+14289	a,Feline Queen\0	a,	9C	E8	A9	-1
+14290	a,Feline Queen\0	a,	9C	E8	A9	-1
+14291	a,Feline Queen\0	a,	9C	E8	A9	-1
+14292	a,Feline Queen\0	a,	9C	E8	A9	-1
+14293	a,Feline Queen\0	a,	9C	E8	A9	-1
+14294	a,Feline Queen\0	a,	9C	E8	A9	-1
+14295	a,Boxer the Unicorn \0	a,	9C	E8	A9	-1
+14296	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14297	a,Boxer the Unicorn \0	a,	9C	E8	A9	-1
+14298	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14299	a,Boxer the Unicorn \0	a,	9C	E8	A9	-1
+14300	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14301	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14302	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14303	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14304	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14305	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14306	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14307	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14308	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14309	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14310	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14311	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14312	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14313	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14314	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14315	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14316	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14317	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14318	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14319	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14320	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14321	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14322	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14323	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14324	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14325	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14326	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14327	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14328	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14329	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14330	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14331	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14332	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14333	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14334	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14335	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14336	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14337	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14338	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14339	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14340	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14341	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14342	a,Boxer the Unicorn\0	a,	9C	E8	A9	-1
+14343	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14344	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14345	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14346	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14347	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14348	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14349	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14350	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14351	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14352	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14353	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14354	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14355	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14356	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14357	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14358	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14359	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14360	a,Mirage the Unicorn\0	a,	9C	E8	A9	-1
+14361	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14362	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14363	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14364	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14365	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14366	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14367	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14368	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14369	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14370	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14371	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14372	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14373	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14374	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14375	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14376	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14377	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14378	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14379	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14380	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14381	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14382	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14383	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14384	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14385	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14386	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14387	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14388	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14389	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14390	a,Mirage the Unicorn \0	a,	9C	E8	A9	-1
+14391	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14392	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14393	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14394	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14395	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14396	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14397	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14398	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14399	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14400	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14401	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14402	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14403	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14404	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14405	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14406	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14407	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14408	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14409	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14410	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14411	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14412	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14413	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14414	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14415	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14416	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14417	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14418	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14419	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14420	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14421	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14422	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14423	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14424	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14425	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14426	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14427	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14428	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14429	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14430	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14431	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14432	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14433	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
+14434	a,Merrow the Unicorn\0	a,	9C	E8	A9	-1
 14435	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
 14436	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
 14437	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
@@ -6472,10 +6041,6 @@
 14442	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
 14443	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
 14444	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
-14445	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
-14446	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
-14447	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
-14448	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
 14449	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
 14450	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
 14451	a,Unicorn Seraphim\0	a,	9C	E8	A9	-1
@@ -6656,10 +6221,6 @@
 14626	a,Nightshade\0	a,	9C	E8	A9	-1
 14627	a,Nightshade\0	a,	9C	E8	A9	-1
 14628	a,Nightshade\0	a,	9C	E8	A9	-1
-14629	a,Nightshade\0	a,	9C	E8	A9	-1
-14630	a,Nightshade\0	a,	9C	E8	A9	-1
-14631	a,Nightshade\0	a,	9C	E8	A9	-1
-14632	a,Nightshade\0	a,	9C	E8	A9	-1
 14633	a,Nightshade\0	a,	9C	E8	A9	-1
 14634	a,Nightshade\0	a,	9C	E8	A9	-1
 14635	a,Nightshade\0	a,	9C	E8	A9	-1
@@ -6863,18 +6424,40 @@
 14833	a,Dark Panther\0	a,	9C	E8	A9	-1
 14834	a,Dark Panther\0	a,	9C	E8	A9	-1
 14835	a,Dark Panther\0	a,	9C	E8	A9	-1
-16001	a,Wolf\0	a,	9C	E8	A9	-1
-16002	a,Hatchling of the Wind\0	a,	9C	E8	A9	-1
-16003	a,Hatchling of the Stars\0	a,	9C	E8	A9	-1
-16004	a,Hatchling of Twilight\0	a,	9C	E8	A9	-1
-16005	a,Wind Strider\0	a,	9C	E8	A9	-1
-16006	a,Star Strider\0	a,	9C	E8	A9	-1
-16007	a,Twilight Strider\0	a,	9C	E8	A9	-1
-16008	a,Sin Eater\0	a,	9C	E8	A9	-1
-16009	a,Wyvern\0	a,	9C	E8	A9	-1
-16010	a,Baby Buffalo\0	a,	9C	E8	A9	-1
-16011	a,Baby Kookaburra\0	a,	9C	E8	A9	-1
-16012	a,Baby Cougar\0	a,	9C	E8	A9	-1
+14836	a,Feline King\0	a,	9C	E8	A9	-1
+14837	a,Magnus the Unicorn\0	a,	9C	E8	A9	-1
+14838	a,Spectral Lord\0	a,	9C	E8	A9	-1
+14839	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14840	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14841	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14842	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14843	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14844	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14845	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14846	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14847	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14848	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14849	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14850	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14851	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14852	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14853	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14854	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14855	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14856	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14857	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14858	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14859	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14860	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14861	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14862	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14863	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14864	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14865	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14866	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14867	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14868	a,Swoop Cannon\0	a,	9C	E8	A9	-1
+14869	a,Swoop Cannon\0	a,	9C	E8	A9	-1
 16013	a,Trained Buffalo\0	a,	9C	E8	A9	-1
 16014	a,Trained Buffalo\0	a,	9C	E8	A9	-1
 16015	a,Trained Cougar\0	a,	9C	E8	A9	-1
@@ -6912,16 +6495,29 @@
 13005	a,Flame Control Tower\0	a,	9C	E8	A9	-1
 13006	a,Christmas Tree\0	a,	9C	E8	A9	-1
 13007	a,Special Christmas Tree\0	a,	9C	E8	A9	-1
-13008	a,Young Squash\0	a,	9C	E8	A9	-1
-13009	a,High Quality Squash\0	a,	9C	E8	A9	-1
-13010	a,Low Quality Squash\0	a,	9C	E8	A9	-1
-13011	a,Large Young Squash\0	a,	9C	E8	A9	-1
-13012	a,High Quality Large Squash\0	a,	9C	E8	A9	-1
-13013	a,Low Quality Large Squash\0	a,	9C	E8	A9	-1
 13014	a, \0	a,	9C	E8	A9	-1
 13015	a,	a,	9C	E8	A9	-1
 13016	a,King Squash\0	a,	9C	E8	A9	-1
 13017	a,Emperor Squash\0	a,	9C	E8	A9	-1
+13018	a,	a,	9C	E8	A9	-1
+13019	a,	a,	9C	E8	A9	-1
+13020	a,	a,	9C	E8	A9	-1
+13021	a,	a,	9C	E8	A9	-1
+13022	a,	a,	9C	E8	A9	-1
+13023	a,	a,	9C	E8	A9	-1
+13024	a,	a,	9C	E8	A9	-1
+13025	a,	a,	9C	E8	A9	-1
+13026	a,	a,	9C	E8	A9	-1
+13027	a,	a,	9C	E8	A9	-1
+13028	a,	a,	9C	E8	A9	-1
+13029	a,	a,	9C	E8	A9	-1
+13030	a,	a,	9C	E8	A9	-1
+13031	a,Huge Cursed Pig\0	a,	9C	E8	A9	-1
+13032	a,Huge Cursed Pig\0	a,	9C	E8	A9	-1
+13033	a,Huge Cursed Pig\0	a,	9C	E8	A9	-1
+13034	a,Super Huge Cursed Pig\0	a,	9C	E8	A9	-1
+13035	a,Golden Cursed Pig\0	a,	9C	E8	A9	-1
+13036	a,Alchemist's Chest\0	a,	9C	E8	A9	-1
 14997	a,Elrond\0	a,Tournament Manager\0	3F	8B	FE	-1
 14998	a,Erica\0	a,Donation Manager\0	3F	8B	FE	-1
 14999	a,Thorin Oakenshield\0	a,Vote Event Manager\0	3F	8B	FE	-1

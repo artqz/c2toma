@@ -4,7 +4,7 @@ import { loadNpcPosGF } from "../../datapack/gf/npcpos";
 import { loadNpcPosIL } from "../../datapack/il/npcpos";
 import { Npc, NpcSpawn, Point } from "../../result/types";
 import { Chronicle } from "../types";
-import { generateNpcposC5 } from './c5/npcpos';
+import { generateNpcposC5 } from "./c5/npcpos";
 
 export function loadNpcPos(deps: {
   chronicle: Chronicle;
@@ -27,7 +27,7 @@ function loadNpcPosData(deps: {
       npcPosData = loadNpcPosC4();
       break;
     case "c5":
-      return generateNpcposC5(deps)     
+      return generateNpcposC5(deps);
     case "il":
       npcPosData = loadNpcPosIL();
     case "gf":
@@ -59,12 +59,14 @@ function loadNpcPosData(deps: {
           for (const terrId of terrIds) {
             const terr = terrMap.get(terrId);
             if (terr) {
-              posArr.push(terr.shape.map((p) => ({ x: p[0], y: p[1], z: 0 })));
+              posArr.push(
+                terr.shape.map((p) => ({ x: p[0], y: p[1], z: p[2] }))
+              );
             }
           }
         } else if (pos) {
           for (const subPos of pos.$) {
-            posArr.push([{ x: subPos.$[0], y: subPos.$[1], z: 0 }]);
+            posArr.push([{ x: subPos.$[0], y: subPos.$[1], z: subPos.$[2] }]);
           }
         }
         const npcName = spawn.$[0];

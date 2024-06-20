@@ -33,10 +33,13 @@ function loadNpcJson(path: string, filename: string) {
 
 export function tomaNpcsParser(deps: { path: string }) {
   const path = deps.path;
+  if (!Fs.existsSync(path)) {
+    return [];
+  }
   const files = Fs.readdirSync(path, "utf8");
   let npcs: NpcDataEntry[] = [];
 
-  for (const file of Array.from(files.values())) {
+  for (const file of files) {
     const json = loadNpcJson(path, file);
     npcs = npcs.concat(json);
   }

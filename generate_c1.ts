@@ -50,7 +50,7 @@ function init() {
   const npcs = loadNpcs({ chronicle, items, skills });
   loadNpcBuffs({ chronicle, npcs, skills });
   loadNpcPos({ chronicle, npcs });
-  loadNpcSeaLevel({ chronicle, npcs });
+  // loadNpcSeaLevel({ chronicle, npcs });
   saveFile(
     `result/data/${chronicle}/npcs.json`,
     JSON.stringify(Array.from(npcs.values()), null, 2)

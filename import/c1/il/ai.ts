@@ -80,6 +80,7 @@ function filterAi(deps: { items: Map<number, Item>; aiMap: Map<string, Ai> }) {
           }
         }
       }
+
       newList.push(newSell);
     }
     newMapAi.set(ai.name, {

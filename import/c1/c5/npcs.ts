@@ -3,7 +3,8 @@ import { loadNpcGrpC5 } from "../../../datapack/c5/npcgrp";
 import { loadNpcNamesC5 } from "../../../datapack/c5/npcnames";
 import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
 import { NpcDataEntry, NpcNameEntry } from "../../../datapack/types";
-import { Item, Npc, Skill } from "../../../result/types";
+import { Item, Npc, NpcDrop, Skill } from "../../../result/types";
+import { tomaNpcsParser } from "../../../utils/tomaParser";
 import {
   calcAccuracy,
   calcEvasion,
@@ -158,18 +159,43 @@ function addSkills(deps: {
   const skillsByName = new Map(
     Array.from(deps.skills.values()).map((s) => [s.skillName, s])
   );
+  const tomaNpcById = new Map(
+    tomaNpcsParser({
+      path: "import/c1/il/npcs",
+    }).map((n) => [n.npc.npcClassId, n.npc.skillList])
+  );
 
   for (const npc of deps.npcs.values()) {
-    const skillList = [];
-    const grp = npcGrp.get(npc.id);
-    if (grp) {
-      for (const skillIdLvl of grp.skillList) {
-        const skill = deps.skills.get(skillIdLvl);
+    const skillList: string[] = [];
+    const tomaNapcSkills = tomaNpcById.get(npc.id);
+    if (tomaNapcSkills) {
+      for (const tSkill of tomaNapcSkills) {
+        const skill = deps.skills.get(tSkill.skillId + "_" + tSkill.skillLevel);
         if (skill) {
           skillList.push(skill.skillName.replace("@", ""));
         }
       }
+    } else {
+      const grp = npcGrp.get(npc.id);
+      if (grp) {
+        for (const skillIdLvl of grp.skillList) {
+          const skill = deps.skills.get(skillIdLvl);
+          if (skill) {
+            skillList.push(skill.skillName.replace("@", ""));
+          }
+        }
+      }
     }
+    // const skillList = [];
+    // const grp = npcGrp.get(npc.id);
+    // if (grp) {
+    //   for (const skillIdLvl of grp.skillList) {
+    //     const skill = deps.skills.get(skillIdLvl);
+    //     if (skill) {
+    //       skillList.push(skill.skillName.replace("@", ""));
+    //     }
+    //   }
+    // }
     const npcC4 = npcC4ByName.get(npc.npcName);
     if (npcC4) {
       npc.skillList = getSkills({
@@ -217,6 +243,76 @@ function addDropAndSpoil(deps: {
       }
     }
   }
+
+  // добавляем недостающие предметы из базы томы
+  const npcById = deps.npcs;
+  const TOMA_NPCS = tomaNpcsParser({
+    path: "import/c1/c5/npcs",
+  });
+
+  for (const tomaNpc of TOMA_NPCS) {
+    const npc = npcById.get(tomaNpc.npc.npcClassId);
+    if (npc) {
+      npc.dropList = checkTomaDrop({
+        dropList: npc.dropList,
+        tomaDropList: tomaNpc.npc.additionalMakeMultiList,
+        itemById: deps.items,
+      });
+      npc.spoilList = checkTomaDrop({
+        dropList: npc.spoilList,
+        tomaDropList: tomaNpc.npc.corpseMakeList,
+        itemById: deps.items,
+      });
+    }
+  }
+}
+
+function checkTomaDrop(deps: {
+  dropList: NpcDrop[];
+  tomaDropList: {
+    itemClassId: number;
+    min: number;
+    max: number;
+    chance: number;
+  }[];
+  itemById: Map<number, Item>;
+}) {
+  const tomaDropListMap = new Map<
+    number,
+    {
+      itemClassId: number;
+      min: number;
+      max: number;
+      chance: number;
+    }
+  >(deps.tomaDropList.map((item) => [item.itemClassId, item]));
+
+  const filteredItemData = deps.dropList.filter((item) =>
+    tomaDropListMap.has(item.itemId)
+  );
+
+  const filteredItemDataMap = new Map<number, NpcDrop>(
+    filteredItemData.map((item) => [item.itemId, item])
+  );
+
+  deps.tomaDropList.forEach((_item) => {
+    if (!filteredItemDataMap.has(_item.itemClassId)) {
+      const item = deps.itemById.get(_item.itemClassId);
+      if (!item) {
+        console.log(`--------------- нет предмета в базе ${_item.itemClassId}`);
+      } else {
+        const newItem: NpcDrop = {
+          itemId: _item.itemClassId,
+          itemName: item.itemName,
+          countMin: _item.min,
+          countMax: _item.max,
+          chance: _item.chance,
+        };
+        filteredItemData.push(newItem);
+      }
+    }
+  });
+  return filteredItemData;
 }
 
 function addDrop(deps: {

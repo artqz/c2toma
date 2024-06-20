@@ -1,0 +1,1088 @@
+[
+  {
+    "t": "quest",
+    "id": 1,
+    "level": 1,
+    "name": "Letters of Love",
+    "desc": "Darin of Talking Island Village falls for Gatekeeper Roxxy. But he is too shy to tell her his feelings, and asks for help."
+  },
+  {
+    "t": "quest",
+    "id": 2,
+    "level": 1,
+    "name": "What Women Want",
+    "desc": "Arujien of the Elven Village has had Sorceress Greenis in his heart for a long time. He asks you to spy on Greenis."
+  },
+  {
+    "t": "quest",
+    "id": 3,
+    "level": 1,
+    "name": "Will the Seal be Broken?",
+    "desc": "Dark Elven Tetrarch Talloth is studying the Dark Arts. He asks for ingredients: Onyx Beast's Eye, Taint Stone, and Succubus Blood."
+  },
+  {
+    "t": "quest",
+    "id": 4,
+    "level": 1,
+    "name": "Long Live the Paagrio Lord",
+    "desc": "Paagrio Lord Kakai, the ruler of the Orc kingdom, has recently fallen ill. Centurions have decided that each tribe should offer the Lord gifts that are good for his health. Centurion Nakusin, one of the Lord’s aides, has asked you to collect gifts from the six tribes. Listen to his instructions and meet the representatives of each tribe, then come back with the gifts to receive a reward."
+  },
+  {
+    "t": "quest",
+    "id": 5,
+    "level": 1,
+    "name": "Miner's Favor",
+    "desc": "Miner Bolter is a member of the Gray Column Guild and lives in the Strip Mine. He asks you to fetch him a few things from the village. Per his request, visit Trader Charly of the weapons shop, Trader Garita of the item store, Warehouse Keeper Reed, and Blacksmith Bruno and bring back the items that Miner Bolter has ordered for a reward."
+  },
+  {
+    "t": "quest",
+    "id": 101,
+    "level": 1,
+    "name": "Sword of Solidarity",
+    "desc": "Grandmaster Roien of Cedric's Training Hall is interested in restoring the Sword of Solidarity, which is the symbol of friendship between the Elves and Humans. He asks you to meet Allman, the Town's Blacksmith, in order to reshape the sword."
+  },
+  {
+    "t": "quest",
+    "id": 102,
+    "level": 1,
+    "name": "Sea of Spores Fever",
+    "desc": "Sentinel Knight Smallberry is putting great effort into finding a cure for his companions who caught a mysterious fever while trying to purify the Sea of Spores. Since there must be different ingredients for the remedy, he asks you to meet Master Cobendell."
+  },
+  {
+    "t": "quest",
+    "id": 103,
+    "level": 1,
+    "name": "Spirit of Craftsman",
+    "desc": "The Dark Elven Blacksmith, Karrod, wishes to call upon the spirit of Warsmith Roberto Steelbender in order to learn the skills of refining Oriharukon Ore. He asks for aid, and has you visit Abyssal Celebrant Cecktinon of the Temple of Shilen."
+  },
+  {
+    "t": "quest",
+    "id": 104,
+    "level": 1,
+    "name": "Spirit of Mirrors",
+    "desc": "Grand Sorcerer Gallint of Einhovant's School of Wizardry is researching on the spirit of mirrors. But, a few days ago thre of the spirits escaped, and you must recapture them."
+  },
+  {
+    "t": "quest",
+    "id": 105,
+    "level": 1,
+    "name": "Skirmish with the Orcs",
+    "desc": "Recently, Orcs of the Misty Mountains have made several attacks on the Elven Forest. Sentinel Kendell of the Elven Village asks you to drive out the Orcs and become the Guardian of the Forest."
+  },
+  {
+    "t": "quest",
+    "id": 106,
+    "level": 1,
+    "name": "Forgotten Truth",
+    "desc": "Dark Elven Tetrarch Thifiell asked Abyssal Celebrant Kartia to translate an ancient script. And now, he asks you to retrieve both the original copy and the translation from Kartia."
+  },
+  {
+    "t": "quest",
+    "id": 107,
+    "level": 1,
+    "name": "Merciless Punishment",
+    "desc": "Baranka, the Shaman of Darkness, is planning to destroy the kingdom of the Orcs. The Urutu Chief Hatos has ordered the elimination of Baranka’s followers in order to stop his conspiracy. Go to Centurion Parugon to receive information about Baranka's followers."
+  },
+  {
+    "t": "quest",
+    "id": 108,
+    "level": 1,
+    "name": "Jumble, Tumble, Diamond Fuss",
+    "desc": "Collector Gouph of the Bronze Key Guild has purchased from Trader Reep of the Silver Scales Guild a star diamond, a rare diamond that is one of only seven in existence throughout the continent. However, it has been three days since the delivery date, and he is becoming very impatient. He asks you to visit Trader Reep and bring back the star diamond."
+  },
+  {
+    "t": "quest",
+    "id": 151,
+    "level": 1,
+    "name": "Save My Sister",
+    "desc": "Elias, a Master at the School of Wizardry, has been to the northern woods with some students to gather herbs. But the students have caught a fever, and Priest Yohanes has been requested to create a remedy. Large amounts of poison sacs are needed, and you are requested to gather them and bring them to the Priest."
+  },
+  {
+    "t": "quest",
+    "id": 152,
+    "level": 1,
+    "name": "Shards of Golem",
+    "desc": "A few days ago, the roof of the temple was wrecked by a storm. Sorcerer Harris of the temple has asked Blacksmith Allman for new tools to repair the roof. He asks you to retrieve them on his behalf."
+  },
+  {
+    "t": "quest",
+    "id": 153,
+    "level": 1,
+    "name": "Deliver Goods",
+    "desc": "A few days ago merchant ships were shipwrecked by a storm. Guard Arnold, who works for the recovery project, asks you to deliver some recovered goods."
+  },
+  {
+    "t": "quest",
+    "id": 154,
+    "level": 1,
+    "name": "Sacrifice to the Sea",
+    "desc": "Lighthouse Keeper Rockswell blames the recent storms on not making any offerings to the goddess Shilen. He decides to hold a secret ceremony, where he needs a maiden doll as an alternate for a live offering. He asks you to collect fox fur for the hair of the doll."
+  },
+  {
+    "t": "quest",
+    "id": 155,
+    "level": 1,
+    "name": "Find Sir Windawood",
+    "desc": "Guard Abellos tells that an urgent message to Sir Collin Windawood, the Consul of Talking Island, has arrived from Gludio Castle. He asks you to send the message to Sir Collin Windawood."
+  },
+  {
+    "t": "quest",
+    "id": 156,
+    "level": 1,
+    "name": "Millennium Love",
+    "desc": "In the temple of Talking Island the Elf, Rylin, has lived over a thousand years since she lost her lover, Theon, in the war against Beleth. Because she has not found his body, she still believes he is alive, and on your way to Gludio she asks you to find the whereabouts of her lover."
+  },
+  {
+    "t": "quest",
+    "id": 157,
+    "level": 1,
+    "name": "Recover Smuggled Goods",
+    "desc": "Warehouse Keeper Wilfred has been smuggling with Grecia, where trading broke off after the war. But recently, a merchant ship was stranded spilling adamantite ore all over the shore. He has recovered most, but giant toads have been swallowing it. He asks you to capture giant toads and recover the ore."
+  },
+  {
+    "t": "quest",
+    "id": 158,
+    "level": 1,
+    "name": "Seed of Evil",
+    "desc": "High Priest Biotin of the temple has received a revelation of god from his dreams. A few days later in his dreams, he finds out that a seed of evil is growing in the Elven Ruins. He asks you to eliminate the devilish seed of evil, which has wings of a bat."
+  },
+  {
+    "t": "quest",
+    "id": 159,
+    "level": 1,
+    "name": "Protect the Water Source",
+    "desc": "Elven Hierarch Asterios is concerned that the Mother Tree of the village is being contaminated. He asks you to go to the lake, which is the water source, north of the village to investigate the cause of the contamination."
+  },
+  {
+    "t": "quest",
+    "id": 160,
+    "level": 1,
+    "name": "Nerupa’s Request",
+    "desc": "Nerupa has brought the goods that were requested by the Elves, but he cannot pass through the magic field. So, she asks you to bring the silvery spider silk to Trader Unoren instead."
+  },
+  {
+    "t": "quest",
+    "id": 161,
+    "level": 1,
+    "name": "Fruit of the Mothertree",
+    "desc": "Andellia of the Elven Village takes care of the Mother Tree with her sisters. She received news a few days ago from her sister Thalia, who looks after the Mother Tree of Lake Iris down south, that the tree has produced fruit. She explains that the Mother Tree's Fruit brings immortality to the Elves, and asks you to carry them back safely."
+  },
+  {
+    "t": "quest",
+    "id": 162,
+    "level": 1,
+    "name": "Curse of the Fortress",
+    "desc": "Trader Unoren says that the recent undead creatures, in the Underground Fortress, were soldiers resurrected by a curse. He also says he's figuring out a way to repel the curse of the vengeful spirits, and he needs you to bring him bone fragments and Elf skulls."
+  },
+  {
+    "t": "quest",
+    "id": 163,
+    "level": 1,
+    "name": "Legacy of the Poet",
+    "desc": "Sentinel Starden is a veteran of the battle at the Underground Fortress. Rumiel, who was a longtime friend, a fellow soldier, and also a great poet, died in battle and his poems were lost within the fortress. Starden asks you to return his old friend's works."
+  },
+  {
+    "t": "quest",
+    "id": 164,
+    "level": 1,
+    "name": "Blood Fiend",
+    "desc": "Trader Creamees had lost his friends and kin by the hands of the dark side which was summoned by a Dark Elven Master of Dark Arts. The leaders of the dark side and the kirunak (a.k.a. the Blood Lord) still lurk within the Underground Fortress, and he asks you to seek revenge."
+  },
+  {
+    "t": "quest",
+    "id": 165,
+    "level": 1,
+    "name": "Shilen’s Hunt",
+    "desc": "A ceremony for Shilen and Gran Kain will be held soon in the Dark Elven Village. Before the ceremony there is a hunt for wild animals for the offering, called Shilen's Hunt. If you can hunt brown keltirs and ashen wolves during Shilen's Hunt, you will earn Dark Bezoars. Collect thirteen and bring them to Sentry Nelsya. You will earn the award for the winner of the hunt."
+  },
+  {
+    "t": "quest",
+    "id": 166,
+    "level": 1,
+    "name": "Mass of Darkness",
+    "desc": "Abyssal Celebrant Undrias is busy preparing for the ceremony of Shilen and Gran Kain. He asks you to retrieve items for the ceremony from Trader Iria, Warehouse Keeper Dorankus, and Master Trudy."
+  },
+  {
+    "t": "quest",
+    "id": 167,
+    "level": 1,
+    "name": "Dwarven Kinship",
+    "desc": "The Dwarven Warehouse Freightman, Collette, of the Dark Elven Village misses her fellow companions, and wishes you to send her letter to Harprock in the town of Gludio."
+  },
+  {
+    "t": "quest",
+    "id": 168,
+    "level": 1,
+    "name": "Deliver Supplies",
+    "desc": "Sentry Jeanine says that according to Tetrarch Kaitar's prophecy, the Dark Forest will be invaded by someone. To prepare for an attack, all Sentries decided to optimize their weapons. Master Harant promised to provide them brand new weapons, and they ask you to transport the weapons."
+  },
+  {
+    "t": "quest",
+    "id": 169,
+    "level": 1,
+    "name": "Offspring of Nightmares",
+    "desc": "Sorcerer Vlasty is doing research on an undead monster called a dark horror. He needs dark horror skulls for the actual tests, and wants you to hunt and bring the skulls to him. Dark horrors are found in the swamps, on the south sides of the village."
+  },
+  {
+    "t": "quest",
+    "id": 170,
+    "level": 1,
+    "name": "Dangerous Seduction",
+    "desc": "Dark Elven Tetrarch Vellior has insomnia due to continuous nightmares. A creature called a succubus is the source of the nightmares, and you will be asked to defeat the dream catching succubus 'Merkenis' at the School of Dark Arts."
+  },
+  {
+    "t": "quest",
+    "id": 171,
+    "level": 1,
+    "name": "Activities of the Remnants",
+    "desc": ""
+  },
+  {
+    "t": "quest",
+    "id": 201,
+    "level": 1,
+    "name": "Fighter's Tutorial",
+    "desc": "Combat training by the Master. Hunt bearded keltirs and return four keltir fangs to the Master."
+  },
+  {
+    "t": "quest",
+    "id": 202,
+    "level": 1,
+    "name": "Mystic's Tutorial",
+    "desc": "Combat training by the Sorcerer. Hunt bearded keltirs and return four keltir fangs to the Sorcerer."
+  },
+  {
+    "t": "quest",
+    "id": 203,
+    "level": 1,
+    "name": "Elf's Tutorial",
+    "desc": "Combat training by the Mother's disciple. Hunt bearded keltirs and return four keltir fangs to the Mother's disciple."
+  },
+  {
+    "t": "quest",
+    "id": 204,
+    "level": 1,
+    "name": "Dark Elf's Tutorial",
+    "desc": "Combat training by the Abyssal Celebrant. Hunt bearded keltirs and return four keltir fangs to the Abyssal Celebrant."
+  },
+  {
+    "t": "quest",
+    "id": 205,
+    "level": 1,
+    "name": "Orc's Tutorial",
+    "desc": "Combat training by the Priest of Fire. Hunt bearded keltirs and return four keltir fangs to the Priest of Fire."
+  },
+  {
+    "t": "quest",
+    "id": 206,
+    "level": 1,
+    "name": "Dwarf's Tutorial",
+    "desc": "Combat training by the Miner. Hunt bearded keltirs and return four keltir fangs to the Miner."
+  },
+  {
+    "t": "quest",
+    "id": 211,
+    "level": 1,
+    "name": "Trial of the Challenger",
+    "desc": "Quest to acquire occupation change item, 'Mark of the Challenger.' Kash says he will tell you who has the Mark of the Challenger, if you manage to kill the medusa, Shyslyssys, and bring forth the old parchment. She lives in a cave in the Neutral Zone, which is between the Elven and the Dark Forests. He advises you to go in parties, for she is a strong enemy who has lived for hundreds of years."
+  },
+  {
+    "t": "quest",
+    "id": 212,
+    "level": 1,
+    "name": "Trial of Duty",
+    "desc": "Quest to acquire occupation change item, 'Mark of Duty.' Grand Master Hannavalt tells you that a true Knight must fight for his honor, not for power or glory. He then tells you to meet the Knights of each kingdom and perform their errands in order to perceive the duty of a true Knight. The first Knight to visit is Sir Aaron Tanford. He is located south of the Gludio Wasteland."
+  },
+  {
+    "t": "quest",
+    "id": 213,
+    "level": 1,
+    "name": "Trial of the Seeker",
+    "desc": "Quest to acquire occupation change item, 'Mark of the Seeker.' Master Dufner has sensed an evil in the realm of spirits. To look for clues, he is seeking a Warrior who has great evasion and scouting skills. By helping him uncover this incident you may earn the mark of the seeker. Master Dufner gives a letter telling you to visit a guy named 'Hawkeye.'"
+  },
+  {
+    "t": "quest",
+    "id": 214,
+    "level": 1,
+    "name": "Trial of the Scholar",
+    "desc": "Quest to acquire occupation change item, 'Mark of the Scholar.' Sorceress Mirien explains that in order to pass the Trial of the Scholar you must complete errands given by each of the highest mages. And the first person to meet is High Priest Sylvain of the same temple."
+  },
+  {
+    "t": "quest",
+    "id": 215,
+    "level": 1,
+    "name": "Trial of the Pilgrim",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Pilgrim.’ Santiago says those who wish to practice divine powers must understand their nature through a process called the Trial of the Pilgrim. The myths that have been passed down are all false, and you must learn about the gods from the very beginning. Follow Santiago’s orders, as you must visit Seer Tanapi in Orc village and listen to what he has to say about the god of fire, Paagrio."
+  },
+  {
+    "t": "quest",
+    "id": 216,
+    "level": 1,
+    "name": "Trial of the Guildsman",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Guildsman.’ Visit Warehouse Keeper Valkon, and he will explain that in order to earn respect in the Dwarven society as an official guildsman you must pass the Trial of the Guildsman. To complete this trial you must create seven journeyman’s rings. First, visit Warehouse Keeper Allman and listen to the information about creating the ring."
+  },
+  {
+    "t": "quest",
+    "id": 217,
+    "level": 1,
+    "name": "Testimony of Trust",
+    "desc": "Quest to acquire occupation change item, ‘Mark of Trust.’ High Priest Hollint tells you that for the Human race to survive in the Chaotic Chronicle, they must earn the trust of the other races and combine forces with them. The Testimony of Trust is for you to become an envoy of Humans, and meet the leaders of each race in the name of trust. Visit the leader of the Elves and the Dark Elves and give each of them the letters you have received from the High Priest."
+  },
+  {
+    "t": "quest",
+    "id": 218,
+    "level": 1,
+    "name": "Testimony of Life",
+    "desc": "Quest to acquire occupation change item, ‘Mark of Life.’ Visit Master Cardien and he will tell you that great effort and sacrifice of young Elves is needed, for a crisis has struck among the Elves as the Mother Tree has started to wither. Follow his orders and meet Hierarch Asterios in the Elven Village."
+  },
+  {
+    "t": "quest",
+    "id": 219,
+    "level": 1,
+    "name": "Testimony of Fate",
+    "desc": "Quest to acquire occupation change item, ‘Mark of Fate.’ Sorceress Kaira tells you about Dark Elven beliefs. As you find more hidden knowledge and truth, your race will gain power. Those who uncover the forbidden knowledge will be rewarded with the Mark of Fate to honor the deed of increasing spiritual heritage. At that time you hear  the information about the apocalypse, which the Dark Elves has been waiting for. You must visit Brother Metheus in the Temple of Einhasad in in Giran, and gather information about the skull of Alders."
+  },
+  {
+    "t": "quest",
+    "id": 220,
+    "level": 1,
+    "name": "Testimony of Glory",
+    "desc": "Quest to acquire occupation change item, ‘Mark of Glory.’ Prefect Vokian says in order to survive the Chaotic Chronicle, the Orcs must unify all of their tribal kingdoms. If you can subjugate each Orc tribe while representing the Lord, you shall receive the Mark of Glory. However, to become representative to the Lord, you must defeat the manashen, the tyrant, and the guardian basilisk as a test, and retrieve ten items from each."
+  },
+  {
+    "t": "quest",
+    "id": 221,
+    "level": 1,
+    "name": "Testimony of Prosperity",
+    "desc": "Quest to acquire occupation change item, ‘Mark of Prosperity.’ Warehouse Keeper Parman tells you that abundance is the virtue of the Dwarves. It symbolizes value, productivity, fertile land, and a sound body. If you can find the tokens that represent each four meanings of abundance, you shall receive the Mark of Prosperity which allows you to join the high-end guilds. First, hear about the meaning of each abundance from Parman before you start looking for them."
+  },
+  {
+    "t": "quest",
+    "id": 222,
+    "level": 1,
+    "name": "Test of the Duelist",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Duelist.’ Duelist Kaien explains that a duelist is one who has extreme abilities with weapons and there are only a few who have achieved that title. To earn the Mark of the Duelist, you must defeat the most powerful monster of each kingdom more than ten times. Look for the monsters of each province as shown in Kaien’s order."
+  },
+  {
+    "t": "quest",
+    "id": 223,
+    "level": 1,
+    "name": "Test of the Champion",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Champion.’ Veteran Ascalon speaks of the champions with the burning mind of the Warrior during his years as a dragoon. And now he wishes to retire and pass down his Mark of the Champion to someone young and skilled. He promises to give you the mark if you fight against the other tribes on his behalf, and asks you to visit his old war companion, Mason, in the town of Dion."
+  },
+  {
+    "t": "quest",
+    "id": 224,
+    "level": 1,
+    "name": "Test of Sagittarius",
+    "desc": "Quest to acquire occupation change item, ‘Mark of Sagittarius.’ The leader of the Hunters Guild, Bernard, explains about the Test of Sagittarius. It is a test for the best archers, for which you may only apply if you have been approved by the best archer, Sagittarius Hamil. Take Bernard’s Recommendation to Hamil in the village of Floran."
+  },
+  {
+    "t": "quest",
+    "id": 225,
+    "level": 1,
+    "name": "Test of the Searcher",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Searcher.’ Master Luther explains that the Mark of the Searcher is a recognition of one’s ‘uncovering’ skills. Hunters, Elven Rangers, and Mercenaries are challenge the Test of the Searcher. In order to pass the test, you must receive a recommendation from the once best Scout of the kingdom, Alex. Visit Captain Alex in the village of Floran."
+  },
+  {
+    "t": "quest",
+    "id": 226,
+    "level": 1,
+    "name": "Test of the Healer",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Healer.’ Priest Bandellos explains to you that the Test of the Healer singles out the one who can fully understand purification of light and the power of healing. He also speaks of the prophecy that a girl with the power of Einhasad will appear and purify the world. You must investigate the girl that he claims to be that Sainte. First, look for Perrin as per Priest Bandellos’s orders."
+  },
+  {
+    "t": "quest",
+    "id": 227,
+    "level": 1,
+    "name": "Test of the Reformer",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Reformer.’ Ask Priestess Pupina about the problems related to the Order of Einhasad, and he will answer that most of the Priests are concerned with the same question. She advises you to visit the Execution Grounds of Dion to look for answers. As per the Priestess's orders, defeat the ‘nameless spirits’ of the Execution Grounds. You must use the Disrupt Undead skill for the final blow."
+  },
+  {
+    "t": "quest",
+    "id": 228,
+    "level": 1,
+    "name": "Test of Magus",
+    "desc": "Quest to acquire occupation change item, ‘Mark of Magus.’ Bard Rukal says in order to practice high-level elemental magic, you must fully understand the temperaments of the four elements. The Test of Magus examines how much you know about this. And to apply for the test you must uncover the source of the ominous songs that has been heard in recent nights. Find Parina in the village of Gludin according to Rukal’s orders."
+  },
+  {
+    "t": "quest",
+    "id": 229,
+    "level": 1,
+    "name": "Test of Witchcraft",
+    "desc": "Quest to acquire occupation change item, ‘Mark of Witchcraft.’ Orim of the Shadow laments about the prejudice on black magic, and tells you to be prepared for the negligence and the contempt from everyone in order to learn the Dark Arts. He will give the Mark of Witchcraft if you help him unlock the mysteries of Aklantoth's Box. And, to open the box you must obtain six jewels. He asks you to investigate the ancient jewels that were sold during the recent auction, and visit Trader Alexandria in the town of Giran."
+  },
+  {
+    "t": "quest",
+    "id": 230,
+    "level": 1,
+    "name": "Test of the Summoner",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Summoner.’ High Summoner Galatea explains that an outstanding Summoner should possess a high standard of magical powers and a strong sense of willpower and the testing of these gifts is the Test of the Summoner. The player has to win six duels with six different Summoners in order to pass the test but first make the arcana card which is essential in the duel. Take Galatea’s letter and meet at the town of Dion with Merchant Lara."
+  },
+  {
+    "t": "quest",
+    "id": 231,
+    "level": 1,
+    "name": "Test of the Maestro",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Maestro.’ First Elder Lockirin speaks of the Test of the Maestro, which singles out the best craftsman of the Dwarves. You must earn recommendations from each of the three Elders to pass the test. Meet several Elders in the Council, serve their errands and earn their recommendations."
+  },
+  {
+    "t": "quest",
+    "id": 232,
+    "level": 1,
+    "name": "Test of the Lord",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the Lord.’ The Paagrio Lord, Kakai, explains about Overlords as Shamans who lead each Clan. You must pass the Test of the Lord to become one. According to Kakai’s orders, visit each of the five Chiefs and earn their respect."
+  },
+  {
+    "t": "quest",
+    "id": 233,
+    "level": 1,
+    "name": "Test of the War Spirit",
+    "desc": "Quest to acquire occupation change item, ‘Mark of the War Spirit.’ Seer Somak speaks of the Test of the War Spirit, where you can become a Warcryer, the highest-level Shaman who governs the spirits of combat. You must summon the spirit of dead heroes in the battlefield and utilize their power as your own. To challenge this test, you must uncover the skulls of the four Warriors: Braki the Clever, Kiruna the Brave, Tonar the Super, and Hermort the Indomitable."
+  },
+  { "t": "quest", "id": 9999, "level": 1, "name": "test", "desc": "" },
+  {
+    "t": "quest",
+    "id": 257,
+    "level": 1,
+    "name": "The Guard is Busy",
+    "desc": "The Lord’s plan to move the people of Gludio to Talking Island has been announced. In order to make the island a safe place to live, you must eliminate the orcs and the werewolves. Those who defeat them and bring the token shall be granted a reward by the Lord."
+  },
+  {
+    "t": "quest",
+    "id": 258,
+    "level": 1,
+    "name": "Bring Wolf Pelts",
+    "desc": "Sir Windawood asks Trader Lector to create leather equipment for the militia. Lector has great skills as a tailor, but he is short of materials. He asks you to collect forty wolf pelts."
+  },
+  {
+    "t": "quest",
+    "id": 259,
+    "level": 1,
+    "name": "Rancher's Plea",
+    "desc": "Edmond plans on establishing a ranch on Talking Island along with his friend Marius, but is having trouble as giant spiders keep devouring his flock. Edmond promises to reward the player for every spider husk brought back after the player has hunted the spiders. He also tells the player to visit Marius if anything is urgently needed for the quest."
+  },
+  {
+    "t": "quest",
+    "id": 260,
+    "level": 1,
+    "name": "Hunt the Orcs",
+    "desc": "The Kaboo Orcs hiding in the Misty Mountains have begun to attack the Elven Forest. As per the Hierarch’s orders, Sentinel Rayen is recruiting Warriors to battle against the Orcs. The Hierarach’s reward will be granted to those who destroy the Kaboo Orcs and bring a token of proof."
+  },
+  {
+    "t": "quest",
+    "id": 261,
+    "level": 1,
+    "name": "Collector’s Dream",
+    "desc": "Alshupes, who loves  collecting claws and pelts of odd creatures, now has new interests in giant spiders. He asks for eight legs of crimson spiders, hook spiders, and pincer spiders."
+  },
+  {
+    "t": "quest",
+    "id": 262,
+    "level": 1,
+    "name": "Trade with the Ivory Tower",
+    "desc": "Trader Vollodos, who has often been dealing with the Mages of the Ivory Tower, asks you to find spores which have been in high demand recently. As Vollodos said, you can get Spore Sacs if you go into the Dark Forest and defeat spore fungi. You shall be rewarded if you bring a collection to Vollodos."
+  },
+  {
+    "t": "quest",
+    "id": 263,
+    "level": 1,
+    "name": "Orc Subjugation",
+    "desc": "Balor Orcs who were hiding in the Misty Mountains invaded the Dark Forest. The prideful Dark Elves begin a counterattack on the Orcs, who were once their slaves. Those who defeat the Balor Orcs and bring a token of proof shall be rewarded by Sentry Kayleen."
+  },
+  {
+    "t": "quest",
+    "id": 264,
+    "level": 1,
+    "name": "Keen Claws",
+    "desc": "Trader Payne is famous for selling hand-made arrowheads, but he has recently been requested to create a hooked one, made of animal claws. He asks for help, and needs fifty wolf claws."
+  },
+  {
+    "t": "quest",
+    "id": 265,
+    "level": 1,
+    "name": "Chains of Slavery",
+    "desc": "The imps were created as slaves by the Dark Elves, but recently they have broken the spell of shackles, and ran away into the woods. The Dark Elven Tetrarchs are preparing a new spell to lock up the imps, but they need the Imp Shackle. Go into the Dark Elven Forest and return the Imp Shackle. You shall receive a reward by Sentry Krispen."
+  },
+  {
+    "t": "quest",
+    "id": 266,
+    "level": 1,
+    "name": "Pleas of Pixies",
+    "desc": "The Queen of the Pixies is preparing a spell to protect birds that are nesting in the Elven Forest from keltirs and wolves. Pixy Murika is under the Queen’s order to collect the needed ingredients. She asks for one hundred red keltir or gray wolf fangs. In return she will give you a sparkling stone that was found in the forest."
+  },
+  {
+    "t": "quest",
+    "id": 267,
+    "level": 1,
+    "name": "Wrath of Verdure",
+    "desc": "Olen Treants guard the Elven Forest. They seek revenge on the goblins that cut down the forest, but the sly goblins have managed to get away with it. Gunner Treant asks for help as a representative. Defeat the goblins and return their weapons, that were once branches of the woods to Gunner Treant and you shall be rewarded."
+  },
+  {
+    "t": "quest",
+    "id": 271,
+    "level": 1,
+    "name": "Proof of Valor",
+    "desc": "Praetorian Rukain always treats young Orcs like little kids. He says that those who desire to be acknowledged as Orc Fighters must prove their valor by hunting the kasha wolf and bringing back fifty of their fangs as proof."
+  },
+  {
+    "t": "quest",
+    "id": 272,
+    "level": 1,
+    "name": "Wrath of Ancestors",
+    "desc": "Seer Livina says that the spirits of the ancestors have been angered after goblin grave robbers dared to desecrate the graves of the Utuku tribe. Follow the Seer’s orders and punish the goblin grave robbers that dared to desecrate the graves of the great Orc race, and bring back fifty of their heads. Offering goblin heads as a sacrifice to the ancestors is the only way to placate their anger."
+  },
+  {
+    "t": "quest",
+    "id": 273,
+    "level": 1,
+    "name": "Invaders of the Holy Land",
+    "desc": "Atuba Chief Varkees says that a foreign race known as the rakeclaw imps have invaded the Immortal Lands, polluting the holy land of the Orcs. According to his explanation, the rakeclaw imps are a race created from magic, and are being controlled by someone through black magic. Defeat the invaders of the holy land, and collect the soulstones embedded in their hearts in order to find out who is behind them."
+  },
+  {
+    "t": "quest",
+    "id": 274,
+    "level": 1,
+    "name": "Skirmish with the Werewolves",
+    "desc": "War has been declared against the fearless race, the maraku werewolves, who dared to kill the messenger that the Paagrio Lord sent, then return the messenger’s head as an answer. Per Prefect Brukurse’s orders, slay the maraku werewolves and bring back forty of their heads."
+  },
+  {
+    "t": "quest",
+    "id": 275,
+    "level": 1,
+    "name": "Dark Winged Spies",
+    "desc": "The dark magician Varangka, who is plotting the fall of the Orc kingdom, is using dark winged bats to spy on the Orcs. The sorcerers have requested dark winged bat fangs in order to complete the magic circle that will prevent the bats from approaching Orc territories. Per the request of Neruga Chief Tantus, hunt dark winged bats and bring back seventy of their fangs."
+  },
+  {
+    "t": "quest",
+    "id": 276,
+    "level": 1,
+    "name": "Totem of the Hestui",
+    "desc": "Recently, more and more gray bears on the Immortal Plateau are becoming possessed with the evil spirit of Kasha, the spirit of death and decay. Seer Tanapi worries about this and explains that the gray bear is originally the protective totem of the Hestui Orc tribe, and asks the player to bring death to the possessed gray bears and put them to rest. While hunting kasha gray bear totems, the player will confront Kasha’s Spirit. Defeat the spirit and bring back proof to Seer Tanapi."
+  },
+  {
+    "t": "quest",
+    "id": 277,
+    "level": 1,
+    "name": "Gatekeeper's Offering",
+    "desc": "Gatekeeper Tamil says that his teleport magic is not complete, and explains that he needs the aid of the totem spirit of the spider. But in order to receive the aid of the spider of space and time, he must regularly make offerings, and asks the player to collect the starstones of the graystone golem. Collect twenty starstones and bring them back to receive a token that lets you teleport to the village of Gludin for free."
+  },
+  {
+    "t": "quest",
+    "id": 291,
+    "level": 1,
+    "name": "Revenge of the Redbonnet",
+    "desc": "Maryse Redbonnet lost her family as a child and nearly lost her own life to wolves, and so she burns with hatred for them. Grant her wish by hunting the black wolves around the village, then gather forty of their pelts and bring them back to Maryse to receive her grandmother’s heirloom."
+  },
+  {
+    "t": "quest",
+    "id": 292,
+    "level": 1,
+    "name": "Brigands Sweep",
+    "desc": "Elder Spiron of the Golden Wheel Guild says that his guild has suffered extensive damage to their trade recently because of goblin brigands, and asks the player to sweep them from the mountains. Defeat the goblins, collect their necklaces as proof, then bring back the necklaces for a reward."
+  },
+  {
+    "t": "quest",
+    "id": 293,
+    "level": 1,
+    "name": "The Hidden Veins",
+    "desc": "Elder Filaur of the Gray Column Guild asks the player to search for hidden Crysolite Veins. Defeat the Utuku Orcs and bring the Crysolite Ore they possess to receive a reward. Also, gather four pieces of the map that indicate the location of the vein, and take the pieces to Maphr Priestess Chichirin, to turn them into a complete map. Take this to Elder Filaur to receive a great reward."
+  },
+  {
+    "t": "quest",
+    "id": 294,
+    "level": 1,
+    "name": "Covert Business",
+    "desc": "The notorious Black Mage Hardin has asked the Bronze Key Guild to gather bat fangs. For some reason, Elder Keef, the leader of the Bronze Key Guild, has accepted the request and has begun a covert trade with Hardin. Per Elder Keef’s request, hunt blade bats and barbed bats, then bring back one hundred of their fangs for a reward."
+  },
+  {
+    "t": "quest",
+    "id": 295,
+    "level": 1,
+    "name": "Dreaming of the Skies",
+    "desc": "Elder Arin, the leader of the Black Anvil Guild, has a dream to study the technology of the late giants and develop the ultimate flying machine. He has worked long in studying flying technology to realize his dream, but has run out of research materials, and asks you to collect floating stones. These stones may be obtained by hunting the magical weaver. Collect fifty and take them back to Elder Arin for a reward."
+  },
+  {
+    "t": "quest",
+    "id": 296,
+    "level": 1,
+    "name": "Tarantula’s Spider Silk",
+    "desc": "The king of Elmore has requested the best spider silk formal wear to be made for the emissaries that are being sent to the Aden kingdom. Trader Mion, a cutter of the Silver Scale Guild, doesn't have enough material to make formal wear and asks you to collect tarantula spider silk. Hunt crimson and hunter tarantulas, then bring back their spider silk to receive a reward. Spider silk may also be acquired by taking tarantula spinnerettes to Defender Nathan to be spun."
+  },
+  {
+    "t": "quest",
+    "id": 297,
+    "level": 1,
+    "name": "Gatekeeper's Favor",
+    "desc": "While having a conversation with Gatekeeper Wirphy of the Dwarven Village, she says that her body, created from the technology of the ancient giants, has been damaged and her energy is draining away. She asks you to obtain starstones, which had been used as the source of energy by the giants, and bring them back to her. Perform her favor and slay whinstone golems, then gather twenty starstones from them and bring them back to her to receive a charm that lets you teleport to Gludin town for free."
+  },
+  {
+    "t": "quest",
+    "id": 303,
+    "level": 1,
+    "name": "Collect Arrowheads",
+    "desc": "Master Minia of the Fighters Guild loves to collect odd weapons from each race. Recently she has found interest in Lennon Orc weapons, and asks you to retrieve their marksmans’ arrowheads in the Elven Ruins."
+  },
+  {
+    "t": "quest",
+    "id": 306,
+    "level": 1,
+    "name": "Crystals of Fire and Ice",
+    "desc": "Trader Katerina deals jewels as a subsidiary business. She asks you to head to the Elven Ruins to get soul ore shards, which were used by the ancient Elven mages. As you have been told, you shall find Salamanders and Undines in the Elven Ruins, and you may earn the ‘flame shard’ and the ‘ice shard’ from them."
+  },
+  {
+    "t": "quest",
+    "id": 313,
+    "level": 1,
+    "name": "Collect Spores",
+    "desc": "The Elven Forest has been contaminated slowly by the poison from the Sea of Spores. The Elven Hierarachs are researching a neutralizer with the aid of Trader Herbiel. Herbiel asks for spore powder, for they are essential to the research. Bring spore sacs to Herbiel from green fungi of the Elven Forest, and you shall receive a reward."
+  },
+  {
+    "t": "quest",
+    "id": 316,
+    "level": 1,
+    "name": "Destroy Plague Carriers",
+    "desc": "The ratmen, who the Elves call ‘the plague carriers,’ spread an epidemic in the Elven Forest and once fought for the Dark Elves. Because of this, the Elves have bitterness against them. Master Ellenia asks you to eliminate the ratmen that are nesting in the Elven Underground Fortress. Bring her their fangs as proof, and you shall receive a reward."
+  },
+  {
+    "t": "quest",
+    "id": 317,
+    "level": 1,
+    "name": "Catch the Wind",
+    "desc": "The spirit of the wind, lirein, has the soulstone ‘wind shard’ in its body. Rizraell asks you to collect them to create the ‘scroll of the wind.’ Defeat the lireins and return the collected wind shards to Rizraell."
+  },
+  {
+    "t": "quest",
+    "id": 319,
+    "level": 1,
+    "name": "Scent of Death",
+    "desc": "Trader Minaless, who grows herbs as a subsidiary business, has recently been growing a flower called nightshade. Nightshade needs special fertilizers, and zombie dust is needed to create them. Trader Minaless will reward anyone who brings zombie dust after defeating the zombies in the Marshlands, south of the Dark Forest."
+  },
+  {
+    "t": "quest",
+    "id": 320,
+    "level": 1,
+    "name": "Bones Tell the Future",
+    "desc": "Tetrarch Kaitar knows how to foretell the future by throwing bones of the undead. Every month he does a telling to prepare for any disaster to the Dark Elves, and he asks you to retrieve the undead bones."
+  },
+  {
+    "t": "quest",
+    "id": 324,
+    "level": 1,
+    "name": "Sweetest Venom",
+    "desc": "Astaron explains about the ‘Dreviant Wine’, which is brewed with spider venom. He is planning to make wine with grapes imported from Gludio, and asks you to retrieve the spider venom sacs, which are the toughest materials to obtain. Hunt the spiders in the Dark Forest and return the sacs to Astaron for a reward."
+  },
+  {
+    "t": "quest",
+    "id": 325,
+    "level": 1,
+    "name": "Grim Collector",
+    "desc": "During the talk about the ruins, Guard Curtis speaks of some good work and introduces Samed. Visit Samed and tell about Curtis, and you shall get an errand."
+  },
+  {
+    "t": "quest",
+    "id": 326,
+    "level": 1,
+    "name": "Vanquish Remnants",
+    "desc": "The Black Lion, hired by the Lord of Gludio for eliminating the Ol Mahums, has performed very poorly. With many soldiers lost, the Black Lion is recruiting skilled Fighters to battle against the Ol Mahums. Defeat the Ol Mahums and collect their badges as proof. Leopold will reward you."
+  },
+  {
+    "t": "quest",
+    "id": 327,
+    "level": 1,
+    "name": "Reclaim the Land",
+    "desc": "The northwest region of Gludio was originally fertile farmland, but the Turek Orcs took over the area. The farmer, Peter, represents the farmers of Gludio and is recruiting soldiers to expel the Orcs from their stolen farmland. Kill the Turek Orcs and collect tokens and take them to Peter for a reward."
+  },
+  {
+    "t": "quest",
+    "id": 328,
+    "level": 1,
+    "name": "Sense for Business",
+    "desc": "Trader Salient sells rare magical ingredients to the Ivory Tower of Oren. He tells that you can acquire two of the eight ingredients in the Wastelands: the monster eye meat and jade. He asks you to retrieve the monster eye varcass and the basilisk’s gizzard."
+  },
+  {
+    "t": "quest",
+    "id": 329,
+    "level": 1,
+    "name": "Curiosity of a Dwarf",
+    "desc": "Dwarven Trader Rolento is interested in the inner structure and mechanisms of golems. He is especially curious about the power source of golems, and asks you to obtain ‘stonehearts’ from granite golems or punchers."
+  },
+  {
+    "t": "quest",
+    "id": 330,
+    "level": 1,
+    "name": "Adept of Taste",
+    "desc": "Chef Jonas is preparing a monster eye steak for a competition. The judge is Sorceress Mirien, also known as the ‘Adept of Taste.’ You must collect high quality ingredients in order to fulfill her picky sense of taste."
+  },
+  {
+    "t": "quest",
+    "id": 331,
+    "level": 1,
+    "name": "Arrow of Vengeance",
+    "desc": "Guard Belton is seeking revenge after losing his family to the land dragon, Antharas. He is currently making a special arrow made of harpy feather, medusa venom, and wyrm’s tooth to use it to kill Antharas. He asks you the collect the ingredients for the arrow."
+  },
+  {
+    "t": "quest",
+    "id": 333,
+    "level": 1,
+    "name": "Hunt of the Black Lion",
+    "desc": "Sophia, the captain of the Black Lion, recommends that you participate in the mission to eradicate Dion Castle Town of monsters. Receive Sophia's mission and carry out the task of eliminating the undead of the Execution Ground, the Ol Mahums of the Partisan Hideaway, the Delu lizardmen of the southern shores, or the marsh stakato of the Cruma Marshlands."
+  },
+  {
+    "t": "quest",
+    "id": 334,
+    "level": 1,
+    "name": "The Wishing Potion",
+    "desc": "Alchemist Matild has long wished to create a mysterious potion. She has recently discovered the location of its recipes, and asks you to go and bring the them for her. She gives you a Book of Alchemy, along with instructions to seek out the mysterious potion at the location written in the book."
+  },
+  {
+    "t": "quest",
+    "id": 334,
+    "level": 2,
+    "name": "The Wishing Potion",
+    "desc": "Go find the ingredients, written on the list given by Alchemist Matild, which are necessary for making the wish potion."
+  },
+  {
+    "t": "quest",
+    "id": 335,
+    "level": 1,
+    "name": "Song of the Hunter",
+    "desc": "Union Member Grey of the Hunters Union gives an explanation about the guild and says in order to join, you must pass a strict test and obtain a Hunter's License. Bring back three or more of the items listed on the Hunters Union test, as indicated by Grey to receive a circle 1 hunter's license. It is said that those in possession of the license may carry out various missions for the guild."
+  },
+  {
+    "t": "quest",
+    "id": 335,
+    "level": 2,
+    "name": "The Song of the Hunter",
+    "desc": "You now have the 1st circle hunter license! You can now receive and carry out hunting requests. Go meet Hunter Guild Member Tor and confirm the list of orders. Or, you can also go meet people that hire hunters and take on work informally."
+  },
+  {
+    "t": "quest",
+    "id": 335,
+    "level": 3,
+    "name": "The Song of the Hunter",
+    "desc": "You now have in hand the 2nd circle hunter license. You can now receive and carry out hunting requests that can only be performed by 2nd circle hunters. Go meet Hunters Guild Member Tor and confirm the list of orders. Or you can also go meet people that hire hunters and take on work informally."
+  },
+  {
+    "t": "quest",
+    "id": 336,
+    "level": 1,
+    "name": "Coin of Magic",
+    "desc": "Warehouse Keeper Sorint’s hobby is collecting coins. He wishes to obtain a rare coin called the golden dragon of kaldis, which is owned by Union President Bernard. He promises a great reward for those who brings forth to him the coin."
+  },
+  {
+    "t": "quest",
+    "id": 337,
+    "level": 1,
+    "name": "Audience with the Land Dragon",
+    "desc": "Quest that must be completed in order to obtain the ‘portal stone’, which is needed enter the Lair of Antharas. Seal Watchman Gabrielle warns that the land dragon, Antharas, has been awakened from its long slumber, and recommends you to join the party being sent to slay the monster. According to her, the Lair of Antharas is surrounded by a magical field and is thus unapproachable. However, the one who possesses the ‘portal stone’ may be able to activate the ‘heart of the field’ to pass through. Only the ones acknowledged by the seal watchmen may receive the stone. Follow Gabrielle’s instructions and visit the other four watchmen. Complete their assignments to receive their acknowledgements. The four watchmen of the seal are the following: Magister Kaiena of the Ivory Tower, Prefect Chakiris of the Hunters' Village, and Master Kendra and High Priest Orben of the Town of Aden."
+  },
+  {
+    "t": "quest",
+    "id": 337,
+    "level": 2,
+    "name": "Audience with the Land Dragon",
+    "desc": "Gabrielle says that there is a force pushing for the awakening of Antharas and that you must prevent their entry. She instructs you to meet with Warehouse Chief Moke of Gludin town and Blacksmith Helton of Oren.  After listening to their explanation, go find and destroy the “abyss jewel.”"
+  },
+  {
+    "t": "quest",
+    "id": 337,
+    "level": 3,
+    "name": "Audience with the Land Dragon",
+    "desc": "Take the mark of watchman, which is the evidence of having been recognized by the watchmen of the seal, and go find Gilmore, watchman of the land dragon Antharas, at the entrance to Dragon Valley."
+  },
+  {
+    "t": "quest",
+    "id": 337,
+    "level": 4,
+    "name": "Audience with the Land Dragon",
+    "desc": "Kill the cave keeper and cave maidens in the center of Dragon Valley and get the third abyss jewel. After destroying that, take the fragments and go meet Theodric, watchman of the land dragon, at the entrance to the Lair of Antharas."
+  },
+  {
+    "t": "quest",
+    "id": 401,
+    "level": 1,
+    "name": "Path to a Warrior",
+    "desc": "Quest that must be fulfilled to change occupations to a Warrior. Tell Master Aymus that you wish to become a Warrior, and he will tell you to first visit Trader Simplon in the Town of Gludio and find the ‘Sword of Trial.’"
+  },
+  {
+    "t": "quest",
+    "id": 402,
+    "level": 1,
+    "name": "Path to a Human Knight",
+    "desc": "Quest that must be fulfilled to change occupations to a Knight. Sir Karol Vasper explains that the ‘Trial of the Esquire’ must be performed in order to become a Knight. Squires must travel to other villages and serve errands of Captains and High Priests. You must gather more than 3 Lord’s Mark."
+  },
+  {
+    "t": "quest",
+    "id": 403,
+    "level": 1,
+    "name": "Path to a Rogue",
+    "desc": "Quest that must be fulfilled to change occupations to a Rogue. Find Captain Bezique and tell him you wish to become a Rogue. He says you will earn his respect if you catch one of the thieves, and tells you to meet Neti."
+  },
+  {
+    "t": "quest",
+    "id": 404,
+    "level": 1,
+    "name": "Path to a Human Wizard",
+    "desc": "Quest that must be fulfilled to change occupations to a Wizard. Parina says to find the tokens which symbolize the four elements, as you speak of becoming a Wizard: earth, fire, water, and wind. Go to the Ruins of Despair and meet the Spirit of Flame as told."
+  },
+  {
+    "t": "quest",
+    "id": 405,
+    "level": 1,
+    "name": "Path to a Cleric",
+    "desc": "Quest that must be fulfilled to change occupations to a Cleric. Tell Priest Zigaunt that you wish to become a Cleric, and he will say that you must prove your pure faith. To do this, you must remove all inappropriate books that criticizes the current order. The first rumors about those books appeared in the town of Gludio. Go and investigate about the book, 'Understanding of Miracles.'"
+  },
+  {
+    "t": "quest",
+    "id": 406,
+    "level": 1,
+    "name": "Path to an Elven Knight",
+    "desc": "Quest that must be fulfilled to change occupations to an Elven Knight. Tell Master Sorius that you wish to become an Elven Knight. You will be ordered to head to the Grim Ruins, and defeat the undead to collect topaz pieces."
+  },
+  {
+    "t": "quest",
+    "id": 407,
+    "level": 1,
+    "name": "Path to an Elven Ranger",
+    "desc": "Quest that must be fulfilled to change occupations to an Elven Ranger. In order to become an Elven Ranger, Master Reisa tells you to prove your skills by finding Guard Moretti's lost friend."
+  },
+  {
+    "t": "quest",
+    "id": 408,
+    "level": 1,
+    "name": "Path to an Elven Wizard",
+    "desc": "Quest that must be fulfilled to change occupations to an Elven Wizard. Rosella speaks that only the one who gets the jewels that represent each of the four elements may become an Elven Wizard. She hands you the fertility peridot, which symbolizes earth, and asks you to find the rest."
+  },
+  {
+    "t": "quest",
+    "id": 409,
+    "level": 1,
+    "name": "Path to an Elven Oracle",
+    "desc": "Quest that must be fulfilled to change occupations to an Oracle. For becoming an Oracle, Priest Manuel speaks of the Revelation of the Torch, and asks you to investigate the truth about the recent appearance of a girl who brings miracles near the lighthouse."
+  },
+  {
+    "t": "quest",
+    "id": 410,
+    "level": 1,
+    "name": "Path to a Palus Knight",
+    "desc": "Quest that must be fulfilled to change occupations to a Palus Knight. Master Virgil says, you must capture the 'gaze of abyss' through a trial in order to become a Palus Knight. And he asks you to bring thirteen lycanthrope skulls for the first process of the trial, the thirteen skull ceremony."
+  },
+  {
+    "t": "quest",
+    "id": 411,
+    "level": 1,
+    "name": "Path to an Assassin",
+    "desc": "Quest that must be fulfilled to change occupations to an Assassin. To become an Assassin, Triskell asks you to prove your skills by helping Arkenia at the altar of the Dark Elves."
+  },
+  {
+    "t": "quest",
+    "id": 412,
+    "level": 1,
+    "name": "Path to a Dark Wizard",
+    "desc": "Quest that must be fulfilled to change occupations to a Dark Wizard. Varika speaks of the four seeds representing anger, despair, horror, and lunacy. One who obtains them all may become a Dark Wizard. Then she gives you the seed of despair and asks you to find the rest."
+  },
+  {
+    "t": "quest",
+    "id": 413,
+    "level": 1,
+    "name": "Path to a Shillien Oracle",
+    "desc": "Quest that must be fulfilled to change occupations to a Shilien Oracle. To become a Shilien Oracle, Sorceress Sidra explains that you must acquire the two books written in ancient rune: the 'Garmiel Book' and the 'Andariel Book.' The first step is to visit Sorcerer Talbot in the Village of Gludin, and hear about the way to obtain the Garmiel Book."
+  },
+  {
+    "t": "quest",
+    "id": 414,
+    "level": 1,
+    "name": "Path to an Orc Marauder",
+    "desc": "Quest that must be fulfilled to change occupations to an Orc Marauder. Prefect Karukia says that Orc Marauders must prove that their courage does not fear even death and has absolute loyalty. First, to prove courage, you must destroy the goblins that ruin this land."
+  },
+  {
+    "t": "quest",
+    "id": 415,
+    "level": 1,
+    "name": "Path to a Paagrio Monk",
+    "desc": "To change occupations to Paagrio Monk, you must complete this quest. Gantaki Zu Urutu will explain about the traditional martial arts of the Orcs and say that you must receive a scroll from two Masters to change occupations to a Paagrio Monk. He tells you to first go to Khavatari Rosheek, who is training somewhere on the Immortal Plateau."
+  },
+  {
+    "t": "quest",
+    "id": 416,
+    "level": 1,
+    "name": "Path to an Orc Shaman",
+    "desc": "Quest that must be fulfilled to change occupations to an Orc Shaman. Tataru zu Hestui explains that in order to become an Orc Shaman, one must earn the power to truly govern the spirits, and that the 'language of fire' is needed in order to communicate with the spirits. Also, there are three items needed in preparation to learning the language of fire. You must find the pelt of a kasha bear, husk of a kasha blade spider, and a fiery egg from a scarlet salamander."
+  },
+  {
+    "t": "quest",
+    "id": 417,
+    "level": 1,
+    "name": "Path to a Raider",
+    "desc": "Quest that must be fulfilled to change occupations to a Raider. Collector Pippi of the Dwarven Village encourages all successful Dwarves to become Raiders. However, to become a Raider, one must receive the permission of Master Toma, whose whereabouts are currently unknown.  According to rumor, Master Toma’s younger sister, Trader Mion, may know where he is."
+  },
+  {
+    "t": "quest",
+    "id": 418,
+    "level": 1,
+    "name": "Path to an Artisan",
+    "desc": "Quest that must be fulfilled to change occupations to an Artisan. If you ask the Dwarf Village Blacksmith Silvery, he will tell you that to become an Artisan, you must receive recognition from three Blacksmiths that have been Artisans for a long time. First, complete his task to receive the first certificate."
+  },
+  {
+    "t": "quest",
+    "id": 419,
+    "level": 1,
+    "name": "Get a Pet",
+    "desc": "To receive a pet, you must earn approval from the Pet Manager. Meet Pet Manager Martin in the Village of Gludin, and he will tell you that you must have love and knowledge about animals in order to earn a pet. He first asks you to return to your hometown and eliminate all animal killers."
+  },
+  {
+    "t": "quest",
+    "id": 420,
+    "level": 1,
+    "name": "Little Wing",
+    "desc": "Quest that must be completed in order to obtain a pet hatchling. Visit Pet Manager Cooper and tell him that you wish to raise a hatchling as a pet. He will tell you to meet Sage Cronos of Hunters Village for aid."
+  },
+  {
+    "t": "quest",
+    "id": 420,
+    "level": 2,
+    "name": "Little Wing",
+    "desc": "After getting all the items on the ingredient list given by Sage Cronos, go find Marya in Dion Castle Town and ask her to make a fairy stone for you. Ask Sage Cronos what to do next."
+  },
+  {
+    "t": "quest",
+    "id": 420,
+    "level": 3,
+    "name": "Little Wing",
+    "desc": "Take the completed Elven stone to meet Guard Byron and ask him about fairies."
+  },
+  {
+    "t": "quest",
+    "id": 420,
+    "level": 4,
+    "name": "Little Wing",
+    "desc": "Go to the Fairy Valley and find a fairy who will talk with you."
+  },
+  {
+    "t": "quest",
+    "id": 420,
+    "level": 5,
+    "name": "Little Wing",
+    "desc": "Take the juice of bagot that Fairy Mimyu gave you and go meet the drake or wyrm that she introduced you to."
+  },
+  {
+    "t": "quest",
+    "id": 420,
+    "level": 6,
+    "name": "Little Wing",
+    "desc": "Recover 20 stolen eggs."
+  },
+  {
+    "t": "quest",
+    "id": 420,
+    "level": 7,
+    "name": "Little Wing",
+    "desc": "Take the eggs received as a gift and go find Fairy Mimyu."
+  },
+  {
+    "t": "quest",
+    "id": 501,
+    "level": 1,
+    "name": "Proof of Clan Alliance",
+    "desc": "Quest that must be completed in order to raise clan level to lv. 4. Sir Kristof Rodemai of Giran Castle Town is seeking a clan leader to restore order in the kingdom. Find Sir Rodemai and speak to him. He will say that he cannot join forces with someone whose skills are yet unproven, and recommends you to first attempt Witch Kalis’s test. If you complete her test and return, he promises to give the ‘Proof of Alliance,’ which is needed when expanding the clan’s powers and influences. First, go and seek Witch Kalis near the vicinity of the Ivory Tower."
+  },
+  {
+    "t": "quest",
+    "id": 501,
+    "level": 2,
+    "name": "Proof of Clan Alliance",
+    "desc": "Witch Kalis says she will test whether the clan members will give up their lives for their clan leader and says to prove the faithfulness of three clan members on the altar of sacrifice. If you get three marks of faithfulness, you can pass her test."
+  },
+  {
+    "t": "quest",
+    "id": 501,
+    "level": 3,
+    "name": "Proof of Clan Alliance",
+    "desc": "Witch Kalis says that she is testing the trust of the clan leader in his/her clan members and tells the clan leader to take poison. Before the clan leader loses his/her life, the clan members must all get of the ingredients on the antidote's ingredient list given by Kalis. Of those ingredients, blood of Eva is something that can be obtained only by meeting Witch Athrea."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 1,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "Quest that must be completed in order to raise clan level to lv. 5. Upon meeting Sir Gustaf Athebaldt in the town of Oren, he expresses his desire to aid the young and courageous leaders for the future of the kingdom. He promises to give you the ‘Proof of Expectation,’ which is needed when expanding the clan’s powers and influences should you consent to joining forces with him. Sir Athebaldt asks you to aid him in preparing for the attack against the green dragon Antharas, and tells you to go and meet Marvin in Giran Castle Town."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 2,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "Marvin is working to collect eggs of drakes and wyrms. Follow his instructions to go to Dragon Valley and collect ten eggs each of thunder wyrm, drake, blitz wyrm and mist drake. Blitz wyrm and mist drake are very rare types and cannot be found by ordinary methods. Go meet Dwarven Master Raiders that were sent first to get a clue."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 3,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "This is the quest that must be completed for a clan to increase to level 5. If you meet Gustaf Atebalt of Oren Castle Town, he says that he wants to find lords that are young and overflowing with ambition and give them the strength needed to lead the future kingdom and that if you take his hand, he will give you “Evidence of Great Ambition” that will help in raising the strength of your clan. Sir Atebalt asks you to help in the work being done to prepare for the awakening of the land dragon Antharas and says to go meet Martian of Giran Castle Town."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 4,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "Sir Gustaf Athebaldt instructs you to go meet Dwarven Artisan Balthazar, who he is supporting, and help him in his research. Go to Hunters Village and meet Balthazar."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 5,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "Dwarf Artisan Balthazar says that he is doing research to develop a new golem. He says that you must bring ten each of titan’s powerstone and nebulite crystal, which are required for his research. These ingredients can be obtained from degenerated giants in the Cave of Giants."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 6,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "You have gotten all the ingredients required for Balthazar’s research into golem development. Now go back to Sir Gustaf Athebaldt."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 7,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "Sir Gustaf Athebaldt says that he wants to hold the scepter of judgment in his hand and says to go get that. First go to Aden and meet Sir Eric Rodemai, who is a  follower of Sir Athebaldt."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 8,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "In order for Sir Eric Rodemai to give you a hint on where you can find the scepter of judgment, he says that you must meet Witch Cleo. Follow his instructions and find Witch Cleo who is to the east of Aden."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 9,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "You asked Witch Cleo about the scepter of judgment and all you got in return was a cryptic answer. Go back to Sir Eric Rodemai and ask him about the meaning of the riddle."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 10,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "Sir Eric Rodemai solved the riddle of Witch Cleo for you. Use the clues given by him to get the scepter of judgment."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 11,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "You’ve got the scepter of judgment! Now take this to Sir Gustaf Athebaldt."
+  },
+  {
+    "t": "quest",
+    "id": 503,
+    "level": 12,
+    "name": "Pursuit of Clan Ambition!",
+    "desc": "Are you going to give the scepter of judgment to Sir Gustaf Athebaldt or just talk to him about it?"
+  }
+]

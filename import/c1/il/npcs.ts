@@ -290,42 +290,44 @@ function checkTomaDrop(deps: {
   }[];
   itemById: Map<number, Item>;
 }) {
-  const tomaDropListMap = new Map<
-    number,
-    {
-      itemClassId: number;
-      min: number;
-      max: number;
-      chance: number;
-    }
-  >(deps.tomaDropList.map((item) => [item.itemClassId, item]));
+  // const tomaDropListMap = new Map<
+  //   number,
+  //   {
+  //     itemClassId: number;
+  //     min: number;
+  //     max: number;
+  //     chance: number;
+  //   }
+  // >(deps.tomaDropList.map((item) => [item.itemClassId, item]));
 
-  const filteredItemData = deps.dropList.filter((item) =>
-    tomaDropListMap.has(item.itemId)
-  );
+  // const filteredItemData = deps.dropList.filter((item) =>
+  //   tomaDropListMap.has(item.itemId)
+  // );
 
-  const filteredItemDataMap = new Map<number, NpcDrop>(
-    filteredItemData.map((item) => [item.itemId, item])
-  );
+  // const filteredItemDataMap = new Map<number, NpcDrop>(
+  //   filteredItemData.map((item) => [item.itemId, item])
+  // );
+
+  const drop: NpcDrop[] = [];
 
   deps.tomaDropList.forEach((_item) => {
-    if (!filteredItemDataMap.has(_item.itemClassId)) {
-      const item = deps.itemById.get(_item.itemClassId);
-      if (!item) {
-        console.log(`--------------- нет предмета в базе ${_item.itemClassId}`);
-      } else {
-        const newItem: NpcDrop = {
-          itemId: _item.itemClassId,
-          itemName: item.itemName,
-          countMin: _item.min,
-          countMax: _item.max,
-          chance: _item.chance / 3,
-        };
-        filteredItemData.push(newItem);
-      }
+    // if (!filteredItemDataMap.has(_item.itemClassId)) {
+    const item = deps.itemById.get(_item.itemClassId);
+    if (!item) {
+      console.log(`--------------- нет предмета в базе ${_item.itemClassId}`);
+    } else {
+      const newItem: NpcDrop = {
+        itemId: _item.itemClassId,
+        itemName: item.itemName,
+        countMin: _item.min,
+        countMax: _item.max,
+        chance: _item.chance,
+      };
+      drop.push(newItem);
     }
+    // }
   });
-  return filteredItemData;
+  return drop;
 }
 
 function addDrop(deps: {

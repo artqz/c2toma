@@ -36,13 +36,13 @@ export function calcPAtk(
   LVL: number,
   skillMods: SkillMod[]
 ) {
-  let stat = basePhysicalAttack * LVL_MOD[LVL] * STR_MOD[STR];
+  let stat = round(basePhysicalAttack * LVL_MOD[LVL] * STR_MOD[STR]);
   for (const sm of skillMods) {
     if (sm.value !== 0) {
       continue;
     }
     if (sm.type === "per") {
-      stat += stat.percent(sm.value);
+      stat = stat.percent(sm.value);
     } else {
       stat = stat + sm.value;
     }
@@ -59,7 +59,7 @@ export function calcMAtk(
   let stat = baseMagicAttack * INT_MOD[INT] ** 2 * LVL_MOD[LVL] ** 2;
   for (const sm of skillMods) {
     if (sm.type === "per") {
-      stat += stat.percent(sm.value);
+      stat = stat.percent(sm.value);
     } else {
       stat = stat + sm.value;
     }
@@ -75,13 +75,18 @@ export function calcPDef(
   // не сходится с томой
   // let stat = round((4 + baseDefend) * LVL_MOD[LVL]);
   let stat = baseDefend * LVL_MOD[LVL];
+
   for (const sm of skillMods) {
+    // if (sm.value !== 0) {
+    //   continue;
+    // }
     if (sm.type === "per") {
-      stat += stat.percent(sm.value);
+      stat = stat.percent(sm.value);
     } else {
       stat = stat + sm.value;
     }
   }
+
   return round(stat);
 }
 
@@ -155,11 +160,26 @@ export function getSkillMod(deps: {
       if (skill.effects.length > 0) {
         for (const effect of skill.effects) {
           if (effect.effectName === deps.effectName) {
-            effect.effectName === "p_physical_attack" &&
-              arr.push({
-                type: effect.per ? "per" : "diff",
-                value: effect.value,
-              });
+            // effect.effectName === "p_physical_attack" &&
+            //   arr.push({
+            //     type: effect.per ? "per" : "diff",
+            //     value: effect.value,
+            //   });
+            switch (effect.effectName) {
+              case "p_physical_attack":
+                arr.push({
+                  type: effect.per ? "per" : "diff",
+                  value: effect.value,
+                });
+                break;
+              case "p_physical_defence":
+                arr.push({
+                  type: effect.per ? "per" : "diff",
+                  value: effect.value,
+                });
+              default:
+                break;
+            }
           }
         }
       }

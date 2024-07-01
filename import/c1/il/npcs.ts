@@ -54,24 +54,24 @@ export function generateNpcsIL(deps: {
   }
 
   for (const npcName of npcsNames.values()) {
-    const npcC4 = npcC4ByName.get(npcName.npcName);
-    if (npcC4) {
+    const npcGF = npcGFByName.get(npcName.npcName);
+    if (npcGF) {
       //
-      if (deps.ignoreNpcList.has(npcC4.$[2]) || npcC4.$[2].startsWith("_")) {
+      if (deps.ignoreNpcList.has(npcGF.$[2]) || npcGF.$[2].startsWith("_")) {
         continue;
       }
       //
-      const { id, npc } = addNpc(npcC4, npcName, deps.skills);
+      const { id, npc } = addNpc(npcGF, npcName, deps.skills);
       npcs.set(id, npc);
     } else {
-      const npcGF = npcGFByName.get(npcName.npcName);
-      if (npcGF) {
+      const npcC4 = npcC4ByName.get(npcName.npcName);
+      if (npcC4) {
         //
-        if (deps.ignoreNpcList.has(npcGF.$[2]) || npcGF.$[2].startsWith("_")) {
+        if (deps.ignoreNpcList.has(npcC4.$[2]) || npcC4.$[2].startsWith("_")) {
           continue;
         }
         //
-        const { id, npc } = addNpc(npcGF, npcName, deps.skills);
+        const { id, npc } = addNpc(npcC4, npcName, deps.skills);
         npcs.set(id, npc);
       }
     }

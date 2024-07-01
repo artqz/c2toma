@@ -34,7 +34,6 @@ export function loadNpcNamesC4(): NpcNameEntry[] {
 
   let data = EntryGF.array().parse(json);
 
-
   return data.map((x) => {
     const itemName: NpcNameEntry = {
       id: parseInt(x.id),
@@ -62,3 +61,12 @@ function getNickColor(param: string) {
   }
   return nickColor;
 }
+
+// export function loadNpcAggrC4(): NpcNameEntry[] {
+//   const json = parseCsv(Fs.readFileSync("datapack/c4/npcname-e.txt", "utf8"), {
+//     delimiter: "\t",
+//     relaxQuotes: true,
+//     columns: true,
+//     bom: true,
+//   });
+// }

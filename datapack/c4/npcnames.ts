@@ -24,6 +24,8 @@ const EntryGF = z.object({
   "rgb[2]": z.string(),
 });
 
+type EntryGF = z.infer<typeof EntryGF>;
+
 export function loadNpcNamesC4(): NpcNameEntry[] {
   const json = parseCsv(Fs.readFileSync("datapack/c4/npcname-e.txt", "utf8"), {
     delimiter: "\t",
@@ -62,11 +64,32 @@ function getNickColor(param: string) {
   return nickColor;
 }
 
-// export function loadNpcAggrC4(): NpcNameEntry[] {
-//   const json = parseCsv(Fs.readFileSync("datapack/c4/npcname-e.txt", "utf8"), {
-//     delimiter: "\t",
-//     relaxQuotes: true,
-//     columns: true,
-//     bom: true,
-//   });
-// }
+export function loadNpcAggrC4(): EntryGF[] {
+  const json = parseCsv(
+    Fs.readFileSync("datapack/c4/npcname-aggr.txt", "utf8"),
+    {
+      delimiter: "\t",
+      relaxQuotes: true,
+      columns: true,
+      bom: true,
+    }
+  );
+
+  let data = EntryGF.array().parse(json);
+
+  return data.map((n) => {
+    return {
+      ...n,
+      description: cleanStr(n.description)
+        .split(" ")
+        .filter(
+          (f) =>
+            f !== "(S)" &&
+            f !== "x2" &&
+            parseInt(f) % 1 !== 0 &&
+            !/^x\d+$/.test(f)
+        )
+        .join(", "),
+    };
+  });
+}

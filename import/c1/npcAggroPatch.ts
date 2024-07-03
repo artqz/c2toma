@@ -8,46 +8,87 @@ export function generateAgroPatch(deps: {
 }) {
   const arr: {
     id: number;
+    nameNpc: string;
+    title: string;
     level: number;
-    aggr: boolean | undefined;
+    ai: string;
+    type: "aggressive" | "night" | "passive";
     skills: string[];
   }[] = [];
 
   for (const npc of deps.npcs.values()) {
-    const ai = deps.ais.get(npc.ai);
-    if (ai) {
-      arr.push({
-        id: npc.id,
-        level: npc.level ?? 1,
-        aggr: isNpcAiAggressive(ai.name),
-        skills: getSkills({ ...deps, npcSkills: npc.skillList }),
-      });
+    // const ai = deps.ais.get(npc.ai);
+    // if (ai) {
+    arr.push({
+      id: npc.id,
+      nameNpc: npc.npcName,
+      title: npc.nick.en,
+      level: npc.level ?? 1,
+      ai: npc.ai,
+      type: "passive",
+      skills: getSkills({ ...deps, npcSkills: npc.skillList }),
+    });
+    // }
+  }
+
+  for (const npc of arr) {
+    function applyAi(ai: string) {
+      const data = deps.ais.get(ai);
+
+      if (data) {
+        applyAi(data.super);
+      }
+
+      const agro = isNpcAiAggressive(ai);
+      if (agro != null) {
+        npc.type = agro;
+      }
+    }
+    applyAi(npc.ai);
+  }
+
+  for (const npc of arr) {
+    if (npc.nameNpc.includes("_bat") || npc.nameNpc.includes("bat_")) {
+      npc.type = "night";
     }
   }
-  return arr;
+
+  return arr.map((n) => {
+    return {
+      id: n.id,
+      type: n.type,
+      title: `${n.level} ${n.title} ${n.skills.join(" ")}`.trim(),
+    };
+  });
 }
 
-export function isNpcAiAggressive(ai: string) {
+export function isNpcAiAggressive(
+  ai: string
+): "aggressive" | "night" | "passive" {
+  console.log(ai);
+
   if (
     ai.startsWith("warrior_pa_") ||
     ai.startsWith("warrior_passive") ||
     ai.startsWith("wizard_pa_")
   ) {
-    return false;
+    return "passive";
   } else if (
     ai.startsWith("party_leader_ag_") ||
     ai.startsWith("warrior_ag_") ||
     ai.startsWith("warrior_aggressive") ||
     ai.startsWith("wizard_ag_")
   ) {
-    return true;
+    return "aggressive";
   }
   switch (ai) {
     case "party_private":
     case "warrior_flee":
-      return false;
+      return "passive";
     case "party_leader_aggressive":
-      return true;
+      return "aggressive";
+    default:
+      return "passive";
   }
 }
 
@@ -59,6 +100,10 @@ function getSkills(deps: { skills: Map<string, Skill>; npcSkills: string[] }) {
       if (skill.operateType === "A1" || skill.operateType === "A2") {
         const newNameForSkill = getNewSkillName(skill.skillName);
         newNameForSkill && set.add(newNameForSkill);
+      }
+      if (skill.operateType === "P") {
+        const hpSkill = hpSkillsOld.get(skill.id);
+        hpSkill && set.add(hpSkill);
       }
     }
   }
@@ -131,5 +176,17 @@ function getNewSkillName(name: string) {
   if (name.toLowerCase().includes("paralyze")) {
     return "Paralyze";
   }
-  return name;
+  // return name;
 }
+
+const hpSkillsOld = new Map([
+  [4303, "x2"],
+  [4304, "x3"],
+  [4305, "x4"],
+  [4306, "x5"],
+  [4307, "x6"],
+  [4309, "x7"],
+  [4309, "x8"],
+  [4310, "x9"],
+  [4311, "x1/2"],
+]);

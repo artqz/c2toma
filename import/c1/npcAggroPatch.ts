@@ -65,8 +65,6 @@ export function generateAgroPatch(deps: {
 export function isNpcAiAggressive(
   ai: string
 ): "aggressive" | "night" | "passive" {
-  console.log(ai);
-
   if (
     ai.startsWith("warrior_pa_") ||
     ai.startsWith("warrior_passive") ||

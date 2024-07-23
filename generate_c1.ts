@@ -17,7 +17,7 @@ import { loadSkillCard } from "./import/c1/skillCard";
 import { loadZones } from "./import/c1/zones";
 import { generateAgroPatch } from "./import/c1/npcAggroPatch";
 
-const chronicle: Chronicle = "c4";
+const chronicle: Chronicle = "il";
 
 function init() {
   createDir(`result/data/${chronicle}`);

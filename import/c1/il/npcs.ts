@@ -119,7 +119,10 @@ function addNpc(
     exp: npcData.level ** 2 * npcData.acquire_exp_rate,
     sp: npcData.acquire_sp,
     magicUseSpeedModify: 0,
-    orgHp: calcHP(npcData.org_hp, npcData.con),
+    orgHp: calcHP(
+      getMaxHP(npcData.org_hp, npcData.skill_list.$ ?? []),
+      npcData.con
+    ),
     orgHpRegen: calcHPRegen(npcData.org_hp_regen, npcData.con, npcData.level), // нет данных у томы
     orgMp: calcMP(npcData.org_mp, npcData.men),
     orgMpRegen: calcMPRegen(npcData.org_mp_regen, npcData.men, npcData.level),
@@ -349,9 +352,9 @@ function addDrop(deps: {
             const item = deps.itemByName.get(itemName.replace("_low", ""));
 
             if (!item) {
-              console.log(
-                `Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`
-              );
+              // console.log(
+              //   `Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`
+              // );
             } else {
               deps.npc.dropList.push({
                 itemId: item.id,
@@ -427,9 +430,9 @@ function addDropHerbs(deps: {
             const item = deps.itemByName.get(itemName);
 
             if (!item) {
-              console.log(
-                `Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`
-              );
+              // console.log(
+              //   `Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`
+              // );
             } else {
               deps.npc.herbList.push({
                 itemId: item.id,
@@ -451,17 +454,17 @@ function addStats(deps: {
   skills: Map<string, Skill>;
 }) {
   for (const npc of deps.npcs.values()) {
-    npc.npcName === "zombie_warrior" &&
-      console.log(
-        npc.basePhysicalAttack,
-        npc.str,
-        npc.level,
-        getSkillMod({
-          ...deps,
-          skillList: npc.skillList,
-          effectName: "p_physical_attack",
-        })
-      );
+    // npc.npcName === "zombie_warrior" &&
+    //   console.log(
+    //     npc.basePhysicalAttack,
+    //     npc.str,
+    //     npc.level,
+    //     getSkillMod({
+    //       ...deps,
+    //       skillList: npc.skillList,
+    //       effectName: "p_physical_attack",
+    //     })
+    //   );
     npc.pAtk = calcPAtk(
       npc.basePhysicalAttack ?? 0,
       npc.str,
@@ -509,3 +512,31 @@ function addStats(deps: {
     npc.evasion = calcEvasion(npc.dex, npc.level ?? 0);
   }
 }
+function getMaxHP(orgHp: number, skillList: string[]) {
+  let multiplier = 1;
+
+  for (const skill of skillList) {
+    const m = multiplierBySkill.get(skill);
+    if (m) {
+      multiplier = m;
+    }
+  }
+
+  return orgHp * multiplier;
+}
+
+const multiplierBySkill = new Map([
+  ["@s_npc_prop_hp_lv_mq", 0.25],
+  ["@s_npc_prop_hp_lv_mh", 0.5],
+  ["@s_npc_prop_hp_lv_m2", 2],
+  ["@s_npc_prop_hp_lv_m3", 3],
+  ["@s_npc_prop_hp_lv_m4", 4],
+  ["@s_npc_prop_hp_lv_m5", 5],
+  ["@s_npc_prop_hp_lv_m6", 6],
+  ["@s_npc_prop_hp_lv_m7", 7],
+  ["@s_npc_prop_hp_lv_m8", 8],
+  ["@s_npc_prop_hp_lv_m9", 9],
+  ["@s_npc_prop_hp_lv_m10", 10],
+  ["@s_npc_prop_hp_lv_m11", 11],
+  ["@s_npc_prop_hp_lv_m12", 12],
+]);

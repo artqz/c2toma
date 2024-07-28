@@ -203,7 +203,7 @@ function loadItemRuNames(deps: {
           ...item,
           addName: { ...item.addName, ru: itemName.add_name.ru },
           name: { ...item.name, ru: itemName.name.ru },
-          desc: {...item.desc, ru: item.desc.en }
+          desc: { ...item.desc, ru: item.desc.en },
         });
       }
     }
@@ -224,17 +224,19 @@ function loadItemEnchantBonuses(deps: {
         (item.crystalType !== "none" && item.type === "armor") ||
         (item.crystalType !== "none" && item.type === "accessary")
       ) {
-        item.enchantBonus.push({
-          level: i,
-          pAtk: calcWeaponAtk({ chronicle: deps.chronicle, level: i, item })
-            .pAtk,
-          mAtk: calcWeaponAtk({ chronicle: deps.chronicle, level: i, item })
-            .mAtk,
-          pDef: calcArmorDef({ level: i, item }).pDef,
-          mDef: calcArmorDef({ level: i, item }).mDef,
-          crystals: calcСrystals({ level: i, item }),
-          chance: calcChance({ level: i, item, chronicle: deps.chronicle}),
-        });
+        if (!item.itemName.includes("_bytime")) {
+          item.enchantBonus.push({
+            level: i,
+            pAtk: calcWeaponAtk({ chronicle: deps.chronicle, level: i, item })
+              .pAtk,
+            mAtk: calcWeaponAtk({ chronicle: deps.chronicle, level: i, item })
+              .mAtk,
+            pDef: calcArmorDef({ level: i, item }).pDef,
+            mDef: calcArmorDef({ level: i, item }).mDef,
+            crystals: calcСrystals({ level: i, item }),
+            chance: calcChance({ level: i, item, chronicle: deps.chronicle }),
+          });
+        }
       }
     }
   }

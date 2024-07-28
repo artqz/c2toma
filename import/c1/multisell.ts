@@ -4,7 +4,7 @@ import { loadMultisellDataGF } from "../../datapack/gf/miltisell";
 import { loadMultisellDataIL } from "../../datapack/il/miltisell";
 import { Item, Multisell, Npc, SellList } from "../../result/types";
 import { Chronicle } from "../types";
-import { fixC5Multisell } from './c5/multisell';
+import { fixC5Multisell } from "./c5/multisell";
 
 export function loadMultisell(deps: {
   chronicle: Chronicle;
@@ -12,7 +12,7 @@ export function loadMultisell(deps: {
   npcs: Map<number, Npc>;
 }) {
   let multisell = loadMultisellData(deps);
-  handFix({...deps, multisell});
+  handFix({ ...deps, multisell });
 
   console.log("Multisell loaded.");
 
@@ -37,7 +37,7 @@ function loadMultisellData(deps: {
       multisellData = loadMultisellDataC4();
       break;
     case "il":
-      multisellData = loadMultisellDataIL();
+      multisellData = loadMultisellDataGF();
       break;
     case "gf":
       multisellData = loadMultisellDataGF();
@@ -177,57 +177,155 @@ function getNpcNamesByMultisell(multisellName: string) {
         { npcName: "fisher_linneaus", show: true },
         { npcName: "fisher_hilgendorf", show: true },
         { npcName: "fisher_klaw", show: true },
-        { npcName: "fisher_platis", show: true }
-    ];
-    case "ssq_exchange_for_a": 
-    case "ssq_exchange_for_b": 
-    case "ssq_weapon_yupgrade": 
-    case "ssq_weapon_upgrade": 
-    case "ssq_acce_exchange_for_a": 
-    case "ssq_sealexchange_for_a": 
-    case "ssq_acce_exchange_for_s": 
-    case "ssq_exchange_for_s": 
-    case "ssq_dual_for_s": 
-    case "ssq_weapon_variation_s": 
-    case "ssq_dualweapon_yupgrade": 
-    case "ssq_sealexchange_for_b":      
+        { npcName: "fisher_platis", show: true },
+      ];
+    case "ssq_exchange_for_a":
+    case "ssq_exchange_for_b":
+    case "ssq_weapon_yupgrade":
+    case "ssq_weapon_upgrade":
+    case "ssq_acce_exchange_for_a":
+    case "ssq_sealexchange_for_a":
+    case "ssq_acce_exchange_for_s":
+    case "ssq_exchange_for_s":
+    case "ssq_dual_for_s":
+    case "ssq_weapon_variation_s":
+    case "ssq_dualweapon_yupgrade":
+    case "ssq_sealexchange_for_b":
     case "ssq_dual_for_a":
     case "ssq_weapon_variation_a":
-      return [{npcName: "blacksmith_of_mammon", show: false}]
+      return [{ npcName: "blacksmith_of_mammon", show: false }];
     case "ssq_merchant_etcsell":
-      return [{npcName: "merchant_of_mammon", show: true}]
+      return [{ npcName: "merchant_of_mammon", show: true }];
     case "ssq_priest":
       return [
-        {npcName: "dusk_priestessess_gludin", show: true},
-        {npcName: "dusk_priestessess_godard", show: true},
-        {npcName: "dusk_priestessess_rune", show: true},
-        {npcName: "dusk_priestess_gludio", show: true},
-        {npcName: "dusk_priestess_dion", show: true},
-        {npcName: "dusk_priestess_giran", show: true},
-        {npcName: "dusk_priestess_heiness", show: true},
-        {npcName: "dusk_priestess_oren", show: true},
-        {npcName: "dusk_priestess_aden", show: true},
-        {npcName: "dusk_priestess_hunter", show: true},
-        {npcName: "dawn_priest_gludin", show: true},
-        {npcName: "dawn_priest_godard", show: true},
-        {npcName: "dawn_priest_rune", show: true},
-        {npcName: "dawn_priest_gludio", show: true},
-        {npcName: "dawn_priest_dion", show: true},
-        {npcName: "dawn_priest_giran", show: true},
-        {npcName: "dawn_priest_heiness", show: true},
-        {npcName: "dawn_priest_oren", show: true},
-        {npcName: "dawn_priest_aden", show: true},
-        {npcName: "dawn_priest_hunter", show: true},
-      ]
+        { npcName: "dusk_priestessess_gludin", show: true },
+        { npcName: "dusk_priestessess_godard", show: true },
+        { npcName: "dusk_priestessess_rune", show: true },
+        { npcName: "dusk_priestess_gludio", show: true },
+        { npcName: "dusk_priestess_dion", show: true },
+        { npcName: "dusk_priestess_giran", show: true },
+        { npcName: "dusk_priestess_heiness", show: true },
+        { npcName: "dusk_priestess_oren", show: true },
+        { npcName: "dusk_priestess_aden", show: true },
+        { npcName: "dusk_priestess_hunter", show: true },
+        { npcName: "dawn_priest_gludin", show: true },
+        { npcName: "dawn_priest_godard", show: true },
+        { npcName: "dawn_priest_rune", show: true },
+        { npcName: "dawn_priest_gludio", show: true },
+        { npcName: "dawn_priest_dion", show: true },
+        { npcName: "dawn_priest_giran", show: true },
+        { npcName: "dawn_priest_heiness", show: true },
+        { npcName: "dawn_priest_oren", show: true },
+        { npcName: "dawn_priest_aden", show: true },
+        { npcName: "dawn_priest_hunter", show: true },
+      ];
+    case "bytime3":
+      return [
+        { npcName: "stany", show: true },
+        { npcName: "grabner", show: true },
+      ];
+    case "quest_bytime":
+      return [
+        // GM
+        { npcName: "kai", show: true },
+        { npcName: "brecson", show: true },
+        { npcName: "master_rains", show: true },
+        { npcName: "master_xenos", show: true },
+        { npcName: "master_tobias", show: true },
+        { npcName: "grandmaster_ramos", show: true },
+        { npcName: "grandmaster_tronix", show: true },
+        { npcName: "grandmaster_angus", show: true },
+        { npcName: "grandmaster_siria", show: true },
+        { npcName: "grandmaster_medown", show: true },
+        { npcName: "grandmaster_sedrick", show: true },
+        { npcName: "grandmaster_oltlin", show: true },
+        { npcName: "grandmaster_marcus", show: true },
+        { npcName: "grandmaster_xairakin", show: true },
+        { npcName: "grandmaster_bernhard", show: true },
+        { npcName: "grandmaster_samael", show: true },
+        { npcName: "grandmaster_siegmund", show: true },
+        { npcName: "grandmaster_andromeda", show: true },
+        { npcName: "grandmaster_hexter", show: true },
+        { npcName: "grandmaster_drizit", show: true },
+        { npcName: "grandmaster_shull", show: true },
+        { npcName: "grandmaster_helminter", show: true },
+        { npcName: "pabris", show: true },
+        { npcName: "hannavalt", show: true },
+        // HP
+        { npcName: "levian", show: true },
+        { npcName: "maximilian", show: true },
+        { npcName: "hollin", show: true },
+        { npcName: "bishop_raimund", show: true },
+        { npcName: "highpriest_orven", show: true },
+        { npcName: "highpriest_squillari", show: true },
+        { npcName: "highpriest_gregor", show: true },
+        { npcName: "highpriest_innocentin", show: true },
+        { npcName: "highpriest_baorl", show: true },
+        { npcName: "highpriest_mattew", show: true },
+        { npcName: "sylvain", show: true },
+        // Head Blacksmith
+        { npcName: "head_blacksmith_tapoy", show: true },
+        { npcName: "head_blacksmith_mendio", show: true },
+        { npcName: "head_blacksmith_kusto", show: true },
+        { npcName: "head_blacksmith_opix", show: true },
+        { npcName: "head_blacksmith_flutter", show: true },
+        { npcName: "head_blacksmith_vergara", show: true },
+        { npcName: "head_blacksmith_ferris", show: true },
+        { npcName: "head_blacksmith_roman", show: true },
+        { npcName: "head_blacksmith_noel", show: true },
+        { npcName: "head_blacksmith_lombert", show: true },
+        { npcName: "head_blacksmith_newyear", show: true },
+        { npcName: "head_blacksmith_boillin", show: true },
+        // Warehouse Chief
+        { npcName: "warehouse_chief_mona", show: true },
+        { npcName: "warehouse_chief_donal", show: true },
+        { npcName: "warehouse_chief_older", show: true },
+        { npcName: "warehouse_chief_moke", show: true },
+        { npcName: "warehouse_chief_rikadio", show: true },
+        { npcName: "warehouse_chief_gesto", show: true },
+        { npcName: "warehouse_chief_ranspo", show: true },
+        { npcName: "warehouse_chief_croop", show: true },
+        { npcName: "warehouse_chief_baxt", show: true },
+        { npcName: "warehouse_chief_klump", show: true },
+        { npcName: "warehouse_chief_natools", show: true },
+        { npcName: "warehouse_chief_yaseni", show: true },
+        // High Prefect
+        { npcName: "high_prefect_finker", show: true },
+        { npcName: "high_prefect_aklan", show: true },
+        { npcName: "high_prefect_lambac", show: true },
+        { npcName: "high_prefect_shaka", show: true },
+        { npcName: "high_prefect_osborn", show: true },
+        { npcName: "high_prefect_drikus", show: true },
+        { npcName: "high_prefect_cional", show: true },
+        { npcName: "high_prefect_penatus", show: true },
+        { npcName: "high_prefect_karia", show: true },
+        { npcName: "high_prefect_garvarentz", show: true },
+        { npcName: "high_prefect_ladanza", show: true },
+        { npcName: "high_prefect_tushku", show: true },
+        // Grand Magister
+        { npcName: "jurek", show: true },
+        { npcName: "biralri", show: true },
+        { npcName: "fairen", show: true },
+        { npcName: "yan", show: true },
+        { npcName: "grandmagister_scraide", show: true },
+        { npcName: "grandmagister_drikiyan", show: true },
+        { npcName: "grandmagister_valdis", show: true },
+        { npcName: "grandmagister_tifaren", show: true },
+        { npcName: "grandmagister_halaster", show: true },
+        { npcName: "grandmagister_havrier", show: true },
+        { npcName: "grandmagister_celes", show: true },
+      ];
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];
   }
 }
 
-
-function handFix(deps: {chronicle: Chronicle, multisell: Map<number, Multisell>}) {
+function handFix(deps: {
+  chronicle: Chronicle;
+  multisell: Map<number, Multisell>;
+}) {
   if (deps.chronicle === "c5") {
-    fixC5Multisell(deps.multisell)
+    fixC5Multisell(deps.multisell);
   }
 }

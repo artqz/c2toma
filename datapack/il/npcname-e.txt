@@ -515,7 +515,7 @@
 20571	a,Tarlk Bugbear Warrior\0	a,	9C	E8	A9	-1
 20572	a,Tarlk Bugbear High Warrior\0	a,	9C	E8	A9	-1
 20573	a,Tarlk Basilisk\0	a,	9C	E8	A9	-1
-20574	a,Elder Tarlk Basilisk\0	a,	9C	E8	A9	-1
+20574	a,Elder Tarlk Basilisk \0	a,	9C	E8	A9	-1
 20575	a,Oel Mahum Warrior\0	a,	9C	E8	A9	-1
 20576	a,Oel Mahum Witch Doctor\0	a,	9C	E8	A9	-1
 20577	a,Leto Lizardman\0	a,	9C	E8	A9	-1
@@ -619,7 +619,7 @@
 20675	a,Tairim\0	a,	9C	E8	A9	-1
 20676	a,Judge of Marsh\0	a,	9C	E8	A9	-1
 20677	a,Tulben\0	a,	9C	E8	A9	-1
-20678	a,Punishment of Undead\0	a,	9C	E8	A9	-1
+20678	a,Tortured Undead\0	a,	9C	E8	A9	-1
 20679	a,Marsh Stalker\0	a,	9C	E8	A9	-1
 20680	a,Marsh Drake\0	a,	9C	E8	A9	-1
 20681	a,Vanor Silenos\0	a,	9C	E8	A9	-1
@@ -786,11 +786,11 @@
 20951	a,Pobby's Maid\0	a,	9C	E8	A9	-1
 20952	a,Pobby Escort\0	a,	9C	E8	A9	-1
 20953	a,Pobby\0	a,	9C	E8	A9	-1
-20954	a,Hungry Corpse\0	a,	9C	E8	A9	-1
-20955	a,Ghost War\0	a,	9C	E8	A9	-1
+20954	a,Hungered Corpse\0	a,	9C	E8	A9	-1
+20955	a,Ghostly Warrior\0	a,	9C	E8	A9	-1
 20956	a,Past Knight\0	a,	9C	E8	A9	-1
 20957	a,Nihil Invader\0	a,	9C	E8	A9	-1
-20958	a,Death Blade\0	a,	9C	E8	A9	-1
+20958	a,Death Agent\0	a,	9C	E8	A9	-1
 20959	a,Dark Guard\0	a,	9C	E8	A9	-1
 20960	a,Bloody Ghost\0	a,	9C	E8	A9	-1
 20961	a,Bloody Knight\0	a,	9C	E8	A9	-1
@@ -809,9 +809,9 @@
 20974	a,Spiteful Soul Leader\0	a,	9C	E8	A9	-1
 20975	a,Spiteful Soul Wizard\0	a,	9C	E8	A9	-1
 20976	a,Spiteful Soul Fighter\0	a,	9C	E8	A9	-1
-20977	a,Elmo-Aden's Lady\0	a,	9C	E8	A9	-1
-20978	a,Elmo-Aden's Archer Escort\0	a,	9C	E8	A9	-1
-20979	a,Elmo-Aden's Maid\0	a,	9C	E8	A9	-1
+20977	a,Elmoradan's Lady\0	a,	9C	E8	A9	-1
+20978	a,Elmoradan's Archer Escort\0	a,	9C	E8	A9	-1
+20979	a,Elmoradan's Maid\0	a,	9C	E8	A9	-1
 20980	a,Hallate's Follower Mul\0	a,	9C	E8	A9	-1
 20981	a,Mul's Wizard\0	a,	9C	E8	A9	-1
 20982	a,Mul's Knight\0	a,	9C	E8	A9	-1
@@ -830,7 +830,7 @@
 20995	a,Garden Guard\0	a,	9C	E8	A9	-1
 20996	a,Spiteful Ghost of Ruins\0	a,	9C	E8	A9	-1
 20997	a,Soldier of Grief\0	a,	9C	E8	A9	-1
-20998	a,Cruel Punishment\0	a,	9C	E8	A9	-1
+20998	a,Cruel Punisher\0	a,	9C	E8	A9	-1
 20999	a,Roving Soul\0	a,	9C	E8	A9	-1
 21000	a,Soul of Ruins\0	a,	9C	E8	A9	-1
 21001	a,Wretched Archer\0	a,	9C	E8	A9	-1
@@ -841,7 +841,7 @@
 21006	a,Doom Servant\0	a,	9C	E8	A9	-1
 21007	a,Doom Guard\0	a,	9C	E8	A9	-1
 21008	a,Doom Archer\0	a,	9C	E8	A9	-1
-21009	a,Doom Trooper\0	a,	9C	E8	A9	-1
+21009	a,Doom Trooper \0	a,	9C	E8	A9	-1
 21010	a,Doom Warrior\0	a,	9C	E8	A9	-1
 21011	a,Ol Mahum Van Grunt\0	a,	9C	E8	A9	-1
 21012	a,Magical Eye\0	a,	9C	E8	A9	-1
@@ -904,7 +904,7 @@
 21093	a,Ratman Sub Chieftain\0	a,	9C	E8	A9	-1
 21094	a,Ratman Chieftain\0	a,	9C	E8	A9	-1
 21095	a,Giant Poison Bee\0	a,	9C	E8	A9	-1
-21096	a,Cloudy Beast\0	a,	9C	E8	A9	-1
+21096	a,Cloudy Beast \0	a,	9C	E8	A9	-1
 21097	a,Young Araneid\0	a,	9C	E8	A9	-1
 21098	a,Plain Grizzly\0	a,	9C	E8	A9	-1
 21099	a,Cloudy Beast Turen\0	a,	9C	E8	A9	-1
@@ -1138,7 +1138,7 @@
 21327	a,Ketra Orc Raider\0	a,	9C	E8	A9	-1
 21328	a,Ketra Orc Scout\0	a,	9C	E8	A9	-1
 21329	a,Ketra Orc Shaman\0	a,	9C	E8	A9	-1
-21330	a,Grazing Kookaburra\0	a,	9C	E8	A9	-1
+21330	a,Grazing Buffalo\0	a,	9C	E8	A9	-1
 21331	a,Ketra Orc Warrior\0	a,	9C	E8	A9	-1
 21332	a,Ketra Orc Lieutenant\0	a,	9C	E8	A9	-1
 21333	a,Grazing Windsus\0	a,	9C	E8	A9	-1
@@ -1242,7 +1242,7 @@
 21431	a,Arimanes\0	a,	9C	E8	A9	-1
 21432	a,Chakram Beetle\0	a,	9C	E8	A9	-1
 21433	a,Jamadar Beetle\0	a,	9C	E8	A9	-1
-21434	a,Seer of Blood\0	a,	9C	E8	A9	-1
+21434	a,Seer of Blood \0	a,	9C	E8	A9	-1
 21435	a,Guide of Offering\0	a,	9C	E8	A9	-1
 21436	a,Leader of Offering\0	a,	9C	E8	A9	-1
 21437	a,Offering Bug\0	a,	9C	E8	A9	-1
@@ -1749,9 +1749,9 @@
 22109	a,Male Spiked Stakato\0	a,	9C	E8	A9	-1
 22110	a,Male Spiked Stakato\0	a,	9C	E8	A9	-1
 22111	a,Spiked Stakato Sorcerer\0	a,	9C	E8	A9	-1
-22112	a,Cannibalistic Stakato Follower\0	a,	9C	E8	A9	-1
+22112	a,Cannibalistic Stakato Follower \0	a,	9C	E8	A9	-1
 22113	a,Cannibalistic Stakato Leader\0	a,	9C	E8	A9	-1
-22114	a,Cannibalistic Stakato Leader\0	a,	9C	E8	A9	-1
+22114	a,Cannibalistic Stakato Leader \0	a,	9C	E8	A9	-1
 22115	a,Spiked Stakato Soldier\0	a,	9C	E8	A9	-1
 22116	a,Spiked Stakato Drone\0	a,	9C	E8	A9	-1
 22117	a,Spiked Stakato Captain\0	a,	9C	E8	A9	-1
@@ -2253,7 +2253,7 @@
 25404	a,Corsair Captain Kylon\0	a,Raid Boss\0	3F	8B	FE	-1
 25405	a,Kylon's Pirate\0	a,Raid Fighter\0	3F	8B	FE	-1
 25406	a,Kylon's Mate\0	a,Raid Fighter\0	3F	8B	FE	-1
-25407	a,Lord Ishka\0	a,Raid Boss\0	3F	8B	FE	-1
+25407	a,Lord Ishka \0	a,Raid Boss\0	3F	8B	FE	-1
 25408	a,Ishka's Elite Officer\0	a,Raid Fighter\0	3F	8B	FE	-1
 25409	a,Ishka's Elite Soldier\0	a,Raid Fighter\0	3F	8B	FE	-1
 25410	a,Road Scavenger Leader\0	a,Raid Boss\0	3F	8B	FE	-1
@@ -2434,7 +2434,7 @@
 29062	a,High Priestess van Halter\0	a,Raid Boss\0	3F	8B	FE	-1
 29063	a,Andreas' Acolyte\0	a,Raid Fighter\0	3F	8B	FE	-1
 29064	a,Andreas' Acolyte\0	a,Raid Fighter\0	3F	8B	FE	-1
-29065	a,Siren\0	a,Sealed Evil Power\0	3F	8B	FE	-1
+29065	a,Sailren\0	a,Sealed Evil Power\0	3F	8B	FE	-1
 29066	a,Antharas\0	a,	3F	8B	FE	-1
 29067	a,Antharas\0	a,	3F	8B	FE	-1
 29068	a,Antharas\0	a,	3F	8B	FE	-1
@@ -2812,8 +2812,8 @@
 18342	a,Gremlin\0	a,	9C	E8	A9	-1
 18343	a,Gatekeeper Zombie\0	a,	9C	E8	A9	-1
 18344	a,Ancient Egg\0	a,	9C	E8	A9	-1
-18345	a,Arachnoid\0	a,	9C	E8	A9	-1
-18346	a,Arachnoid\0	a,	9C	E8	A9	-1
+18345	a,Sprigant\0	a,	9C	E8	A9	-1
+18346	a,Sprigant\0	a,	9C	E8	A9	-1
 27001	a,Orc Sniper\0	a,	9C	E8	A9	-1
 27002	a,Orc Fighter\0	a,	9C	E8	A9	-1
 27003	a,Spirit Of Mirrors\0	a,Quest Monster\0	0	80	FF	-1
@@ -2831,7 +2831,7 @@
 27021	a,Kirunak\0	a,Quest Monster\0	0	80	FF	-1
 27022	a,Merkenis\0	a,Quest Monster\0	0	80	FF	-1
 27024	a,Undead Priest\0	a,Quest Monster\0	0	80	FF	-1
-27029	a,phantom salamander\0	a,Quest Monster\0	0	80	FF	-1
+27029	a,Phantom Salamander\0	a,Quest Monster\0	0	80	FF	-1
 27030	a,Water Seer\0	a,Quest Monster\0	0	80	FF	-1
 27031	a,Ol Mahum Sentry\0	a,Quest Monster\0	0	80	FF	-1
 27032	a,Lizardman Warrior\0	a,Quest Monster\0	0	80	FF	-1
@@ -3062,10 +3062,10 @@
 27271	a,Chimera Golem\0	a,Quest Monster\0	0	80	FF	-1
 27272	a,Hallate's Dancer Lillian\0	a,Quest Monster\0	0	80	FF	-1
 27273	a,Assassin Pezel\0	a,Quest Monster\0	0	80	FF	-1
-27274	a,Fallen angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
-27275	a,Fallen angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
-27276	a,Fallen angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
-27277	a,Fallen angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
+27274	a,Fallen Angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
+27275	a,Fallen Angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
+27276	a,Fallen Angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
+27277	a,Fallen Angel Tanakia\0	a,Quest Monster\0	0	80	FF	-1
 27278	a,Shadow of Beleth\0	a,Quest Monster\0	0	80	FF	-1
 27279	a,Cursed Kesadein\0	a,Quest Monster\0	0	80	FF	-1
 27280	a,Fallen Angel Narcissus\0	a,Quest Monster\0	0	80	FF	-1
@@ -3630,7 +3630,7 @@
 30688	a,Duning\0	a,Blacksmith\0	9C	E8	A9	-1
 30689	a,Siria\0	a,Grand Master\0	9C	E8	A9	-1
 30690	a,Luther\0	a,Master\0	9C	E8	A9	-1
-30691	a,Aren Atebalt\0	a,Master\0	9C	E8	A9	-1
+30691	a,Aren Athebalt\0	a,Master\0	9C	E8	A9	-1
 30692	a,Stedmiel\0	a,Master\0	9C	E8	A9	-1
 30693	a,Queenien\0	a,Master\0	9C	E8	A9	-1
 30694	a,Scraide\0	a,Grand Magister\0	9C	E8	A9	-1
@@ -4066,7 +4066,7 @@
 31224	a,Event Gatekeeper\0	a,	9C	E8	A9	-1
 31225	a,Arena Manager\0	a,	9C	E8	A9	-1
 31226	a,Arena Director\0	a,	9C	E8	A9	-1
-31227	a,Sprockets the Cat\0	a,Event Manager\0	9C	E8	A9	-1
+31227	a,Orion the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31228	a,Roy the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31229	a,Winnie the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31230	a,Louie the Cat\0	a,Event Manager\0	9C	E8	A9	-1
@@ -4094,7 +4094,7 @@
 31252	a,Orator of Revelations\0	a,	9C	E8	A9	-1
 31253	a,Orator of Revelations\0	a,	9C	E8	A9	-1
 31254	a,Orator of Revelations\0	a,	9C	E8	A9	-1
-31255	a,Buzz the Cat\0	a,Event Manager\0	9C	E8	A9	-1
+31255	a,Orion the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31256	a,Leon\0	a,Trader\0	9C	E8	A9	-1
 31257	a,Veronica\0	a,Trader\0	9C	E8	A9	-1
 31258	a,Helmut\0	a,Trader\0	9C	E8	A9	-1
@@ -4316,7 +4316,7 @@
 31486	a,Mysterious Box\0	a,	9C	E8	A9	-1
 31487	a,Mysterious Box\0	a,	9C	E8	A9	-1
 31488	a,Rift Post Recruit\0	a,	9C	E8	A9	-1
-31489	a,Rift Post Soldier\0	a,	9C	E8	A9	-1
+31489	a,Rift Post Private\0	a,	9C	E8	A9	-1
 31490	a,Rift Post Officer\0	a,	9C	E8	A9	-1
 31491	a,Rift Post Captain\0	a,	9C	E8	A9	-1
 31492	a,Rift Post Commander\0	a,	9C	E8	A9	-1
@@ -4536,7 +4536,7 @@
 31706	a,Miki the Cat\0	a,	9C	E8	A9	-1
 31707	a,Ketra Van Grunt\0	a,	9C	E8	A9	-1
 31708	a,Ketra Van Shaman\0	a,	9C	E8	A9	-1
-31709	a,Ketra Van Captain\0	a,	9C	E8	A9	-1
+31709	a,Ketra Van Captain \0	a,	9C	E8	A9	-1
 31710	a,Ketra Van Commander\0	a,	9C	E8	A9	-1
 31711	a,Ketra Van Shaman\0	a,	9C	E8	A9	-1
 31712	a,Varka Raider\0	a,	9C	E8	A9	-1
@@ -4684,7 +4684,7 @@
 31857	a,Event Manager\0	a,	9C	E8	A9	-1
 31858	a,Event Manager\0	a,	9C	E8	A9	-1
 31859	a,Teleport Cube\0	a,	9C	E8	A9	-1
-31860	a,Buzz the Cat\0	a,Event Manager\0	9C	E8	A9	-1
+31860	a,Orion the Cat\0	a,Event Manager\0	9C	E8	A9	-1
 31861	a,Gatekeeper\0	a,	9C	E8	A9	-1
 31862	a,Angelic Vortex\0	a,	9C	E8	A9	-1
 31863	a,Santa Trainee\0	a,	9C	E8	A9	-1
@@ -4953,6 +4953,8 @@
 32128	a,Guardian Wizard of the Cloth\0	a,	9C	E8	A9	-1
 32129	a,	a,	9C	E8	A9	-1
 32130	a,Looney the Cat\0	a,Event Manager\0	9C	E8	A9	-1
+32131	a,Bonny\0	a,Event Manager\0	9C	E8	A9	-1
+32132	a,Alchemist's Servitor\0	a,	9C	E8	A9	-1
 35010	a,Mercenary\0	a,	9C	E8	A9	-1
 35011	a,Mercenary\0	a,	9C	E8	A9	-1
 35012	a,Mercenary\0	a,	9C	E8	A9	-1
@@ -5356,7 +5358,7 @@
 35411	a,Doom Servant\0	a,	9C	E8	A9	-1
 35412	a,Doom Guard\0	a,	9C	E8	A9	-1
 35413	a,Doom Archer\0	a,	9C	E8	A9	-1
-35414	a,Doom Trooper\0	a,	9C	E8	A9	-1
+35414	a,Doom Trooper \0	a,	9C	E8	A9	-1
 35415	a,Doom Warrior\0	a,	9C	E8	A9	-1
 35416	a,Doom Knight\0	a,	9C	E8	A9	-1
 35417	a,Doorman of Hell\0	a,	9C	E8	A9	-1
@@ -6510,3 +6512,12 @@
 13028	a,	a,	9C	E8	A9	-1
 13029	a,	a,	9C	E8	A9	-1
 13030	a,	a,	9C	E8	A9	-1
+13031	a,Huge Cursed Pig\0	a,	9C	E8	A9	-1
+13032	a,Huge Cursed Pig\0	a,	9C	E8	A9	-1
+13033	a,Huge Cursed Pig\0	a,	9C	E8	A9	-1
+13034	a,Super Huge Cursed Pig\0	a,	9C	E8	A9	-1
+13035	a,Golden Cursed Pig\0	a,	9C	E8	A9	-1
+13036	a,Alchemist's Chest\0	a,	9C	E8	A9	-1
+14997	a,Elrond\0	a,Tournament Manager\0	3F	8B	FE	-1
+14998	a,Erica\0	a,Donation Manager\0	3F	8B	FE	-1
+14999	a,Thorin Oakenshield\0	a,Vote Event Manager\0	3F	8B	FE	-1

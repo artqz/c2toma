@@ -1,0 +1,40 @@
+id: 163
+name:
+  en: Legacy of the Poet
+  ru: Наследие поэта
+desc:
+  en: Sentinel Starden is a veteran of the battle at the Underground Fortress.
+    Rumiel, who was a longtime friend, a fellow soldier, and also a great poet,
+    died in battle and his poems were lost within the fortress. Starden asks you
+    to return his old friend's works.
+  ru: Часовой Старден – ветеран битвы за подземную крепость. В том бою погиб его
+    старый друг поэт Румиэль, и собрание его стихов затерялось где-то в
+    подземелье. Старден просит Вас найти поэмы своего друга.
+type: one_time
+requirements:
+  races:
+    not:
+      - darkelf
+startNPC: sentinel_stardyen
+level: 11
+reward:
+  items:
+    - 57
+questItems:
+  - 1038
+  - 1039
+  - 1040
+  - 1041
+walkthrough:
+  en:
+    - Talk to {npc:sentinel_stardyen}.
+    - "Hunt {npc:baraq_orc_fighter} and {npc:baraq_orc_ft_sldr} in the first
+      room of the Elven Dungeon until you collect 4 missing Rumiel's Poems:
+      {item:1038}, {item:1039}, {item:1040} and {item:1041}."
+    - Return the 4 lost poems to {npc:sentinel_stardyen} for a {item:57:13890}.
+  ru:
+    - Поговорите с {npc:sentinel_stardyen}.
+    - Убивайте {npc:baraq_orc_fighter} и {npc:baraq_orc_ft_sldr}, пока не
+      получите {item:1038}, {item:1039}, {item:1040} и {item:1041}.
+    - Вернитесь к {npc:sentinel_stardyen} с 4 поэмами, и получите
+      {item:57:13890}.

@@ -1,0 +1,27 @@
+id: 13
+name:
+  en: Parcel Delivery
+  ru: Доставка посылки
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: mineral_trader_fundin
+level: 74
+reward:
+  items:
+    - 57
+questItems:
+  - 7263
+walkthrough:
+  en:
+    - Talk to {npc:mineral_trader_fundin} (Goddard Castle Town).
+    - |-
+      Talk to {npc:warsmith_vulcan}, for reward: 
+      - {item:57:82656}
+  ru:
+    - Поговорите с {npc:mineral_trader_fundin} (Goddard Castle Town).
+    - |-
+      Поговорите с {npc:warsmith_vulcan} и получите в награду: 
+      - {item:57:82656}

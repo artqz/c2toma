@@ -1,0 +1,33 @@
+id: 261
+name:
+  en: Collector’s Dream
+  ru: Мечта коллекционера
+desc:
+  en: Alshupes, who loves  collecting claws and pelts of odd creatures, now has
+    new interests in giant spiders. He asks for eight legs of crimson spiders,
+    hook spiders, and pincer spiders.
+  ru: Алшупес коллекционирует необычные когти и шкуры. Его главная страсть - это
+    гигантские пауки. Он просит Вас принести ему 8 Паучьих Лапок.
+type: repeatable
+requirements: {}
+startNPC: moneylender_alshupes
+level: 15
+reward:
+  exp: 2000
+  items:
+    - 57
+questItems:
+  - 1087
+walkthrough:
+  en:
+    - Talk to {npc:moneylender_alshupes}.
+    - Hunt {npc:crimson_spider}, {npc:hook_spider} and {npc:pincer_spider} to
+      collect {item:1087:8}.
+    - Give the legs to {npc:moneylender_alshupes}, for {item:57:1000} and
+      {exp:2000}.
+  ru:
+    - Поговорите с {npc:moneylender_alshupes}.
+    - Убивайте {npc:crimson_spider}, {npc:hook_spider} и {npc:466, пока не
+      получите {item:1087:8}.
+    - Вернитесь к {npc:moneylender_alshupes}, и получите в награду
+      {item:57:1000} и {exp:2000}.

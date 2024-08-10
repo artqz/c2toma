@@ -1,0 +1,53 @@
+id: 4
+name:
+  en: Long Live the Paagrio Lord
+  ru: Болезнь Лорда Паагрио
+desc:
+  en: Paagrio Lord Kakai, the ruler of the Orc kingdom, has recently fallen ill.
+    Centurions have decided that each tribe should offer the Lord gifts that are
+    good for his health. Centurion Nakusin, one of the Lord’s aides, has asked
+    you to collect gifts from the six tribes. Listen to his instructions and
+    meet the representatives of each tribe, then come back with the gifts to
+    receive a reward.
+  ru: Лорд Пламени Кекеи, правитель всех Орков, серьезно заболел. Центурионы
+    постановили, что каждый клан должен преподнести Лорду подарок для укрепления
+    его здоровья. Центурион Накушин просит Вас собрать подношения от шести
+    кланов.
+type: one_time
+requirements:
+  races:
+    - orc
+startNPC: centurion_nakusin
+level: 2
+reward:
+  items:
+    - 4
+questItems:
+  - 1541
+  - 1542
+  - 1543
+  - 1544
+  - 1545
+  - 1546
+walkthrough:
+  en:
+    - Talk to {npc:centurion_nakusin}. You must talk to the 6 tribal leaders and
+      get a gift from each.
+    - Talk to {npc:atuba_chief_varkees}. He gives you {item:1541}.
+    - Talk to {npc:tataru_zu_hestui}. He gives you {item:1542}.
+    - Talk to {npc:trader_uska}. He gives you an {item:1544}.
+    - Talk to {npc:warehouse_grookin}. He gives you {item:1543}.
+    - Talk to {npc:gantaki_zu_urutu}. He gives you a {item:1546}.
+    - Talk to {npc:trader_kunai}. She gives you {item:1545}.
+    - Return to {npc:centurion_nakusin} with the 6 gifts, for {item:club}.
+  ru:
+    - Поговорите с {npc:centurion_nakusin}. Вы должны поговорить с 6 вождями
+      племен и получить подарок от каждого.
+    - Поговорите с {npc:atuba_chief_varkees}. Он даст вам {item:1541}.
+    - Поговорите с {npc:tataru_zu_hestui}. Он даст вам {item:1542}.
+    - Поговорите с {npc:trader_uska}. Он даст вам {item:1544}.
+    - Поговорите с {npc:warehouse_grookin}. Он даст вам {item:1543}.
+    - Поговорите с {npc:gantaki_zu_urutu}. Он даст вам {item:1546}.
+    - Поговорите с {npc:trader_kunai}. Она даст вам {item:1545}.
+    - Вернитесь к {npc:centurion_nakusin} с 6 подарками, в награду он даст
+      {item:club}.

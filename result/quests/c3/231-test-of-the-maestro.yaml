@@ -1,0 +1,88 @@
+id: 231
+name:
+  en: Test of the Maestro
+  ru: Испытание мастера
+desc:
+  en: Quest to acquire occupation change item, ‘Mark of the Maestro.’ First Elder
+    Lockirin speaks of the Test of the Maestro, which singles out the best
+    craftsman of the Dwarves. You must earn recommendations from each of the
+    three Elders to pass the test. Meet several Elders in the Council, serve
+    their errands and earn their recommendations.
+  ru: По словам Локрина, если Вы хотите стать Мастером, Вы должны заслужить
+    одобрение трех старейшин.
+type: one_time
+requirements:
+  occupation:
+    - artisan
+startNPC: first_elder_lockirin
+level: 39
+reward:
+  exp: 154499
+  sp: 37500
+  items:
+    - 2867
+questItems:
+  - 2864
+  - 2865
+  - 2866
+  - 2867
+  - 2868
+  - 2869
+  - 2870
+  - 2871
+  - 2872
+  - 2873
+  - 2874
+  - 2875
+  - 2876
+  - 2877
+  - 2878
+  - 2916
+walkthrough:
+  en:
+    - Talk to {npc:first_elder_lockirin} (Dwarven Village).
+    - Talk to {npc:elder_balanki}.
+    - Talk to {npc:chief_croto}.
+    - Talk to {npc:corpse_of_kamur}, then face the wall behind him, notice how
+      it looks a little odd? This is a false wall, go ahead and walk through it
+      and follow the path. The next room has {npc:evil_eye_lord}.
+    - Kill {npc:evil_eye_lord} to collect {item:2870}.
+    - Talk to {npc:chief_croto}.
+    - Talk to {npc:elder_balanki}.
+    - Talk to {npc:elder_arin}.
+    - Find and talk to {npc:master_toma}.
+    - Kill all {npc:king_bugbear}.
+    - Find and talk to {npc:master_toma}.
+    - Talk to {npc:elder_arin}.
+    - Talk to {npc:elder_filaur}.
+    - Talk to {npc:researcher_lorain}.
+    - Kill {npc:mist_giant_leech} to collect {item:2878:10}.
+    - Kill {npc:weird_bee} to collect {item:2876:10}.
+    - Kill {npc:marsh_spider} to collect {item:2877:10}.
+    - Talk to {npc:researcher_lorain}.
+    - Talk to {npc:elder_filaur}.
+    - Talk to {npc:first_elder_lockirin}, for {exp:154499}, {sp:37500} and
+      {item:2867}.
+  ru:
+    - Поговорите с {npc:first_elder_lockirin} (Dwarven Village).
+    - Поговорите с {npc:elder_balanki}.
+    - Поговорите с {npc:chief_croto}.
+    - Поговорите с {npc:corpse_of_kamur}, пройдите через ложную стену и найдите
+      в следующей комнате {npc:evil_eye_lord}.
+    - Убивайте {npc:evil_eye_lord}, пока не получите {item:2870}.
+    - Поговорите с {npc:chief_croto}.
+    - Поговорите с {npc:elder_balanki}.
+    - Поговорите с {npc:elder_arin}.
+    - Найдите и поговорте с {npc:master_toma}.
+    - Убейте всех {npc:king_bugbear}.
+    - Найдите и поговорте с {npc:master_toma}.
+    - Поговорите с {npc:elder_arin}.
+    - Поговорите с {npc:elder_filaur}.
+    - Поговорите с {npc:researcher_lorain}.
+    - Убивайте {npc:mist_giant_leech}, пока не получите {item:2878:10}.
+    - Убивайте {npc:weird_bee}, пока не получите {item:2876:10}.
+    - Убивайте {npc:marsh_spider}, пока не получите {item:2877:10}.
+    - Поговорите с {npc:researcher_lorain}.
+    - Поговорите с {npc:elder_filaur}.
+    - Вернитесь к {npc:first_elder_lockirin}, и получите {exp:154499},
+      {sp:37500} и {item:2867}.

@@ -1,0 +1,90 @@
+id: 367
+name:
+  en: "Great Adventure: Electrifying Recharge!"
+  ru: Подзарядка электричеством
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: researcher_lorain
+level: 37
+reward:
+  items:
+    - 4553
+    - 4554
+    - 4555
+    - 4556
+    - 4557
+    - 4558
+    - 4559
+    - 4560
+    - 4561
+    - 4562
+    - 4563
+    - 4564
+    - 4445
+questItems:
+  - 5875
+  - 5876
+  - 5877
+  - 5878
+  - 5879
+  - 5880
+walkthrough:
+  en:
+    - Talk to {npc:researcher_lorain}.
+    - Hunt {npc:catherok} until you get the {item:q_giants_lamp5} (5 stage).
+      There's also a chance of breaking the lamp and getting
+      {item:q_giants_broken_lamp}, in which case you have to go back to
+      {npc:researcher_lorain} and get {item:q_giants_lamp1} (1 stage).
+    - |-
+      Return to {npc:researcher_lorain} and get 1 Random Dye:
+      - {item:dye_s1c1_c}
+      - {item:dye_s1d1_c}
+      - {item:dye_c1s1_c}
+      - {item:dye_c1c1_c}
+      - {item:dye_d1s1_c}
+      - {item:dye_d1c1_c}
+      - {item:dye_i1m1_c}
+      - {item:dye_i1w1_c}
+      - {item:dye_m1i1_c}
+      - {item:dye_m1w1_c}
+      - {item:dye_w1i1_c}
+      - {item:dye_w1m1_c}
+      - {item:dye_s1c3_d}
+  ru:
+    - Поговорите с {npc:researcher_lorain}.
+    - Убивайте {npc:catherok}, пока не зарядите лампу до {item:q_giants_lamp5}
+      (5 stage). Также есть вероятность разбить лампу и получить
+      {item:q_giants_broken_lamp}, в этом случае придется вернуться к
+      {npc:researcher_lorain} и получить {item:q_giants_lamp1} (1 stage).
+    - >-
+      Вернитесь к {npc:researcher_lorain} и получите в награду случайную краску
+      для татуировок:
+
+      - {item:dye_s1c1_c}
+
+      - {item:dye_s1d1_c}
+
+      - {item:dye_c1s1_c}
+
+      - {item:dye_c1c1_c}
+
+      - {item:dye_d1s1_c}
+
+      - {item:dye_d1c1_c}
+
+      - {item:dye_i1m1_c}
+
+      - {item:dye_i1w1_c}
+
+      - {item:dye_m1i1_c}
+
+      - {item:dye_m1w1_c}
+
+      - {item:dye_w1i1_c}
+
+      - {item:dye_w1m1_c}
+
+      - {item:dye_s1c3_d}

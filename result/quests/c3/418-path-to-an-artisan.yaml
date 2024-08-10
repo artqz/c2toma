@@ -1,0 +1,67 @@
+id: 418
+name:
+  en: Path to an Artisan
+  ru: Путь Ремесленника
+desc:
+  en: Quest that must be fulfilled to change occupations to an Artisan. If you ask
+    the Dwarf Village Blacksmith Silvery, he will tell you that to become an
+    Artisan, you must receive recognition from three Blacksmiths that have been
+    Artisans for a long time. First, complete his task to receive the first
+    certificate.
+  ru: Чтобы стать Ремесленником, нужно выполнить это задание. Вы должны заслужить
+    одобрение трех Гномов-Кузнецов. Кузнец Сильвера просит Вас отправиться на
+    Заброшенный Угольный Рудник и принести 10 Зубов Крысолюдов Бугл и 2 Зуба
+    Лидеров Крысолюдов Бугл.
+type: one_time
+requirements:
+  occupation:
+    - dwarven_fighter
+startNPC: blacksmith_silvery
+level: 19
+reward:
+  exp: 3200
+  sp: 2790
+  items:
+    - 1635
+questItems:
+  - 1632
+  - 1633
+  - 1634
+  - 1635
+  - 1636
+  - 1637
+  - 1638
+  - 1639
+  - 1640
+  - 1641
+walkthrough:
+  en:
+    - Talk to {npc:blacksmith_silvery} (Dwarven Village).
+    - Kill {npc:boogle_ratman} to collect {item:1636:10}.
+    - Kill {npc:boogle_ratman_leader} to collect {item:1637:2}.
+    - Talk to {npc:blacksmith_silvery}.
+    - Talk to {npc:blacksmith_kluto} (Gludin).
+    - Talk to {npc:blacksmith_pinter} (Gludio).
+    - Kill {npc:vuku_orc_fighter} to collect {item:1640:1}.
+    - Talk to {npc:blacksmith_pinter}.
+    - Talk to {npc:blacksmith_kluto}. Tell him "Now, what was I going to do with
+      these? I have no idea."
+    - Talk to {npc:blacksmith_kluto} gives you the {item:1635}, {exp:3200} and
+      {sp:2790}.
+    - When you are Level 20, talk to {npc:head_blacksmith_tapoy} (Gludin) to
+      become an Artisan.
+  ru:
+    - Поговорите с  {npc:blacksmith_silvery} (Dwarven Village).
+    - Убивайте {npc:boogle_ratman}, пока не получите {item:1636:10}.
+    - Убивайте {npc:boogle_ratman_leader}, пока не получите {item:1637:2}.
+    - Поговорите с {npc:blacksmith_silvery}.
+    - Поговорите с {npc:blacksmith_kluto} (Gludin).
+    - Поговорите с {npc:blacksmith_pinter} (Gludio).
+    - Убивайте {npc:vuku_orc_fighter}, пока не получите {item:1640:1}.
+    - Поговорите с {npc:blacksmith_pinter}.
+    - Поговорите с {npc:blacksmith_kluto}. Скажите ему "Now, what was I going to
+      do with these? I have no idea."
+    - Поговорите с {npc:blacksmith_kluto}, и получите в награду {item:1635},
+      {exp:3200} и {sp:2790}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к
+      {npc:head_blacksmith_tapoy} (Gludin), чтобы стать Artisan.

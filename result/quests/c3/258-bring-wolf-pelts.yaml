@@ -1,0 +1,41 @@
+id: 258
+name:
+  en: Bring Wolf Pelts
+  ru: Охота на волков
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: lector
+level: 3
+reward:
+  items:
+    - 390
+    - 22
+    - 29
+    - 1119
+    - 426
+questItems:
+  - 702
+walkthrough:
+  en:
+    - Talk to {npc:lector}.
+    - Kill {npc:wolf} and {npc:elder_wolf} to collect {item:702:40}.
+    - |-
+      Talk to {npc:lector}, to get one random item: 
+      - {item:tunic}
+      - {item:short_leather_gloves}
+      - {item:leather_pants}
+      - {item:leather_shirt}
+      - {item:tights_shirt}
+  ru:
+    - Поговорите с {npc:lector}.
+    - Убивайте {npc:wolf} и {npc:elder_wolf}, пока не соберете {item:702:40}.
+    - |-
+      Вернитесь к {npc:lector}, и получите случайный предмет: 
+      - {item:tunic}
+      - {item:short_leather_gloves}
+      - {item:leather_pants}
+      - {item:leather_shirt}
+      - {item:tights_shirt}

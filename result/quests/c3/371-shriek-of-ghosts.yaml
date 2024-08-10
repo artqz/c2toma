@@ -1,0 +1,67 @@
+id: 371
+name:
+  en: Shriek of Ghosts
+  ru: Вопли призраков
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: seer_reva
+level: 59
+reward:
+  items:
+    - 57
+questItems:
+  - 5903
+walkthrough:
+  en:
+    - Talk to {npc:seer_reva}.
+    - Hunt {npc:hallates_warrior}, {npc:hallates_knight} and
+      {npc:hallates_commander} to collect {item:ancient_funeral_urn} and
+      {item:ancient_porcelain}.
+    - |-
+      Return to {npc:seer_reva}, to get {item:57:1000}, as a reward you get:
+      If {item:ancient_funeral_urn} >= 100:
+      - {item:57:1000} for each {item:ancient_funeral_urn}
+      - {item:57:13000}
+
+      If {item:ancient_funeral_urn} < 100:
+      - {item:57:1000} for each {item:ancient_funeral_urn}
+      - {item:57:7000}
+    - >-
+      {item:ancient_porcelain} can be sold to the store for {item:57:4000} or
+      give it to {npc:patrin} to get a random item:
+
+      - {item:ancient_porcelain_s} for {item:57:40000}
+
+      - {item:ancient_porcelain_a} for {item:57:8000}
+
+      - {item:ancient_porcelain_b} for {item:57:2000}
+
+      - {item:ancient_porcelain_c} for {item:57:1320}
+  ru:
+    - Поговорите с {npc:seer_reva}.
+    - Охотьтесь на {npc:hallates_warrior}, {npc:hallates_knight} и
+      {npc:hallates_commander}, чтобы получать {item:ancient_funeral_urn} и
+      {item:ancient_porcelain}.
+    - |-
+      Вернитесь к {npc:seer_reva}, чтобы получить:
+      Если {item:ancient_funeral_urn} более 100:
+      - {item:57:1000} за каждый {item:ancient_funeral_urn}
+      - {item:57:13000}
+
+      Если {item:ancient_funeral_urn} меньше 100:
+      - {item:57:1000} за каждый {item:ancient_funeral_urn}
+      - {item:57:1000}
+    - >-
+      {item:ancient_porcelain} можно продать в магазин за {item:57:4000} или
+      отнести к {npc:patrin}, чтобы получить случайный предмет:
+
+      - {item:ancient_porcelain_s} за {item:57:40000}
+
+      - {item:ancient_porcelain_a} за {item:57:8000}
+
+      - {item:ancient_porcelain_b} за {item:57:2000}
+
+      - {item:ancient_porcelain_c} за {item:57:1320}

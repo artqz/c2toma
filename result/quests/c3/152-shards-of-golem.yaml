@@ -1,0 +1,42 @@
+id: 152
+name:
+  en: Shards of Golem
+  ru: Ремонт храма
+desc:
+  en: A few days ago, the roof of the temple was wrecked by a storm. Sorcerer
+    Harris of the temple has asked Blacksmith Allman for new tools to repair the
+    roof. He asks you to retrieve them on his behalf.
+  ru: Несколько дней назад крышу храма снесло ураганом. Для ее ремонта Магистру
+    Харрису нужны новые инструменты. Он просит Вас сбегать за ними к кузнецу
+    Альтрану.
+type: one_time
+requirements: {}
+startNPC: harry
+level: 10
+reward:
+  exp: 5000
+  items:
+    - 23
+questItems:
+  - 1008
+  - 1009
+  - 1010
+  - 1011
+walkthrough:
+  en:
+    - Talk to {npc:harry}. He gives you {item:1008}.
+    - Tallk to {npc:blacksmith_alltran}. He takes {item:1008} and gives you
+      {item:1009}.
+    - Hunt {npc:stone_golem} until you collect {item:1010:5}. They are north of
+      the tower, on the northern part of the island.
+    - Give the shards to {npc:blacksmith_alltran}. He gives you a {item:1011}.
+    - Give tools and {item:1009} to {npc:harry}, for a {item:wooden_breastplate}
+      & {exp:5000}.
+  ru:
+    - Поговорите с {npc:harry}. Он даст вам {item:1008}.
+    - Поговорите с {npc:blacksmith_alltran}. Он возьмет {item:1008} и даст вам
+      {item:1009}.
+    - Убивайте {npc:stone_golem}, пока не получите {item:1010:5}.
+    - отдайте осколки {npc:blacksmith_alltran}. Он даст вам {item:1011}.
+    - Вернитесь с инструментом к {item:1009} to {npc:harry}, и получите
+      {item:wooden_breastplate} & {exp:5000}.

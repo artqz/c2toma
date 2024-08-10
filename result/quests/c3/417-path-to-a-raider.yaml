@@ -1,0 +1,83 @@
+id: 417
+name:
+  en: Path to a Raider
+  ru: Путь Собирателя
+desc:
+  en: Quest that must be fulfilled to change occupations to a Raider (Path to a
+    Scavenger). Collector Pippi of the Dwarven Village encourages all successful
+    Dwarves to become Raiders. However, to become a Raider, one must receive the
+    permission of Master Toma, whose whereabouts are currently
+    unknown.  According to rumor, Master Toma’s younger sister, Trader Mion, may
+    know where he is.
+  ru: Квест, необходимый для получения профессии Собирателя. Коллекционер Пепи из
+    Деревни Гномов помогает всем желающим стать Собирателями. Для этого Вам
+    необходимо получить разрешение у Мастера Томы, но никто не знает, где он
+    сейчас. Может быть, его младшая сестра Мион из Деревни Гномов сможет Вам
+    помочь?..
+type: one_time
+requirements:
+  occupation:
+    - dwarven_fighter
+startNPC: collector_pipi
+level: 19
+reward:
+  exp: 3200
+  sp: 7080
+  items:
+    - 1642
+questItems:
+  - 1642
+  - 1643
+  - 1644
+  - 1645
+  - 1646
+  - 1647
+  - 1648
+  - 1649
+  - 1650
+  - 1651
+  - 1652
+  - 1653
+  - 1654
+  - 1655
+  - 1656
+  - 1657
+walkthrough:
+  en:
+    - Talk to {npc:collector_pipi} (Dwarven Village).
+    - Talk to {npc:trader_mion}. She gives you a series of repeated delivery
+      tasks in town which you must complete. (Repeat this step at least five
+      times, and maybe more than twenty).
+    - Find and talk to {npc:master_toma}.
+    - Kill {npc:hunter_bear}. Every 20-30 kills a Honey Bear will appear. Each
+      {npc:honey_bear} drops a {item:honey_jar}. Repeat until you have
+      {item:honey_jar:5}.
+    - Find and talk to {npc:master_toma}.
+    - Kill {npc:hunter_tarantula} and {npc:plunder_tarantula} to collect
+      {item:1656:20}.
+    - Find and talk to {npc:master_toma}.
+    - Talk to {npc:warehouse_keeper_raut}.
+    - Talk to {npc:torai}.
+    - Talk to {npc:warehouse_keeper_raut}, for a {item:1642}, {exp:3200} and
+      {sp:7080}.
+    - When you are level 20, talk to {npc:warehouse_chief_moke} (Gludin) to
+      become a Scavenger.
+  ru:
+    - Поговорите с {npc:collector_pipi} (Dwarven Village).
+    - Поговорите с {npc:trader_mion}. She gives you a series of repeated
+      delivery tasks in town which you must complete. (Repeat this step at least
+      five times, and maybe more than twenty).
+    - Найдите и поговорите с {npc:master_toma}.
+    - Убивайте {npc:hunter_bear}. После каждых 20-30 убийств Honey Bear, будет
+      появляться {npc:honey_bear} с которого можно получит {item:honey_jar}.
+    - Убивайте {npc:honey_bear}, пока не получите {item:honey_jar:5}.
+    - Найдите и поговорите с {npc:master_toma}.
+    - Убивайте {npc:hunter_tarantula} и {npc:plunder_tarantula}, пока не
+      получите{item:1656:20}.
+    - Найдите и поговорите с {npc:master_toma}.
+    - Поговорите с {npc:warehouse_keeper_raut}.
+    - Поговорите с {npc:torai}.
+    - Вернитесь к {npc:warehouse_keeper_raut}, и получите в награду {item:1642},
+      {exp:3200} и {sp:7080}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к
+      {npc:warehouse_chief_moke} (Gludin), чтобы стать Scavenger.

@@ -1,0 +1,51 @@
+id: 47
+name:
+  en: Into the Dark Forest
+  ru: Темный Лес
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements:
+  races:
+    - darkelf
+  item:
+    - q_symbol_of_traveler
+startNPC: galladuchi
+level: 3
+reward:
+  items:
+    - 7556
+questItems:
+  - 7563
+  - 7564
+  - 7565
+  - 7566
+  - 7567
+  - 7568
+walkthrough:
+  en:
+    - Note. To do the this quest, you need a {item:q_symbol_of_traveler}
+      {quest:8}.
+    - Talk to {npc:galladuchi} (Giran).
+    - Talk to {npc:gentler}.
+    - Talk to {npc:galladuchi}.
+    - Talk to {npc:sandra}.
+    - Talk to {npc:galladuchi}
+    - Talk to {npc:dustin}
+    - |-
+      Return to {npc:galladuchi}, for reward: 
+      - {item:q_escape_scroll_darkelf}
+  ru:
+    - Важно. Для выполнения квеста необходим предмет
+      {item:q_symbol_of_traveler}, который можно получить за выполнение
+      {quest:8}.
+    - Поговорите с {npc:galladuchi} (Giran).
+    - Поговорите с {npc:gentler}.
+    - Поговорите с {npc:galladuchi}.
+    - Поговорите с {npc:sandra}.
+    - Поговорите с {npc:galladuchi}
+    - Поговорите с {npc:dustin}
+    - |-
+      Вернитесь к {npc:galladuchi}, и получите награду: 
+      - {item:q_escape_scroll_darkelf}

@@ -1,0 +1,98 @@
+id: 212
+name:
+  en: Trial of Duty
+  ru: Испытание верности
+desc:
+  en: Quest to acquire occupation change item, 'Mark of Duty.' Grand Master
+    Hannavalt tells you that a true Knight must fight for his honor, not for
+    power or glory. He then tells you to meet the Knights of each kingdom and
+    perform their errands in order to perceive the duty of a true Knight. The
+    first Knight to visit is Sir Aaron Tanford. He is located south of the
+    Gludio Wasteland.
+  ru: Многие рыцари не хотят останавливаться на достигнутом и желают продолжить
+    свое обучение. Если Вас также мучает жажда знаний, обратитесь к сэру Арону
+    Танфорду в южной части Пустоши и пройдите Испытание верности.
+type: one_time
+requirements:
+  category:
+    - knight_group
+startNPC: hannavalt
+level: 35
+reward:
+  exp: 79832
+  sp: 3750
+  items:
+    - 2633
+questItems:
+  - 2633
+  - 2634
+  - 2635
+  - 2636
+  - 2637
+  - 2638
+  - 2639
+  - 2640
+  - 2641
+  - 2642
+  - 2643
+  - 2644
+  - 2645
+  - 2646
+  - 3027
+walkthrough:
+  en:
+    - Talk to {npc:hannavalt} (Giran).
+    - Talk to {npc:sir_aron_tanford} (In front of a house southeast of the
+      Wasteland) to get a {item:3027}.
+    - Kill {npc:skeleton_rapid_shooter} and {npc:skeleton_raider} in the
+      Wastelands until {npc:spirit_of_sir_herod} appears.
+    - Kill {npc:spirit_of_sir_herod} (Make sure to use the {item:3027} for the
+      last hit or you must do it again).
+    - Talk to {npc:sir_aron_tanford}.
+    - Talk to {npc:sir_kiel_nighthawk}.
+    - Kill {npc:strain} and {npc:ghoul} to collect {item:2638:10}
+    - Talk to {npc:sir_kiel_nighthawk}.
+    - Kill {npc:hanged_man_ripper}.
+    - Talk to {npc:spirit_of_sir_talianus} who appeared there.
+    - Talk to {npc:sir_kiel_nighthawk}.
+    - Talk to {npc:isael_silvershadow}.
+    - Kill {npc:leto_lizardman}, {npc:leto_lizardman_archer},
+      {npc:leto_lizardman_soldier}, {npc:leto_lizardman_warrior},
+      {npc:leto_lizardman_shaman} and {npc:leto_lizardman_overlord} to collect
+      {item:2641:20}.
+    - Talk to {npc:isael_silvershadow}.
+    - Talk to {npc:dustin}.
+    - Kill {npc:breka_orc_overlord} to collect {item:2643}, {item:2644} and
+      {item:2645}.
+    - Talk to {npc:dustin}.
+    - Talk to {npc:sir_collin_windawood}.
+    - Talk to {npc:dustin}.
+    - Talk to {npc:hannavalt}, for {exp:79832}, {sp:3750} and {item:2633}.
+  ru:
+    - Поговорите с {npc:hannavalt} (Гиран).
+    - Поговорите с {npc:sir_aron_tanford}. Он даст вам {item:3027}.
+    - Убивайте {npc:skeleton_rapid_shooter} и {npc:skeleton_raider} пока не
+      появится {npc:spirit_of_sir_herod}.
+    - Убейте {npc:spirit_of_sir_herod} (Обязательно используйте {item:3027} для
+      последнего удара, иначе вам придется сделать это снова).
+    - Поговорите с {npc:sir_aron_tanford}.
+    - Поговорите с {npc:sir_kiel_nighthawk}.
+    - убивайте {npc:strain} and {npc:ghoul}, пока не получите {item:2638:10}
+    - Поговорите с {npc:sir_kiel_nighthawk}.
+    - Убейте {npc:hanged_man_ripper}.
+    - Поговорите с {npc:spirit_of_sir_talianus}, который появится рядом.
+    - Поговорите с {npc:sir_kiel_nighthawk}.
+    - Поговорите с {npc:isael_silvershadow}.
+    - Убивайте {npc:leto_lizardman}, {npc:leto_lizardman_archer},
+      {npc:leto_lizardman_soldier}, {npc:leto_lizardman_warrior},
+      {npc:leto_lizardman_shaman} и {npc:leto_lizardman_overlord}, пока не
+      получите {item:2641:20}.
+    - Поговорите с {npc:isael_silvershadow}.
+    - Поговорите с {npc:dustin}.
+    - Убивайте {npc:breka_orc_overlord}, пока не получите  {item:2643},
+      {item:2644} и {item:2645}.
+    - Поговорите с {npc:dustin}.
+    - Поговорите с {npc:sir_collin_windawood}.
+    - Поговорите с {npc:dustin}.
+    - Поговорите с {npc:hannavalt}, и получите {exp:79832}, {sp:3750} и
+      {item:2633}.

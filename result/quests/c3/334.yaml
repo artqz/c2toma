@@ -1,0 +1,83 @@
+id: 334
+name:
+  en: The Wishing Potion
+  ru: Зелье Желаний
+desc:
+  en: Go find the ingredients, written on the list given by Alchemist Matild,
+    which are necessary for making the wish potion.
+  ru: Алхимик Матильда давно мечтает создать зелье исполнения желаний. Недавно она
+    узнала его рецепт и просит принести ей необходимые компоненты. Она передает
+    Вам книгу по алхимии вместе с указаниями касательно компонентов зелья.
+    Найдите Дерево Тайник.
+type: repeatable
+requirements: {}
+startNPC: alchemist_matild
+level: 30
+reward:
+  items:
+    - 57
+questItems:
+  - 3678
+  - 3679
+  - 3680
+  - 3681
+  - 3682
+  - 3683
+  - 3684
+  - 3685
+  - 3686
+  - 3687
+  - 3688
+  - 3689
+  - 3690
+  - 3691
+walkthrough:
+  en:
+    - Talk to {npc:alchemist_matild}, just notheast of the Ivory Tower. She
+      gives you an Alchemy Text.
+    - Head to the Cruma Swamp. In the far southwest corner you will find the
+      {npc:secret_keeper_tree} amongst some stone ruins. Kill it to get the
+      {item:q_secret_book_of_potion}, and then return to {npc:alchemist_matild}.
+    - Matild gives you a {item:q_potion_recipe_1} and {item:q_potion_recipe_2}.
+    - First, head east of Giran to find {npc:amber_basilisk},
+      {npc:turak_bugbear}, {npc:turak_bugbear_warrior}. Kill them until you get
+      an {item:q_amber_scale} and {item:q_bugbear_blood}.
+    - Just north of Giran you can find {npc:silenos}. Kill them until you get a
+      {item:q_silenos_horn}.
+    - "{npc:mist_horror_ripper} can be found in Cruma Swamp, mostly on the
+      western outskirts. Kill them until you get {item:q_horror_ectoplasm}."
+    - Southwest of Floran you will find {npc:glass_jaguar}. Kill them until you
+      get a {item:q_glass_eye}.
+    - In the Ant Nest you can find {npc:ant_soldier} and
+      {npc:ant_warrior_captain}. Kill them until you get an
+      {item:q_ant_soldier_aphid}.
+    - In the Wastelands, kill {npc:tyrant} and {npc:tyrant_kingpin} until you
+      get {item:q_tyrants_chitin}.
+    - "{npc:whispering_wind} can be found north-northwest of the Orc Barracks.
+      Kill them until you get a {item:q_wind_soulstone}."
+    - Go back to {npc:alchemist_matild}. She gives you an {item:q_matilds_orb},
+      so that from now on all you must do is gather the ingredients. She will
+      also give you her first {item:q_wish_potion}.
+    - >-
+      Possible Rewards:
+
+      Wish for Wealth and you can get: {item:57:10000}, 1-10 million {item:57}
+      or spawn 3 {npc:grima} which can drop 1-5 {item:q_gold_bar} worth
+      {item:57:5000} each
+
+      Wish to be a King and you can get: {item:q_certificate_of_royalty} worth
+      {item:57:500}, {item:q_ancient_crown} worth {item:57:5} or spawn
+      {npc:dlord_alexandrosanches}, who might summon
+      {npc:abyssking_bonaparterius}, who might summon
+      {npc:eviloverlord_ramsebalius}, who might summon the incredibly strong
+      {npc:great_demon_king} who might drop {item:demon's_boots},
+      {item:demon's_gloves}, {item:demon's_hose} and {item:demon's_tunic}.
+
+      Wish to be loving and you can get: {npc:fairy_rupina}, who gives
+      {item:scroll_of_escape:1} or a {item:necklace_of_grace}. 3
+      {npc:succubus_of_seduction} who can drop {item:q_fobbiden_love_scroll}
+      which {npc:torai} in Death Pass buys for {item:57:500000}.
+
+      Wish for Wisdom and you an get: {item:sb_ice_bolt1},
+      {item:sb_battle_heal1}, {item:sb_heart_of_paagrio1} or spawn
+      {npc:wisdom_chest}, that gives advice.

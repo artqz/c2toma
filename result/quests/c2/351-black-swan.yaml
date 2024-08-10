@@ -1,0 +1,102 @@
+id: 351
+name:
+  en: Black Swan
+  ru: Черный Лебедь
+desc:
+  en: Tasaba lizardmen have stolen cargo belonging to Iason Heine, owner of the
+    the most successful commercial guild in Heine! Kill the lizardmen and
+    recover the cargo!
+  ru: Ящеры Тасаба украли груз, принадлежащий Ясону Хейну, владельцу большинства
+    успешных предприятий в Хейне! Убейте Ящеров и верните груз!
+type: repeatable
+requirements: {}
+startNPC: captain_gosta
+level: 32
+reward:
+  items:
+    - 57
+    - 4310
+questItems:
+  - 4296
+  - 4297
+  - 4298
+  - 4310
+walkthrough:
+  en:
+    - Talk to {npc:captain_gosta}.
+    - Hunt {npc:tasaba_lizardman}, {npc:tasaba_lizardman_shaman} to collect
+      {item:q0351_lizard_fang} and {item:q0351_barrel_of_league}.
+    - Give the {item:q0351_lizard_fang} and {item:q0351_barrel_of_league} to
+      {npc:iason_haine}.
+    - "Reward: {item:57:20} per {item:q0351_lizard_fang:1} and a
+      {item:q0351_bill_of_iason:1} for every {item:q0351_barrel_of_league}."
+    - >-
+      What the Bills can be exchanged for ({npc:head_blacksmith_roman}):
+
+      {item:q0351_bill_of_iason:1} = {item:57:700}
+
+      {item:q0351_bill_of_iason:3} = {item:animal_skin:20}
+
+      {item:q0351_bill_of_iason:3} = {item:animal_bone:20}
+
+      {item:q0351_bill_of_iason:2} = {item:coal:10}
+
+      {item:q0351_bill_of_iason:2} = {item:charcoal:10}
+
+      {item:q0351_bill_of_iason:9} = {item:leather:10}
+
+      {item:q0351_bill_of_iason:5} = {item:cokes:6}
+
+      {item:q0351_bill_of_iason:5} = {item:reinforcing_agent:1}
+
+      {item:q0351_bill_of_iason:3} = {item:coarse_bone_powder:2}
+
+      {item:q0351_bill_of_iason:3} = {item:oriharukon_ore:1}
+
+      {item:q0351_bill_of_iason:3} = {item:stone_of_purity:1}
+
+      {item:q0351_bill_of_iason:6} = {item:crafted_leather:1} and {item:57:210}
+
+      {item:q0351_bill_of_iason:7} = {item:synthesis_cokes:1} and {item:57:280}
+
+      {item:q0351_bill_of_iason:9} = {item:varnish_of_purity:1} and
+      {item:57:680}
+  ru:
+    - Поговорите с {npc:captain_gosta}.
+    - Охотьтесь на {npc:tasaba_lizardman}, {npc:tasaba_lizardman_shaman}, чтобы
+      получить {item:q0351_lizard_fang} и {item:q0351_barrel_of_league}.
+    - Отнесите любое количество {item:q0351_lizard_fang} и
+      {item:q0351_barrel_of_league} к {npc:iason_haine}.
+    - "Награда: Вы получите {item:57:20} за {item:q0351_lizard_fang:1} и
+      {item:q0351_bill_of_iason:1} за {item:q0351_barrel_of_league:1}."
+    - >-
+      {item:q0351_bill_of_iason} можно обменять у {npc:head_blacksmith_roman} на
+      следующие предеметы:
+
+      {item:q0351_bill_of_iason:1} = {item:57:700}
+
+      {item:q0351_bill_of_iason:3} = {item:animal_skin:20}
+
+      {item:q0351_bill_of_iason:3} = {item:animal_bone:20}
+
+      {item:q0351_bill_of_iason:2} = {item:coal:10}
+
+      {item:q0351_bill_of_iason:2} = {item:charcoal:10}
+
+      {item:q0351_bill_of_iason:9} = {item:leather:10}
+
+      {item:q0351_bill_of_iason:5} = {item:cokes:6}
+
+      {item:q0351_bill_of_iason:5} = {item:reinforcing_agent:1}
+
+      {item:q0351_bill_of_iason:3} = {item:coarse_bone_powder:2}
+
+      {item:q0351_bill_of_iason:3} = {item:oriharukon_ore:1}
+
+      {item:q0351_bill_of_iason:3} = {item:stone_of_purity:1}
+
+      {item:q0351_bill_of_iason:6} = {item:crafted_leather:1} и {item:57:210}
+
+      {item:q0351_bill_of_iason:7} = {item:synthesis_cokes:1} и {item:57:280}
+
+      {item:q0351_bill_of_iason:9} = {item:varnish_of_purity:1} и {item:57:680}

@@ -1,0 +1,34 @@
+id: 10
+name:
+  en: Into the World
+  ru: Большой мир
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: { races: [dwarf] }
+startNPC: 7533
+level: 3
+reward: { items: [7559, 7570] }
+questItems: [7574]
+walkthrough:
+  en:
+    - Talk to {npc:elder_balanki} (Dwarven Village).
+    - Talk to {npc:warehouse_chief_reed}.
+    - Talk to {npc:gerald_priest_of_earth}.
+    - Talk to {npc:warehouse_chief_reed}.
+    - |-
+      Return to {npc:elder_balanki}, for reward: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - "Scrolling gives you the opportunity to move to the Giran once. To return back to the Dwarven Village, you need to take a {quest:49}."
+  ru:
+    - Поговорите с {npc:elder_balanki}.
+    - Поговорите с {npc:warehouse_chief_reed}.
+    - Поговорите с {npc:gerald_priest_of_earth}.
+    - Поговорите с {npc:warehouse_chief_reed}.
+    - |-
+      Вернитесь к {npc:elder_balanki}, и получите в награду: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - "Скролл дает возможность один раз переместиться в Giran. Чтобы вернуться обратно в Dwarven Village необходимо взять {quest:49}."

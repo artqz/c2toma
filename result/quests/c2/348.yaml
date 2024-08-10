@@ -1,0 +1,130 @@
+id: 348
+name:
+  en: An Arrogant Search
+  ru: Самонадеянный поиск
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: magister_hanellin
+level: 60
+reward:
+  items:
+    - 57
+    - 4295
+    - 4109
+    - 4119
+    - 4111
+    - 4120
+    - 4107
+    - 4114
+    - 4112
+    - 4121
+    - 4105
+    - 4113
+    - 4115
+    - 4106
+    - 4118
+    - 4110
+    - 4104
+    - 4108
+    - 4117
+    - 4042
+    - 1887
+    - 1888
+    - 1879
+    - 1874
+    - 1881
+    - 1872
+questItems:
+  - 4287
+  - 4288
+  - 4289
+  - 4290
+  - 4291
+  - 4292
+  - 4293
+  - 4294
+  - 4394
+  - 4396
+  - 4395
+  - 4397
+  - 4398
+  - 4399
+  - 4400
+walkthrough:
+  en:
+    - Talk to {npc:magister_hanellin}.
+    - Hunt {npc:lesser_giant_mage} and {npc:lesser_giant_elder} to collect
+      {item:q0348_engine_of_lgiant}.
+    - When you are ready speak with {npc:magister_hanellin} again.
+    - Talk to {npc:claudia_a}.
+    - Talk to {npc:holy_ark_2}. Kill {npc:ark_guardian_elberoth} that appear and
+      talk to the chest again and get the {item:book_of_saint}.
+    - Talk to {npc:martian}
+    - Talk to {npc:holy_ark_3}. Kill {npc:ark_guardian_shadowfang} that appear
+      and talk to the chest again and get the {item:bough_of_saint}.
+    - Talk to {npc:harne}
+    - Talk to {npc:ark_guardians_corpse}. Kill {npc:angel_killer} that appears
+      and talk to the corpse again and get the key.
+    - Talk to {npc:holy_ark_1} and get the {item:blood_of_saint}.
+    - Talk to {npc:magister_hanellin}.
+    - Buy {item:lesser_healing_potion} and {item:antidote:5}.
+    - Return to {npc:magister_hanellin}. She will ask you do you want adena or
+      you want to see the Emperor, You need to select "I want to make some
+      money". If you choose the first item, then you will not be given the
+      {item:q0348_white_fabric} and you will get to Bayum only once, then you
+      will have to go through the quest again.
+    - Go and hunt {npc:platinum_tribe_shaman} and {npc:platinum_tribe_lord} to
+      obtain the {item:q0348_blooded_fabric}. Important! Monsters must be hit
+      with your fists.
+    - Return to {npc:magister_hanellin} and get {item:q0348_white_fabric_a} 9-10
+      and 1 Key B Grade Weapon as a reward.
+    - You can now continue with the {quest:234}.
+    - >-
+      Depending on your class and level, you may receive the following rewards:
+
+      - {item:kris_edge} and {item:synthesis_cokes:2}
+
+      - {item:demon's_sword_edge} and {item:cokes:2}
+
+      - {item:arthro_nail_blade}, {item:synthesis_cokes:2} and {item:cokes:1}
+
+      - {item:bellion_cestus_edge} and {item:oriharukon_ore:2} 
+
+      - {item:kshanberk_blade} and {item:synthesis_cokes:2}
+
+      - {item:sword_of_damascus_blade} and {item:oriharukon_ore:2}
+
+      - {item:dark_elven_long_bow_shaft} and {item:synthesis_cokes:2}
+
+      - {item:hazard_bow_shaft} and {item:coarse_bone_powder:9}
+
+      - {item:heavy_war_axe_head}, {item:synthesis_cokes:2} and {item:cokes:1}
+
+      - {item:art_of_battle_axe_blade} and {item:oriharukon_ore:2} 
+
+      - {item:great_axe_head}, {item:enria:1} and {item:cokes:1}
+
+      - {item:lancia_blade} and {item:oriharukon_ore:2} 
+
+      - {item:sprite's_staff_head}, {item:oriharukon_ore:4} and
+      {item:coarse_bone_powder:1}
+
+      - {item:staff_of_evil_sprit_head} and {item:animal_bone:5} 
+
+      - {item:hell_knife_edge}, {item:synthesis_cokes:2} and
+      {item:animal_bone:2}
+
+      - {item:great_sword_blade}, {item:varnish_of_purity:2} and
+      {item:synthesis_cokes:2}
+
+      - {item:sword_of_damascus_blade} and {item:enria:1}  
+
+      - {item:sword_of_valhalla_blade}, {item:oriharukon_ore:1} and
+      {item:varnish_of_purity:1} 
+
+      - {item:art_of_battle_axe_blade} and {item:enria:1} 
+
+      - {item:57:49000}

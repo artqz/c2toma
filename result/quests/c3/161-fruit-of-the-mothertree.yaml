@@ -1,0 +1,40 @@
+id: 161
+name:
+  en: Fruit of the Mothertree
+  ru: Плод Древа Жизни
+desc:
+  en: Andellia of the Elven Village takes care of the Mother Tree with her
+    sisters. She received news a few days ago from her sister Thalia, who looks
+    after the Mother Tree of Lake Iris down south, that the tree has produced
+    fruit. She explains that the Mother Tree's Fruit brings immortality to the
+    Elves, and asks you to carry them back safely.
+  ru: Анделия и ее сестры заботятся о Древах Жизни. Вы получили письмо о том, что
+    Древо Жизни возле Радужного Озера, за которым ухаживает юная Талия, принесло
+    плоды. Так как Анделия с сестрами не могут оставить свои Древа без
+    присмотра, они просят Вас посетить Талию и вернуться с плодами Древа Жизни.
+type: one_time
+requirements:
+  races:
+    - elf
+startNPC: andellria
+level: 3
+reward:
+  exp: 1000
+  items:
+    - 57
+questItems:
+  - 1036
+  - 1037
+walkthrough:
+  en:
+    - Talk to {npc:andellria}. She gives you {item:1036}.
+    - "Take the letter to {npc:thalya}: Exit the village, follow the path across
+      two bridges, pass the ruins, and around the lakeshore to the observatory.
+      Thalya takes the letter and gives you The {item:1037}."
+    - Return to village and give the fruit to {npc:andellria}, for {exp:1000}
+      and {item:57:1000}.
+  ru:
+    - Поговорите с {npc:andellria}. Она даст вам {item:1036}.
+    - Поговорите с {npc:thalya}. Она возьмет {item:1036} и даст вам {item:1037}.
+    - Вернитесь к {npc:andellria} с {item:1037}, и получите {exp:1000} и
+      {item:57:1000}.

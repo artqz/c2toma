@@ -1,0 +1,55 @@
+id: 355
+name:
+  en: Family Honor
+  ru: Честь семьи
+desc:
+  en: Although Trader Galibredo of Oren Castle Town is now a mere merchant, his
+    roots are aristocratic. Some time ago, he purchased several busts made by
+    the ancient sculptor, Berona. As they were being delivered to him they were
+    stolen by orcs. He desperately wishes to recover the ancient statues,
+    regardless of the cost. He promises an extra reward each time you bring him
+    100 or more statues. Hunt Timak orc troop archers, warriors, troop leaders
+    and troop shamans.
+  ru: Хотя Галибредо из Орена теперь обычный торговец, его предки были
+    аристократами. Недавно он купил несколько статуэток, созданных древним
+    скульптором Бероной, однако их украли Орки. Верните ему украденное, и Вы
+    получите награду. Галибредо обещает дополнительную награду каждый раз, когда
+    Вы принесете 100 или более статуэток.
+type: repeatable
+requirements: {}
+startNPC: galicbredo
+level: 36
+reward:
+  items:
+    - 57
+questItems:
+  - 4252
+walkthrough:
+  en:
+    - Talk to {npc:galicbredo}.
+    - Hunt {npc:timak_orc_archer}, {npc:timak_orc_warrior},
+      {npc:timak_orc_troop_leader} and {npc:timak_orc_troop_shaman} to collect
+      {item:q_ancient_portrait}.
+    - |-
+      Return to {npc:galicbredo}, you will get:
+      If {item:q_ancient_portrait} >= 100:
+      - {item:57:120} for each {item:q_ancient_portrait}
+      - {item:57:7800}
+
+      If {item:q_ancient_portrait} < 100:
+      - {item:57:120} for each {item:q_ancient_portrait}
+      - {item:57:2800}
+  ru:
+    - Поговорите с {npc:galicbredo}.
+    - Охотьтесь на {npc:timak_orc_archer}, {npc:timak_orc_warrior},
+      {npc:timak_orc_troop_leader} и {npc:timak_orc_troop_shaman}, чтобы
+      получить {item:q_ancient_portrait}.
+    - |-
+      Вернитесь к {npc:galicbredo}, и получите в награду:
+      Если {item:q_ancient_portrait} более 100:
+      - {item:57:120} за каждый {item:q_ancient_portrait}
+      - {item:57:7800}
+
+      Если {item:q_ancient_portrait} меньше 100:
+      - {item:57:120} за каждый {item:q_ancient_portrait}
+      - {item:57:2800}

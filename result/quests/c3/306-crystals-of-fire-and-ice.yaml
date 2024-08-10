@@ -1,0 +1,48 @@
+id: 306
+name:
+  en: Crystals of Fire and Ice
+  ru: Кристаллы Огня и Льда
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: katrine
+level: 17
+reward:
+  items:
+    - 57
+questItems:
+  - 1020
+  - 1021
+walkthrough:
+  en:
+    - Talk to {npc:katrine}.
+    - Go to the Elven Ruins and hunt {npc:undine}, {npc:undine_ribe} and
+      {npc:undine_ybar} to collect {item:ice_shard}.
+    - And hunt {npc:salamander}, {npc:salamander_ribe} and {npc:salamander_ybar}
+      to collect {item:flame_shard}.
+    - >-
+      Return to {npc:katrine}, and get it as a reward:
+
+      - {item:57:30} for each {item:ice_shard}
+
+      - {item:57:30} for each {item:flame_shard}
+
+      If you bring more than 10 shards, you will additionally receive
+      {item:57:5000}.
+  ru:
+    - Поговорите с {npc:katrine}.
+    - Отправляйтесь в Elven Ruins и убивайте {npc:undine}, {npc:undine_ribe} и
+      {npc:undine_ybar}, чтобы получать {item:ice_shard}.
+    - А также убивайте {npc:salamander}, {npc:salamander_ribe} и
+      {npc:salamander_ybar}, чтобы получать {item:flame_shard}.
+    - >-
+      Вернитесь к {npc:katrine}, и получите награду:
+
+      - {item:57:30} за каждый {item:ice_shard}
+
+      - {item:57:30} за каждый {item:flame_shard}
+
+      Если вы принесете более 10 осколков, то дополнительно получите
+      {item:57:5000}.

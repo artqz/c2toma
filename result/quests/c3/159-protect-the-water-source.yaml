@@ -1,0 +1,40 @@
+id: 159
+name:
+  en: Protect the Water Source
+  ru: Защита водного источника
+desc:
+  en: Tetrarch Asterios is concenrned that the Mother Tree of the village is being
+    contaminated. He asks you to go to the water source, the lake north of the
+    village, to investigate the cause of the contamination.
+  ru: Эльфийский Иерарх Астериос обеспокоен тем, что Древо Жизни медленно умирает.
+    Он просит Вас посетить питающий его источник, озеро к северу от деревни.
+    Уничтожьте Чумных Зомби, ставших причиной загрязнения.
+type: one_time
+requirements:
+  races:
+    - elf
+startNPC: ozzy
+level: 12
+reward:
+  items:
+    - 57
+questItems:
+  - 1071
+  - 1072
+  - 1035
+walkthrough:
+  en:
+    - Talk with {npc:ozzy}. He gives you a {item:1071}.
+    - Hunt {npc:plague_zombie} until you get a {item:1035}. The zombies are only
+      in one spot - the head of the river to the northwest of the village.
+    - Return to {npc:ozzy}. He confirms the dust in the poison, and send you to
+      get 5 more to study.
+    - Hunt {npc:plague_zombie} until you have {item:1035:5}.
+    - Return the 5 dusts and the charm to {npc:ozzy}, for {item:57:18250}.
+  ru:
+    - Поговорите с {npc:ozzy}. Он даст вам {item:1071}.
+    - Убивайте {npc:plague_zombie}, пока не получите {item:1035}.
+    - Вернитесь к {npc:ozzy}. Он просит принести еще {item:1035:5} для изучения.
+    - Убивайте {npc:plague_zombie} пока не получите {item:1035:5}.
+    - Вернитесь к {npc:ozzy} с {item:1035:5}, и получите в награду
+      {item:57:18250}.

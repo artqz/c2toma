@@ -1,0 +1,83 @@
+id: 106
+name:
+  en: Forgotten Truth
+  ru: Забытая правда
+desc:
+  en: Dark Elven Tetrarch Thifiell asked Abyssal Celebrant Kartia to translate an
+    ancient script. And now, he asks you to retrieve both the original copy and
+    the translation from Kartia.
+  ru: Тетрарх Темных Эльфов Тифиэль попросил Служителя Бездны Картию перевести
+    священный манускрипт. Теперь он хочет получить переведенную копию
+    "Откровений Кайши".
+type: one_time
+requirements:
+  races:
+    - darkelf
+startNPC: tetrarch_thifiell
+level: 10
+reward:
+  items:
+    - 989
+    - 1835
+    - 5790
+    - 2509
+    - 1060
+    - 4414
+    - 4415
+    - 4416
+    - 4413
+    - 4412
+questItems:
+  - 984
+  - 985
+  - 986
+  - 987
+  - 988
+walkthrough:
+  en:
+    - Talk to {npc:tetrarch_thifiell}. He gives you an {item:984}.
+    - Give the {item:984} to {npc:karta}. She gives you an {item:985}.
+    - Hunt {npc:tumran_orc_brigand} until you receive both the {item:986} and
+      {item:987}. The brigands are in the field to the west of the Dark Elven
+      Initiation Temple.
+    - Return to {npc:karta} and give him the {item:986}, {item:987}, and
+      {item:985}.
+    - |-
+      Give the translation to {npc:tetrarch_thifiell}, and get it as a reward:
+      - {item:eldritch_dagger}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Reward for the mage:
+      - {item:spiritshot_none_for_rookie:3000}
+      - {item:spiritshot_none:500}
+
+      Reward for the fighter:
+      - {item:soulshot_none:1000}
+  ru:
+    - Поговорите с {npc:tetrarch_thifiell}. Он даст вам {item:984}.
+    - Отнесите талисман {npc:karta}. Она даст вам {item:985}.
+    - Убивайте {npc:tumran_orc_brigand}, пока не получите {item:986} и
+      {item:987}. Они находятся возле Церемониального Алтаря
+    - Вернитесь к {npc:karta} и отдайте ей {item:986}, {item:987}, and
+      {item:985}. Она даст вам {item:988}.
+    - |-
+      Отдайте перевод {npc:tetrarch_thifiell}, и получите в награду:
+      - {item:eldritch_dagger}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Награда для мага:
+      - {item:spiritshot_none_for_rookie:3000}
+      - {item:spiritshot_none:500}
+
+      Награда для воина:
+      - {item:soulshot_none:1000}

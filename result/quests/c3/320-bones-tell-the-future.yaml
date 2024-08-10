@@ -1,0 +1,34 @@
+id: 320
+name:
+  en: Bones Tell the Future
+  ru: Предсказание будущего
+desc:
+  en: Tetrarch Kaitar knows how to foretell the future by throwing bones of the
+    undead. Every month he does a telling to prepare for any disaster to the
+    Dark Elves, and he asks you to retrieve the undead bones.
+  ru: Тетрарх Кайтар может предсказывать будущее по тому, как лягут подброшенные
+    кости нежити. Каждый месяц он проводит этот обряд, чтобы предсказать любую
+    угрозу Темным Эльфам. Он просит Вас принести 10 Обломков Кости. Вы можете
+    добыть их в Школе Темной Магии, убивая скелеты.
+type: repeatable
+requirements:
+  races:
+    - darkelf
+startNPC: tetrarch_kaitar
+level: 10
+reward:
+  items:
+    - 57
+questItems:
+  - 809
+walkthrough:
+  en:
+    - Talk to {npc:tetrarch_kaitar}.
+    - Go to the School of Dark Arts and Collect {item:bone_fragment:10} from
+      {npc:skeleton_hunter} and {npc:skeleton_hunter_archer}.
+    - Give the fragments to {npc:tetrarch_kaitar}, for {item:57:8470}.
+  ru:
+    - Поговорите с {npc:tetrarch_kaitar}.
+    - Убивайте {npc:skeleton_hunter} и {npc:skeleton_hunter_archer}, пока не
+      получите {item:bone_fragment:10}.
+    - Вернитесь к {npc:tetrarch_kaitar}, и получите в награду {item:57:8470}.

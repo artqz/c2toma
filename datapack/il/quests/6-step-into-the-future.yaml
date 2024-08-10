@@ -1,0 +1,32 @@
+id: 6
+name:
+  en: Step into the Future
+  ru: Шаг в будущее
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: { races: [human] }
+startNPC: 7006
+level: 3
+reward: { items: [7559, 7570] }
+questItems: [7571]
+walkthrough:
+  en:
+    - Talk to {npc:rapunzel} (Talking Island Village).
+    - Talk to {npc:baul}.
+    - Talk to {npc:sir_collin_windawood}
+    - |-
+      Return to {npc:mint}, for reward: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - "Scrolling gives you the opportunity to move to the Giran once. To return back to the Talking Island Village, you need to take a {quest:45}."
+  ru:
+    - Поговорите с {npc:rapunzel}.
+    - Поговорите с {npc:baul}.
+    - Поговорите с {npc:sir_collin_windawood}
+    - |-
+      Вернитесь к {npc:rapunzel}, и получите в награду: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - "Скролл дает возможность один раз переместиться в Giran. Чтобы вернуться обратно в Talking Island Village необходимо взять {quest:45}."

@@ -1,0 +1,32 @@
+id: 313
+name:
+  en: Collect Spores
+  ru: Собирание спор
+desc:
+  en: The Elven Forest has been contaminated slowly by the poison from the Sea of
+    Spores. The Elven Hierarachs are researching a neutralizer with the aid of
+    Trader Herbiel. Herbiel asks for spore powder, for they are essential to the
+    research. Bring spore sacs to Herbiel from green fungi of the Elven Forest,
+    and you shall receive a reward.
+  ru: Море Спор медленно, но верно отравляет Эльфийский Лес. Иерархи Эльфов с
+    помощью Торговца Гербиэля пытаются найти противоядие. Гербиэлю нужен порошок
+    из спор, необходимый для исследований. Добудьте в Эльфийском Лесу 10 Грибных
+    Спор и отдайте их Гербиэлю.
+type: repeatable
+requirements: {}
+startNPC: green
+level: 8
+reward:
+  items:
+    - 57
+questItems:
+  - 1118
+walkthrough:
+  en:
+    - Talk to {npc:green}.
+    - Hunt {npc:spore_fungus} to collect {item:fungus_sac1:10}.
+    - Give the 10 sacs to {npc:green}, for {item:57:3500}.
+  ru:
+    - Поговорите с {npc:green}.
+    - Охотьтесь на {npc:spore_fungus}, пока не получите {item:fungus_sac1:10}.
+    - Отнесите споры к {npc:green}, и получите в награду {item:57:3500}.

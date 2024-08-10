@@ -1,0 +1,115 @@
+id: 325
+name:
+  en: Grim Collector
+  ru: Беспощадный коллекционер
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: guard_curtiz
+level: 15
+reward:
+  items:
+    - 57
+questItems:
+  - 1350
+  - 1351
+  - 1352
+  - 1353
+  - 1354
+  - 1355
+  - 1356
+  - 1357
+  - 1358
+walkthrough:
+  en:
+    - Talk to {npc:guard_curtiz} (Gludio).
+    - Talk to {npc:samed} behind the building just northwest of the gate. He
+      will give you an {item:anatomy_diagram}.
+    - Hunt {npc:tracker_skeleton}, {npc:tracker_skeleton_leader},
+      {npc:scout_skeleton}, {npc:sniper_skeleton}, {npc:shield_skeleton} and
+      {npc:skeleton_infantry} to collect {item:skull1}, {item:rib_bone1},
+      {item:arm_bone1}, {item:spine1} and {item:thigh_bone1}.
+    - "Hunt {npc:ruin_zombie}, {npc:ruin_zombie_leader}, {npc:zombie_soldier}
+      and {npc:zombie_warrior} to collect {item:zombie_head1},
+      {item:zombie_heart1} and {item:zombie_liver1}. You can do this in two
+      areas: Ruins of Despair, due south of Gludio. The ruins sprawl beyond the
+      inner walled area, so explore the outer areas."
+    - Take all the skeleton parts to {npc:varsak} just north of the east gate
+      near the teleporter. He takes each set of 5 skeleton parts and tries to
+      assemble a {item:complete_skeleton} (80% chance). Repeat for each set of
+      parts you have.
+    - >-
+      Return to {npc:samed} for your reward.
+
+      For one brought {item:complete_skeleton} you will get {item:57:884}, if
+      there is more than one skeleton, you will get {item:57:884} for the first
+      one and {item:57:341} for the next ones.
+
+
+      Reward for parts: 
+
+      - {item:57:30} for each {item:zombie_head1}
+
+      - {item:57:20} for each {item:zombie_heart1}
+
+      - {item:57:20} for each {item:zombie_liver1}
+
+      - {item:57:100} for each {item:skull1}
+
+      - {item:57:40} for each {item:rib_bone1}
+
+      - {item:57:14} for each {item:spine1}
+
+      - {item:57:14} for each {item:arm_bone1}
+
+      - {item:57:14} for each {item:thigh_bone1}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:1629}.
+  ru:
+    - Поговорите с {npc:guard_curtiz} (Gludio).
+    - Поговорите с {npc:samed} за зданием к северо-западу от ворот. Он даст вам
+      {item:anatomy_diagram}.
+    - Охотьтесь на {npc:tracker_skeleton}, {npc:tracker_skeleton_leader},
+      {npc:scout_skeleton}, {npc:sniper_skeleton}, {npc:shield_skeleton} и
+      {npc:skeleton_infantry}, чтобы получать {item:skull1}, {item:rib_bone1},
+      {item:arm_bone1}, {item:spine1} и {item:thigh_bone1}.
+    - "Охотьтесь на {npc:ruin_zombie}, {npc:ruin_zombie_leader},
+      {npc:zombie_soldier} and {npc:zombie_warrior} to collect
+      {item:zombie_head1}, {item:zombie_heart1} и {item:zombie_liver1}. You can
+      do this in two areas: Ruins of Despair, due south of Gludio. The ruins
+      sprawl beyond the inner walled area, so explore the outer areas."
+    - Отнесите все детали скелета к {npc:varsak} к северу от восточных ворот,
+      рядом с телепортом. С шансом в 80% процентов, он обменяет {item:skull1},
+      {item:rib_bone1}, {item:spine1}, {item:thigh_bone1}, {item:arm_bone1} на
+      {item:complete_skeleton}.
+    - >-
+      Вернитесь к {npc:samed} за наградой. 
+
+      За одного принесенного {item:complete_skeleton} вы получите {item:57:884},
+      если скелетов больше одного, то получите {item:57:884} за первого и
+      {item:57:341} за последующих.
+
+
+      Награда за части: 
+
+      - {item:57:30} за каждый {item:zombie_head1}
+
+      - {item:57:20} за каждый {item:zombie_heart1}
+
+      - {item:57:20} за каждый {item:zombie_liver1}
+
+      - {item:57:100} за каждый {item:skull1}
+
+      - {item:57:40} за каждый {item:rib_bone1}
+
+      - {item:57:14} за каждый {item:spine1}
+
+      - {item:57:14} за каждый {item:arm_bone1}
+
+      - {item:57:14} за каждый {item:thigh_bone1}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:1629}.

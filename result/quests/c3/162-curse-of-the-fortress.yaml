@@ -1,0 +1,45 @@
+id: 162
+name:
+  en: Curse of the Fortress
+  ru: Проклятие подземной крепости
+desc:
+  en: Trader Unoren says that the recent undead creatures, in the Underground
+    Fortress, were soldiers resurrected by a curse. He also says he's figuring
+    out a way to repel the curse of the vengeful spirits, and he needs you to
+    bring him bone fragments and Elf skulls.
+  ru: Торговец Унорен считает, что нежить в подземной крепости – это эльфийские
+    солдаты, воскрешенные проклятием. Он хочет упокоить восставших духов и
+    освободить души товарищей. Он просит Вас принести ему Осколки Кости и Черепа
+    Эльфов.
+type: one_time
+requirements:
+  races:
+    not:
+      - darkelf
+startNPC: uno
+level: 12
+reward:
+  items:
+    - 57
+    - 625
+questItems:
+  - 1158
+  - 1159
+walkthrough:
+  en:
+    - Talk to {npc:uno}.
+    - Go to the Elven Fortress.
+    - Hunt {npc:dungeon_skeleton_archer} and {npc:dungeon_skeleton} until you
+      have {item:1158:10}.
+    - Hunt {npc:mist_terror} and {npc:dark_terror} until you have {item:1159:3}.
+      They are further into the dungeon.
+    - Give the fragments and skulls to {npc:uno}, for a {item:bone_shield} and
+      {item:57:24000}.
+  ru:
+    - Поговорите с {npc:uno}.
+    - Убивайте {npc:dungeon_skeleton_archer} и {npc:dungeon_skeleton}, пока не
+      получите {item:1158:10}.
+    - Убивайте {npc:mist_terror} и {npc:dark_terror}, пока не получите
+      {item:1159:3}.
+    - Вернитесь к {npc:uno} с {item:1158:10} и {item:1159:3}, и получите в
+      награду {item:bone_shield} и {item:57:24000}.

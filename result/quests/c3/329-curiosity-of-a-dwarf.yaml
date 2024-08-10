@@ -1,0 +1,44 @@
+id: 329
+name:
+  en: Curiosity of a Dwarf
+  ru: Гномье любопытство
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: trader_rolento
+level: 33
+reward:
+  items:
+    - 57
+questItems:
+  - 1346
+  - 1365
+walkthrough:
+  en:
+    - Talk to {npc:trader_rolento}.
+    - Kill {npc:puncher} and {npc:granitic_golem} to collect
+      {item:golem_heartstone} and {item:broken_heartstone}.
+    - >-
+      Return to {npc:trader_rolento} for your reward:
+
+      - {item:57:50} for each {item:broken_heartstone}
+
+      - {item:57:1000} for each {item:golem_heartstone}
+
+      If you bring more than 10 heartstones, you will additionally receive
+      {item:57:1183}.
+  ru:
+    - Поговорите с {npc:trader_rolento}.
+    - Охотьтесь на {npc:puncher} и {npc:granitic_golem}, чотбы получать
+      {item:golem_heartstone} и {item:broken_heartstone}.
+    - >-
+      Вернитесь к {npc:trader_rolento} чтобы получить:
+
+      - {item:57:50} за каждый {item:broken_heartstone}
+
+      - {item:57:1000} за каждый {item:golem_heartstone}
+
+      Если вы принесете более 10 предметов, то дополнительно получите
+      {item:57:1183}.

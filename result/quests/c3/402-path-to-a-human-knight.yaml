@@ -1,0 +1,80 @@
+id: 402
+name:
+  en: Path to a Human Knight
+  ru: Путь Рыцаря
+desc:
+  en: Quest that must be fulfilled to change occupations to a Knight. Sir Karol
+    Vasper explains that the ‘Trial of the Esquire’ must be performed in order
+    to become a Knight. Squires must travel to other villages and serve errands
+    of Captains and High Priests. You must gather more than 3 Lord’s Mark.
+  ru: Чтобы получить звание Рыцаря, Вам необходимо выполнить это задание.
+    Отправляйтесь в Деревню Глудин, Город Глудио и Деревню Говорящего Острова и
+    выполните задания их Капитанов и Верховных Жрецов. Соберите как минимум 3
+    Монеты Повелителя.
+type: one_time
+requirements:
+  occupation:
+    - fighter
+startNPC: sir_karrel_vasper
+level: 19
+reward:
+  exp: 3200
+  sp: 2260
+  items:
+    - 1161
+questItems:
+  - 1271
+  - 1161
+  - 1162
+  - 1163
+  - 1164
+  - 1165
+  - 1166
+  - 1167
+  - 1168
+  - 1169
+  - 1170
+  - 1171
+  - 1172
+  - 1173
+  - 1174
+  - 1175
+  - 1176
+  - 1177
+  - 1178
+  - 1179
+walkthrough:
+  en:
+    - Talk to {npc:sir_karrel_vasper} (Gludin).
+    - Talk to {npc:levian}.
+    - Talk to {npc:captain_bezique}.
+    - Kill {npc:langk_lizardman}, {npc:langk_lizardman_scout} and
+      {npc:langk_lizardman_warrior} to collect {item:1175:20}.
+    - Kill {npc:poison_spider} and {npc:bind_poison_spider} to collect
+      {item:1173:20}.
+    - Talk to {npc:levian}.
+    - Talk to {npc:captain_bezique}.
+    - Talk to {npc:captain_bathia}.
+    - Kill {npc:bugbear_raider} to collect {item:1169:10}.
+    - Talk to {npc:captain_bathia}.
+    - Talk to {npc:sir_karrel_vasper}, for {exp:3200}, {sp:2260} - {sp:7260}
+      (Depends on the Coin of Lords brought) and {item:1161}.
+    - When you are Level 20, take the sword to {npc:grandmaster_ramos} (Gludin).
+      He grants you Knighthood.
+  ru:
+    - Поговорите с {npc:sir_karrel_vasper} (Gludin).
+    - Поговорите с {npc:levian}.
+    - Поговорите с {npc:captain_bezique}.
+    - Убивайте {npc:langk_lizardman}, {npc:langk_lizardman_scout} и
+      {npc:langk_lizardman_warrior}, пока не получите {item:1175:20}.
+    - Убивайте {npc:poison_spider} and {npc:bind_poison_spider}, пока не
+      получите {item:1173:20}.
+    - Поговорите с {npc:levian}.
+    - Поговорите с {npc:captain_bezique}.
+    - Поговорите с {npc:captain_bathia}.
+    - Убивайте {npc:bugbear_raider}, пока не получите {item:1169:10}.
+    - Поговорите с {npc:captain_bathia}.
+    - Поговорите с {npc:sir_karrel_vasper}, чтобы получить {exp:3200}, {sp:2260}
+      - {sp:7260} (Зависит от принесенных Coin of Lords) и {item:1161}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к {npc:grandmaster_ramos}
+      (Gludin), чтобы стаь Knight.

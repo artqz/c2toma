@@ -1,0 +1,34 @@
+id: 353
+name:
+  en: Power of Darkness
+  ru: Власть Тьмы
+desc:
+  en: Galman is a businessman in Dragon Valley. He is very depressed because his
+    lover is dying. Out of desperation he has begun delving into the powers of
+    darkness. He asks you to find him a stone of contract. Hunt the Malruk
+    succubus and the Malruk succubus turens.
+  ru: Гальман - торговец из Долины Драконов. Его любимая умирает, и, пытаясь ее
+    спасти, Гальман начал изучать Темную магию. Он просит Вас найти для него
+    Камень Контракт.
+type: repeatable
+requirements: {}
+startNPC: gaiman
+level: 55
+reward:
+  items:
+    - 57
+questItems:
+  - 5862
+walkthrough:
+  en:
+    - Talk to {npc:gaiman}.
+    - Hunt {npc:malruk_succubus} and {npc:malruk_succubus_turen} to collect
+      {item:stone_of_contract}.
+    - Return to {npc:gaiman}, for {item:57:2500} and {item:57:230} for each
+      {item:stone_of_contract}.
+  ru:
+    - Поговорите с {npc:gaiman}.
+    - Охотьтесь на {npc:malruk_succubus} и {npc:malruk_succubus_turen} для
+      получения {item:stone_of_contract}.
+    - Вернитесь к {npc:gaiman}, и получите награду {item:57:2500} и
+      {item:57:230} за каждый {item:stone_of_contract}.

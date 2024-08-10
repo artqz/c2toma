@@ -1,0 +1,34 @@
+id: 157
+name:
+  en: Recover Smuggled Goods
+  ru: Контрабанда
+desc:
+  en: Warehouse Keeper Wilfred has been smuggling with Grecia, where trading broke
+    off after the war. But recently, a merchant ship was stranded spilling
+    adamantite ore all over the shore. He has recovered most, but giant toads
+    have been swallowing it. He asks you to capture giant toads and recover the
+    ore.
+  ru: Несмотря на эмбарго товаров из Грации Смотритель Склада Вильфорд промышляет
+    контрабандой товаров оттуда. Однако недавно торговый корабль с Адамантитовой
+    Рудой сел на мель, и руда рассыпалась по всему побережью. Большую часть ее
+    удалось собрать, однако Гигантские Жабы проглотили остатки. Ваша задача -
+    убить Гигантских Жаб и собрать руду.
+type: one_time
+requirements: {}
+startNPC: wilph
+level: 5
+reward:
+  items:
+    - 20
+questItems:
+  - 1024
+walkthrough:
+  en:
+    - Talk to {npc:wilph}.
+    - Hunt {npc:giant_toad} until you collect {item:1024:20}. Exit the village
+      southwest and follow the path to the toads.
+    - Give the ore to {npc:wilph} for {item:buckler}.
+  ru:
+    - Поговорите с {npc:wilph}.
+    - Убивайте {npc:giant_toad}, пока не получите {item:1024:20}.
+    - Вернитесь к {npc:wilph} с {item:1024:20}, и получите {item:buckler}.

@@ -1,0 +1,66 @@
+id: 273
+name:
+  en: Invaders of the Holy Land
+  ru: Нападение на Святую землю
+desc:
+  en: Atuba Chief Varkees says that a foreign race known as the rakeclaw imps have
+    invaded the Immortal Lands, polluting the holy land of the Orcs. According
+    to his explanation, the rakeclaw imps are a race created from magic, and are
+    being controlled by someone through black magic. Defeat the invaders of the
+    holy land, and collect the soulstones embedded in their hearts in order to
+    find out who is behind them.
+  ru: Глава Атуба Варкис говорит, что на Плато Бессмертия вторглись когтистые бесы
+    и оскверняют святую землю Орков. По его мнению, этих монстров создал
+    какой-то колдун. Уничтожьте мерзких захватчиков и соберите камни души,
+    врезанные в их сердца, чтобы узнать, кто ими управляет. Принесите камни
+    Варкису, и Вы получите награду.
+type: repeatable
+requirements:
+  races:
+    - orc
+startNPC: atuba_chief_varkees
+level: 6
+reward:
+  items:
+    - 57
+    - 5789
+questItems:
+  - 1475
+  - 1476
+walkthrough:
+  en:
+    - Talk to {npc:atuba_chief_varkees}.
+    - Hunt {npc:rakeclaw_imp}, {npc:rakeclaw_imp_hunter} and
+      {npc:rakeclaw_imp_chieftain} to collect {item:1475} and {item:1476}.
+    - >-
+      Return to {npc:atuba_chief_varkees}, and get it as a reward: 
+
+      - {item:soulshot_none_for_rookie:6000}
+
+      - {item:57:3} for each {item:black_soulstone}
+
+      - {item:57:10} for each {item:red_soulstone}
+
+      If you bring more than 10 pieces without {item:red_soulstone}, you will
+      additionally receive {item:57:1500}.
+
+      If you bring more than 10 pieces with {item:red_soulstone}, you will
+      additionally receive {item:57:1800}.
+  ru:
+    - Поговорите с {npc:atuba_chief_varkees}.
+    - Убивайте {npc:rakeclaw_imp}, {npc:rakeclaw_imp_hunter} и
+      {npc:rakeclaw_imp_chieftain}, чтобы получать {item:1475} и {item:1476}.
+    - >-
+      Вернитесь к {npc:atuba_chief_varkees}, и получите в награду: 
+
+      - {item:soulshot_none_for_rookie:6000}
+
+      - {item:57:3} за каждый {item:black_soulstone}
+
+      - {item:57:10} за каждый {item:red_soulstone}
+
+      Если вы принесете более 10 частей без {item:red_soulstone}, то
+      дополнительно получите {item:57:1500}
+
+      Если вы принесете более 10 частей с {item:red_soulstone}, то дополнительно
+      получите {item:57:1800}

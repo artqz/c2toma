@@ -1,0 +1,55 @@
+id: 291
+name:
+  en: Revenge of the Redbonnet
+  ru: Месть Марис
+desc:
+  en: Maryse Redbonnet lost her family as a child and nearly lost her own life to
+    wolves, and so she burns with hatred for them. Grant her wish by hunting the
+    black wolves around the village, then gather forty of their pelts and bring
+    them back to Maryse to receive her grandmother’s heirloom.
+  ru: Родителей Марис Редбоннет убили волки. С тех пор она всей душой их
+    ненавидит. Она просит Вас поохотиться на Черных Волков вокруг деревни,
+    собрать 40 их шкур и принести ей. В награду Вы получите фамильную ценность
+    бабушки Марис.
+type: repeatable
+requirements: {}
+startNPC: marife_redbonnet
+level: 4
+reward:
+  items:
+    - 1502
+    - 1503
+    - 1504
+    - 1505
+    - 736
+questItems:
+  - 1482
+walkthrough:
+  en:
+    - Talk to {npc:marife_redbonnet}.
+    - Kill {npc:black_wolf} to collect {item:black_wolf_pelt:40}.
+    - >-
+      Deliver the {item:black_wolf_pelt:40} to {npc:marife_redbonnet}, and get
+      one random item:
+
+      - {item:grandmas_pearl}
+
+      - {item:grandmas_mirror}
+
+      - {item:grandmas_necklace}
+
+      - {item:grandmas_hairpin} and {item:scroll_of_escape}
+  ru:
+    - Поговорите с {npc:marife_redbonnet}.
+    - Убивайте {npc:black_wolf}, пока не получите {item:black_wolf_pelt:40}.
+    - >-
+      Отнесите {item:black_wolf_pelt:40} к {npc:marife_redbonnet}, и получите
+      одну случайную награду:
+
+      - {item:grandmas_pearl}
+
+      - {item:grandmas_mirror}
+
+      - {item:grandmas_necklace}
+
+      - {item:grandmas_hairpin} and {item:scroll_of_escape}

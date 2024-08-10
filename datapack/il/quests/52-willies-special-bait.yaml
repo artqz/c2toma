@@ -1,0 +1,26 @@
+id: 52
+name:
+  en: Willie's Special Bait
+  ru: Особая Наживка Вилли
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: {}
+startNPC: 8574
+level: 48
+reward: { items: [7612] }
+questItems: [7623]
+walkthrough:
+  en:
+    - Talk to {npc:fisher_willeri} (Oren).
+    - Kill {npc:tarlk_basilisk} to collect {item:q_eye_of_talk:100}.
+    - |-
+      Return to {npc:fisher_willeri}, and get reward: 
+      - {item:q_earth_lure:4}
+  ru:
+    - Поговорите с {npc:fisher_willeri} (Oren).
+    - Убивайте {npc:tarlk_basilisk}, пока не получите {item:q_eye_of_talk:100}.
+    - |-
+      Вернитесь к {npc:fisher_willeri}, и получите в награду: 
+      - {item:q_earth_lure:4}

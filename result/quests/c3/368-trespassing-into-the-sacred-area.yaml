@@ -1,0 +1,45 @@
+id: 368
+name:
+  en: Trespassing into the Sacred Area
+  ru: Вторжение на Святую Землю
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: priestess_restina
+level: 36
+reward:
+  items:
+    - 57
+questItems:
+  - 5881
+walkthrough:
+  en:
+    - Talk to {npc:priestess_restina}.
+    - Hunt {npc:blade_stakato}, {npc:blade_stakato_worker},
+      {npc:blade_stakato_soldier} and {npc:blade_stakato_drone} to collect
+      {item:q_blade_stakatos_fang}.
+    - >-
+      Return to {npc:priestess_restina} and recieve: 
+
+      - {item:57:2000}
+
+      - {item:57:250} for each {item:q_blade_stakatos_fang}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:3730}.
+  ru:
+    - Поговорите с {npc:priestess_restina}.
+    - Охотьтесь на {npc:blade_stakato}, {npc:blade_stakato_worker},
+      {npc:blade_stakato_soldier} и {npc:blade_stakato_drone}, чтобы получать
+      {item:q_blade_stakatos_fang}.
+    - >-
+      Вернитесь к {npc:priestess_restina} и получите в награду: 
+
+      - {item:57:2000}
+
+      - {item:57:250} за каждый {item:q_blade_stakatos_fang}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:3730}.

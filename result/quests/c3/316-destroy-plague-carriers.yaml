@@ -1,0 +1,60 @@
+id: 316
+name:
+  en: Destroy Plague Carriers
+  ru: Разносчики чумы
+desc:
+  en: The ratmen, who the Elves call ‘the plague carriers,’ spread an epidemic in
+    the Elven Forest and once fought for the Dark Elves. Because of this, the
+    Elves have bitterness against them. Master Ellenia asks you to eliminate the
+    ratmen that are nesting in the Elven Underground Fortress. Bring her their
+    fangs as proof, and you shall receive a reward.
+  ru: Крысолюды, которых Эльфы называют "разносчиками чумы", были виновны в
+    эпидемии, поразившей Эльфийский Лес, и сражались на стороне Темных Эльфов.
+    Ненависть Эльфов к этим тварям можно понять. Мастер Элиния просит Вас убить
+    Крысолюдов, гнездящихся в Эльфийской Подземной Крепости. В частности, Вы
+    должны уничтожить их вожака, Варула Грязного Когтя, и принести ей его клык в
+    качестве доказательства.
+type: repeatable
+requirements:
+  races:
+    - elf
+startNPC: elliasin
+level: 18
+reward:
+  items:
+    - 57
+questItems:
+  - 1042
+  - 1043
+walkthrough:
+  en:
+    - Talk to {npc:elliasin}.
+    - Hunt {npc:sukar_wererat} and {npc:sukar_wererat_leader} to collect
+      {item:wererat_fang}
+    - Hunt {npc:varool_foulclaw} to collect {item:varool_foulclaws_fang}. Once
+      you get a {item:varool_foulclaws_fang}, return to {npc:elliasin}.
+    - >-
+      Return to {npc:elliasin}, and get it as a reward:
+
+      - {item:57:30} for each {item:wererat_fang} 
+
+      - {item:57:10000} for {item:varool_foulclaws_fang}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:5000}.
+  ru:
+    - Поговорите с {npc:elliasin}.
+    - Охотьтесь на {npc:sukar_wererat} и {npc:sukar_wererat_leader}, чтобы
+      получать {item:wererat_fang}.
+    - Охотьтесь на {npc:varool_foulclaw}, чтобы получить
+      {item:varool_foulclaws_fang}. Как только вы получите
+      {item:varool_foulclaws_fang}, можете вернуться к {npc:elliasin}.
+    - >-
+      Вернитесь к {npc:elliasin} и получите в награду: 
+
+      - {item:57:30} за каждый {item:wererat_fang} 
+
+      - {item:57:10000} за {item:varool_foulclaws_fang}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:5000}.

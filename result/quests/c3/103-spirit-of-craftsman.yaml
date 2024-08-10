@@ -1,0 +1,95 @@
+id: 103
+name:
+  en: Spirit of Craftsman
+  ru: Дух мастера
+desc:
+  en: The Dark Elven Blacksmith, Karrod, wishes to call upon the spirit of
+    Warsmith Roberto Steelbender in order to learn the skills of refining
+    Oriharukon Ore. He asks for aid, and has you visit Abyssal Celebrant
+    Cecktinon of the Temple of Shilen.
+  ru: Кузнец Темных Эльфов Кэррод задумал призвать дух кузнеца Роберто Стальные
+    Клещи, чтобы узнать у него, как перерабатывать орихаруконовую руду. Ему
+    нужна помощь в вызове духа мертвеца.
+type: one_time
+requirements:
+  races:
+    - darkelf
+startNPC: blacksmith_karoyd
+level: 11
+reward:
+  items:
+    - 975
+    - 5789
+    - 1835
+    - 2509
+    - 1060
+    - 4414
+    - 4415
+    - 4416
+    - 4413
+    - 4412
+questItems:
+  - 968
+  - 969
+  - 970
+  - 1107
+  - 971
+  - 972
+  - 973
+  - 974
+walkthrough:
+  en:
+    - Talk to {npc:blacksmith_karoyd}. He gives you {item:968}.
+    - Give the letter to {npc:cecon}. He gives you {item:969}.
+    - Give the voucher to {npc:harne}. She gives you {item:970}.
+    - Go to the School of Dark Arts and collect {item:1107:10} from
+      {npc:skeleton_hunter} and {npc:skeleton_hunter_archer}.
+    - Give the bone fragments to {npc:harne}, and she gives you a {item:971}.
+    - Give the soul catcher to {npc:cecon}. He gives you {item:972}.
+    - Go to the marsh area southwest of the village and hunt {npc:marsh_zombie}
+      until you get a {item:973}.
+    - Give the head to {npc:cecon} and get a {item:974}.
+    - |-
+      Give the steelbender to {npc:blacksmith_karoyd}, and get it as a reward:
+      - {item:bloodsaber}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Bonus for the mage:
+      - {item:spiritshot_none:500}
+
+      Bonus for the fighter:
+      - {item:soulshot_none_for_rookie:7000}
+      - {item:soulshot_none:1000}
+  ru:
+    - Поговорите с {npc:blacksmith_karoyd}. Он даст вам {item:968}.
+    - Отдайте письмо {npc:cecon}. Он даст вам {item:969}.
+    - Передайте поручение {npc:harne}. Она даст вам {item:970}.
+    - Отправляйтесь в Школа Темной Магии, где необходимо убивать
+      {npc:skeleton_hunter} и {npc:skeleton_hunter_archer}, пока не получите
+      {item:1107:10}.
+    - Отдайте обломки {npc:harne}, и она даст вам {item:971}.
+    - Отдайте Ловеца Душ {npc:cecon}. Он даст вам {item:972}.
+    - Отправляйтесь в Топи, где необходимо убивать {npc:marsh_zombie}, пока не
+      получите {item:973}.
+    - Отдайте Голову Зомби {npc:cecon}, он даст вам {item:974}.
+    - |-
+      Отнесите {item:974} к {npc:blacksmith_karoyd}, и получите в награду:
+      - {item:bloodsaber}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Бонус для мага:      
+      - {item:spiritshot_none:500}
+
+      Бонус для воина:
+      - {item:soulshot_none_for_rookie:7000}
+      - {item:soulshot_none:1000}

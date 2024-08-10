@@ -1,0 +1,41 @@
+id: 618
+name:
+  en: Into the Flame
+  ru: Прямиком в пламя
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: watcher_valakas_klein
+level: 60
+reward:
+  items:
+    - 7267
+questItems:
+  - 7265
+  - 7266
+walkthrough:
+  en:
+    - Talk to {npc:watcher_valakas_klein} (Forge of the Gods).
+    - Talk to {npc:blacksmith_hilda}.
+    - Kill {npc:kukaburo}, {npc:kukaburo_a}, {npc:kukaburo_b}, {npc:kukaburo_c},
+      {npc:bandersnatch}, {npc:bandersnatch_a}, {npc:bandersnatch_b},
+      {npc:bandersnatch_c}, {npc:grendel}, {npc:grendel_a}, {npc:grendel_b}, and
+      {npc:grendel_c} to collect {item:q_vacualite_ore:50}.
+    - Talk to {npc:blacksmith_hilda}.
+    - |-
+      Return to {npc:watcher_valakas_klein}, and get reward: 
+      - {item:q_floating_stone}
+  ru:
+    - Поговорите с {npc:watcher_valakas_klein} (Forge of the Gods).
+    - Поговорите с {npc:blacksmith_hilda}.
+    - Убивайте {npc:kukaburo}, {npc:kukaburo_a}, {npc:kukaburo_b},
+      {npc:kukaburo_c}, {npc:bandersnatch}, {npc:bandersnatch_a},
+      {npc:bandersnatch_b}, {npc:bandersnatch_c}, {npc:grendel},
+      {npc:grendel_a}, {npc:grendel_b} и {npc:grendel_c}, пока не получите
+      {item:q_vacualite_ore:50}.
+    - Поговорите с {npc:blacksmith_hilda}.
+    - |-
+      Вернитесь к {npc:watcher_valakas_klein} и получите в награду: 
+      - {item:q_floating_stone}

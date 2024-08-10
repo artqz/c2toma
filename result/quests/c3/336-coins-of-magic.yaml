@@ -1,0 +1,471 @@
+id: 336
+name:
+  en: Coins of Magic
+  ru: Волшебные монеты
+desc:
+  en: Warehouse Keeper Sorint’s hobby is collecting coins. He wishes to obtain a
+    rare coin called the golden dragon of kaldis, which is owned by Union
+    President Bernard. He promises a great reward for those who brings forth to
+    him the coin.
+  ru: Смотритель Склада Соринт коллекционирует разные монеты. Он просит Вас
+    встретиться с Главой Гильдии Охотников Бернардом и найти для него монету с
+    изображением Золотого Дракона Калдиса.
+type: repeatable
+requirements: {}
+startNPC: warehouse_keeper_sorint
+level: 40
+reward:
+  items:
+    - 852
+    - 855
+    - 886
+    - 916
+    - 2435
+    - 472
+    - 2459
+    - 2414
+    - 206
+    - 233
+    - 303
+    - 132
+questItems:
+  - 3811
+  - 3812
+  - 3813
+  - 3814
+  - 3815
+walkthrough:
+  en:
+    - >-
+      Level 3 Member:
+
+      Talk to {npc:warehouse_keeper_sorint}.
+
+      Talk to {npc:union_president_bernard}.
+
+      Go hunt {npc:harit_lizardman_shaman} and {npc:harit_lizardm_matriarch}
+      until you get a {item:q_kaldis_gold_dragon}.
+
+      Return to {npc:warehouse_keeper_sorint} and join the
+      {item:q_cc_membership_3}. You will be a Level 3 member.
+    - >-
+      Level 2 Member:
+
+      Talk to {npc:warehouse_keeper_sorint}.
+
+      Collect the following coins: {item:q_blood_werewolf},
+      {item:q_blood_drevanul}, {item:q_gold_knight}, {item:q_gold_drake},
+      {item:q_silver_fairy}, {item:q_silver_golem}.
+
+      Talk to {npc:warehouse_keeper_sorint} again and join the
+      {item:q_cc_membership_2}. You will be a Level 2 member.
+    - >-
+      Level 1 Member:
+
+      Talk to {npc:warehouse_keeper_sorint}.
+
+      Collect the following coins: {item:q_blood_basilisk},
+      {item:q_blood_succubus}, {item:q_gold_giant}, {item:q_gold_wyrm},
+      {item:q_silver_undine}, {item:q_silver_dryad}.
+
+      Talk to {npc:warehouse_keeper_sorint} again and join the
+      {item:q_cc_membership_1}. You will be a Level 1 member.
+    - >-
+      How to Get Coins from Creatures.
+
+      Kill {npc:timak_orc}, {npc:timak_orc_shaman}, {npc:timak_orc_archer},
+      {npc:timak_orc_soldier}, {npc:lakin}, {npc:hatar_hanishee} and
+      {npc:punishment_of_undead} to collect {item:q_blood_medusa}.
+
+      Kill {npc:byfoot}, {npc:byfoot_sigel}, {npc:vanor_silenos_shaman},
+      {npc:tarlk_bugbear_boss}, {npc:oel_mahum} and {npc:oel_mahum_warrior} to
+      collect {item:q_silver_unicorn}.
+
+      Kill {npc:shackle}, {npc:headless_knight}, {npc:royal_cave_servant} and
+      {npc:malruk_succubus_turen} to collect {item:q_gold_wyvern}.
+    - >-
+      How to Get Coin by Trading with NPCs.
+
+      {npc:magister_page} will trade with Level 3 members.
+
+      - {item:q_gold_knight} = {item:q_gold_wyvern:10}.
+
+      - {item:q_blood_werewolf} = {item:q_blood_medusa:10}.
+
+      - {item:q_silver_fairy} = {item:q_silver_unicorn:10}.
+
+      - {item:q_nias_blood_medusa} = {item:q_blood_medusa:20}.
+
+
+      {npc:researcher_lorain} will trade with Level 3 members.
+
+      - {item:q_gold_knight} = {item:q_gold_wyvern:10}.
+
+      - {item:q_silver_golem} = {item:q_silver_unicorn:10}.
+
+      - {item:q_blood_drevanul} = {item:q_blood_medusa:10}.
+
+      - {item:q_nias_gold_wyvern} = {item:q_gold_wyvern:20}.
+
+
+      {npc:hagger} will trade with Level 3 members.
+
+      - {item:q_gold_drake} = {item:q_gold_wyvern:10}.
+
+      - {item:q_silver_golem} = {item:q_silver_unicorn:10}.
+
+      - {item:q_blood_werewolf} = {item:q_blood_medusa:10}.
+
+      - {item:q_nias_silver_fairy} = {item:q_silver_unicorn:20}.
+
+
+      {npc:stan} will trade with Level 2 members.
+
+      - {item:q_gold_giant} = {item:q_gold_knight:5} and {item:q_gold_drake:5}.
+
+      - {item:q_blood_basilisk} = {item:q_blood_drevanul:5} and
+      {item:q_blood_drevanul:5}.
+
+      - {item:q_silver_dryad} = {item:q_silver_golem:5} and
+      {item:q_silver_fairy:5}.
+
+      - {item:q_manaks_silver_dryad} = {item:q_silver_golem:10} and
+      {item:q_silver_fairy:10}.
+
+
+      {npc:rapin} will trade with Level 2 members.
+
+      - {item:q_gold_wyrm} = {item:q_gold_drake:5} and {item:q_gold_knight:5}.
+
+      - {item:q_silver_undine} = {item:q_silver_golem:5} and
+      {item:q_silver_fairy:5}.
+
+      - {item:q_silver_dryad} = {item:q_silver_golem:5} and
+      {item:q_silver_fairy:5}.
+
+      - {item:q_manaks_blood_werewolf} = {item:q_blood_drevanul:10} and
+      {item:q_blood_werewolf:10}.
+
+
+      {npc:blacksmith_duning} will trade with Level 2 members.
+
+      - {item:q_manaks_gold_giant} = {item:q_gold_knight:10} and
+      {item:q_gold_drake:10}.
+
+      - {item:q_silver_undine} = {item:q_silver_golem:5} and
+      {item:q_silver_fairy:5}.
+
+      - {item:q_blood_succubus} = {item:q_blood_drevanul:5} and
+      {item:q_blood_werewolf:5}.
+
+      - {item:q_gold_giant} = {item:q_gold_knight:5} and {item:q_gold_drake:5}.
+
+
+      {npc:head_blacksmith_ferris} will trade with Level 1 members.
+
+      - {item:q_blood_dragon} = {item:q_blood_basilisk:5} and
+      {item:q_blood_succubus:5}.
+
+      - {item:q_silver_dragon} = {item:q_silver_dryad:5} and
+      {item:q_silver_undine:5}.
+
+      - {item:q_gold_dragon} = {item:q_gold_giant:5} and {item:q_gold_wyrm:5}.
+
+      - {item:q_bereths_blood_dragon} = {item:q_blood_basilisk:10} and
+      {item:q_blood_succubus:10}.
+
+
+      {npc:collob} will trade with Level 1 members.
+
+      - {item:q_blood_dragon} = {item:q_blood_basilisk:5} and
+      {item:q_blood_succubus:5}.
+
+      - {item:q_silver_dragon} = {item:q_silver_dryad:5} and
+      {item:q_silver_undine:5}.
+
+      - {item:q_gold_dragon} = {item:q_gold_giant:5} and {item:q_gold_wyrm:5}.
+
+      - {item:q_bereths_gold_dragon} = {item:q_gold_giant:10} and
+      {item:q_gold_wyrm:10}.
+
+
+      {npc:pano} will trade with Level 1 members.
+
+      - {item:q_blood_dragon} = {item:q_blood_basilisk:5} and
+      {item:q_blood_succubus:5}.
+
+      - {item:q_silver_dragon} = {item:q_silver_dryad:5} and
+      {item:q_silver_undine:5}.
+
+      - {item:q_gold_dragon} = {item:q_gold_giant:5} and {item:q_gold_wyrm:5}.
+
+      - {item:q_bereths_silver_dragon} = {item:q_silver_dryad:10} and
+      {item:q_silver_undine:10}.
+    - >-
+      Rewards. Collect all rewards from {npc:warehouse_keeper_sorint}.
+
+      Items Available to Level 3 Members:
+
+      - {item:moonstone_earing} = {item:q_nias_blood_medusa:2},
+      {item:q_blood_drevanul:2}, {item:q_gold_drake:2} and
+      {item:q_gold_knight:2}.
+
+      - {item:nassen's_earing} = {item:q_nias_blood_medusa:7},
+      {item:q_gold_knight:5}, {item:q_blood_drevanul:5} and
+      {item:q_silver_golem:5}.
+
+      - {item:ring_of_binding} = {item:q_nias_gold_wyvern:5},
+      {item:q_silver_golem:4}, {item:q_gold_drake:4} and
+      {item:q_blood_drevanul:4}.
+
+      - {item:necklace_of_protection} = {item:q_nias_blood_medusa:5},
+      {item:q_blood_drevanul:3}, {item:q_silver_fairy:3} and
+      {item:q_gold_knight:5}.
+
+
+      Items Available to Level 2 Members:
+
+      - {item:demon's_boots} = {item:q_manaks_gold_giant:1}.
+
+      - {item:demon's_hose} = {item:q_manaks_silver_dryad:1} and
+      {item:q_silver_dryad:1}.
+
+      - {item:demon's_gloves} = {item:q_manaks_gold_giant:1}.
+
+      - {item:full_plate_helmet} = {item:q_manaks_blood_werewolf:1},
+      {item:q_gold_giant:1} and {item:q_gold_wyrm:1}.
+
+
+      Items Available to Level 1 Members:
+
+      - {item:demon's_staff} = {item:q_bereths_blood_dragon:1},
+      {item:q_silver_dragon:1} and {item:q_gold_wyrm:13}.
+
+      - {item:dark_screamer} = {item:q_bereths_gold_dragon:1},
+      {item:q_blood_dragon:1}, {item:q_silver_dryad:1} and
+      {item:q_gold_giant:1}.
+
+      - {item:widow_maker} = {item:q_bereths_silver_dragon:1},
+      {item:q_gold_dragon:1}, {item:q_blood_succubus:1} and
+      {item:q_blood_basilisk:2} .
+
+      - {item:sword_of_limit} = {item:q_blood_dragon:1},
+      {item:q_silver_dragon:1}, {item:q_gold_dragon:1} and
+      {item:q_silver_undine:1}.
+  ru:
+    - >-
+      Нумизмат 3 степени:
+
+      Поговорите с {npc:warehouse_keeper_sorint}.
+
+      Поговорите с {npc:union_president_bernard}.
+
+      Убивайте {npc:harit_lizardman_shaman} и {npc:harit_lizardm_matriarch} пока
+      не получите {item:q_kaldis_gold_dragon}.
+
+      Вернитесь к {npc:warehouse_keeper_sorint} и получите
+      {item:q_cc_membership_3}. Теперь вы Нумизмат 3 степени.
+    - >-
+      Нумизмат 2 степени:
+
+      Поговорите с {npc:warehouse_keeper_sorint}.
+
+      Соберите следующие монеты: {item:q_blood_werewolf},
+      {item:q_blood_drevanul}, {item:q_gold_knight}, {item:q_gold_drake},
+      {item:q_silver_fairy}, {item:q_silver_golem}.
+
+      Поговорите с {npc:warehouse_keeper_sorint} again and join the
+      {item:q_cc_membership_2}. Теперь вы Нумизмат 2 степени.
+    - >-
+      Нумизмат 1 степени:
+
+      Поговорите с {npc:warehouse_keeper_sorint}.
+
+      Соберите следующие монеты: {item:q_blood_basilisk},
+      {item:q_blood_succubus}, {item:q_gold_giant}, {item:q_gold_wyrm},
+      {item:q_silver_undine}, {item:q_silver_dryad}.
+
+      Поговорите с {npc:warehouse_keeper_sorint} again and join the
+      {item:q_cc_membership_1}. Теперь вы Нумизмат 1 степени.
+    - >-
+      Как получить монеты от существ.
+
+      Охотьтесь на {npc:timak_orc}, {npc:timak_orc_shaman},
+      {npc:timak_orc_archer}, {npc:timak_orc_soldier}, {npc:lakin},
+      {npc:hatar_hanishee} и {npc:punishment_of_undead} для получения
+      {item:q_blood_medusa}.
+
+      Охотьтесь на {npc:byfoot}, {npc:byfoot_sigel}, {npc:vanor_silenos_shaman},
+      {npc:tarlk_bugbear_boss}, {npc:oel_mahum} и {npc:oel_mahum_warrior} для
+      получения {item:q_silver_unicorn}.
+
+      Охотьтесь на {npc:shackle}, {npc:headless_knight},
+      {npc:royal_cave_servant} и {npc:malruk_succubus_turen} для получения
+      {item:q_gold_wyvern}.
+    - >-
+      Как получить монету, торгуя с NPC.
+
+      {npc:magister_page} будет торговать с Нумизматами 3 степени.
+
+      - {item:q_gold_knight} = {item:q_gold_wyvern:10}.
+
+      - {item:q_blood_werewolf} = {item:q_blood_medusa:10}.
+
+      - {item:q_silver_fairy} = {item:q_silver_unicorn:10}.
+
+      - {item:q_nias_blood_medusa} = {item:q_blood_medusa:20}.
+
+
+      {npc:researcher_lorain} будет торговать с Нумизматами 3 степени.
+
+      - {item:q_gold_knight} = {item:q_gold_wyvern:10}.
+
+      - {item:q_silver_golem} = {item:q_silver_unicorn:10}.
+
+      - {item:q_blood_drevanul} = {item:q_blood_medusa:10}.
+
+      - {item:q_nias_gold_wyvern} = {item:q_gold_wyvern:20}.
+
+
+      {npc:hagger} будет торговать с Нумизматами 3 степени.
+
+      - {item:q_gold_drake} = {item:q_gold_wyvern:10}.
+
+      - {item:q_silver_golem} = {item:q_silver_unicorn:10}.
+
+      - {item:q_blood_werewolf} = {item:q_blood_medusa:10}.
+
+      - {item:q_nias_silver_fairy} = {item:q_silver_unicorn:20}.
+
+
+      {npc:stan} будет торговать с Нумизматами 2 степени.
+
+      - {item:q_gold_giant} = {item:q_gold_knight:5} и {item:q_gold_drake:5}.
+
+      - {item:q_blood_basilisk} = {item:q_blood_drevanul:5} и
+      {item:q_blood_drevanul:5}.
+
+      - {item:q_silver_dryad} = {item:q_silver_golem:5} и
+      {item:q_silver_fairy:5}.
+
+      - {item:q_manaks_silver_dryad} = {item:q_silver_golem:10} и
+      {item:q_silver_fairy:10}.
+
+
+      {npc:rapin} будет торговать с Нумизматами 2 степени.
+
+      - {item:q_gold_wyrm} = {item:q_gold_drake:5} и {item:q_gold_knight:5}.
+
+      - {item:q_silver_undine} = {item:q_silver_golem:5} и
+      {item:q_silver_fairy:5}.
+
+      - {item:q_silver_dryad} = {item:q_silver_golem:5} и
+      {item:q_silver_fairy:5}.
+
+      - {item:q_manaks_blood_werewolf} = {item:q_blood_drevanul:10} и
+      {item:q_blood_werewolf:10}.
+
+
+      {npc:blacksmith_duning} будет торговать с Нумизматами 2 степени.
+
+      - {item:q_manaks_gold_giant} = {item:q_gold_knight:10} и
+      {item:q_gold_drake:10}.
+
+      - {item:q_silver_undine} = {item:q_silver_golem:5} и
+      {item:q_silver_fairy:5}.
+
+      - {item:q_blood_succubus} = {item:q_blood_drevanul:5} и
+      {item:q_blood_werewolf:5}.
+
+      - {item:q_gold_giant} = {item:q_gold_knight:5} и {item:q_gold_drake:5}.
+
+
+      {npc:head_blacksmith_ferris} будет торговать с Нумизматами 1 степени.
+
+      - {item:q_blood_dragon} = {item:q_blood_basilisk:5} и
+      {item:q_blood_succubus:5}.
+
+      - {item:q_silver_dragon} = {item:q_silver_dryad:5} и
+      {item:q_silver_undine:5}.
+
+      - {item:q_gold_dragon} = {item:q_gold_giant:5} и {item:q_gold_wyrm:5}.
+
+      - {item:q_bereths_blood_dragon} = {item:q_blood_basilisk:10} и
+      {item:q_blood_succubus:10}.
+
+
+      {npc:collob} будет торговать с Нумизматами 1 степени.
+
+      - {item:q_blood_dragon} = {item:q_blood_basilisk:5} и
+      {item:q_blood_succubus:5}.
+
+      - {item:q_silver_dragon} = {item:q_silver_dryad:5} и
+      {item:q_silver_undine:5}.
+
+      - {item:q_gold_dragon} = {item:q_gold_giant:5} и {item:q_gold_wyrm:5}.
+
+      - {item:q_bereths_gold_dragon} = {item:q_gold_giant:10} и
+      {item:q_gold_wyrm:10}.
+
+
+      {npc:pano} будет торговать с Нумизматами 1 степени.
+
+      - {item:q_blood_dragon} = {item:q_blood_basilisk:5} и
+      {item:q_blood_succubus:5}.
+
+      - {item:q_silver_dragon} = {item:q_silver_dryad:5} и
+      {item:q_silver_undine:5}.
+
+      - {item:q_gold_dragon} = {item:q_gold_giant:5} и {item:q_gold_wyrm:5}.
+
+      - {item:q_bereths_silver_dragon} = {item:q_silver_dryad:10} и
+      {item:q_silver_undine:10}.
+    - >-
+      Награды. Получите все награды от {npc:warehouse_keeper_sorint}.
+
+      Предметы, доступные Нумизматам 3 степени:
+
+      - {item:moonstone_earing} = {item:q_nias_blood_medusa:2},
+      {item:q_blood_drevanul:2}, {item:q_gold_drake:2} и {item:q_gold_knight:2}.
+
+      - {item:nassen's_earing} = {item:q_nias_blood_medusa:7},
+      {item:q_gold_knight:5}, {item:q_blood_drevanul:5} и
+      {item:q_silver_golem:5}.
+
+      - {item:ring_of_binding} = {item:q_nias_gold_wyvern:5},
+      {item:q_silver_golem:4}, {item:q_gold_drake:4} и
+      {item:q_blood_drevanul:4}.
+
+      - {item:necklace_of_protection} = {item:q_nias_blood_medusa:5},
+      {item:q_blood_drevanul:3}, {item:q_silver_fairy:3} и
+      {item:q_gold_knight:5}.
+
+
+      Предметы, доступные Нумизматам 2 степени:
+
+      - {item:demon's_boots} = {item:q_manaks_gold_giant:1}.
+
+      - {item:demon's_hose} = {item:q_manaks_silver_dryad:1} и
+      {item:q_silver_dryad:1}.
+
+      - {item:demon's_gloves} = {item:q_manaks_gold_giant:1}.
+
+      - {item:full_plate_helmet} = {item:q_manaks_blood_werewolf:1},
+      {item:q_gold_giant:1} и {item:q_gold_wyrm:1}.
+
+
+      Предметы, доступные Нумизматам 1 степени:
+
+      - {item:demon's_staff} = {item:q_bereths_blood_dragon:1},
+      {item:q_silver_dragon:1} и {item:q_gold_wyrm:13}.
+
+      - {item:dark_screamer} = {item:q_bereths_gold_dragon:1},
+      {item:q_blood_dragon:1}, {item:q_silver_dryad:1} и {item:q_gold_giant:1}.
+
+      - {item:widow_maker} = {item:q_bereths_silver_dragon:1},
+      {item:q_gold_dragon:1}, {item:q_blood_succubus:1} и
+      {item:q_blood_basilisk:2} .
+
+      - {item:sword_of_limit} = {item:q_blood_dragon:1},
+      {item:q_silver_dragon:1}, {item:q_gold_dragon:1} и
+      {item:q_silver_undine:1}.

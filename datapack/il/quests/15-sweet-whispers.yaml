@@ -1,0 +1,26 @@
+id: 15
+name:
+  en: Sweet Whispers
+  ru: Сладкий шепот
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: {}
+startNPC: 8302
+level: 60
+reward: { exp: 60217 }
+questItems: []
+walkthrough:
+  en:
+    - Talk to {npc:trader_vladimir} (Rune Castle Town).
+    - Talk to {npc:dark_necromancer}.
+    - |-
+      Talk to {npc:dark_presbyter}, for reward: 
+      - {exp:60217}
+  ru:
+    - Поговорите с {npc:trader_vladimir} (Rune Castle Town).
+    - Поговорите с  {npc:dark_necromancer}.
+    - |-
+      Поговорите с {npc:dark_presbyter}, и получите: 
+      - {exp:60217}

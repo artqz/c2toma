@@ -1,0 +1,35 @@
+id: 170
+name:
+  en: Dangerous Seduction
+  ru: Опасное искушение
+desc:
+  en: Sorcerer Vlasty is doing research on an undead monster called a dark Dark
+    Elven Tetrarch Vellior has insomnia due to continuous nightmares. A creature
+    called a succubus is the source of the nightmares, and you will be asked to
+    defeat the dream catching succubus 'Merkenis' at the School of Dark Arts.
+  ru: Тетрарх Темных Эльфов Велиор не может уснуть, его преследуют ужасные
+    кошмары, вызванные Суккубом. Он просит Вас убить Меркенис в Школе Темной
+    Магии.
+type: one_time
+requirements:
+  races:
+    - darkelf
+startNPC: tetrarch_vellior
+level: 21
+reward:
+  items:
+    - 57
+questItems:
+  - 1046
+walkthrough:
+  en:
+    - Speak to {npc:tetrarch_vellior}.
+    - Travel to the School of Dark Arts. In the center of the dungeon, a
+      succubus spawns called {npc:merkenis}. Kill her to receive the
+      {item:1046}.
+    - Return to {npc:tetrarch_vellior}, for a {item:57:102680}.
+  ru:
+    - Поговорите с {npc:tetrarch_vellior}.
+    - Убейте {npc:merkenis} чтобы получить {item:1046}.
+    - Вернитесь к {npc:tetrarch_vellior} с {item:1046}, и получите
+      {item:57:102680}.

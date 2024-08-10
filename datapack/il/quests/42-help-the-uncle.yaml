@@ -1,0 +1,39 @@
+id: 42
+name:
+  en: Help the Uncle!
+  ru: Помощь дяде
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+party: true
+requirements: {}
+startNPC: 7828
+level: 25
+reward: { items: [7583] }
+questItems: [7548, 7549]
+walkthrough:
+  en:
+    - Talk to {npc:pet_manager_waters} (Dion Castle Town).
+    - Buy {item:trident} from {npc:sabrin}.
+    - Talk to {npc:pet_manager_waters}.
+    - Kill {npc:beamer} and {npc:monstereye_gazer} to collect {item:q_dummy_buffalo:30}.
+    - Talk to {npc:pet_manager_waters}.
+    - Talk to {npc:sophia}.
+    - |-
+      Return to {npc:pet_manager_waters}, for reward: 
+      - {item:ticket_buffalo_panpipe}
+
+      Talk to a Pet Manager in any city and exchange a ticket for {item:baby_buffalo_panpipe}.
+  ru:
+    - Поговорите с {npc:pet_manager_waters}.
+    - Купите {item:trident} у {npc:sabrin}.
+    - Поговорите с {npc:pet_manager_waters}.
+    - Убивайте {npc:beamer} и {npc:monstereye_gazer}, пока не получите {item:q_dummy_buffalo:30}.
+    - Поговорите с {npc:pet_manager_waters}.
+    - Поговорите с {npc:sophia}.
+    - |-
+      Вернитесь к {npc:pet_manager_waters}, и получите награду: 
+      - {item:ticket_buffalo_panpipe}
+
+      Поговорите с Пет Менеджером в любом городе и обменяйте билет на {item:baby_buffalo_panpipe}.

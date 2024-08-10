@@ -1,0 +1,39 @@
+id: 43
+name:
+  en: Help the Sister!
+  ru: Помощь сестре
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+party: true
+requirements: {}
+startNPC: 7829
+level: 25
+reward: { items: [7584] }
+questItems: [7550, 7551]
+walkthrough:
+  en:
+    - Talk to {npc:pet_manager_cooper} (Giran Castle Town).
+    - Buy {item:handiwork_dagger} from {npc:grabner}.
+    - Talk to {npc:pet_manager_cooper}.
+    - Kill {npc:specter} and {npc:lemures} to collect {item:q_dummy_cougar:30}.
+    - Talk to {npc:pet_manager_cooper}.
+    - Talk to {npc:galladuchi}.
+    - |-
+      Return to {npc:pet_manager_cooper}, for reward: 
+      - {item:ticket_cougar_chime}
+
+      Talk to a Pet Manager in any city and exchange a ticket for {item:baby_cougar_chime}.
+  ru:
+    - Поговорите с {npc:pet_manager_cooper}.
+    - Купите {item:handiwork_dagger} у {npc:grabner}.
+    - Поговорите с {npc:pet_manager_cooper}.
+    - Убивайте {npc:specter} и {npc:lemures}, пока не получите {item:q_dummy_cougar:30}.
+    - Поговорите с {npc:pet_manager_cooper}.
+    - Поговорите с {npc:galladuchi}.
+    - |-
+      Вернитесь к {npc:pet_manager_cooper}, и получите награду: 
+      - {item:ticket_cougar_chime}
+
+      Поговорите с Пет Менеджером в любом городе и обменяйте билет на {item:baby_cougar_chime}.

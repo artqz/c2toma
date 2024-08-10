@@ -1,0 +1,24 @@
+id: 14
+name:
+  en: Parcel Delivery
+  ru: Доставка посылки
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: {}
+startNPC: 8263
+level: 74
+reward: { items: [57] }
+questItems: [7253]
+walkthrough:
+  en:
+    - Talk to {npc:trader_liesel} (Goddard Castle Town).
+    - |-
+      Talk to {npc:explorer_ghost_a}, for reward: 
+      - {item:57:113228}
+  ru:
+    - Поговорите с {npc:trader_liesel} (Goddard Castle Town).
+    - |-
+      Поговорите с{npc:explorer_ghost_a} и получите в награду: 
+      - {item:57:113228}

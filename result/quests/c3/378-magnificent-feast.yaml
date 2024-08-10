@@ -1,0 +1,54 @@
+id: 378
+name:
+  en: Magnificent Feast
+  ru: Magnificent Feast
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: warehouse_chief_ranspo
+level: 20
+reward:
+  items:
+    - 57
+    - 847
+    - 846
+    - 879
+    - 910
+    - 909
+    - 890
+questItems: []
+walkthrough:
+  en:
+    - Talk to {npc:warehouse_chief_ranspo}.
+    - Complete {quest:364} you get {item:q_musicnote_feast}.
+    - Do {quest:379} until you get {item:sound_wine3}.
+    - Do {quest:380} until you get {item:recipe_of_ritron}.
+    - |-
+      Return to {npc:hitsran}, and get random reward:
+      - {item:red_cresent_earing} and {item:57:5700}
+      - {item:coral_earing:2} and {item:57:1200}
+      - {item:enchanted_ring} and {item:57:8100}
+      - {item:coral_earing:2} 
+      - {item:enchanted_ring} and {item:57:6900}
+      - {item:necklace_of_devotion} 
+      - {item:blue_diamond_necklace} and {item:57:25400}
+      - {item:ring_of_devotion:2} and {item:57:8500}
+      - {item:enchanted_ring} and {item:57:2200}
+  ru:
+    - Поговорите с {npc:warehouse_chief_ranspo}.
+    - Выполните {quest:364}, чтобы получить {item:q_musicnote_feast}.
+    - Выполняйте {quest:379}, пока не получите {item:sound_wine3}.
+    - Выполняйте {quest:380}, пока не получите {item:recipe_of_ritron}.
+    - |-
+      Вернитесь к {npc:hitsran}, и получите случайную награду:
+      - {item:red_cresent_earing} и {item:57:5700}
+      - {item:coral_earing:2} и {item:57:1200}
+      - {item:enchanted_ring} и {item:57:8100}
+      - {item:coral_earing:2} 
+      - {item:enchanted_ring} и {item:57:6900}
+      - {item:necklace_of_devotion} 
+      - {item:blue_diamond_necklace} и {item:57:25400}
+      - {item:ring_of_devotion:2} и {item:57:8500}
+      - {item:enchanted_ring} и {item:57:2200}

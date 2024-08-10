@@ -1,0 +1,34 @@
+id: 35
+name:
+  en: Find Glittering Jewelry
+  ru: Свадебные украшения
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: {}
+startNPC: 7091
+level: 60
+reward: { items: [7077] }
+questItems: [7162]
+walkthrough:
+  en:
+    - "Note. To do the this quest, you need a {item:q_seal_of_stock} {quest:37}."
+
+    - Talk to {npc:elliany} (Giran).
+    - Talk to {npc:wharf_manager_felton}.
+    - Kill {npc:crocodile} to collect {item:q_rough_jewel:10}.
+    - Talk to {npc:elliany}.
+    - |
+      Bring {item:oriharukon:5}, {item:silver_nugget:500} and {item:thons:150} to {npc:elliany}, and get reward: 
+      - {item:q_box_of_jewel}
+  ru:
+    - "Важно. Для выполнения квеста необходим предмет {item:q_seal_of_stock}, который можно получить за выполнение {quest:37}."
+
+    - Поговорите с {npc:elliany} (Giran).
+    - Поговорите с {npc:wharf_manager_felton}.
+    - Убивайте {npc:crocodile}, пока не получите {item:q_rough_jewel:10}.
+    - Поговорите с  {npc:elliany}.
+    - |
+      Принесите {item:oriharukon:5}, {item:silver_nugget:500} и {item:thons:150} к {npc:elliany}, и получите в награду: 
+      - {item:q_box_of_jewel}

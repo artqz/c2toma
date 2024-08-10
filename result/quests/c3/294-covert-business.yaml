@@ -1,0 +1,54 @@
+id: 294
+name:
+  en: Covert Business
+  ru: Теневой бизнес
+desc:
+  en: The notorious Black Mage Hardin has asked the Bronze Key Guild to gather bat
+    fangs. For some reason, Elder Keef, the leader of the Bronze Key Guild, has
+    accepted the request and has begun a covert trade with Hardin. Per Elder
+    Keef’s request, hunt blade bats and barbed bats, then bring back one hundred
+    of their fangs for a reward.
+  ru: Известный Черный Маг Хардин попросил Гильдию Бронзового Ключа собрать для
+    него Клыки Летучих Мышей. По неизвестным причинам Старейшина Киф принял этот
+    заказ и начал вести скрытые дела с Хардином. Хардин попросил убить Летучих
+    Мышей и принести ему 100 их клыков. Это грязная работа, но воины гильдии с
+    радостью ее сделают. Вы должны быть очень осмотрительны.
+type: repeatable
+requirements:
+  races:
+    - dwarf
+startNPC: elder_keef
+level: 10
+reward:
+  sp: 60
+  items:
+    - 1508
+    - 57
+questItems:
+  - 1491
+walkthrough:
+  en:
+    - Talk to {npc:elder_keef}.
+    - Hunt {npc:blade_bat} and {npc:barbed_bat} and collect {item:bat_fang:100}.
+    - |-
+      Give the {item:bat_fang:100} to {npc:elder_keef}, and get it as a reward:
+      For the first completion:
+      - {item:ring_of_raccoon} and {sp:60}
+
+      For Repeat:
+      - {item:57:2400} and {sp:60}
+    - Note. that if you wish to do the {quest:296} quest, you must keep the
+      {item:ring_of_raccoon} and {item:ring_of_firefly} ({quest:295}).
+  ru:
+    - Поговорите с {npc:elder_keef}.
+    - Убивайте {npc:blade_bat} и {npc:barbed_bat}, пока не получите
+      {item:bat_fang:100}.
+    - |-
+      Отнесите {item:bat_fang:100} к {npc:elder_keef}, и получите в награду:
+      За первое прохождение:
+      - {item:ring_of_raccoon} and {sp:60}
+
+      За последующие:
+      - {item:57:2400} and {sp:60}
+    - Важно. {item:ring_of_raccoon} необходимо для выполнения {quest:296}, также
+      вам понадобится {item:ring_of_firefly}, можно получить за quest:295}.

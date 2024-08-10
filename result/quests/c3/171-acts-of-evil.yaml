@@ -1,0 +1,72 @@
+id: 171
+name:
+  en: Acts of Evil
+  ru: Злодеяния
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: guard_alvah
+level: 27
+reward:
+  items:
+    - 57
+questItems:
+  - 4239
+  - 4240
+  - 4241
+  - 4242
+  - 4243
+  - 4244
+  - 4245
+  - 4246
+  - 4247
+  - 4248
+  - 4249
+walkthrough:
+  en:
+    - Talk to {npc:guard_alvah}.
+    - Talk to {npc:trader_arodin}.
+    - Hunt {npc:turek_orc_footman}, {npc:turek_orc_supplier},
+      {npc:turek_orc_skimisher} and {npc:turek_orc_archer} to collect
+      {item:q_blade_mold:20}.
+    - Talk to {npc:tweety}.
+    - Talk to {npc:trader_arodin}.
+    - Talk to {npc:guard_alvah}.
+    - Hunt {npc:tumran_bugbear} and {npc:tumran_bugbear_warrior} to collect
+      {item:q_rangers_report1}, {item:q_rangers_report2},
+      {item:q_rangers_report3} and {item:q_rangers_report4}.
+    - Talk to {npc:guard_alvah}.
+    - Hunt {npc:ol_mahum_general} to collect {item:q_weaponsdeal_contract} and
+      {item:q_attack_directives}.
+    - Talk to {npc:guard_alvah}.
+    - Talk to {npc:neti}.
+    - Talk to {npc:trader_rolento}.
+    - Talk to {npc:turek_chief_burai}.
+    - Hunt {npc:ol_mahum_captain} to collect {item:q_olmahum_cptn_head:30}.
+    - Talk to {npc:turek_chief_burai}, for {item:57:8000}
+    - Return to {npc:guard_alvah}, for {item:57:90000}.
+  ru:
+    - Поговорите с {npc:guard_alvah}.
+    - Поговорите с {npc:trader_arodin}.
+    - Охотьтесь на {npc:turek_orc_footman}, {npc:turek_orc_supplier},
+      {npc:turek_orc_skimisher} и {npc:turek_orc_archer}, пока не получите
+      {item:q_blade_mold:20}.
+    - Поговорите с {npc:tweety}.
+    - Поговорите с {npc:trader_arodin}.
+    - Поговорите с {npc:guard_alvah}.
+    - Охотьтесь на {npc:tumran_bugbear} и {npc:tumran_bugbear_warrior}, пока не
+      получите {item:q_rangers_report1}, {item:q_rangers_report2},
+      {item:q_rangers_report3} и {item:q_rangers_report4}.
+    - Поговорите с {npc:guard_alvah}.
+    - Охотьтесь на {npc:ol_mahum_general}, пока не получите
+      {item:q_weaponsdeal_contract} и {item:q_attack_directives}.
+    - Поговорите с {npc:guard_alvah}.
+    - Поговорите с {npc:neti}.
+    - Поговорите с {npc:trader_rolento}.
+    - Поговорите с {npc:turek_chief_burai}.
+    - Hunt {npc:ol_mahum_captain}, пока не получите
+      {item:q_olmahum_cptn_head:30}.
+    - Поговорите с {npc:turek_chief_burai} и получите в награду {item:57:8000}
+    - Вернитесь к {npc:guard_alvah}, и получите в награду {item:57:90000}.

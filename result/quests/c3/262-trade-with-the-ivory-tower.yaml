@@ -1,0 +1,35 @@
+id: 262
+name:
+  en: Trade with the Ivory Tower
+  ru: Торговля с Башней Слоновой Кости
+desc:
+  en: Trader Vollodos, who has often been dealing with the Mages of the Ivory
+    Tower, asks you to find spores which have been in high demand recently. As
+    Vollodos said, you can get Spore Sacs if you go into the Dark Forest and
+    defeat spore fungi. You shall be rewarded if you bring a collection to
+    Vollodos.
+  ru: Торговец Воллодос, работающий с магами Башни Слоновой Кости, сообщает, что в
+    последнее время многим волшебникам понадобились Грибные Споры. Он предлагает
+    Вам принести ему эти споры за вознаграждение. Добыть их можно, убивая Грибы
+    в Темном Лесу.
+type: repeatable
+requirements: {}
+startNPC: vollodos
+level: 8
+reward:
+  items:
+    - 57
+questItems:
+  - 707
+walkthrough:
+  en:
+    - Talk to {npc:vollodos}.
+    - Hunt {npc:forest_walking_fungus} and {npc:blood_fungus} to collect
+      {item:707:10}.
+    - Give the {item:707:10} to {npc:vollodos}, for {item:57:3000}.
+  ru:
+    - Поговорите с {npc:vollodos}.
+    - Убивайте {npc:forest_walking_fungus} и {npc:blood_fungus}, пока не
+      получите {item:707:10}.
+    - Отнесите {item:707:10} к {npc:vollodos}, и получите в награду
+      {item:57:3000}.

@@ -1,0 +1,43 @@
+id: 317
+name:
+  en: Catch the Wind
+  ru: Поймайте Ветер!
+desc:
+  en: The spirit of the wind, lirein, has the soulstone ‘wind shard’ in its body.
+    Rizraell asks you to collect them to create the ‘scroll of the wind.’ Defeat
+    the lireins and return the collected wind shards to Rizraell.
+  ru: Тела духов бури Лирейн содержат в себе необычный камень, называемый
+    Кристаллом Ветра. Ризраэль просит Вас собрать их для создания Свитка Ветра.
+    Лирейн обитают возле Нейтральной Зоны недалеко от опушки Эльфийского Леса.
+type: repeatable
+requirements: {}
+startNPC: rizraell
+level: 18
+reward:
+  items:
+    - 57
+questItems:
+  - 1078
+walkthrough:
+  en:
+    - Talk to {npc:rizraell}.
+    - Hunt {npc:lirein} and {npc:lirein_ribe} to collect {item:wind_shard}. You
+      can find them in great numbers near the 3 bridges north of Gludio.
+    - >-
+      Return to {npc:rizraell}, and get it as a reward:
+
+      - {item:57:40} for each {item:wind_shard} 
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:2988}.
+  ru:
+    - Поговорите с {npc:rizraell}.
+    - Охотьтесь на {npc:lirein} и {npc:lirein_ribe}, чтобы получать
+      {item:wind_shard}.
+    - >-
+      Вернитесь к {npc:rizraell}, и получите в награду: 
+
+      - {item:57:40} за каждый {item:wind_shard} 
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:2988}.

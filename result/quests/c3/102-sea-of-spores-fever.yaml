@@ -1,0 +1,96 @@
+id: 102
+name:
+  en: Sea of Spores Fever
+  ru: Странная лихорадка
+desc:
+  en: Sentinel Knight Smallberry is putting great effort into finding a cure for
+    his companions who caught a mysterious fever while trying to purify the Sea
+    of Spores. Since there must be different ingredients for the remedy, he asks
+    you to meet Master Cobendell.
+  ru: Рыцарь Охранник Альберий говорит, что эльфийские исследователи, недавно
+    отправившиеся в Море Спор, заболели лихорадкой. Он беспокоится о своих людях
+    и просит Вашей помощи.
+type: one_time
+requirements:
+  races:
+    - elf
+startNPC: alberryus
+level: 12
+reward:
+  items:
+    - 743
+    - 744
+    - 1835
+    - 2509
+    - 1060
+    - 4414
+    - 4415
+    - 4416
+    - 4413
+    - 4412
+questItems:
+  - 964
+  - 965
+  - 966
+  - 746
+  - 1130
+  - 1131
+  - 1132
+  - 1133
+  - 1134
+walkthrough:
+  en:
+    - Talk to {npc:alberryus}. He gives you {item:964}.
+    - Give the {item:964} to {npc:cob}. He gives you {item:965}.
+    - Hunt {npc:dryad} and {npc:dryad_ribe} until you collect {item:966:10}.
+    - Give the 10 tears and amulet to {npc:cob}. He gives you 5 Cobendell's
+      Medicines.
+    - Talk to {npc:alberryus}. He takes one the {item:1130}, and ask you to
+      deliver the other 4 to other sentinels, according to {item:746}.
+    - "{item:1131} to {npc:sentinel_gartrandell}."
+    - "{item:1132} to {npc:sentinel_veltress}."
+    - "{item:1133} to {npc:sentinel_berryos}."
+    - "{item:1134} to {npc:sentinel_rayjien}."
+    - |-
+      Return to {npc:alberryus}, and get it as a reward:
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Reward for the mage:
+      - {item:staff_of_sentinel}
+      - {item:spiritshot_none:500}
+
+      Reward for the fighter:
+      - {item:sword_of_sentinel}
+      - {item:soulshot_none:1000}
+  ru:
+    - Поговорите с {npc:alberryus}. Он даст вам {item:964}.
+    - Отдайте письмо {npc:cob}. Он даст вам {item:965}.
+    - Убивайте {npc:dryad} и {npc:dryad_ribe}, пока не получите {item:966:10}.
+    - Отдайте слезы и амулет {npc:cob}. Он даст 5 Лекарств Кобенделла.
+    - Поговорите с {npc:alberryus}. Он возьмет {item:1130}, и попросит отнести
+      оставшиеся 4 лекарства другим стражам, согласно {item:746}.
+    - "{item:1131} - {npc:sentinel_gartrandell}."
+    - "{item:1132} - {npc:sentinel_veltress}."
+    - "{item:1133} - {npc:sentinel_berryos}."
+    - "{item:1134} - {npc:sentinel_rayjien}."
+    - |-
+      Вернитесь к {npc:alberryus}, и получите в награду:
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Награда для мага:
+      - {item:staff_of_sentinel}
+      - {item:spiritshot_none:500}
+
+      Награда для воина:
+      - {item:sword_of_sentinel}
+      - {item:soulshot_none:1000}

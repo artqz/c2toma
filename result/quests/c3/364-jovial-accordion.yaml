@@ -1,0 +1,43 @@
+id: 364
+name:
+  en: Jovial Accordion
+  ru: Величественная гармония
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: barbado
+level: 15
+reward:
+  items:
+    - 57
+    - 4421
+questItems:
+  - 4321
+  - 4322
+  - 4323
+  - 4324
+walkthrough:
+  en:
+    - Talk to {npc:barbado}.
+    - Talk to {npc:swan}. He'll give you the {item:q_beer_chest_key}.
+    - Talk to {npc:beer_chest}.
+    - Talk to {npc:cloth_chest}.
+    - Talk to {npc:xaber}.
+    - Talk to {npc:swan}. He'll give you the {item:57:100}.
+    - |-
+      Talk to {npc:barbado} and get the reward:
+      - {item:q_musicnote_feast}
+    - Note. {item:q_musicnote_feast} will be useful in {quest:378}.
+  ru:
+    - Поговорите с {npc:barbado}.
+    - Поговорите с {npc:swan}. Он даст вам {item:q_beer_chest_key}.
+    - Поговорите с {npc:beer_chest}.
+    - Поговорите с {npc:cloth_chest}.
+    - Поговорите с {npc:xaber}.
+    - Поговорите с {npc:swan}. Он даст вам {item:57:100}.
+    - |-
+      Поговорите с {npc:barbado} и получите награду:
+      - {item:q_musicnote_feast}
+    - Важно. {item:q_musicnote_feast} пригодятся вам в {quest:378}.

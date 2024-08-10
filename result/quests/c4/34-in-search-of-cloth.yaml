@@ -1,0 +1,47 @@
+id: 34
+name:
+  en: In Search of Cloth
+  ru: Красивая ткань
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: radia
+level: 60
+reward:
+  items:
+    - 7076
+questItems:
+  - 7528
+  - 7161
+walkthrough:
+  en:
+    - Note. To do the this quest, you need a {item:q_seal_of_stock} {quest:37}.
+    - Talk to {npc:radia} (Giran).
+    - Talk to {npc:trader_varanket}.
+    - Talk to {npc:radia}.
+    - Talk to {npc:rapin}.
+    - Kill {npc:trisalim} and {npc:trisalim_tote} to collect
+      {item:q_base_of_cobweb:10}.
+    - Talk to {npc:rapin}.
+    - >
+      Bring {item:suede:3000} and {item:thread:5000} to {npc:radia}, and get
+      reward: 
+
+      - {item:q_mysterious_cloth}
+  ru:
+    - Важно. Для выполнения квеста необходим предмет {item:q_seal_of_stock},
+      который можно получить за выполнение {quest:37}.
+    - Поговорите с {npc:radia} (Giran).
+    - Поговорите с {npc:trader_varanket}.
+    - Поговорите с {npc:radia}.
+    - Поговорите с{npc:rapin}.
+    - Убивайте {npc:trisalim} и {npc:trisalim_tote}, пока не получите
+      {item:q_base_of_cobweb:10}.
+    - Поговорите с {npc:rapin}.
+    - >
+      Принесите {item:suede:3000} и {item:thread:5000} к {npc:radia}, и получите
+      в награду: 
+
+      - {item:q_mysterious_cloth}

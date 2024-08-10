@@ -1,0 +1,54 @@
+id: 276
+name:
+  en: Totem of the Hestui
+  ru: Тотем Хестуи
+desc:
+  en: Recently, more and more gray bears on the Immortal Plateau are becoming
+    possessed with the evil spirit of Kasha, the spirit of death and decay. Seer
+    Tanapi worries about this and explains that the gray bear is originally the
+    protective totem of the Hestui Orc tribe, and asks the player to bring death
+    to the possessed gray bears and put them to rest. While hunting kasha gray
+    bear totems, the player will confront Kasha’s Spirit. Defeat the spirit and
+    bring back proof to Seer Tanapi.
+  ru: Множество серых медведей на Плато Бессмертия стали одержимы Кхаши, духом
+    смерти и разложения. Это беспокоит пророка Танапи, так как серые медведи
+    являются тотемным животным Орков клана Хестуи. Он просит Вас убить одержимых
+    серых медведей и успокоить их души. Во время охоты Вы столкнетесь с тотемным
+    духом Кхаши. Убейте его и принесите пророку Танапи доказательство этого.
+type: repeatable
+requirements:
+  races:
+    - orc
+startNPC: seer_tanapi
+level: 15
+reward:
+  items:
+    - 1500
+    - 29
+questItems:
+  - 1480
+  - 1481
+walkthrough:
+  en:
+    - Talk to {npc:seer_tanapi}.
+    - Hunt {npc:kasha_bear} in the northeast near the waterfall to collect
+      {item:1480}.
+    - Once you collect ~ {item:1480:50}, the {npc:kasha_bear_totem} will appear
+      and attack you. Once you kill it you get a {item:1481}.
+    - |-
+      Return to {npc:seer_tanapi}, and get it as a reward: 
+      - {item:hestuis_totem}
+      - {item:leather_pants}
+
+      Sell the {item:1500} at a store {item:57:5500}.
+  ru:
+    - Поговорите с {npc:seer_tanapi}.
+    - Убивайте {npc:kasha_bear}, пока не получите {item:1480}. Как только вы
+      соберете примерно {item:1480:50} появится {npc:kasha_bear_totem}.
+    - Убейте {npc:kasha_bear_totem}, чтобы получить {item:1481}.
+    - |-
+      Вернитесь к {npc:seer_tanapi}, и получите в награду: 
+      - {item:hestuis_totem}
+      - {item:leather_pants}
+
+      Вы можете продать {item:1500} в магазин за {item:57:5500}.

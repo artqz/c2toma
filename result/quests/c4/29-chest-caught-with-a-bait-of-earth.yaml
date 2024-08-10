@@ -1,0 +1,33 @@
+id: 29
+name:
+  en: Chest caught with a bait of earth.
+  ru: Сундук Земли
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: fisher_willeri
+level: 48
+reward:
+  items:
+    - 2455
+questItems:
+  - 7627
+walkthrough:
+  en:
+    - Talk to {npc:fisher_willeri} (Town of Oren).
+    - Go fishing using the {item:q_earth_lure} until you get the
+      {item:small_violet_treasure_box}.
+    - Talk to {npc:fisher_willeri}.
+    - |-
+      Talk to {npc:magister_anabel}, for reward: 
+      - {item:plate_leather_gloves}
+  ru:
+    - Поговорите с {npc:fisher_willeri} (Town of Oren).
+    - Рыбачьте, используя {item:q_earth_lure}, пока не получите
+      {item:small_violet_treasure_box}.
+    - Поговорите с {npc:fisher_willeri}.
+    - |-
+      Поговорите с {npc:magister_anabel} и получите в награду: 
+      - {item:plate_leather_gloves}

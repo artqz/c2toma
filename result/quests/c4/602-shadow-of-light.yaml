@@ -1,0 +1,56 @@
+id: 602
+name:
+  en: Shadow of Light
+  ru: Тень Света
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: eye_of_argos
+level: 68
+reward:
+  exp: 150000
+  sp: 20000
+  items:
+    - 6699
+    - 6698
+    - 6700
+    - 57
+questItems:
+  - 7189
+walkthrough:
+  en:
+    - Talk to {npc:eye_of_argos} (Wall of Argos).
+    - Kill {npc:buffalo_slave} and {npc:grendel_slave} to collect
+      {item:q_dark_eye:100}.
+    - >-
+      Return to {npc:eye_of_argos}, and get one random reward: 
+
+      - {item:sealed_ring_of_aurakyria_gem:3}, {item:57:40000}, {exp:120000} and
+      {sp:57:20000}
+
+      - {item:sealed_sanddragon's_earing_piece:3}, {item:57:60000}, {exp:110000}
+      and {sp:57:15000}
+
+      - {item:sealed_dragon_necklace_wire:3}, {item:57:40000}, {exp:150000} and
+      {sp:57:10000}
+
+      - {item:57:100000}, {exp:140000} and {sp:57:11250}
+  ru:
+    - Поговорите с {npc:eye_of_argos} (Wall of Argos).
+    - Убивайте {npc:buffalo_slave} и {npc:grendel_slave}, пока не получите
+      {item:q_dark_eye:100}.
+    - >-
+      Вернитесь к {npc:eye_of_argos} и получите одну случайную награду: 
+
+      - {item:sealed_ring_of_aurakyria_gem:3}, {item:57:40000}, {exp:120000} и
+      {sp:57:20000}
+
+      - {item:sealed_sanddragon's_earing_piece:3}, {item:57:60000}, {exp:110000}
+      и {sp:57:15000}
+
+      - {item:sealed_dragon_necklace_wire:3}, {item:57:40000}, {exp:150000} и
+      {sp:57:10000}
+
+      - {item:57:100000}, {exp:140000} и {sp:57:11250}

@@ -1,0 +1,58 @@
+id: 266
+name:
+  en: Pleas of Pixies
+  ru: Мольбы фей
+desc:
+  en: The Queen of the Pixies is preparing a spell to protect birds that are
+    nesting in the Elven Forest from keltirs and wolves. Pixy Murika is under
+    the Queen’s order to collect the needed ingredients. She asks for one
+    hundred red keltir or gray wolf fangs. In return she will give you a
+    sparkling stone that was found in the forest.
+  ru: Королева Фей готовит заклятье, которое защитит гнезда птиц в Эльфийском Лесу
+    от шакалов и волков. Собрать необходимые ингредиенты было поручено Фее
+    Мурике. Она просит Вас принести ей 100 клыков рыжих шакалов или серых
+    волков. В награду Вы получите блестящий красный камень.
+type: repeatable
+requirements:
+  races:
+    - elf
+startNPC: pixy_murika
+level: 3
+reward:
+  items:
+    - 1337
+    - 3032
+    - 2176
+    - 1338
+    - 1339
+    - 1061
+    - 1336
+    - 1060
+questItems:
+  - 1334
+walkthrough:
+  en:
+    - Talk to {npc:pixy_murika}.
+    - Hunt {npc:young_red_keltir}, {npc:red_keltir}, {npc:elder_red_keltir} and
+      {npc:gray_wolf} to collect {item:1334:100}.
+    - |-
+      Give the {item:1334} to {npc:pixy_murika}, and get it as a random reward:
+      - {item:emerald} and {item:rp_spiritshot_d}
+      - {item:rp_leather_boots} and {item:blue_onyx}
+      - {item:onyx} and {item:healing_potion}
+      - {item:glass_shard} and {item:lesser_healing_potion}
+  ru:
+    - Поговорите с {npc:pixy_murika}.
+    - Убивайте {npc:young_red_keltir}, {npc:red_keltir}, {npc:elder_red_keltir}
+      и {npc:gray_wolf}, пока не получите {item:1334:100}.
+    - >-
+      Вернитесь с {item:1334} к {npc:pixy_murika}, и получите одну случайную
+      награду:
+
+      - {item:emerald} и {item:rp_spiritshot_d}
+
+      - {item:rp_leather_boots} и {item:blue_onyx}
+
+      - {item:onyx} и {item:healing_potion}
+
+      - {item:glass_shard} и {item:lesser_healing_potion}

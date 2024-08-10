@@ -1,0 +1,38 @@
+id: 151
+name:
+  en: Save My Sister
+  ru: Лекарство от лихорадки
+desc:
+  en: Elias, a Master at the School of Wizardry, has been to the northern woods
+    with some students to gather herbs. But the students have caught a fever,
+    and Priest Yohanes has been requested to create a remedy. Large amounts of
+    poison sacs are needed, and you are requested to gather them and bring them
+    to the Priest.
+  ru: Элиас, учитель из школы магии, собирал травы в северном лесу с несколькими
+    учениками. Молодых людей поразила болезнь, и Жрец Йоханес согласился сделать
+    для них лекарство. Ему нужно много ядовитых желез пауков, достаньте их и
+    принесите Йоханесу.
+type: one_time
+requirements: {}
+startNPC: elias
+level: 15
+reward:
+  items:
+    - 102
+questItems:
+  - 703
+  - 704
+walkthrough:
+  en:
+    - Talk to {npc:elias}
+    - Hunt {npc:giant_spider}, {npc:poker} or {npc:blader} until you get a
+      {item:703}.
+    - Give the sac to {npc:yohan} for a {item:704}.
+    - Give the medicine to {npc:elias}, for a {item:round_shield:1}.
+  ru:
+    - Поговорите с {npc:elias}
+    - Убивайте {npc:giant_spider}, {npc:poker} и{npc:blader}, пока не получите
+      {item:703}.
+    - Отдайте железу {npc:yohan}, он даст вам {item:704}.
+    - Вернитесь с лекарством к {npc:elias}, и получите в награду
+      {item:round_shield:1}.

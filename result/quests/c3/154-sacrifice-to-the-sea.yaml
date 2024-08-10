@@ -1,0 +1,40 @@
+id: 154
+name:
+  en: Sacrifice to the Sea
+  ru: Жертва морю
+desc:
+  en: Lighthouse Keeper Rockswell blames the recent storms on not making any
+    offerings to the goddess Shilen. He decides to hold a secret ceremony, where
+    he needs a maiden doll as an alternate for a live offering. He asks you to
+    collect fox fur for the hair of the doll.
+  ru: Чтобы успокоить разбушевавшееся море, Смотритель Маяка Роксвелл планирует
+    провести ритуал жертвоприношения богине Шилен. Изначально в качестве жертвы
+    должна выступить живая девушка, но решено было обойтись куклой.
+type: one_time
+requirements: {}
+startNPC: rockswell
+level: 2
+reward:
+  exp: 100
+  items:
+    - 113
+questItems:
+  - 1032
+  - 1033
+  - 1034
+walkthrough:
+  en:
+    - Talk to {npc:rockswell}.
+    - Hunt {npc:keltir} and {npc:young_keltir} until you have {item:1032:10}.
+    - Give the Fox Furs to {npc:cristel}. She gives you {item:1033}.
+    - Give the Fox Fur Yarn to {npc:rollfnan} and he gives you a {item:1034}.
+    - Give the Maiden Doll to {npc:rockswell}, for {exp:100} and
+      {item:mage_earing}.
+  ru:
+    - Поговорите с {npc:rockswell}.
+    - Убивайте {npc:keltir} и {npc:young_keltir}, пока не получите
+      {item:1032:10}.
+    - Отнесите {item:1032:10} к {npc:cristel}. Она даст вам {item:1033}.
+    - Отнесите {item:1033} к {npc:rollfnan} и он даст вам {item:1034}.
+    - Вернитесь с {item:1034} к {npc:rockswell}, и получите {exp:100} и
+      {item:mage_earing}.

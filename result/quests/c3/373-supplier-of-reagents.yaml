@@ -1,0 +1,244 @@
+id: 373
+name:
+  en: Supplier of Reagents
+  ru: Поставщик реагентов
+desc:
+  en: You have agreed to obtain the reagent that Magic Trader Wesley needs for his
+    magic research. Slay the evil creatures in the Tower of Insolence and the
+    Blazing Swamp and collect reagent ingredients. Once you collect the
+    ingredients, use the mixing urn in the basement of the Ivory Tower to create
+    reagents. Refer to the note that is attached to the mixing urn for
+    instructions on how to use the urn and for the formulas used to mix the
+    ingredients. In the Tower of Insolence you should hunt crendions, Hallate's
+    maids, Hallate's guardians, platinum tribe shamans and platinum guardian
+    shamans. In the Blazing Swamp hunt lava wyrms and Hames orc shamans.
+  ru: Для продолжения исследований Магическому Торговцу Уэсли нужен один реагент.
+    Охотьтесь на существ, обитающих в Башне Дерзости и Раскаленных Топях, и
+    соберите ингредиенты для реагента. После этого используйте Смеситель в Башне
+    Слоновой Кости, чтобы изготовить реагент. Перед началом работы не забудьте
+    прочитать инструкцию по работе со Смесителем.
+type: repeatable
+requirements: {}
+startNPC: bandor
+level: 57
+reward:
+  items:
+    - 103
+    - 2437
+    - 630
+    - 612
+    - 2464
+    - 554
+    - 600
+    - 2439
+    - 601
+    - 2487
+    - 2475
+    - 4042
+    - 4043
+    - 4044
+    - 2508
+    - 735
+    - 737
+    - 4953
+    - 4960
+    - 4959
+    - 4958
+    - 4998
+    - 4992
+    - 4993
+    - 4999
+    - 5524
+    - 5478
+    - 5520
+    - 5479
+    - 5521
+    - 5480
+    - 5481
+    - 5522
+    - 5523
+questItems:
+  - 5904
+  - 6317
+  - 6009
+  - 6008
+  - 6007
+walkthrough:
+  en:
+    - Talk to {npc:bandor}.
+    - >-
+      Obtaining materials:
+
+      Kill {npc:lava_wyrm} to collect {item:wyrms_blood} and {item:lava_stone}.
+
+      Kill {npc:hallates_guardian} to collect {item:demons_blood}.
+
+      Kill {npc:hallates_maiden} to collect {item:ingredient_pouch2}.
+
+      Kill {npc:credion} to collect {item:decaying_bone} and {item:quicksilver}.
+
+      Kill {npc:platinum_tribe_shaman} to collect {item:ingredient_pouch2} and
+      {item:quicksilver}.
+
+      Kill {npc:plat_protect_shaman} to collect {item:ingredient_box}.
+
+      Kill {npc:hames_orc_shaman} to collect {item:ingredient_pouch1} and
+      {item:quicksilver}.
+    - |-
+      Bags and chests may contain:
+      {item:ingredient_pouch1}:
+      - {item:volcanic_ash:2}
+      - {item:quicksilver:2}
+      - {item:lava_stone}
+      - {item:moonstone_shard}
+
+      {item:ingredient_pouch1}:
+      - {item:infernium_ore}
+      - {item:decaying_bone}
+      - {item:sulfur:2}
+      - {item:demons_blood:2}
+
+      {item:ingredient_box}:
+      - {item:demons_blood:2}
+      - {item:blood_root:2}
+      - {item:infernium_ore}
+    - >-
+      Mix the Reagants
+
+      Go to {npc:alchemical_mixing_jar}. Choose which ingredients you want to
+      mix and at what temperature. Lower temperature is safer , the higher
+      temperatures could fail but produce more reagants.
+
+      - Lowest temperature is Salamnder - 100% sucsess rate - production x1
+
+      - Middle temperature is Ifrit 45% sucsess rate - production x2
+
+      - Highest temperature is Phoenix 15% sucsess rate - production x3
+
+
+      Formulas - Low level:      
+
+      {item:magma_dust} = {item:lava_stone:10} + {item:volcanic_ash}
+
+      {item:moon_dust} = {item:moonstone_shard:10} + {item:volcanic_ash}      
+
+      {item:inferno_dust} = {item:infernium_ore:10} + {item:volcanic_ash}
+
+      {item:demonplasm} = {item:demons_blood:10} + {item:blood_root}
+
+      {item:necroplasm} = {item:decaying_bone:10} + {item:blood_root}
+
+      {item:dracoplasm} = {item:wyrms_blood:10} + {item:blood_root}
+
+
+      Formulas - High level:
+
+      {item:draconic_essence} = {item:dracoplasm:10} + {item:quicksilver}
+
+      {item:fire_essence} = {item:magma_dust:10} + {item:sulfur}
+
+      {item:lunargent} = {item:moon_dust:10} + {item:quicksilver}
+
+      {item:midnight_oil} = {item:necroplasm:10} + {item:quicksilver}
+
+      {item:demonic_essence} = {item:demonplasm:10} + {item:sulfur}
+
+      {item:abyss_oil} = {item:inferno_dust:10} + {item:sulfur}
+
+      {item:hellfire_oil} = {item:fire_essence:1} + {item:draconic_essence}
+
+      {item:nightmare_oil} = {item:lunargent:1} + {item:midnight_oil}
+    - Give reagants to {npc:bandor} to trade them for recipes, components, or
+      complete items (You can see the exchange list on the NPC {npc:bandor} page
+      under the "Exchange" tab).
+  ru:
+    - Поговорите с {npc:bandor}.
+    - >-
+      Получение материалов:
+
+      Убивайте {npc:lava_wyrm}, чтобы получить {item:wyrms_blood} и
+      {item:lava_stone}.
+
+      Убивайте {npc:hallates_guardian}, чтобы получить {item:demons_blood}.
+
+      Убивайте {npc:hallates_maiden}, чтобы получить {item:ingredient_pouch2}.
+
+      Убивайте {npc:credion}, чтобы получить {item:decaying_bone} и
+      {item:quicksilver}.
+
+      Убивайте {npc:platinum_tribe_shaman}, чтобы получить
+      {item:ingredient_pouch2} и {item:quicksilver}.
+
+      Убивайте {npc:plat_protect_shaman}, чтобы получить {item:ingredient_box}.
+
+      Убивайте {npc:hames_orc_shaman}, чтобы получить {item:ingredient_pouch1} и
+      {item:quicksilver}.
+    - |-
+      Сумки и сундуки могут содержать:
+      {item:ingredient_pouch1}:
+      - {item:volcanic_ash:2}
+      - {item:quicksilver:2}
+      - {item:lava_stone}
+      - {item:moonstone_shard}
+
+      {item:ingredient_pouch1}:
+      - {item:infernium_ore}
+      - {item:decaying_bone}
+      - {item:sulfur:2}
+      - {item:demons_blood:2}
+
+      {item:ingredient_box}:
+      - {item:demons_blood:2}
+      - {item:blood_root:2}
+      - {item:infernium_ore}
+    - >-
+      Смешивание реагентов
+
+      Подойдите к {npc:alchemical_mixing_jar}. Выберите, какие ингредиенты вы
+      хотите смешать и при какой температуре. Более низкая температура
+      безопаснее, более высокая температура может привести к неудаче, но
+      позволит получить больше реагентов.
+
+      - Самая низкая температура - Salamnder - 100% шанс успеха - производство
+      x1
+
+      - Средняя температура - Ifrit 45% шанс успеха - производство  x2
+
+      - Самая высокая температура - Phoenix 15% шанс успеха - производство x3
+
+
+      Формулы реагентов низкого уровня:    
+
+      {item:magma_dust} = {item:lava_stone:10} + {item:volcanic_ash}
+
+      {item:moon_dust} = {item:moonstone_shard:10} + {item:volcanic_ash}      
+
+      {item:inferno_dust} = {item:infernium_ore:10} + {item:volcanic_ash}
+
+      {item:demonplasm} = {item:demons_blood:10} + {item:blood_root}
+
+      {item:necroplasm} = {item:decaying_bone:10} + {item:blood_root}
+
+      {item:dracoplasm} = {item:wyrms_blood:10} + {item:blood_root}
+
+
+      Высокоуровневые реагентные форумы:
+
+      {item:draconic_essence} = {item:dracoplasm:10} + {item:quicksilver}
+
+      {item:fire_essence} = {item:magma_dust:10} + {item:sulfur}
+
+      {item:lunargent} = {item:moon_dust:10} + {item:quicksilver}
+
+      {item:midnight_oil} = {item:necroplasm:10} + {item:quicksilver}
+
+      {item:demonic_essence} = {item:demonplasm:10} + {item:sulfur}
+
+      {item:abyss_oil} = {item:inferno_dust:10} + {item:sulfur}
+
+      {item:hellfire_oil} = {item:fire_essence:1} + {item:draconic_essence}
+
+      {item:nightmare_oil} = {item:lunargent:1} + {item:midnight_oil}
+    - Отдайте реагенты {npc:bandor}, чтобы обменять их на рецепты, компоненты
+      или готовые предметы (Список обмена можно посмотреть на странице НПЦ
+      {npc:bandor} во вкладке "Обмен").

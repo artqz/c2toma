@@ -1,0 +1,75 @@
+id: 358
+name:
+  en: Illegitimate Child of A Goddess
+  ru: Порождения Богини
+desc:
+  en: To protect Shilen's reputation, Grand Master Oltlin asks you to destroy the
+    evil creatures that are evidence of her descent into madness. Collect 108
+    snake scales from the evil creatures that look like her and take them to
+    Grand Master Oltlin. You will find them in front of the Forbidden Gateway.
+    Hunt Falibati and Trives.
+  ru: Чтобы защитить репутацию Шилен, Великий Мастер Олтлин просит Вас истребить
+    дьявольских существ, которых она породила. Собери 108 Чешуек Змеи и отнесите
+    их Великому Мастеру Олтлину.
+type: repeatable
+requirements: {}
+startNPC: grandmaster_oltlin
+level: 63
+reward:
+  items:
+    - 6333
+    - 6331
+    - 6329
+    - 6339
+    - 6337
+    - 6335
+    - 5366
+    - 5364
+questItems:
+  - 5868
+walkthrough:
+  en:
+    - Talk to {npc:grandmaster_oltlin}.
+    - Hunt {npc:trives} and {npc:falibati} to collect {item:snake_scale:108}.
+    - >-
+      Return to {npc:grandmaster_oltlin} and get one random award from this
+      list:
+
+      {item:rp_sealed_phoenix's_ring_i}, 
+
+      {item:rp_sealed_phoenix's_earing_i}, 
+
+      {item:rp_sealed_phoenix's_necklace_i}, 
+
+      {item:rp_sealed_majestic_ring_i}, 
+
+      {item:rp_sealed_majestic_earing_i}, 
+
+      {item:rp_sealed_majestic_necklace_i}, 
+
+      {item:rp_sealed_shield_of_nightmare_i}, 
+
+      {item:rp_sealed_dark_crystal_shield_i}.
+  ru:
+    - Поговорите с {npc:grandmaster_oltlin}.
+    - Охотьтесь на {npc:trives} и {npc:falibati}, пока не соберете
+      {item:snake_scale:108}.
+    - >-
+      Вернитесь к {npc:grandmaster_oltlin} и получите одну случайную награду из
+      этого списка:
+
+      {item:rp_sealed_phoenix's_ring_i}, 
+
+      {item:rp_sealed_phoenix's_earing_i}, 
+
+      {item:rp_sealed_phoenix's_necklace_i}, 
+
+      {item:rp_sealed_majestic_ring_i}, 
+
+      {item:rp_sealed_majestic_earing_i}, 
+
+      {item:rp_sealed_majestic_necklace_i}, 
+
+      {item:rp_sealed_shield_of_nightmare_i}, 
+
+      {item:rp_sealed_dark_crystal_shield_i}.

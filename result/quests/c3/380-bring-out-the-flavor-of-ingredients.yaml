@@ -1,0 +1,43 @@
+id: 380
+name:
+  en: Bring Out the Flavor of Ingredients!
+  ru: Лучший шеф-повар
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: rollant
+level: 24
+reward:
+  items:
+    - 5960
+    - 5959
+questItems:
+  - 5895
+  - 5896
+  - 5897
+walkthrough:
+  en:
+    - Talk to {npc:rollant}.
+    - Hunt {npc:dire_wolf} to collect {item:ritron:4}.
+    - Hunt {npc:kadif_werewolf} to collect {item:moon_face_flower:20}.
+    - Hunt {npc:mist_giant_leech} to collect {item:body_fluid_of_leech:10}.
+    - Buy {item:antidote:2}.
+    - |-
+      Return to {npc:rollant}, and get random reward:
+      - {item:dessert_of_ritron}
+      - {item:recipe_of_ritron}
+    - Note. {item:recipe_of_ritron} will be useful in {quest:378}.
+  ru:
+    - Поговорите с {npc:rollant}.
+    - Убивайте {npc:dire_wolf}, пока не получите {item:ritron:4}.
+    - Убивайте {npc:kadif_werewolf}, пока не получите {item:moon_face_flower:20}.
+    - Убивайте {npc:mist_giant_leech}, пока не получите
+      {item:body_fluid_of_leech:10}.
+    - Купите {item:antidote:2}.
+    - |-
+      Вернитесь к {npc:rollant}, и получите случайную награду:
+      - {item:dessert_of_ritron}
+      - {item:recipe_of_ritron}
+    - Важно. {item:recipe_of_ritron} пригодится вам в {quest:378}.

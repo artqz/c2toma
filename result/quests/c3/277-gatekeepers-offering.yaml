@@ -1,0 +1,35 @@
+id: 277
+name:
+  en: Gatekeeper's Offering
+  ru: Дары Хранителя Портала
+desc:
+  en: Gatekeeper Tamil says that his teleport magic is not complete, and explains
+    that he needs the aid of the totem spirit of the spider. But in order to
+    receive the aid of the spider of space and time, he must regularly make
+    offerings, and asks the player to collect the starstones of the graystone
+    golem. Collect twenty starstones and bring them back to receive a token that
+    lets you teleport to the village of Gludin for free.
+  ru: Хранитель Портала Тамил говорит, что для ее магии телепортации нужна помощь
+    тотемного духа паука. Чтобы заручиться его поддержкой, необходимо постоянно
+    приносить ему дары. Она просит Вас собрать 20 Звездных Камней из Серых
+    Големов. За это Вы сможете один раз бесплатно отправиться в Глудин.
+type: repeatable
+requirements: {}
+startNPC: gatekeeper_tamil
+level: 15
+reward:
+  items:
+    - 1658
+questItems:
+  - 1572
+walkthrough:
+  en:
+    - Talk to {npc:gatekeeper_tamil}.
+    - Kill {npc:greystone_golem} to collect {item:1572:20}.
+    - Give the stones to {npc:gatekeeper_tamil} to get a {item:1658:2} that is
+      good for free teleport to Gludin from the Orc Village.
+  ru:
+    - Поговорите с {npc:gatekeeper_tamil}.
+    - Убивайте {npc:greystone_golem}, пока не получите {item:starstone1:20}.
+    - Вернитесь к {npc:gatekeeper_tamil}, и получите в награду {item:1658:2},
+      дает возможность бесплатно переместиться из Orc Village в Gludin.

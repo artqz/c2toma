@@ -1,0 +1,38 @@
+id: 297
+name:
+  en: Gatekeeper's Favor
+  ru: Просьба Хранителя Портала
+desc:
+  en: While having a conversation with Gatekeeper Wirphy of the Dwarven Village,
+    she says that her body, created from the technology of the ancient giants,
+    has been damaged and her energy is draining away. She asks you to obtain
+    starstones, which had been used as the source of energy by the giants, and
+    bring them back to her. Perform her favor and slay whinstone golems, then
+    gather twenty starstones from them and bring them back to her to receive a
+    charm that lets you teleport to Gludin town for free.
+  ru: Хранитель Портала Вирфи из Деревни Гномов сделана с использованием
+    технологий древних Гигантов. Она истощена после телепортации большой группы
+    торговцев. Вирфи просит Вас собрать 20 Звездных Камней, источник энергии
+    древних Гигантов, и принести их ей.
+type: repeatable
+requirements: {}
+startNPC: gatekeeper_wirphy
+level: 15
+reward:
+  items:
+    - 1659
+questItems:
+  - 1573
+walkthrough:
+  en:
+    - Talk to {npc:gatekeeper_wirphy}.
+    - Kill {npc:whinstone_golem} to collect {item:1573:20}.
+    - Give the stones to {npc:gatekeeper_wirphy} to get a
+      {item:gatekeeper_token:2} that is good for free teleport to Gludin from
+      the Dwarven Village.
+  ru:
+    - Поговорите с {npc:gatekeeper_wirphy}.
+    - Убивайте {npc:whinstone_golem}, пока не получите {item:1573:20}.
+    - Вернитесь к {npc:gatekeeper_tamil}, и получите в награду
+      {item:gatekeeper_token:2}, дает возможность бесплатно переместиться из
+      Dwarven Village в Gludin.

@@ -1,0 +1,40 @@
+id: 166
+name:
+  en: Mass of Darkness
+  ru: Темная месса
+desc:
+  en: Abyssal Celebrant Undrias is busy preparing for the ceremony of Shilen and
+    Gran Kain. He asks you to retrieve items for the ceremony from Trader Iria,
+    Warehouse Keeper Dorankus, and Master Trudy.
+  ru: Служитель Бездны Андриас занят подготовкой церемонии в честь богини Шилен и
+    Гран Каина. Он просит Вас пойти в деревню и достать несколько предметов,
+    необходимых для проведения темной мессы.
+type: one_time
+requirements:
+  races:
+    - darkelf
+    - human
+startNPC: undres
+level: 2
+reward:
+  exp: 500
+  items:
+    - 57
+questItems:
+  - 1088
+  - 1089
+  - 1090
+  - 1091
+walkthrough:
+  en:
+    - Talk to {npc:undres} and get {item:1088}.
+    - Talk to {npc:doran} and get {item:1090}.
+    - Talk to {npc:trudy}. She gives you {item:1091}.
+    - Talk to {npc:iria}. She gives you a {item:1089}.
+    - Take all the items to {npc:undres}, for {exp:500} and {item:57:500}.
+  ru:
+    - Поговорите с {npc:undres}. Он даст вам {item:1088}.
+    - Поговорите с {npc:doran}. Он даст вам {{item:1090}.
+    - Поговорите с {npc:trudy}. Она даст вам {{item:1091}.
+    - Поговорите с {npc:iria}. Она даст вам {item:1089}.
+    - Отнесите все вещи к {npc:undres}, и получите {exp:500} и {item:57:500}.

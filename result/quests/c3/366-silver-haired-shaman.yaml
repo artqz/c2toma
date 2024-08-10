@@ -1,0 +1,29 @@
+id: 366
+name:
+  en: Silver Haired Shaman
+  ru: Сребровласый Шаман
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: dieter
+level: 48
+reward:
+  items:
+    - 57
+questItems:
+  - 5874
+walkthrough:
+  en:
+    - Talk to {npc:dieter}.
+    - Hunt {npc:saitnn}, {npc:saitnn_doll} and {npc:saitnn_puppet} to collect
+      {item:q_saitnns_silver_hair}.
+    - Return to {npc:dieter} and recieve {item:57:12070} and {item:57:500 } for
+      each item {item:q_saitnns_silver_hair}.
+  ru:
+    - Поговорите с {npc:dieter}.
+    - Охотьтесь на {npc:saitnn}, {npc:saitnn_doll} и {npc:saitnn_puppet}, чтобы
+      получать {item:q_saitnns_silver_hair}.
+    - Вернитесь к {npc:dieter} и получите в награду {item:57:12070} и
+      {item:57:500} за каждый {item:q_saitnns_silver_hair}.

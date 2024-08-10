@@ -1,0 +1,64 @@
+id: 296
+name:
+  en: Tarantula’s Spider Silk
+  ru: Шелк тарантула
+desc:
+  en: The king of Elmore has requested the best spider silk formal wear to be made
+    for the emissaries that are being sent to the Aden kingdom. Trader Mion, a
+    cutter of the Silver Scale Guild, doesn't have enough material to make
+    formal wear and asks you to collect tarantula spider silk. Hunt crimson and
+    hunter tarantulas, then bring back their spider silk to receive a reward.
+    Spider silk may also be acquired by taking tarantula spinnerettes to
+    Defender Nathan to be spun.
+  ru: Король Эльмора приказал сшить для эмиссаров в Аден наряды из лучшего
+    паучьего шелка. Торговцу Мион, портнихе из Гильдии Серебряных Весов, не
+    хватает материала, и она просит Вас собрать Шелк Тарантула. За это она
+    обещает хорошую награду. Паучий шелк также можно получить, отдав Паутинные
+    Железы Тарантула Защитнику Натану.
+type: repeatable
+requirements:
+  items:
+    - 1509
+    - 1508
+startNPC: trader_mion
+level: 15
+reward:
+  items:
+    - 57
+questItems:
+  - 1493
+  - 1494
+walkthrough:
+  en:
+    - Note. To do the this quest, you need a {item:ring_of_raccoon}
+      ({quest:294}) and {item:ring_of_firefly} ({quest:295}).
+    - Talk to {npc:trader_mion} in the Dwarven Village magic shop.
+    - Hunt {npc:crimson_tarantula}, {npc:hunter_tarantula},
+      {npc:plunder_tarantula} and collect {item:tarantula_spider_silk}.
+    - If you get any {item:tarantula_spinnerette}, take them to
+      {npc:defender_nathan}, to be turned into silk.
+      {item:tarantula_spinnerette} = {item:tarantula_spider_silk:20}.
+    - >-
+      Return to {npc:trader_mion}, and get it as a reward:
+
+      - {item:57:30} for each {item:tarantula_spider_silk}
+
+      If you bring more than 10 items, you will additionally receive
+      {item:57:2000}.
+  ru:
+    - Важно. Чтобы выполнить этот квест, необходимо иметь в инвентаре
+      {item:ring_of_raccoon} ({quest:294}) и {item:ring_of_firefly}
+      ({quest:295}).
+    - Поговорите с {npc:trader_mion}.
+    - Убивайте {npc:crimson_tarantula}, {npc:hunter_tarantula},
+      {npc:plunder_tarantula}, чтобы получать {item:tarantula_spider_silk},
+      также ваб будет падать {item:tarantula_spinnerette}.
+    - "{item:tarantula_spinnerette} можно обменять у {npc:defender_nathan} на
+      {item:tarantula_spider_silk:20}."
+    - >-
+      Вернитесь к {npc:trader_mion}, и получите в награду:
+
+      - {item:57:30} за каждый {item:tarantula_spider_silk}
+
+      Если вы принесете более 10 предметов, то дополнительно получите
+      {item:57:2000}.

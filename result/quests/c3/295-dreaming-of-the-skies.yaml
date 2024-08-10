@@ -1,0 +1,61 @@
+id: 295
+name:
+  en: Dreaming of the Skies
+  ru: Мечты о небе
+desc:
+  en: Elder Arin, the leader of the Black Anvil Guild, has a dream to study the
+    technology of the late giants and develop the ultimate flying machine. He
+    has worked long in studying flying technology to realize his dream, but has
+    run out of research materials, and asks you to collect floating stones.
+    These stones may be obtained by hunting the magical weaver. Collect fifty
+    and take them back to Elder Arin for a reward.
+  ru: Старейшина Арин, глава Гильдии Черной Наковальни, давно мечтает освоить
+    технологию Гигантов и производить летающие машины. Ему требуются материалы
+    для исследований. Он просит собрать 50 Парящих Камней и принести ему. Эти
+    камни, возможно, обладают нужной магической силой.
+type: repeatable
+requirements: {}
+startNPC: elder_arin
+level: 11
+reward:
+  sp: 500
+  items:
+    - 1509
+    - 57
+questItems:
+  - 1492
+walkthrough:
+  en:
+    - Talk to {npc:elder_arin}.
+    - Hunt {npc:magical_weaver} and collect {item:floating_stone:50}.
+    - >-
+      Give the {item:floating_stone:50} to {npc:elder_arin}, and get it as a
+      reward:
+
+      For the first completion:
+
+      - {item:ring_of_firefly} and {sp:500}
+
+
+      For Repeat:
+
+      - {item:57:2400} and {sp:500}
+    - Note. that if you wish to do the {quest:296} quest, you must keep the
+      {item:ring_of_firefly} and {item:ring_of_raccoon} ({quest:294}).
+  ru:
+    - Поговорите с {npc:elder_arin}.
+    - Убивайте {npc:magical_weaver}, пока не получите {item:floating_stone:50}.
+    - >-
+      Отнесите {item:floating_stone:50} к {npc:elder_arin}, и получите в
+      награду:
+
+      За первое прохождение:
+
+      - {item:ring_of_firefly} and {sp:500}
+
+
+      За последующие:
+
+      - {item:57:2400} and {sp:500}
+    - Важно. {item:ring_of_firefly} необходимо для выполнения {quest:296}, также
+      вам понадобится {item:ring_of_raccoon}, можно получить за quest:294}.

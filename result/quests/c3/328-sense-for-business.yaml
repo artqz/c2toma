@@ -1,0 +1,53 @@
+id: 328
+name:
+  en: Sense for Business
+  ru: Деловая хватка
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: trader_salient
+level: 21
+reward:
+  items:
+    - 57
+questItems:
+  - 1347
+  - 1366
+  - 1348
+walkthrough:
+  en:
+    - Talk to {npc:trader_salient}, at the southem entrance to the Wastelands.
+    - Hunt {npc:seer}, {npc:patoller}, {npc:beamer} and {npc:viewer} to collect
+      {item:monster_eye_carcass} and {item:monster_eye_lens}.
+    - Hunt {npc:lesser_basilisk}, {npc:lesser_poison_basilisk} to collect
+      {item:basilisk_gizzard}.
+    - >-
+      Return to {npc:trader_salient} for your reward:
+
+      - {item:57:25} for each {item:monster_eye_carcass}
+
+      - {item:57:60} for each {item:basilisk_gizzard}
+
+      - {item:57:1000} for each {item:monster_eye_lens}
+
+      If you bring more than 10 items, you will additionally receive
+      {item:57:618}.
+  ru:
+    - Поговорите с {npc:trader_salient}.
+    - Охотьтесь на {npc:seer}, {npc:patoller}, {npc:beamer} и {npc:viewer},
+      чтобы получать {item:monster_eye_carcass} и {item:monster_eye_lens}.
+    - Охотьтесь на {npc:lesser_basilisk}, {npc:lesser_poison_basilisk}, чтобы
+      получать {item:basilisk_gizzard}.
+    - >-
+      Вернитесь к {npc:trader_salient} чтобы полчить:
+
+      - {item:57:25} за каждый {item:monster_eye_carcass}
+
+      - {item:57:60} за каждый {item:basilisk_gizzard}
+
+      - {item:57:1000} за каждый {item:monster_eye_lens}
+
+      Если вы принесете более 10 предметов, то дополнительно получите
+      {item:57:618}.

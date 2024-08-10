@@ -1,0 +1,33 @@
+id: 30
+name:
+  en: Chest caught with a bait of fire.
+  ru: Сундук Огня
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: fisher_linneaus
+level: 60
+reward:
+  items:
+    - 916
+questItems:
+  - 7628
+walkthrough:
+  en:
+    - Talk to {npc:fisher_linneaus} (Town of Aden).
+    - Go fishing using the {item:q_flame_lure} until you get the
+      {item:red_treasure_box}.
+    - Talk to {npc:fisher_linneaus}.
+    - |-
+      Talk to {npc:bard_rukal}, for reward: 
+      - {item:necklace_of_protection}
+  ru:
+    - Поговорите с {npc:fisher_linneaus} (Town of Aden).
+    - Рыбачьте, используя {item:q_flame_lure}, пока не получите
+      {item:red_treasure_box}.
+    - Поговорите с {npc:fisher_linneaus}.
+    - |-
+      Поговорите с {npc:bard_rukal} и получите в награду: 
+      - {item:necklace_of_protection}

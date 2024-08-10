@@ -1,0 +1,67 @@
+id: 211
+name:
+  en: Trial of the Challenger
+  ru: Испытание храбрости
+desc:
+  en: Quest to acquire occupation change item, 'Mark of the Challenger.' Kash says
+    he will tell you who has the Mark of the Challenger, if you manage to kill
+    the medusa, Shyslyssys, and bring forth the old parchment. She lives in a
+    cave in the Neutral Zone, which is between the Elven and the Dark Forests.
+    He advises you to go in parties, for she is a strong enemy who has lived for
+    hundreds of years.
+  ru: Кэш говорит, что каждый, кто хочет получить Знак Храбрости, должен
+    отправиться в пещеру за Водопадом Ундины на севере Нейтральной Зоны, убить
+    Шисласис и добыть старый свиток.
+type: one_time
+requirements:
+  category:
+    - warrior_group
+startNPC: kash
+level: 35
+reward:
+  exp: 72394
+  sp: 11250
+  items:
+    - 2627
+questItems:
+  - 2627
+  - 2628
+  - 2629
+  - 2630
+  - 2631
+  - 2632
+walkthrough:
+  en:
+    - Talk to {npc:kash} (Dion).
+    - Kill the {npc:shyslassys} to collect {item:2631} and {item:2632}.
+      Shyslassys and her six pet Cave Basilisks can be found behind the
+      waterfall between Elf and Dark Elf town.
+    - Use the {item:2632} to open the {npc:chest_of_shyslassys}.
+    - Talk to {npc:kash}.
+    - Talk to {npc:martian} (Giran).
+    - Kill {npc:gorr} to collect {item:2629}.
+    - Talk to {npc:martian}.
+    - Kill {npc:baraham} to collect {item:2630}.
+    - Talk to {npc:raldo} who appeared there.
+    - Talk to {npc:elder_filaur} (Dwarven Village).
+    - To continue, you must be level 36.
+    - Kill to {npc:queen_of_succubus} (In the deepest part of the Mithril mines).
+    - Talk to {npc:raldo} who appeared there, for {exp:72394}, {sp:11250} and
+      {item:2627}.
+  ru:
+    - Поговорите с {npc:kash} (Дион).
+    - Убейте {npc:shyslassys}, чтобы получить {item:2631} и {item:2632}. Можно
+      найти за водопадом между деревней эльфов и деревней темных эльфов.
+    - После убийства {npc:shyslassys} появится {npc:chest_of_shyslassys},
+      который можно будет открыть {item:2632}, "поговорив" с сундуком.
+    - Поговорите с {npc:kash}.
+    - Поговорите с {npc:martian} (Giran).
+    - Убейте {npc:gorr}, чтобы получить {item:2629}.
+    - Поговорите с {npc:martian}.
+    - Убейте {npc:baraham}, чтобы получить {item:2630}.
+    - Поговорите с {npc:raldo}, который появится рядом.
+    - Поговорите с {npc:elder_filaur} (Деревня гномов).
+    - Для продолжения квеста необходимо получить 36 уровень.
+    - Убейте {npc:queen_of_succubus} (В самой далекой части мифриловых шахт).
+    - Поговорите с {npc:raldo}, который появится рядом, и получите {exp:72394},
+      {sp:11250} и {item:2627}.

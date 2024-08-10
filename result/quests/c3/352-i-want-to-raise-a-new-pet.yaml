@@ -1,0 +1,68 @@
+id: 352
+name:
+  en: I Want to Raise A New Pet!
+  ru: Новый питомец
+desc:
+  en: Pet Manager Rood of Heine wants to raise a new pet. He asks you to obtain
+    lienrik eggs. A lienrik is a beautiful beast that lives in the Field of
+    Silence. Female lienrik eggs are much rarer than male lienrik eggs. Hunt
+    lienriks and lienrik lads.
+  ru: Специалист по Питомцам Руд из Хейна хочет завести нового Питомца. Он просит
+    Вас достать Яйцо Аспида. Аспид обитает в Полях Безмолвия.
+type: repeatable
+requirements: {}
+startNPC: pet_manager_rood
+level: 39
+reward:
+  items:
+    - 57
+questItems:
+  - 5860
+  - 5861
+walkthrough:
+  en:
+    - Talk to {npc:pet_manager_rood}.
+    - Hunt {npc:lienrik} and {npc:lienrik_lad} to collect {item:lienlik_egg1}
+      and {item:lienlik_egg2}.
+    - >-
+      Return to {npc:pet_manager_rood}, for {item:57}.
+
+
+      Reward for spare parts if you don't have {item:lienlik_egg2}: 
+
+      - {item:57:34} for each {item:lienlik_egg1} and {item:57:2000}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:2000}.
+
+
+      Reward for parts if you have {item:lienlik_egg2}: 
+
+      - {item:57:34} for each {item:lienlik_egg1}
+
+      - {item:57:1025} for each {item:lienlik_egg2}
+
+      - {item:57:4000}
+  ru:
+    - Поговорите с {npc:pet_manager_rood}.
+    - Охотьтесь на {npc:lienrik} и {npc:lienrik_lad} для получения
+      {item:lienlik_egg1} и {item:lienlik_egg2}.
+    - >-
+      Вернитесь к {npc:pet_manager_rood}, и получите в награду {item:57}.
+
+
+      Награда за предметы, если у вас нет {item:lienlik_egg2}: 
+
+      - {item:57:34} за каждый {item:lienlik_egg1} и {item:57:2000}
+
+      Если вы принесете более 10 предметов, то дополнительно получите
+      {item:57:2000}.
+
+
+      Награда за предметы, если у вас есть {item:lienlik_egg2}: 
+
+      - {item:57:34} за каждый {item:lienlik_egg1}
+
+      - {item:57:1025} за каждый {item:lienlik_egg2}
+
+      - {item:57:4000}

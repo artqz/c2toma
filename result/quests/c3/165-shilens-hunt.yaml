@@ -1,0 +1,42 @@
+id: 165
+name:
+  en: Shilen’s Hunt
+  ru: Охота в честь Шилен
+desc:
+  en: A ceremony for Shilen and Gran Kain will be held soon in the Dark Elven
+    Village. Before the ceremony there is a hunt for wild animals for the
+    offering, called Shilen's Hunt. If you can hunt brown keltirs and ashen
+    wolves during Shilen's Hunt, you will earn Dark Bezoars. Collect thirteen
+    and bring them to Sentry Nelsya. You will earn the award for the winner of
+    the hunt.
+  ru: В Деревне Темных Эльфов скоро начнется охота в честь богини Шилен. Вся
+    пойманная дичь будет принесена ей в жертву. Охотник, которому удастся добыть
+    13 Темных Безоаров, получит награду от Служителей Бездны. Убейте Шакалов и
+    Волков, соберите 13 Темных Безоаров и отнесите их Часовому Нельсии.
+type: one_time
+requirements:
+  races:
+    - darkelf
+startNPC: sentry_nelsya
+level: 3
+reward:
+  exp: 1000
+  items:
+    - 1060
+questItems:
+  - 1160
+walkthrough:
+  en:
+    - Talk to {npc:sentry_nelsya}.
+    - Kill {npc:young_brown_keltir}, {npc:brown_keltir},
+      {npc:elder_brown_keltir} and {npc:ashen_wolf} until you gather
+      {item:1160:13}.
+    - Return to {npc:sentry_nelsya} with the Dark Bezoars, for a
+      {item:lesser_healing_potion:5} and {exp:1000}.
+  ru:
+    - Поговорите с {npc:sentry_nelsya}.
+    - Убивайте {npc:young_brown_keltir}, {npc:brown_keltir},
+      {npc:elder_brown_keltir} и {npc:ashen_wolf}, пока не получите
+      {item:1160:13}.
+    - вернитесь к {npc:sentry_nelsya} с {item:1160:13}, и получите
+      {item:lesser_healing_potion:5} и {exp:1000}.

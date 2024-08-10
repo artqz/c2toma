@@ -1,0 +1,32 @@
+id: 8
+name:
+  en: An Adventure Begins
+  ru: Начало пути
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: { races: [darkelf] }
+startNPC: 7134
+level: 3
+reward: { items: [7559, 7570] }
+questItems: [7573]
+walkthrough:
+  en:
+    - Talk to {npc:jasmine} (Dark Elven Village).
+    - Talk to {npc:sentry_roseline}.
+    - Talk to {npc:harne}
+    - |-
+      Return to {npc:jasmine}, for reward: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - "Scrolling gives you the opportunity to move to the Giran once. To return back to the Dark Elven Village, you need to take a {quest:47}."
+  ru:
+    - Поговорите с {npc:jasmine}.
+    - Поговорите с {npc:sentry_roseline}.
+    - Поговорите с {npc:harne}
+    - |-
+      Вернитесь к {npc:jasmine}, и получите в награду: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - "Скролл дает возможность один раз переместиться в Giran. Чтобы вернуться обратно в Dark Elven Village необходимо взять {quest:47}."

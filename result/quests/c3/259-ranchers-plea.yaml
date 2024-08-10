@@ -1,0 +1,58 @@
+id: 259
+name:
+  en: Rancher's Plea
+  ru: Просьба фермера
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: edmond
+level: 15
+reward:
+  items:
+    - 57
+    - 1061
+    - 17
+    - 1835
+    - 2509
+questItems:
+  - 1495
+walkthrough:
+  en:
+    - Talk to {npc:edmond}.
+    - Hunt {npc:giant_spider} and {npc:poker} to collect {item:1495}.
+    - >-
+      Give the {item:1495} to {npc:edmond}, and get reward:
+
+      - {item:57:25} for each {item:giant_spider_skin}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:250}.
+    - >-
+      Or give the {item:1495:10} to {npc:marius}, and receive a reward of your
+      choice:
+
+      - {item:healing_potion:2}
+
+      - {item:wooden_arrow:250}
+
+      - {item:soulshot_none:60}
+
+      - {item:spiritshot_none:30}
+  ru:
+    - Поговорите с {npc:edmond}.
+    - Убивайте {npc:giant_spider} и {npc:poker}, чтобы получать {item:1495}.
+    - >-
+      Отнесите {item:1495} к {npc:edmond}, и получите в награду:
+
+      - {item:57:25} за каждый {item:giant_spider_skin}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:250}.
+    - |-
+      Или отнесите {item:1495:10} к {npc:marius}, и получите награду на выбор:
+      - {item:healing_potion:2}
+      - {item:wooden_arrow:250}
+      - {item:soulshot_none:60}
+      - {item:spiritshot_none:30}

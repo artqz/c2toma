@@ -1,0 +1,61 @@
+id: 340
+name:
+  en: Subjugation of Lizardmen
+  ru: Облава на Ящеров
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: guard_weisz
+level: 17
+reward:
+  items:
+    - 57
+questItems:
+  - 4255
+  - 4256
+  - 4257
+  - 4258
+walkthrough:
+  en:
+    - Talk to {npc:guard_weisz}.
+    - Hunt {npc:felim_lizardman}, {npc:felim_lizardman_scout} and
+      {npc:felim_lizardman_warrior} to collect
+      {item:q_merchant_league_cargo:30}.
+    - >-
+      Talk to {npc:guard_weisz} and choose one of two options:
+
+      - "I don't want any more", you'll get {item:57:4090} and the quest will be
+      over. 
+
+      - "I want to continue", then the quest will continue.
+    - Talk to {npc:priest_adonius}.
+    - Hunt {npc:langk_lizardman} to collect {item:q_agnes_rosary} and
+      {item:q_agnes_holysymbol}.
+    - Talk to {npc:priest_adonius}.
+    - Talk to {npc:levian}.
+    - Kill {npc:serpent_demon_bifrons}, after killing a boss, a
+      {npc:chest_of_bifrons} will appear.
+    - Talk to {npc:chest_of_bifrons} to get the {item:q_sinister_totem}.
+    - Talk to {npc:levian}.
+    - Return to {npc:guard_weisz} and get {item:57:14700}.
+  ru:
+    - Поговорите с {npc:guard_weisz}.
+    - Убивайте {npc:felim_lizardman}, {npc:felim_lizardman_scout} и
+      {npc:felim_lizardman_warrior}, пока не получите
+      {item:q_merchant_league_cargo:30}.
+    - |-
+      Поговорите с {npc:guard_weisz} и выберите один из двух вариантов:
+      - "I don't want any more", вы получите {item:57:4090} и квест завершится. 
+      - "I want to continue", квест продолжится.
+    - Поговорите с {npc:priest_adonius}.
+    - Убивайте {npc:langk_lizardman}, пока не получите {item:q_agnes_rosary} и
+      {item:q_agnes_holysymbol}.
+    - Поговорите с {npc:priest_adonius}.
+    - Поговорите с {npc:levian}.
+    - Убейте {npc:serpent_demon_bifrons}, посел смерти босса появится
+      {npc:chest_of_bifrons}.
+    - Поговорите с {npc:chest_of_bifrons}, и получите {item:q_sinister_totem}.
+    - Поговорите с {npc:levian}.
+    - Вернитесь к {npc:guard_weisz}, и получите в награду {item:57:14700}.

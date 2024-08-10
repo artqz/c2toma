@@ -1,0 +1,100 @@
+id: 105
+name:
+  en: Skirmish with the Orcs
+  ru: Стычка с Орками
+desc:
+  en: Recently, Orcs of the Misty Mountains have made several attacks on the Elven
+    Forest. Sentinel Kendell of the Elven Village asks you to drive out the Orcs
+    and become the Guardian of the Forest.
+  ru: Недавно Орки совершили ряд нападений на Эльфийский Лес. Эльфы решили взять
+    реванш и напасть на Орков клана Кабу в Туманных Горах. Прочтите приказ от
+    Часового Кенделла и начинайте охоту на Орков!
+type: one_time
+requirements:
+  races:
+    - elf
+startNPC: sentinel_kendnell
+level: 10
+reward:
+  items:
+    - 981
+    - 754
+    - 5789
+    - 1835
+    - 5790
+    - 2509
+    - 1060
+    - 4414
+    - 4415
+    - 4416
+    - 4413
+    - 4412
+questItems:
+  - 1836
+  - 1837
+  - 1838
+  - 1839
+  - 1840
+  - 1841
+  - 1842
+  - 1843
+  - 1844
+  - 1845
+walkthrough:
+  en:
+    - Talk to {npc:sentinel_kendnell}. He assigns you an orc chief.
+    - "Kill the assigned chief and retrieve the {item:1844}:
+      {npc:kaboo_chief_uoph}, {npc:kaboo_chief_kracha}, {npc:kaboo_chief_batoh}
+      and {npc:kaboo_chief_tanukia}"
+    - Return to {npc:sentinel_kendnell} with the torc1. He assigns you another
+      chief to kill.
+    - "Kill the assigned chief and retrieve the {item:1845}:
+      {npc:kaboo_chief_turel}, {npc:kaboo_chief_roko}, {npc:kaboo_chief_kamut}
+      and {npc:kaboo_chief_murtika}"
+    - |-
+      Return to {npc:sentinel_kendnell}, and get it as a reward:
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Reward for the mage:
+      - {item:red_sunset_staff}
+      - {item:spiritshot_none_for_rookie:3000}
+      - {item:spiritshot_none:500}
+
+      Reward for the fighter:
+      - {item:red_sunset_sword}
+      - {item:soulshot_none_for_rookie:7000}
+      - {item:soulshot_none:1000}
+  ru:
+    - Поговорите с {npc:sentinel_kendnell}. Он попросит убить тебя одного вождя
+      орков (цель выбирается случайным образом).
+    - "Убейте заказаного вождя и верните {item:1844}: {npc:kaboo_chief_uoph},
+      {npc:kaboo_chief_kracha}, {npc:kaboo_chief_batoh} и
+      {npc:kaboo_chief_tanukia}"
+    - Вернитесь к {npc:sentinel_kendnell} с браслетом. Он попросит убить тебя
+      другого вождя орков (цель выбирается случайным образом).
+    - "Убейте заказаного вождя и верните {item:1845}: {npc:kaboo_chief_turel},
+      {npc:kaboo_chief_roko}, {npc:kaboo_chief_kamut} и
+      {npc:kaboo_chief_murtika}"
+    - |-
+      Вернитесь к {npc:sentinel_kendnell}, и получите в награду:
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Награда для мага:
+      - {item:red_sunset_staff}
+      - {item:spiritshot_none_for_rookie:3000}
+      - {item:spiritshot_none:500}
+
+      Награда для воина:
+      - {item:red_sunset_sword}
+      - {item:soulshot_none_for_rookie:7000}
+      - {item:soulshot_none:1000}

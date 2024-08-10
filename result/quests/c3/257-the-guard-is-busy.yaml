@@ -1,0 +1,79 @@
+id: 257
+name:
+  en: The Guard is Busy
+  ru: Помощь страже
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: gilbert
+level: 6
+reward:
+  items:
+    - 57
+    - 5790
+    - 5789
+questItems:
+  - 1084
+  - 752
+  - 1085
+  - 1086
+walkthrough:
+  en:
+    - Talk to {npc:gilbert}.
+    - Kill {npc:werewolf}, {npc:werewolf_hunter} and {npc:werewolf_chieftain} to
+      collect {item:1086}.
+    - Kill {npc:orc}, {npc:orc_grunt} and {npc:orc_grunt} to collect {item:752}.
+    - Kill {npc:orc_fighter}, {npc:orc_fighter_sub_leader} and
+      {npc:orc_fighter_leader} to collect {item:1085}.
+    - >-
+      Return to {npc:gilbert}, and get it as a reward:
+
+      - {item:57:10} for each {item:752}
+
+      - {item:57:20} for each {item:1086}
+
+      - {item:57:20} for each {item:1085}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:1000}.
+
+
+      Bonus for the mage:
+
+      - {item:spiritshot_none_for_rookie:3000}
+
+
+      Bonus for the fighter:
+
+      - {item:soulshot_none_for_rookie:6000}
+  ru:
+    - Поговорите с {npc:gilbert}.
+    - Убивайте {npc:werewolf}, {npc:werewolf_hunter} и {npc:werewolf_chieftain},
+      чтобы получать {item:1086}.
+    - Убивайте {npc:orc}, {npc:orc_grunt} и {npc:orc_grunt}, чтобы получать
+      {item:752}.
+    - Убивайте {npc:orc_fighter}, {npc:orc_fighter_sub_leader} и
+      {npc:orc_fighter_leader}, чтобы получать {item:1085}.
+    - >-
+      Вернитесь к {npc:gilbert} и получите в награду:
+
+      - {item:57:10} за каждый {item:752}
+
+      - {item:57:20} за каждый {item:1086}
+
+      - {item:57:20} за каждый {item:1085}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:1000}.
+
+
+      Бонус для мага:
+
+      - {item:spiritshot_none_for_rookie:3000}
+
+
+      Бонус для воина:
+
+      - {item:soulshot_none_for_rookie:6000}

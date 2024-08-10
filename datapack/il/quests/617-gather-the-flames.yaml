@@ -1,0 +1,45 @@
+id: 617
+name:
+  en: Relics of the Old Empire
+  ru: Реликвии Древней Империи
+desc:
+  en: ""
+  ru: ""
+type: "repeatable"
+party: true
+requirements: {}
+startNPC: 8539
+level: 74
+reward: { items: [6881, 6883, 6885, 6887, 7580, 6891, 6893, 6895, 6897, 6899] }
+questItems: [7264]
+walkthrough:
+  en:
+    - Talk to {npc:warsmith_vulcan} (Forge of the Gods).
+    - Kill any mobs in Forge of the Gods until you collect {item:q_torch:1000}.
+    - |-
+      Return to {npc:warsmith_vulcan}, and get one random reward: 
+      - {item:rp_forgotten_blade_i}
+      - {item:rp_basalt_battlehammer_i}
+      - {item:rp_imperial_staff_i}
+      - {item:rp_angel_slayer_i}
+      - {item:rp_draconic_bow_i}
+      - {item:rp_dragon_hunter_axe_i}
+      - {item:rp_saint_spear_i}
+      - {item:rp_demon_splinter_i}
+      - {item:rp_heavens_divider_i}
+      - {item:rp_arcana_mace_i}
+  ru:
+    - Поговорите с {npc:warsmith_vulcan} (Forge of the Gods).
+    - Убивайте любых монстров в Кузнице Богов, пока не получите {item:q_torch:1000}.
+    - |-
+      Вернитесь к {npc:warsmith_vulcan} и получите одну случайную награду: 
+      - {item:rp_forgotten_blade_i}
+      - {item:rp_basalt_battlehammer_i}
+      - {item:rp_imperial_staff_i}
+      - {item:rp_angel_slayer_i}
+      - {item:rp_draconic_bow_i}
+      - {item:rp_dragon_hunter_axe_i}
+      - {item:rp_saint_spear_i}
+      - {item:rp_demon_splinter_i}
+      - {item:rp_heavens_divider_i}
+      - {item:rp_arcana_mace_i}

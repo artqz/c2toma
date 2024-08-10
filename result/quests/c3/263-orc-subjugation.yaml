@@ -1,0 +1,53 @@
+id: 263
+name:
+  en: Orc Subjugation
+  ru: Покорение Орков
+desc:
+  en: Balor Orcs who were hiding in the Misty Mountains invaded the Dark Forest.
+    The prideful Dark Elves begin a counterattack on the Orcs, who were once
+    their slaves. Those who defeat the Balor Orcs and bring a token of proof
+    shall be rewarded by Sentry Kayleen.
+  ru: В Темный Лес вторглись Орки Балор, и Темные Эльфы отчаянно защищают свою
+    территорию от своих бывших рабов. Убейте Орков Балор, принесите
+    доказательства этого Часовому Кайлин, и Вы получите награду.
+type: repeatable
+requirements:
+  races:
+    - darkelf
+startNPC: sentry_kayleen
+level: 8
+reward:
+  items:
+    - 57
+questItems:
+  - 1116
+  - 1117
+walkthrough:
+  en:
+    - Talk to {npc:sentry_kayleen}.
+    - Hunt {npc:balor_orc_archer} to collect {item:1116}.
+    - Hunt {npc:balor_orc_leader}, {npc:balor_orc_sub_leader} and
+      {npc:balor_orc_fighter} to collect {item:1117}.
+    - >-
+      Return to {npc:sentry_kayleen}, and get it as a reward:
+
+      - {item:57:20} for each {item:orc_amulet2}
+
+      - {item:57:30} for each {item:orc_necklace2}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:1100}.
+  ru:
+    - Поговорите с {npc:sentry_kayleen}.
+    - Убивайте {npc:balor_orc_archer}, чтобы получать {item:1116}.
+    - Убивайте {npc:balor_orc_leader}, {npc:balor_orc_sub_leader} и
+      {npc:balor_orc_fighter}, чтобы получать {item:1117}.
+    - >-
+      Вернитесь к {npc:sentry_kayleen}, и получите в награду:
+
+      - {item:57:20} for each {item:orc_amulet2}
+
+      - {item:57:30} for each {item:orc_necklace2}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:1100}.

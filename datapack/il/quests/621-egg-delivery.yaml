@@ -1,0 +1,40 @@
+id: 621
+name:
+  en: Egg Delivery
+  ru: Доставка яиц
+desc:
+  en: ""
+  ru: ""
+type: "repeatable"
+requirements: {}
+startNPC: 8521
+level: 68
+reward: { items: [734, 57, 6849, 6847, 6851] }
+questItems: [7195, 7196]
+walkthrough:
+  en:
+    - Talk to {npc:jeremy}.
+    - Talk to {npc:pulin}.
+    - Talk to {npc:naff}.
+    - Talk to {npc:crocus}.
+    - Talk to {npc:kuber}.
+    - Talk to {npc:beolin}.
+    - |-
+      Return to {npc:jeremy}, and get one reward: 
+      - {item:quick_step_potion} and {item:57:18800}
+      - {item:rp_sealed_ring_of_aurakyria_i}
+      - {item:rp_sealed_sanddragon's_earing_i}
+      - {item:rp_sealed_dragon_necklace_i}
+  ru:
+    - Поговорите с {npc:jeremy}.
+    - Поговорите с {npc:pulin}.
+    - Поговорите с {npc:naff}.
+    - Поговорите с {npc:crocus}.
+    - Поговорите с {npc:kuber}.
+    - Поговорите с {npc:beolin}.
+    - |-
+      Вернитесь к {npc:jeremy} и получите одну случайную награду: 
+      - {item:quick_step_potion} и {item:57:18800}
+      - {item:rp_sealed_ring_of_aurakyria_i}
+      - {item:rp_sealed_sanddragon's_earing_i}
+      - {item:rp_sealed_dragon_necklace_i}

@@ -1,0 +1,39 @@
+id: 362
+name:
+  en: Troubadour’s Mandolin
+  ru: Мандолина Барда
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: swan
+level: 15
+reward:
+  items:
+    - 57
+    - 4410
+questItems:
+  - 4316
+  - 4317
+walkthrough:
+  en:
+    - Talk to {npc:swan}.
+    - Talk to {npc:trader_woodrow}.
+    - Talk to {npc:galion}.
+    - Talk to {npc:swan}.
+    - Talk to {npc:nanarin}.
+    - |-
+      Return to {npc:swan} and get the reward:
+      - {item:57:10000}
+      - {item:q_musicnote_journey}
+  ru:
+    - Поговорите с {npc:swan}.
+    - Поговорите с {npc:trader_woodrow}.
+    - Поговорите с {npc:galion}.
+    - Поговорите с {npc:swan}.
+    - Поговорите с {npc:nanarin}.
+    - |-
+      Вернитесь к {npc:swan} и получите награду:
+      - {item:57:10000}
+      - {item:q_musicnote_journey}

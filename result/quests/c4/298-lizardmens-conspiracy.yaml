@@ -1,0 +1,35 @@
+id: 298
+name:
+  en: Lizardmen's Conspiracy
+  ru: Заговор Ящеров
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: guard_praga
+level: 25
+reward:
+  sp: 42000
+questItems:
+  - 7182
+  - 7183
+  - 7184
+walkthrough:
+  en:
+    - Talk to {npc:guard_praga} (Gludio).
+    - Talk to {npc:magister_rohmer}.
+    - Kill {npc:male_lizardman_warrior}, {npc:male_lizardman_shaman}, and
+      {npc:male_lizardman_matriarch} to collect {item:q_mel_liz_stone_shi:50}.
+    - Kill {npc:poison_araneid} and {npc:king_araneid} to collect
+      {item:q_mel_liz_stone_red:50}.
+    - Return to {npc:magister_rohmer}, for {sp:42000}.
+  ru:
+    - Поговорите с {npc:guard_praga}.
+    - Поговорите с {npc:magister_rohmer}.
+    - Убивайте {npc:male_lizardman_warrior}, {npc:male_lizardman_shaman}, и
+      {npc:male_lizardman_matriarch}, пока не получите
+      {item:q_mel_liz_stone_shi:50}.
+    - Убивайте {npc:poison_araneid} и {npc:king_araneid}, пока не получите
+      {item:q_mel_liz_stone_red:50}.
+    - Вернитесь к {npc:magister_rohmer}, и получите {sp:42000}.

@@ -1,0 +1,124 @@
+id: 217
+name:
+  en: Testimony of Trust
+  ru: Испытание доверия
+desc:
+  en: Quest to acquire occupation change item, ‘Mark of Trust.’ High Priest
+    Hollint tells you that for the Human race to survive in the Chaotic
+    Chronicle, they must earn the trust of the other races and combine forces
+    with them. The Testimony of Trust is for you to become an envoy of Humans,
+    and meet the leaders of each race in the name of trust. Visit the leader of
+    the Elves and the Dark Elves and give each of them the letters you have
+    received from the High Priest.
+  ru: Верховный Жрец Холлинт предупреждает о надвигающихся бедствиях и приближении
+    Эры Хаоса. Он просит Вас помочь в укреплении согласия между расами. Вы
+    должны встретиться с главами всех племен и заручиться их поддержкой. Сначала
+    Вам нужно поговорить с Иерархом Астериосом в Эльфийской Деревне.
+type: one_time
+requirements:
+  races:
+    - human
+  category:
+    - human_2nd_group
+startNPC: hollin
+level: 37
+reward:
+  exp: 39571
+  sp: 2500
+  items:
+    - 2734
+questItems:
+  - 2734
+  - 2735
+  - 2736
+  - 2737
+  - 2738
+  - 2739
+  - 2740
+  - 2741
+  - 2742
+  - 2743
+  - 2744
+  - 2745
+  - 2746
+  - 2747
+  - 2748
+  - 2749
+  - 2750
+  - 2751
+  - 2752
+  - 2753
+  - 2754
+  - 2755
+  - 2756
+  - 2757
+  - 2758
+  - 2759
+  - 2760
+  - 2761
+walkthrough:
+  en:
+    - Talk to {npc:hollin} (Oren).
+    - Talk to {npc:ozzy}.
+    - Kill {npc:dryad} and {19}, {npc:actea_of_verdant_wilds} will appear.
+    - Kill {npc:actea_of_verdant_wilds} to collect {item:2747}.
+    - Kill {npc:lirein} and {44}, {npc:luell_of_zephyr_winds} will appear.
+    - Kill {npc:luell_of_zephyr_winds} to collect {item:2746}.
+    - Talk to {npc:ozzy}.
+    - Talk to {npc:tetrarch_thifiell}.
+    - Talk to {npc:magister_clayton}.
+    - Kill {npc:guardian_basilisk} to collect {item:2752:10}.
+    - Kill {npc:ant_recruit}, {npc:ant_soldier}, {npc:ant_patrol} and
+      {npc:ant_warrior_captain} to collect {item:2750:10}.
+    - Kill {npc:marsh_stakato}, {npc:marsh_stakato_worker},
+      {npc:marsh_stakato_soldier} and {npc:marsh_stakato_drone} to collect
+      {item:2751:10}.
+    - Talk to {npc:magister_clayton}.
+    - Talk to {npc:tetrarch_thifiell}.
+    - Talk to {npc:hollin}.
+    - Talk to {npc:cardinal_seresin}.
+    - Talk to {npc:kakai_the_lord_of_flame}.
+    - Talk to {npc:seer_manakia}.
+    - Kill {npc:windsus} to collect {item:2756:10}.
+    - Talk to {npc:seer_manakia}.
+    - Talk to {npc:kakai_the_lord_of_flame}.
+    - Talk to {npc:first_elder_lockirin}.
+    - Talk to {npc:maestro_nikola}.
+    - Kill {npc:porta} to collect {item:2761:10}.
+    - Talk to {npc:maestro_nikola}.
+    - Talk to {npc:first_elder_lockirin}.
+    - Talk to {npc:hollin}.
+    - Talk to {npc:quilt}, for {exp:39571}, {sp:2500} and {item:2734}.
+  ru:
+    - Поговорите с {npc:hollin} (Oren).
+    - Поговорите с {npc:ozzy}.
+    - Убивайте {npc:dryad} и {19}, пока не появится {npc:actea_of_verdant_wilds}.
+    - Убейте {npc:actea_of_verdant_wilds} для получения  {item:2747}.
+    - Убивайте {npc:lirein} и {44}, пока не появится {npc:luell_of_zephyr_winds}.
+    - Убейте {npc:luell_of_zephyr_winds} для получения {item:2746}.
+    - Поговорите с {npc:ozzy}.
+    - Поговорите с {npc:tetrarch_thifiell}.
+    - Поговорите с {npc:magister_clayton}.
+    - Убивайте {npc:guardian_basilisk}, пока не соберете {item:2752:10}.
+    - Убивайте {npc:ant_recruit}, {npc:ant_soldier}, {npc:ant_patrol} и
+      {npc:ant_warrior_captain}, пока не соберете {item:2750:10}.
+    - Убивайте {npc:marsh_stakato}, {npc:marsh_stakato_worker},
+      {npc:marsh_stakato_soldier} и {npc:marsh_stakato_drone}, пока не соберете
+      {item:2751:10}.
+    - Поговорите с {npc:magister_clayton}.
+    - Поговорите с {npc:tetrarch_thifiell}.
+    - Поговорите с {npc:hollin}.
+    - Поговорите с {npc:cardinal_seresin}.
+    - Поговорите с {npc:kakai_the_lord_of_flame}.
+    - Поговорите с {npc:seer_manakia}.
+    - Убивайте {npc:windsus}, пока не соберете {item:2756:10}.
+    - Поговорите с {npc:seer_manakia}.
+    - Поговорите с {npc:kakai_the_lord_of_flame}.
+    - Поговорите с {npc:first_elder_lockirin}.
+    - Поговорите с {npc:maestro_nikola}.
+    - KУбивайтеill {npc:porta}, пока не соберете {item:2761:10}.
+    - Поговорите с {npc:maestro_nikola}.
+    - Поговорите с {npc:first_elder_lockirin}.
+    - Поговорите с {npc:hollin}.
+    - Поговорите с {npc:quilt}, и получите награду {exp:39571}, {sp:2500} и
+      {item:2734}.

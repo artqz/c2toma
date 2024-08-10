@@ -1,0 +1,38 @@
+id: 9
+name:
+  en: Into the City of Humans
+  ru: В город людей
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements:
+  races:
+    - orc
+startNPC: centurion_petukai
+level: 3
+reward:
+  items:
+    - 7559
+    - 7570
+questItems:
+  - 7570
+walkthrough:
+  en:
+    - Talk to {npc:centurion_petukai} (Orc Village).
+    - Talk to {npc:seer_tanapi}.
+    - |-
+      Talk to {npc:gatekeeper_tamil}, for reward: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - Scrolling gives you the opportunity to move to the Giran once. To return
+      back to the Orc Village, you need to take a {quest:48}.
+  ru:
+    - Поговорите с {npc:centurion_petukai}.
+    - Поговорите с {npc:seer_tanapi}.
+    - |-
+      Поговорите с {npc:gatekeeper_tamil}, и получите в награду: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - Скролл дает возможность один раз переместиться в Giran. Чтобы вернуться
+      обратно в Orc Village необходимо взять {quest:48}.

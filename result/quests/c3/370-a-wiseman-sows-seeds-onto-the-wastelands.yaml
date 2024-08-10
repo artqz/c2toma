@@ -1,0 +1,44 @@
+id: 370
+name:
+  en: A Wiseman Sows Seeds onto the Wastelands.
+  ru: Старинная книга заклинаний
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: sage_kasian
+level: 28
+reward:
+  items:
+    - 57
+questItems:
+  - 5903
+walkthrough:
+  en:
+    - Talk to {npc:sage_kasian}.
+    - Hunt {npc:ant_guard}, {npc:ant_patrol}, {npc:ant_recruit}, {npc:noble_ant}
+      and {npc:noble_ant_leader} to collect {item:page_of_spellbook}.
+    - |-
+      When using {item:page_of_spellbook}, you can get:
+      - {item:kranvels_spellbook_chpt_earth}
+      - {item:kranvels_spellbook_chpt_wind}
+      - {item:kranvels_spellbook_chpt_wind}
+      - {item:kranvels_spellbook_chpt_fire}
+      - {item:scroll_of_escape}
+    - Return to {npc:sage_kasian}, for a set of 4 books, you will receive
+      {item:57:3600}.
+  ru:
+    - Поговорите с {npc:sage_kasian}.
+    - Охотьтесь на {npc:ant_guard}, {npc:ant_patrol}, {npc:ant_recruit},
+      {npc:noble_ant} и {npc:noble_ant_leader}, чтобы получать
+      {item:page_of_spellbook}.
+    - |-
+      При использовании {item:page_of_spellbook} можно получить:
+      - {item:kranvels_spellbook_chpt_earth}
+      - {item:kranvels_spellbook_chpt_wind}
+      - {item:kranvels_spellbook_chpt_wind}
+      - {item:kranvels_spellbook_chpt_fire}
+      - {item:scroll_of_escape}
+    - Вернитесь к {npc:sage_kasian}, и получите за комплект из 4 книг
+      {item:57:3600}.

@@ -1,0 +1,40 @@
+id: 160
+name:
+  en: Nerupa’s Request
+  ru: Просьба Нерупы
+desc:
+  en: Nerupa has brought the goods that were requested by the Elves, but he cannot
+    pass through the magic field. So, she asks you to bring the silvery spider
+    silk to Trader Unoren instead.
+  ru: Торговец Унорен попросил Нерупу собрать для него Серебряный Шелк. Нерупа не
+    хочет заходить в деревню и просит Вас отнести добытый ей шелк Унорену в
+    оружейный магазин и вернуться обратно с Листом Белладонны.
+type: one_time
+requirements:
+  races:
+    - elf
+startNPC: nerupa
+level: 3
+reward:
+  exp: 1000
+  items:
+    - 1060
+questItems:
+  - 1026
+  - 1027
+  - 1028
+  - 1029
+walkthrough:
+  en:
+    - Talk to {npc:nerupa}.
+    - Talk to {npc:uno}.
+    - Talk to {npc:cel}.
+    - Talk to {npc:jud}.
+    - Return to {npc:nerupa}, and get {exp:1000} and {item:1060:5}.
+  ru:
+    - Поговорите с {npc:nerupa}. Она даст вам {item:1026}.
+    - Поговорите с {npc:uno}. Он возьмет {item:1026} и даст вам {item:1027}.
+    - Поговорите с {npc:cel}. Он возьмет {item:1027} и даст вам {item:1028}.
+    - Поговорите с {npc:jud}. Она возьмет {item:1028} и даст вам {item:1029}.
+    - Вернитесь к {npc:nerupa} с {item:1029}, и получите {exp:1000} и
+      {item:1060:5}.

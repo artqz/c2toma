@@ -1,0 +1,47 @@
+id: 168
+name:
+  en: Deliver Supplies
+  ru: Доставка ресурсов
+desc:
+  en: Sentry Jeanine says that according to Tetrarch Kaitar's prophecy, the Dark
+    Forest will be invaded by someone. To prepare for an attack, all Sentries
+    decided to optimize their weapons. Master Harant promised to provide them
+    brand new weapons, and they ask you to transport the weapons.
+  ru: Часовой Дженна говорит, что, согласно пророчеству Тетрарха Кайтара, Темный
+    Лес скоро будет атакован вражескими силами. Готовясь к атаке, все часовые
+    улучшают свое оружие. Мастер Харант обещал выдать им новое оружие и просит
+    Вас принести его.
+type: one_time
+requirements:
+  races:
+    - darkelf
+startNPC: sentry_jenine
+level: 3
+reward:
+  items:
+    - 57
+questItems:
+  - 1153
+  - 1154
+  - 1155
+  - 1156
+  - 1157
+walkthrough:
+  en:
+    - Talk to {npc:sentry_jenine} to get {item:1153}.
+    - Give the Jenna's Letter to {npc:master_harant}, and get {item:1154},
+      {item:1155} and {item:1156}.
+    - Go back to {npc:sentry_jenine}. She takes one Sentry Blade.
+    - Give the second Sentry Blade to {npc:sentry_krpion}, and get an
+      {item:1157}.
+    - Give the third Sentry Blade to {npc:sentry_roseline}, and get another
+      {item:1157}.
+    - Take the 2 bronze swords to {npc:sentry_jenine}, for {item:57:820}.
+  ru:
+    - Поговорите с {npc:sentry_jenine}. Она даст вам {item:1153}.
+    - Отнесите письмо к {npc:master_harant}, и он даст вам {item:1154},
+      {item:1155} и {item:1156}.
+    - Вернитесь к {npc:sentry_jenine}. Она возьмет 1 клинок.
+    - Отдайте 2-й клинок {npc:sentry_krpion}, и получите {item:1157}.
+    - Отдайте 3-й клинок {npc:sentry_roseline}, и получите еще один {item:1157}.
+    - Вернитесь с двумя мечами к {npc:sentry_jenine}, и получите {item:57:820}.

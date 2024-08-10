@@ -1,0 +1,72 @@
+id: 404
+name:
+  en: Path to a Human Wizard
+  ru: Путь Мага
+desc:
+  en: "Quest that must be fulfilled to change occupations to a Wizard. Parina says
+    to find the tokens which symbolize the four elements, as you speak of
+    becoming a Wizard: earth, fire, water, and wind. Go to the Ruins of Despair
+    and meet the Spirit of Flame as told."
+  ru: Чтобы стать Колдуном, Вам необходимо выполнить это задание. Парина просит
+    Вас найти знаки, символизирующие Землю, Огонь, Воду и Ветер. Отправляйтесь в
+    Руины Отчаяния и найдите там Огненную Саламандру.
+type: one_time
+requirements:
+  occupation:
+    - mage
+startNPC: parina
+level: 19
+reward:
+  exp: 3200
+  sp: 2020
+  items:
+    - 1292
+questItems:
+  - 1280
+  - 1281
+  - 1282
+  - 1283
+  - 1284
+  - 1285
+  - 1286
+  - 1287
+  - 1288
+  - 1289
+  - 1290
+  - 1291
+  - 1292
+walkthrough:
+  en:
+    - Talk to {npc:parina} (Gludin).
+    - Talk to {npc:flame_salamander}.
+    - Kill {npc:ratman_warrior} to collect {item:1281}.
+    - Talk to {npc:flame_salamander}.
+    - Talk to {npc:wind_sylph}.
+    - Talk to {npc:lizardman_of_wasteland}.
+    - Talk to {npc:wind_sylph}.
+    - Talk to {npc:water_undine}.
+    - Kill {npc:water_seer} to collect {item:1287:2}.
+    - Talk to {npc:water_undine}.
+    - Talk to {npc:earth_snake}.
+    - Kill {npc:red_bear} to collect {item:1290}.
+    - Talk to {npc:earth_snake}.
+    - Talk to {npc:parina}, for {exp:3200}, {sp:2020} and {item:1292}.
+    - When you are Level 20, talk to {npc:levian} (Gludin) to become a Wizard.
+  ru:
+    - Поговорите с {npc:parina} (Gludin).
+    - Поговорите с {npc:flame_salamander}.
+    - Убивайте {npc:ratman_warrior}, пока не получите {item:1281}.
+    - Поговорите с {npc:flame_salamander}.
+    - Поговорите с {npc:wind_sylph}.
+    - Поговорите с {npc:lizardman_of_wasteland}.
+    - Поговорите с {npc:wind_sylph}.
+    - Поговорите с {npc:water_undine}.
+    - Убивайте {npc:water_seer}, пока не получите {item:1287:2}.
+    - Поговорите с {npc:water_undine}.
+    - Поговорите с {npc:earth_snake}.
+    - Убивайте {npc:red_bear}, пока не получите {item:1290}.
+    - Поговорите с {npc:earth_snake}.
+    - Вернитесь к {npc:parina}, чтобы получить {exp:3200}, {sp:2020} и
+      {item:1292}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к {npc:levian} (Gludin),
+      чтобы стать Wizard.

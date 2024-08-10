@@ -1,0 +1,28 @@
+id: 28
+name:
+  en: Chest caught with a bait of wind
+  ru: Загадочный ящик
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: {}
+startNPC: 8572
+level: 36
+reward: { items: [881] }
+questItems: [7626]
+walkthrough:
+  en:
+    - Talk to {npc:fisher_ofulle} (Giran Castle Town).
+    - Go fishing using the {item:q_ice_lure} until you get the {item:big_yellow_treasure_box}.
+    - Talk to {npc:fisher_ofulle}.
+    - |-
+      Talk to {npc:mineral_trader_kiki}, for reward: 
+      - {item:elven_ring}
+  ru:
+    - Поговорите с {npc:fisher_ofulle} (Giran Castle Town).
+    - Рыбачьте, используя {item:q_ice_lure}, пока не получите {item:big_yellow_treasure_box}.
+    - Поговорите с {npc:fisher_ofulle}.
+    - |-
+      Поговорите с {npc:mineral_trader_kiki} и получите в награду: 
+      - {item:elven_ring}

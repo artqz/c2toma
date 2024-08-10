@@ -1,0 +1,29 @@
+id: 50
+name:
+  en: Lanosco's Special Bait
+  ru: Свадебный марш
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: fisher_lanosco
+level: 27
+reward:
+  items:
+    - 7610
+questItems:
+  - 7621
+walkthrough:
+  en:
+    - Talk to {npc:fisher_lanosco} (Dion).
+    - Kill {npc:singing_wind} to collect {item:q_essence_of_wind:100}.
+    - |-
+      Return to {npc:fisher_lanosco}, and get reward: 
+      - {item:q_wind_lure:4}
+  ru:
+    - Поговорите с {npc:fisher_lanosco} (Dion).
+    - Убивайте {npc:singing_wind}, пока не получите {item:q_essence_of_wind:100}.
+    - |-
+      Вернитесь к {npc:fisher_lanosco}, и получите в награду: 
+      - {item:q_wind_lure:4}

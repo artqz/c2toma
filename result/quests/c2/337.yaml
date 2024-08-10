@@ -1,0 +1,95 @@
+id: 337
+name:
+  en: Audience with the Land Dragon
+  ru: Аудиенция у Дракона Земли
+desc:
+  en: Kill the cave keeper and cave maidens in the center of Dragon Valley and get
+    the third abyss jewel. After destroying that, take the fragments and go meet
+    Theodric, watchman of the land dragon, at the entrance to the Lair of
+    Antharas.
+  ru: Выполнив это задание, Вы сможете попасть в Логово Антараса. Страж Печати
+    Габриэль предупреждает Вас, что Антарас пробудился от долгого сна и угрожает
+    всем мирным жителям. Она просит Вас присоединиться к отряду, собирающемуся
+    убить Дракона. По ее словам, Логово Антараса окружено сильным магическим
+    полем, однако его можно преодолеть с помощью специального Камня Портала.
+    Следуйте указаниям Габриэль и найдите других Стражей Печати. Если Вы
+    завоюете их доверие, Вы получите Камень Портала.
+type: repeatable
+requirements: {}
+startNPC: gabrielle
+level: 50
+reward:
+  items:
+    - 3865
+questItems:
+  - 3852
+  - 3853
+  - 3854
+  - 3855
+  - 3856
+  - 3857
+  - 3858
+  - 3859
+  - 3860
+  - 3861
+  - 3862
+  - 3863
+  - 3864
+  - 3890
+walkthrough:
+  en:
+    - Talk to {npc:gabrielle}. She tells you to go visit 4 Seal Watchers.
+    - Talk to {npc:magister_kaiena} on the 4th floor of the Ivory Tower.
+      {npc:magister_kaiena} sends you the Blazing Swamp to kill
+      {npc:marsh_stalker} and {npc:marsh_drake}. You probably want to take a
+      friend or two.
+    - The {npc:marsh_drake} and {npc:marsh_stalker} can be found on the very
+      northern tip of the Blazing Swamp, where it bulges out into a small
+      upside-down teardrop shape. Get {item:q_marsh_stalker_horn} and
+      {item:q_marsh_drake_talon} and return to {npc:magister_kaiena}.
+    - Two Seal Watchers are in Aden. Talk to {npc:highpriest_orven}.
+    - Head east of Aden to the Forbidden Gateway again, take friends. Around
+      here you find {npc:bloody_queen}. Kill them and about 6 Sacrificed Spirits
+      will pop up. Once you get the {item:q_remains_of_sacrificed}, head back to
+      {npc:highpriest_orven}.
+    - Talk to {npc:master_kendra} (the other Seal Watcher who lives in Aden). He
+      asks you to go kill {npc:harit_lizardman_shaman}.
+    - Go into the Forest of Mirrors and follow the path as if going to the
+      Anghel Waterfall. When you are almost there you should see lots of
+      {npc:harit_lizardman_shaman}. Kill the Shaman until you get a
+      {item:q_totem_of_earthdragon}, then take it to {npc:master_kendra}.
+    - Go to Hunters' Village and talk to the last Seal Watcher,
+      {npc:prefect_chakiris} A. {npc:prefect_chakiris} sends you to the Giant's
+      Cave to kill {npc:kranrot} and {npc:hamrut}. You must take a group,
+      preferably a big group; the Giant's Cave can be very deadly.
+    - Once you have {item:q_kranrot_skin} and a {item:q_hamrut_leg}, return to
+      {npc:prefect_chakiris}.
+    - Go back to {npc:gabrielle} in Giran. She will send you to talk to two more
+      Seal Watchers.
+    - Go to Gludin to talk to {npc:warehouse_chief_moke}. He asks you to kill an
+      {npc:abyssal_jewel_1} on the northeast coast. The {npc:abyssal_jewel_1} is
+      just south of the mountains that divide Gludio territory from Dark Elf
+      Territory, on the coast. Make sure to take a big group of friends, as the
+      {npc:abyssal_jewel_1} has a lot of HP and a large number of helpers.
+    - Once you get the {item:q_frag_of_abyss_jewel1} and the {item:q_mara_fang},
+      return to {npc:warehouse_chief_moke}.
+    - "Go to Oren to talk to {npc:blacksmith_helton}. He too has an
+      {npc:abyssal_jewel_2} problem, and sends you to deal with it. This
+      {npc:abyssal_jewel_2} is located near the Sea of Spores, just east of the
+      dividing wall and against the southern mountain range. It works like the
+      last one: high HP and lots of friends. Get the
+      {item:q_frag_of_abyss_jewel2} and the {item:q_musfel_fang} and return to
+      {npc:blacksmith_helton} in Oren."
+    - Return to Giran and speak with {npc:gabrielle}.
+    - Go to the west entrance of the Valley of Dragons and speak with
+      {npc:watcher_antaras_gilmore}. He will tell you that there is one more
+      {npc:abyssal_jewel_3} for you to face.
+    - Go into the Valley of Dragons and kill {npc:cave_maiden} and
+      {npc:cave_keeper} until the {npc:abyssal_jewel_3} appears. This one works
+      like the last two, except it only has 4 minions.
+    - Once you kill it and get the {item:q_frag_of_abyss_jewel3}, go to the
+      entrance to the Lair of Antharas and talk to
+      {npc:watcher_antaras_theodric}.
+    - "{npc:watcher_antaras_theodric} gives you the {item:q_portal_stone_1}
+      which will allow you to visit the Earth Dragon by talking to the
+      {npc:heart_of_warding}, deep in Antharas' Lair!"

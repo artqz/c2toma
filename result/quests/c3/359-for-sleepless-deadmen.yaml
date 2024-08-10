@@ -1,0 +1,57 @@
+id: 359
+name:
+  en: For Sleepless Deadmen
+  ru: Бессонный покойник
+desc:
+  en: Knight Gustav of Elmore has resurrected the dead heroes of Aden to serve his
+    evil purposes. Recover 60 of their remains and take them to High Priest
+    Orven in Aden Castle so that they can be laid to rest. Hunt doom archers,
+    doom guards and doom servants.
+  ru: Рыцарь Густав из Эльмора возродил мертвых героев Адена. Найдите останки 60
+    из них и отнесите их Верховному Жрецу Орвену в Замок Аден, чтобы он мог
+    упокоить их с миром.
+type: repeatable
+requirements: {}
+startNPC: highpriest_orven
+level: 60
+reward:
+  items:
+    - 6341
+    - 6343
+    - 6345
+    - 6342
+    - 6344
+    - 6346
+    - 5494
+    - 5495
+questItems:
+  - 5869
+walkthrough:
+  en:
+    - Talk to {npc:highpriest_orven}.
+    - Hunt {npc:doom_archer}, {npc:doom_guard} and {npc:doom_servant} to collect
+      {item:ash_of_doom_peoples:60}.
+    - |-
+      Return to {npc:highpriest_orven}, and get it as a random reward:
+      - {item:sealed_phoenix's_earing_gemstone:4}
+      - {item:sealed_phoenix's_necklace_beads:4}
+      - {item:sealed_phoenix's_ring_gemstone:4}
+      - {item:sealed_majestic_earing_gemstone:4}
+      - {item:sealed_majestic_necklace_beads:4}
+      - {item:sealed_majestic_ring_gemstrone:4}
+      - {item:sealed_dark_crystal_shield_fragment:4}
+      - {item:sealed_shield_of_nightmare_fragment:4}
+  ru:
+    - Поговорите с {npc:highpriest_orven}.
+    - Охотьтесь на {npc:doom_archer}, {npc:doom_guard} и {npc:doom_servant},
+      пока не соберете {item:ash_of_doom_peoples:60}.
+    - |-
+      Вернитесь к {npc:highpriest_orven}, и получите одну случайную награду: 
+      - {item:sealed_phoenix's_earing_gemstone:4}
+      - {item:sealed_phoenix's_necklace_beads:4}
+      - {item:sealed_phoenix's_ring_gemstone:4}
+      - {item:sealed_majestic_earing_gemstone:4}
+      - {item:sealed_majestic_necklace_beads:4}
+      - {item:sealed_majestic_ring_gemstrone:4}
+      - {item:sealed_dark_crystal_shield_fragment:4}
+      - {item:sealed_shield_of_nightmare_fragment:4}

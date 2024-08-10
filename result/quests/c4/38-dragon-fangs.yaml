@@ -1,0 +1,57 @@
+id: 38
+name:
+  en: Dragon Fangs
+  ru: Клыки Дракона
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: guard_luis
+level: 19
+reward:
+  items:
+    - 57
+    - 45
+    - 627
+    - 1123
+    - 605
+questItems:
+  - 7173
+  - 7174
+  - 7175
+  - 7176
+  - 7177
+walkthrough:
+  en:
+    - Talk to {npc:guard_luis} (Gludin Village).
+    - Kill {npc:langk_lizardman_sentinel} and {npc:langk_lizardman_sub_ldr} to
+      collect {item:q_liz_feather:100}.
+    - Talk to {npc:guard_luis}.
+    - Talk to {npc:iris}.
+    - Talk to {npc:magister_rohmer}.
+    - Talk to {npc:iris}.
+    - Kill {npc:langk_lizardman_shaman} and {npc:langk_lizardman_leader} to
+      collect {item:q_liz_totem_tooth2:50}.
+    - |-
+      Return to {npc:iris}, and get one random reward: 
+      - {item:bone_helmet} and {item:57:5200}
+      - {item:aspis} and {item:57:1500}
+      - {item:blue_buckskin_boots} and {item:57:3200}
+      - {item:leather_gauntlet} and {item:57:3200}
+  ru:
+    - Поговорите с {npc:guard_luis}.
+    - Убивайте {npc:langk_lizardman_sentinel} и {npc:langk_lizardman_sub_ldr},
+      пока не получите {item:q_liz_feather:100}.
+    - Поговорите с {npc:guard_luis}.
+    - Поговорите с {npc:iris}.
+    - Поговорите с {npc:magister_rohmer}.
+    - Поговорите с {npc:iris}.
+    - Убивайте {npc:langk_lizardman_shaman} and {npc:langk_lizardman_leader},
+      пока не получите {item:q_liz_totem_tooth2:50}.
+    - |-
+      Вернитесь к {npc:iris}, и получите одну случайную награду: 
+      - {item:bone_helmet} и {item:57:5200}
+      - {item:aspis} и {item:57:1500}
+      - {item:blue_buckskin_boots} и {item:57:3200}
+      - {item:leather_gauntlet} и {item:57:3200}

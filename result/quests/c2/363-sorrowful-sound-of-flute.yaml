@@ -1,0 +1,43 @@
+id: 363
+name:
+  en: Sorrowful Sound of Flute
+  ru: Грустная мелодия флейты
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: nanarin
+level: 15
+reward:
+  items:
+    - 4420
+questItems:
+  - 4318
+  - 4319
+  - 4320
+walkthrough:
+  en:
+    - Talk to {npc:nanarin}.
+    - Talk to {npc:blacksmith_poitan}.
+    - Talk to {npc:holvas}.
+    - Talk to {npc:warehouse_chief_ranspo}.
+    - Talk to {npc:amidol}.
+    - Talk to {npc:nanarin}. In conversation with her, select "He would like to
+      have a flute."
+    - Talk to {npc:barbado}.
+    - |-
+      Return to {npc:nanarin} and get the reward:
+      - {item:q_musicnote_solitude}
+  ru:
+    - Поговорите с {npc:nanarin}.
+    - Поговорите с {npc:blacksmith_poitan}.
+    - Поговорите с {npc:holvas}.
+    - Поговорите с {npc:warehouse_chief_ranspo}.
+    - Поговорите с {npc:amidol}.
+    - Поговорите с {npc:nanarin}. В разговоре с ней необходимо выбрать "He would
+      like to have a flute".
+    - Поговорите с {npc:barbado}.
+    - |-
+      Вернитесь к {npc:nanarin} и получите награду:
+      - {item:q_musicnote_solitude}

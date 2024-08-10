@@ -1,0 +1,50 @@
+id: 357
+name:
+  en: Warehouse Keeper's Ambition
+  ru: Амбиции Смотрителя Склада
+desc:
+  en: Warehouse Freightman Silva wishes to become the next Warehouse Chief. He
+    intends to obtain this position through the jade crystal business. He asks
+    that you collect jade crystals for him. He offers an extra reward if you
+    bring him 100 or more jade crystals at a time. You should hunt forest
+    runners, Fline elders, Liele elders and valley treant elders.
+  ru: Рабочий Склада Сильва хочет стать следующим Начальником Склада. Она
+    добивается продажей Нефритовых Кристаллов. Соберите их для нее, и Вы
+    получите награду. Если найдете 100 или больше Кристаллов, Сильва даст Вам
+    дополнительную награду.
+type: repeatable
+requirements: {}
+startNPC: warehouse_keeper_silva
+level: 47
+reward:
+  items:
+    - 57
+questItems:
+  - 5867
+walkthrough:
+  en:
+    - Talk to {npc:warehouse_keeper_silva}.
+    - Hunt {npc:forest_runner}, {npc:fline_elder}, {npc:liele_elder} and
+      {npc:ti_mi_kran_elder} to collect {item:jade_crystal}.
+    - |-
+      Return to {npc:warehouse_keeper_silva}, as a reward you get:
+      If {item:jade_crystal} >= 100:
+      - {item:57:425} for each {item:jade_crystal}
+      - {item:57:10900}
+
+      If {item:jade_crystal} < 100:
+      - {item:57:425} for each {item:jade_crystal}
+      - {item:57:3500}
+  ru:
+    - Поговорите с {npc:warehouse_keeper_silva}.
+    - Охотьтесь на {npc:forest_runner}, {npc:fline_elder}, {npc:liele_elder} и
+      {npc:ti_mi_kran_elder}, чтобы получать {item:jade_crystal}.
+    - |-
+      Вернитесь к {npc:warehouse_keeper_silva}, в награду вы получите:
+      Если {item:jade_crystal} более 100:
+      - {item:57:425} за каждый {item:jade_crystal}
+      - {item:57:10900}
+
+      Если {item:jade_crystal} меньше 100:
+      - {item:57:425} за каждый {item:jade_crystal}
+      - {item:57:3500}

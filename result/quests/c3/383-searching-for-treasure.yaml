@@ -1,0 +1,137 @@
+id: 383
+name:
+  en: Searching for Treasure
+  ru: В поисках клада
+desc:
+  en: Ask Trader Espen of Heine to decipher the pirate's treasure map for you.
+  ru: Попросите Торговца Эспена из Хейна расшифровать для Вас Пиратскую Карту.
+type: repeatable
+requirements:
+  item:
+    - pirates_treasure_map
+startNPC: trader_espen
+level: 42
+reward:
+  items:
+    - 57
+    - 2450
+    - 2451
+    - 952
+    - 956
+    - 1337
+    - 1338
+    - 1339
+    - 3447
+    - 3450
+    - 3453
+    - 3456
+    - 4408
+    - 4409
+    - 4418
+    - 4419
+    - 4481
+    - 4482
+    - 4483
+    - 4484
+    - 4485
+    - 4486
+    - 4487
+    - 4488
+    - 4489
+    - 4490
+    - 4491
+    - 4492
+questItems: []
+walkthrough:
+  en:
+    - Note. To do the this quest, you need a {item:pirates_treasure_map}
+      {quest:354}.
+    - Talk to {npc:trader_espen}.
+    - "He will offer to sell you a {item:pirates_treasure_map}. If you agree,
+      you will receive {item:57:1000}, and the quest will be over. Otherwise, go
+      further through the dialogue, he will tell a fascinating story, and reveal
+      the location of the treasure: you will be able to see it on your World Map
+      (each time the treasure is in the same place). Note: Before you go for the
+      treasure, make sure that you have {item:key_of_thief} with you. You will
+      need it to open the chest."
+    - Follow the area indicated by the carnation on your map, then dive into the
+      water and swim to the bottom to the coral reef. Here you will see three
+      aggressive Great White Shark right above the {npc:pirates_t_chest}.
+    - Open the {npc:pirates_t_chest}, inside you will find a random set of
+      things — usually adena and 1-2 items.
+    - |-
+      Rewards:
+      - {item:57}
+      - {item:emerald}
+      - {item:blue_onyx:2}
+      - {item:onyx:2}
+      - {item:q_loot_4:2}
+      - {item:q_loot_7}
+      - {item:q_loot_10}
+      - {item:q_loot_13}
+      - {item:q_musicnote_love}
+      - {item:q_musicnote_battle}
+      - {item:q_musicnote_celebration}
+      - {item:q_musicnote_comedy}
+      - {item:scrl_of_ench_am_d}
+      - {item:scrl_of_ench_am_c}
+      - {item:sage's_worn_gloves}
+      - {item:elven_mithril_gloves}
+      - {item:dye_s1c3_c}
+      - {item:dye_s1d3_c}
+      - {item:dye_c1s3_c}
+      - {item:dye_c1c3_c}
+      - {item:dye_d1s3_c}
+      - {item:dye_d1c3_c}
+      - {item:dye_i1m3_c}
+      - {item:dye_i1w3_c}
+      - {item:dye_m1i3_c}
+      - {item:dye_m1w3_c}
+      - {item:dye_w1i3_c}
+      - {item:dye_w1m3_c}
+  ru:
+    - Важно. Чтобы выполнить этот квест, необходимо иметь в инвентаре предмет
+      {item:pirates_treasure_map}, который можно получить за прохождение
+      {quest:354}.
+    - Поговорите с {npc:trader_espen}.
+    - "Он предложит купить у вас {item:pirates_treasure_map}. Если вы
+      согласитесь, то получите {item:57:1000}, и на этом задание будет окончено.
+      Если вы откажете ему в продаже карты, то он раскроет вам местонахождение
+      клада, после чего вы сможете увидеть метку на своей карте (клад всегда
+      находится в одном и том же месте). Важно: Прежде чем отправиться за
+      сокровищем, убедитесь, что у вас есть {item:key_of_thief}, он понадобится
+      вам, чтобы открыть сундук."
+    - Следуйте в зону, где стоит метка, затем погрузитесь к коралловому рифу,
+      рядом с которым будет находиться {npc:pirates_t_chest} (сундук охраняют 3
+      агрессивные акулы).
+    - Откройте {npc:pirates_t_chest} и получите случайную награду.
+    - |-
+      Возможные награды:
+      - {item:57}
+      - {item:emerald}
+      - {item:blue_onyx:2}
+      - {item:onyx:2}
+      - {item:q_loot_4:2}
+      - {item:q_loot_7}
+      - {item:q_loot_10}
+      - {item:q_loot_13}
+      - {item:q_musicnote_love}
+      - {item:q_musicnote_battle}
+      - {item:q_musicnote_celebration}
+      - {item:q_musicnote_comedy}
+      - {item:scrl_of_ench_am_d}
+      - {item:scrl_of_ench_am_c}
+      - {item:sage's_worn_gloves}
+      - {item:elven_mithril_gloves}
+      - {item:dye_s1c3_c}
+      - {item:dye_s1d3_c}
+      - {item:dye_c1s3_c}
+      - {item:dye_c1c3_c}
+      - {item:dye_d1s3_c}
+      - {item:dye_d1c3_c}
+      - {item:dye_i1m3_c}
+      - {item:dye_i1w3_c}
+      - {item:dye_m1i3_c}
+      - {item:dye_m1w3_c}
+      - {item:dye_w1i3_c}
+      - {item:dye_w1m3_c}

@@ -1,0 +1,57 @@
+id: 401
+name:
+  en: Path to a Warrior
+  ru: Путь Воителя
+desc:
+  en: Quest that must be fulfilled to change occupations to a Warrior. Tell Master
+    Aymus that you wish to become a Warrior, and he will tell you to first visit
+    Trader Simplon in the Town of Gludio and find the ‘Sword of Trial.’
+  ru: Чтобы получить звание Воителя, Вам необходимо выполнить это задание. Скажите
+    Мастеру Аурону, что Вы желаете стать Воителем. Аурон велит Вам для начала
+    встретиться с Торговцем Симплоном в Городе Глудио и найти Меч Испытаний.
+type: one_time
+requirements:
+  occupation:
+    - fighter
+startNPC: ein
+level: 19
+reward:
+  exp: 3200
+  sp: 1500
+  items:
+    - 1145
+questItems:
+  - 1138
+  - 1139
+  - 1140
+  - 1141
+  - 1143
+  - 1144
+  - 1145
+  - 1142
+walkthrough:
+  en:
+    - Talk to {npc:ein} (Gludin).
+    - Talk to {npc:trader_simplon}.
+    - Kill {npc:tracker_skeleton} and {npc:tracker_skeleton_leader} to collect
+      {item:1140:10}.
+    - Talk to {npc:trader_simplon}.
+    - Talk to {npc:ein}.
+    - Kill {npc:bind_poison_spider} and {npc:poison_spider} to collect
+      {item:1144:20}. You must use only the {item:1142} to kill the spiders.
+    - Talk to {npc:ein}, for {exp:3200}, {sp:1500} and {item:1145}.
+    - When you are level 20, talk to {npc:grandmaster_ramos} (Gludin) to become
+      a Warrior.
+  ru:
+    - Поговорите с {npc:ein} (Gludin).
+    - Поговорите с {npc:trader_simplon}.
+    - Убивайте {npc:tracker_skeleton} and {npc:tracker_skeleton_leader}, пока не
+      получите  {item:1140:10}.
+    - Поговорите с {npc:trader_simplon}.
+    - Поговорите с {npc:ein}.
+    - Kill {npc:bind_poison_spider} и {npc:poison_spider}, пока не
+      получите  {item:1144:20}. Для убийства пауков вы должны ипользовать
+      {item:1142}.
+    - Поговорите с {npc:ein}, чтобы получить {exp:3200}, {sp:1500} и {item:1145}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к {npc:grandmaster_ramos}
+      (Gludin), чтобы стать Warrior.

@@ -16,8 +16,9 @@ import { loadNpcBuffs } from "./import/c1/npcBuffs";
 import { loadSkillCard } from "./import/c1/skillCard";
 import { loadZones } from "./import/c1/zones";
 import { generateAgroPatch } from "./import/c1/npcAggroPatch";
+import { loadNewQuestData } from "./import/c1/il/fixQuests";
 
-const chronicle: Chronicle = "il";
+const chronicle: Chronicle = "c4";
 
 function init() {
   createDir(`result/data/${chronicle}`);
@@ -87,6 +88,10 @@ function init() {
     `result/patch/${chronicle}/aggr.json`,
     JSON.stringify(generateAgroPatch({ npcs, ais: ai, skills }), null, 2)
   );
+  // Fix Quests
+  // if (chronicle === "c4") {
+  //   loadNewQuestData({ npcs });
+  // }
   console.log("Finish.");
 }
 

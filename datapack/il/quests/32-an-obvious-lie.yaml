@@ -1,0 +1,44 @@
+id: 32
+name:
+  en: An Obvious Lie
+  ru: Очевидная ложь
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: {}
+startNPC: 7120
+level: 45
+reward: { items: [6843, 7680, 7683] }
+questItems: [7165, 7166]
+walkthrough:
+  en:
+    - Talk to {npc:maximilian} (Giran).
+    - Talk to {npc:gentler}.
+    - Talk to {npc:miki_the_cat}.
+    - Kill {npc:crocodile} to collect {item:q_medicinal_herb:20}.
+    - Talk to {npc:gentler}.
+    - Buy {item:spirit_ore:500}.
+    - Talk to {npc:gentler}.
+    - Talk to {npc:miki_the_cat}.
+    - Talk to {npc:gentler}.
+    - |
+      Bring {item:thread:1000} and {item:suede:500} to {npc:gentler}, and get one reward: 
+      - {item:cat_ear}
+      - {item:racoon_ear}
+      - {item:rabbit_ear}
+  ru:
+    - Поговорите с {npc:maximilian} (Giran).
+    - Поговорите с {npc:gentler}.
+    - Поговорите с npc:miki_the_cat}.
+    - Убивайте {npc:crocodile}, пока не получите {item:q_medicinal_herb:20}.
+    - Поговорите с {npc:gentler}.
+    - Купите {item:spirit_ore:500}.
+    - Поговорите с {npc:gentler}.
+    - Поговорите с {npc:miki_the_cat}.
+    - Поговорите с {npc:gentler}.
+    - |
+      Принесите {item:thread:1000} и {item:suede:500} к {npc:gentler}, и получите одну награду на выбор: 
+      - {item:cat_ear}
+      - {item:racoon_ear}
+      - {item:rabbit_ear}

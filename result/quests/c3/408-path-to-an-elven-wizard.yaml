@@ -1,0 +1,73 @@
+id: 408
+name:
+  en: Path to an Elven Wizard
+  ru: Путь Светлого Мага
+desc:
+  en: Quest that must be fulfilled to change occupations to an Elven Wizard.
+    Rosella speaks that only the one who gets the jewels that represent each of
+    the four elements may become an Elven Wizard. She hands you the fertility
+    peridot, which symbolizes earth, and asks you to find the rest.
+  ru: "Чтобы стать Светлым Магом, необходимо выполнить это задание. Розелла
+    поручает Вам найти камни четырех стихий: Воды, Огня, Ветра и Земли. Она дает
+    Вам Благородный Хризолит, символизирующий Землю и просит принести остальные
+    три."
+type: one_time
+requirements:
+  occupation:
+    - elven_mage
+startNPC: rogellia
+level: 19
+reward:
+  exp: 3200
+  sp: 1890
+  items:
+    - 1230
+questItems:
+  - 1218
+  - 1219
+  - 1220
+  - 1221
+  - 1222
+  - 1223
+  - 1224
+  - 1225
+  - 1226
+  - 1229
+  - 1230
+  - 1272
+  - 1273
+  - 1274
+walkthrough:
+  en:
+    - Talk to {npc:rogellia} (Elven Village).
+    - Talk to {npc:grain}.
+    - Kill {npc:pincer_spider} to collect {item:1219:5}.
+    - Talk to {npc:grain}.
+    - Talk to {npc:rogellia}.
+    - Talk to {npc:thalya}.
+    - Kill {npc:dryad_ribe} to collect {item:1223:5}.
+    - Talk to {npc:thalya}.
+    - Talk to {npc:rogellia}
+    - Talk to {npc:northwindel}.
+    - Kill {npc:sukar_wererat_leader} to collect {item:1225:2}.
+    - Talk to {npc:northwindel}.
+    - Talk to {npc:rogellia}, for a {item:1230}, {exp:3200} and {sp:1890}.
+    - When you are Level 20, go to {npc:bishop_raimund} (Gludio) and you will
+      become an Elven Wizard.
+  ru:
+    - Поговорите с {npc:rogellia} (Elven Village).
+    - Поговорите с {npc:grain}.
+    - Kill {npc:pincer_spider} to collect {item:1219:5}.
+    - Поговорите с {npc:grain}.
+    - Поговорите с {npc:rogellia}.
+    - Поговорите с {npc:thalya}.
+    - Kill {npc:dryad_ribe} to collect {item:1223:5}.
+    - Поговорите с {npc:thalya}.
+    - Поговорите с {npc:rogellia}
+    - Поговорите с {npc:northwindel}.
+    - Kill {npc:sukar_wererat_leader} to collect {item:1225:2}.
+    - Поговорите с {npc:northwindel}.
+    - Вернитесь к {npc:rogellia}, и получите в награду {item:1230}, {exp:3200} и
+      {sp:1890}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к {npc:bishop_raimund}
+      (Gludio), чтобы стать Elven Wizard.

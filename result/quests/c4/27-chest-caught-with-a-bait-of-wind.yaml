@@ -1,0 +1,33 @@
+id: 27
+name:
+  en: Chest caught with a bait of wind
+  ru: Загадочный ящик
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: fisher_lanosco
+level: 27
+reward:
+  items:
+    - 880
+questItems:
+  - 7625
+walkthrough:
+  en:
+    - Talk to {npc:fisher_lanosco} (Dion Castle Town).
+    - Go fishing using the {item:q_wind_lure} until you get the
+      {item:big_blue_treasure_box}.
+    - Talk to {npc:fisher_lanosco}.
+    - |-
+      Talk to {npc:blueprint_seller_shaling}, for reward: 
+      - {item:black_pearl_ring}
+  ru:
+    - Поговорите с {npc:fisher_lanosco} (Dion Castle Town).
+    - Рыбачьте, используя {item:q_wind_lure}, пока не получите
+      {item:big_blue_treasure_box}.
+    - Поговорите с {npc:fisher_lanosco}.
+    - |-
+      Поговорите с {npc:blueprint_seller_shaling} и получите в награду: 
+      - {item:black_pearl_ring}

@@ -1,0 +1,45 @@
+id: 37
+name:
+  en: Please make me formal wear!
+  ru: Свадебный Наряд
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: trader_alexis
+level: 60
+reward:
+  items:
+    - 6408
+questItems:
+  - 7164
+  - 7160
+  - 7159
+walkthrough:
+  en:
+    - Talk to {npc:trader_alexis} (Aden).
+    - Talk to {npc:leikar}. She will give you a {item:q_seal_of_stock}.
+    - Talk to {npc:jeremy}.
+    - Talk to {npc:mist}.
+    - Talk to {npc:jeremy}.
+    - Talk to {npc:leikar}.
+    - Bring {item:q_mysterious_cloth}, {item:q_box_of_jewel}, and
+      {item:q_workbox} to {npc:leikar}.
+    - |
+      Bring {item:q_box_of_dress_shoes} to {npc:leikar}, and get reward: 
+      - {item:wedding_dress}
+  ru:
+    - Поговорите с {npc:trader_alexis} (Aden).
+    - Поговорите с {npc:leikar}. Она даст вам {item:q_seal_of_stock}.
+    - Поговорите с {npc:jeremy}.
+    - Поговорите с {npc:mist}.
+    - Поговорите с {npc:jeremy}.
+    - Поговорите с {npc:leikar}.
+    - Принесите {item:q_mysterious_cloth}, {item:q_box_of_jewel}, и
+      {item:q_workbox} к {npc:leikar}.
+    - >
+      Принесите {item:q_box_of_dress_shoes} к {npc:leikar}, и получите в
+      награду: 
+
+      - {item:wedding_dress}

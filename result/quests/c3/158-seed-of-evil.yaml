@@ -1,0 +1,33 @@
+id: 158
+name:
+  en: Seed of Evil
+  ru: Семя зла
+desc:
+  en: High Priest Biotin of the temple has received a revelation of god from his
+    dreams. A few days later in his dreams, he finds out that a seed of evil is
+    growing in the Elven Ruins. He asks you to eliminate the devilish seed of
+    evil, which has wings of a bat.
+  ru: Верховный Жрец Биотин во сне получил предупреждение о том, что внутри
+    Эльфийских Руин стремительно набирает силу какое-то неведомое зло. Он
+    говорит, что оно приняло форму гигантского демона с крыльями, как у летучей
+    мыши. Биотин просит Вас уничтожить его.
+type: one_time
+requirements: {}
+startNPC: quilt
+level: 21
+reward:
+  items:
+    - 956
+questItems:
+  - 1025
+walkthrough:
+  en:
+    - Talk to {npc:quilt}.
+    - Go to the Elven Ruins and slay {npc:nerkas} to get his {item:1025}. (He
+      appears every 15 minutes).
+    - Give the tablet to {npc:quilt}, for a {item:scrl_of_ench_am_d}.
+  ru:
+    - Поговорите с {npc:quilt}.
+    - Отправлятейсь в Эльфийские Руины и убейте {npc:nerkas} чтобы получить
+      {item:1025}. (Он появляется каждые 15 минут).
+    - Вернитесь к {npc:quilt} с {item:1025}, и получите {item:scrl_of_ench_am_d}.

@@ -1,0 +1,124 @@
+id: 108
+name:
+  en: Jumble, Tumble, Diamond Fuss
+  ru: Алмазная лихорадка
+desc:
+  en: Collector Gouph of the Bronze Key Guild has purchased from Trader Reep of
+    the Silver Scales Guild a star diamond, a rare diamond that is one of only
+    seven in existence throughout the continent. However, it has been three days
+    since the delivery date, and he is becoming very impatient. He asks you to
+    visit Trader Reep and bring back the star diamond.
+  ru: Коллекционер Гуф из Гильдии Бронзового Ключа приобрел редкий звездный алмаз
+    у Торговца Рипа из Гильдии Серебряных Весов. В мире существует всего
+    двенадцать таких алмазов! Со дня сделки прошло три дня, и Гуф начал
+    беспокоиться. Он просит Вас пойти к Торговцу Рипу, забрать у него Звездный
+    Алмаз и отнести его Гуфу.
+type: one_time
+requirements:
+  races:
+    - dwarf
+startNPC: collector_gouph
+level: 10
+reward:
+  items:
+    - 1511
+    - 5789
+    - 5790
+    - 1060
+    - 4414
+    - 4415
+    - 4416
+    - 4413
+    - 4412
+questItems:
+  - 1559
+  - 1560
+  - 1561
+  - 1562
+  - 1563
+  - 1564
+  - 1565
+  - 1566
+  - 1567
+  - 1568
+  - 1569
+  - 1570
+  - 1571
+walkthrough:
+  en:
+    - Talk to {npc:collector_gouph}. He gives you {item:1559}.
+    - Talk to {npc:trader_reep}. He takes the contract and gives you {item:1560}.
+    - Talk to {npc:carrier_torocco}, behind. He takes the contract and gives you
+      {item:1561}.
+    - Talk to {npc:miner_maron}. He takes the wine and gives you {item:1562}.
+    - Talk to {npc:blacksmith_bronp}. He takes the dice and gives you
+      {item:1563}.
+    - Go to the mines and hunt {npc:goblin_brigand_sub_ldr} until you collect
+      {item:1564:10} and {item:1565:10}.
+    - Return the gems and contract to {npc:blacksmith_bronp}. He gives you a
+      {item:1566}.
+    - Talk to {npc:collector_gouph}. He takes the box and gives you a
+      {item:1567}.
+    - Talk to {npc:blacksmith_bronp}. He takes the piece and gives you
+      {item:1568}.
+    - Talk to {npc:warehouse_murphrin}. He takes the letter and gives you a
+      {item:1569}.
+    - Talk to {npc:warehouse_airy}. She takes the tart and gives you a
+      {item:1570}.
+    - Hunt {npc:blade_bat} until you get the {item:1571}. You can find them in
+      the mine.
+    - |-
+      Talk to {npc:collector_gouph}, and get it as a reward:
+      - {item:silversmith_hammer}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Bonus for the mage:
+      - {item:spiritshot_none_for_rookie:3000}
+
+      Bonus for the fighter:
+      - {item:soulshot_none_for_rookie:7000}
+  ru:
+    - Поговорите с {npc:collector_gouph}. Он даст вам {item:1559}.
+    - Поговорите с {npc:trader_reep}. Он возьмет {item:1559} и даст вам
+      {item:1560}.
+    - Поговорите с {npc:carrier_torocco}, Он возьмет {item:1560} и даст вам
+      {item:1561}.
+    - Поговорите с {npc:miner_maron}. Он возьмет {item:1561} и даст вам
+      {item:1562}.
+    - Поговорите с {npc:blacksmith_bronp}. Он возьмет {item:1562} и даст вам
+      {item:1563}.
+    - Убивайте {npc:goblin_brigand_sub_ldr}, пока не получите {item:1564:10} и
+      {item:1565:10}.
+    - Вернитесь к с драгоценными камнями {npc:blacksmith_bronp}. Он даст вам
+      {item:1566}.
+    - Поговорите с {npc:collector_gouph}. Он возьмет {item:1566} и даст вам
+      {item:1567}.
+    - Поговорите с {npc:blacksmith_bronp}. Он возьмет {item:1567} и даст вам
+      {item:1568}.
+    - Поговорите с {npc:warehouse_murphrin}. Он возьмет {item:1568} и даст вам
+      {item:1569}.
+    - Поговорите с {npc:warehouse_airy}. Она возьмет {item:1569} и даст вам
+      {item:1570}.
+    - Убивайте {npc:blade_bat}, пока не получите {item:1571}.
+    - |-
+      Поговорите с {npc:collector_gouph}, и получите награду:
+      - {item:silversmith_hammer}
+      - {item:soulshot_none_for_rookie:7000}
+      - {item:soulshot_none_for_rookie:7000}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Награда для мага:
+      - {item:spiritshot_none_for_rookie:3000}
+
+      Награда для воина:
+      - {item:soulshot_none_for_rookie:7000}

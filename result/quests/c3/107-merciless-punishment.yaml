@@ -1,0 +1,99 @@
+id: 107
+name:
+  en: Merciless Punishment
+  ru: Жестокое наказание
+desc:
+  en: Baranka, the Shaman of Darkness, is planning to destroy the kingdom of the
+    Orcs. The Urutu Chief Hatos has ordered the elimination of Baranka’s
+    followers in order to stop his conspiracy. Go to Centurion Parugon to
+    receive information about Baranka's followers.
+  ru: Темный шаман Фаранга задумал уничтожить королевство Орков. Глава клана Уруту
+    Хатос узнал об этом заговоре и приказал уничтожить всех последователей
+    Фаранги. Центурион Паругон скажет Вам, где их искать.
+type: one_time
+requirements:
+  races:
+    - orc
+startNPC: urutu_chief_hatos
+level: 12
+reward:
+  items:
+    - 1510
+    - 5789
+    - 1060
+    - 4414
+    - 4415
+    - 4416
+    - 4413
+    - 4412
+questItems:
+  - 1553
+  - 1554
+  - 1555
+  - 1557
+  - 1556
+  - 1558
+walkthrough:
+  en:
+    - Talk to {npc:urutu_chief_hatos}, up the southern ramp. He gives you
+      {item:1553}.
+    - Talk to {npc:centurion_parugon}.
+    - Buy 3 Scrolls of Escape; it's a long walk.
+    - Hunt down the {npc:baranka_messenger} and kill him to get the {item:1557}.
+      Take the paths northeast to the path loop, and then take the south then
+      east path from there to the Cave of Trials area. Cross the bridge and
+      continue straight east up the hill.
+    - Return to {npc:urutu_chief_hatos}. He takes order1 and gives you
+      {item:1554}.
+    - Kill the {npc:baranka_messenger} again for a {item:1556}.
+    - Return to {npc:urutu_chief_hatos}. He takes order2 and gives you
+      {item:1555}.
+    - Kill the {npc:baranka_messenger} again for a {item:1558}.
+    - >-
+      Return to {npc:urutu_chief_hatos}. He takes order 3 and the 3 letters,
+      for:
+
+      - {item:butcher}
+
+      - {item:soulshot_none_for_rookie:7000}
+
+      - {item:lesser_healing_potion:100}
+
+      - {item:echo_crystal_solitude:10}
+
+      - {item:echo_crystal_feast:10}
+
+      - {item:echo_crystal_celebration:10}
+
+      - {item:echo_crystal_love:10}
+
+      - {item:echo_crystal_battle:10}
+  ru:
+    - Поговорите с {npc:urutu_chief_hatos}. Он даст вам {item:1553}.
+    - Поговорите с {npc:centurion_parugon}.
+    - Так как вас ждет долгий путь, лучше купить {item:736:3}.
+    - Убейте {npc:baranka_messenger} для получения {item:1557}.
+    - Вернитесь к {npc:urutu_chief_hatos}. Он даст вам {item:1554}.
+    - Убейте {npc:baranka_messenger} для получения {item:1556}.
+    - Вернитесь к {npc:urutu_chief_hatos}. He takes order2 and gives you
+      {item:1555}.
+    - Убейте {npc:baranka_messenger} для получения {item:1558}.
+    - >-
+      Вернитесь к {npc:urutu_chief_hatos}, отдайте ему 3 письма, и получите
+      награду:
+
+      - {item:butcher}
+
+      - {item:soulshot_none_for_rookie:7000}
+
+      - {item:lesser_healing_potion:100}
+
+      - {item:echo_crystal_solitude:10}
+
+      - {item:echo_crystal_feast:10}
+
+      - {item:echo_crystal_celebration:10}
+
+      - {item:echo_crystal_love:10}
+
+      - {item:echo_crystal_battle:10}

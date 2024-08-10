@@ -1,0 +1,78 @@
+id: 292
+name:
+  en: Brigands Sweep
+  ru: Уничтожение бандитов
+desc:
+  en: Elder Spiron of the Golden Wheel Guild says that his guild has suffered
+    extensive damage to their trade recently because of goblin brigands, and
+    asks the player to sweep them from the mountains. Defeat the goblins,
+    collect their necklaces as proof, then bring back the necklaces for a
+    reward.
+  ru: Старейшина Спирон из Гильдии Золотого Колеса говорит, что его гильдия
+    страдает от убытков в торговле по вине банд гоблинов, и просит Вас очистить
+    горы от этих тварей. Убейте гоблинов, соберите их ожерелья и принесите их
+    сюда за вознаграждение.
+type: repeatable
+requirements:
+  races:
+    - dwarf
+startNPC: elder_spiron
+level: 5
+reward:
+  items:
+    - 57
+questItems:
+  - 1483
+  - 1484
+  - 1485
+  - 1486
+  - 1487
+walkthrough:
+  en:
+    - Talk to {npc:elder_spiron}.
+    - Kill {npc:goblin_snooper}, {npc:goblin_brigand_sub_ldr} and
+      {npc:goblin_brigand} to collect {item:goblin_necklace}.
+    - Kill {npc:goblin_brigand_leader} to collect {item:goblin_pendant}
+    - Kill {npc:goblin_lord} to collect {item:goblin_lord_pendant}
+    - You will also receive {item:suspicious_memo}. If you collect
+      {item:suspicious_memo:4}, you will receive a {item:suspicious_contract}.
+    - >-
+      Return to {npc:elder_spiron}, and get it as a reward: 
+
+      - {item:suspicious_contract} for {item:57:1120}
+
+
+      Reward for parts:
+
+      - {item:goblin_necklace} for each {item:57:12}
+
+      - {item:goblin_pendant} for each {item:57:36}
+
+      - {item:goblin_lord_pendant} for each {item:57:33}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:1000}.
+  ru:
+    - Поговорите с {npc:elder_spiron}.
+    - Убивайте {npc:goblin_snooper}, {npc:goblin_brigand_sub_ldr} и
+      {npc:goblin_brigand}, чтобы получать {item:goblin_necklace}.
+    - Убивайте {npc:goblin_brigand_leader}, чтобы получать {item:goblin_pendant}
+    - Убивайте {npc:goblin_lord}, чтобы получать {item:goblin_lord_pendant}
+    - Вы также будете получать {item:suspicious_memo}. Если вы соберете
+      {item:suspicious_memo:4}, то получите {item:suspicious_contract}.
+    - >-
+      Вернитесь к {npc:elder_spiron}, и получите в награду: 
+
+      - {item:suspicious_contract} за {item:57:1120}
+
+
+      Награды за части:
+
+      - {item:goblin_necklace} за каждый {item:57:12}
+
+      - {item:goblin_pendant} за каждый {item:57:36}
+
+      - {item:goblin_lord_pendant} за каждый {item:57:33}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:1000}.

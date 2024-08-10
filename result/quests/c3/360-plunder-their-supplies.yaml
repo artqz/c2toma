@@ -1,0 +1,47 @@
+id: 360
+name:
+  en: Plunder Their Supplies
+  ru: Осквернители Кладбища
+desc:
+  en: Monsters are defiling the Cemetery where the heroes of this kingdom are
+    buried. You are part of the forces pledged to drive them out. You must
+    interrupt their supply line, kill them and take all the supplies and
+    documents they are carrying to Guard Coleman in Aden Castle Town. Hunt Taik
+    orc seekers and Taik orc supply leaders.
+  ru: Монстры оскверняют Кладбище, где были захоронены герои королевства. Вы
+    должны принять участие в сражении с ними. Ваша задача - сорвать поставки
+    припасов и оружия, убить посланников и забрать все, что найдете. После этого
+    доложите об успехе кампании Стражу Колману в Город Аден.
+type: repeatable
+requirements: {}
+startNPC: guard_coleman
+level: 52
+reward:
+  items:
+    - 57
+questItems:
+  - 5870
+  - 5871
+  - 5872
+walkthrough:
+  en:
+    - Talk to {npc:guard_coleman}.
+    - Hunt {npc:taik_orc_seeker} and {npc:taik_orc_supply_leader} to collect
+      {item:supply} and {item:piece_of_receipt} (If you get
+      {item:piece_of_receipt:5} they combine into {item:receipt_of_supply}).
+    - |-
+      Return to {npc:guard_coleman} and recieve:
+      - {item:57:6000}
+      - {item:57:100} for each {item:supply}
+      - {item:57:6000} for each {item:receipt_of_supply}
+  ru:
+    - Поговорите с {npc:guard_coleman}.
+    - Охотьтесь на {npc:taik_orc_seeker} и {npc:taik_orc_supply_leader}, чтобы
+      получать {item:supply} и {item:piece_of_receipt} (Если вы соберете
+      {item:piece_of_receipt:5}, то можете объеденить их в
+      {item:receipt_of_supply}).
+    - |-
+      Вернитесь к  {npc:guard_coleman} и получите в награду:
+      - {item:57:6000}
+      - {item:57:100} за каждый {item:supply}
+      - {item:57:6000} за каждый {item:receipt_of_supply}

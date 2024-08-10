@@ -1,0 +1,84 @@
+id: 104
+name:
+  en: Spirit of Mirrors
+  ru: Духи Зеркал
+desc:
+  en: Grand Sorcerer Gallint of Einhovant's School of Wizardry is researching on
+    the spirit of mirrors. But, a few days ago thre of the spirits escaped, and
+    you must recapture them.
+  ru: Духи Зеркал, которых изучал Великий Магистр Галлинт, сбежали из его
+    лаборатории. Найдите каждого и запечатайте их Посохом Галлинта. После этого
+    возвращайтесь к нему. Охранники в деревне могут подсказать Вам, где искать
+    духов.
+type: one_time
+requirements:
+  races:
+    - human
+startNPC: gallin
+level: 10
+reward:
+  items:
+    - 747
+    - 2509
+    - 5790
+    - 1835
+    - 1060
+    - 4414
+    - 4415
+    - 4416
+    - 4413
+    - 4412
+questItems:
+  - 748
+  - 1135
+  - 1136
+  - 1137
+walkthrough:
+  en:
+    - Talk to {npc:gallin}. He gives you {item:748:3}.
+    - Hunt the {npc:spirit_of_mirrors1} to collect {item:1135}. It is on the
+      south bank of the river, near the other toads.
+    - Hunt the {npc:spirit_of_mirrors2} to collect {item:1136}. It is almost due
+      north of the toad, on the hill just northeast of the tower.
+    - Hunt the {npc:spirit_of_mirrors3} to collect {item:1137}. It is on the far
+      west end of the island down by the water, northwest of the waterfall.
+    - |-
+      Return the 3 wands to {npc:gallin}, and get it as a reward:
+      - {item:wand_of_adept}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Bonus for the mage:
+      - {item:spiritshot_none_for_rookie:3000}
+      - {item:spiritshot_none:500}
+
+      Bonus for the fighter:
+      - {item:soulshot_none:1000}
+  ru:
+    - Поговорите с {npc:gallin}. Он даст вам {item:748:3}.
+    - Охотьтесь на {npc:spirit_of_mirrors1}, пока не получите {item:1135}. Он
+      находится на южном берегу реки, рядом с другими жабами.
+    - Охотьтесь на {npc:spirit_of_mirrors2}, пока не получите {item:1136}. Он
+      находится на холме к северу от обелиска.
+    - Охотьтесь на {npc:spirit_of_mirrors3}, пока не получите {item:1137}. Он
+      находится на западном берегу острова, на спуске к воде.
+    - |-
+      Верните 3 посоха {npc:gallin}, и получите в награду:
+      - {item:wand_of_adept}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Бонус для мага:
+      - {item:spiritshot_none_for_rookie:3000}
+      - {item:spiritshot_none:500}
+
+      Бонус для воина:
+      - {item:soulshot_none:1000}

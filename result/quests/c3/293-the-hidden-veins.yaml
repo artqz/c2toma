@@ -1,0 +1,78 @@
+id: 293
+name:
+  en: The Hidden Veins
+  ru: Скрытые жилы
+desc:
+  en: Elder Filaur of the Gray Column Guild asks the player to search for hidden
+    Crysolite Veins. Defeat the Utuku Orcs and bring the Crysolite Ore they
+    possess to receive a reward. Also, gather four pieces of the map that
+    indicate the location of the vein, and take the pieces to Maphr Priestess
+    Chichirin, to turn them into a complete map. Take this to Elder Filaur to
+    receive a great reward.
+  ru: Филар, Старейшина Гильдии Серой Колонны, просит Вашей помощи в поисках
+    спрятанных хризолитовых жил. Убейте Орков Утуку и принесите их Хризолитовую
+    Руду за вознаграждение. Также Вам нужно собрать 4 куска карты, показывающей
+    залежи хризолита и отнести ее Жрице Земли Чичерин. Затем отдайте карту
+    Старейшине Филару и получите огромную награду.
+type: repeatable
+requirements:
+  races:
+    - dwarf
+startNPC: elder_filaur
+level: 6
+reward:
+  items:
+    - 57
+    - 5789
+questItems:
+  - 1488
+  - 1489
+  - 1490
+walkthrough:
+  en:
+    - Talk to {npc:elder_filaur}.
+    - Hunt {npc:utuku_orc}, {npc:utuku_orc_grunt} and {npc:utuku_orc_archer} to
+      collect {item:oriharukon_ore_1} and {item:torn_map_fragment}.
+    - Each set of {item:torn_map_fragment:4} must be turned into a
+      {item:hidden_vein_map} by visiting {npc:chichirin}.
+    - >-
+      Talk to {npc:elder_filaur}, and get it as a reward:
+
+      - {item:hidden_vein_map} for each {item:57:500}
+
+      If you bring more than 10 maps, you will additionally receive
+      {item:57:2000}.
+
+
+      - {item:oriharukon_ore_1} for each {item:57:5}
+
+      If you bring more than 10 ores, you will additionally receive
+      {item:57:2000}.
+
+
+      Bonus for the fighter:
+
+      - {item:soulshot_none_for_rookie:6000}
+  ru:
+    - Поговорите с {npc:elder_filaur}.
+    - Убивайте {npc:utuku_orc}, {npc:utuku_orc_grunt} и {npc:utuku_orc_archer},
+      чтобы получать {item:oriharukon_ore_1} и {item:torn_map_fragment}.
+    - У {npc:chichirin} можно обменять {item:torn_map_fragment:4} на
+      {item:hidden_vein_map}.
+    - >-
+      Вернитесь к {npc:elder_filaur}, и получите награду:
+
+      - {item:57:500} за каждый {item:hidden_vein_map} 
+
+      Если вы принесете более 10 карт, то дополнительно получите {item:57:2000}.
+
+
+      - {item:57:5} за каждый {item:oriharukon_ore_1}
+
+      Если вы принесете более 10 предметов, то дополнительно получите
+      {item:57:2000}.
+
+
+      Бонус для воинов:
+
+      - {item:soulshot_none_for_rookie:6000}

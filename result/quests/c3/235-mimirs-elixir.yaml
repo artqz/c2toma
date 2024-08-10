@@ -1,0 +1,114 @@
+id: 235
+name:
+  en: Mimir's Elixir
+  ru: Эликсир Мимира
+desc:
+  en: Magister Ladd tells you how to create Mimir's elixir. Magic Trader Wesley
+    under the Ivory Tower will teach you the basic technique of mixing reagents.
+    Magister Ladd tells you that the formula for pure silver is equal parts
+    lunargent and quicksilver.
+  ru: Магистр Ладд рассказывает Вам, как приготовить Эликсир Мимира. Базовой
+    технике смешивания реагентов Вы можете научиться у Магического Торговца
+    Уэсли из Башни Слоновой Кости. Формула изготовления Чистого Серебра - Лунный
+    Камень и Ртуть в равной пропорции.
+type: one_time
+requirements:
+  item:
+    - q_star_of_destiny
+startNPC: magister_ladd
+level: 75
+reward:
+  items:
+    - 729
+questItems:
+  - 5905
+  - 6319
+  - 6321
+  - 6322
+  - 6318
+walkthrough:
+  en:
+    - Note. To do the this quest, you need a {item:q_star_of_destiny}
+      {quest:234}.
+    - Talk to {npc:magister_ladd} at 4th floor of Ivory Tower.
+    - Talk to {npc:bandor} at basment of Ivory Tower. He will give you the
+      {quest:373} quest which is needed to get the quest items. Once you've got
+      this quest, you can talk to {npc:alchemical_mixing_jar} located in the
+      basement and see various things you can make by combining quest items.
+    - Hunt {npc:hames_orc_shaman} to collect {item:moonstone_shard:100},
+      {item:volcanic_ash:10}, {item:quicksilver:2}.
+    - >-
+      Once you've collected all items, go back to the Cauldron in Ivory Tower
+      and combine them according to the formulae to get Pure Silver. You can
+      gamble a bit on the lesser reagents and select a high temperature to get
+      more than one. Choose 1 degree to be safe and not risk failure. However,
+      you must choose 1 degree when making the Pure Silver. This is specified in
+      the quest.
+
+
+      The only formulas you need to know from this list are:
+
+      - {item:moonstone_shard:10} + {item:volcanic_ash:1} = {item:moon_dust:1}
+
+      - {item:moon_dust:10} + {item:quicksilver:1} = {item:lunargent:1} 
+
+      - {item:lunargent:1}  + {item:quicksilver:1} = {item:pure_silver:1}
+    - Bring {item:pure_silver:1} to {npc:magister_ladd}. He will tell you he
+      needs {item:true_gold}.
+    - Talk to {npc:magister_joan} on 3rd floor Ivory Tower.
+    - Hunt {npc:chimera_piece} to collect {item:philosophers_stone:1}.
+    - Bring {item:philosophers_stone:1} to {npc:magister_joan}. She gives you
+      {item:true_gold}.
+    - Talk to {npc:magister_ladd}. Give him the {item:true_gold}. He will ask
+      you to get {item:bloodfire}.
+    - Hunt {npc:bloody_guardian} to collect {item:bloodfire:1}.
+    - Talk o {npc:alchemical_mixing_jar}. Combine {item:pure_silver} and
+      {item:true_gold} together with the {item:bloodfire} (Use 3rd degree to
+      combine) to get {item:mimirs_elixir}.
+    - Bring {item:mimirs_elixir} to {npc:magister_ladd}. When you've talked to
+      Ladd the elixir should disappear from the inventory and the quest will be
+      completed. You will get {item:scrl_of_ench_wp_a} as a bonus and the right
+      to train 1 subclass.
+  ru:
+    - Важно. Чтобы выполнить этот квест, необходимо иметь в инвентаре предмет
+      {item:q_star_of_destiny}, который можно получить за прохождение
+      {quest:234}.
+    - Поговорите с {npc:magister_ladd} на 4 этаже of Ivory Tower.
+    - Поговорите с {npc:bandor} в подвале Ivory Tower. Он даст вам {quest:373}
+      которое необходимо для получения квестовых предметов. Как только вы
+      получите этот квест, вы можете поговорить с {npc:alchemical_mixing_jar},
+      расположенным в подвале, и посмотреть различные вещи, которые вы можете
+      сделать, комбинируя квестовые предметы.
+    - Охотьтесь на {npc:hames_orc_shaman} пока не получите
+      {item:moonstone_shard:100}, {item:volcanic_ash:10} и {item:quicksilver:2}.
+    - >-
+      Как только вы соберете все предметы, вернитесь к
+      {npc:alchemical_mixing_jar} в Башне Слоновой кости и объедините их в
+      соответствии с формулами, чтобы получить {item:pure_silver:1}.
+
+
+      Формулы которые вам нужно знать:
+
+      - {item:moonstone_shard:10} + {item:volcanic_ash:1} = {item:moon_dust:1}
+
+      - {item:moon_dust:10} + {item:quicksilver:1} = {item:lunargent:1} 
+
+      - {item:lunargent:1}  + {item:quicksilver:1} = {item:pure_silver:1}
+      (Варить необходимо на первой температуре - это обязательное условие
+      задания)
+    - Отнесите {item:pure_silver:1} к {npc:magister_ladd}. Он попросит принести
+      {item:true_gold}.
+    - Поговорите с {npc:magister_joan} на 3 этаже Ivory Tower.
+    - Охотьтесь на {npc:chimera_piece} пока не получите
+      {item:philosophers_stone:1}.
+    - Отнесите {item:philosophers_stone:1} к {npc:magister_joan}. Она даст вам
+      {item:true_gold}.
+    - Поговорите с {npc:magister_ladd}. Он возьмет {item:true_gold} и попросит
+      принести {item:bloodfire}.
+    - Охотьтесь на {npc:bloody_guardian} пока не получите {item:bloodfire:1}.
+    - Поговорите с {npc:alchemical_mixing_jar}. Варим из полученных реагентов
+      {item:mimirs_elixir} (Варить необходимо на третьей температуре - это
+      обязательное условие задания).
+    - Отнесите {item:mimirs_elixir} к {npc:magister_ladd}. После разговора с
+      Ладдом элексир должен исчезнуть и задание будет завершено. В награду вы
+      получите {item:scrl_of_ench_wp_a} и Право на получение Саб-класса.

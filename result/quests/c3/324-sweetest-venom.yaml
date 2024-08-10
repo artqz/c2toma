@@ -1,0 +1,32 @@
+id: 324
+name:
+  en: Sweetest Venom
+  ru: Сладчайший яд
+desc:
+  en: Astaron explains about the ‘Dreviant Wine’, which is brewed with spider
+    venom. He is planning to make wine with grapes imported from Gludio, and
+    asks you to retrieve the spider venom sacs, which are the toughest materials
+    to obtain. Hunt the spiders in the Dark Forest and return the sacs to
+    Astaron for a reward.
+  ru: Астарон хочет изготовить Вино Древиант. Для этого ему требуются 10 Ядовитых
+    Желез Паука, а их очень сложно достать.
+type: repeatable
+requirements: {}
+startNPC: astaron
+level: 18
+reward:
+  items:
+    - 57
+questItems:
+  - 1077
+walkthrough:
+  en:
+    - Talk to {npc:astaron}.
+    - Hunt {npc:stopper} (12%), {npc:poison_spider} (24%) and
+      {npc:bind_poison_spider} (36%) until you collect {item:venom_sac:10}.
+    - Give them to {npc:astaron}, for {item:57:5810}.
+  ru:
+    - Поговорите с {npc:astaron}.
+    - Убивайте {npc:stopper} (12%), {npc:poison_spider} (24%) и
+      {npc:bind_poison_spider} (36%), пока не получите {item:venom_sac:10}.
+    - Вернитесь к {npc:astaron}, и получите в награду {item:57:5810}.

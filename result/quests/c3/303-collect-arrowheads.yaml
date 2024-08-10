@@ -1,0 +1,34 @@
+id: 303
+name:
+  en: Collect Arrowheads
+  ru: Наконечники стрел
+desc:
+  en: Master Minia of the Fighters Guild loves to collect odd weapons from each
+    race. Recently she has found interest in Lennon Orc weapons, and asks you to
+    retrieve their marksmans’ arrowheads in the Elven Ruins.
+  ru: Мастер Миния из Гильдии Воинов собирает необычное оружие. Недавно она
+    заинтересовалась Снайпером Орков Тунат и просит Вас отыскать наконечники их
+    стрел в Эльфийских Руинах.
+type: repeatable
+requirements: {}
+startNPC: minx
+level: 10
+reward:
+  exp: 2000
+  items:
+    - 57
+questItems:
+  - 963
+walkthrough:
+  en:
+    - Talk to {npc:minx}.
+    - Go to the Elven Ruins and hunt {npc:lennunt_orc_sniper} until you have
+      {item:orcish_arrowhead:10}.
+    - Give the {item:orcish_arrowhead} to {npc:minx}, for {item:57:1000} and
+      {exp:2000}.
+  ru:
+    - Поговорите с {npc:minx}.
+    - Отправляйтесь в Elven Ruins и охотьтесь на {npc:lennunt_orc_sniper}, пока
+      не получите {item:orcish_arrowhead:10}.
+    - Отнесите {item:orcish_arrowhead} к {npc:minx}, и получите в награду
+      {item:57:1000} and {exp:2000}.

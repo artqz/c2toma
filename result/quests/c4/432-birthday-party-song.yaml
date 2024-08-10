@@ -1,0 +1,29 @@
+id: 432
+name:
+  en: Birthday Party Song
+  ru: Песня в честь именинника
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: muzyko
+level: 31
+reward:
+  items:
+    - 7061
+questItems:
+  - 7541
+walkthrough:
+  en:
+    - Talk to {npc:muzyko} (Heine).
+    - Kill {npc:oddly_stone_golem} to collect {item:q_red_crystal:50}.
+    - |-
+      Return to {npc:muzyko}, and get reward: 
+      - {item:echo_crystal_birthday:25}
+  ru:
+    - Поговорите с {npc:muzyko} (Heine).
+    - Убивайте {npc:oddly_stone_golem}, пока не получите {item:q_red_crystal:50}.
+    - |-
+      Вернитесь к {npc:muzyko}, и получите в награду: 
+      - {item:echo_crystal_birthday:25}

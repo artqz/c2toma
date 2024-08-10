@@ -1,0 +1,395 @@
+id: 335
+name:
+  en: The Song of the Hunter
+  ru: Песня Охотника
+desc:
+  en: You now have in hand the 2nd circle hunter license. You can now receive and
+    carry out hunting requests that can only be performed by 2nd circle hunters.
+    Go meet Hunters Guild Member Tor and confirm the list of orders. Or you can
+    also go meet people that hire hunters and take on work informally.
+  ru: Грей из Гильдии Охотников рассказывает Вам, что для того, чтобы вступить в
+    Гильдию, необходимо пройти испытания и получить Лицензию Охотника. Принесите
+    несколько предметов из указанных в списке, чтобы пройти Первый круг
+    испытаний. Обладатели свидетельства, полученного после Первого испытания,
+    смогут выполнять разные задания для гильдии.
+type: repeatable
+requirements: {}
+startNPC: grey
+level: 35
+reward:
+  items:
+    - 57
+questItems:
+  - 3692
+  - 3693
+  - 3694
+  - 3695
+  - 3696
+  - 3697
+  - 3698
+  - 3699
+  - 3700
+  - 3701
+  - 3702
+  - 3703
+  - 3704
+  - 3705
+  - 3706
+  - 3707
+  - 3708
+  - 3709
+  - 3710
+  - 3711
+  - 3712
+  - 3713
+  - 3714
+  - 3715
+  - 3716
+  - 3717
+  - 3718
+  - 3719
+  - 3720
+  - 3721
+  - 3722
+  - 3723
+  - 3724
+  - 3725
+  - 3726
+  - 3727
+  - 3728
+  - 3729
+  - 3730
+  - 3731
+  - 3732
+  - 3733
+  - 3734
+  - 3735
+  - 3736
+  - 3737
+  - 3738
+  - 3739
+  - 3740
+  - 3741
+  - 3742
+  - 3743
+  - 3744
+  - 3745
+  - 3746
+  - 3747
+  - 3748
+  - 3749
+  - 3750
+  - 3751
+  - 3752
+  - 3753
+  - 3754
+  - 3755
+  - 3756
+  - 3757
+  - 3758
+  - 3759
+  - 3760
+  - 3761
+  - 3762
+  - 3763
+  - 3764
+  - 3765
+  - 3766
+  - 3767
+  - 3768
+  - 3769
+  - 3770
+  - 3771
+  - 3772
+  - 3773
+  - 3774
+  - 3775
+  - 3776
+  - 3777
+  - 3778
+  - 3779
+  - 3780
+  - 3781
+  - 3782
+  - 3783
+  - 3784
+  - 3785
+  - 3786
+  - 3787
+  - 3788
+  - 3789
+  - 3790
+  - 3791
+  - 3792
+  - 3793
+  - 3794
+  - 3795
+  - 3796
+  - 3797
+  - 3798
+  - 3799
+  - 3800
+  - 3801
+  - 3802
+  - 3803
+  - 3804
+  - 3805
+  - 3806
+  - 3807
+  - 3808
+  - 3809
+  - 3810
+  - 3471
+walkthrough:
+  en:
+    - >-
+      Circle 1 Membership.
+
+      Talk to {npc:grey}. Grey tells you that in order to join the Hunter's
+      Guild, you must prove yourself by bringing back 3 of the items on the
+      list.
+
+
+      Collect any 3 of the following:
+
+      - Kill {npc:guardian_basilisk} to collect {item:q_g_basil_scale:40}.
+
+      - Kill {npc:leto_lizardman_shaman} to collect {item:q_karut_weed:20}.
+
+      - Kill {npc:windsus} to collect {item:q_windsus_aleph_skin}.
+
+      - Kill {npc:enchanted_stone_golem} to collect
+      {item:q_indigo_runestone:20}.
+
+      - Kill {npc:giant_fungus} to collect {item:q_sporesea_seed:30}.
+
+      - Kill {npc:breka_overlord_haka} to collect {item:q_hakas_head},
+      {npc:breka_overlord_jaka} to collect {item:q_jakas_head},
+      {npc:breka_overlord_marka} to collect {item:q_markas_head}. Orcs will
+      appear randomly when killing {npc:breka_orc_warrior}.
+    - >-
+      Circle 2 Membership.
+
+      To increase your membership to Circle 2, talk to {npc:grey} again. (you
+      must be at least Level 45). You must again prove yourself by bringing back
+      3 of the items on list:
+
+      - Kill {npc:timak_orc_warrior} to collect {item:q_timak_orc_totem:20}.
+
+      - Kill {npc:trisalim} to collect {item:q_trisalim_silk:20}.
+
+      - Kill {npc:ti_mi_kran} and {npc:ti_mi_kran_elder} to collect
+      {item:q_ambrosius_fruit:30}
+
+      - Kill {npc:tairim} to collect {item:q_balefire_crystal:20}.
+
+      - Kill {npc:archer_of_greed} to collect {item:q_imperial_arrowhead:20}.
+
+      - Kill {npc:tarlk_bugbear_warrior} to collect {item:q_athus_head},
+      {item:q_lankas_head}, {item:q_triskas_head}, {item:q_moturas_head} and
+      {item:q_kalaths_head}. Kill them, and every once and a while a Talk
+      bugbear Raider will show up. Kill them to get their heads.
+    - >-
+      Hunting Quests.
+
+      {npc:tor} gives you jobs. There are three classes of job that you can get:
+      Class C, B and A. (Note that members with a Circle 2 License will get
+      harder monsters and bigger rewards.) C are the easiest jobs, and the most
+      common. A are the hardest jobs, and very rare. The harder the job, the
+      more reward you get. For each successfully complete job, you get a
+      {item:q_laurel_leaf_pin}. The more Laurel Pins you have, the more chance
+      you have of getting B and A grade jobs. For each job that you do not
+      successfully complete, you lose a Laurel Pin. Listed below are the
+      available quests. Don't worry, you can never finish them all - they just
+      keep reappearing!
+
+
+      Hunter License 1.
+
+      Class C:
+
+      - Hunt {npc:leto_lizardman_archer} and {npc:leto_lizardman_soldier} to
+      collect {item:q_charm_of_kadesh:40}, reward {item:q_laurel_leaf_pin} and
+      {item:57:2090}.
+
+      - Hunt {npc:timak_orc_overlord} and {npc:timak_orc_warrior} to collect
+      {item:q_timak_jade_necklace:50}, reward {item:q_laurel_leaf_pin} and
+      {item:57:6340}.
+
+      - Hunt {npc:enchanted_stone_golem} to collect {item:q_en_golem_shard:50},
+      reward {item:q_laurel_leaf_pin} and {item:57:9480}.
+
+      - Hunt {npc:giant_monstereye} to collect {item:q_g_monstereye_meat:30},
+      reward {item:q_laurel_leaf_pin} and {item:57:9110}.
+
+      - Hunt {npc:dire_wyrm} to collect {item:q_dire_wyrm_egg:40}, reward
+      {item:q_laurel_leaf_pin} and {item:57:8690}.
+
+      - Hunt {npc:guardian_basilisk} to collect {item:q_grd_basilisk_talon:100},
+      reward {item:q_laurel_leaf_pin} and {item:57:9480}.
+
+      - Hunt {npc:crimson_bind} to get {item:q_revenants_chains:50}, reward
+      {item:q_laurel_leaf_pin} and {item:57:11280}.
+
+      - Hunt {npc:windsus} to collect {item:q_windsus_tusk:30}, reward
+      {item:q_laurel_leaf_pin} and {item:57:9640}.
+
+      - Hunt {npc:grandis} to collect {item:q_grandis_skull:100}, reward
+      {item:q_laurel_leaf_pin} and {item:57:9180}.
+
+      - Hunt {npc:taik_orc_archer} and {npc:taik_orc_warrior} to collect
+      {item:q_taik_obsidian_amulet:50}, reward {item:q_laurel_leaf_pin} and
+      {item:57:5160}.
+
+      - Hunt {npc:karul_bugbear} to gcollectet {item:q_karul_bugbear_head:30},
+      reward {item:q_laurel_leaf_pin} and {item:57:3140}.
+
+      - Hunt {npc:tamlin_orc} and {npc:tamlin_orc_archer} to collect
+      {item:q_tamlin_ivory_charm:40}, reward {item:q_laurel_leaf_pin} and
+      {item:57:3160}.
+
+
+      Class B:
+
+      - Hunt {npc:kronbe} to collect {item:q_kronbe_venom_sac:30}, reward
+      {item:q_laurel_leaf_pin} and {item:57:8320}.
+
+      - Hunt {npc:timak_orc_warrior} to collect {item:q_kaikis_head}, reward
+      {item:q_laurel_leaf_pin} and {item:57:8560}.
+
+      - Hunt {npc:leto_lizardman_shaman} to collect {item:q_totem_of_kadesh},
+      reward {item:q_laurel_leaf_pin} and {item:57:5790}.
+
+      - Hunt {npc:breka_orc_shaman} to collect {item:q_coiled_serpent_totem:50},
+      reward {item:q_laurel_leaf_pin} and {item:57:17730}.
+
+      - Hunt {npc:enchanted_gargoyle} to collect {item:q_en_gargoyle_horn:50},
+      reward {item:q_laurel_leaf_pin} and {item:57:19080}.
+
+      - Hunt {npc:leto_lizardman_overlord} to collect {item:q_fang_of_narak},
+      reward {item:q_laurel_leaf_pin} and {item:57:6370}.
+
+
+      Class A:
+
+      - Hunt {npc:karul_bugbear} to collect {item:q_book_of_shunaiman}, reward
+      {item:q_laurel_leaf_pin} and {item:57:20560}.
+
+      - Kill {npc:grandis} until {npc:grandis_chief_gok_magok} shows up. Kill
+      {npc:grandis_chief_gok_magok} to collect {item:q_titans_tablet}, reward
+      {item:q_laurel_leaf_pin} and {item:57:27540}.
+
+      - Hunt {npc:spore_zombie} to collect {item:q_evas_charm:30}, reward
+      {item:q_laurel_leaf_pin} and {item:57:30310}.
+
+
+      Hunter License 2.
+
+      Class C:
+
+      - Hunt {npc:forest_runner} and {npc:gremlin_filcher} to collect
+      {item:q_hamadryad_shard:40}, reward {item:q_laurel_leaf_pin} and
+      {item:57:7660}.
+
+      - Hunt {npc:tarlk_bugbear_warrior} to collect
+      {item:q_talk_bugbear_totem:30}, reward {item:q_laurel_leaf_pin} and
+      {item:57:7350}.
+
+      - Hunt {npc:vanor_silenos_grunt}, {npc:vanor_silenos_scout} and
+      {npc:vanor_silenos_warrior} to collect {item:q_vanor_silenos_mane:30},
+      reward {item:q_laurel_leaf_pin} and {item:57:8810}.
+
+      - Hunt {npc:pan_ruem} and {npc:pan_ruem_elder} to collect
+      {item:q_pan_ruem_mane:40}, reward {item:q_laurel_leaf_pin} and
+      {item:57:11260}.
+
+      - Hunt {npc:liele}, {npc:liele_elder} and {npc:gremlin_filcher} to collect
+      {item:q_tsunami_shard:40}, reward {item:q_laurel_leaf_pin} and
+      {item:57:7660}.
+
+      - Hunt {npc:fline_elder}, {npc:fline} and {npc:gremlin_filcher} to collect
+      {item:q_tempest_shard:40}, reward {item:q_laurel_leaf_pin} and
+      {item:57:7660}.
+
+      - Hunt {npc:farcran} to collect {item:q_skin_of_farcran:30}, reward
+      {item:q_laurel_leaf_pin} and {item:57:13000}.
+
+      - Hunt {npc:hatar_ratman_theif}, {npc:hatar_ratman_boss} and
+      {npc:gremlin_filcher} to collect {item:q_coin_of_old_empire:20}, reward
+      {item:q_laurel_leaf_pin} and {item:57:10100}.
+
+      - Hunt {npc:harit_lizardman_grunt}, {npc:harit_lizardman_archer} and
+      {npc:harit_lizardman_warrior} to collect
+      {item:q_harit_barbed_necklace:40}, reward {item:q_laurel_leaf_pin} and
+      {item:57:6580}.
+
+      - Hunt {npc:trisalim} and {npc:trisalim_tote} to collect
+      {item:q_trisalim_venom_sac:40}, reward {item:q_laurel_leaf_pin} and
+      {item:57:7250}.
+
+      - Hunt {npc:rot_tree} to collect {item:q_rot_tree_spores:40}, reward
+      {item:q_laurel_leaf_pin} and {item:57:6850}.
+
+
+      Class B:
+
+      - Hunt {npc:vanor_silenos_cheiftain} to collect
+      {item:q_kerunos_gold_mane}, reward {item:q_laurel_leaf_pin} and
+      {item:57:15960}.
+
+      - Hunt {npc:unicorn} and {npc:unicorn_elder} to collect
+      {item:q_unicorns_horn:20}, reward {item:q_laurel_leaf_pin} and
+      {item:57:14160}.
+
+      - Hunt {npc:diprive} to collect {item:q_diprive_eye:20}, reward
+      {item:q_laurel_leaf_pin} and {item:57:17540}.
+
+      - Hunt {npc:mirror} and {npc:gremlin_filcher} to collect
+      {item:q_narcissus_soulstone:40}, reward {item:q_laurel_leaf_pin} and
+      {item:57:17820}.
+
+      - Hunt {npc:taik_orc_captain} to collect {item:q_kakrans_head}, reward
+      {item:q_laurel_leaf_pin} and {item:57:9380}.
+
+      - Hunt {npc:timak_orc_overlord} to collect {item:q_okuns_head}, reward
+      {item:q_laurel_leaf_pin} and {item:57:8760}.
+
+
+      Class A:
+
+      - Hunt {npc:hatar_ratman_boss} to collect {item:q_bust_of_travis}, reward
+      {item:q_laurel_leaf_pin} and {item:57:39550}.
+
+      - Hunt {npc:judge_of_marsh} to collect {item:q_sword_of_cadmus:10}, reward
+      {item:q_laurel_leaf_pin} and {item:57:41200}.
+
+      - Hunt {npc:grave_wanderer} to collect {item:q_skull_of_executed:20},
+      reward {item:q_laurel_leaf_pin} and {item:57:39100}.
+    - >-
+      Purifyng The Crystal.
+
+      {npc:grey} also mentions that {npc:cybellin} is in need of help.
+
+      Talk to {npc:cybellin}. She gives you a {item:q_cybellins_dagger} and a
+      {item:q_blood_crystal_1} and tells you to go hunt
+      {npc:leto_lizardman_shaman}, {} with the {item:q_cybellins_dagger}, you
+      either increase the crystal's purity level or break it. You can turn the
+      crystal in at any time. A {item:q_blood_crystal_x} is worth nothing.
+
+      - {item:q_blood_crystal_2} is worth {item:57:3400}.
+
+      - {item:q_blood_crystal_3} is worth {item:57:6800}.
+
+      - {item:q_blood_crystal_4} is worth {item:57:13600}.
+
+      - {item:q_blood_crystal_5} is worth {item:57:27200}.
+
+      - {item:q_blood_crystal_6} is worth {item:57:54400}.
+
+      - {item:q_blood_crystal_7} is worth {item:57:108800}.
+
+      - {item:q_blood_crystal_8} is worth {item:57:217600}.
+
+      - {item:q_blood_crystal_9} is worth {item:57:435200}.
+
+      - {item:q_blood_crystal_10} is worth {item:57:870400}.

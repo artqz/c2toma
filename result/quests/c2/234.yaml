@@ -1,0 +1,109 @@
+id: 234
+name:
+  en: Fate's Whisper
+  ru: Шепот Судьбы
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements: {}
+startNPC: maestro_leorin
+level: 75
+reward:
+  items:
+    - 5011
+    - 80
+    - 288
+    - 98
+    - 150
+    - 212
+    - 235
+    - 2504
+    - 5233
+questItems:
+  - 4666
+  - 4667
+  - 4668
+  - 4669
+  - 4670
+  - 4671
+  - 4672
+  - 4673
+  - 4665
+walkthrough:
+  en:
+    - Note. To enter Baium's room, you need to get {item:q0348_blooded_fabric}
+      from {quest:348}.
+    - Talk to {npc:maestro_leorin}. He will ask you to free his wife Reiria by
+      slaying {npc:domb_death_cabrio} and get back her {item:q_reirias_soulorb}.
+    - "{npc:domb_death_cabrio} is located north east of the cemetery.
+      {npc:coffer_of_the_dead} will spawn out after it dies, you will receive
+      {item:q_reirias_soulorb} by opening it. You don't have to hit Cabrio, nor
+      do you have to be in the party that kills it. Just get to the box quickly
+      because it doesn't stay around long."
+    - >-
+      Take the soul orb back to {npc:maestro_leorin}, he will ask you to go
+      Tower of Insolence to kill 3 Raid Bosses to get 3 Infernium Scepters.
+
+      A box will spawn out after Raid Boss dies, you will receive Infernium
+      Scepters by opening it and clicking Quest. Again, you don't have to hit
+      the boss or be in party. Just bring a stack of patience to wait out the
+      spawn times.
+    - >-
+      Kill {npc:hallate_the_death_lord}. {npc:chest_of_hallate} will spawn out
+      after it dies, you will receive {item:q_infernium_scepter_3} by opening
+      it. 
+
+      Kill {npc:kernon}. {npc:chest_of_kernon} will spawn out after it dies, you
+      will receive {item:q_infernium_scepter_1} by opening it. 
+
+      Kill {npc:golkonda_longhorn}. {npc:chest_of_golkonda} will spawn out after
+      it dies, you will receive {item:q_infernium_scepter_2} by opening it.
+    - Return the Infernium Scepters to {npc:maestro_leorin}, he's asking you to
+      talk to {npc:cliff}.
+    - Talk to {npc:cliff}. he will give you {item:q_infernium_varnish}.
+    - Return to {npc:maestro_leorin}, he will ask you to make a trip to Town of
+      Aden meet {npc:head_blacksmith_ferris}.
+    - Talk to {npc:head_blacksmith_ferris}. he will give you
+      {item:q_maestro_reorins_hammer}.
+    - Return to {npc:maestro_leorin}, he will ask you to make a trip to Oren
+      meet {npc:zenkin}.
+    - Talk to {npc:zenkin}. He says he sold the Mold to {npc:master_kaspar} at
+      Hardins Private Academy.
+    - Talk to {npc:master_kaspar}. He says in order to get the Mold, you will
+      need to get Baium's blood by using the {item:q_pipette_knife} that Master
+      Kaspar gives you. To enter Baium's room, you need to get
+      {item:q0348_blooded_fabric} from {quest:348}. He sends you off to find
+      {npc:magister_hanellin} in Aden town to start this quest. See the other
+      guide to continue that quest.
+    - As soon as a {item:q0348_blooded_fabric} appears in your quest-inventory.
+      You need to stab {npc:baium} with the {item:q_pipette_knife}, after which
+      you will receive {item:q_red_pipette_knife}.
+    - Return to {npc:master_kaspar} and exchange for the
+      {item:q_maestro_reorins_mold}.
+    - To finish the quest you will need a Top B grade weapon (from the list
+      below) and {item:crystal_b:984} and return the Mold to
+      {npc:maestro_leorin}. You will get to choose a low A grade weapon to trade
+      up to, and receive the {item:q_star_of_destiny} final quest item.
+    - |-
+      Top B grade weapon:
+      - {item:sword_of_damascus}
+      - {item:samurai_longsword*samurai_longsword}
+      - {item:hazard_bow}
+      - {item:lancia}
+      - {item:art_of_battle_axe}
+      - {item:staff_of_evil_sprit}
+      - {item:demon's_sword}
+      - {item:bellion_cestus}
+      - {item:deadman's_glory}
+    - |-
+      When you give him the weapon, you can choose A grade weapon.
+      The list of low A grade weapons to choose from is listed below:
+      - {item:tallum_blade}
+      - {item:carnium_bow}
+      - {item:halbard}
+      - {item:elemental_sword}
+      - {item:dasparion's_staff}
+      - {item:bloody_orchid}
+      - {item:meteor_shower}
+      - {item:kshanberk*kshanberk}

@@ -1,0 +1,36 @@
+id: 39
+name:
+  en: Red-Eyed Invaders
+  ru: Красноглазые захватчики
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: {}
+startNPC: 7334
+level: 20
+reward: { items: [6529, 6535, 6521] }
+questItems: [7178, 7179, 7180, 7181]
+walkthrough:
+  en:
+    - Talk to {npc:guard_babenco} (Gludio).
+    - Talk to {npc:captain_bathia}.
+    - Kill {npc:male_lizardman}, {npc:male_lizardman_scout}, and {npc:male_lizardman_guard} to collect {item:q_mel_liz_necklace_a:100} and {item:q_mel_liz_necklace_b:100}.
+    - Talk to {npc:captain_bathia}.
+    - Kill {npc:male_lizardman_guard}, {npc:male_lizardman_scout}, and {npc:giant_araneid} to collect {item:q_mel_liz_perfume:30} and {item:q_mel_liz_gem:30}.
+    - |-
+      Return to {npc:captain_bathia}, for reward:
+      - {item:fp_babyduck_rod}
+      - {item:fishing_shot_none:500}
+      - {item:green_lure_high:60}
+  ru:
+    - Поговорите с {npc:guard_babenco}.
+    - Поговорите с {npc:captain_bathia}.
+    - Убивайте {npc:male_lizardman}, {npc:male_lizardman_scout}, и {npc:male_lizardman_guard}, пока не получите {item:q_mel_liz_necklace_a:100} и {item:q_mel_liz_necklace_b:100}.
+    - Поговорите с {npc:captain_bathia}.
+    - Убивайте {npc:male_lizardman_guard}, {npc:male_lizardman_scout}, и {npc:giant_araneid}, пока не получите {item:q_mel_liz_perfume:30} и {item:q_mel_liz_gem:30}.
+    - |-
+      Вернитесь к {npc:captain_bathia}, и получите в награду:
+      - {item:fp_babyduck_rod}
+      - {item:fishing_shot_none:500}
+      - {item:green_lure_high:60}

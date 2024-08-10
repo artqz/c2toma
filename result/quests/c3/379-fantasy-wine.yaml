@@ -1,0 +1,40 @@
+id: 379
+name:
+  en: Fantasy Wine
+  ru: Удивительное вино
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: hitsran
+level: 20
+reward:
+  items:
+    - 5956
+    - 5957
+    - 5958
+questItems:
+  - 5893
+  - 5894
+walkthrough:
+  en:
+    - Talk to {npc:hitsran}.
+    - Hunt {npc:enku_orc_champion} and {npc:enku_orc_shaman} to collect
+      {item:stone_of_chill:100} and {item:leaf_of_eucalyptus:80}.
+    - |-
+      Return to {npc:hitsran}, and get random reward:
+      - {item:sound_wine1}
+      - {item:sound_wine2}
+      - {item:sound_wine3}
+    - Note. {item:sound_wine3} will be useful in {quest:378}.
+  ru:
+    - ПОговорите с {npc:hitsran}.
+    - УБивайте {npc:enku_orc_champion} и {npc:enku_orc_shaman}, пока не получите
+      {item:stone_of_chill:100} и {item:leaf_of_eucalyptus:80}.
+    - |-
+      Вернитесь к {npc:hitsran}, и получите одну случайную награду:
+      - {item:sound_wine1}
+      - {item:sound_wine2}
+      - {item:sound_wine3}
+    - Важно. {item:sound_wine3} пригодится вам в {quest:378}.

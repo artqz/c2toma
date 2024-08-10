@@ -1,0 +1,46 @@
+id: 169
+name:
+  en: Offspring of Nightmares
+  ru: Исчадие ада
+desc:
+  en: Sorcerer Vlasty is doing research on an undead monster called a dark horror.
+    He needs dark horror skulls for the actual tests, and wants you to hunt and
+    bring the skulls to him. Dark horrors are found in the swamps, on the south
+    sides of the village.
+  ru: Магистр Влэсти изучает Темный Ужас, древнего монстра-нежить. Для дальнейших
+    исследований ему нужны Целые черепа, и он просит Вас поохотиться на Темных
+    Ужасов, собрать их черепа и принести ему. Темные Ужасы водятся в болотах к
+    юго-западу от деревни. Даже Треснувшие черепа имеют некоторую ценность.
+type: one_time
+requirements:
+  races:
+    - darkelf
+startNPC: vlasti
+level: 15
+reward:
+  items:
+    - 57
+    - 31
+questItems:
+  - 1030
+  - 1031
+walkthrough:
+  en:
+    - Talk to {npc:vlasti}.
+    - Hunt in the swamps to the southwest for {npc:lesser_dark_horror} and
+      {npc:dark_horror} until you get a {item:1031}. You may also get
+      {item:1030}, which are not important.
+    - |-
+      Give the skull to {npc:vlasti}, and get it as a reward:
+      - {item:bone_gaiters}
+      - {item:57:17030}
+      - {item:57:10} for each {item:cracked_skull}
+  ru:
+    - Поговорите с {npc:vlasti}.
+    - Убивайте {npc:lesser_dark_horror} и {npc:dark_horror}, пока не получите
+      {item:1031}. Вы также будете получить {item:1030}.
+    - |-
+      Отнесите череп к {npc:vlasti}, и получите в награду:
+      - {item:bone_gaiters}
+      - {item:57:17030}
+      - {item:57:10} за каждый {item:cracked_skull}

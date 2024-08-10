@@ -1,0 +1,36 @@
+id: 167
+name:
+  en: Dwarven Kinship
+  ru: Странное родство
+desc:
+  en: The Dwarven Warehouse Freightman, Collette, of the Dark Elven Village misses
+    her fellow companions, and wishes you to send her letter to Harprock in the
+    town of Gludio.
+  ru: Рабочий Склада Карлон скучает по своим друзьям и просит Вас доставить письмо
+    Смотрителю Склада Хапроку в город Глудио.
+type: one_time
+requirements: {}
+startNPC: calculain
+level: 15
+reward:
+  items:
+    - 57
+questItems:
+  - 1076
+  - 1106
+walkthrough:
+  en:
+    - Talk to {npc:calculain}. She gives you {item:1076} to deliver in Gludio.
+    - Deliver the Letter to {npc:harprock}. He will then give you {item:1106} to
+      take to {npc:warehouse_keeper_norman} in Gludin. You will also get
+      {item:57:2000} as partial payment.
+    - Give this letter to {npc:warehouse_keeper_norman} for the remaining
+      {item:57:20000}.
+  ru:
+    - Поговорите с {npc:calculain}. Она даст вам {item:1076} и попросит
+      доставить его в Глудио.
+    - Отнесите письмо к {npc:harprock}. Он даст вам {item:1106} и попросит
+      доставить его к {npc:warehouse_keeper_norman} в Глудин. Вы также получите
+      {item:57:2000} в качестве частичной оплаты.
+    - Отдайте письмо {npc:warehouse_keeper_norman}, и получите остальную награду
+      {item:57:20000}.

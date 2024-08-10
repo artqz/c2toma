@@ -1,0 +1,99 @@
+id: 415
+name:
+  en: Path to a Paagrio Monk
+  ru: Путь Монаха
+desc:
+  en: To change occupations to Paagrio Monk, you must complete this quest. Gantaki
+    Zu Urutu will explain about the traditional martial arts of the Orcs and say
+    that you must receive a scroll from two Masters to change occupations to a
+    Paagrio Monk. He tells you to first go to Khavatari Rosheek, who is training
+    somewhere on the Immortal Plateau.
+  ru: Чтобы стать Монахом, нужно выполнить это задание. Гентаки Зу Уруту научит
+    Вас традиционным боевым искусствам Орков. Вы должны будете забрать свитки у
+    двух мастеров. В первую очередь идите к Аватару Рошику, обитающему где-то на
+    Плато Бессмертия.
+type: one_time
+requirements:
+  occupation:
+    - orc_fighter
+startNPC: gantaki_zu_urutu
+level: 19
+reward:
+  exp: 3200
+  sp: 3380
+  items:
+    - 1615
+questItems:
+  - 1593
+  - 1594
+  - 1595
+  - 1596
+  - 1597
+  - 1598
+  - 1599
+  - 1600
+  - 1601
+  - 1602
+  - 1603
+  - 1604
+  - 1605
+  - 1606
+  - 1607
+  - 1608
+  - 1609
+  - 1610
+  - 1611
+  - 1612
+  - 1613
+  - 1614
+  - 1615
+walkthrough:
+  en:
+    - Talk to {npc:gantaki_zu_urutu} (Orc Village).
+    - Talk to {npc:khavatari_rosheek}.
+    - Kill {npc:kasha_bear} to collect {item:1600:5}. (You can only use bare
+      hands or Dual-Fist weapons).
+    - Talk to {npc:khavatari_rosheek}.
+    - Kill {npc:kasha_blade_spider} to collect {item:1601:5}. (You can only use
+      bare hands or Dual-Fist weapons).
+    - Talk to {npc:khavatari_rosheek}.
+    - Kill {npc:scarlet_salamander} to collect {item:1602:5}. (You can only use
+      bare hands or Dual-Fist weapons).
+    - Talk to {npc:khavatari_rosheek}.
+    - Talk to {npc:gantaki_zu_urutu}.
+    - Talk to {npc:prefect_kasman}.
+    - Talk to {npc:khavatari_toruku}.
+    - Kill {npc:vuku_orc_fighter} to collect {item:1609:3}. (You can only use
+      bare hands or Dual-Fist weapons).
+    - Kill {npc:ratman_warrior} to collect {item:1610:3}. (You can only use bare
+      hands or Dual-Fist weapons).
+    - Kill {npc:langk_lizardman_warrior} to collect {item:1611:3}. (You can only
+      use bare hands or Dual-Fist weapons).
+    - Kill {npc:felim_lizardman_warrior} to collect {item:felim_tooth:3}. (You
+      can only use bare hands or Dual-Fist weapons).
+    - Talk to {npc:khavatari_toruku}.
+    - Talk to {npc:prefect_kasman}, for a {item:1615}, {exp:3200} and {sp:3380}.
+    - When you are Level 20, go to {npc:high_prefect_osborn} (Gludin) to become
+      a Paagrio Monk.
+  ru:
+    - Поговорите с {npc:gantaki_zu_urutu} (Orc Village).
+    - Поговорите с {npc:khavatari_rosheek}.
+    - Убивайте {npc:kasha_bear}, пока не получите {item:1600:5}.
+    - Поговорите с {npc:khavatari_rosheek}.
+    - Убивайте {npc:kasha_blade_spider}, пока не получите {item:1601:5}.
+    - Поговорите с {npc:khavatari_rosheek}.
+    - Убивайте {npc:scarlet_salamander}, пока не получите {item:1602:5}.
+    - Поговорите с {npc:khavatari_rosheek}.
+    - Поговорите с {npc:gantaki_zu_urutu}.
+    - Поговорите с {npc:prefect_kasman}.
+    - Поговорите с {npc:khavatari_toruku}.
+    - Убивайте {npc:vuku_orc_fighter}, пока не получите {item:1609:3}.
+    - Убивайте {npc:ratman_warrior}, пока не получите {item:1610:3}.
+    - Убивайте {npc:langk_lizardman_warrior}, пока не получите {item:1611:3}.
+    - Убивайте {npc:felim_lizardman_warrior}, пока не получите
+      {item:felim_tooth:3}.
+    - Поговорите с {npc:khavatari_toruku}.
+    - Вернитесь к {npc:prefect_kasman}, и получите в награду {item:1615},
+      {exp:3200} и {sp:3380}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к
+      {npc:high_prefect_osborn} (Gludin), чтобы стать Paagrio Monk.

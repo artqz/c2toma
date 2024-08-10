@@ -1,0 +1,78 @@
+id: 101
+name:
+  en: Sword of Solidarity
+  ru: Меч Единства
+desc:
+  en: Grandmaster Roien of Cedric's Training Hall is interested in restoring the
+    Sword of Solidarity, which is the symbol of friendship between the Elves and
+    Humans. He asks you to meet Allman, the Town's Blacksmith, in order to
+    reshape the sword.
+  ru: Великий Мастер Роен из Школы Седрика хочет восстановить Меч Единства. Это
+    очень древний меч, который является символом единства Эльфов и Людей.
+    Наверняка кузнец Альтран тоже будет заинтересован возможностью восстановить
+    это сокровище.
+type: one_time
+requirements:
+  races:
+    - human
+startNPC: roien
+level: 9
+reward:
+  items:
+    - 738
+    - 5789
+    - 1060
+    - 4414
+    - 4415
+    - 4416
+    - 4413
+    - 4412
+questItems:
+  - 796
+  - 937
+  - 739
+  - 740
+  - 741
+  - 742
+walkthrough:
+  en:
+    - Talk to {npc:roien}. He gives you {item:796}.
+    - Take the letter to {npc:blacksmith_alltran}. He gives you {item:937}.
+    - Enter the Elven Ruins and hunt {npc:lennunt_orc_sniper} and
+      {npc:lennunt_orc_warrior} until you get both the {item:741} and
+      {item:740}. Do not attempt this without friends until you are at least
+      Level 12.
+    - Give the pieces to {npc:blacksmith_alltran}, who gives you {item:742}.
+    - Give the note to {npc:roien}. He gives you the {item:739}.
+    - |-
+      Give the handle to {npc:blacksmith_alltran}, and receive the:
+      - {item:sword_of_solidarity}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Bonus for the fighter:
+      - {item:soulshot_none_for_rookie:7000}
+  ru:
+    - Поговорите с {npc:roien}. Он даст вам {item:796}.
+    - Отнесите {item:796} {npc:blacksmith_alltran}. Он даст вам {item:937}.
+    - Убивайте {npc:lennunt_orc_sniper} и {npc:lennunt_orc_warrior} в Эльфийских
+      Руинах, пока не получите {item:741} и {item:740}. Не пытайтесь сделать это
+      без друзей, пока вы не достигнете как минимум 12 уровня.
+    - Отдайте добытые предметы {npc:blacksmith_alltran}, он даст вам {item:742}.
+    - Отдайте письмо {npc:roien}. Он даст вам {item:739}.
+    - |-
+      Отдайте рукоять {npc:blacksmith_alltran}, и получите в награду:
+      - {item:sword_of_solidarity}
+      - {item:lesser_healing_potion:100}
+      - {item:echo_crystal_solitude:10}
+      - {item:echo_crystal_feast:10}
+      - {item:echo_crystal_celebration:10}
+      - {item:echo_crystal_love:10}
+      - {item:echo_crystal_battle:10}
+
+      Бонус для воина:
+      - {item:soulshot_none_for_rookie:7000}

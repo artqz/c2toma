@@ -1,0 +1,43 @@
+id: 299
+name:
+  en: Gather Ingredients for Pie
+  ru: Вкусный пирог
+desc:
+  en: ""
+  ru: ""
+type: "repeatable"
+party: true
+requirements: {}
+startNPC: 7620
+level: 34
+reward: { items: [57, 1865, 1870, 1869, 1871] }
+questItems: [7136, 7137, 7138]
+walkthrough:
+  en:
+    - Talk to {npc:emilly} (Dion).
+    - Kill {npc:wasp_worker}, and {npc:wasp_leader} to collect {item:q_honey_pouch:100}.
+    - Talk to {npc:emilly}.
+    - Talk to {npc:lars}.
+    - Talk to {npc:emilly}.
+    - Talk to {npc:guard_bright}.
+    - |-
+      Return to {npc:emilly}, and get random reward: 
+      - {item:57:25000}
+      - {item:varnish:50}
+      - {item:coal:50}
+      - {item:iron_ore:50}
+      - {item:charcoal:50}
+  ru:
+    - Поговорите с {npc:emilly} (Dion).
+    - Убивайте {npc:wasp_worker} и {npc:wasp_leader}, пока не получите {item:q_honey_pouch:100}.
+    - Поговорите с {npc:emilly}.
+    - Поговорите с {npc:lars}.
+    - Поговорите с{npc:emilly}.
+    - Поговорите с {npc:guard_bright}.
+    - |-
+      Вернитесь к {npc:emilly}, и получите одну случайную награду: 
+      - {item:57:25000}
+      - {item:varnish:50}
+      - {item:coal:50}
+      - {item:iron_ore:50}
+      - {item:charcoal:50}

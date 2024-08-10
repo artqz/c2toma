@@ -1,0 +1,150 @@
+id: 327
+name:
+  en: Reclaim the Land
+  ru: Фермерские земли
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: piotur
+level: 25
+reward:
+  exp: 1
+  items:
+    - 57
+    - 1463
+    - 1061
+    - 734
+    - 735
+    - 736
+    - 737
+    - 2510
+questItems:
+  - 1846
+  - 1847
+walkthrough:
+  en:
+    - Speak with {npc:piotur} (just north of Orc Barracks, in NW Gludio).
+    - Kill {npc:turek_orc_sentinel}, {npc:turek_orc_footman},
+      {npc:turek_orc_archer} and {npc:turek_orc_supplier} to collect
+      {item:turek_dogtag}.
+    - Kill {npc:turek_orc_skimisher}, {npc:turek_orc_shaman} and
+      {npc:turek_orc_warlord} to collect {item:turek_medallion}.
+    - You will also receive {item:clay_urn_fragment},
+      {item:brass_trinket_piece}, {item:bronze_mirror_piece} and
+      {item:jade_necklace_bead}.
+    - >-
+      Return to {npc:piotur} for your reward:
+
+      - {item:57:46} for each {item:turek_dogtag}
+
+      - {item:57:52} for each {item:turek_medallion}
+
+      If you bring more than 10 items, you will additionally receive
+      {item:57:619}.
+
+
+      You can exchange the collected 5 parts at {npc:trader_acellopy} for:
+
+      - {item:ancient_clay_urn} = {item:clay_urn_fragment:5}
+
+      - {item:ancient_brass_tiara} = {item:brass_trinket_piece:5}
+
+      - {item:ancient_bronze_mirror} = {item:bronze_mirror_piece:5}
+
+      - {item:ancient_jade_necklace} = {item:jade_necklace_bead:5}
+
+
+      You can exchange items and parts for experience at {npc:iris}:
+
+      - {exp:307} for each {item:clay_urn_fragment}
+
+      - {exp:368} for each {item:brass_trinket_piece}
+
+      - {exp:368} for each {item:bronze_mirror_piece}
+
+      - {exp:430} for each {item:jade_necklace_bead} 
+
+      - {exp:2766} for each {item:ancient_clay_urn} 
+
+      - {exp:3227} for each {item:ancient_brass_tiara}
+
+      - {exp:3227} for each {item:ancient_bronze_mirror}
+
+      - {exp:3919} for each {item:ancient_jade_necklace}
+
+
+      You can exchange collected items for consumables at {npc:trader_nestle}:
+
+      - {item:ancient_clay_urn} = {item:soulshot_d} 70 + random up to 41
+
+      - {item:ancient_brass_tiara} = random item: {item:healing_potion},
+      {item:quick_step_potion} or {item:swift_attack_potion}
+
+      - {item:ancient_bronze_mirror} = random item: {item:scroll_of_escape} or
+      {item:scroll_of_resurrection}
+
+      - {item:ancient_jade_necklace} = {item:spiritshot_d} 50 + random up to 41
+  ru:
+    - Поговорите с {npc:piotur}.
+    - Убивайте {npc:turek_orc_sentinel}, {npc:turek_orc_footman},
+      {npc:turek_orc_archer} и {npc:turek_orc_supplier}, чтобы получать
+      {item:turek_dogtag}.
+    - Убивайте {npc:turek_orc_skimisher}, {npc:turek_orc_shaman} и
+      {npc:turek_orc_warlord}, чтобы получать {item:turek_medallion}.
+    - Также вы будете получать {item:clay_urn_fragment},
+      {item:brass_trinket_piece}, {item:bronze_mirror_piece} и
+      {item:jade_necklace_bead}.
+    - >-
+      Поговорите с {npc:piotur} чтобы получить:
+
+      - {item:57:46} за каждый {item:turek_dogtag}
+
+      - {item:57:52} за каждый {item:turek_medallion}
+
+      Если вы принесете более 10 подвесок, то дополнительно получите
+      {item:57:619}.
+
+
+      У {npc:trader_acellopy} вы также можете обменять 5 частей на:
+
+      - {item:ancient_clay_urn} = {item:clay_urn_fragment:5}
+
+      - {item:ancient_brass_tiara} = {item:brass_trinket_piece:5}
+
+      - {item:ancient_bronze_mirror} = {item:bronze_mirror_piece:5}
+
+      - {item:ancient_jade_necklace} = {item:jade_necklace_bead:5}
+
+
+      У {npc:iris} вы можете обменять предметы и части на опыт:
+
+      - {exp:307} за каждый {item:clay_urn_fragment}
+
+      - {exp:368} за каждый {item:brass_trinket_piece}
+
+      - {exp:368} за каждый {item:bronze_mirror_piece}
+
+      - {exp:430} за каждый {item:jade_necklace_bead} 
+
+      - {exp:2766} за каждый {item:ancient_clay_urn} 
+
+      - {exp:3227} за каждый {item:ancient_brass_tiara}
+
+      - {exp:3227} за каждый {item:ancient_bronze_mirror}
+
+      - {exp:3919} за каждый {item:ancient_jade_necklace}
+
+
+      У {npc:trader_nestle} вы можете поменять предметы на расходные материалы:
+
+      - {item:ancient_clay_urn} = {item:soulshot_d} 70 + случайно до 41
+
+      - {item:ancient_brass_tiara} = случайный предмет: {item:healing_potion},
+      {item:quick_step_potion} или {item:swift_attack_potion}
+
+      - {item:ancient_bronze_mirror} = случайный предмет:
+      {item:scroll_of_escape} или {item:scroll_of_resurrection}
+
+      - {item:ancient_jade_necklace} = {item:spiritshot_d} 50 + случайно до  41

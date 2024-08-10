@@ -1,0 +1,35 @@
+id: 624
+name:
+  en: The Finest Ingredients - Part 1
+  ru: Лучшие ингредиенты – ч. 1
+desc:
+  en: ""
+  ru: ""
+type: "repeatable"
+party: true
+requirements: {}
+startNPC: 8521
+level: 73
+reward: { items: [7205, 7080] }
+questItems: [7202, 7203, 7204]
+walkthrough:
+  en:
+    - Talk to {npc:jeremy}.
+    - Kill {npc:thermal_atrox}, {npc:thermal_atroxspawn}, {npc:thermal_bandersnatchling}, and {npc:thermal_nepenthes} to collect {item:q_bandersnatchling_foot:50}, {item:q_trunk_of_nepenthes:50}, and {item:q_secret_spice:50}.
+
+    - |-
+      Return to {npc:jeremy}, and get reward:
+      - {item:q_soy_source_jar} 
+      - {item:q_ice_essense} (required to obtain 3 professions)
+
+      Now you can proceed to the next part of the {quest:625}.
+  ru:
+    - Поговорите с {npc:jeremy}.
+    - Убивайте {npc:thermal_atrox}, {npc:thermal_atroxspawn}, {npc:thermal_bandersnatchling} и {npc:thermal_nepenthes}, пока не получите {item:q_bandersnatchling_foot:50}, {item:q_trunk_of_nepenthes:50} и {item:q_secret_spice:50}.
+
+    - |-
+      Вернитесь к {npc:jeremy}, чтобы получить награду:
+      - {item:q_soy_source_jar} 
+      - {item:q_ice_essense} (необходим для получения 3 профессии)
+
+      Теперь вы можете перейти к следующей части {quest:625}.

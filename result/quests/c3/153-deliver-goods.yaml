@@ -1,0 +1,47 @@
+id: 153
+name:
+  en: Deliver Goods
+  ru: Доставка товаров
+desc:
+  en: A few days ago merchant ships were shipwrecked by a storm. Guard Arnold, who
+    works for the recovery project, asks you to deliver some recovered goods.
+  ru: Страж Арнольд, занимающийся утилизацией корабельных обломков, просит Вас
+    вернуть некоторые уцелевшие товары их владельцам. Отнесите деревянный ящик
+    торговцу Джексону в оружейный магазин, рулон ткани - Сильвии в бакалейную
+    лавку, а глиняный кувшин - Рабочему Склада Ранту.
+type: one_time
+requirements: {}
+startNPC: arnold
+level: 2
+reward:
+  exp: 600
+  items:
+    - 1835
+    - 875
+questItems:
+  - 1012
+  - 1013
+  - 1014
+  - 1015
+  - 1016
+  - 1017
+  - 1018
+walkthrough:
+  en:
+    - Talk to {npc:arnold}. He gives you a {item:1012}, {item:1013}, {item:1014}
+      and {item:1015}.
+    - Give the pot to {npc:rant} to get a {item:1018}.
+    - Give the cloth to {npc:silvia} to a get {item:1017} and
+      {item:soulshot_none:3}.
+    - Give the box to {npc:jackson} to get a {item:1016}.
+    - Take the three receipts back to {npc:arnold}, and get a
+      {item:ring_of_knowledge:2} and {exp:600}.
+  ru:
+    - Поговорите с {npc:arnold}. Он даст вам {item:1012}, {item:1013},
+      {item:1014} и {item:1015}.
+    - Отнесите горкошок к {npc:rant}, и он даст вам {item:1018}.
+    - Отнесите ткань к {npc:silvia}, и она даст вам {item:1017} и
+      {item:soulshot_none:3}.
+    - Отнесите ящик к {npc:jackson}, и он даст вам {item:1016}.
+    - Вернитесь с 3 расписками к {npc:arnold}, и получите
+      {item:ring_of_knowledge:2}.

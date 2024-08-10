@@ -17,7 +17,8 @@
     "saveMaps": "ts-node saveMaps.ts",
     "saveNpcs": "ts-node saveNpcs.ts",
     "convertPNG": "ts-node b64ToPng.ts",
-    "convertSVG": "ts-node pngToSvg.ts"
+    "convertSVG": "ts-node pngToSvg.ts",
+    "fix_quests": "ts-node fix_quests.ts"
   },
   "author": "",
   "license": "ISC",
@@ -33,6 +34,7 @@
     "svg-png-converter": "^0.0.9",
     "svg-points": "^6.0.1",
     "xml2js": "^0.6.2",
+    "yaml": "^2.5.0",
     "zod": "^3.20.2"
   },
   "devDependencies": {

@@ -1,0 +1,66 @@
+id: 403
+name:
+  en: Path to a Rogue
+  ru: Путь Разбойника
+desc:
+  en: Quest that must be fulfilled to change occupations to a Rogue. Find Captain
+    Bezique and tell him you wish to become a Rogue. He says you will earn his
+    respect if you catch one of the thieves, and tells you to meet Neti.
+  ru: Чтобы получить звание Разбойника, Вам необходимо выполнить это задание.
+    Найдите Капитана Безика и скажите ему, что Вы желаете стать Разбойником. Для
+    того, чтобы добиться его уважения, Вы должны поймать одного из воров. Но для
+    начала Вам нужно встретиться с Нети.
+type: one_time
+requirements:
+  occupation:
+    - fighter
+startNPC: captain_bezique
+level: 19
+reward:
+  exp: 3200
+  sp: 1130
+  items:
+    - 1190
+questItems:
+  - 1180
+  - 1183
+  - 1184
+  - 1185
+  - 1186
+  - 1187
+  - 1188
+  - 1189
+  - 1190
+  - 1181
+  - 1182
+walkthrough:
+  en:
+    - Talk to {npc:captain_bezique} (Gludin).
+    - Talk to {npc:neti}. She gives you {item:1182} and {item:1181}. You can
+      only use these two weapons during the entire quest.
+    - Kill {npc:ruin_spartoi}, {npc:raging_spartoi},
+      {npc:tracker_skeleton_leader}, {npc:tracker_skeleton},
+      {npc:sniper_skeleton} and {npc:scout_skeleton} to collect {item:1183:10}.
+    - Talk to {npc:neti}.
+    - Talk to {npc:captain_bezique}.
+    - Kill {npc:catseye_bandit} to collect {item:1186}, {item:1187}, {item:1188}
+      and {item:1189}.
+    - Talk to {npc:captain_bezique}, for {exp:3200}, {sp:1130} and {item:1190}.
+    - When you are level 20, talk to {npc:grandmaster_ramos} (Gludin) to become
+      a Rogue.
+  ru:
+    - Поговорите с {npc:captain_bezique} (Gludin).
+    - Поговорите с {npc:neti}. Она даст вам {item:1182} и {item:1181}. Вы можете
+      использовать только эти два вида оружия в течение всего задания.
+    - Убивайте {npc:ruin_spartoi}, {npc:raging_spartoi},
+      {npc:tracker_skeleton_leader}, {npc:tracker_skeleton},
+      {npc:sniper_skeleton} и {npc:scout_skeleton}, пока не получите
+      {item:1183:10}.
+    - Поговорите с {npc:neti}.
+    - Поговорите с {npc:captain_bezique}.
+    - Убивайте {npc:catseye_bandit}, пока не получите {item:1186}, {item:1187},
+      {item:1188} and {item:1189}.
+    - Поговорите с {npc:captain_bezique}, for {exp:3200}, {sp:1130} and
+      {item:1190}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к {npc:grandmaster_ramos}
+      (Gludin), чтобы стать Rogue.

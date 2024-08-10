@@ -1,0 +1,26 @@
+id: 53
+name:
+  en: Linnaeus' Special Bait
+  ru: Особая Наживка Линеуса
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: {}
+startNPC: 8577
+level: 60
+reward: { items: [7613] }
+questItems: [7624]
+walkthrough:
+  en:
+    - Talk to {npc:fisher_linneaus} (Aden).
+    - Kill {npc:crimson_drake} to collect {item:q_heart_of_crimson_drake:100}.
+    - |-
+      Return to {npc:fisher_linneaus}, and get reward: 
+      - {item:q_flame_lure:4}
+  ru:
+    - Поговорите с {npc:fisher_linneaus} (Aden).
+    - Убивайте {npc:crimson_drake}, пока не получите {item:q_heart_of_crimson_drake:100}.
+    - |-
+      Вернитесь к {npc:fisher_linneaus}, и получите в награду: 
+      - {item:q_flame_lure:4}

@@ -1,0 +1,40 @@
+id: 7
+name:
+  en: A Trip Begins
+  ru: Начало пути
+desc:
+  en: ""
+  ru: ""
+type: one_time
+requirements:
+  races:
+    - elf
+startNPC: mint
+level: 3
+reward:
+  items:
+    - 7559
+    - 7570
+questItems:
+  - 7572
+walkthrough:
+  en:
+    - Talk to {npc:mint} (Elven Village).
+    - Talk to {npc:ariel}.
+    - Talk to {npc:ozzy}
+    - |-
+      Return to {npc:mint}, for reward: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - Scrolling gives you the opportunity to move to the Giran once. To return
+      back to the Elven Village, you need to take a {quest:46}.
+  ru:
+    - Поговорите с {npc:mint}.
+    - Поговорите с {npc:ariel}.
+    - Поговорите с {npc:ozzy}
+    - |-
+      Вернитесь к {npc:mint}, и получите в награду: 
+      - {item:q_escape_scroll_giran} 
+      - {item:q_symbol_of_traveler}
+    - Скролл дает возможность один раз переместиться в Giran. Чтобы вернуться
+      обратно в Elven Village необходимо взять {quest:46}.

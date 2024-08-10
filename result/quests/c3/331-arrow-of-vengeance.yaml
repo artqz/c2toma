@@ -1,0 +1,57 @@
+id: 331
+name:
+  en: Arrow of Vengeance
+  ru: Стрела Возмездия
+desc:
+  en: Guard Belton is seeking revenge after losing his family to the land dragon,
+    Antharas. He is currently making a special arrow made of harpy feather,
+    medusa venom, and wyrm’s tooth to use it to kill Antharas. He asks you the
+    collect the ingredients for the arrow.
+  ru: Страж Белтон хочет отомстить гигантскому дракону Антарасу за убийство своей
+    семьи. Он собирается сделать специальную стрелу из Пера Гарпии, Яда Медузы и
+    Зуба Змея, чтобы убить Дракона. Белтон просит Вас помочь ему собрать
+    необходимые компоненты.
+type: repeatable
+requirements: {}
+startNPC: beltkem
+level: 32
+reward:
+  items:
+    - 57
+questItems:
+  - 1452
+  - 1453
+  - 1454
+walkthrough:
+  en:
+    - Talk to {npc:beltkem}.
+    - kill {npc:harpy} to collect {item:harpy_feather}.
+    - Kill {npc:medusa} to collect {item:medusa_venom}.
+    - Kill {npc:wyrm} to collect {item:wyrms_tooth}.
+    - >-
+      Return to {npc:beltkem} for reward:
+
+      - {item:57:78} for each {item:harpy_feather}
+
+      - {item:57:88} for each {item:medusa_venom}
+
+      - {item:57:92} for each {item:wyrms_tooth}
+
+      If you bring more than 10 items, you will additionally receive
+      {item:57:3100}.
+  ru:
+    - Поговорите с {npc:beltkem}.
+    - Убивайте {npc:harpy}, чтобы получать {item:harpy_feather}.
+    - Убивайте {npc:medusa}, чтобы получать {item:medusa_venom}.
+    - Убивайте {npc:wyrm}, чтобы получать {item:wyrms_tooth}.
+    - >-
+      Вернитесь к {npc:beltkem},ч тобы получить:
+
+      - {item:57:78} за каждый {item:harpy_feather}
+
+      - {item:57:88} за каждый {item:medusa_venom}
+
+      - {item:57:92} за каждый {item:wyrms_tooth}
+
+      сли вы принесете более 10 предметов, то дополнительно получите
+      {item:57:3100}.

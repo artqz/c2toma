@@ -1,0 +1,43 @@
+id: 603
+name:
+  en: Daimon the White-Eyed - Part 1
+  ru: Белоглазый Демон - ч. 1
+desc:
+  en: ""
+  ru: ""
+type: "repeatable"
+party: true
+requirements: {}
+startNPC: 8683
+level: 73
+reward: { items: [7192] }
+questItems: [7190, 7191]
+walkthrough:
+  en:
+    - Talk to {npc:eye_of_argos} (Wall of Argos).
+    - Talk to {npc:ancient_lithography1}.
+    - Talk to {npc:ancient_lithography2}.
+    - Talk to {npc:ancient_lithography3}.
+    - Talk to {npc:ancient_lithography4}.
+    - Talk to {npc:ancient_lithography5}.
+    - Talk to {npc:eye_of_argos}.
+    - Kill {npc:bandersnatch_slave}, {npc:buffalo_slave} and {npc:grendel_slave} to collect {item:q_dark_evil_spirit:200}.
+    - |-
+      Return to {npc:eye_of_argos}, and get reward: 
+      - {item:q_unfinished_s_crystal}
+
+      Now you can proceed to the next part of the {quest:604}.
+  ru:
+    - Поговорите с {npc:eye_of_argos} (Wall of Argos).
+    - Поговорите с {npc:ancient_lithography1}.
+    - Поговорите с {npc:ancient_lithography2}.
+    - Поговорите с {npc:ancient_lithography3}.
+    - Поговорите с {npc:ancient_lithography4}.
+    - Поговорите с {npc:ancient_lithography5}.
+    - Поговорите с {npc:eye_of_argos}.
+    - Убивайте {npc:bandersnatch_slave}, {npc:buffalo_slave} и {npc:grendel_slave}, пока не получите {item:q_dark_evil_spirit:200}.
+    - |-
+      Вернитесь к {npc:eye_of_argos} и получите в награду:
+      - {item:q_unfinished_s_crystal}
+
+      Теперь вы можете перейти к следующей части {quest:604}.

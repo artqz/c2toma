@@ -1,0 +1,41 @@
+id: 626
+name:
+  en: A Dark Twilight
+  ru: Темный сумрак
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: dark_presbyter
+level: 60
+reward:
+  exp: 162773
+  sp: 12500
+  items:
+    - 57
+questItems:
+  - 7169
+walkthrough:
+  en:
+    - Talk to {npc:dark_presbyter} (Valley of Saints).
+    - Kill {npc:brilliant_eye}, {npc:brilliant_light}, {npc:brilliant_blade},
+      {npc:brilliant_wisdom}, {npc:brilliant_soul}, {npc:brilliant_legacy},
+      {npc:brilliant_vengeance}, {npc:brilliant_cry}, {npc:brilliant_mark},
+      {npc:brilliant_crown}, and {npc:brilliant_anguish} to collect
+      {item:q_blood_of_kel_mahum:300}.
+    - |-
+      Return to {npc:dark_presbyter}, and get one reward: 
+      - {exp:162773} and {sp:57:12500}
+      - {item:57:100000}
+  ru:
+    - Поговорите с {npc:dark_presbyter} (Valley of Saints).
+    - Убивайте {npc:brilliant_eye}, {npc:brilliant_light},
+      {npc:brilliant_blade}, {npc:brilliant_wisdom}, {npc:brilliant_soul},
+      {npc:brilliant_legacy}, {npc:brilliant_vengeance}, {npc:brilliant_cry},
+      {npc:brilliant_mark}, {npc:brilliant_crown} и {npc:brilliant_anguish},
+      пока не получите {item:q_blood_of_kel_mahum:300}.
+    - |-
+      Вернитесь к {npc:dark_presbyter}, и получите одну награду на выбор: 
+      - {exp:162773} and {sp:57:12500}
+      - {item:57:100000}

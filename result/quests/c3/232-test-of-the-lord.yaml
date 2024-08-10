@@ -1,0 +1,120 @@
+id: 232
+name:
+  en: Test of the Lord
+  ru: Испытание Верховного Шамана
+desc:
+  en: Quest to acquire occupation change item, ‘Mark of the Lord.’ The Paagrio
+    Lord, Kakai, explains about Overlords as Shamans who lead each Clan. You
+    must pass the Test of the Lord to become one. According to Kakai’s orders,
+    visit each of the five Chiefs and earn their respect.
+  ru: Лорд Орков Кекеи говорит, что Вы должны встретиться с главами всех пяти
+    кланов, кроме Хестуи, и принести их тотемы. Главы Атуба, Неруга и Уруту
+    находятся в Королевском Зале; глава Дуда-Мара – в Орене, а глава Ганди – в
+    Дионе.
+type: one_time
+requirements:
+  occupation:
+    - orc_shaman
+startNPC: kakai_the_lord_of_flame
+level: 39
+reward:
+  exp: 91457
+  sp: 2500
+  items:
+    - 3390
+questItems:
+  - 3390
+  - 3391
+  - 3392
+  - 3393
+  - 3394
+  - 3395
+  - 3396
+  - 3397
+  - 3398
+  - 3399
+  - 3400
+  - 3401
+  - 3402
+  - 3403
+  - 3404
+  - 3405
+  - 3406
+  - 3407
+  - 3408
+  - 3409
+  - 3410
+  - 3411
+  - 3412
+  - 3413
+  - 3414
+  - 3415
+  - 3416
+walkthrough:
+  en:
+    - Talk to {npc:kakai_the_lord_of_flame} (Orc Village).
+    - Talk to {npc:atuba_chief_varkees}.
+    - Talk to {npc:urutu_chief_hatos}.
+    - Talk to {npc:neruga_chief_tantus}.
+    - Talk to {npc:trader_jakaron}. Pay him {item:57:1000} for the Axe Blade and
+      buy {item:1341:1000} from him.
+    - Talk to {npc:blacksmith_sumari}.
+    - Talk to {npc:gandi_chief_chianta}.
+    - Talk to {npc:seer_somak}.
+    - Talk to {npc:seer_manakia}.
+    - Kill {npc:breka_orc_shaman}, {npc:breka_orc_overlord} to collect
+      {item:3398:20}.
+    - Talk to {npc:seer_manakia}.
+    - Kill {npc:marsh_spider} to collect {item:3407:10} and {item:3408:10}.
+    - Talk to {npc:dudamara_chief_takuna}.
+    - Kill {npc:timak_orc}, {npc:timak_orc_archer}, {npc:timak_orc_soldier},
+      {npc:timak_orc_warrior}, {npc:timak_orc_shaman} and
+      {npc:timak_orc_overlord} to collect {item:3403:10}.
+    - Kill {npc:enchanted_monstereye} to collect {item:3410:20}.
+    - Talk to {npc:dudamara_chief_takuna}.
+    - Talk to {npc:gandi_chief_chianta}.
+    - Talk to {npc:neruga_chief_tantus}.
+    - Talk to {npc:atuba_chief_varkees}.
+    - Talk to {npc:urutu_chief_hatos}.
+    - Talk to {npc:kakai_the_lord_of_flame}.
+    - Talk to {npc:ancestor_martankus}.
+    - Kill {npc:ragna_orc_overlord} and {npc:ragna_orc_seer} to collect
+      {item:3414}.
+    - Talk to {npc:ancestor_martankus}.
+    - Talk to {npc:first_orc}.
+    - Talk to {npc:kakai_the_lord_of_flame}, for {exp:91457}, {sp:2500} and
+      {item:3390}.
+  ru:
+    - Поговорите с {npc:kakai_the_lord_of_flame} (Orc Village).
+    - Поговорите с {npc:atuba_chief_varkees}.
+    - Поговорите с {npc:urutu_chief_hatos}.
+    - Поговорите с {npc:neruga_chief_tantus}.
+    - Поговорите с {npc:trader_jakaron}. Pay him {item:57:1000} for the Axe
+      Blade and buy {item:1341:1000} from him.
+    - Поговорите с {npc:blacksmith_sumari}.
+    - Поговорите с {npc:gandi_chief_chianta}.
+    - Поговорите с {npc:seer_somak}.
+    - Поговорите с {npc:seer_manakia}.
+    - Убивайте {npc:breka_orc_shaman}, {npc:breka_orc_overlord}, пока не
+      получите {item:3398:20}.
+    - Поговорите с {npc:seer_manakia}.
+    - Убивайте {npc:marsh_spider}, пока не получите {item:3407:10} и
+      {item:3408:10}.
+    - Поговорите с {npc:dudamara_chief_takuna}.
+    - Убивайте {npc:timak_orc}, {npc:timak_orc_archer}, {npc:timak_orc_soldier},
+      {npc:timak_orc_warrior}, {npc:timak_orc_shaman} и
+      {npc:timak_orc_overlord}, пока не получите {item:3403:10}.
+    - Убивайте {npc:enchanted_monstereye}, пока не получите {item:3410:20}.
+    - Поговорите с {npc:dudamara_chief_takuna}.
+    - Поговорите с {npc:gandi_chief_chianta}.
+    - Поговорите с {npc:neruga_chief_tantus}.
+    - Поговорите с {npc:atuba_chief_varkees}.
+    - Поговорите с {npc:urutu_chief_hatos}.
+    - Поговорите с {npc:kakai_the_lord_of_flame}.
+    - Поговорите с {npc:ancestor_martankus}.
+    - Убивайте {npc:ragna_orc_overlord} и {npc:ragna_orc_seer}, пока не получите
+      {item:3414}.
+    - Поговорите с {npc:ancestor_martankus}.
+    - Поговорите с {npc:first_orc}.
+    - Поговорите с {npc:kakai_the_lord_of_flame}, и получите в награду
+      {exp:91457}, {sp:2500} и {item:3390}.

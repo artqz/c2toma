@@ -1,0 +1,31 @@
+id: 341
+name:
+  en: Hunting for Wild Beasts
+  ru: Охота на Медведей
+desc:
+  en: Grocer Pano asks that you drive away the bears that are threatening his
+    proposed fishing resort west of Floran Village. Take 20 of their pelts to
+    him and you will be rewarded.
+  ru: Пано просит вас отогнать медведей, которые угрожают его предполагаемому
+    рыбацкому курорту к западу от деревни Флоран. Отнеси ему 20 их шкурок, и ты
+    будешь вознагражден.
+type: repeatable
+requirements: {}
+startNPC: pano
+level: 20
+reward:
+  items:
+    - 57
+questItems:
+  - 4259
+walkthrough:
+  en:
+    - Talk to {npc:pano}.
+    - Hunt {npc:dion_grizzly}, {npc:red_bear}, {npc:brown_bear} and
+      {npc:grizzly_bear} to collect {item:q_bear_skin:20}.
+    - Return to {npc:pano}, for {item:57:3710}.
+  ru:
+    - Поговорите с {npc:pano}.
+    - Убивайте {npc:dion_grizzly}, {npc:red_bear}, {npc:brown_bear} и
+      {npc:grizzly_bear}, пока не соберете {item:q_bear_skin:20}.
+    - Вернитесь со шкурами к {npc:pano}, и получите в награду {item:57:3710}.

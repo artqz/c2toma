@@ -1,0 +1,34 @@
+id: 164
+name:
+  en: Blood Fiend
+  ru: Кровный враг
+desc:
+  en: Trader Creamees had lost his friends and kin by the hands of the dark side
+    which was summoned by a Dark Elven Master of Dark Arts. The leaders of the
+    dark side and the kirunak (a.k.a. the Blood Lord) still lurk within the
+    Underground Fortress, and he asks you to seek revenge.
+  ru: Друзья и родные торговца Кримиса были убиты демонами. Их предводитель
+    Кирунак все еще прячется в недрах подземной крепости. Кримис просит Вас
+    отомстить Кирунаку.
+type: one_time
+requirements:
+  races:
+    not:
+      - darkelf
+startNPC: cel
+level: 21
+reward:
+  items:
+    - 57
+questItems:
+  - 1044
+walkthrough:
+  en:
+    - Talk to {npc:cel}.
+    - Hunt {npc:kirunak} to collect {item:1044}. He is the demon boss of the
+      Underground Fortress.
+    - Return to {npc:cel}, for {item:57:42130}.
+  ru:
+    - Поговорите с {npc:cel}.
+    - Убейте {npc:kirunak} чтобы получить {item:1044}.
+    - Вернитесь к {npc:cel}, и получите в награду {item:57:42130}.

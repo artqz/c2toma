@@ -1,0 +1,47 @@
+id: 623
+name:
+  en: The Finest Food
+  ru: Лучшее блюдо
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: jeremy
+level: 71
+reward:
+  exp: 230000
+  sp: 18250
+  items:
+    - 57
+    - 6849
+    - 6847
+    - 6851
+questItems:
+  - 7199
+  - 7200
+  - 7201
+walkthrough:
+  en:
+    - Talk to {npc:jeremy}.
+    - Kill {npc:thermal_flava} to collect {item:q_leaf_of_flava:100}.
+    - Kill {npc:thermal_buffalo} to collect {item:q_buffalo_meat:100}.
+    - Kill {npc:thermal_antelope} to collect {item:q_horn_of_antelope:100}.
+    - |-
+      Return to {npc:jeremy}, and get one reward:
+      - {item:rp_sealed_ring_of_aurakyria_i} and {item:57:25000}
+      - {item:rp_sealed_sanddragon's_earing_i} and {item:57:65000}
+      - {item:rp_sealed_dragon_necklace_i} and {item:57:25000}
+      - {item:57:73000}, {exp:230000}, and {sp:18250}
+  ru:
+    - Поговорите с {npc:jeremy}.
+    - Убивайте {npc:thermal_flava}, пока не получите {item:q_leaf_of_flava:100}.
+    - Убивайте {npc:thermal_buffalo}, пока не получите {item:q_buffalo_meat:100}.
+    - Убивайте {npc:thermal_antelope}, пока не получите
+      {item:q_horn_of_antelope:100}.
+    - |-
+      Вернитесь к {npc:jeremy} и получите одну случайную награду:
+      - {item:rp_sealed_ring_of_aurakyria_i} и {item:57:25000}
+      - {item:rp_sealed_sanddragon's_earing_i} и {item:57:65000}
+      - {item:rp_sealed_dragon_necklace_i} и {item:57:25000}
+      - {item:57:73000}, {exp:230000}, и {sp:18250}

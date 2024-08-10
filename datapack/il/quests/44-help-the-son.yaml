@@ -1,0 +1,39 @@
+id: 44
+name:
+  en: Help the Son!
+  ru: Помощь сыну
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+party: true
+requirements: {}
+startNPC: 7827
+level: 25
+reward: { items: [7585] }
+questItems: [7552, 7553]
+walkthrough:
+  en:
+    - Talk to {npc:pet_manager_lundy} (Gludio Castle Town).
+    - Buy {item:work_hammer} from {npc:trader_sydney}.
+    - Talk to {npc:pet_manager_lundy}.
+    - Kill {npc:male_lizardman}, {npc:male_lizardman_guard}, and {npc:male_lizardman_scout} to collect {item:q_dummy_kukaburo:30}.
+    - Talk to {npc:pet_manager_lundy}.
+    - Talk to {npc:high_prefect_drikus}.
+    - |-
+      Return to {npc:pet_manager_lundy}, for reward: 
+      - {item:ticket_kukaburo_ocarina}
+
+      Talk to a Pet Manager in any city and exchange a ticket for {item:baby_kukaburo_ocarina}.
+  ru:
+    - Поговорите с {npc:pet_manager_lundy}.
+    - Купите {item:work_hammer} у {npc:trader_sydney}.
+    - Поговорите с {npc:pet_manager_lundy}.
+    - Убивайте {npc:male_lizardman}, {npc:male_lizardman_guard} и {npc:male_lizardman_scout}, пока не получите {item:q_dummy_kukaburo:30}.
+    - Поговорите с {npc:pet_manager_lundy}.
+    - Поговорите с {npc:high_prefect_drikus}.
+    - |-
+      Вернитесь к {npc:pet_manager_lundy}, и получите награду: 
+      - {item:ticket_kukaburo_ocarina}
+
+      Поговорите с Пет Менеджером в любом городе и обменяйте билет на {item:baby_kukaburo_ocarina}.

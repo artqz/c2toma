@@ -1,0 +1,58 @@
+id: 619
+name:
+  en: Relics of the Old Empire
+  ru: Реликвии Древней Империи
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: explorer_ghost_a
+level: 74
+reward:
+  items:
+    - 6881
+    - 6883
+    - 6885
+    - 6887
+    - 7580
+    - 6891
+    - 6893
+    - 6895
+    - 6897
+    - 6899
+questItems:
+  - 7254
+walkthrough:
+  en:
+    - Talk to {npc:explorer_ghost_a} (Imperial Tomb).
+    - Kill any mobs in Imperial Tomb until you collect
+      {item:q_broken_antiques:1000}.
+    - |-
+      Return to {npc:explorer_ghost_a}, and get one random reward: 
+      - {item:rp_forgotten_blade_i}
+      - {item:rp_basalt_battlehammer_i}
+      - {item:rp_imperial_staff_i}
+      - {item:rp_angel_slayer_i}
+      - {item:rp_draconic_bow_i}
+      - {item:rp_dragon_hunter_axe_i}
+      - {item:rp_saint_spear_i}
+      - {item:rp_demon_splinter_i}
+      - {item:rp_heavens_divider_i}
+      - {item:rp_arcana_mace_i}
+  ru:
+    - Поговорите с {npc:explorer_ghost_a} (Imperial Tomb).
+    - Убивайте любых монстров в Гробнице Императоров, пока не получите
+      {item:q_broken_antiques:1000}.
+    - |-
+      Вернитесь к {npc:explorer_ghost_a} и получите одну случайную награду: 
+      - {item:rp_forgotten_blade_i}
+      - {item:rp_basalt_battlehammer_i}
+      - {item:rp_imperial_staff_i}
+      - {item:rp_angel_slayer_i}
+      - {item:rp_draconic_bow_i}
+      - {item:rp_dragon_hunter_axe_i}
+      - {item:rp_saint_spear_i}
+      - {item:rp_demon_splinter_i}
+      - {item:rp_heavens_divider_i}
+      - {item:rp_arcana_mace_i}

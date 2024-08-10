@@ -1,0 +1,51 @@
+id: 2
+name:
+  en: What Women Want
+  ru: Чего хотят женщины
+desc:
+  en: Arujien of the Elven Village has had Magister Greenis in his heart for a
+    long time. He asks to spy on her.
+  ru: Аруен признается Вам, что он давно очарован Магистром Гринис. Он просит Вас
+    разузнать, взаимны ли его чувства. Поговорите с ее младшей сестрой,
+    Хранителем Портала Мирабель, и покажите ей письмо Аруена.
+type: one_time
+requirements:
+  races:
+    - human
+    - elf
+startNPC: arujien
+level: 2
+reward:
+  items:
+    - 57
+    - 113
+questItems:
+  - 1092
+  - 1093
+  - 1094
+  - 689
+  - 693
+walkthrough:
+  en:
+    - Talk to {npc:arujien}. He gives you {item:1092}.
+    - Talk to {npc:mint}. She gives you {item:1093}.
+    - Talk to {npc:green}. He gives you {item:1094}.
+    - Talk to {npc:arujien}. If you tell him to forget about her, he gives you
+      {item:57:450} and the quest ends. If you tell him that Greenis may like
+      him, he gives you a {item:689} to take to her.
+    - Give the {item:689} to {npc:chad}. She takes it but rejects poor Arujien.
+      She gives you {item:693} to return to him.
+    - Return to {npc:arujien} with the bad news, and he gives you
+      {item:mage_earing}.
+  ru:
+    - Поговорите с {npc:arujien}. Он даст вам {item:1092}.
+    - Поговорите с {npc:mint}. Она даст вам {item:1093}.
+    - Поговорите с {npc:green}. Он даст Вам {item:1094}.
+    - Поговорите с {npc:arujien}. Если вы предложите забыть ему о ней "to forget
+      about her", он даст вам {item:57:450} и задание закончится. Если вы
+      сообщите ему, что он может понравиться "that Greenis may like him", он
+      даст вам {item:689}, чтобы передать ей.
+    - Отдайте {item:689} {npc:chad}. Она примет книгу, но отвергнет бедного
+      {npc:arujien}. Она даст вам {item:693} и отправит к нему.
+    - Возвращайтесь к {npc:arujien} с плохими новостями, и он даст вам
+      {item:mage_earing}.

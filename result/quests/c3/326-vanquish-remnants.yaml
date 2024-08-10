@@ -1,0 +1,79 @@
+id: 326
+name:
+  en: Vanquish Remnants
+  ru: Добить уцелевших
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: leopold
+level: 21
+reward:
+  items:
+    - 57
+    - 1369
+questItems:
+  - 1359
+  - 1360
+  - 1361
+walkthrough:
+  en:
+    - Talk with {npc:leopold}.
+    - Go to the Abandoned Camp and hunt {npc:ol_mahum_patrol},
+      {npc:ol_mahum_recruit} and {npc:ol_mahum_guard} to collect
+      {item:red_cross_badge}.
+    - Kill {npc:ol_mahum_remnants}, {npc:ol_mahum_shooter},
+      {npc:ol_mahum_supplier} and {npc:ol_mahum_officer} to collect
+      {item:blue_cross_badge}.
+    - Kill {npc:ol_mahum_general} and {npc:ol_mahum_captain} to collect
+      {item:black_cross_badge}.
+    - >-
+      Return to {npc:leopold} for your reward.
+
+
+      Reward for parts: 
+
+      - {item:57:46} for each {item:red_cross_badge}
+
+      - {item:57:52} for each {item:blue_cross_badge}
+
+      - {item:57:58} for each {item:black_cross_badge}
+
+      If you bring more than 10 badges, you will additionally receive
+      {item:57:4320}.
+
+
+      If you give him 100 badges at the same time, Leopold gives you the
+      {item:black_lion_mark}.
+    - Note. that if you wish to do the {quest:333} quest, you must keep the
+      {item:black_lion_mark}.
+  ru:
+    - Поговорите с {npc:leopold}.
+    - Отправляйтесь в Abandoned Camp и убивайте {npc:ol_mahum_patrol},
+      {npc:ol_mahum_recruit} и {npc:ol_mahum_guard}, чтобы получать
+      {item:red_cross_badge}.
+    - Убивайте {npc:ol_mahum_remnants}, {npc:ol_mahum_shooter},
+      {npc:ol_mahum_supplier} and {npc:ol_mahum_officer}, чтобы получать
+      {item:blue_cross_badge}.
+    - Убивайте {npc:ol_mahum_general} and {npc:ol_mahum_captain}, чтобы получать
+      {item:black_cross_badge}.
+    - >-
+      Вернитесь к {npc:leopold} за наградой.
+
+
+      Награда за знаки: 
+
+      - {item:57:46} за каждый {item:red_cross_badge}
+
+      - {item:57:52} за каждый {item:blue_cross_badge}
+
+      - {item:57:58} за каждый {item:black_cross_badge}
+
+      Если вы принесете более 10 знаков, то дополнительно получите
+      {item:57:4320}.
+
+
+      Если вы принесете ему 100 знаков, {npc:leopold} даст вам
+      {item:black_lion_mark}.
+    - Важно. {item:black_lion_mark} вам понадобится для выполнения {quest:333}.

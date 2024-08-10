@@ -1,0 +1,107 @@
+id: 213
+name:
+  en: Trial of the Seeker
+  ru: Испытание искателя
+desc:
+  en: Quest to acquire occupation change item, 'Mark of the Seeker.' Master Dufner
+    has sensed an evil in the realm of spirits. To look for clues, he is seeking
+    a Warrior who has great evasion and scouting skills. By helping him uncover
+    this incident you may earn the mark of the seeker. Master Dufner gives a
+    letter telling you to visit a guy named 'Hawkeye.'
+  ru: Королевству угрожают злобные духи-мутанты. Гильдия искателей решает провести
+    секретное исследование этих ужасных монстров. Если Вы хотите вступить в
+    гильдию, Вам нужно найти кого-нибудь, кто может Вам помочь. В письме указан
+    такой человек.
+type: one_time
+requirements:
+  occupation:
+    - rogue
+    - elven_scout
+    - assasin
+startNPC: dufner
+level: 35
+reward:
+  exp: 72126
+  sp: 11000
+  items:
+    - 2673
+questItems:
+  - 2647
+  - 2648
+  - 2649
+  - 2650
+  - 2651
+  - 2652
+  - 2653
+  - 2654
+  - 2655
+  - 2656
+  - 2657
+  - 2658
+  - 2659
+  - 2660
+  - 2661
+  - 2662
+  - 2663
+  - 2664
+  - 2665
+  - 2666
+  - 2667
+  - 2668
+  - 2669
+  - 2670
+  - 2671
+  - 2672
+  - 2673
+walkthrough:
+  en:
+    - Talk to {npc:dufner} (Giran).
+    - Talk to {npc:terry} (Dion).
+    - Kill {npc:neer_crawler_frak} to collect {item:2653}.
+    - Talk to {npc:terry}.
+    - Kill {npc:ol_mahum_chief_leader} to collect {item:2654}.
+    - Kill {npc:turek_orc_warlord} to collect {item:2655}.
+    - Kill {npc:ant_captain} to collect {item:2656}.
+    - Kill {npc:turak_bugbear_warrior} to collect {item:2657}.
+    - Talk to {npc:terry}.
+    - Talk to {npc:trader_viktor}. Tell him the name, "Alterbar Karrios".
+    - Kill {npc:medusa} to collect {item:2660:10}.
+    - Talk to {npc:trader_viktor}.
+    - Talk to {npc:magister_marina}.
+    - Talk to {npc:blacksmith_bronp}.
+    - Talk to {npc:magister_marina}.
+    - Talk to {npc:terry}.
+    - Kill {npc:marsh_stakato_drone} to collect {item:2668}.
+    - Kill {npc:breka_orc_overlord} to collect {item:2669}.
+    - Kill {npc:ant_warrior_captain} to collect {item:2670}.
+    - Kill {npc:leto_lizardman_warrior} to collect {item:2671}.
+    - Talk to {npc:terry}.
+    - Talk to {npc:dufner}, for {exp:72126}, {sp:11000} and {item:2673}.
+  ru:
+    - Поговорите с {npc:dufner} (Giran). Он даст вам {item:dufners_letter}.
+    - Отнесите {item:dufners_letter} к {npc:terry} (Dion). Он даст вам
+      {item:terys_order1}.
+    - Убивайте {npc:neer_crawler_frak}, пока не получим {item:2653}.
+    - Вернитесь к {npc:terry}. Он даст вам {item:terys_order2}
+    - Убивайте {npc:ol_mahum_chief_leader}, пока не получим {item:2654}.
+    - Убивайте {npc:turek_orc_warlord}, пока не получим {item:2655}.
+    - Убивайте {npc:ant_captain}, пока не получим {item:2656}.
+    - Убивайте {npc:turak_bugbear_warrior}, пока не получим {item:2657}.
+    - Вернитесь к {npc:terry}. {item:terys_letter} и {item:terys_box}.
+    - Поговорите с {npc:trader_viktor}. Назовите ему имя, "Alterbar Karrios". Он
+      даст вам {item:viktors_request}
+    - Убивайте {npc:medusa}, пока не получим {item:2660:10}.
+    - Вернитесь к {npc:trader_viktor}. Он даст вам {item:silens_runestone} и
+      {item:analysis_request}
+    - Поговорите с {npc:magister_marina}. Она даст вам {item:marinas_letter}
+    - Поговорите с {npc:blacksmith_bronp}. Он даст вам {item:experiment_tools}
+    - Поговорите с {npc:magister_marina}. Она даст вам {item:analysis_result}
+    - Для продолжения квеста необходимо получить 36 уровень.
+    - Поговорите с {npc:terry}. Если ваш уровень меньше 36, он даст вам
+      {item:terys_order3}, если больше то {item:list_of_host}.
+    - Убивайте {npc:marsh_stakato_drone}, пока не получим {item:2668}.
+    - Убивайте {npc:breka_orc_overlord}, пока не получим {item:2669}.
+    - Убивайте {npc:ant_warrior_captain}, пока не получим {item:2670}.
+    - Убивайте {npc:leto_lizardman_warrior}, пока не получим {item:2671}.
+    - Поговорите с {npc:terry}. Он даст вам {item:terys_report}.
+    - Вернитесь к {npc:dufner}, и получите {exp:72126}, {sp:11000} и {item:2673}.

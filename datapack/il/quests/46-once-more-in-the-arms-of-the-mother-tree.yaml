@@ -1,0 +1,36 @@
+id: 46
+name:
+  en: Once More In the Arms of the Mother Tree
+  ru: Возвращение к Древу Жизни
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: { races: [elf], item: [q_symbol_of_traveler] }
+startNPC: 7097
+level: 3
+reward: { items: [7555] }
+questItems: [7563, 7564, 7565, 7566, 7567, 7568]
+walkthrough:
+  en:
+    - "Note. To do the this quest, you need a {item:q_symbol_of_traveler} {quest:7}."
+    - Talk to {npc:galladuchi} (Giran).
+    - Talk to {npc:gentler}.
+    - Talk to {npc:galladuchi}.
+    - Talk to {npc:sandra}.
+    - Talk to {npc:galladuchi}
+    - Talk to {npc:dustin}
+    - |-
+      Return to {npc:galladuchi}, for reward: 
+      - {item:q_escape_scroll_elf}
+  ru:
+    - "Важно. Для выполнения квеста необходим предмет {item:q_symbol_of_traveler}, который можно получить за выполнение {quest:7}."
+    - Поговорите с {npc:galladuchi} (Giran).
+    - Поговорите с {npc:gentler}.
+    - Поговорите с {npc:galladuchi}.
+    - Поговорите с {npc:sandra}.
+    - Поговорите с {npc:galladuchi}
+    - Поговорите с {npc:dustin}
+    - |-
+      Вернитесь к {npc:galladuchi}, и получите награду: 
+      - {item:q_escape_scroll_elf}

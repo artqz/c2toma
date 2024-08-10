@@ -1,0 +1,47 @@
+id: 267
+name:
+  en: Wrath of Verdure
+  ru: Гнев деревьев
+desc:
+  en: Olen Treants guard the Elven Forest. They seek revenge on the goblins that
+    cut down the forest, but the sly goblins have managed to get away with it.
+    Gunner Treant asks for help as a representative. Defeat the goblins and
+    return their weapons, that were once branches of the woods to Gunner Treant
+    and you shall be rewarded.
+  ru: Древни Эльфийского Леса хотят отомстить гоблинам, регулярно нарушающим их
+    спокойствие. Но хитрым гоблинам удалось скрыться. Древень Бремец просит Вас
+    о помощи. Убейте гоблинов и принесите украденные ими дубины Бремецу, после
+    чего Вы получите вознаграждение.
+type: repeatable
+requirements:
+  races:
+    - elf
+startNPC: bri_mec_tran
+level: 4
+reward:
+  items:
+    - 1340
+    - 57
+questItems:
+  - 1335
+walkthrough:
+  en:
+    - Talk to {npc:bri_mec_tran}.
+    - Hunt {npc:goblin_raider} to collect {item:1335}.
+    - >-
+      Return to {npc:bri_mec_tran}, and get it as a reward:
+
+      - {item:silvery_leaf} for each {item:1335}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:600}.
+  ru:
+    - Поговорите с {npc:bri_mec_tran}.
+    - Убивайте {npc:goblin_raider}, чтобы получать {item:1335}.
+    - >-
+      Вернитесь к {npc:bri_mec_tran}, чтобы получить
+
+      - {item:silvery_leaf} за каждый {item:1335}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:600}.

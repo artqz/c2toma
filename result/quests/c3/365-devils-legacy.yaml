@@ -1,0 +1,100 @@
+id: 365
+name:
+  en: Devil's Legacy
+  ru: Наследие Дьявола
+desc:
+  en: Pirate Zaken’s followers imprisoned him on Devil's Isle and stole his
+    treasure, but he eventually got his revenge by killing them all and turning
+    them into pirate zombies and pirate zombie captains. You must go there,
+    conduct an investigation, recover the stolen treasure, and take it to
+    Warehouse Keeper Randolf in Giran Castle Town.
+  ru: Команда Пирата Закена бросила его на Острове Дьявола и украла его сокровище,
+    но Закен отомстил своим обидчикам. Он убил их, и после смерти они стали
+    Пиратами Зомби и Капитанами Пиратов Зомби. Вы должны отправиться туда,
+    расследовать все, найти украденное сокровище и доставить его Смотрителю
+    Склада Рандольфу в Город Гиран.
+type: repeatable
+requirements: {}
+startNPC: landolf
+level: 39
+reward:
+  items:
+    - 57
+    - 951
+    - 952
+    - 955
+    - 956
+    - 1868
+    - 1884
+    - 1872
+    - 1879
+    - 1882
+    - 1881
+questItems:
+  - 5873
+walkthrough:
+  en:
+    - Talk to {npc:landolf}.
+    - Hunt {npc:pirates_zombie} and {npc:pirates_zombie_captain} to collect
+      {item:q_pirates_trbox}.
+    - |-
+      Return to {npc:landolf}, and get reward:
+      - {item:57:400} for each {item:q_pirates_trbox} and {item:57:5000}
+    - >-
+      You can also try opening chests at {npc:collob} for {item:57:600} and get
+      a random reward:
+
+      - {item:scrl_of_ench_wp_d}
+
+      - {item:scrl_of_ench_am_d}
+
+      - {item:thread} 
+
+      - {item:cord}
+
+      - {item:animal_bone}
+
+      - {item:scrl_of_ench_wp_c}
+
+      - {item:scrl_of_ench_am_c}
+
+      - {item:cokes}
+
+      - {item:steel}
+
+      - {item:leather}
+
+      - {item:coarse_bone_powder}
+  ru:
+    - Поговорите с {npc:landolf}.
+    - Охотьтесь на {npc:pirates_zombie} and {npc:pirates_zombie_captain}, чтобы
+      получать {item:q_pirates_trbox}.
+    - |-
+      Вы можете вернуться к {npc:landolf}, и получить:
+      - {item:57:400} за каждый {item:q_pirates_trbox} 
+      - {item:57:5000} за сдачу квеста
+    - >-
+      Либо вы можете попробовать открыть боксы у {npc:collob} за {item:57:600} и
+      получить одну случайную награду:
+
+      - {item:scrl_of_ench_wp_d}
+
+      - {item:scrl_of_ench_am_d}
+
+      - {item:thread} 
+
+      - {item:cord}
+
+      - {item:animal_bone}
+
+      - {item:scrl_of_ench_wp_c}
+
+      - {item:scrl_of_ench_am_c}
+
+      - {item:cokes}
+
+      - {item:steel}
+
+      - {item:leather}
+
+      - {item:coarse_bone_powder}

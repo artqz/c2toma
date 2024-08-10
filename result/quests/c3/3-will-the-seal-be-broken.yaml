@@ -1,0 +1,43 @@
+id: 3
+name:
+  en: Will the Seal be Broken
+  ru: Как снять проклятие?
+desc:
+  en: "Dark Elven Tetrarch Talloth is studying the Dark Arts. He asks for
+    ingredients: Onyx Beast's Eye, Taint Stone, and Succubus Blood."
+  ru: Тетрарх Темных Эльфов Таллот продолжает изучение темного искусства, чтобы
+    найти способ снять проклятие, наложенное на Митраэля, главу Темных Эльфов.
+    Он просит Вас пойти в Школу Темной Магии и принести ему оттуда Глаз Зверя
+    Знамения, Камень Порока и Кровь Суккуба. Все это необходимо ему для первой
+    стадии ритуала, который снимет проклятие с великого Митраэля.
+type: one_time
+requirements:
+  races:
+    - darkelf
+startNPC: redry
+level: 16
+reward:
+  items:
+    - 956
+questItems:
+  - 1081
+  - 1082
+  - 1083
+walkthrough:
+  en:
+    - Speak with {npc:redry}.
+    - Hunt the {npc:onyx_beast} to collect {item:1081}.
+    - Hunt the {npc:tainted_zombie} and {npc:stink_zombie} to collect
+      {item:1082}.
+    - Hunt the {npc:least_succubus}, {npc:least_succubus_turen} and
+      {npc:least_succubus_tilfo} to collect {item:1083}.
+    - Return to {npc:redry} with the ingredients, for {item:scrl_of_ench_am_d}.
+  ru:
+    - Поговорите с {npc:redry}.
+    - Убивайте {npc:onyx_beast}, пока не получите {item:1081}.
+    - Убивайте {npc:tainted_zombie} и {npc:stink_zombie}, пока не получите
+      {item:1082}.
+    - Убивайте {npc:least_succubus}, {npc:least_succubus_turen} и
+      {npc:least_succubus_tilfo}, пока не получите {item:1083}.
+    - Возвращайтесь к {npc:redry} c ингредиентами, в награду он даст
+      {item:scrl_of_ench_am_d}.

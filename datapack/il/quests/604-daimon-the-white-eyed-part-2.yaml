@@ -1,0 +1,41 @@
+id: 604
+name:
+  en: Daimon the White-Eyed - Part 2
+  ru: Белоглазый Демон - ч. 2
+desc:
+  en: ""
+  ru: ""
+type: "repeatable"
+party: true
+requirements: {}
+startNPC: 8683
+level: 73
+reward: { items: [4595, 4596, 4597, 4598, 4599, 4600] }
+questItems: [7193, 7194]
+walkthrough:
+  en:
+    - "Note. To do the this quest, you need a {item:q_unfinished_s_crystal} {quest:603}."
+    - Talk to {npc:eye_of_argos} (Wall of Argos).
+    - Talk to {npc:daimons_altar}.
+    - Kill {npc:daemon_of_hundred_eyes} to collect {item:q_essense_of_daimon}.
+    - |-
+      Return to {npc:eye_of_argos}, and get one random reward: 
+      - {item:dye_i2m2_c:5}
+      - {item:dye_i2w2_c:5}
+      - {item:dye_m2i2_c:5}
+      - {item:dye_m2w2_c:5}
+      - {item:dye_w2i2_c:5}
+      - {item:dye_w2m2_c:5}
+  ru:
+    - "Важно. Для выполнения квеста необходим предмет {item:q_unfinished_s_crystal}, который можно получить за выполнение {quest:603}."
+    - Поговорите с {npc:eye_of_argos} (Wall of Argos).
+    - Поговорите с {npc:daimons_altar}.
+    - Убейте {npc:daemon_of_hundred_eyes}, чтобы получить {item:q_essense_of_daimon}.
+    - |-
+      Вернитесь к {npc:eye_of_argos} и получите одну случайную награду: 
+      - {item:dye_i2m2_c:5}
+      - {item:dye_i2w2_c:5}
+      - {item:dye_m2i2_c:5}
+      - {item:dye_m2w2_c:5}
+      - {item:dye_w2i2_c:5}
+      - {item:dye_w2m2_c:5}

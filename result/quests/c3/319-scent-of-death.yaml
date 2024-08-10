@@ -1,0 +1,40 @@
+id: 319
+name:
+  en: Scent of Death
+  ru: Аромат Смерти
+desc:
+  en: Trader Minaless, who grows herbs as a subsidiary business, has recently been
+    growing a flower called nightshade. Nightshade needs special fertilizers,
+    and zombie dust is needed to create them. Trader Minaless will reward anyone
+    who brings zombie dust after defeating the zombies in the Marshlands, south
+    of the Dark Forest.
+  ru: У Миналес, которая выращивает травы, недавно появился цветок, называемый
+    Белладонной. Это растение требует особого удобрения, известного как прах
+    зомби. Для его изготовления нужна Кожа Зомби. Миналес просит Вас пойти в
+    Топи южнее Темного Леса, убить Болотных Зомби и принести ей 5 кусков их
+    кожи.
+type: repeatable
+requirements: {}
+startNPC: mina
+level: 11
+reward:
+  items:
+    - 57
+    - 1060
+questItems:
+  - 1045
+walkthrough:
+  en:
+    - Talk to {npc:mina}.
+    - Hunt in the swamps to the southwest for {npc:marsh_zombie_pointer} and
+      {npc:marsh_zombie} until you get {item:zombie_skin:5}.
+    - Return the skins to {npc:mina}, for {item:57:3350} and
+      {item:lesser_healing_potion:1}.
+  ru:
+    - Поговорите с {npc:mina}.
+    - Убивайте {npc:marsh_zombie_pointer} и {npc:marsh_zombie}, пока не получите
+      {item:zombie_skin:5}.
+    - |-
+      Вернитесь к {npc:mina}, и получите в награду: 
+      - {item:57:3350}
+      - {item:lesser_healing_potion:1}

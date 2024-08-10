@@ -1,0 +1,153 @@
+id: 384
+name:
+  en: Warehouse Keeper's Pastime
+  ru: Доказательство доблести
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: cliff
+level: 40
+reward:
+  items:
+    - 135
+    - 401
+    - 2463
+    - 2437
+    - 500
+    - 852
+    - 883
+    - 917
+    - 1888
+    - 1887
+    - 1894
+    - 952
+    - 1890
+    - 1893
+    - 951
+    - 4041
+    - 1892
+    - 951
+questItems:
+  - 5964
+walkthrough:
+  en:
+    - Talk to {npc:cliff}.
+    - >
+      Hunt these monsters to get {item:q_irongate_medal}:
+
+      - Tanor Canyon: {npc:nightmare_lord}, {npc:nightmare_keeper} and
+      {npc:nightmare_guide}.
+
+      - Dragon Valley: {npc:hunter_gargoyle}, {npc:dust_wind},
+      {npc:thunder_wyrm}, {npc:dragon_bearer_chief},
+      {npc:dragon_bearer_warrior}, and {npc:dragon_bearer_archer}.
+
+      - Skyshadow Meadow: {npc:connabi}, {npc:sanhidro}, {npc:cadeine},
+      {npc:innersen}, {npc:luminun}, and {npc:bartal}.
+
+      - Sea of Spores: {npc:rot_golem}, and {npc:giant_monstereye}.
+
+      - Forest of Outlaws: {npc:hunter_gargoyle}.
+
+      - Hunters Valley: {npc:weird_drake}.
+
+      - Blazing Swamp: {npc:tulben}, {npc:congerer_lord}, and {npc:congerer}.
+
+      - The Cemetery: {npc:grave_guard}.
+
+      - Forest of Mirrors: {npc:carinkain}.
+    - Return to {npc:cliff} or {npc:warehouse_chief_baxt} and play the game for
+      10 or 100 medals.
+    - You will be given a plate with closed digits. You have to open 6 digits
+      from 1 to 9. Reward will be given for 3 completely open lines (vertically,
+      horizontally or diagonally) or if you cannot open any line.
+    - |
+      Possible reward
+      Game for 10 medals (3 lines):
+      - {item:synthesis_cokes}
+      - {item:varnish_of_purity}
+      - {item:crafted_leather}
+      - {item:scrl_of_ench_am_c}
+      - {item:mithirl_alloy}
+      - {item:oriharukon}
+      - {item:scrl_of_ench_wp_c}
+
+      Game for 10 medals (0 lines):
+      - {item:mold_hardener}
+      - {item:scrl_of_ench_am_c}
+      - {item:blacksmith's_frame}
+      - {item:necklace_of_mermaid}
+
+      Game for 100 medals (3 lines):
+      - {item:aquastone_ring}
+      - {item:scrl_of_ench_wp_c}
+      - {item:moonstone_earing}
+      - {item:drake_leather_mail}
+
+      Game for 100 medals (0 lines):
+      - {item:scrl_of_ench_wp_c}
+      - {item:great_helmet}
+      - {item:drake_leather_boots} and {item:blessed_gloves}
+      - {item:samurai_longsword}
+  ru:
+    - Поговорите с {npc:cliff}.
+    - >
+      Убивайте следующих монстров, чтобы получать {item:q_irongate_medal}:
+
+      - Tanor Canyon: {npc:nightmare_lord}, {npc:nightmare_keeper} и
+      {npc:nightmare_guide}.
+
+      - Dragon Valley: {npc:hunter_gargoyle}, {npc:dust_wind},
+      {npc:thunder_wyrm}, {npc:dragon_bearer_chief},
+      {npc:dragon_bearer_warrior}, и {npc:dragon_bearer_archer}.
+
+      - Skyshadow Meadow: {npc:connabi}, {npc:sanhidro}, {npc:cadeine},
+      {npc:innersen}, {npc:luminun}, и {npc:bartal}.
+
+      - Sea of Spores: {npc:rot_golem}, и {npc:giant_monstereye}.
+
+      - Forest of Outlaws: {npc:hunter_gargoyle}.
+
+      - Hunters Valley: {npc:weird_drake}.
+
+      - Blazing Swamp: {npc:tulben}, {npc:congerer_lord}, и {npc:congerer}.
+
+      - The Cemetery: {npc:grave_guard}.
+
+      - Forest of Mirrors: {npc:carinkain}.
+    - Вернитесь к {npc:cliff} или {npc:warehouse_chief_baxt} и сыграйте в игру
+      за 10 или 100 медалей.
+    - Перед вами будет таблица с закрытыми цифрами. Вам необходимо открыть 6
+      цифр от 1 до 9. Вознаграждение будет выдано за 3 полностью открытые линии
+      (по вертикали, горизонтали или диагонали) или если вы не сможете открыть
+      ни одну линию.
+    - |
+      Возможные награды
+      Игра за 10 медалей (3 линии):
+      - {item:synthesis_cokes}
+      - {item:varnish_of_purity}
+      - {item:crafted_leather}
+      - {item:scrl_of_ench_am_c}
+      - {item:mithirl_alloy}
+      - {item:oriharukon}
+      - {item:scrl_of_ench_wp_c}
+
+      Игра за 10 медалей (0 линий):
+      - {item:mold_hardener}
+      - {item:scrl_of_ench_am_c}
+      - {item:blacksmith's_frame}
+      - {item:necklace_of_mermaid}
+
+      Игра за 100 медалей (3 линии):
+      - {item:aquastone_ring}
+      - {item:scrl_of_ench_wp_c}
+      - {item:moonstone_earing}
+      - {item:drake_leather_mail}
+
+      Игра за 100 медалей (0 линий):
+      - {item:scrl_of_ench_wp_c}
+      - {item:great_helmet}
+      - {item:drake_leather_boots} and {item:blessed_gloves}
+      - {item:samurai_longsword}

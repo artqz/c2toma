@@ -1,0 +1,75 @@
+id: 345
+name:
+  en: Method to Raise the Dead
+  ru: Воскрешение мертвых
+desc:
+  en: The soul you spoke with using the clay pot was not one of Dorothy's friends.
+  ru: Дороти просит Вас разобраться, что случилось с ее друзьями, пропавшими
+    вместе с сокровищами пиратов. Она боится, что они были съедены Кроками на
+    Шепчущих Полях, и хочет, чтобы Вы нашли их останки.
+type: repeatable
+requirements: {}
+startNPC: dorothy_the_locksmith
+level: 35
+reward:
+  items:
+    - 57
+    - 4310
+    - 3456
+questItems:
+  - 4274
+  - 4275
+  - 4276
+  - 4277
+  - 4278
+  - 4279
+  - 4280
+  - 4281
+  - 4282
+walkthrough:
+  en:
+    - Talk to {npc:dorothy_the_locksmith}.
+    - "Hunt {npc:crokian} and {npc:crokian_warrior} to collect all the five
+      pieces: {item:q0345_bone_arm}, {item:q0345_bone_spine},
+      {item:q0345_bone_skull}, {item:q0345_bone_rib} and {item:q0345_bone_leg}.
+      You will also get alot of {item:q0345_bone_useless}."
+    - Talk to {npc:dorothy_the_locksmith}.
+    - Talk to {npc:magister_xenovia}, buy the {item:q0345_calling_spirit_powder}
+      for {item:57:1000}.
+    - Talk to {npc:medium_jar} next to {npc:magister_xenovia}.
+    - >
+      Return to {npc:dorothy_the_locksmith}, and get random reward: 
+
+      - {item:bill_of_iason:3}, {item:57:5390} and {item:57:70} for each
+      {item:q0345_bone_useless}
+
+      - {item:bill_of_iason:5}, {item:57:3040} and {item:57:70} for each
+      {item:q0345_bone_useless}
+
+      - {item:q_loot_13}, {item:57:3040} and {item:57:70} for each
+      {item:q0345_bone_useless}
+    - "{item:q0351_bill_of_iason} can be traded with {npc:head_blacksmith_roman}
+      for adena of mats."
+  ru:
+    - Поговорите с {npc:dorothy_the_locksmith}.
+    - "Охотьтесь на {npc:crokian} и {npc:crokian_warrior} пока не соберете 5
+      частей: {item:q0345_bone_arm}, {item:q0345_bone_spine},
+      {item:q0345_bone_skull}, {item:q0345_bone_rib} и {item:q0345_bone_leg}.
+      Также вам будут выпадать {item:q0345_bone_useless}."
+    - Поговорите с {npc:dorothy_the_locksmith}.
+    - Поговорите с {npc:magister_xenovia}, и купите у нее
+      {item:q0345_calling_spirit_powder} за {item:57:1000}.
+    - Поговорите с {npc:medium_jar} возле {npc:magister_xenovia}.
+    - >
+      Вернитесь к {npc:dorothy_the_locksmith} и получите случайную награду: 
+
+      - {item:bill_of_iason:3}, {item:57:5390} и {item:57:70} за каждый
+      {item:q0345_bone_useless}
+
+      - {item:bill_of_iason:5}, {item:57:3040} и {item:57:70} за каждый
+      {item:q0345_bone_useless}
+
+      - {item:q_loot_13}, {item:57:3040} и {item:57:70} за каждый
+      {item:q0345_bone_useless}
+    - "{item:q0351_bill_of_iason} можно обменять у {npc:head_blacksmith_roman}
+      на адену и другие ресуры."

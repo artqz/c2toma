@@ -1,0 +1,43 @@
+id: 625
+name:
+  en: The Finest Ingredients - Part 2
+  ru: Лучшие ингредиенты – ч. 2
+desc:
+  en: ""
+  ru: ""
+type: "repeatable"
+party: true
+requirements: {}
+startNPC: 8521
+level: 73
+reward: { items: [4589, 4590, 4591, 4592, 4593, 4594] }
+questItems: [7210, 7209]
+walkthrough:
+  en:
+    - "Note. To do the this quest, you need a {item:q_soy_source_jar} {quest:624}."
+    - Talk to {npc:jeremy}.
+    - Talk to {npc:yetis_table}.
+    - Kill {npc:icicle_king_umpaloopa} to collect {item:q_special_yeti_meat:1}.
+
+    - |-
+      Return to {npc:jeremy}, and get one random reward:
+      - {item:dye_s2c2_c:5} 
+      - {item:dye_s2d2_c:5}
+      - {item:dye_c2s2_c:5}
+      - {item:dye_c2c2_c:5}
+      - {item:dye_d2s2_c:5}      
+      - {item:dye_d2c2_c:5}
+  ru:
+    - "Важно. Для выполнения квеста необходим предмет {item:q_soy_source_jar}, который можно получить за выполнение {quest:624}."
+    - Поговорите с {npc:jeremy}.
+    - Поговорите с {npc:yetis_table}.
+    - Убейте {npc:icicle_king_umpaloopa} и получите {item:q_special_yeti_meat:1}.
+
+    - |-
+      Вернитесь к {npc:jeremy} и получите одну случайную награду:
+      - {item:dye_s2c2_c:5} 
+      - {item:dye_s2d2_c:5}
+      - {item:dye_c2s2_c:5}
+      - {item:dye_c2c2_c:5}
+      - {item:dye_d2s2_c:5}      
+      - {item:dye_d2c2_c:5}

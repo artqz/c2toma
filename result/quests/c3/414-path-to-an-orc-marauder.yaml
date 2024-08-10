@@ -1,0 +1,62 @@
+id: 414
+name:
+  en: Path to an Orc Marauder
+  ru: Путь Налетчика
+desc:
+  en: Quest that must be fulfilled to change occupations to an Orc Marauder.
+    Prefect Karukia says that Orc Marauders must prove that their courage does
+    not fear even death and has absolute loyalty. First, to prove courage, you
+    must destroy the goblins that ruin this land.
+  ru: Чтобы стать Налетчиком, нужно выполнить это задание. Префект Карукия
+    говорит, что Вы должны истребить Гоблинов и Крысолюдов Курука, разоряющих
+    эту землю.
+type: one_time
+requirements:
+  occupation:
+    - orc_fighter
+startNPC: prefect_karukia
+level: 19
+reward:
+  exp: 3200
+  sp: 2360
+  items:
+    - 1592
+questItems:
+  - 1578
+  - 1579
+  - 1580
+  - 1581
+  - 1582
+  - 1583
+  - 1584
+  - 1585
+  - 1586
+  - 1587
+  - 1588
+  - 1589
+  - 1590
+  - 1591
+  - 1592
+walkthrough:
+  en:
+    - Talk to {npc:prefect_karukia} (Orc Village).
+    - Kill {npc:goblin_tomb_raider} to collect ~ {item:1578:25}, which summons a
+      {npc:kuruka_ratman_leader} and eliminates the blood.
+    - Kill {npc:kuruka_ratman_leader} to collect {item:1580:10}.
+    - Talk to {npc:prefect_karukia}.
+    - Kill {npc:orc_betrayer_umbar} to collect {item:head_of_betrayer}.
+    - Talk to {npc:prefect_kasman}, for a {item:1592}, {exp:3200} and {sp:2360}.
+    - When you are Level 20, go to {npc:high_prefect_osborn} (Gludin) to become
+      an Orc Raider.
+  ru:
+    - Поговорите с {npc:prefect_karukia} (Orc Village).
+    - Убивайте {npc:goblin_tomb_raider}, для получения {item:1578}, примерно
+      после получения {item:1578:25} будет появляться
+      {npc:kuruka_ratman_leader}.
+    - Убивайте {npc:kuruka_ratman_leader}, пока не получите {item:1580:10}.
+    - Поговорите с {npc:prefect_karukia}.
+    - Убейте {npc:orc_betrayer_umbar}, чтобы получить {item:head_of_betrayer}.
+    - Поговорите с {npc:prefect_kasman}, и получите в награду {item:1592},
+      {exp:3200} и {sp:2360}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к
+      {npc:high_prefect_osborn} (Gludin), чтобы стать Orc Raider.

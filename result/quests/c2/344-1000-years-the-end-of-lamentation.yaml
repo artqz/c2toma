@@ -1,0 +1,226 @@
+id: 344
+name:
+  en: 1000 years, the End of Lamentation
+  ru: "Тысяча Лет: Конец Плача"
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: watcher_antaras_gilmore
+level: 48
+reward:
+  items:
+    - 57
+    - 133
+    - 191
+    - 2437
+    - 885
+    - 951
+    - 952
+    - 4044
+    - 4043
+    - 4042
+    - 1879
+    - 1874
+    - 1887
+    - 1882
+    - 1881
+    - 1875
+questItems:
+  - 4269
+  - 4270
+  - 4271
+  - 4272
+  - 4273
+walkthrough:
+  en:
+    - Talk to {npc:watcher_antaras_gilmore}.
+    - Hunt {npc:cave_servant}, {npc:cave_servant_archer},
+      {npc:cave_servant_warrior}, {npc:cave_servant_captain} and
+      {npc:royal_cave_servant} to collect {item:q0344_left_thing_of_heroes}. The
+      more {item:q0344_left_thing_of_heroes} you collect, the better chance you
+      have of getting a quest item. Each {item:q0344_left_thing_of_heroes} gives
+      +0.1% to the chance of getting a quest item.
+    - >-
+      Talk to {npc:watcher_antaras_gilmore}, if you are lucky enough to get one
+      of the four quest items:
+
+      - {item:q0344_old_key}
+
+      - {item:q0344_old_hilt}
+
+      - {item:q0344_totem_necklace}
+
+      - {item:q0344_holy_symbol_of_light}
+
+
+      If you're unlucky, you'll get:
+
+      - {item:57:60} for each {item:q0344_left_thing_of_heroes}
+    - >-
+      If you receive {item:q0344_old_key}, you must take it to
+      {npc:sir_kristof_rodemai}. And get one random award:
+
+      - {item:cokes:55} - chance 40%
+
+      - {item:scrl_of_ench_wp_c} - chance 50%
+
+      - {item:ring_of_ages} - chance 10%
+
+
+      Return to {npc:watcher_antaras_gilmore}, and get:
+
+      - {item:57:50} for each previously brought
+      {item:q0344_left_thing_of_heroes}
+
+      - {item:57:1500}
+    - >-
+      If you receive {item:q0344_old_hilt}, you must take it to
+      {npc:duelist_kaien}. And get one random award:
+
+      - {item:oriharukon_ore:25} - chance 53%
+
+      - {item:varnish_of_purity:10} - chance 23%
+
+      - {item:scrl_of_ench_wp_c} - chance 23%
+
+      - {item:raid_sword} - chance 1%
+
+
+      Return to {npc:watcher_antaras_gilmore}, and get:
+
+      - {item:57:50} for each previously brought
+      {item:q0344_left_thing_of_heroes}
+
+      - {item:thons}
+    - >-
+      If you receive {item:q0344_totem_necklace}, you must take it to
+      {npc:high_prefect_garvarentz}. And get one random award:
+
+      - {item:leather:70} - chance 48%
+
+      - {item:coarse_bone_powder:50} - chance 50%
+
+      - {item:heavy_doom_hammer} - chance 2%
+
+
+      Return to {npc:watcher_antaras_gilmore}, and get:
+
+      - {item:57:50} for each previously brought
+      {item:q0344_left_thing_of_heroes}
+
+      - {item:asofe}
+    - >-
+      If you receive {item:q0344_holy_symbol_of_light}, you must take it to
+      {npc:highpriest_orven}. And get one random award:
+
+      - {item:stone_of_purity:19} - chance 50%
+
+      - {item:scrl_of_ench_am_c} - chance 20%
+
+      - {item:drake_leather_boots} - chance 30%
+
+
+      Return to {npc:watcher_antaras_gilmore}, and get:
+
+      - {item:57:50} for each previously brought
+      {item:q0344_left_thing_of_heroes}
+
+      - {item:enria}
+  ru:
+    - Поговорите с {npc:watcher_antaras_gilmore}.
+    - убивайте {npc:cave_servant}, {npc:cave_servant_archer},
+      {npc:cave_servant_warrior}, {npc:cave_servant_captain} и
+      {npc:royal_cave_servant}, чтобы получать
+      {item:q0344_left_thing_of_heroes}. Чем больше
+      {item:q0344_left_thing_of_heroes} вы соберете, тем больше шанс получить
+      квестовый предмет и продолжить квест. Каждый
+      {item:q0344_left_thing_of_heroes} прибавляет +0.1% к шансу получения
+      квестового предмета.
+    - >-
+      Поговорите с {npc:watcher_antaras_gilmore}, если вам повезет, то
+      выполучите один из четырех возможных квестовых предметов:
+
+      - {item:q0344_old_key}
+
+      - {item:q0344_old_hilt}
+
+      - {item:q0344_totem_necklace}
+
+      - {item:q0344_holy_symbol_of_light}
+
+
+      А если нет, то вы получите:
+
+      - {item:57:60} за каждый {item:q0344_left_thing_of_heroes}
+    - >-
+      Если вы получили {item:q0344_old_key}, отнесите его к
+      {npc:sir_kristof_rodemai}, и получите одну случайную награду:
+
+      - {item:cokes:55} - шанс получения 40%
+
+      - {item:scrl_of_ench_wp_c} - шанс получения 50%
+
+      - {item:ring_of_ages} - шанс получения 10%
+
+
+      Вернитесь к {npc:watcher_antaras_gilmore}, и дополнительно получите:
+
+      - {item:57:50} за каждый ранее принесенный
+      {item:q0344_left_thing_of_heroes}
+
+      - {item:57:1500}
+    - >-
+      Если вы получили {item:q0344_old_hilt}, отнесите его к
+      {npc:duelist_kaien}, и получите одну случайную награду:
+
+      - {item:oriharukon_ore:25} - шанс получения 53%
+
+      - {item:varnish_of_purity:10} - шанс получения 23%
+
+      - {item:scrl_of_ench_wp_c} - шанс получения 23%
+
+      - {item:raid_sword} - шанс получения 1%
+
+
+      Вернитесь к {npc:watcher_antaras_gilmore}, и дополнительно получите:
+
+      - {item:57:50} за каждый ранее принесенный
+      {item:q0344_left_thing_of_heroes}
+
+      - {item:thons}
+    - >-
+      Если вы получили {item:q0344_totem_necklace}, отнесите его к
+      {npc:high_prefect_garvarentz}, и получите одну случайную награду:
+
+      - {item:leather:70} - шанс получения 48%
+
+      - {item:coarse_bone_powder:50} - шанс получения 50%
+
+      - {item:heavy_doom_hammer} - шанс получения 2%
+
+
+      Вернитесь к {npc:watcher_antaras_gilmore}, и дополнительно получите:
+
+      - {item:57:50} за каждый ранее принесенный
+      {item:q0344_left_thing_of_heroes}
+
+      - {item:asofe}
+    - >-
+      Если вы получили {item:q0344_holy_symbol_of_light}, отнесите его к
+      {npc:highpriest_orven}, и получите одну случайную награду:
+
+      - {item:stone_of_purity:19} - шанс получения 50%
+
+      - {item:scrl_of_ench_am_c} - шанс получения 20%
+
+      - {item:drake_leather_boots} - шанс получения 30%
+
+
+      Вернитесь к {npc:watcher_antaras_gilmore}, и дополнительно получите:
+
+      - {item:57:50} за каждый ранее принесенный
+      {item:q0344_left_thing_of_heroes}
+
+      - {item:enria}

@@ -1,0 +1,26 @@
+id: 431
+name:
+  en: Wedding March
+  ru: Свадебный марш
+desc:
+  en: ""
+  ru: ""
+type: "repeatable"
+requirements: {}
+startNPC: 8042
+level: 38
+reward: { items: [7062] }
+questItems: [7540]
+walkthrough:
+  en:
+    - Talk to {npc:muzyk} (Heine).
+    - Kill {npc:lienrik}, and {npc:lienrik_lad} to collect {item:q_blue_crystal:50}.
+    - |-
+      Return to {npc:muzyk}, and get reward: 
+      - {item:echo_crystal_wedding:25}
+  ru:
+    - Поговорите с {npc:muzyk} (Heine).
+    - Убивайте {npc:lienrik} и {npc:lienrik_lad}, пока не получите {item:q_blue_crystal:50}.
+    - |-
+      Вернитесь к {npc:muzyk}, и получите в награду: 
+      - {item:echo_crystal_wedding:25}

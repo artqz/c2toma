@@ -1,0 +1,61 @@
+id: 354
+name:
+  en: Conquest of Alligator Island
+  ru: Покорение Острова Аллигаторов
+desc:
+  en: Warehouse Freightman Kluck of Heine intends to develop a free trade zone on
+    Alligator Island. He asks you to wipe out the evil creatures there and bring
+    him their teeth as proof. Take 100 or more proofs to him at once and he will
+    give you a bonus. Hunt crokian lads, dailaon lads, crokian lad warriors,
+    farhite lads, nos lads and swamp tribes.
+  ru: Рабочий Склада Клак из Хейна пытается создать свободную зону торговли на
+    Острове Аллигаторов. Он просит Вас разобраться с местными монстрами и
+    собрать их зубы как доказательство успешной работы. Соберите 100 или более
+    зубов, и Вы получите дополнительную награду.
+type: repeatable
+requirements: {}
+startNPC: warehouse_keeper_kluck
+level: 38
+reward:
+  items:
+    - 57
+    - 5915
+questItems:
+  - 5862
+walkthrough:
+  en:
+    - Talk to {npc:warehouse_keeper_kluck}.
+    - Hunt {npc:crokian_lad}, {npc:crokian_lad_warrior}, {npc:farhite_lad},
+      {npc:nos_lad} and {npc:tribe_of_swamp} to collect min
+      {item:croc_tooth:100}. You will also receive {item:mysterious_map_piece},
+      upon receipt of 10 pieces you can exchange for {item:pirates_treasure_map}
+      ({quest:383}).
+    - |-
+      Return to {npc:warehouse_keeper_kluck}, you will get:
+      If {item:croc_tooth} >= 100:
+      - {item:57:220} for each {item:croc_tooth}
+      - {item:57:10700}
+
+      If {item:croc_tooth} < 100:
+      - {item:57:220} for each {item:croc_tooth}
+      - {item:57:3100}
+
+      Or {item:pirates_treasure_map} for {item:mysterious_map_piece:10}.
+  ru:
+    - Поговорите с {npc:warehouse_keeper_kluck}.
+    - Охотьтесь на {npc:crokian_lad}, {npc:crokian_lad_warrior},
+      {npc:farhite_lad}, {npc:nos_lad} и {npc:tribe_of_swamp} пока не соберете
+      более {item:croc_tooth:100}. Также вы будете получать
+      {item:mysterious_map_piece}, которые можно объеденить в
+      {item:pirates_treasure_map}, карта нужна для {quest:383}.
+    - |-
+      Вернитесь к {npc:warehouse_keeper_kluck}, и получите награду:
+      Если {item:croc_tooth} более 100:
+      - {item:57:220} за каждый {item:croc_tooth}
+      - {item:57:10700}
+
+      Если {item:croc_tooth} меньше 100:
+      - {item:57:220} за каждый {item:croc_tooth}
+      - {item:57:3100}
+
+      Либо {item:pirates_treasure_map} за {item:mysterious_map_piece:10}.

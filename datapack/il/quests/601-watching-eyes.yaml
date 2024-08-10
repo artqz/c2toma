@@ -1,0 +1,33 @@
+id: 601
+name:
+  en: Watching Eyes
+  ru: Пристальный взгляд
+desc:
+  en: ""
+  ru: ""
+type: "repeatable"
+party: true
+requirements: {}
+startNPC: 8683
+level: 71
+reward: { items: [6699, 6698, 6700, 57], exp: 120000, sp: 10000 }
+questItems: [7188]
+walkthrough:
+  en:
+    - Talk to {npc:eye_of_argos} (Wall of Argos).
+    - Kill {npc:apostle_defender}, {npc:apostle_avenger}, {npc:apostle_avenger_a}, {npc:apostle_avenger_a}, and {npc:apostle_magistrate_a} to collect {item:q_proof_of_avenger:100}.
+    - |-
+      Return to {npc:eye_of_argos}, and get one random reward: 
+      - {item:sealed_ring_of_aurakyria_gem:5}, {item:57:90000}, {exp:120000} and {sp:57:10000}
+      - {item:sealed_sanddragon's_earing_piece:5}, {item:57:80000}, {exp:120000} and {sp:57:10000}
+      - {item:sealed_dragon_necklace_wire:5}, {item:57:40000}, {exp:120000} and {sp:57:10000}
+      - {item:57:230000}
+  ru:
+    - Поговорите с {npc:eye_of_argos} (Wall of Argos).
+    - Убивайте {npc:apostle_defender}, {npc:apostle_avenger}, {npc:apostle_avenger_a}, {npc:apostle_avenger_a}, и {npc:apostle_magistrate_a}, пока не получите {item:q_proof_of_avenger:100}.
+    - |-
+      Вернитесь к {npc:eye_of_argos} и получите одну случайную награду: 
+      - {item:sealed_ring_of_aurakyria_gem:5}, {item:57:90000}, {exp:120000} и {sp:57:10000}
+      - {item:sealed_sanddragon's_earing_piece:5}, {item:57:80000}, {exp:120000} и {sp:57:10000}
+      - {item:sealed_dragon_necklace_wire:5}, {item:57:40000}, {exp:120000} и {sp:57:10000}
+      - {item:57:230000}

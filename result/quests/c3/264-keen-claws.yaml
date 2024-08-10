@@ -1,0 +1,52 @@
+id: 264
+name:
+  en: Keen Claws
+  ru: Острые когти
+desc:
+  en: Trader Payne is famous for selling hand-made arrowheads, but he has recently
+    been requested to create a hooked one, made of animal claws. He asks for
+    help, and needs fifty wolf claws.
+  ru: Торговец Пейн специализируется на изготовлении наконечников стрел. Недавно
+    сэр Кайль Ночной Ястреб попросил его сделать крюкообразные стрелы из волчьих
+    когтей. Чтобы успеть вовремя, ему нужна помощь в сборе материалов. Соберите
+    и принесите ему волчьи когти.
+type: repeatable
+requirements: {}
+startNPC: paint
+level: 3
+reward:
+  items:
+    - 57
+    - 4633
+    - 5140
+    - 735
+    - 737
+    - 734
+questItems:
+  - 1367
+walkthrough:
+  en:
+    - Talk to {npc:paint}.
+    - Hunt {npc:goblin} and {npc:ashen_wolf} to collect {item:wolf_claw1:50}.
+    - |-
+      Return to {npc:paint}, to get one random item: 
+      - {item:red_soul_crystal_4}
+      - {item:57:2000}
+      - {item:comp_spiritshot_none}
+      - {item:swift_attack_potion} and {item:57:50}
+      - {item:scroll_of_resurrection}
+      - {item:quick_step_potion}
+      - {item:cloth_shoes} and {item:57:50}
+  ru:
+    - Поговорите с {npc:paint}.
+    - Убивайте {npc:goblin} и {npc:ashen_wolf}, пока не получите
+      {item:wolf_claw1:50}.
+    - |-
+      Вернитесь {npc:paint}, чтобы получить случайную награду: 
+      - {item:red_soul_crystal_4}
+      - {item:57:2000}
+      - {item:comp_spiritshot_none}
+      - {item:swift_attack_potion} and {item:57:50}
+      - {item:scroll_of_resurrection}
+      - {item:quick_step_potion}
+      - {item:cloth_shoes} and {item:57:50}

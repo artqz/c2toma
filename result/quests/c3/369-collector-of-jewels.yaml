@@ -1,0 +1,40 @@
+id: 369
+name:
+  en: Collector of Jewels
+  ru: Осколки Камня Стихии
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: magister_nell
+level: 25
+reward:
+  items:
+    - 57
+questItems:
+  - 5882
+  - 5883
+walkthrough:
+  en:
+    - Talk to {npc:magister_nell}.
+    - Hunt {npc:death_fire}, {npc:salamander_lakin} and {npc:salamander_rowin}
+      to collect {item:flair_shard:50}.
+    - Hunt {npc:roxide}, {npc:undine_lakin} and {npc:undine_rowin} to collect
+      {item:freezing_shard:50}.
+    - Return to {npc:magister_nell} and recieve {item:57:12500}. He offer to
+      "quit" or "continue" the quest.
+    - If you choose to continue, collect another {item:flair_shard:200} and
+      {item:freezing_shard:200}.
+    - Return to {npc:magister_nell} and recieve {item:57:63500}.
+  ru:
+    - Поговорите с  {npc:magister_nell}.
+    - Охотьтесь на {npc:death_fire}, {npc:salamander_lakin} и
+      {npc:salamander_rowin}, пока не получите {item:flair_shard:50}.
+    - Охотьтесь на {npc:roxide}, {npc:undine_lakin} и {npc:undine_rowin}, пока
+      не получите {item:freezing_shard:50}.
+    - Вернитесь к {npc:magister_nell} и получите {item:57:12500}. Также он
+      предложит закончить "quit" или продолжить "continue" квест.
+    - Если вы решите продолжить, тогда вам необходимо собрать еще
+      {item:flair_shard:200} и {item:freezing_shard:200}.
+    - Вернитесь к {npc:magister_nell} и получите в награду {item:57:63500}.

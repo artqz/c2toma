@@ -1,0 +1,113 @@
+id: 330
+name:
+  en: Adept of Taste
+  ru: Гурман
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: jonas
+level: 24
+reward:
+  items:
+    - 57
+    - 1455
+    - 1456
+    - 1457
+questItems:
+  - 1420
+  - 1421
+  - 1422
+  - 1423
+  - 1424
+  - 1425
+  - 1426
+  - 1427
+  - 1428
+  - 1429
+  - 1430
+  - 1431
+  - 1432
+  - 1433
+  - 1434
+  - 1435
+  - 1436
+  - 1437
+  - 1438
+  - 1439
+  - 1440
+  - 1441
+  - 1442
+  - 1443
+  - 1444
+  - 1445
+  - 1446
+  - 1447
+  - 1574
+  - 1575
+  - 1576
+  - 1577
+walkthrough:
+  en:
+    - Talk to {npc:jonas}
+    - Talk to {npc:sonia}.
+    - Kill {npc:mandragora_sprout}, {npc:manadragora}, {npc:mandragora_a} and
+      {npc:mandragora_b} to collect {item:red_mandragora_root:40} and
+      {item:white_mandragora_root:40}.
+    - Talk to {npc:sonia}.
+    - Talk to {npc:jaycub}.
+    - Kill {npc:bloody_bee} and {npc:weird_bee} to collect {item:nectar:20}
+      {item:royal_jelly:10}.
+    - Talk to {npc:jaycub}.
+    - Talk to {npc:pano}.
+    - Kill {npc:hobgoblin} to collect {item:hobgoblin_amulet:30}.
+    - Talk to {npc:pano}.
+    - Talk to {npc:glyvka}.
+    - Kill {npc:gray_ant} and {npc:crimson_ant} to collect
+      {item:green_marsh_moss:20} and {item:brown_marsh_moss:20}.
+    - Talk to {npc:glyvka}.
+    - Talk to {npc:rollant}.
+    - Kill {npc:monstereye_searcher} and {npc:monstereye_gazer} to collect
+      {item:monster_eye_body:30}.
+    - Talk to {npc:rollant}.
+    - Go to {npc:jonas}.
+    - Talk to {npc:magister_mirien}.
+    - |-
+      Return to {npc:jonas} and get random reward:
+      - {item:57:10000}
+      - {item:57:14870}
+      - {item:57:6490} and {item:jonas_salad_recipe}
+      - {item:57:12220} and {item:jonas_sauce_recipe}
+      - {item:57:16540} and {item:jonas_steak_recipe}
+  ru:
+    - Поговорите с {npc:jonas}
+    - Поговорите с {npc:sonia}.
+    - Убивайте {npc:mandragora_sprout}, {npc:manadragora}, {npc:mandragora_a} и
+      {npc:mandragora_b}, пока не получите {item:red_mandragora_root:40} и
+      {item:white_mandragora_root:40}.
+    - Поговорите с {npc:sonia}.
+    - Поговорите с {npc:jaycub}.
+    - Убивайте {npc:bloody_bee} и {npc:weird_bee}, пока не получите
+      {item:nectar:20} {item:royal_jelly:10}.
+    - Поговорите с {npc:jaycub}.
+    - Поговорите с {npc:pano}.
+    - Убивайте {npc:hobgoblin}, пока не получите {item:hobgoblin_amulet:30}.
+    - Поговорите с {npc:pano}.
+    - Поговорите с {npc:glyvka}.
+    - Убивайте {npc:gray_ant} и {npc:crimson_ant}, пока не получите
+      {item:green_marsh_moss:20} и {item:brown_marsh_moss:20}.
+    - Поговорите с {npc:glyvka}.
+    - Поговорите с {npc:rollant}.
+    - Убивайте {npc:monstereye_searcher} и {npc:monstereye_gazer}, пока не
+      получите {item:monster_eye_body:30}.
+    - Поговорите с {npc:rollant}.
+    - Поговорите с {npc:jonas}.
+    - Поговорите с {npc:magister_mirien}.
+    - |-
+      Вернитесь к {npc:jonas} и получите случайную награду:
+      - {item:57:10000}
+      - {item:57:14870}
+      - {item:57:6490} и {item:jonas_salad_recipe}
+      - {item:57:12220} и {item:jonas_sauce_recipe}
+      - {item:57:16540} и {item:jonas_steak_recipe}

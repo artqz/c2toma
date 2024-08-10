@@ -1,0 +1,94 @@
+id: 386
+name:
+  en: Stolen Dignity
+  ru: Поруганная честь
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: warehouse_keeper_romp
+level: 58
+reward:
+  items:
+    - 5529
+    - 5532
+    - 5533
+    - 5534
+    - 5535
+    - 5536
+    - 5537
+    - 5538
+    - 5539
+    - 5541
+    - 5542
+    - 5543
+    - 5544
+    - 5545
+    - 5546
+    - 5547
+    - 5548
+questItems: []
+walkthrough:
+  en:
+    - Talk to {npc:warehouse_keeper_romp}.
+    - Hunt {npc:glow_wisp}, {npc:marsh_predator}, {npc:hames_orc_sniper},
+      {npc:cursed_guardian}, {npc:hames_orc_chieftain}, {npc:wrecked_archer},
+      {npc:float_of_grave}, {npc:grave_predator}, {npc:crimson_drake},
+      {npc:kadios}, {npc:fallen_orc_shaman}, {npc:sharp_talon_tiger},
+      {npc:past_knight}, {npc:hungry_corpse}, {npc:bloody_lord},
+      {npc:bloody_ghost}, {npc:dark_guard}, {npc:blade_death},
+      {npc:spite_soul_leader}, {npc:spite_soul_wizard}, {npc:huge_footmark},
+      {npc:giant_shadow} to collect {item:q_stolen_inf_ore:100}.
+    - Return to {npc:warehouse_keeper_romp} and start to play. Pick 6 numbers!
+      If luck is on your side, you can get a random reward.
+    - |-
+      Random rewards:
+      - {item:dragon_slayer_edge} 4 - 10
+      - {item:meteor_shower_head} 4 - 10
+      - {item:elysian_head} 4 - 10
+      - {item:soul_bow_shaft} 4 - 10
+      - {item:carnium_bow_shaft} 4 - 10
+      - {item:bloody_orchid_head} 4 - 10
+      - {item:soul_separator_head} 4 - 10
+      - {item:dragon_grinder_edge} 4 - 10
+      - {item:blood_tornado_edge} 4 - 10
+      - {item:tallum_glaive_edge} 4 - 10
+      - {item:halbard_edge} 4 - 10
+      - {item:dasparion's_staff_head} 4 - 10
+      - {item:worldtree's_branch_head} 4 - 10
+      - {item:dark_legion's_edge_edge} 4 - 10
+      - {item:sword_of_miracle_edge} 4 - 10
+      - {item:elemental_sword_edge} 4 - 10
+      - {item:tallum_blade_edge} 4 - 10
+  ru:
+    - Поговорите с {npc:warehouse_keeper_romp}.
+    - Убивайте {npc:glow_wisp}, {npc:marsh_predator}, {npc:hames_orc_sniper},
+      {npc:cursed_guardian}, {npc:hames_orc_chieftain}, {npc:wrecked_archer},
+      {npc:float_of_grave}, {npc:grave_predator}, {npc:crimson_drake},
+      {npc:kadios}, {npc:fallen_orc_shaman}, {npc:sharp_talon_tiger},
+      {npc:past_knight}, {npc:hungry_corpse}, {npc:bloody_lord},
+      {npc:bloody_ghost}, {npc:dark_guard}, {npc:blade_death},
+      {npc:spite_soul_leader}, {npc:spite_soul_wizard}, {npc:huge_footmark},
+      {npc:giant_shadow}, пока не получите {item:q_stolen_inf_ore:100}.
+    - Вернитесь к {npc:warehouse_keeper_romp} и с играйте в игру. Если удача
+      будет на вашей стороне, то вы можете получить случайную награду.
+    - |-
+      Возможные награды:
+      - {item:dragon_slayer_edge} 4 - 10
+      - {item:meteor_shower_head} 4 - 10
+      - {item:elysian_head} 4 - 10
+      - {item:soul_bow_shaft} 4 - 10
+      - {item:carnium_bow_shaft} 4 - 10
+      - {item:bloody_orchid_head} 4 - 10
+      - {item:soul_separator_head} 4 - 10
+      - {item:dragon_grinder_edge} 4 - 10
+      - {item:blood_tornado_edge} 4 - 10
+      - {item:tallum_glaive_edge} 4 - 10
+      - {item:halbard_edge} 4 - 10
+      - {item:dasparion's_staff_head} 4 - 10
+      - {item:worldtree's_branch_head} 4 - 10
+      - {item:dark_legion's_edge_edge} 4 - 10
+      - {item:sword_of_miracle_edge} 4 - 10
+      - {item:elemental_sword_edge} 4 - 10
+      - {item:tallum_blade_edge} 4 - 10

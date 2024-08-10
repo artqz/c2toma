@@ -1,0 +1,48 @@
+id: 622
+name:
+  en: Delivery of Special Liquor
+  ru: Доставка ликера
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: jeremy
+level: 68
+reward:
+  items:
+    - 734
+    - 57
+    - 6849
+    - 6847
+    - 6851
+questItems:
+  - 7197
+  - 7198
+walkthrough:
+  en:
+    - Talk to {npc:jeremy}.
+    - Talk to {npc:beolin}.
+    - Talk to {npc:kuber}.
+    - Talk to {npc:crocus}.
+    - Talk to {npc:naff}.
+    - Talk to {npc:pulin}.
+    - |-
+      Return to {npc:jeremy}, and get one reward: 
+      - {item:quick_step_potion} and {item:57:18800}
+      - {item:rp_sealed_ring_of_aurakyria_i}
+      - {item:rp_sealed_sanddragon's_earing_i}
+      - {item:rp_sealed_dragon_necklace_i}
+  ru:
+    - Поговорите с {npc:jeremy}.
+    - Поговорите с {npc:beolin}.
+    - Поговорите с {npc:kuber}.
+    - Поговорите с {npc:crocus}.
+    - Поговорите с {npc:naff}.
+    - Поговорите с {npc:pulin}..
+    - |-
+      Вернитесь к {npc:jeremy} и получите одну случайную награду: 
+      - {item:quick_step_potion} и {item:57:18800}
+      - {item:rp_sealed_ring_of_aurakyria_i}
+      - {item:rp_sealed_sanddragon's_earing_i}
+      - {item:rp_sealed_dragon_necklace_i}

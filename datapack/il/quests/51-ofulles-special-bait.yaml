@@ -1,0 +1,26 @@
+id: 51
+name:
+  en: O'Fulle's Special Bait
+  ru: Особая Наживка О'Фулле
+desc:
+  en: ""
+  ru: ""
+type: "one_time"
+requirements: {}
+startNPC: 8572
+level: 36
+reward: { items: [7611] }
+questItems: [7622]
+walkthrough:
+  en:
+    - Talk to {npc:fisher_ofulle} (Giran).
+    - Kill {npc:crimson_bind} to collect {item:q_lost_bait_stuff:100}.
+    - |-
+      Return to {npc:fisher_ofulle}, and get reward: 
+      - {item:q_ice_lure:4}
+  ru:
+    - Поговорите с {npc:fisher_ofulle} (Giran).
+    - Убивайте {npc:crimson_bind}, пока не получите {item:q_lost_bait_stuff:100}.
+    - |-
+      Вернитесь к {npc:fisher_ofulle}, и получите в награду: 
+      - {item:q_ice_lure:4}

@@ -1,0 +1,40 @@
+id: 300
+name:
+  en: Hunting Leto Lizardman
+  ru: Охота на Ящеров Лито
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: rarshints
+level: 34
+reward:
+  items:
+    - 57
+    - 1867
+    - 1872
+questItems:
+  - 7139
+walkthrough:
+  en:
+    - Talk to {npc:rarshints} (Giran).
+    - Kill {npc:leto_lizardman}, {npc:leto_lizardman_archer},
+      {npc:leto_lizardman_soldier}, {npc:leto_lizardman_overlord}, and
+      {npc:leto_lizardman_warrior} to collect {item:q_bracelet_of_lizardman:60}.
+    - |-
+      Return to {npc:rarshints}, and get random reward: 
+      - {item:57:30000}
+      - {item:animal_skin:50}
+      - {item:animal_bone:50}
+  ru:
+    - Поговорите с {npc:rarshints} (Giran).
+    - Убивайте {npc:leto_lizardman}, {npc:leto_lizardman_archer},
+      {npc:leto_lizardman_soldier}, {npc:leto_lizardman_overlord}, и
+      {npc:leto_lizardman_warrior}, пока не получите
+      {item:q_bracelet_of_lizardman:60}.
+    - |-
+      Вернитесь к {npc:rarshints}, и получите одну случайную награду: 
+      - {item:57:30000}
+      - {item:animal_skin:50}
+      - {item:animal_bone:50}

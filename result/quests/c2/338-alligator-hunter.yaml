@@ -1,0 +1,38 @@
+id: 338
+name:
+  en: Alligator Hunter
+  ru: Охота на Аллигаторов
+desc:
+  en: Trader Enverun asks you to join him on a hunting excursion to Alligator
+    Island. He offers to pay you a reward for each alligator pelt.
+  ru: Торговец Энверун просит вас присоединиться к нему в охотничьей экскурсии на
+    остров Аллигаторов. Он предлагает выплатить вам вознаграждение за каждую
+    шкуру аллигатора.
+type: repeatable
+requirements: {}
+startNPC: trader_enverun
+level: 40
+reward:
+  items:
+    - 57
+questItems:
+  - 4337
+  - 4338
+  - 4339
+  - 4340
+  - 4341
+walkthrough:
+  en:
+    - Talk to {npc:trader_enverun}.
+    - Hunt {npc:crocodile}, {npc:crokian_lad}, {npc:dailaon_lad},
+      {npc:crokian_lad_warrior}, {npc:farhite_lad} and {npc:nos_lad} to collect
+      {item:q0338_crocodile_leather}.
+    - Return to {npc:trader_enverun} at any time to turn in
+      {item:q0338_crocodile_leather} for {item:57:40}.
+  ru:
+    - Поговорите с {npc:trader_enverun}.
+    - Убивайте {npc:crocodile}, {npc:crokian_lad}, {npc:dailaon_lad},
+      {npc:crokian_lad_warrior}, {npc:farhite_lad} и {npc:nos_lad} чтобы
+      получать {item:q0338_crocodile_leather}.
+    - Вернитесь к {npc:trader_enverun} в любое время, чтобы получить
+      {item:57:40} за каждую {item:q0338_crocodile_leather}.

@@ -1,0 +1,88 @@
+id: 416
+name:
+  en: Path to an Orc Shaman
+  ru: Путь Шамана
+desc:
+  en: Quest that must be fulfilled to change occupations to an Orc Shaman. Tataru
+    zu Hestui explains that in order to become an Orc Shaman, one must earn the
+    power to truly govern the spirits, and that the 'language of fire' is needed
+    in order to communicate with the spirits. Also, there are three items needed
+    in preparation to learning the language of fire. You must find the pelt of a
+    kasha bear, husk of a kasha blade spider, and a fiery egg from a scarlet
+    salamander.
+  ru: Чтобы стать Шаманом, нужно выполнить это задание. В первую очередь Вам
+    необходимо научиться управлять духами. Татару Зу Хестуи говорит, что для
+    этого Вам нужно выучить Язык Огня. Чтобы познать его, Вам необходимо найти
+    Шкуру Медведя Кхаши, Кожу Опасного Паука Кхаши и Огненное Яйцо Алой
+    Саламандры.
+type: one_time
+requirements:
+  occupation:
+    - orc_mage
+startNPC: tataru_zu_hestui
+level: 19
+reward:
+  exp: 3200
+  sp: 2600
+  items:
+    - 1631
+questItems:
+  - 1616
+  - 1617
+  - 1618
+  - 1618
+  - 1619
+  - 1619
+  - 1620
+  - 1620
+  - 1621
+  - 1622
+  - 1623
+  - 1624
+  - 1625
+  - 1626
+  - 1627
+  - 1628
+  - 1629
+  - 1630
+  - 1631
+walkthrough:
+  en:
+    - Talk to {npc:tataru_zu_hestui} (Orc Village).
+    - Kill {npc:kasha_bear} to collect {item:1617}.
+    - Kill {npc:kasha_blade_spider} to collect {item:1618}.
+    - Kill {npc:scarlet_salamander} to collect {item:1619}.
+    - Talk to {npc:tataru_zu_hestui}.
+    - Talk to {npc:hestui_totem_spirit}.
+    - Talk to {npc:tataru_zu_hestui}.
+    - Talk to {npc:seer_umos}.
+    - Kill {npc:grizzly_bear} to collect {item:1625:3}.
+    - Talk to {npc:seer_umos}.
+    - Talk to {npc:dudamara_totem_spirit}.
+    - Kill {npc:bind_poison_spider} and {npc:poison_spider}. Eventually, one
+      will escape as a {npc:durka_spirit}. Capture it.
+    - Kill {npc:durka_spirit} to collect {item:1628}.
+    - Talk to {npc:dudamara_totem_spirit}.
+    - Talk to {npc:seer_umos}, for a {item:1631}, {exp:3200} and {sp:2600}.
+    - When you are Level 20, go to {npc:high_prefect_osborn} (Gludin) to become
+      an Orc Shaman.
+  ru:
+    - Поговорите с {npc:tataru_zu_hestui} (Orc Village).
+    - Убивайте {npc:kasha_bear}, пока не получите {item:1617}.
+    - Убивайте {npc:kasha_blade_spider}, пока не получите {item:1618}.
+    - Убивайте {npc:scarlet_salamander}, пока не получите {item:1619}.
+    - Поговорите с {npc:tataru_zu_hestui}.
+    - Поговорите с {npc:hestui_totem_spirit}.
+    - Поговорите с {npc:tataru_zu_hestui}.
+    - Поговорите с {npc:seer_umos}.
+    - Убивайте {npc:grizzly_bear}, пока не получите {item:1625:3}.
+    - Поговорите с {npc:seer_umos}.
+    - Поговорите с {npc:dudamara_totem_spirit}.
+    - Убивайте {npc:bind_poison_spider} и {npc:poison_spider}, пока не появится
+      {npc:durka_spirit}.
+    - Убейте {npc:durka_spirit}, чтобы получить {item:1628}.
+    - Поговорите с {npc:dudamara_totem_spirit}.
+    - Вернитесь к {npc:seer_umos}, и получите в награду {item:1631}, {exp:3200}
+      и {sp:2600}.
+    - Когда вы достигнете 20-го уровня, отправляйтесь к
+      {npc:high_prefect_osborn} (Gludin), чтобы стать Orc Shaman.

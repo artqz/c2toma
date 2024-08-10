@@ -1,0 +1,78 @@
+id: 356
+name:
+  en: Dig Up the Sea of Spores!
+  ru: Исследование Моря Спор
+desc:
+  en: Magister Gauen of the Ivory Tower wishes to perform an in-depth study of the
+    Sea of Spores. He asks that you bring him 50 carnivore spores and 50
+    herbivorous spores. Perhaps he would settle for just 50 of one type... Hunt
+    rotting trees and spore zombies.
+  ru: Магистр Гейн из Башни Слоновой Кости хочет углубиться в изучение Моря Спор.
+    Он хочет, чтобы Вы принесли ему 50 Спор Хищников и 50 Спор Травоядных.
+type: repeatable
+requirements: {}
+startNPC: magister_gauen
+level: 43
+reward:
+  exp: 35000
+  sp: 2600
+  items:
+    - 57
+questItems:
+  - 5865
+  - 5866
+walkthrough:
+  en:
+    - Talk to {npc:magister_gauen}.
+    - Hunt {npc:rot_tree} and {npc:spore_zombie} to collect
+      {item:herbivorous_spore:50} and {item:carnivore_spore:50} (Perhaps he
+      would settle for just 50 of one type).
+    - >-
+      Go back to {npc:magister_gauen} for the reward
+
+      If you have collected {item:herbivorous_spore:50} and
+      {item:carnivore_spore:50}, then you can get a choice:
+
+      - a random amount of adena ({item:57:10400}, {item:57:20950},
+      {item:57:44000}), when you select "All of that trouble and you aren't even
+      going to look at them?"
+
+      - {exp:35000}, {sp:2600}, when you select "Put down the pouches"
+
+
+      If you have collected only {item:herbivorous_spore:50}, then you will
+      receive:
+
+      - {exp:24500}
+
+
+      If you have collected only {item:carnivore_spore:50}, then you will
+      receive:
+
+      - {sp:1820}
+  ru:
+    - Поговорите с {npc:magister_gauen}.
+    - Охотьтесь на {npc:rot_tree} и {npc:spore_zombie}, чтобы получить
+      {item:herbivorous_spore:50} и {item:carnivore_spore:50} (Можно принести
+      споры одного вида).
+    - >-
+      Вернитесь к {npc:magister_gauen} за наградой
+
+      Если вы собрали {item:herbivorous_spore:50} и {item:carnivore_spore:50},
+      то можете получить на выбор:
+
+      - случайное количество адены ({item:57:10400}, {item:57:20950},
+      {item:57:44000}), при выборе "All of that trouble and you aren't even
+      going to look at them?"
+
+      - {exp:35000}, {sp:2600}, при выборе "Put down the pouches"
+
+
+      Если вы собрали только {item:herbivorous_spore:50}, то получите:
+
+      - {exp:24500}
+
+
+      Если вы собрали только {item:carnivore_spore:50}, то получите:
+
+      - {sp:1820}

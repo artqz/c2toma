@@ -1,0 +1,124 @@
+id: 377
+name:
+  en: Exploration of Giants Cave, Part 2
+  ru: Исследование Пещеры Гигантов, ч. 2
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements:
+  items:
+    - 5892
+startNPC: sobling
+level: 57
+reward:
+  items:
+    - 5336
+    - 5420
+    - 5338
+    - 5422
+questItems: []
+walkthrough:
+  en:
+    - Note. To do the this quest, you need a {item:q_ancient_lang_dic2}
+      {quest:376}.
+    - Talk to {npc:sobling}.
+    - Hunt {npc:lesser_giant_soldier}, {npc:lesser_giant_scout},
+      {npc:lesser_giant_mage} and {npc:lesser_giant_elder} to collect
+      {item:q_giants_book}.
+    - >-
+      When using the {item:q_giants_book} you can get:
+
+      {item:q_giants_culture1}
+
+      {item:q_giants_culture2}
+
+      {item:q_giants_culture3}
+
+      {item:q_giants_culture4}
+
+      {item:q_giants_culture5}
+
+
+      {item:q_giants_science_basis1}
+
+      {item:q_giants_science_basis2}
+
+      {item:q_giants_science_basis3}
+
+      {item:q_giants_science_basis4}
+
+      {item:q_giants_science_basis5}
+
+
+      {item:q_giants_love_letter} and {item:q_giants_scribble} can be discarded
+      or sold to the store.
+    - >-
+      Once you have collected all the parts of one of the kits, take them to
+      {npc:sobling}, he will exchange them for a recipe for A grade armor:
+
+
+      Almanac: Titan Culture, Chapter 1-5
+
+      {item:rp_sealed_majestic_platte_armor_i}
+
+      {item:rp_sealed_armor_of_nightmare_i}
+
+
+      Book: Giants Science & Technology, Chapter 1-5      
+
+      {item:rp_sealed_majestic_leather_mail_i}
+
+      {item:rp_sealed_leather_mail_of_nightmare_i}
+  ru:
+    - Важно. Чтобы выполнить этот квест, необходимо иметь в инвентаре предмет
+      {item:q_ancient_lang_dic2}, который можно получить за прохождение
+      {quest:376}.
+    - Поговорите с {npc:sobling}.
+    - Охотьтесь на  {npc:lesser_giant_soldier}, {npc:lesser_giant_scout},
+      {npc:lesser_giant_mage} и {npc:lesser_giant_elder}, чтобы получать
+      {item:q_giants_book}.
+    - >-
+      При использовании {item:q_giants_book} вы пожете получить:
+
+      {item:q_giants_culture1}
+
+      {item:q_giants_culture2}
+
+      {item:q_giants_culture3}
+
+      {item:q_giants_culture4}
+
+      {item:q_giants_culture5}
+
+
+      {item:q_giants_science_basis1}
+
+      {item:q_giants_science_basis2}
+
+      {item:q_giants_science_basis3}
+
+      {item:q_giants_science_basis4}
+
+      {item:q_giants_science_basis5}
+
+
+      {item:q_giants_love_letter} и {item:q_giants_scribble} можно выкидывать,
+      либо продавать в магазин.
+    - >-
+      Собрав все детали одного из наборов, отнесите их к {npc:sobling}, он
+      обменяет их на рецепт A grade брони:
+
+
+      Almanac: Titan Culture, Chapter 1-5
+
+      {item:rp_sealed_majestic_platte_armor_i}
+
+      {item:rp_sealed_armor_of_nightmare_i}
+
+
+      Book: Giants Science & Technology, Chapter 1-5
+
+      {item:rp_sealed_majestic_leather_mail_i}
+
+      {item:rp_sealed_leather_mail_of_nightmare_i}

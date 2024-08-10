@@ -1,0 +1,41 @@
+id: 156
+name:
+  en: Millennium Love
+  ru: Вечная любовь
+desc:
+  en: In the temple of Talking Island the Elf, Rylin, has lived over a thousand
+    years since she lost her lover, Theon, in the war against Beleth. Because
+    she has not found his body, she still believes he is alive, and on your way
+    to Gludio she asks you to find the whereabouts of her lover.
+  ru: Уже много лет Лилит ждет своего возлюбленного в храме на Говорящем Острове.
+    Ее любовь, Теон, пропал без вести в войне против Белефа. Так как его тело не
+    было найдено, она не может смириться с его смертью. Она просит Вас поискать
+    его в Глудине.
+type: one_time
+requirements: {}
+startNPC: rylith
+level: 15
+reward:
+  exp: 3000
+  items:
+    - 5250
+questItems:
+  - 1022
+  - 1023
+walkthrough:
+  en:
+    - Talk to {npc:rylith}. She gives you {item:1022}.
+    - Take the boat to Gludin.
+    - Talk to {npc:master_baenedes}. He asks you deliver a {item:1023} to
+      {npc:rylith}.
+    - At some point return to Talking Island.
+    - Deliver the Diary to {npc:rylith}, for a {exp:3000} and
+      {item:adv_comp_soulshot_none:1}.
+  ru:
+    - Поговорите с {npc:rylith}. Она даст вам {item:1022}.
+    - Отправляйтесь в Гледин.
+    - Поговорите с {npc:master_baenedes}. Он просит доставить вас {item:1023} к
+      {npc:rylith}.
+    - Вернитесь в Деревню говорящего острова.
+    - Вернитесь к {npc:rylith} с  {item:1023}, и получите в награду {exp:3000} и
+      {item:adv_comp_soulshot_none:1}.

@@ -1,0 +1,44 @@
+id: 274
+name:
+  en: Skirmish with the Werewolves
+  ru: Стычка с оборотнями
+desc:
+  en: War has been declared against the fearless race, the maraku werewolves, who
+    dared to kill the messenger that the Paagrio Lord sent, then return the
+    messenger’s head as an answer. Per Prefect Brukurse’s orders, slay the
+    maraku werewolves and bring back forty of their heads.
+  ru: Оборотни Мараку посмели убить посланника Лорда Орков и прислали нам его
+    голову! За это мы объявляем им войну! Префект Брукерс просит Вас убить
+    Оборотней Мараку и принести 40 их голов.
+type: repeatable
+requirements:
+  races:
+    - orc
+startNPC: prefect_brukurse
+level: 9
+reward:
+  items:
+    - 57
+questItems:
+  - 1477
+walkthrough:
+  en:
+    - Talk to {npc:prefect_brukurse}.
+    - Hunt {npc:maraku_werewolf} and {npc:maraku_werewolf_chief} to collect
+      {item:1477:40}. You may also earn {item:1501} when on this quest, which
+      sell for {item:57:600} each.
+    - |-
+      Give the heads to {npc:prefect_brukurse}, and get it as a reward: 
+      - {item:57:2300}
+      - {item:57:30} for each {item:maraku_werewolf_head}
+      - {item:57:600} for each {item:maraku_wolfmen_totem}
+  ru:
+    - Поговорите с {npc:prefect_brukurse}.
+    - Убивайте {npc:maraku_werewolf} и {npc:maraku_werewolf_chief}, пока не
+      получите {item:1477:40}. Также иногда вы будете получать
+      {item:maraku_wolfmen_totem}.
+    - |-
+      Вернитесь к {npc:prefect_brukurse}, и получите в награду: 
+      - {item:57:2300}
+      - {item:57:30} for each {item:maraku_werewolf_head}
+      - {item:57:600} for each {item:maraku_wolfmen_totem}

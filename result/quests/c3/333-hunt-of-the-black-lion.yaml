@@ -1,0 +1,421 @@
+id: 333
+name:
+  en: Hunt of the Black Lion
+  ru: Охота Черного Льва
+desc:
+  en: Sophia, the captain of the Black Lion, recommends that you participate in
+    the mission to eradicate Dion Castle Town of monsters. Receive Sophia's
+    mission and carry out the task of eliminating the undead of the Execution
+    Ground, the Ol Mahums of the Partisan Hideaway, the Delu lizardmen of the
+    southern shores, or the marsh stakato of the Cruma Marshlands.
+  ru: София, Капитан наемников Черного Льва, просит помочь очистить окрестности
+    Диона от монстров.
+type: repeatable
+requirements:
+  item:
+    - black_lion_mark
+startNPC: sophia
+level: 25
+reward:
+  items:
+    - 57
+    - 1061
+    - 1463
+    - 2510
+    - 736
+    - 735
+    - 3444
+    - 3445
+    - 3446
+    - 3447
+    - 3448
+    - 3449
+    - 3450
+    - 3451
+    - 3452
+    - 3453
+    - 3454
+    - 3455
+    - 3456
+    - 3457
+    - 3458
+    - 3459
+    - 3460
+    - 3462
+    - 3463
+    - 3464
+    - 3465
+questItems:
+  - 3671
+  - 3672
+  - 3673
+  - 3674
+  - 3675
+  - 3676
+  - 3677
+  - 3848
+  - 3849
+  - 3850
+  - 3851
+walkthrough:
+  en:
+    - Note. To do the this quest, you need a {item:black_lion_mark} {quest:326}.
+    - >-
+      Talk to {npc:sophia} in the Town of Dion.
+
+      Hunt the undead: Execution Grounds: Go to the Execution Grounds, hunt
+      {npc:specter}, {npc:lemures}, {npc:neer_crawler_frak}, {npc:neer_crawler},
+      {npc:strain}, {npc:ghoul} to collect {item:q_undead_ash} and
+      {item:q_cargo_box1}.
+
+      Hunt Ol Mahums: Partisan's Hideaway: Go to Partisan's Hideaway, hunt
+      {npc:ol_mahum_guerilla}, {npc:ol_mahum_raider}, {npc:ol_mahum_sniper},
+      {npc:ol_mahum_sergeant}, {npc:ol_mahum_chief_leader} to collect
+      {item:q_bloodyaxe_insignia} and {item:q_cargo_box2}.
+
+      Hunt Delu Lizardmen: Southern coast: Go to Floran Agricultural Area, hunt
+      {npc:delu_lizardman}, {npc:delu_lizardman_scout},
+      {npc:delu_lizardman_warrior} to collect {item:q_delu_lizardman_fang} and
+      {item:q_cargo_box3}.
+
+      Hunt Marsh Stakatos: Cruma Marshlands: Go to Cruma Marshlands, hunt
+      {npc:marsh_stakato}, {npc:marsh_stakato_worker},
+      {npc:marsh_stakato_soldier}, {npc:marsh_stakato_drone} and
+      {npc:marsh_stakato_marquess} to collect {item:q_stakato_talon} and
+      {item:q_cargo_box4}.
+    - >-
+      Talk to {npc:sophia} in the Town of Dion and get the reward:
+
+      {item:q_stakato_talon} - {item:57:35}.
+
+      {item:q_delu_lizardman_fang} - {item:57:35}.
+
+      {item:q_bloodyaxe_insignia} - {item:57:35}.
+
+      {item:q_undead_ash} - {item:57:35}.
+
+
+      Reward for parts
+
+      If sum {item:q_stakato_talon}, {item:q_delu_lizardman_fang},
+      {item:q_bloodyaxe_insignia} and {item:q_undead_ash} = 20-49 units, you get
+      {item:q_lions_claw:1}.
+
+
+      If sum {item:q_stakato_talon}, {item:q_delu_lizardman_fang},
+      {item:q_bloodyaxe_insignia} and {item:q_undead_ash} = 50-99 units, you get
+      {item:q_lions_claw:2}.
+
+
+      If sum {item:q_stakato_talon}, {item:q_delu_lizardman_fang},
+      {item:q_bloodyaxe_insignia} and {item:q_undead_ash} > 100 units, you get
+      {item:q_lions_claw:3}.
+
+
+      If you have {item:q_lions_claw:10} and {item:q_lions_eye} < 4, you get
+      {item:q_lions_eye:1} and random reward:
+
+      - {item:healing_potion:20}
+
+      - {item:soulshot_d:100} 
+
+      - {item:spiritshot_d:50}
+
+      - {item:scroll_of_escape:20}
+
+      - {item:swift_attack_potion:3}
+
+
+      If you have {item:q_lions_claw:10} and {item:q_lions_eye} = 4-7, you get
+      {item:q_lions_eye:1} and random reward:
+
+      - {item:healing_potion:25} 
+
+      - {item:soulshot_d:200} 
+
+      - {item:spiritshot_d:100}
+
+      - {item:scroll_of_escape:20}
+
+      - {item:swift_attack_potion:3}
+
+
+      If you have {item:q_lions_claw:10} and {item:q_lions_eye} >= 8, you get
+      random reward:
+
+      - {item:healing_potion:50}
+
+      - {item:soulshot_d:400}
+
+      - {item:spiritshot_d:200}
+
+      - {item:scroll_of_escape:30}
+
+      - {item:swift_attack_potion:4}
+    - >-
+      Talk to {npc:morgan} and get the reward:
+
+      If you have 1 box of {item:q_cargo_box1}, {item:q_cargo_box2},
+      {item:q_cargo_box3}, {item:q_cargo_box4} and {item:q_guild_coin} < 40, you
+      get:
+
+      - {item:57:100} 
+
+      - {item:q_guild_coin:1}
+
+
+      If you have 1 box of {item:q_cargo_box1}, {item:q_cargo_box2},
+      {item:q_cargo_box3}, {item:q_cargo_box4} and {item:q_guild_coin} = 40-79,
+      you get:
+
+      - {item:57:200}
+
+      - {item:q_guild_coin:1}
+
+
+      If you have 1 box of {item:q_cargo_box1}, {item:q_cargo_box2},
+      {item:q_cargo_box3}, {item:q_cargo_box4} and {item:q_guild_coin} >= 80,
+      you get:
+
+      - {item:57:300} 
+
+      - {item:q_guild_coin:1}
+    - >-
+      Talk to {npc:redfoot} to open the {item:q_cargo_box1} or
+      {item:q_cargo_box2} or {item:q_cargo_box3} or {item:q_cargo_box4} for
+      {item:57:650} to get random reward:
+
+      - {item:q_loot_1}
+
+      - {item:q_loot_2}
+
+      - {item:q_loot_3}
+
+      - {item:q_loot_4}
+
+      - {item:q_loot_5}
+
+      - {item:q_loot_6}
+
+      - {item:q_loot_7}
+
+      - {item:q_loot_8}
+
+      - {item:q_loot_9}
+
+      - {item:q_loot_10}
+
+      - {item:q_loot_11}
+
+      - {item:q_loot_12}
+
+      - {item:q_loot_13}
+
+      - {item:q_loot_14}
+
+      - {item:q_loot_15}
+
+      - {item:q_loot_16}
+
+      - {item:q_loot_17}
+
+      - {item:q_loot_19}
+
+      - {item:q_loot_20}
+
+      - {item:q_loot_21}
+
+      - {item:q_loot_22}
+
+
+      Talk to {npc:blacksmith_rupio} to exchange {item:q_loot_14},
+      {item:q_loot_15}, {item:q_loot_16} and {item:q_loot_17} for
+      {item:q_loot_18} (chance 50%). You can give {item:q_loot_18} to
+      {npc:undres} for {item:57:30000} or sell to merchants for {item:57:10000}.
+
+
+      Talk to {npc:blacksmith_rupio} to exchange {item:q_loot_19},
+      {item:q_loot_20}, {item:q_loot_21} and {item:q_loot_22} for
+      {item:q_loot_23} (chance 50%). You can give {item:q_loot_23} to
+      {npc:first_elder_lockirin} for {item:57:30000} or sell to merchants for
+      {item:57:10000}.
+  ru:
+    - Важно. Для выполнения квеста необходим предмет {item:black_lion_mark},
+      который можно получить за выполнение {quest:326}.
+    - >-
+      Поговорите с {npc:sophia}.
+
+      Убивайте {npc:specter}, {npc:lemures}, {npc:neer_crawler_frak},
+      {npc:neer_crawler}, {npc:strain}, {npc:ghoul}, чтобы получать
+      {item:q_undead_ash} и {item:q_cargo_box1}.
+
+      Убивайте {npc:ol_mahum_guerilla}, {npc:ol_mahum_raider},
+      {npc:ol_mahum_sniper}, {npc:ol_mahum_sergeant},
+      {npc:ol_mahum_chief_leader}, чтобы получать {item:q_bloodyaxe_insignia} и
+      {item:q_cargo_box2}.
+
+      Убивайте {npc:delu_lizardman}, {npc:delu_lizardman_scout},
+      {npc:delu_lizardman_warrior}, чтобы получать {item:q_delu_lizardman_fang}
+      и {item:q_cargo_box3}.
+
+      Убивайте {npc:marsh_stakato}, {npc:marsh_stakato_worker},
+      {npc:marsh_stakato_soldier}, {npc:marsh_stakato_drone} и
+      {npc:marsh_stakato_marquess}, чтобы получать {item:q_stakato_talon} и
+      {item:q_cargo_box4}.
+    - >-
+      Поговорите с {npc:sophia} чтобы получить награды:
+
+      - {item:57:35} за каждый {item:q_stakato_talon}
+
+      - {item:57:35} за каждый {item:q_delu_lizardman_fang}
+
+      - {item:57:35} за каждый {item:q_bloodyaxe_insignia}
+
+      - {item:57:35} за каждый {item:q_undead_ash}
+
+
+      Дополнительная награда
+
+      Если количество {item:q_stakato_talon}, {item:q_delu_lizardman_fang},
+      {item:q_bloodyaxe_insignia} и {item:q_undead_ash} равно 20-49, то вы
+      получите {item:q_lions_claw:1}.
+
+
+      Если количество {item:q_stakato_talon}, {item:q_delu_lizardman_fang},
+      {item:q_bloodyaxe_insignia} и {item:q_undead_ash} равно 50-99, то вы
+      получите {item:q_lions_claw:2}.
+
+
+      Если количество {item:q_stakato_talon}, {item:q_delu_lizardman_fang},
+      {item:q_bloodyaxe_insignia} и {item:q_undead_ash} более 100, то вы
+      получите {item:q_lions_claw:3}.
+
+
+      Если вы соберете {item:q_lions_claw:10} и {item:q_lions_eye} менее 4, то
+      вы получите {item:q_lions_eye:1} и случайную награду:
+
+      - {item:healing_potion:20}
+
+      - {item:soulshot_d:100} 
+
+      - {item:spiritshot_d:50}
+
+      - {item:scroll_of_escape:20}
+
+      - {item:swift_attack_potion:3}
+
+
+      Если вы соберете {item:q_lions_claw:10} и {item:q_lions_eye} от 4 до 7, то
+      вы получите {item:q_lions_eye:1} и случайную награду:
+
+      - {item:healing_potion:25} 
+
+      - {item:soulshot_d:200} 
+
+      - {item:spiritshot_d:100}
+
+      - {item:scroll_of_escape:20}
+
+      - {item:swift_attack_potion:3}
+
+
+      Если вы соберете {item:q_lions_claw:10} и {item:q_lions_eye} более 8, то
+      вы получите одну случайную награду:
+
+      - {item:healing_potion:50}
+
+      - {item:soulshot_d:400}
+
+      - {item:spiritshot_d:200}
+
+      - {item:scroll_of_escape:30}
+
+      - {item:swift_attack_potion:4}
+    - >-
+      Поговорите с {npc:morgan} и получите награду:
+
+      Если вы принесете любой бокс из {item:q_cargo_box1}, {item:q_cargo_box2},
+      {item:q_cargo_box3}, {item:q_cargo_box4} и {item:q_guild_coin} менее 40,
+      вы получите:
+
+      - {item:57:100} 
+
+      - {item:q_guild_coin:1}
+
+
+      Если вы принесете любой бокс из  {item:q_cargo_box1}, {item:q_cargo_box2},
+      {item:q_cargo_box3}, {item:q_cargo_box4} и {item:q_guild_coin} от 40 до
+      79, вы получите:
+
+      - {item:57:200}
+
+      - {item:q_guild_coin:1}
+
+
+      Если вы принесете любой бокс из {item:q_cargo_box1}, {item:q_cargo_box2},
+      {item:q_cargo_box3}, {item:q_cargo_box4} и {item:q_guild_coin} более 80,
+      вы получите:
+
+      - {item:57:300} 
+
+      - {item:q_guild_coin:1}
+    - >-
+      Поговорите с {npc:redfoot} чтобы открыть любой бокс из
+      {item:q_cargo_box1}, {item:q_cargo_box2}, {item:q_cargo_box3},
+      {item:q_cargo_box4} за {item:57:650} и получить случайную награду:
+
+      - {item:q_loot_1}
+
+      - {item:q_loot_2}
+
+      - {item:q_loot_3}
+
+      - {item:q_loot_4}
+
+      - {item:q_loot_5}
+
+      - {item:q_loot_6}
+
+      - {item:q_loot_7}
+
+      - {item:q_loot_8}
+
+      - {item:q_loot_9}
+
+      - {item:q_loot_10}
+
+      - {item:q_loot_11}
+
+      - {item:q_loot_12}
+
+      - {item:q_loot_13}
+
+      - {item:q_loot_14}
+
+      - {item:q_loot_15}
+
+      - {item:q_loot_16}
+
+      - {item:q_loot_17}
+
+      - {item:q_loot_19}
+
+      - {item:q_loot_20}
+
+      - {item:q_loot_21}
+
+      - {item:q_loot_22}
+
+
+      Поговорите с {npc:blacksmith_rupio}, чтобы обменять {item:q_loot_14},
+      {item:q_loot_15}, {item:q_loot_16} и {item:q_loot_17} на {item:q_loot_18}
+      (шанс успеха 50%). Вы можете отнести {item:q_loot_18} к {npc:undres} и
+      получить {item:57:30000}, либо продать в магазин за {item:57:10000}.
+
+
+      Поговорите с {npc:blacksmith_rupio}, чтобы обменять {item:q_loot_19},
+      {item:q_loot_20}, {item:q_loot_21} и {item:q_loot_22} на {item:q_loot_23}
+      (шанс успеха 50%). Вы можете отнести {item:q_loot_23} к
+      {npc:first_elder_lockirin} и получить {item:57:30000}, либо продать в
+      магазин за {item:57:10000}.
+    - При завершении квеста вы получите {item:57:12400}.

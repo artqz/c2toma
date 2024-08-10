@@ -1,0 +1,425 @@
+id: 372
+name:
+  en: Legacy of Insolence
+  ru: Наследие безумия
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: whouse_keeper_walderal
+level: 59
+reward:
+  items:
+    - 57
+    - 5496
+    - 5508
+    - 5525
+    - 5368
+    - 5392
+    - 5426
+    - 5497
+    - 5509
+    - 5526
+    - 5370
+    - 5394
+    - 5428
+    - 5502
+    - 5514
+    - 5527
+    - 5380
+    - 5404
+    - 5430
+    - 5503
+    - 5515
+    - 5528
+    - 5382
+    - 5406
+    - 5432
+questItems: []
+walkthrough:
+  en:
+    - Talk to {npc:whouse_keeper_walderal}.
+    - >-
+      Obtaining materials:
+
+      Kill {npc:corrypt_sage}, {npc:erin_ediunce} and {npc:hallates_inspector}
+      to collect {item:ancient_papyrus1}.
+
+      Kill {npc:platinum_tribe_lord} to collect {item:ancient_papyrus2}.
+
+      Kill {npc:messenger_angel} to collect {item:ancient_papyrus4}.
+
+      Kill {npc:plat_protect_warlord} to collect {item:ancient_papyrus3}.
+    - |-
+      When using the Ancient papyrus, you can get
+      {item:ancient_papyrus1}:
+      - {item:tower_blueprint6} - 2,00% 
+      - {item:tower_blueprint7} - 2,00%
+      - {item:ancient_epic_part1} - 1,60%
+      - {item:ancient_epic_part2} - 11,20%
+      - {item:ancient_epic_part3} - 8,00%
+      - {item:ancient_epic_part4} - 8,00%
+      - {item:ancient_epic_part5} - 2,00%
+      - {item:imperial_genealogy1} - 1,60%
+      - {item:imperial_genealogy2} - 11,20%
+      - {item:imperial_genealogy3} - 2,00%
+      - {item:revelation_avarice} - 1,80%
+      - {item:revelation_awakening} - 8,00%
+      - {item:revelation_calamity} - 8,00%
+      - {item:revelation_descent} - 2,00%
+      - {item:revelation_gnosis} - 11,40%
+      - {item:revelation_strife} - 11,20%
+      - {item:revelation_vengeance} - 8,00%
+
+      {item:ancient_papyrus2}:
+      - {item:tower_blueprint6} - 4,00%
+      - {item:tower_blueprint7} - 4,00%
+      - {item:ancient_epic_part1} - 6,60%
+      - {item:ancient_epic_part2} - 10,50%
+      - {item:ancient_epic_part3} - 3,60%
+      - {item:ancient_epic_part4} - 3,60%
+      - {item:ancient_epic_part5} - 4,00%
+      - {item:imperial_genealogy1} - 6,60%
+      - {item:imperial_genealogy2} - 10,50%
+      - {item:imperial_genealogy3} - 4,00%
+      - {item:revelation_avarice} - 6,80%
+      - {item:revelation_awakening} - 3,60%
+      - {item:revelation_calamity} - 3,60%
+      - {item:revelation_descent}- 4,00%
+      - {item:revelation_gnosis} - 10,50%
+      - {item:revelation_strife} - 10,50%
+      - {item:revelation_vengeance} - 3,60%
+
+      {item:ancient_papyrus4}:
+      - {item:tower_blueprint1} - 14,34%
+      - {item:tower_blueprint2} - 14,33%
+      - {item:tower_blueprint3} - 10,25%
+      - {item:tower_blueprint4} - 10,25%
+      - {item:tower_blueprint5} - 1,60%
+      - {item:tower_blueprint8} - 14,33%
+      - {item:tower_blueprint9} - 10,25%
+      - {item:tower_blueprint10} - 10,25%
+      - {item:tower_blueprint11} - 1,60%
+      - {item:tower_blueprint12} - 1,60%
+      - {item:tower_blueprint13} - 1,60%
+      - {item:imperial_genealogy3} - 1,60%
+      - {item:imperial_genealogy4} - 1,60%
+      - {item:q_musicnote_battle} - 1,60%
+      - {item:q_musicnote_love} - 1,60%
+      - {item:ancient_chain_letter} - 1,60%
+      - {item:ancient_joke_book} - 1,60%
+
+      {item:ancient_papyrus3}:
+      - {item:tower_blueprint1} - 21,60%
+      - {item:tower_blueprint2} - 21,60%
+      - {item:tower_blueprint3} - 2,50%
+      - {item:tower_blueprint4} - 2,50%
+      - {item:tower_blueprint5} - 2,00%
+      - {item:tower_blueprint8} - 21,60%
+      - {item:tower_blueprint9} - 2,60%
+      - {item:tower_blueprint10} - 2,60%
+      - {item:tower_blueprint11} - 2,00%
+      - {item:tower_blueprint12} - 2,00%
+      - {item:tower_blueprint13} - 3,00%
+      - {item:imperial_genealogy3} - 2,00%
+      - {item:imperial_genealogy4} - 2,00%
+      - {item:q_musicnote_battle} - 3,00%
+      - {item:q_musicnote_love} - 3,00%
+      - {item:ancient_chain_letter} - 3,00%
+      - {item:ancient_joke_book} - 3,00%
+    - >-
+      Once you've collected Blueprint Set (1-13), go back to
+      {npc:whouse_keeper_walderal}. 
+
+      To tell him, "I’ve brought you all the blueprints for 13 floors of the
+      Tower of Insolence" and choose which set you want:
+
+      If you choose "Dark Crystal" you have a chance to get the following items:
+
+      - {item:sealed_dark_crystal_boots_lining}
+
+      - {item:sealed_dark_crystal_gloves_design}
+
+      - {item:sealed_dark_crystal_helmet_design}
+
+      - {item:rp_sealed_dark_crystal_boots_i}
+
+      - {item:rp_sealed_dark_crystal_gloves_i}
+
+      - {item:rp_sealed_dark_crystal_helmet_i}
+
+      If you choose "Tallum" you have a chance to get the following items:
+
+      - {item:sealed_tallum_boots_lining}
+
+      - {item:sealed_tallum_gloves_design}
+
+      - {item:sealed_tallum_bonnet_design}
+
+      - {item:rp_sealed_tallum_boots_i}
+
+      - {item:rp_sealed_tallum_gloves_i}
+
+      - {item:rp_sealed_tallum_bonnet_i}
+
+
+      If you choose "Nightmare" you have a chance to get the following items:
+
+      - {item:sealed_boots_of_nightmare_lining}
+
+      - {item:sealed_gloves_of_nightmare_design}
+
+      - {item:sealed_helm_of_nightmare_design}
+
+      - {item:rp_sealed_boots_of_nightmare_i}
+
+      - {item:rp_sealed_gloves_of_nightmare_i}
+
+      - {item:rp_sealed_helm_of_nightmare_i}
+
+
+      If you choose "Majestic" you have a chance to get the following items:
+
+      - {item:sealed_magestic_boots_lining}
+
+      - {item:sealed_magestic_gloves_design}
+
+      - {item:sealed_magestic_circlet_design}
+
+      - {item:rp_sealed_magestic_boots_i}
+
+      - {item:rp_sealed_magestic_gloves_i}
+
+      - {item:rp_sealed_magestic_circlet_i}
+    - >-
+      Once you've collected Revelation of Seals Set (1-7), talk to
+      {npc:claudia_a} to get:
+
+      - {item:sealed_boots_of_nightmare_lining}
+
+      - {item:sealed_gloves_of_nightmare_design}
+
+      - {item:sealed_helm_of_nightmare_design}
+
+      - {item:57:4000}
+
+
+      Or talk to {npc:magister_desmond} to get:
+
+      - {item:sealed_magestic_boots_lining}
+
+      - {item:sealed_magestic_gloves_design}
+
+      - {item:sealed_magestic_circlet_design}
+
+      - {item:57:4000}
+    - |-
+      Once you've collected Ancient Epic Set (1-5), talk to {npc:patrin} to get:
+      - {item:sealed_tallum_boots_lining}
+      - {item:sealed_tallum_gloves_design}
+      - {item:sealed_tallum_bonnet_design}
+    - >-
+      Once you've collected Imperial Genealogy (1-5), talk to {npc:patrin} to
+      get:
+
+      - {item:sealed_dark_crystal_boots_lining}
+
+      - {item:sealed_dark_crystal_gloves_design}
+
+      - {item:sealed_dark_crystal_helmet_design}
+  ru:
+    - Поговорите с {npc:whouse_keeper_walderal}.
+    - >-
+      Получение квестовых предметов:
+
+      Убивайте {npc:corrypt_sage}, {npc:erin_ediunce} и
+      {npc:hallates_inspector}, чтобы получать {item:ancient_papyrus1}.
+
+      Убивайте {npc:platinum_tribe_lord}, чтобы получать
+      {item:ancient_papyrus2}.
+
+      Убивайте {npc:messenger_angel}, чтобы получать {item:ancient_papyrus4}.
+
+      Убивайте {npc:plat_protect_warlord}, чтобы получать
+      {item:ancient_papyrus3}.
+    - |-
+      При использовании Древнего папируса можно получить
+      {item:ancient_papyrus1}:
+      - {item:tower_blueprint6} - 2,00% 
+      - {item:tower_blueprint7} - 2,00%
+      - {item:ancient_epic_part1} - 1,60%
+      - {item:ancient_epic_part2} - 11,20%
+      - {item:ancient_epic_part3} - 8,00%
+      - {item:ancient_epic_part4} - 8,00%
+      - {item:ancient_epic_part5} - 2,00%
+      - {item:imperial_genealogy1} - 1,60%
+      - {item:imperial_genealogy2} - 11,20%
+      - {item:imperial_genealogy3} - 2,00%
+      - {item:revelation_avarice} - 1,80%
+      - {item:revelation_awakening} - 8,00%
+      - {item:revelation_calamity} - 8,00%
+      - {item:revelation_descent} - 2,00%
+      - {item:revelation_gnosis} - 11,40%
+      - {item:revelation_strife} - 11,20%
+      - {item:revelation_vengeance} - 8,00%
+
+      {item:ancient_papyrus2}:
+      - {item:tower_blueprint6} - 4,00%
+      - {item:tower_blueprint7} - 4,00%
+      - {item:ancient_epic_part1} - 6,60%
+      - {item:ancient_epic_part2} - 10,50%
+      - {item:ancient_epic_part3} - 3,60%
+      - {item:ancient_epic_part4} - 3,60%
+      - {item:ancient_epic_part5} - 4,00%
+      - {item:imperial_genealogy1} - 6,60%
+      - {item:imperial_genealogy2} - 10,50%
+      - {item:imperial_genealogy3} - 4,00%
+      - {item:revelation_avarice} - 6,80%
+      - {item:revelation_awakening} - 3,60%
+      - {item:revelation_calamity} - 3,60%
+      - {item:revelation_descent}- 4,00%
+      - {item:revelation_gnosis} - 10,50%
+      - {item:revelation_strife} - 10,50%
+      - {item:revelation_vengeance} - 3,60%
+
+      {item:ancient_papyrus4}:
+      - {item:tower_blueprint1} - 14,34%
+      - {item:tower_blueprint2} - 14,33%
+      - {item:tower_blueprint3} - 10,25%
+      - {item:tower_blueprint4} - 10,25%
+      - {item:tower_blueprint5} - 1,60%
+      - {item:tower_blueprint8} - 14,33%
+      - {item:tower_blueprint9} - 10,25%
+      - {item:tower_blueprint10} - 10,25%
+      - {item:tower_blueprint11} - 1,60%
+      - {item:tower_blueprint12} - 1,60%
+      - {item:tower_blueprint13} - 1,60%
+      - {item:imperial_genealogy3} - 1,60%
+      - {item:imperial_genealogy4} - 1,60%
+      - {item:q_musicnote_battle} - 1,60%
+      - {item:q_musicnote_love} - 1,60%
+      - {item:ancient_chain_letter} - 1,60%
+      - {item:ancient_joke_book} - 1,60%
+
+      {item:ancient_papyrus3}:
+      - {item:tower_blueprint1} - 21,60%
+      - {item:tower_blueprint2} - 21,60%
+      - {item:tower_blueprint3} - 2,50%
+      - {item:tower_blueprint4} - 2,50%
+      - {item:tower_blueprint5} - 2,00%
+      - {item:tower_blueprint8} - 21,60%
+      - {item:tower_blueprint9} - 2,60%
+      - {item:tower_blueprint10} - 2,60%
+      - {item:tower_blueprint11} - 2,00%
+      - {item:tower_blueprint12} - 2,00%
+      - {item:tower_blueprint13} - 3,00%
+      - {item:imperial_genealogy3} - 2,00%
+      - {item:imperial_genealogy4} - 2,00%
+      - {item:q_musicnote_battle} - 3,00%
+      - {item:q_musicnote_love} - 3,00%
+      - {item:ancient_chain_letter} - 3,00%
+      - {item:ancient_joke_book} - 3,00%
+    - >-
+      Как соберете Blueprint Set (1-13), вернитесь к
+      {npc:whouse_keeper_walderal}. 
+
+      Скажите ему - "I’ve brought you all the blueprints for 13 floors of the
+      Tower of Insolence" и выберите нужный набор.
+
+      Если вы выберете "Dark Crystal", то у вас есть шанс получить следующие
+      предметы:
+
+      - {item:sealed_dark_crystal_boots_lining}
+
+      - {item:sealed_dark_crystal_gloves_design}
+
+      - {item:sealed_dark_crystal_helmet_design}
+
+      - {item:rp_sealed_dark_crystal_boots_i}
+
+      - {item:rp_sealed_dark_crystal_gloves_i}
+
+      - {item:rp_sealed_dark_crystal_helmet_i}
+
+      Если вы выберете "Tallum", то у вас есть шанс получить следующие предметы:
+
+      - {item:sealed_tallum_boots_lining}
+
+      - {item:sealed_tallum_gloves_design}
+
+      - {item:sealed_tallum_bonnet_design}
+
+      - {item:rp_sealed_tallum_boots_i}
+
+      - {item:rp_sealed_tallum_gloves_i}
+
+      - {item:rp_sealed_tallum_bonnet_i}
+
+
+      Если вы выберете "Nightmare", то у вас есть шанс получить следующие
+      предметы:
+
+      - {item:sealed_boots_of_nightmare_lining}
+
+      - {item:sealed_gloves_of_nightmare_design}
+
+      - {item:sealed_helm_of_nightmare_design}
+
+      - {item:rp_sealed_boots_of_nightmare_i}
+
+      - {item:rp_sealed_gloves_of_nightmare_i}
+
+      - {item:rp_sealed_helm_of_nightmare_i}
+
+
+      Если вы выберете "Majestic", то у вас есть шанс получить следующие
+      предметы:
+
+      - {item:sealed_magestic_boots_lining}
+
+      - {item:sealed_magestic_gloves_design}
+
+      - {item:sealed_magestic_circlet_design}
+
+      - {item:rp_sealed_magestic_boots_i}
+
+      - {item:rp_sealed_magestic_gloves_i}
+
+      - {item:rp_sealed_magestic_circlet_i}
+    - >-
+      Как соберете Revelation of Seals Set (1-7), поговорите с {npc:claudia_a},
+      чтобы получить:
+
+      - {item:sealed_boots_of_nightmare_lining}
+
+      - {item:sealed_gloves_of_nightmare_design}
+
+      - {item:sealed_helm_of_nightmare_design}
+
+      - {item:57:4000}
+
+
+      Или поговорите с {npc:magister_desmond}, чтобы получить:
+
+      - {item:sealed_magestic_boots_lining}
+
+      - {item:sealed_magestic_gloves_design}
+
+      - {item:sealed_magestic_circlet_design}
+
+      - {item:57:4000}
+    - |-
+      Как соберете Ancient Epic Set (1-5), talk to {npc:patrin}, чтобы получить:
+      - {item:sealed_tallum_boots_lining}
+      - {item:sealed_tallum_gloves_design}
+      - {item:sealed_tallum_bonnet_design}
+    - >-
+      Как соберете Imperial Genealogy (1-5), talk to {npc:patrin}, чтобы
+      получить:
+
+      - {item:sealed_dark_crystal_boots_lining}
+
+      - {item:sealed_dark_crystal_gloves_design}
+
+      - {item:sealed_dark_crystal_helmet_design}

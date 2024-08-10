@@ -1,0 +1,68 @@
+id: 265
+name:
+  en: Chains of Slavery
+  ru: Цепи рабства
+desc:
+  en: The imps were created as slaves by the Dark Elves, but recently they have
+    broken the spell of shackles, and ran away into the woods. The Dark Elven
+    Tetrarchs are preparing a new spell to lock up the imps, but they need the
+    Imp Shackle. Go into the Dark Elven Forest and return the Imp Shackle. You
+    shall receive a reward by Sentry Krispen.
+  ru: Бесы были созданы, чтобы служить Темным Эльфам, но недавно удерживающее их
+    заклятие спало, и все бесы сбежали в лес. Тетрархи Темных Эльфов подготовили
+    новое удерживающее заклятие, но для его активации им нужны Кандалы Бесов. Их
+    нужно отдать Охраннику Кристин.
+type: repeatable
+requirements:
+  races:
+    - darkelf
+startNPC: sentry_krpion
+level: 5
+reward:
+  items:
+    - 57
+    - 5790
+    - 5789
+questItems:
+  - 1368
+walkthrough:
+  en:
+    - Talk to {npc:sentry_krpion}.
+    - Hunt {npc:imp} and {npc:imp_ribe} to collect {item:1368}.
+    - >-
+      Return to {npc:sentry_krpion}, and get it as a reward:
+
+      - {item:57:12} for each {item:imp_shackles}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:500}.
+
+
+      Bonus for the mage:
+
+      - {item:spiritshot_none_for_rookie:3000}
+
+
+      Bonus for the fighter:
+
+      - {item:soulshot_none_for_rookie:6000}
+  ru:
+    - Поговорите с {npc:sentry_krpion}.
+    - Убивайте {npc:imp} and {npc:imp_ribe}, чтобы получать {item:1368}.
+    - >-
+      Вернитесь {npc:sentry_krpion}, и получите в награду:
+
+      - {item:57:12} за каждый {item:imp_shackles}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:500}.
+
+
+      Бонус для мага:
+
+      - {item:spiritshot_none_for_rookie:3000}
+
+
+      Бонус для воина:
+
+      - {item:soulshot_none_for_rookie:6000}

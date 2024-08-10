@@ -1,0 +1,46 @@
+id: 275
+name:
+  en: Dark Winged Spies
+  ru: Чернокрылые шпионы
+desc:
+  en: The dark magician Varangka, who is plotting the fall of the Orc kingdom, is
+    using dark winged bats to spy on the Orcs. The sorcerers have requested dark
+    winged bat fangs in order to complete the magic circle that will prevent the
+    bats from approaching Orc territories. Per the request of Neruga Chief
+    Tantus, hunt dark winged bats and bring back seventy of their fangs.
+  ru: Предатель Фаранга задумал уничтожить королевство Орков. Он использует
+    темнокрылых летучих мышей, чтобы шпионить за нами. Чтобы защитить нашу
+    землю, Магистрам нужны их клыки. Глава Неруга Тантус просит Вас поохотиться
+    на темнокрылых летучих мышей и принести ему 70 их клыков.
+type: repeatable
+requirements:
+  races:
+    - orc
+startNPC: neruga_chief_tantus
+level: 11
+reward:
+  items:
+    - 57
+questItems:
+  - 1478
+  - 1479
+walkthrough:
+  en:
+    - Talk to {npc:neruga_chief_tantus}.
+    - Hunt {npc:darkwing_bat} until you collect {item:1478:70}. There are bats
+      along the northern paths, and inside the path ring on your map. Sometimes
+      when you kill a {npc:darkwing_bat} you may collect a {item:1479} quest
+      item, and a {npc:varangkas_tracker} will immediately spawn and attack you.
+      Once killed you will get {item:1478:5}, and the parasite item will
+      disappear.
+    - |-
+      Give the fangs to {npc:neruga_chief_tantus}, and get it as a reward:
+      - {item:57:60} for each {item:darkwing_bat_fang}
+  ru:
+    - Поговорите с {npc:neruga_chief_tantus}.
+    - Убивайте {npc:darkwing_bat}, пока не получите {item:1478:70}. Иногда будут
+      появляться {npc:varangkas_tracker}, за убийство которых можно получить
+      {item:1478:5}.
+    - |-
+      Give the fangs to {npc:neruga_chief_tantus}, and get it as a reward:
+      - {item:57:60} for each {item:darkwing_bat_fang}

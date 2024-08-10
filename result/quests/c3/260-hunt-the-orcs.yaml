@@ -1,0 +1,77 @@
+id: 260
+name:
+  en: Hunt the Orcs
+  ru: Охота на Орков
+desc:
+  en: The Kaboo Orcs hiding in the Misty Mountains have begun to attack the Elven
+    Forest. As per the Hierarch’s orders, Sentinel Rayen is recruiting Warriors
+    to battle against the Orcs. The Hierarach’s reward will be granted to those
+    who destroy the Kaboo Orcs and bring a token of proof.
+  ru: Орки Кабу Туманных Гор атаковали Эльфийский Лес. Иерарх приказал Часовому
+    Райену собрать воинов для битвы. Иерарх вознаградит тех, кто убьет Орков
+    Кабу и принесет доказательства.
+type: repeatable
+requirements:
+  races:
+    - elf
+startNPC: sentinel_rayjien
+level: 6
+reward:
+  items:
+    - 57
+    - 5790
+    - 5789
+questItems:
+  - 1114
+  - 1115
+walkthrough:
+  en:
+    - Talk to {npc:sentinel_rayjien}.
+    - Hunt {npc:kaboo_orc}, {npc:kaboo_orc_archer} and {npc:kaboo_orc_grunt} to
+      collect {item:1114}.
+    - Hunt {npc:kaboo_orc_ft_leader}, {npc:kaboo_orc_ft_sub_ldr} and
+      {npc:kaboo_orc_fighter} to collect {item:orc_necklace1}.
+    - >-
+      Return to {npc:sentinel_rayjien}, and get it as a reward:
+
+      - {item:57:12} for each {item:orc_amulet1}
+
+      - {item:57:30} for each {item:orc_necklace1}
+
+      If you bring more than 10 pieces, you will additionally receive
+      {item:57:1000}.
+
+
+      Bonus for the mage:
+
+      - {item:spiritshot_none_for_rookie:3000}
+
+
+      Bonus for the fighter:
+
+      - {item:soulshot_none_for_rookie:6000}
+  ru:
+    - Поговорите с {npc:sentinel_rayjien}.
+    - Убивайте {npc:kaboo_orc}, {npc:kaboo_orc_archer} и {npc:kaboo_orc_grunt},
+      чтобы получать {item:orc_amulet1}.
+    - Убивайте {npc:kaboo_orc_ft_leader}, {npc:kaboo_orc_ft_sub_ldr} и
+      {npc:kaboo_orc_fighter}, чтобы получать {item:orc_necklace1}.
+    - >-
+      Вернитесь к {npc:sentinel_rayjien}, и получите в награду:
+
+      - {item:57:12} за каждый {item:orc_amulet1}
+
+      - {item:57:30} за каждый {item:orc_necklace1}
+
+      Если вы принесете более 10 частей, то дополнительно получите
+      {item:57:1000}.
+
+
+      Bonus for the mage:
+
+      - {item:spiritshot_none_for_rookie:3000}
+
+
+      Bonus for the fighter:
+
+      - {item:soulshot_none_for_rookie:6000}

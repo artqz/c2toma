@@ -1,0 +1,203 @@
+id: 376
+name:
+  en: Exploration of Giants Cave, Part 1
+  ru: Исследование Пещеры Гигантов, ч. 1
+desc:
+  en: ""
+  ru: ""
+type: repeatable
+requirements: {}
+startNPC: sobling
+level: 57
+reward:
+  items:
+    - 5346
+    - 5354
+    - 5424
+    - 5340
+    - 5332
+    - 5334
+    - 5416
+    - 5418
+questItems:
+  - 5891
+walkthrough:
+  en:
+    - Talk to {npc:sobling}.
+    - Hunt {npc:ynglzu}, {npc:paliote}, {npc:hamrut} and {npc:kranrot} to
+      collect {item:q_giants_scroll}, you can also get {item:q_mysterius_book}.
+    - >-
+      When using the {item:q_giants_scroll} you can get:
+
+      {item:q_giants_medical_theory1}
+
+      {item:q_giants_medical_theory2}
+
+      {item:q_giants_medical_theory3}
+
+      {item:q_giants_medical_theory4}
+
+      {item:q_giants_medical_theory5}
+
+
+      {item:q_giants_plan_of_golem1}
+
+      {item:q_giants_plan_of_golem2}
+
+      {item:q_giants_plan_of_golem3}
+
+      {item:q_giants_plan_of_golem4}
+
+      {item:q_giants_plan_of_golem5}
+
+
+      {item:q_giants_basis_of_magic1}
+
+      {item:q_giants_basis_of_magic2}
+
+      {item:q_giants_basis_of_magic3}
+
+      {item:q_giants_basis_of_magic4}
+
+      {item:q_giants_basis_of_magic5}
+
+
+      {item:q_giants_construction_tech1}
+
+      {item:q_giants_construction_tech2}
+
+      {item:q_giants_construction_tech3}
+
+      {item:q_giants_construction_tech4}
+
+      {item:q_giants_construction_tech5}
+
+
+      {item:q_giants_love_letter} and {item:q_giants_scribble} can be discarded
+      or sold to the store.
+    - >-
+      Once you have collected all the parts of one of the kits, take them to
+      {npc:sobling}, he will exchange them for a recipe for A grade armor:
+
+
+      Book: Giants Medical Science, Chapter 1-5:
+
+      {item:rp_sealed_tallum_tunic_i}
+
+      {item:rp_sealed_tallum_hose_i}
+
+
+      Book: Basics of Giants Magic, Chapter 1-5
+
+      {item:rp_sealed_dark_crystal_gaiters_i}
+
+      {item:rp_sealed_legging_of_dark_crystal_i}
+
+
+      Handbook: Giants Architecture, Chapter 1-5
+
+      {item:rp_sealed_dark_crystal_leather_mail_i}
+
+      {item:rp_sealed_tallum_leather_mail_i}
+
+
+      Blueprint: Giants Golem 1-5
+
+      {item:rp_sealed_dark_crystal_breastplate_i}
+
+      {item:rp_sealed_tallum_plate_armor_i}
+    - When you get the {item:q_mysterius_book}, take it to {npc:sobling}. He
+      will send you to the warehouse in the Town of Oren to {npc:cliff}.
+    - Talk to {npc:cliff}. He will translate it into the
+      {item:q_ancient_lang_dic2}. Bring this back to {npc:sobling} and you can
+      activate {quest:377}.
+  ru:
+    - Поговорите с {npc:sobling}.
+    - Охотьтесь на  {npc:ynglzu}, {npc:paliote}, {npc:hamrut} и {npc:kranrot},
+      чтобы получать {item:q_giants_scroll}, также вы можете получить
+      {item:q_mysterius_book}.
+    - >-
+      При использовании {item:q_giants_scroll} вы пожете получить:
+
+      {item:q_giants_medical_theory1}
+
+      {item:q_giants_medical_theory2}
+
+      {item:q_giants_medical_theory3}
+
+      {item:q_giants_medical_theory4}
+
+      {item:q_giants_medical_theory5}
+
+
+      {item:q_giants_plan_of_golem1}
+
+      {item:q_giants_plan_of_golem2}
+
+      {item:q_giants_plan_of_golem3}
+
+      {item:q_giants_plan_of_golem4}
+
+      {item:q_giants_plan_of_golem5}
+
+
+      {item:q_giants_basis_of_magic1}
+
+      {item:q_giants_basis_of_magic2}
+
+      {item:q_giants_basis_of_magic3}
+
+      {item:q_giants_basis_of_magic4}
+
+      {item:q_giants_basis_of_magic5}
+
+
+      {item:q_giants_construction_tech1}
+
+      {item:q_giants_construction_tech2}
+
+      {item:q_giants_construction_tech3}
+
+      {item:q_giants_construction_tech4}
+
+      {item:q_giants_construction_tech5}
+
+
+      {item:q_giants_love_letter} и {item:q_giants_scribble} можно выкидывать,
+      либо продавать в магазин.
+    - >-
+      Собрав все детали одного из наборов, отнесите их к {npc:sobling}, он
+      обменяет их на рецепт A grade брони:
+
+
+      Book: Giants Medical Science, Chapter 1-5:
+
+      {item:rp_sealed_tallum_tunic_i}
+
+      {item:rp_sealed_tallum_hose_i}
+
+
+      Book: Basics of Giants Magic, Chapter 1-5
+
+      {item:rp_sealed_dark_crystal_gaiters_i}
+
+      {item:rp_sealed_legging_of_dark_crystal_i}
+
+
+      Handbook: Giants Architecture, Chapter 1-5
+
+      {item:rp_sealed_dark_crystal_leather_mail_i}
+
+      {item:rp_sealed_tallum_leather_mail_i}
+
+
+      Blueprint: Giants Golem 1-5
+
+      {item:rp_sealed_dark_crystal_breastplate_i}
+
+      {item:rp_sealed_tallum_plate_armor_i}
+    - Когда вы получите {item:q_mysterius_book}, отнесите ее к {npc:sobling}. Он
+      отправит вас на склад в город Орен к {npc:cliff}.
+    - Поговорите с {npc:cliff}. Он сделает перевод и вернет вам
+      {item:q_ancient_lang_dic2}. Вернитесь к {npc:sobling}, и вы сможете начать
+      {quest:377}.

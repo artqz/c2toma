@@ -105,14 +105,8 @@ function addItem(itemData: ItemDataEntry, itemName: ItemNameEntry) {
     shieldDefense: itemData.shield_defense!,
     shieldDefenseRate: itemData.shield_defense_rate!,
     slotBitType: asSlot(itemData.slot_bit_type!.$.toString()),
-    soulshotCount:
-      itemData.$[0].toString() === "weapon" && itemData.default_price! < 54000
-        ? 0
-        : itemData.soulshot_count!,
-    spiritshotCount:
-      itemData.$[0].toString() === "weapon" && itemData.default_price! < 54000
-        ? 0
-        : itemData.spiritshot_count!,
+    soulshotCount: itemData.soulshot_count!,
+    spiritshotCount: itemData.spiritshot_count!,
     type: itemData.$[0].toString(),
     weaponType: itemData.weapon_type!,
     weight: itemData.weight!,

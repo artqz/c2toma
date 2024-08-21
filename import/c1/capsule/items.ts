@@ -9,7 +9,7 @@ export function loadCapsuleItems(props: {effects: Map<string,any>, items: Map<nu
 
 function addCapsuleItems(props: { effects: Map<string,any>, items: Map<number, Item> }) {
     const effectByName = props.effects;
-    const map = new Map<string, CapsuleContains[]>()
+    const map = new Map<string, {itemName: string, contains: CapsuleContains[]}>()
     for (const item of props.items.values()) {
       if (item.defaultAction === "action_capsule") {
         if(item.itemSkill) {      
@@ -17,7 +17,7 @@ function addCapsuleItems(props: { effects: Map<string,any>, items: Map<number, I
             if (effect) {
                 // console.log(item.name.en, skill.name.en);                
                 // item.contains = getItemsFromSkills({effects: effect})
-                map.set(item.itemName, getItemsFromSkills({effects: effect}))
+                map.set(item.itemName, {itemName:item.itemName,contains: getItemsFromSkills({effects: effect})});
             }
         }        
       }

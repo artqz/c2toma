@@ -1,29 +1,35 @@
 import { Item, } from "../../../result/types";
 
+type CapsuleContains = {items: {itemName: string, count: number}[], chance: number}
+
 export function loadCapsuleItems(props: {effects: Map<string,any>, items: Map<number,Item>}) {
-    addCapsuleItems({...props})
+    const capsules = addCapsuleItems({...props})
+    return capsules;
 }
 
 function addCapsuleItems(props: { effects: Map<string,any>, items: Map<number, Item> }) {
     const effectByName = props.effects;
-
+    const map = new Map<string, CapsuleContains[]>()
     for (const item of props.items.values()) {
       if (item.defaultAction === "action_capsule") {
         if(item.itemSkill) {      
             const effect = effectByName.get(item.itemSkill)
             if (effect) {
                 // console.log(item.name.en, skill.name.en);                
-                item.contains = getItemsFromSkills({effects: effect})
+                // item.contains = getItemsFromSkills({effects: effect})
+                map.set(item.itemName, getItemsFromSkills({effects: effect}))
             }
         }        
       }
     }
+
+    return map
   }
 
 function getItemsFromSkills(props: {effects: any}) {
     
     
-    const arr: {items: {itemName: string, count: number}[], chance: number}[] = []
+    const arr: CapsuleContains[] = []
     if (props.effects) {
         for (const effect of props.effects) {           
             const effectName: string = effect.$[0];

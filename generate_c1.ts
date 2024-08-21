@@ -35,12 +35,21 @@ function init() {
     JSON.stringify(Array.from(skillCard.values()), null, 2)
   );
   const items = loadItems({ chronicle });
-  loadCapsuleItems({effects, items})
+ 
   saveFile(
     `result/data/${chronicle}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)
   );  
+  const capsules = loadCapsuleItems({effects, items})
+  saveFile(
+    `result/data/${chronicle}/capsules.json`,
+    JSON.stringify(Array.from(capsules.values()), null, 2)
+  );
   const sets = loadSets({ chronicle, items, skills });
+  saveFile(
+    `result/data/${chronicle}/sets.json`,
+    JSON.stringify(Array.from(sets.values()), null, 2)
+  );
   saveFile(
     `result/data/${chronicle}/sets.json`,
     JSON.stringify(Array.from(sets.values()), null, 2)

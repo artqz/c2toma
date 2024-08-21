@@ -158,6 +158,8 @@ export type Item = {
   mpBonus: Int | null;
   magicWeapon: boolean;
   enchantBonus: EnchantBonus[];
+  defaultAction?: string;
+  contains?: {items: {itemName: string, count: number}[], chance: number}[]
   // recipe: Recipe[];
   // sellList: Merchant[];
   // product: Product[];

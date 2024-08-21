@@ -65,6 +65,8 @@ const ItemEntryC4 = z.object({
   set_skill: z.string().optional(),
   set_effect_skill: z.string().optional(),
   set_additional_effect_skill: z.string().optional(),
+  //capsule
+  default_action: z.string().optional(),
 });
 
 export type ItemEntryC4 = z.infer<typeof ItemEntryC4>;

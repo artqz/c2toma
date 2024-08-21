@@ -18,13 +18,13 @@ import { generateSkillDataC5 } from "./c5/skills";
 import { getEffects } from './skillEffects';
 
 export function loadSkills(deps: { chronicle: Chronicle }) {
-  let skills = loadItemData(deps);
+  let {skills, effects} = loadItemData(deps);
   skills = loadSkillNames({ ...deps, skillData: skills });
   skills = loadSkillGrps({ ...deps, skillData: skills });
   skills = loadSkillRuNames({ ...deps, skillData: skills });
   console.log(`Skills loaded (${Array.from(skills.values()).length}).`);
 
-  return skills;
+  return {skills, effects};
 }
 
 function loadItemData(deps: { chronicle: Chronicle }) {
@@ -50,6 +50,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       break;
   }
   const skills = new Map<string, Skill>();
+  const effects = new Map<string, any>();
   const _effectsMap = new Map<string, string>()
   for (const skill of skillData) {
     // if (skill.skill_id === 4084 && skill.level === 4) {
@@ -57,8 +58,9 @@ function loadItemData(deps: { chronicle: Chronicle }) {
     //   getEffects(skill.effect.$)
     // }
 
-    // getAllEffects(skill.effect.$).map(e => _effectsMap.set(e, e))
-
+    // getAllEffects(skill.effect.$).map(e => _effectsMap.set(e, e))   
+    effects.set(skill.skill_name.toString().replace(/:|\s/g, "_"), skill.effect.$)   
+   
     skills.set(skill.skill_id + "_" + skill.level, {
       id: skill.skill_id,
       skillName: skill.skill_name.toString().replace(/:|\s/g, "_"),
@@ -88,7 +90,7 @@ function loadItemData(deps: { chronicle: Chronicle }) {
     });
   }
   // saveFile("allEffects.json", JSON.stringify(Array.from(_effectsMap.values()), null, 2))
-  return skills;
+  return {skills, effects};
 }
 
 function loadSkillNames(deps: {

@@ -134,6 +134,8 @@ const ItemDataEntry = z.object({
   set_additional_effect_skill: z.string().optional(),
   set_additional2_condition: z.number().optional(),
   set_additional2_effect_skill: z.string().optional(),
+  //capsule
+  default_action: z.string().optional(),
 });
 
 export type ItemDataEntry = z.infer<typeof ItemDataEntry>;

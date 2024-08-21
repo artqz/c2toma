@@ -1,4 +1,4 @@
-import { ZodNumber, z } from 'zod';
+import { ZodNumber, object, z } from 'zod';
 
 // p_physical_defence
 // p_magical_defence
@@ -52,6 +52,7 @@ export function getEffects(effects: any) {
         const per: boolean = effect.$[3] === "per";
         effectMap.set(effectName, { effectName, app, value, per });
       }
+      
       // if (effectName === "i_p_attack") {
       //   const app: string[] = effect.$[1].$;
       //   const value: number = effect.$[2];
@@ -59,7 +60,7 @@ export function getEffects(effects: any) {
       //   effectMap.set(effectName, { effectName, app, value, per });
       // }
     }
-  }
+  }  
   return Array.from(effectMap.values());
 }
 

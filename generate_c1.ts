@@ -17,6 +17,7 @@ import { loadSkillCard } from "./import/c1/skillCard";
 import { loadZones } from "./import/c1/zones";
 import { generateAgroPatch } from "./import/c1/npcAggroPatch";
 import { loadNewQuestData } from "./import/c1/il/fixQuests";
+import { loadCapsuleItems } from "./import/c1/capsule/items";
 
 const chronicle: Chronicle = "c4";
 
@@ -27,17 +28,18 @@ function init() {
   //   `result/data/${chronicle}/zones.json`,
   //   JSON.stringify(zones, null, 2)
   // );
-  const skills = loadSkills({ chronicle });
+  const {skills, effects} = loadSkills({ chronicle });
   const skillCard = loadSkillCard({ chronicle, skills });
   saveFile(
     `result/data/${chronicle}/skills.json`,
     JSON.stringify(Array.from(skillCard.values()), null, 2)
   );
   const items = loadItems({ chronicle });
+  loadCapsuleItems({effects, items})
   saveFile(
     `result/data/${chronicle}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)
-  );
+  );  
   const sets = loadSets({ chronicle, items, skills });
   saveFile(
     `result/data/${chronicle}/sets.json`,

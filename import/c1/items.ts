@@ -27,10 +27,10 @@ import { getTypeMaterials } from "./items/materials";
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
   items = loadItemNames({ ...deps, itemData: items });
-  items = loadItemGrps({ ...deps, itemData: items });
+    items = loadItemGrps({ ...deps, itemData: items });
   items = loadItemRuNames({ ...deps, itemData: items });
   items = loadItemEnchantBonuses({ ...deps, itemData: items });
-  getTypeMaterials({ items });
+  getTypeMaterials({ items });  
   console.log(`Items loaded (${Array.from(items.values()).length}).`);
 
   return items;
@@ -117,6 +117,7 @@ function addItems(itemsData: ItemDataEntry[]) {
         weaponType: item.weapon_type!,
         weight: item.weight!,
         enchantBonus: [],
+        defaultAction: item.default_action
       });
     }
   }

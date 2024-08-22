@@ -193,7 +193,7 @@ function addNpcsС5(deps: {
   skills: Map<string, Skill>;
   items: Map<number, Item>;
 }) {
-  const npcs = generateNpcsC5(deps);
+  const npcs = generateNpcsC5({ ...deps, ignoreNpcList: IGNORE_NPCS });
   return npcs;
 }
 

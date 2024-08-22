@@ -30,6 +30,7 @@ type NpcNameC6 = NpcNameEntry & {
 export function generateNpcsC5(deps: {
   skills: Map<string, Skill>;
   items: Map<number, Item>;
+  ignoreNpcList: Set<string>;
 }) {
   const npcs = new Map<number, Npc>();
   const npcsNames = new Map<number, NpcNameC6>();
@@ -42,6 +43,11 @@ export function generateNpcsC5(deps: {
   for (const npcName of loadNpcNamesC5()) {
     const npcGF = npcGFById.get(npcName.id);
     if (npcGF) {
+      //
+      if (deps.ignoreNpcList.has(npcGF.$[2]) || npcGF.$[2].startsWith("_")) {
+        continue;
+      }
+      //
       npcsNames.set(npcName.id, { ...npcName, npcName: npcGF.$[2] });
     } else {
       npcsNames.set(npcName.id, {

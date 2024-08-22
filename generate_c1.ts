@@ -9,17 +9,14 @@ import { loadAi } from "./import/c1/ai";
 import { loadSets } from "./import/c1/sets";
 import { loadProfs } from "./import/c1/profs";
 import { loadWeaponAbilities } from "./import/c1/weaponAbilities";
-import { loadNpcSeaLevel } from "./import/c1/npcSeaLevel";
 import { Chronicle } from "./import/types";
 import { loadQuests } from "./import/c1/quests";
 import { loadNpcBuffs } from "./import/c1/npcBuffs";
 import { loadSkillCard } from "./import/c1/skillCard";
-import { loadZones } from "./import/c1/zones";
 import { generateAgroPatch } from "./import/c1/npcAggroPatch";
-import { loadNewQuestData } from "./import/c1/il/fixQuests";
 import { loadCapsuleItems } from "./import/c1/capsule/items";
 
-const chronicle: Chronicle = "c4";
+const chronicle: Chronicle = "gf";
 
 function init() {
   createDir(`result/data/${chronicle}`);

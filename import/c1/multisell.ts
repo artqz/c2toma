@@ -158,6 +158,7 @@ function getNpcNamesByMultisell(multisellName: string) {
       return [{ npcName: "warehouse_keeper_sorint", show: true }];
     case "0351_head_blacksmith_vergara":
       return [{ npcName: "head_blacksmith_roman", show: true }];
+    case "fish_trade":
     case "0426_get_fishing_shot":
       return [
         { npcName: "fisher_klufe", show: true },

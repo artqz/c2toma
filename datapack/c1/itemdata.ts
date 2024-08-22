@@ -181,6 +181,8 @@ const ItemEntryC1 = z.object({
       $: z.tuple([z.number(), z.number()]),
     })
     .optional(),
+    //capsule
+  default_action: z.string().optional(),
 });
 
 export type ItemEntryC1 = z.infer<typeof ItemEntryC1>;

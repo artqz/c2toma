@@ -76,6 +76,8 @@ const ItemEntryGF = z.object({
   set_additional_effect_skill: z.string().optional(),
   set_additional2_condition: z.number().optional(),
   set_additional2_effect_skill: z.string().optional(),
+  //capsule
+  default_action: z.string().optional(),
 });
 
 export type ItemEntryGF = z.infer<typeof ItemEntryGF>;

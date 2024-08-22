@@ -3985,11 +3985,6 @@
     "title": "68"
   },
   {
-    "id": 20964,
-    "type": "passive",
-    "title": "70  x1/2"
-  },
-  {
     "id": 20965,
     "type": "passive",
     "title": "72  x1/2 Stun"
@@ -19665,11 +19660,6 @@
     "title": "70"
   },
   {
-    "id": 31075,
-    "type": "passive",
-    "title": "70"
-  },
-  {
     "id": 31076,
     "type": "passive",
     "title": "70"
@@ -22903,16 +22893,6 @@
     "id": 31755,
     "type": "passive",
     "title": "70 Grand Magister"
-  },
-  {
-    "id": 31756,
-    "type": "passive",
-    "title": "70 Test Server Helper"
-  },
-  {
-    "id": 31757,
-    "type": "passive",
-    "title": "70 Test Server Helper"
   },
   {
     "id": 31758,

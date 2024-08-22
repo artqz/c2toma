@@ -111,6 +111,7 @@ function addItem(itemData: ItemDataEntry, itemName: ItemNameEntry) {
     weaponType: itemData.weapon_type!,
     weight: itemData.weight!,
     enchantBonus: [],
+    defaultAction: itemData.default_action,
   };
 
   return { id, item };

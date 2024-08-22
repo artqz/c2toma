@@ -16,7 +16,7 @@ import { loadSkillCard } from "./import/c1/skillCard";
 import { generateAgroPatch } from "./import/c1/npcAggroPatch";
 import { loadCapsuleItems } from "./import/c1/capsule/items";
 
-const chronicle: Chronicle = "gf";
+const chronicle: Chronicle = "il";
 
 function init() {
   createDir(`result/data/${chronicle}`);

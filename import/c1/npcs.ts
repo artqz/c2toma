@@ -25,6 +25,7 @@ import {
   calcPCritical,
   calcPDef,
   calcPSpd,
+  calcSpeed,
   getSkillMod,
 } from "./func";
 import { generateNpcsIL } from "./il/npcs";
@@ -140,7 +141,7 @@ function addNpcs(deps: {
       accuracy: calcAccuracy(npc.dex, npc.level),
       evasion: calcEvasion(npc.dex, npc.level),
       baseReuseDelay: 0,
-      baseMovingSpeed: [npc.ground_low.$[0], npc.ground_high.$[0]],
+      baseMovingSpeed: [calcSpeed(npc.ground_low.$[0], npc.dex), calcSpeed(npc.ground_high.$[0], npc.dex)],
       exp: npc.level ** 2 * npc.acquire_exp_rate,
       sp: npc.acquire_sp,
       magicUseSpeedModify: 0,

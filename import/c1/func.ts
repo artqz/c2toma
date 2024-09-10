@@ -117,6 +117,10 @@ export function calcPSpd(baseAttackSpeed: number, DEX: number) {
   return round(baseAttackSpeed * DEX_MOD[DEX]);
 }
 
+export function calcSpeed(baseSpeed: number, DEX: number) {
+  return round(baseSpeed * DEX_MOD[DEX]);
+}
+
 export function calcPCritical(base_critical: number, DEX: number) {
   return round(base_critical * DEX_MOD[DEX] * 10);
 }

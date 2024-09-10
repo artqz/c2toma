@@ -19,6 +19,7 @@ import {
   calcPCritical,
   calcPDef,
   calcPSpd,
+  calcSpeed,
   getSkillMod,
 } from "../func";
 import { getClan } from "../npc/getters";
@@ -109,7 +110,7 @@ function addNpc(
     baseMagicDefend: npcData.base_magic_defend,
     basePhysicalAttack: npcData.base_physical_attack,
     baseReuseDelay: 0,
-    baseMovingSpeed: [npcData.ground_low.$[0], npcData.ground_high.$[0]],
+    baseMovingSpeed: [calcSpeed(npcData.ground_low.$[0], npcData.dex), calcSpeed(npcData.ground_high.$[0], npcData.dex)],
     exp: npcData.level ** 2 * npcData.acquire_exp_rate,
     sp: npcData.acquire_sp,
     magicUseSpeedModify: 0,

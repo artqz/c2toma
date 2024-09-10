@@ -15,6 +15,7 @@ import { loadNpcBuffs } from "./import/c1/npcBuffs";
 import { loadSkillCard } from "./import/c1/skillCard";
 import { generateAgroPatch } from "./import/c1/npcAggroPatch";
 import { loadCapsuleItems } from "./import/c1/capsule/items";
+import { loadPetsData } from "./import/c1/pets";
 
 const chronicle: Chronicle = "c4";
 
@@ -25,19 +26,19 @@ function init() {
   //   `result/data/${chronicle}/zones.json`,
   //   JSON.stringify(zones, null, 2)
   // );
-  const {skills, effects} = loadSkills({ chronicle });
+  const { skills, effects } = loadSkills({ chronicle });
   const skillCard = loadSkillCard({ chronicle, skills });
   saveFile(
     `result/data/${chronicle}/skills.json`,
     JSON.stringify(Array.from(skillCard.values()), null, 2)
   );
   const items = loadItems({ chronicle });
- 
+
   saveFile(
     `result/data/${chronicle}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)
-  );  
-  const capsules = loadCapsuleItems({effects, items})
+  );
+  const capsules = loadCapsuleItems({ effects, items })
   saveFile(
     `result/data/${chronicle}/capsules.json`,
     JSON.stringify(Array.from(capsules.values()), null, 2)
@@ -90,6 +91,7 @@ function init() {
     `result/data/${chronicle}/ai.json`,
     JSON.stringify(Array.from(ai.values()), null, 2)
   );
+  loadPetsData({ npcs });
   // AGGR
   createDir(`result/patch/${chronicle}`);
   saveFile(

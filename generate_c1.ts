@@ -91,7 +91,11 @@ function init() {
     `result/data/${chronicle}/ai.json`,
     JSON.stringify(Array.from(ai.values()), null, 2)
   );
-  loadPetsData({ npcs });
+  const pets = loadPetsData({ npcs });
+  saveFile(
+    `result/data/${chronicle}/pets.json`,
+    JSON.stringify(Array.from(pets.values()), null, 2)
+  );
   // AGGR
   createDir(`result/patch/${chronicle}`);
   saveFile(

@@ -148,6 +148,8 @@ function addNpc(
     skillList: [],
     multisell: [],
     spawns: [],
+    soulshotCount: npcData.soulshot_count ?? 0,
+    spiritshotCount: npcData.spiritshot_count ?? 0,
   };
 
   return { id, npc };

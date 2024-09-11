@@ -219,6 +219,8 @@ const NpcDataEntry = z.object({
   base_reuse_delay: z.number(),
   base_rand_dam: z.number(),
   base_attack_range: z.number(),
+  soulshot_count: z.number().optional(),
+  spiritshot_count: z.number().optional(),
 });
 
 export type NpcDataEntry = z.infer<typeof NpcDataEntry>;

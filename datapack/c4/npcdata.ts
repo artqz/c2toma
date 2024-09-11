@@ -70,6 +70,8 @@ const NpcEntryC4 = z.object({
   base_reuse_delay: z.number(),
   base_rand_dam: z.number(),
   base_attack_range: z.number(),
+  soulshot_count: z.number().optional(),
+  spiritshot_count: z.number().optional(),
 });
 
 export type NpcEntryC4 = z.infer<typeof NpcEntryC4>;

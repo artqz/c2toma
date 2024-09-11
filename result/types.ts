@@ -71,6 +71,8 @@ export type Npc = {
   canUseSA?: number;
   buffList?: NpcBuff[];
   newDropList?: [NpcDrop[], Int][];
+  soulshotCount: number;
+  spiritshotCount: number;
 };
 
 export type Point = {
@@ -159,7 +161,7 @@ export type Item = {
   magicWeapon: boolean;
   enchantBonus: EnchantBonus[];
   defaultAction?: string;
-  contains?: {items: {itemName: string, count: number}[], chance: number}[]
+  contains?: { items: { itemName: string, count: number }[], chance: number }[]
   // recipe: Recipe[];
   // sellList: Merchant[];
   // product: Product[];

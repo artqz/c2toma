@@ -184,6 +184,8 @@ function addNpcs(deps: {
         list: npc.additional_make_multi_list,
         items: itemByName,
       }),
+      soulshotCount: npc.soulshot_count ?? 0,
+      spiritshotCount: npc.spiritshot_count ?? 0,
     });
   }
 

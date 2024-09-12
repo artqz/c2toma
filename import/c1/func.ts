@@ -36,18 +36,18 @@ export function calcPAtk(
   LVL: number,
   skillMods: SkillMod[]
 ) {
-  let stat = Math.round(Math.round(basePhysicalAttack) * LVL_MOD[LVL]) * STR_MOD[STR];
+  let stat = round(basePhysicalAttack) * LVL_MOD[LVL] * STR_MOD[STR];
   for (const sm of skillMods) {
     if (sm.value !== 0) {
       continue;
     }
     if (sm.type === "per") {
-      stat = Math.round(stat.percent(sm.value));
+      stat = round(stat.percent(sm.value));
     } else {
-      stat = stat + Math.round(sm.value);
+      stat = stat + round(sm.value);
     }
   }
-  return Math.round(stat);
+  return round(stat);
 }
 
 export function calcMAtk(
@@ -56,7 +56,7 @@ export function calcMAtk(
   LVL: number,
   skillMods: SkillMod[]
 ) {
-  let stat = baseMagicAttack * INT_MOD[INT] ** 2 * LVL_MOD[LVL] ** 2;
+  let stat = round(baseMagicAttack) * INT_MOD[INT] ** 2 * LVL_MOD[LVL] ** 2;
   for (const sm of skillMods) {
     if (sm.type === "per") {
       stat = stat.percent(sm.value);
@@ -74,7 +74,7 @@ export function calcPDef(
 ) {
   // не сходится с томой
   // let stat = round((4 + baseDefend) * LVL_MOD[LVL]);
-  let stat = Math.round(baseDefend) * LVL_MOD[LVL];
+  let stat = round(baseDefend) * LVL_MOD[LVL];
 
   for (const sm of skillMods) {
     // if (sm.value !== 0) {
@@ -87,7 +87,7 @@ export function calcPDef(
     }
   }
 
-  return Math.round(stat);
+  return round(stat);
 }
 
 export function calcMDef(
@@ -96,7 +96,7 @@ export function calcMDef(
   LVL: number,
   skillMods: SkillMod[]
 ) {
-  let stat = round(baseMagicDefend * LVL_MOD[LVL] * MEN_MOD[MEN]);
+  let stat = round(round(baseMagicDefend) * LVL_MOD[LVL] * MEN_MOD[MEN]);
   for (const sm of skillMods) {
     if (sm.type === "per") {
       stat += stat.percent(sm.value);
@@ -127,11 +127,12 @@ export function calcPCritical(base_critical: number, DEX: number) {
 
 export function calcAccuracy(DEX: number, LVL: number) {
   // return round(Math.sqrt(DEX) * 6 + LEVEL_BONUS(LVL));
-  return Math.round(Math.round(Math.sqrt(DEX)) * 6 + LVL + 6);
+  return round(Math.round(Math.sqrt(DEX)) * 6 + LVL + 6);
 }
 
 export function calcEvasion(DEX: number, LVL: number) {
-  return round(Math.sqrt(DEX) * 6 + LEVEL_BONUS(LVL));
+  // return round(Math.sqrt(DEX) * 6 + LEVEL_BONUS(LVL));
+  return round(Math.sqrt(DEX) * 6 + LVL);
 }
 
 function round(int: number) {

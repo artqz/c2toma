@@ -27,10 +27,10 @@ import { getTypeMaterials } from "./items/materials";
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
   items = loadItemNames({ ...deps, itemData: items });
-    items = loadItemGrps({ ...deps, itemData: items });
+  items = loadItemGrps({ ...deps, itemData: items });
   items = loadItemRuNames({ ...deps, itemData: items });
   items = loadItemEnchantBonuses({ ...deps, itemData: items });
-  getTypeMaterials({ items });  
+  getTypeMaterials({ items });
   console.log(`Items loaded (${Array.from(items.values()).length}).`);
 
   return items;
@@ -219,7 +219,7 @@ function loadItemEnchantBonuses(deps: {
 }) {
   // пока только ц1 -ц2
   for (const item of deps.itemData.values()) {
-    for (let i = 1; i <= (deps.chronicle === "c1" ? 16 : 20); i++) {
+    for (let i = 0; i <= (deps.chronicle === "c1" ? 16 : 20); i++) {
       if (
         (item.crystalType !== "none" && item.type === "weapon") ||
         (item.crystalType !== "none" && item.type === "armor") ||

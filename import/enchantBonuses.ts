@@ -56,20 +56,20 @@ export function calcWeaponAtk(deps: {
       if (isBow(deps.item)) {
         pAtk = Math.floor(
           bonus.bow * 3 +
-            bonus.bow * 2 * (deps.level - 3) +
-            (deps.item.physicalDamage ?? 0)
+          bonus.bow * 2 * (deps.level - 3) +
+          (deps.item.physicalDamage ?? 0)
         );
       } else if (isOneHand(deps.item)) {
         pAtk = Math.floor(
           bonus.oneHand * 3 +
-            bonus.oneHand * 2 * (deps.level - 3) +
-            (deps.item.physicalDamage ?? 0)
+          bonus.oneHand * 2 * (deps.level - 3) +
+          (deps.item.physicalDamage ?? 0)
         );
       } else if (isTwoHand(deps.item)) {
         pAtk = Math.floor(
           bonus.twoHand * 3 +
-            bonus.twoHand * 2 * (deps.level - 3) +
-            (deps.item.physicalDamage ?? 0)
+          bonus.twoHand * 2 * (deps.level - 3) +
+          (deps.item.physicalDamage ?? 0)
         );
       } else {
         pAtk = deps.item.physicalDamage ?? 0;
@@ -77,8 +77,8 @@ export function calcWeaponAtk(deps: {
 
       mAtk = Math.floor(
         bonus.magic * 3 +
-          bonus.magic * 2 * (deps.level - 3) +
-          (deps.item.magicalDamage ?? 0)
+        bonus.magic * 2 * (deps.level - 3) +
+        (deps.item.magicalDamage ?? 0)
       );
     }
   }
@@ -95,8 +95,8 @@ export function calcArmorDef(deps: { level: number; item: Item }) {
     } else {
       pDef = Math.floor(
         bonus * 3 +
-          bonus * 3 * (deps.level - 3) +
-          (deps.item.physicalDefense ?? 0)
+        bonus * 3 * (deps.level - 3) +
+        (deps.item.physicalDefense ?? 0)
       );
     }
   }
@@ -106,8 +106,8 @@ export function calcArmorDef(deps: { level: number; item: Item }) {
     } else {
       mDef = Math.floor(
         bonus * 3 +
-          bonus * 3 * (deps.level - 3) +
-          (deps.item.magicalDefense ?? 0)
+        bonus * 3 * (deps.level - 3) +
+        (deps.item.magicalDefense ?? 0)
       );
     }
   }
@@ -120,7 +120,7 @@ export function calcСrystals(deps: { level: number; item: Item }) {
   if (deps.item.type === "weapon") {
     const bonus = wcb(deps.item.crystalType);
     if (bonus) {
-      if (deps.level <= 3) {
+      if (deps.level <= 2) {
         crystals.push(
           Math.floor(bonus * deps.level + (deps.item.crystalCount ?? 0))
         );
@@ -132,15 +132,15 @@ export function calcСrystals(deps: { level: number; item: Item }) {
         crystals.push(
           Math.floor(
             bonus * 3 +
-              bonus * 2 * (deps.level - 3) +
-              (deps.item.crystalCount ?? 0)
+            bonus * 2 * (deps.level - 3) +
+            (deps.item.crystalCount ?? 0)
           )
         );
         crystals.push(
           Math.floor(
             bonus * 3 +
-              bonus * 2 * (deps.level - 3) +
-              (deps.item.crystalCount ?? 0) / 2
+            bonus * 2 * (deps.level - 3) +
+            (deps.item.crystalCount ?? 0) / 2
           )
         );
       }
@@ -161,15 +161,15 @@ export function calcСrystals(deps: { level: number; item: Item }) {
         crystals.push(
           Math.floor(
             bonus * 3 +
-              bonus * 3 * (deps.level - 3) +
-              (deps.item.crystalCount ?? 0)
+            bonus * 3 * (deps.level - 3) +
+            (deps.item.crystalCount ?? 0)
           )
         );
         crystals.push(
           Math.floor(
             bonus * 3 +
-              bonus * 3 * (deps.level - 3) +
-              (deps.item.crystalCount ?? 0) / 2
+            bonus * 3 * (deps.level - 3) +
+            (deps.item.crystalCount ?? 0) / 2
           )
         );
       }

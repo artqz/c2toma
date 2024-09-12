@@ -36,18 +36,18 @@ export function calcPAtk(
   LVL: number,
   skillMods: SkillMod[]
 ) {
-  let stat = round(basePhysicalAttack * LVL_MOD[LVL] * STR_MOD[STR]);
+  let stat = Math.round(Math.round(basePhysicalAttack) * LVL_MOD[LVL]) * STR_MOD[STR];
   for (const sm of skillMods) {
     if (sm.value !== 0) {
       continue;
     }
     if (sm.type === "per") {
-      stat = stat.percent(sm.value);
+      stat = Math.round(stat.percent(sm.value));
     } else {
-      stat = stat + sm.value;
+      stat = stat + Math.round(sm.value);
     }
   }
-  return round(stat);
+  return Math.round(stat);
 }
 
 export function calcMAtk(
@@ -74,7 +74,7 @@ export function calcPDef(
 ) {
   // не сходится с томой
   // let stat = round((4 + baseDefend) * LVL_MOD[LVL]);
-  let stat = baseDefend * LVL_MOD[LVL];
+  let stat = Math.round(baseDefend) * LVL_MOD[LVL];
 
   for (const sm of skillMods) {
     // if (sm.value !== 0) {
@@ -87,7 +87,7 @@ export function calcPDef(
     }
   }
 
-  return round(stat);
+  return Math.round(stat);
 }
 
 export function calcMDef(
@@ -113,7 +113,7 @@ export function calcMSpd(WIT: number, LVL: number) {
 }
 
 export function calcPSpd(baseAttackSpeed: number, DEX: number) {
-  return baseAttackSpeed;
+  // return baseAttackSpeed;
   return round(baseAttackSpeed * DEX_MOD[DEX]);
 }
 
@@ -126,7 +126,8 @@ export function calcPCritical(base_critical: number, DEX: number) {
 }
 
 export function calcAccuracy(DEX: number, LVL: number) {
-  return round(Math.sqrt(DEX) * 6 + LEVEL_BONUS(LVL));
+  // return round(Math.sqrt(DEX) * 6 + LEVEL_BONUS(LVL));
+  return Math.round(Math.round(Math.sqrt(DEX)) * 6 + LVL + 6);
 }
 
 export function calcEvasion(DEX: number, LVL: number) {

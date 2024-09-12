@@ -75,6 +75,24 @@ export type Npc = {
   spiritshotCount: number;
 };
 
+export type Pet = {
+  npcName: string;
+  level: number;
+  orgHp: Float | null;
+  orgMp: Float | null;
+  pAtk?: Int;
+  pDef?: Int;
+  mAtk?: Int;
+  mDef?: Int;
+  pSpd?: Int;
+  mSpd?: Int;
+  pCritical?: Int;
+  accuracy?: Int;
+  evasion?: Int;
+  soulshotCount: number;
+  spiritshotCount: number;
+}
+
 export type Point = {
   x: Float;
   y: Float;

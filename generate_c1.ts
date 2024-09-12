@@ -15,6 +15,7 @@ import { loadNpcBuffs } from "./import/c1/npcBuffs";
 import { loadSkillCard } from "./import/c1/skillCard";
 import { generateAgroPatch } from "./import/c1/npcAggroPatch";
 import { loadCapsuleItems } from "./import/c1/capsule/items";
+import { loadSummonData } from "./import/c1/summon";
 import { loadPetsData } from "./import/c1/pets";
 
 const chronicle: Chronicle = "c4";
@@ -91,7 +92,12 @@ function init() {
     `result/data/${chronicle}/ai.json`,
     JSON.stringify(Array.from(ai.values()), null, 2)
   );
-  const pets = loadPetsData({ npcs });
+  const summons = loadSummonData({ npcs });
+  saveFile(
+    `result/data/${chronicle}/summons.json`,
+    JSON.stringify(Array.from(summons.values()), null, 2)
+  );
+  const pets = loadPetsData({ npcs })
   saveFile(
     `result/data/${chronicle}/pets.json`,
     JSON.stringify(Array.from(pets.values()), null, 2)

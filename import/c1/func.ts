@@ -42,7 +42,7 @@ export function calcPAtk(
       continue;
     }
     if (sm.type === "per") {
-      stat = round(stat.percent(sm.value));
+      stat += round(stat.percent(sm.value));
     } else {
       stat = stat + round(sm.value);
     }
@@ -59,7 +59,7 @@ export function calcMAtk(
   let stat = round(baseMagicAttack) * INT_MOD[INT] ** 2 * LVL_MOD[LVL] ** 2;
   for (const sm of skillMods) {
     if (sm.type === "per") {
-      stat = stat.percent(sm.value);
+      stat += stat.percent(sm.value);
     } else {
       stat = stat + sm.value;
     }
@@ -81,7 +81,7 @@ export function calcPDef(
     //   continue;
     // }
     if (sm.type === "per") {
-      stat = stat.percent(sm.value);
+      stat += stat.percent(sm.value);
     } else {
       stat = stat + sm.value;
     }
@@ -147,11 +147,9 @@ declare global {
 }
 
 Number.prototype.percent = function (percent = 100) {
-  const result =
-    (this.valueOf() / 100) * Math.abs(parseFloat(percent.toString()));
-  return Math.sign(parseFloat(percent.toString())) === -1
-    ? this.valueOf() - result
-    : result;
+  const result = (this.valueOf() / 100) * Math.abs(parseFloat(percent.toString()));
+  return parseFloat(percent.toString()) === 0 ? 0 : // Check if percent is 0
+    Math.sign(parseFloat(percent.toString())) === -1 ? this.valueOf() - result : result;
 };
 
 export function getSkillMod(deps: {
@@ -171,6 +169,7 @@ export function getSkillMod(deps: {
             //     type: effect.per ? "per" : "diff",
             //     value: effect.value,
             //   });
+
             switch (effect.effectName) {
               case "p_physical_attack":
                 arr.push({

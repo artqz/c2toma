@@ -13,7 +13,8 @@ import {
 import { loadItemGrpC3 } from "../../datapack/c3/itemgrp";
 import { loadItemDataGF } from "../../datapack/gf/itemdata";
 import { loadItemGrpC4 } from "../../datapack/c4/itemgrp";
-import { getTypeMaterials } from "../с1/items/materials";
+import { getTypeMaterials } from "../c1/items/materials";
+
 
 export function loadItemsC3() {
   let items: Map<number, Item>;

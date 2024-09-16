@@ -170,20 +170,22 @@ export function getSkillMod(deps: {
             //     value: effect.value,
             //   });
 
-            switch (effect.effectName) {
-              case "p_physical_attack":
-                arr.push({
-                  type: effect.per ? "per" : "diff",
-                  value: effect.value,
-                });
-                break;
-              case "p_physical_defence":
-                arr.push({
-                  type: effect.per ? "per" : "diff",
-                  value: effect.value,
-                });
-              default:
-                break;
+            if (typeof effect.value == "number") {
+              switch (effect.effectName) {
+                case "p_physical_attack":
+                  arr.push({
+                    type: effect.per ? "per" : "diff",
+                    value: effect.value,
+                  });
+                  break;
+                case "p_physical_defence":
+                  arr.push({
+                    type: effect.per ? "per" : "diff",
+                    value: effect.value,
+                  });
+                default:
+                  break;
+              }
             }
           }
         }

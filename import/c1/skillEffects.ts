@@ -1,58 +1,82 @@
 import { ZodNumber, object, z } from 'zod';
+import { Effect } from '../../result/types';
 
 // p_physical_defence
 // p_magical_defence
 // p_physical_attack
 // p_magical_attack
 // p_speed
-const PerDiff = z.object({effectName: z.string(), app: z.string().array(), value: z.number(), valueType: z.enum(["per", "diff"])})
+const PerDiff = z.object({ effectName: z.string(), app: z.string().array(), value: z.number(), valueType: z.enum(["per", "diff"]) })
 export type PerDiff = z.infer<typeof PerDiff>;
 
-const Effect = z.union([  
-  PerDiff,  
-  z.object({effectName: z.string(), huy: z.number()})
+const Effect = z.union([
+  PerDiff,
+  z.object({ effectName: z.string(), huy: z.number() })
 ])
 
 export function getEffects(effects: any) {
   const effectMap = new Map<
     string,
-    { effectName: string; app: string[]; value: number; per: boolean }
+    Effect
   >();
   if (effects) {
     for (const effect of effects) {
       const effectName: string = effect.$[0];
+
       if (effectName === "p_physical_defence") {
         const app: string[] = effect.$[1].$;
         const value: number = effect.$[2];
         const per: boolean = effect.$[3] === "per";
         effectMap.set(effectName, { effectName, app, value, per });
-      //  const data = Effect.parse({ effectName, app, value, valueType: effect.$[3] })
-          
+        //  const data = Effect.parse({ effectName, app, value, valueType: effect.$[3] })
 
-      //     if (data instanceof PerDiff) {
 
-          // }
-        
+        //     if (data instanceof PerDiff) {
+
+        // }
+
       }
-      if (effectName === "p_magical_defence") {
+
+
+      if (effectName === "p_max_hp" ||
+        effectName === "p_max_mp"
+      ) {
+        const value: number = effect.$[2];
+        const per: boolean = effect.$[3] === "per";
+        effectMap.set(effectName, { effectName, value, per });
+      }
+
+      if (effectName === "p_physical_attack" ||
+        effectName === "p_magical_attack" ||
+        effectName === "p_magical_defence" ||
+        effectName === "p_physical_defence" ||
+        effectName === "p_magic_speed" ||
+        effectName === "p_attack_speed" ||
+        effectName === "p_mp_regen" ||
+        effectName === "p_hp_regen" ||
+        effectName === "p_speed" ||
+        effectName === "p_hit") {
         const app: string[] = effect.$[1].$;
         const value: number = effect.$[2];
         const per: boolean = effect.$[3] === "per";
         effectMap.set(effectName, { effectName, app, value, per });
       }
-      if (effectName === "p_physical_attack") {
-        const app: string[] = effect.$[1].$;
+
+      if (effectName === "p_resist_dispel_by_category" || effectName === "p_resist_abnormal_by_category") {
         const value: number = effect.$[2];
+        const descValue: string = effect.$[1];
         const per: boolean = effect.$[3] === "per";
-        effectMap.set(effectName, { effectName, app, value, per });
+        effectMap.set(effectName, { effectName, value, descValue, per });
       }
-      if (effectName === "p_magical_attack") {
-        const app: string[] = effect.$[1].$;
-        const value: number = effect.$[2];
-        const per: boolean = effect.$[3] === "per";
-        effectMap.set(effectName, { effectName, app, value, per });
+
+
+      if (effectName === "i_hp_drain") {
+        // const app: string[] = effect.$[1].$;
+        const value: number[] = [effect.$[1], effect.$[2]];
+        const descValue = ["power", "absorb_hp"]
+        effectMap.set(effectName, { effectName, value, descValue });
       }
-      
+
       // if (effectName === "i_p_attack") {
       //   const app: string[] = effect.$[1].$;
       //   const value: number = effect.$[2];
@@ -60,11 +84,11 @@ export function getEffects(effects: any) {
       //   effectMap.set(effectName, { effectName, app, value, per });
       // }
     }
-  }  
+  }
   return Array.from(effectMap.values());
 }
 
-// "i_p_attack",
+//   "i_p_attack",
 //   "p_speed",
 //   "i_fatal_blow",
 //   "i_dispel_by_slot",

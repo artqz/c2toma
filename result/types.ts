@@ -123,13 +123,17 @@ export type Skill = {
   hp_consume: number;
   mp_consume1: number;
   mp_consume2: number;
-  effects?: {
-    effectName: string;
-    app: string[];
-    value: number;
-    per: boolean;
-  }[];
+  effects?: Effect[];
 };
+
+export type Effect = {
+  effectName: string;
+  app?: string[];
+  value: number | number[];
+  descValue?: string | string[];
+  per?: boolean;
+}
+
 
 export type Item = {
   id: Int;

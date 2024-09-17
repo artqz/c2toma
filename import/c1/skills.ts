@@ -87,8 +87,8 @@ function loadItemData(deps: { chronicle: Chronicle }) {
               skill.skill_name.search("dance_") > 0
               ? "song"
               : "buff",
-      effectJson: JSON.stringify(skill.effect),
-      operateCondJson: JSON.stringify(skill.operate_cond),
+      effectJson: JSON.stringify(skill.effect, null, 2),
+      operateCondJson: JSON.stringify(skill.operate_cond, null, 2),
     });
   }
   // saveFile("allEffects.json", JSON.stringify(Array.from(_effectsMap.values()), null, 2))

@@ -1,4 +1,4 @@
-import { ZodNumber, object, z } from 'zod';
+import { z } from 'zod';
 import { Effect } from '../../result/types';
 
 // p_physical_defence
@@ -37,12 +37,11 @@ export function getEffects(effects: any) {
 
       }
 
-
       if (effectName === "p_max_hp" ||
         effectName === "p_max_mp"
       ) {
-        const value: number = effect.$[2];
-        const per: boolean = effect.$[3] === "per";
+        const value: number = effect.$[1];
+        const per: boolean = effect.$[2] === "per";
         effectMap.set(effectName, { effectName, value, per });
       }
 
@@ -75,6 +74,15 @@ export function getEffects(effects: any) {
         const value: number[] = [effect.$[1], effect.$[2]];
         const descValue = ["power", "absorb_hp"]
         effectMap.set(effectName, { effectName, value, descValue });
+      }
+
+
+      if (effectName === "i_p_attack") {
+        if (effect.$.length) {
+          const value: number[] = [effect.$[1], effect.$[2]];
+          const descValue = ["power", "crit_chance"]
+          effectMap.set(effectName, { effectName, value, descValue });
+        }
       }
 
       // if (effectName === "i_p_attack") {

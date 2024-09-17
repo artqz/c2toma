@@ -124,6 +124,9 @@ export type Skill = {
   mp_consume1: number;
   mp_consume2: number;
   effects?: Effect[];
+  selfEffect?: string;
+  effectJson?: string;
+  operateCondJson?: string;
 };
 
 export type Effect = {

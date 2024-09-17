@@ -18,13 +18,13 @@ import { generateSkillDataC5 } from "./c5/skills";
 import { getEffects } from './skillEffects';
 
 export function loadSkills(deps: { chronicle: Chronicle }) {
-  let {skills, effects} = loadItemData(deps);
+  let { skills, effects } = loadItemData(deps);
   skills = loadSkillNames({ ...deps, skillData: skills });
   skills = loadSkillGrps({ ...deps, skillData: skills });
   skills = loadSkillRuNames({ ...deps, skillData: skills });
   console.log(`Skills loaded (${Array.from(skills.values()).length}).`);
 
-  return {skills, effects};
+  return { skills, effects };
 }
 
 function loadItemData(deps: { chronicle: Chronicle }) {
@@ -54,13 +54,13 @@ function loadItemData(deps: { chronicle: Chronicle }) {
   const _effectsMap = new Map<string, string>()
   for (const skill of skillData) {
     // if (skill.skill_id === 4084 && skill.level === 4) {
-      
+
     //   getEffects(skill.effect.$)
     // }
 
     // getAllEffects(skill.effect.$).map(e => _effectsMap.set(e, e))   
-    effects.set(skill.skill_name.toString().replace(/:|\s/g, "_"), skill.effect.$)   
-   
+    effects.set(skill.skill_name.toString().replace(/:|\s/g, "_"), skill.effect.$)
+
     skills.set(skill.skill_id + "_" + skill.level, {
       id: skill.skill_id,
       skillName: skill.skill_name.toString().replace(/:|\s/g, "_"),
@@ -82,15 +82,17 @@ function loadItemData(deps: { chronicle: Chronicle }) {
         skill.debuff === undefined
           ? undefined
           : skill.debuff
-          ? "debuff"
-          : skill.skill_name.search("song_") > 0 ||
-            skill.skill_name.search("dance_") > 0
-          ? "song"
-          : "buff",
+            ? "debuff"
+            : skill.skill_name.search("song_") > 0 ||
+              skill.skill_name.search("dance_") > 0
+              ? "song"
+              : "buff",
+      effectJson: JSON.stringify(skill.effect),
+      operateCondJson: JSON.stringify(skill.operate_cond),
     });
   }
   // saveFile("allEffects.json", JSON.stringify(Array.from(_effectsMap.values()), null, 2))
-  return {skills, effects};
+  return { skills, effects };
 }
 
 function loadSkillNames(deps: {

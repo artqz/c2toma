@@ -84,6 +84,7 @@ export function getEffects(effects: any) {
           effectMap.set(effectName, { effectName, value, descValue });
         }
         // gf length = 4 & 5
+        //
       }
 
       if (effectName === "i_fatal_blow") {

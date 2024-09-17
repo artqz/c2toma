@@ -68,7 +68,6 @@ export function getEffects(effects: any) {
         effectMap.set(effectName, { effectName, value, descValue, per });
       }
 
-
       if (effectName === "i_hp_drain") {
         // const app: string[] = effect.$[1].$;
         const value: number[] = [effect.$[1], effect.$[2]];
@@ -78,11 +77,25 @@ export function getEffects(effects: any) {
 
 
       if (effectName === "i_p_attack") {
+        // c4 length = 3
         if (effect.$.length) {
           const value: number[] = [effect.$[1], effect.$[2]];
           const descValue = ["power", "crit_chance"]
           effectMap.set(effectName, { effectName, value, descValue });
         }
+        // gf length = 4 & 5
+      }
+
+      if (effectName === "i_fatal_blow") {
+        const descValue = ["power", "blow_rate", "crit_chance"]
+        const value: number[] = [];
+
+        for (let i = 0; i < descValue.length; i++) {
+          const v = typeof effect.$[i + 1] === "undefined" ? 0 : effect.$[i + 1];
+          value.push(v)
+        }
+
+        effectMap.set(effectName, { effectName, value, descValue });
       }
 
       // if (effectName === "i_p_attack") {

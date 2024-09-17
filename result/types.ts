@@ -132,7 +132,7 @@ export type Skill = {
 export type Effect = {
   effectName: string;
   app?: string[];
-  value: number | number[];
+  value?: number | number[] | [string, number];
   descValue?: string | string[];
   per?: boolean;
 }

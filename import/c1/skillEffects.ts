@@ -54,7 +54,8 @@ export function getEffects(effects: any) {
         effectName === "p_mp_regen" ||
         effectName === "p_hp_regen" ||
         effectName === "p_speed" ||
-        effectName === "p_hit") {
+        effectName === "p_hit" ||
+        effectName === "p_avoid") {
         const app: string[] = effect.$[1].$;
         const value: number = effect.$[2];
         const per: boolean = effect.$[3] === "per";
@@ -68,8 +69,13 @@ export function getEffects(effects: any) {
         effectMap.set(effectName, { effectName, value, descValue, per });
       }
 
+      if (effectName === "i_heal") {
+        const value: number[] = [effect.$[1]];
+        const descValue = ["power"]
+        effectMap.set(effectName, { effectName, value, descValue });
+      }
+
       if (effectName === "i_hp_drain") {
-        // const app: string[] = effect.$[1].$;
         const value: number[] = [effect.$[1], effect.$[2]];
         const descValue = ["power", "absorb_hp"]
         effectMap.set(effectName, { effectName, value, descValue });
@@ -97,6 +103,16 @@ export function getEffects(effects: any) {
         }
 
         effectMap.set(effectName, { effectName, value, descValue });
+      }
+
+      if (effectName === "i_dispel_by_slot") {
+        const descValue = ["abnormal_type", "abnormal_lv"]
+        const value: [string, number] = [effect.$[1], effect.$[2]];
+        effectMap.set(effectName, { effectName, value, descValue });
+      }
+
+      if (effectName === "p_target_me" || effectName === "i_get_agro") {
+        effectMap.set(effectName, { effectName });
       }
 
       // if (effectName === "i_p_attack") {
@@ -402,3 +418,14 @@ export function getEffects(effects: any) {
 //   "p_exp_modify",
 //   "p_sp_modify",
 //   "p_crystal_grade_modify"
+
+function generateEffect(effectName: string, effect: any, descValue: string[]) {
+  const value: number[] = [];
+
+  for (let i = 0; i < descValue.length; i++) {
+    const v = typeof effect.$[i + 1] === "undefined" ? 0 : effect.$[i + 1];
+    value.push(v)
+  }
+
+  return { effectName, value, descValue }
+}

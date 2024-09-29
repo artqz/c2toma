@@ -18,7 +18,7 @@ import { loadCapsuleItems } from "./import/c1/capsule/items";
 import { loadSummonData } from "./import/c1/summon";
 import { loadPetsData } from "./import/c1/pets";
 
-const chronicle: Chronicle = "c4";
+const chronicle: Chronicle = "c1";
 
 function init() {
   createDir(`result/data/${chronicle}`);
@@ -39,7 +39,7 @@ function init() {
     `result/data/${chronicle}/items.json`,
     JSON.stringify(Array.from(items.values()), null, 2)
   );
-  const capsules = loadCapsuleItems({ effects, items })
+  const capsules = loadCapsuleItems({ effects, items });
   saveFile(
     `result/data/${chronicle}/capsules.json`,
     JSON.stringify(Array.from(capsules.values()), null, 2)
@@ -97,7 +97,7 @@ function init() {
     `result/data/${chronicle}/summons.json`,
     JSON.stringify(Array.from(summons.values()), null, 2)
   );
-  const pets = loadPetsData({ npcs })
+  const pets = loadPetsData({ npcs });
   saveFile(
     `result/data/${chronicle}/pets.json`,
     JSON.stringify(Array.from(pets.values()), null, 2)

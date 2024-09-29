@@ -32,6 +32,7 @@ import { generateNpcsIL } from "./il/npcs";
 import { getSkills } from "./skills/npcGetSkill";
 import { canUseSA } from "./npc/canUseSA";
 import { getClan } from "./npc/getters";
+import { loadNpcGrpDataC1, NpcGrp } from "../../datapack/c1/npcgrp";
 
 export function loadNpcs(deps: {
   chronicle: Chronicle;
@@ -53,7 +54,11 @@ function loadNpcData(deps: {
 }) {
   switch (deps.chronicle) {
     case "c1":
-      return addNpcs({ ...deps, npcsData: loadNpcDataC1() });
+      return addNpcs({
+        ...deps,
+        npcsData: loadNpcDataC1(),
+        npcGrp: loadNpcGrpDataC1(),
+      });
     case "c4":
       return addNpcs({ ...deps, npcsData: loadNpcDataC4() });
     case "c5":
@@ -72,6 +77,7 @@ function addNpcs(deps: {
   items: Map<number, Item>;
   skills: Map<string, Skill>;
   npcsData: NpcDataEntry[];
+  npcGrp?: NpcGrp[];
 }) {
   const npcs = new Map<number, Npc>();
   const skillsByName = new Map(
@@ -80,11 +86,15 @@ function addNpcs(deps: {
   const itemByName = new Map(
     Array.from(deps.items.values()).map((i) => [i.itemName, i])
   );
+  const NpcGrpByName = new Map(
+    deps.npcGrp ? deps.npcGrp.map((n) => [n.npcName, n]) : []
+  );
 
   for (const npc of deps.npcsData) {
     if (IGNORE_NPCS.has(npc.$[2]) || npc.$[2].startsWith("_")) {
       continue;
     }
+    const grp = NpcGrpByName.get(npc.$[2]);
 
     const skillList = getSkills({
       ...deps,
@@ -141,7 +151,10 @@ function addNpcs(deps: {
       accuracy: calcAccuracy(npc.dex, npc.level),
       evasion: calcEvasion(npc.dex, npc.level),
       baseReuseDelay: 0,
-      baseMovingSpeed: [calcSpeed(npc.ground_low.$[0], npc.dex), calcSpeed(npc.ground_high.$[0], npc.dex)],
+      baseMovingSpeed: [
+        calcSpeed(npc.ground_low.$[0], npc.dex),
+        calcSpeed(npc.ground_high.$[0], npc.dex),
+      ],
       exp: npc.level ** 2 * npc.acquire_exp_rate,
       sp: npc.acquire_sp,
       magicUseSpeedModify: 0,
@@ -186,6 +199,12 @@ function addNpcs(deps: {
       }),
       soulshotCount: npc.soulshot_count ?? 0,
       spiritshotCount: npc.spiritshot_count ?? 0,
+      model: {
+        className: grp?.className!,
+        classPath: grp?.classPath!,
+        textureName: grp?.textureName!,
+        texturePath: grp?.texturePath!,
+      },
     });
   }
 

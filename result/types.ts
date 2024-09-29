@@ -73,6 +73,12 @@ export type Npc = {
   newDropList?: [NpcDrop[], Int][];
   soulshotCount: number;
   spiritshotCount: number;
+  model?: {
+    classPath: string;
+    className: string;
+    texturePath?: string;
+    textureName?: string[];
+  };
 };
 
 export type Pet = {
@@ -93,8 +99,8 @@ export type Pet = {
     evasion?: Int;
     soulshotCount: number;
     spiritshotCount: number;
-  }[]
-}
+  }[];
+};
 
 export type Point = {
   x: Float;
@@ -135,8 +141,7 @@ export type Effect = {
   value: number | number[];
   descValue?: string | string[];
   per?: boolean;
-}
-
+};
 
 export type Item = {
   id: Int;
@@ -189,7 +194,7 @@ export type Item = {
   magicWeapon: boolean;
   enchantBonus: EnchantBonus[];
   defaultAction?: string;
-  contains?: { items: { itemName: string, count: number }[], chance: number }[]
+  contains?: { items: { itemName: string; count: number }[]; chance: number }[];
   // recipe: Recipe[];
   // sellList: Merchant[];
   // product: Product[];

@@ -13,6 +13,7 @@
     "server": "tsnd --respawn server.ts",
     "dev": "ts-node index.ts",
     "test": "ts-node zod.ts",
+    "textures": "ts-node getTextures.ts",
     "saveProf": "ts-node saveClasses.ts",
     "saveMaps": "ts-node saveMaps.ts",
     "saveNpcs": "ts-node saveNpcs.ts",

@@ -27,6 +27,26 @@ export function loadNpcGrpDataC1() {
 
 // Функция для преобразования текста в JSON
 function toJson(npcData: string) {
+  // Загружаем текстуры
+  const textureByName = new Map(
+    z
+      .string()
+      .array()
+      .parse(
+        JSON.parse(Fs.readFileSync("datapack/c1/models/textures.json", "utf8"))
+      )
+      .map((t) => [t, t])
+  );
+  // Загружаем материалы
+  const matsByName = new Map(
+    z
+      .string()
+      .array()
+      .parse(
+        JSON.parse(Fs.readFileSync("datapack/c1/models/mats.json", "utf8"))
+      )
+      .map((t) => [t, t])
+  );
   // Шаг 1. Разбиваем текст на отдельные NPC-блоки
   const npcBlocks = npcData.split("npc_begin").slice(1); // Убираем первый пустой элемент
 
@@ -74,8 +94,33 @@ function toJson(npcData: string) {
         // Обрабатываем каждый элемент texture_name
         textureNames.forEach((t) => {
           const [_texturePath, _textureName] = t.split(".");
-          texturePath = _texturePath; // Присваиваем путь к текстуре
-          textureName.push(_textureName); // Добавляем имя текстуры в массив
+          // Проверяем существует-ли такая текстура
+          const checkTexture = textureByName.get(_textureName);
+
+          if (checkTexture) {
+            textureName.push(_textureName);
+          } else {
+            // Если нет текстуры проверяем материал
+            const checkMat = matsByName.get(_textureName);
+            if (checkMat) {
+              // Достаем текстуры из материала
+              const matData = Fs.readFileSync(
+                `datapack/c1/models/${_texturePath}/Shader/${_textureName}.mat`,
+                "utf8"
+              );
+
+              for (const tex of parseMat(matData)) {
+                const checkTexture = textureByName.get(tex);
+                if (checkTexture) {
+                  textureName.push(tex);
+                } else {
+                  console.log(`not_texture: ${_textureName}`);
+                }
+              }
+            }
+          }
+          // texturePath = _texturePath; // Присваиваем путь к текстуре
+          // textureName.push(_textureName); // Добавляем имя текстуры в массив
         });
       }
 
@@ -90,4 +135,14 @@ function toJson(npcData: string) {
       };
     })
   );
+}
+
+function parseMat(data: string) {
+  const tmp = data.split("\r\n");
+  const textures: string[] = [];
+
+  for (const element of tmp[0].split("=")) {
+    textures.push(tmp[0].split("=")[1]);
+  }
+  return textures;
 }

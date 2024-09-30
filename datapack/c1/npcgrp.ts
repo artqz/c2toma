@@ -141,8 +141,9 @@ function parseMat(data: string) {
   const tmp = data.split("\r\n");
   const textures: string[] = [];
 
-  for (const element of tmp[0].split("=")) {
-    textures.push(tmp[0].split("=")[1]);
+  for (const str of tmp) {
+    textures.push(str.split("=")[1]);
   }
+
   return textures;
 }

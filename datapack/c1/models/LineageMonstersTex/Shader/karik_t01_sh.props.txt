@@ -1,14 +1,14 @@
 Diffuse = Texture'karik.karik_t01_ori'
 NormalMap = None
 Opacity = Texture'karik.karik_t01_ori'
-Specular = None
+Specular = TexEnvMap'karik.goldcube'
 SpecularityMask = Texture'karik.karik_t01_sp'
 SelfIllumination = None
 SelfIlluminationMask = None
 Detail = None
 DetailScale = 8
 OutputBlending = OB_Normal (0)
-TwoSided = false
+TwoSided = true
 Wireframe = false
 ModulateStaticLighting2X = true
 PerformLightingOnSpecularPass = false

@@ -1,0 +1,13 @@
+FrameBufferBlending = FB_Overwrite (0)
+ZWrite = true
+ZTest = true
+AlphaTest = false
+TwoSided = true
+AlphaRef = 0
+TreatAsTwoSided = false
+Material = Texture'aracne.aracne_t00_ori'
+FallbackMaterial = None
+DefaultMaterial = None
+SurfaceType = 0
+bUseTextureAsHeat = false
+HeatMaterial = None

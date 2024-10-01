@@ -1,0 +1,13 @@
+FrameBufferBlending = FB_AlphaBlend (2)
+ZWrite = true
+ZTest = true
+AlphaTest = true
+TwoSided = true
+AlphaRef = 160
+TreatAsTwoSided = false
+Material = Shader'oel_mahum.oel_mahum_t01_sh'
+FallbackMaterial = None
+DefaultMaterial = None
+SurfaceType = 0
+bUseTextureAsHeat = false
+HeatMaterial = None

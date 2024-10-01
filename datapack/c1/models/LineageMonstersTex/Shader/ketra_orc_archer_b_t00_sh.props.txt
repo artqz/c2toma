@@ -1,8 +1,8 @@
 Diffuse = Texture'ketra_orc_archer_b.ketra_orc_archer_b_t00_ori'
 NormalMap = None
 Opacity = Texture'ketra_orc_archer_b.ketra_orc_archer_b_t00_ori'
-Specular = TexEnvMap'ketra_orc_archer_b.TexEnvMap0'
-SpecularityMask = Texture'ketra_orc_archer_b.ketra_orc_archer_b_t00_sp'
+Specular = TexEnvMap'ketra_orc_archer_b.TexEnvMap1'
+SpecularityMask = Texture'Shine.Shine0'
 SelfIllumination = None
 SelfIlluminationMask = None
 Detail = None

@@ -4,8 +4,10 @@ import * as fs from "fs";
 import * as path from "path";
 
 // Функция для рекурсивного получения всех файлов в директории
-function getFilesInDirectorySync(directoryPath: string): string[] {
-  let files: string[] = [];
+function getFilesInDirectorySync(
+  directoryPath: string
+): { name: string; path: string }[] {
+  let files: { name: string; path: string }[] = [];
 
   // Чтение содержимого директории синхронно
   const items = fs.readdirSync(directoryPath);
@@ -23,7 +25,8 @@ function getFilesInDirectorySync(directoryPath: string): string[] {
       files = files.concat(nestedFiles);
     } else if (stats.isFile()) {
       // Если это файл, добавляем его в массив
-      files.push(item.split(".")[0]);
+
+      files.push({ name: item.split(".")[0], path: directoryPath });
     }
   }
 
@@ -57,6 +60,12 @@ saveFile(
       ),
       ...getFilesInDirectorySync(
         `datapack/${chronicle}/models/LineageNpcsTex/Shader`
+      ),
+      ...getFilesInDirectorySync(
+        `datapack/${chronicle}/models/LineageMonstersTex/FinalBlend`
+      ),
+      ...getFilesInDirectorySync(
+        `datapack/${chronicle}/models/LineageNpcsTex/FinalBlend`
       ),
     ],
     null,

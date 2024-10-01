@@ -1,7 +1,7 @@
 Diffuse = Texture'karik.karik_t00_sp'
 NormalMap = None
 Opacity = None
-Specular = None
+Specular = TexEnvMap'karik.goldcube'
 SpecularityMask = Texture'karik.karik_t00_sp'
 SelfIllumination = None
 SelfIlluminationMask = None

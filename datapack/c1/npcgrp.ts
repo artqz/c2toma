@@ -30,22 +30,22 @@ function toJson(npcData: string) {
   // Загружаем текстуры
   const textureByName = new Map(
     z
-      .string()
+      .object({ name: z.string(), path: z.string() })
       .array()
       .parse(
         JSON.parse(Fs.readFileSync("datapack/c1/models/textures.json", "utf8"))
       )
-      .map((t) => [t, t])
+      .map((t) => [t.name, t])
   );
   // Загружаем материалы
   const matsByName = new Map(
     z
-      .string()
+      .object({ name: z.string(), path: z.string() })
       .array()
       .parse(
         JSON.parse(Fs.readFileSync("datapack/c1/models/mats.json", "utf8"))
       )
-      .map((t) => [t, t])
+      .map((t) => [t.name, t])
   );
   // Шаг 1. Разбиваем текст на отдельные NPC-блоки
   const npcBlocks = npcData.split("npc_begin").slice(1); // Убираем первый пустой элемент
@@ -105,7 +105,7 @@ function toJson(npcData: string) {
             if (checkMat) {
               // Достаем текстуры из материала
               const matData = Fs.readFileSync(
-                `datapack/c1/models/${_texturePath}/Shader/${_textureName}.mat`,
+                `${checkMat.path}/${_textureName}.mat`,
                 "utf8"
               );
 
@@ -117,6 +117,8 @@ function toJson(npcData: string) {
                   console.log(`not_texture: ${_textureName}`);
                 }
               }
+            } else {
+              console.log("huy");
             }
           }
           // texturePath = _texturePath; // Присваиваем путь к текстуре

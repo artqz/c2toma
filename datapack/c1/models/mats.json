@@ -1,248 +1,1722 @@
 [
-  "antaras_t00",
-  "antaras_t00",
-  "antaras_t01",
-  "antaras_t01",
-  "ant_larva_t00",
-  "ant_larva_t00",
-  "ant_soldier_t00",
-  "ant_soldier_t00",
-  "ant_soldier_t01",
-  "ant_soldier_t01",
-  "ant_t00",
-  "ant_t00",
-  "cave_maiden_t00",
-  "cave_maiden_t00",
-  "cave_maiden_t01",
-  "cave_maiden_t01",
-  "centaurus_t00_sh",
-  "centaurus_t00_sh",
-  "centaurus_t01",
-  "centaurus_t01",
-  "crimson_bear_t00_sh",
-  "crimson_bear_t00_sh",
-  "crimson_doll_t01_sh",
-  "crimson_doll_t01_sh",
-  "dark_fencer_t00",
-  "dark_fencer_t00",
-  "dark_fencer_t01",
-  "dark_fencer_t01",
-  "dark_horror_t00",
-  "dark_horror_t00",
-  "death_blader_t00_sh",
-  "death_blader_t00_sh",
-  "death_blader_t01_sh",
-  "death_blader_t01_sh",
-  "dwarf_ghost_t00",
-  "dwarf_ghost_t00",
-  "dwarf_ghost_t01",
-  "dwarf_ghost_t01",
-  "elf_ghost_t00",
-  "elf_ghost_t00",
-  "elf_ghost_t01",
-  "elf_ghost_t01",
-  "field_stalker_sh",
-  "field_stalker_sh",
-  "field_stalker_t00",
-  "field_stalker_t00",
-  "gamlin_t00",
-  "gamlin_t00",
-  "hatchling_t00_sh",
-  "hatchling_t00_sh",
-  "headless_knight_t00",
-  "headless_knight_t00",
-  "human_ghost_t00",
-  "human_ghost_t00",
-  "human_ghost_t01",
-  "human_ghost_t01",
-  "iron_golem_t00",
-  "iron_golem_t00",
-  "iron_golem_t01",
-  "iron_golem_t01",
-  "karik_t00",
-  "karik_t00",
-  "karik_t01_sh",
-  "karik_t01_sh",
-  "kel_mahum_archer_t00_sh",
-  "kel_mahum_archer_t00_sh",
-  "kel_mahum_champion_t00_sh",
-  "kel_mahum_champion_t00_sh",
-  "kel_mahum_champion_t01",
-  "kel_mahum_champion_t01",
-  "kel_mahum_t00_sh",
-  "kel_mahum_t00_sh",
-  "kel_mahum_t01_sh",
-  "kel_mahum_t01_sh",
-  "kel_mahum_warrior_t00_sh",
-  "kel_mahum_warrior_t00_sh",
-  "kel_mahum_warrior_t01_sh",
-  "kel_mahum_warrior_t01_sh",
-  "ketra_orc_archer_a_t00_sh",
-  "ketra_orc_archer_a_t00_sh",
-  "ketra_orc_archer_a_t01",
-  "ketra_orc_archer_a_t01",
-  "ketra_orc_archer_b_t00_sh",
-  "ketra_orc_archer_b_t00_sh",
-  "ketra_orc_archer_b_t01",
-  "ketra_orc_archer_b_t01",
-  "ketra_orc_overload_t00",
-  "ketra_orc_overload_t00",
-  "ketra_orc_overload_t01",
-  "ketra_orc_overload_t01",
-  "ketra_orc_t00",
-  "ketra_orc_t00",
-  "ketra_orc_t01",
-  "ketra_orc_t01",
-  "ketra_orc_warrior_a_t00_sh",
-  "ketra_orc_warrior_a_t00_sh",
-  "ketra_orc_warrior_a_t01",
-  "ketra_orc_warrior_a_t01",
-  "ketra_orc_warrior_b_t00_sh",
-  "ketra_orc_warrior_b_t00_sh",
-  "ketra_orc_warrior_b_t01",
-  "ketra_orc_warrior_b_t01",
-  "legoul_t00",
-  "legoul_t00",
-  "lesser_giant_mage_sh",
-  "lesser_giant_mage_sh",
-  "lesser_giant_mage_t01",
-  "lesser_giant_mage_t01",
-  "lesser_giant_sh",
-  "lesser_giant_sh",
-  "lesser_giant_shooter_sh",
-  "lesser_giant_shooter_sh",
-  "lesser_giant_shooter_t01",
-  "lesser_giant_shooter_t01",
-  "lesser_giant_t01",
-  "lesser_giant_t01",
-  "liviona_sh",
-  "liviona_sh",
-  "magical_weaver_t00",
-  "magical_weaver_t00",
-  "magical_weaver_t01",
-  "magical_weaver_t01",
-  "mana_vampire_t00",
-  "mana_vampire_t00",
-  "mana_vampire_t01",
-  "mana_vampire_t01",
-  "marsh_stakato_drone_t00",
-  "marsh_stakato_drone_t00",
-  "marsh_stakato_drone_t01_sh",
-  "marsh_stakato_drone_t01_sh",
-  "marsh_stakato_soldier_t00_sh",
-  "marsh_stakato_soldier_t00_sh",
-  "marsh_stakato_soldier_t01_sh",
-  "marsh_stakato_soldier_t01_sh",
-  "mechanic_golem_t00_sh",
-  "mechanic_golem_t00_sh",
-  "mechanic_golem_t01",
-  "mechanic_golem_t01",
-  "medusa_t00",
-  "medusa_t00",
-  "medusa_t01",
-  "medusa_t01",
-  "mirror_t00",
-  "mirror_t00",
-  "oel_mahum_champion_t00_sh",
-  "oel_mahum_champion_t00_sh",
-  "oel_mahum_champion_t01_sh",
-  "oel_mahum_champion_t01_sh",
-  "oel_mahum_t00_sh",
-  "oel_mahum_t00_sh",
-  "oel_mahum_t01_sh",
-  "oel_mahum_t01_sh",
-  "oel_mahum_witch_doctor_t01_sh",
-  "oel_mahum_witch_doctor_t01_sh",
-  "onyx_beast_t00",
-  "onyx_beast_t00",
-  "shadow_t00",
-  "shadow_t00",
-  "shadow_t01_sh",
-  "shadow_t01_sh",
-  "siege_golem_t00",
-  "siege_golem_t00",
-  "silhouette_t00",
-  "silhouette_t00",
-  "silhouette_t01_sh",
-  "silhouette_t01_sh",
-  "skeleton_knight_t00",
-  "skeleton_knight_t00",
-  "skeleton_knight_t01",
-  "skeleton_knight_t01",
-  "skeleton_royal_guard_t00",
-  "skeleton_royal_guard_t00",
-  "skeleton_royal_guard_t01",
-  "skeleton_royal_guard_t01",
-  "spartoi_t00",
-  "spartoi_t00",
-  "spartoi_t01",
-  "spartoi_t01",
-  "spike_stakato_drone_t00",
-  "spike_stakato_drone_t00",
-  "spike_stakato_drone_t01",
-  "spike_stakato_drone_t01",
-  "spike_stakato_soldier_t00_sh",
-  "spike_stakato_soldier_t00_sh",
-  "spike_stakato_soldier_t01",
-  "spike_stakato_soldier_t01",
-  "spike_stakato_t00_sh",
-  "spike_stakato_t00_sh",
-  "spike_stakato_t01",
-  "spike_stakato_t01",
-  "spike_stakato_worker_t00_sh",
-  "spike_stakato_worker_t00_sh",
-  "spike_stakato_worker_t01",
-  "spike_stakato_worker_t01",
-  "strider_t00",
-  "strider_t00",
-  "strider_t01_sh",
-  "strider_t01_sh",
-  "sylph_t00",
-  "sylph_t00",
-  "sylph_t01",
-  "sylph_t01",
-  "undine_t00",
-  "undine_t00",
-  "undine_t01",
-  "undine_t01",
-  "virud_lizardman_warrior_t00",
-  "virud_lizardman_warrior_t00",
-  "werewolf_t00",
-  "werewolf_t00",
-  "wyvern_t00",
-  "wyvern_t00",
-  "wyvern_t01_sh",
-  "wyvern_t01_sh",
-  "a_fighterguild_master_MHuman_m00_t00_b00",
-  "a_fighterguild_master_MHuman_m00_t00_b00",
-  "a_fighterguild_master_MHuman_m00_t00_b01",
-  "a_fighterguild_master_MHuman_m00_t00_b01",
-  "a_fighterguild_master_MHuman_m00_t00_h",
-  "a_fighterguild_master_MHuman_m00_t00_h",
-  "a_king_MHuman_m00_t00_b00",
-  "a_king_MHuman_m00_t00_b00",
-  "a_king_MHuman_m00_t00_b01",
-  "a_king_MHuman_m00_t00_b01",
-  "a_lord_MHuman_m00_t00_b00",
-  "a_lord_MHuman_m00_t00_b00",
-  "a_lord_MHuman_m00_t00_b01",
-  "a_lord_MHuman_m00_t00_b01",
-  "a_royal_guardB_MHuman_m00_t00_b00",
-  "a_royal_guardB_MHuman_m00_t00_b00",
-  "a_royal_guardB_MHuman_m00_t00_b01",
-  "a_royal_guardB_MHuman_m00_t00_b01",
-  "castle_aden_controltower_jewel_t00",
-  "castle_aden_controltower_jewel_t00",
-  "e_guard_MOrc_m00_t00_b00",
-  "e_guard_MOrc_m00_t00_b00",
-  "e_guard_MOrc_m00_t00_b01",
-  "e_guard_MOrc_m00_t00_b01",
-  "e_guard_MOrc_m00_t00_f",
-  "e_guard_MOrc_m00_t00_f",
-  "e_guard_MOrc_m00_t00_h",
-  "e_guard_MOrc_m00_t00_h",
-  "e_teleporter_FDwarf_m00_t00_b01",
-  "e_teleporter_FDwarf_m00_t00_b01",
-  "e_teleporter_FDwarf_t00_sh",
-  "e_teleporter_FDwarf_t00_sh"
+  {
+    "name": "antaras_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "antaras_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "antaras_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "antaras_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ant_larva_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ant_larva_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ant_soldier_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ant_soldier_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ant_soldier_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ant_soldier_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ant_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ant_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "aracne_sp_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "aracne_sp_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "aracne_sp_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "aracne_sp_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "cave_maiden_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "cave_maiden_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "cave_maiden_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "cave_maiden_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "centaurus_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "centaurus_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "centaurus_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "centaurus_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "crimson_bear_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "crimson_bear_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "crimson_doll_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "crimson_doll_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dark_fencer_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dark_fencer_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dark_fencer_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dark_fencer_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dark_horror_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dark_horror_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "death_blader_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "death_blader_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "death_blader_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "death_blader_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "devestrator_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "devestrator_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "devestrator_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "devestrator_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dire_wolf_sp_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dire_wolf_sp_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dwarf_ghost_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dwarf_ghost_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dwarf_ghost_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "dwarf_ghost_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "elf_ghost_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "elf_ghost_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "elf_ghost_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "elf_ghost_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "field_stalker_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "field_stalker_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "field_stalker_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "field_stalker_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "gamlin_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "gamlin_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "grizzly_t00_tr",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "grizzly_t00_tr",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "hatchling_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "hatchling_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "headless_knight_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "headless_knight_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "headless_knight_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "headless_knight_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "human_ghost_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "human_ghost_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "human_ghost_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "human_ghost_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "iron_golem_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "iron_golem_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "iron_golem_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "iron_golem_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "karik_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "karik_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "karik_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "karik_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_archer_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_archer_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_champion_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_champion_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_champion_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_champion_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_warrior_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_warrior_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_warrior_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "kel_mahum_warrior_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_archer_a_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_archer_a_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_archer_a_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_archer_a_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_archer_b_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_archer_b_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_archer_b_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_archer_b_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_overload_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_overload_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_overload_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_overload_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_warrior_a_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_warrior_a_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_warrior_a_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_warrior_a_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_warrior_b_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_warrior_b_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_warrior_b_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ketra_orc_warrior_b_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "legoul_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "legoul_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_mage_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_mage_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_mage_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_mage_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_shooter_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_shooter_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_shooter_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_shooter_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "lesser_giant_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "liviona_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "liviona_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "magical_weaver_sp_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "magical_weaver_sp_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "magical_weaver_sp_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "magical_weaver_sp_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "magical_weaver_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "magical_weaver_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "magical_weaver_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "magical_weaver_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mana_vampire_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mana_vampire_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mana_vampire_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mana_vampire_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_drone_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_drone_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_drone_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_drone_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_soldier_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_soldier_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_soldier_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_soldier_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_worker_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_worker_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_worker_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "marsh_stakato_worker_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mechanic_golem_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mechanic_golem_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mechanic_golem_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mechanic_golem_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "medusa_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "medusa_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "medusa_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "medusa_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mirror_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "mirror_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "noble_ant_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "noble_ant_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "noble_ant_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "noble_ant_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_archer_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_archer_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_archer_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_archer_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_champion_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_champion_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_champion_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_champion_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_warrior_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_warrior_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_warrior_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_warrior_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_witch_doctor_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "oel_mahum_witch_doctor_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ol_mahum_champion_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ol_mahum_champion_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ol_mahum_champion_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "ol_mahum_champion_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "onyx_beast_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "onyx_beast_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "orfen_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "orfen_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "poison_spider_sp_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "poison_spider_sp_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "poison_spider_sp_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "poison_spider_sp_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "poison_toad_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "poison_toad_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "salamander_t00_tr",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "salamander_t00_tr",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "salamander_t01_tr",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "salamander_t01_tr",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "shadow_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "shadow_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "shadow_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "shadow_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "siege_golem_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "siege_golem_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "silhouette_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "silhouette_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "silhouette_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "silhouette_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "skeleton_knight_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "skeleton_knight_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "skeleton_knight_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "skeleton_knight_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "skeleton_royal_guard_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "skeleton_royal_guard_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "skeleton_royal_guard_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "skeleton_royal_guard_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spartoi_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spartoi_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spartoi_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spartoi_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spectral_jagur_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spectral_jagur_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_drone_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_drone_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_drone_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_drone_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_soldier_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_soldier_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_soldier_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_soldier_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_worker_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_worker_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_worker_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "spike_stakato_worker_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "strider_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "strider_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "strider_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "strider_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "susceptor_prim_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "susceptor_prim_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "sylph_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "sylph_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "sylph_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "sylph_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "undine_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "undine_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "undine_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "undine_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "virud_lizardman_warrior_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "virud_lizardman_warrior_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "werewolf_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "werewolf_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "wyvern_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "wyvern_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "wyvern_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "wyvern_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "zenta_lizardman_matriarch_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "zenta_lizardman_matriarch_t00_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "zenta_lizardman_matriarch_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "zenta_lizardman_matriarch_t01_sh",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "zenta_lizardman_warrior_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "zenta_lizardman_warrior_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "zenta_lizardman_warrior_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "zenta_lizardman_warrior_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_king_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_king_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_king_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_king_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_lord_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_lord_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_lord_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_lord_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardB_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardB_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardB_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardB_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "castle_aden_controltower_jewel_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "castle_aden_controltower_jewel_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_guard_MOrc_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_guard_MOrc_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_guard_MOrc_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_guard_MOrc_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_guard_MOrc_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_guard_MOrc_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_guard_MOrc_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_guard_MOrc_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_teleporter_FDwarf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_teleporter_FDwarf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_teleporter_FDwarf_t00_sh",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "e_teleporter_FDwarf_t00_sh",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "aracne_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "aracne_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "aracne_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "aracne_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "butterfly_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "butterfly_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "centaurus_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "centaurus_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "crimson_bear_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "crimson_bear_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "crimson_doll_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "crimson_doll_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "death_blader_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "death_blader_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "death_blader_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "death_blader_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "field_stalker_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "field_stalker_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "fish_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "fish_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "giant_bee_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "giant_bee_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "giant_wild_hog_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "giant_wild_hog_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "hatchling_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "hatchling_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "karik_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "karik_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_archer_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_archer_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_champion_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_champion_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_warrior_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_warrior_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_warrior_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "kel_mahum_warrior_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ketra_orc_archer_a_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ketra_orc_archer_a_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ketra_orc_archer_b_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ketra_orc_archer_b_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ketra_orc_warrior_a_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ketra_orc_warrior_a_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ketra_orc_warrior_b_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ketra_orc_warrior_b_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "lesser_giant_mage_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "lesser_giant_mage_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "lesser_giant_shooter_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "lesser_giant_shooter_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "lesser_giant_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "lesser_giant_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "liviona_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "liviona_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_drone_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_drone_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_soldier_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_soldier_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_soldier_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_soldier_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_worker_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_worker_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_worker_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "marsh_stakato_worker_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "mechanic_golem_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "mechanic_golem_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "noble_ant_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "noble_ant_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_archer_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_archer_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_champion_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_champion_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_champion_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_champion_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_warrior_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_warrior_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_warrior_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_warrior_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_witch_doctor_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "oel_mahum_witch_doctor_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ol_mahum_archer_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ol_mahum_archer_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ol_mahum_champion_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ol_mahum_champion_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ol_mahum_champion_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ol_mahum_champion_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ol_mahum_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ol_mahum_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "shadow_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "shadow_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "silhouette_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "silhouette_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "spike_stakato_soldier_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "spike_stakato_soldier_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "spike_stakato_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "spike_stakato_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "spike_stakato_worker_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "spike_stakato_worker_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "strider_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "strider_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ti_mi_tran_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ti_mi_tran_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ti_mi_tran_t02",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "ti_mi_tran_t02",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "troll_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "troll_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "werewolf_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "werewolf_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "wyvern_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "wyvern_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "zenta_lizardman_matriarch_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "zenta_lizardman_matriarch_t00",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "zenta_lizardman_matriarch_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "zenta_lizardman_matriarch_t01",
+    "path": "datapack/c1/models/LineageMonstersTex/FinalBlend"
+  },
+  {
+    "name": "e_teleporter_FDwarf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/FinalBlend"
+  },
+  {
+    "name": "e_teleporter_FDwarf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/FinalBlend"
+  }
 ]

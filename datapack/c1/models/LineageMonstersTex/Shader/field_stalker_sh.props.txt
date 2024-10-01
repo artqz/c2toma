@@ -1,6 +1,6 @@
 Diffuse = Texture'field_stalker.field_stalker_t01_ori'
 NormalMap = None
-Opacity = Texture'field_stalker.field_stalker_t01_ori'
+Opacity = None
 Specular = None
 SpecularityMask = Texture'field_stalker.field_stalker_t01_sp'
 SelfIllumination = None

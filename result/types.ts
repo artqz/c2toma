@@ -77,7 +77,7 @@ export type Npc = {
     classPath: string;
     className: string;
     texturePath?: string;
-    textureName?: string[];
+    textures: { name: string; material?: string }[];
   };
 };
 

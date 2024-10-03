@@ -202,7 +202,7 @@ function addNpcs(deps: {
       model: {
         className: grp?.className!,
         classPath: grp?.classPath!,
-        textureName: grp?.textureName!,
+        textures: grp?.textures!,
         texturePath: grp?.texturePath!,
       },
     });

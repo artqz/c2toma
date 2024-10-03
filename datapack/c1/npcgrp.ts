@@ -13,7 +13,10 @@ export const NpcGrp = z.object({
   classPath: z.string(),
   className: z.string(),
   texturePath: z.string().optional(),
-  textureName: z.string().array().optional(),
+  textures: z
+    .object({ name: z.string(), material: z.string().optional() })
+    .array()
+    .optional(),
 });
 
 export type NpcGrp = z.infer<typeof NpcGrp>;
@@ -83,7 +86,7 @@ function toJson(npcData: string) {
       const [classPath, className] = (n.class_name as string).split(".");
 
       let texturePath: string | undefined;
-      const textureName: string[] = [];
+      const textures: { name: string; material?: string }[] = [];
 
       // Проверка, если texture_name — это массив или строка
       if (n.texture_name) {
@@ -98,7 +101,7 @@ function toJson(npcData: string) {
           const checkTexture = textureByName.get(_textureName);
 
           if (checkTexture) {
-            textureName.push(_textureName);
+            textures.push({ name: _textureName });
           } else {
             // Если нет текстуры проверяем материал
             const checkMat = matsByName.get(_textureName);
@@ -112,7 +115,7 @@ function toJson(npcData: string) {
               for (const tex of parseMat(matData)) {
                 const checkTexture = textureByName.get(tex);
                 if (checkTexture) {
-                  textureName.push(tex);
+                  textures.push({ name: tex, material: _textureName });
                 } else {
                   console.log(`not_texture: ${_textureName}`);
                 }
@@ -133,7 +136,7 @@ function toJson(npcData: string) {
         classPath,
         className,
         ...(texturePath && { texturePath }), // Добавляем texturePath только если оно существует
-        ...(textureName.length > 0 && { textureName }), // Добавляем textureName только если массив не пуст
+        ...(textures.length > 0 && { textures }), // Добавляем textureName только если массив не пуст
       };
     })
   );

@@ -74,10 +74,17 @@ export type Npc = {
   soulshotCount: number;
   spiritshotCount: number;
   model?: {
-    classPath: string;
-    className: string;
+    meshPath: string;
+    meshName: string;
     texturePath?: string;
-    textures: { name: string; material?: string }[];
+    material: {
+      name?: string;
+      diffuse: string;
+      specular?: string;
+      opacity?: string;
+    }[];
+    animationPath?: string;
+    animation?: string;
   };
 };
 

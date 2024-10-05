@@ -6,19 +6,27 @@ interface NpcObject {
   [key: string]: string | string[]; // Значение может быть строкой или массивом строк
 }
 
+//
+const Material = z.object({
+  name: z.string().optional(),
+  diffuse: z.string(),
+  specular: z.string().optional(),
+  opacity: z.string().optional(),
+});
+
 // Определяем схему через zod для проверки структуры NPC
 export const NpcGrp = z.object({
   npc_id: z.number(),
   npcName: z.string(),
-  classPath: z.string(),
-  className: z.string(),
+  meshPath: z.string(),
+  meshName: z.string(),
   texturePath: z.string().optional(),
-  textures: z
-    .object({ name: z.string(), material: z.string().optional() })
-    .array()
-    .optional(),
+  material: Material.array().optional(),
+  animationPath: z.string().optional(),
+  animation: z.string().optional(),
 });
 
+export type Material = z.infer<typeof Material>;
 export type NpcGrp = z.infer<typeof NpcGrp>;
 
 // Функция для загрузки файла и преобразования в JSON
@@ -29,7 +37,7 @@ export function loadNpcGrpDataC1() {
 }
 
 // Функция для преобразования текста в JSON
-function toJson(npcData: string) {
+function toJson(npcData: string): NpcGrp[] {
   // Загружаем текстуры
   const textureByName = new Map(
     z
@@ -49,6 +57,22 @@ function toJson(npcData: string) {
         JSON.parse(Fs.readFileSync("datapack/c1/models/mats.json", "utf8"))
       )
       .map((t) => [t.name, t])
+  );
+  // Загружаем анимации
+  const animByName = new Map(
+    z
+      .object({ name: z.string(), path: z.string() })
+      .array()
+      .parse(
+        JSON.parse(
+          Fs.readFileSync("datapack/c1/models/animations.json", "utf8")
+        )
+      )
+      .map((t) => {
+        const nameArr = t.name.split("_");
+        nameArr.pop();
+        return [nameArr.join("_").toLowerCase(), t];
+      })
   );
   // Шаг 1. Разбиваем текст на отдельные NPC-блоки
   const npcBlocks = npcData.split("npc_begin").slice(1); // Убираем первый пустой элемент
@@ -83,10 +107,10 @@ function toJson(npcData: string) {
   return NpcGrp.array().parse(
     npcs.map((n) => {
       // Разбиваем class_name на путь и имя класса
-      const [classPath, className] = (n.class_name as string).split(".");
+      const [meshPath, meshName] = (n.mesh_name as string).split(".");
 
       let texturePath: string | undefined;
-      const textures: { name: string; material?: string }[] = [];
+      const material: Material[] = [];
 
       // Проверка, если texture_name — это массив или строка
       if (n.texture_name) {
@@ -101,7 +125,7 @@ function toJson(npcData: string) {
           const checkTexture = textureByName.get(_textureName);
 
           if (checkTexture) {
-            textures.push({ name: _textureName });
+            material.push({ diffuse: _textureName });
           } else {
             // Если нет текстуры проверяем материал
             const checkMat = matsByName.get(_textureName);
@@ -111,17 +135,16 @@ function toJson(npcData: string) {
                 `${checkMat.path}/${_textureName}.mat`,
                 "utf8"
               );
+              const propsData = Fs.readFileSync(
+                `${checkMat.path}/${_textureName}.props.txt`,
+                "utf8"
+              );
+              // console.log(propsData);
 
-              for (const tex of parseMat(matData)) {
-                const checkTexture = textureByName.get(tex);
-                if (checkTexture) {
-                  textures.push({ name: tex, material: _textureName });
-                } else {
-                  console.log(`not_texture: ${_textureName}`);
-                }
-              }
+              const { diffuse, specular, opacity } = parseMat(matData);
+              material.push({ name: _textureName, diffuse, specular, opacity });
             } else {
-              console.log("huy");
+              // console.log("huy");
             }
           }
           // texturePath = _texturePath; // Присваиваем путь к текстуре
@@ -130,13 +153,19 @@ function toJson(npcData: string) {
       }
 
       // Возвращаем объект с правильной типизацией
+      const className = meshName.split("_");
+      className.pop();
+
+      const anim = animByName.get(className.join("_"));
       return {
         npc_id: parseInt(n.npc_id as string, 10), // Преобразуем строку в число с основанием 10
         npcName: n.npc_name as string, // Явно указываем, что npc_name — это строка
-        classPath,
-        className,
+        meshPath,
+        meshName,
         ...(texturePath && { texturePath }), // Добавляем texturePath только если оно существует
-        ...(textures.length > 0 && { textures }), // Добавляем textureName только если массив не пуст
+        ...(material.length > 0 && { material }), // Добавляем textureName только если массив не пуст
+        ...(anim && { animation: anim.name.toLowerCase() }),
+        ...(anim && { animationPath: anim.path.split("/").slice(3).join("/") }),
       };
     })
   );
@@ -144,11 +173,30 @@ function toJson(npcData: string) {
 
 function parseMat(data: string) {
   const tmp = data.split("\r\n");
-  const textures: string[] = [];
+  let material: { diffuse: string; specular?: string; opacity?: string } = {
+    diffuse: "",
+  };
 
   for (const str of tmp) {
-    textures.push(str.split("=")[1]);
+    if (str.split("=")[0] === "Diffuse") {
+      material.diffuse = str.split("=")[1];
+    }
+    if (str.split("=")[0] === "Specular") {
+      material.specular = str.split("=")[1];
+    }
+    if (str.split("=")[0] === "Opacity") {
+      material.opacity = str.split("=")[1];
+    }
   }
 
-  return textures;
+  return material;
+}
+
+function parseProps(data: string) {
+  const tmp = data.split("\r\n");
+  let props: { h: string } = {
+    h: "",
+  };
+
+  return props;
 }

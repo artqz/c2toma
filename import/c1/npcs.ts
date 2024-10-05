@@ -200,10 +200,12 @@ function addNpcs(deps: {
       soulshotCount: npc.soulshot_count ?? 0,
       spiritshotCount: npc.spiritshot_count ?? 0,
       model: {
-        className: grp?.className!,
-        classPath: grp?.classPath!,
-        textures: grp?.textures!,
+        meshName: grp?.meshName!,
+        meshPath: grp?.meshPath!,
+        material: grp?.material!,
         texturePath: grp?.texturePath!,
+        animationPath: grp?.animationPath!,
+        animation: grp?.animation!,
       },
     });
   }

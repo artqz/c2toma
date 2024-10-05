@@ -21,8 +21,8 @@ function getFilesInDirectorySync(
 
     if (stats.isDirectory()) {
       // Если это директория, рекурсивно получаем файлы из неё
-      const nestedFiles = getFilesInDirectorySync(fullPath);
-      files = files.concat(nestedFiles);
+      // const nestedFiles = getFilesInDirectorySync(fullPath);
+      // files = files.concat(nestedFiles);
     } else if (stats.isFile()) {
       // Если это файл, добавляем его в массив
 
@@ -67,6 +67,27 @@ saveFile(
       ...getFilesInDirectorySync(
         `datapack/${chronicle}/models/LineageNpcsTex/FinalBlend`
       ),
+    ],
+    null,
+    2
+  )
+);
+saveFile(
+  `datapack/${chronicle}/models/animations.json`,
+  JSON.stringify(
+    [
+      ...getFilesInDirectorySync(
+        `datapack/${chronicle}/models/LineageMonsters/MeshAnimation`
+      ),
+      ...getFilesInDirectorySync(
+        `datapack/${chronicle}/models/LineageMonstersTex/MeshAnimation`
+      ),
+      // ...getFilesInDirectorySync(
+      //   `datapack/${chronicle}/models/LineageMonstersTex/FinalBlend`
+      // ),
+      // ...getFilesInDirectorySync(
+      //   `datapack/${chronicle}/models/LineageNpcsTex/FinalBlend`
+      // ),
     ],
     null,
     2

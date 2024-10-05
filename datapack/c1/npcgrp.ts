@@ -162,6 +162,13 @@ function toJson(npcData: string): NpcGrp[] {
       className.pop();
 
       const anim = animByName.get(className.join("_").toLowerCase());
+      if (anim) {
+      } else {
+        const anim = animByName.get(
+          (n.class_name as string).split(".")[1].toLowerCase()
+        );
+        console.log(n.npc_name, anim);
+      }
 
       return {
         npc_id: parseInt(n.npc_id as string, 10), // Преобразуем строку в число с основанием 10

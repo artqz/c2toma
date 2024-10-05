@@ -47,7 +47,7 @@ function toJson(npcData: string): NpcGrp[] {
       .parse(
         JSON.parse(Fs.readFileSync("datapack/c1/models/textures.json", "utf8"))
       )
-      .map((t) => [t.name, t])
+      .map((t) => [t.name.toLowerCase(), t])
   );
   // Загружаем материалы
   const matsByName = new Map(
@@ -72,7 +72,7 @@ function toJson(npcData: string): NpcGrp[] {
       .map((t) => {
         const nameArr = t.name.split("_");
         nameArr.pop();
-        return [nameArr.join("_"), t];
+        return [nameArr.join("_").toLowerCase(), t];
       })
   );
   // Шаг 1. Разбиваем текст на отдельные NPC-блоки
@@ -124,7 +124,7 @@ function toJson(npcData: string): NpcGrp[] {
         textureNames.forEach((t) => {
           const [_texturePath, _textureName] = t.split(".");
           // Проверяем существует-ли такая текстура
-          const checkTexture = textureByName.get(_textureName);
+          const checkTexture = textureByName.get(_textureName.toLowerCase());
 
           if (checkTexture) {
             material.push({ diffuse: _textureName });
@@ -161,7 +161,7 @@ function toJson(npcData: string): NpcGrp[] {
       const className = meshName.split("_");
       className.pop();
 
-      const anim = animByName.get(className.join("_"));
+      const anim = animByName.get(className.join("_").toLowerCase());
 
       return {
         npc_id: parseInt(n.npc_id as string, 10), // Преобразуем строку в число с основанием 10

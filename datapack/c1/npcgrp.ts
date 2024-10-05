@@ -57,7 +57,7 @@ function toJson(npcData: string): NpcGrp[] {
       .parse(
         JSON.parse(Fs.readFileSync("datapack/c1/models/mats.json", "utf8"))
       )
-      .map((t) => [t.name, t])
+      .map((t) => [t.name.toLowerCase(), t])
   );
   // Загружаем анимации
   const animByName = new Map(
@@ -128,29 +128,29 @@ function toJson(npcData: string): NpcGrp[] {
 
           if (checkTexture) {
             material.push({ diffuse: _textureName });
+          }
+          // Если нет текстуры проверяем материал
+          const checkMat = matsByName.get(_textureName.toLowerCase());
+          if (checkMat) {
+            // Достаем текстуры из материала
+            const matData = Fs.readFileSync(
+              `${checkMat.path}/${_textureName}.mat`,
+              "utf8"
+            );
+            const propsData = Fs.readFileSync(
+              `${checkMat.path}/${_textureName}.props.txt`,
+              "utf8"
+            );
+            // console.log(propsData);
+
+            const { outputBlending } = parseProps(propsData);
+            params.outputBlending = outputBlending;
+
+            const { diffuse, specular, opacity } = parseMat(matData);
+
+            material.push({ name: _textureName, diffuse, specular, opacity });
           } else {
-            // Если нет текстуры проверяем материал
-            const checkMat = matsByName.get(_textureName);
-            if (checkMat) {
-              // Достаем текстуры из материала
-              const matData = Fs.readFileSync(
-                `${checkMat.path}/${_textureName}.mat`,
-                "utf8"
-              );
-              const propsData = Fs.readFileSync(
-                `${checkMat.path}/${_textureName}.props.txt`,
-                "utf8"
-              );
-              // console.log(propsData);
-
-              const { outputBlending } = parseProps(propsData);
-              params.outputBlending = outputBlending;
-
-              const { diffuse, specular, opacity } = parseMat(matData);
-              material.push({ name: _textureName, diffuse, specular, opacity });
-            } else {
-              // console.log("huy");
-            }
+            // console.log("huy");
           }
           // texturePath = _texturePath; // Присваиваем путь к текстуре
           // textureName.push(_textureName); // Добавляем имя текстуры в массив

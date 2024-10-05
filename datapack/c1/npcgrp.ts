@@ -72,7 +72,7 @@ function toJson(npcData: string): NpcGrp[] {
       .map((t) => {
         const nameArr = t.name.split("_");
         nameArr.pop();
-        return [nameArr.join("_").toLowerCase(), t];
+        return [nameArr.join("_"), t];
       })
   );
   // Шаг 1. Разбиваем текст на отдельные NPC-блоки
@@ -162,6 +162,7 @@ function toJson(npcData: string): NpcGrp[] {
       className.pop();
 
       const anim = animByName.get(className.join("_"));
+
       return {
         npc_id: parseInt(n.npc_id as string, 10), // Преобразуем строку в число с основанием 10
         npcName: n.npc_name as string, // Явно указываем, что npc_name — это строка

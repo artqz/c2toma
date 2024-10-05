@@ -24,6 +24,7 @@ export const NpcGrp = z.object({
   material: Material.array().optional(),
   animationPath: z.string().optional(),
   animation: z.string().optional(),
+  params: z.object({ outputBlending: z.number() }),
 });
 
 export type Material = z.infer<typeof Material>;
@@ -111,6 +112,7 @@ function toJson(npcData: string): NpcGrp[] {
 
       let texturePath: string | undefined;
       const material: Material[] = [];
+      const params: { outputBlending: number } = { outputBlending: 0 };
 
       // Проверка, если texture_name — это массив или строка
       if (n.texture_name) {
@@ -141,6 +143,9 @@ function toJson(npcData: string): NpcGrp[] {
               );
               // console.log(propsData);
 
+              const { outputBlending } = parseProps(propsData);
+              params.outputBlending = outputBlending;
+
               const { diffuse, specular, opacity } = parseMat(matData);
               material.push({ name: _textureName, diffuse, specular, opacity });
             } else {
@@ -164,8 +169,9 @@ function toJson(npcData: string): NpcGrp[] {
         meshName,
         ...(texturePath && { texturePath }), // Добавляем texturePath только если оно существует
         ...(material.length > 0 && { material }), // Добавляем textureName только если массив не пуст
-        ...(anim && { animation: anim.name.toLowerCase() }),
+        ...(anim && { animation: anim.name }),
         ...(anim && { animationPath: anim.path.split("/").slice(3).join("/") }),
+        params,
       };
     })
   );
@@ -194,9 +200,14 @@ function parseMat(data: string) {
 
 function parseProps(data: string) {
   const tmp = data.split("\r\n");
-  let props: { h: string } = {
-    h: "",
-  };
+  let outputBlending = 0;
+  for (const str of tmp) {
+    const [keys, value] = str.split(" = ");
+    if (keys === "OutputBlending") {
+      const match = value.match(/\((\d+)\)/);
+      outputBlending = match ? parseInt(match[1], 10) : 0;
+    }
+  }
 
-  return props;
+  return { outputBlending };
 }

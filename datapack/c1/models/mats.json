@@ -1104,6 +1104,54 @@
     "path": "datapack/c1/models/LineageMonstersTex/Shader"
   },
   {
+    "name": "a_common_peopleB_MHuman_m00_t00_b00_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_m00_t00_b00_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_m00_t00_b01_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_m00_t00_b01_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_m00_t00_f_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_m00_t00_f_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_m00_t00_h_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_m00_t00_h_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
     "name": "a_fighterguild_master_MHuman_m00_t00_b00",
     "path": "datapack/c1/models/LineageNpcsTex/Shader"
   },
@@ -1125,6 +1173,14 @@
   },
   {
     "name": "a_fighterguild_master_MHuman_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_old_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_old_m00_t00_b00",
     "path": "datapack/c1/models/LineageNpcsTex/Shader"
   },
   {
@@ -1157,6 +1213,54 @@
   },
   {
     "name": "a_lord_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b00_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b00_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b01_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b01_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_f_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_f_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_h_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_h_tr",
     "path": "datapack/c1/models/LineageNpcsTex/Shader"
   },
   {
@@ -1229,6 +1333,30 @@
   },
   {
     "name": "e_teleporter_FDwarf_t00_sh",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "orc_head_t00_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "orc_head_t00_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "orc_head_t01_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "orc_head_t01_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "orc_head_t02_tr",
+    "path": "datapack/c1/models/LineageNpcsTex/Shader"
+  },
+  {
+    "name": "orc_head_t02_tr",
     "path": "datapack/c1/models/LineageNpcsTex/Shader"
   },
   {

@@ -206,6 +206,7 @@ function addNpcs(deps: {
         texturePath: grp?.texturePath!,
         animationPath: grp?.animationPath!,
         animation: grp?.animation!,
+        params: grp?.params!,
       },
     });
   }

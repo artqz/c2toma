@@ -1640,6 +1640,22 @@
     "path": "datapack/c1/models/LineageMonstersTex/Texture"
   },
   {
+    "name": "a_casino_FDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_casino_FDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_casino_FDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_casino_FDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
     "name": "a_casino_MHuman_m00_t00_b00",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
@@ -1669,6 +1685,54 @@
   },
   {
     "name": "a_chamberlain_MHuman_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_clergyman_FDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_clergyman_FDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_clergyman_FDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_clergyman_FDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_clergyman_MDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_clergyman_MDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_clergyman_MDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_clergyman_MDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_peopleA_FHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_peopleA_FHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_peopleA_FHuman_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_peopleA_FHuman_m00_t00_h",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
@@ -1712,6 +1776,22 @@
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
+    "name": "a_common_people_FDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_people_FDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_people_FDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_people_FDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
     "name": "a_common_people_FElf_m00_t00_b00",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
@@ -1728,6 +1808,38 @@
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
+    "name": "a_common_people_MDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_people_MDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_people_MDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_common_people_MDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_m00_t00_b00_sp",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_m00_t00_b01_sp",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
     "name": "a_fighterguild_master_MHuman_m00_t00_b00_sp",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
@@ -1741,6 +1853,54 @@
   },
   {
     "name": "a_fighterguild_master_MHuman_m00_t00_h_sp",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_old_m00_t00_b00_sp",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_old_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_old_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_old_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_teacher_FDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_teacher_FDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_teacher_FDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_teacher_FDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_teacher_FHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_teacher_FHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_teacher_FHuman_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_fighterguild_teacher_FHuman_m00_t00_h",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
@@ -1812,6 +1972,30 @@
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
+    "name": "a_guard_MHuman_old_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_guard_MHuman_old_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_guild_master_MDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_guild_master_MDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_guild_master_MDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_guild_master_MDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
     "name": "a_hardins_pupil_FHuman_m00_t00_b00",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
@@ -1873,6 +2057,10 @@
   },
   {
     "name": "a_lord_MHuman_m00_t00_b01_sp",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_lord_MHuman_m00_t00_b01__",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
@@ -1964,6 +2152,22 @@
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
+    "name": "a_mageguild_teacher_MDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_mageguild_teacher_MDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_mageguild_teacher_MDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_mageguild_teacher_MDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
     "name": "a_mageguild_teacher_MHuman_m00_t00_b00",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
@@ -2009,6 +2213,14 @@
   },
   {
     "name": "a_patriarch_MElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b00_sp",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00_t00_b01_sp",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
@@ -2060,6 +2272,54 @@
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
+    "name": "a_sanctuary_teacher_MHuman_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_sanctuary_teacher_MHuman_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_sanctuary_teacher_MHuman_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_sanctuary_teacher_MHuman_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_smith_MDwarf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_smith_MDwarf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_smith_MDwarf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_smith_MDwarf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_teleporter_FDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_teleporter_FDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_teleporter_FDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_teleporter_FDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
     "name": "a_teleporter_FHuman_m00_t00_b00",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
@@ -2089,6 +2349,22 @@
   },
   {
     "name": "a_traderA_FHuman_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_traderA_MDwarf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_traderA_MDwarf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_traderA_MDwarf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_traderA_MDwarf_m00_t00_h",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
@@ -2172,6 +2448,22 @@
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
+    "name": "a_trader_MDarkElf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_trader_MDarkElf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_trader_MDarkElf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_trader_MDarkElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
     "name": "a_trader_MElf_m00_t00_b00",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
@@ -2185,6 +2477,22 @@
   },
   {
     "name": "a_trader_MElf_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_warehouse_keeper_MDwarf_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_warehouse_keeper_MDwarf_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_warehouse_keeper_MDwarf_m00_t00_f",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "a_warehouse_keeper_MDwarf_m00_t00_h",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
@@ -2204,6 +2512,22 @@
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
+    "name": "barrel_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "barrel_t01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "box_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "box_t01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
     "name": "castle_aden_controltower_jewels_specular",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
@@ -2213,6 +2537,18 @@
   },
   {
     "name": "castle_aden_controltower_jewel_mask",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "castle_aden_statue_m00_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "castle_aden_statue_m00_t01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "castle_aden_statue_m00_t02",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
@@ -2229,6 +2565,34 @@
   },
   {
     "name": "castle_kent_statue_t02",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "coffer_a_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "coffer_b_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "coffer_c_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "coffer_d_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "dgstone_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "dgstone_t01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "d_vally_crystal02",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   },
   {
@@ -2449,6 +2813,62 @@
   },
   {
     "name": "e_trader_MOrc_m00_t00_h",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "grocer_m00_t00_b00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "Grocer_m00_t00_b01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "human_tree_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "human_tree_t01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "human_tree_t02",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "human_tree_t03",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "lector_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "lector_t01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "long_sword_t00_wp",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "magic_merchant_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "magic_merchant_t01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "orc_head_t00",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "orc_head_t01",
+    "path": "datapack/c1/models/LineageNpcsTex/Texture"
+  },
+  {
+    "name": "orc_head_t02",
     "path": "datapack/c1/models/LineageNpcsTex/Texture"
   }
 ]

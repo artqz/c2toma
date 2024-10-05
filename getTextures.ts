@@ -80,14 +80,8 @@ saveFile(
         `datapack/${chronicle}/models/LineageMonsters/MeshAnimation`
       ),
       ...getFilesInDirectorySync(
-        `datapack/${chronicle}/models/LineageMonstersTex/MeshAnimation`
+        `datapack/${chronicle}/models/LineageNpcs/MeshAnimation`
       ),
-      // ...getFilesInDirectorySync(
-      //   `datapack/${chronicle}/models/LineageMonstersTex/FinalBlend`
-      // ),
-      // ...getFilesInDirectorySync(
-      //   `datapack/${chronicle}/models/LineageNpcsTex/FinalBlend`
-      // ),
     ],
     null,
     2

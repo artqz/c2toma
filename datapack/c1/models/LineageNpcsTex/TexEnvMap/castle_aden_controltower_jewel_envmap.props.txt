@@ -1,0 +1,10 @@
+EnvMapType = EM_CameraSpace (1)
+TexCoordSource = TCS_CameraEnvMapCoords (11)
+TexCoordCount = TCN_3DCoords (1)
+TexCoordProjected = false
+Material = Cubemap'castle_aden_controltower_jewels.castle_aden_controltower_jewels_cubemap'
+FallbackMaterial = None
+DefaultMaterial = None
+SurfaceType = 0
+bUseTextureAsHeat = false
+HeatMaterial = None

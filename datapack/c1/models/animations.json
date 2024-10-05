@@ -1424,27 +1424,643 @@
     "path": "datapack/c1/models/LineageMonsters/MeshAnimation"
   },
   {
-    "name": "dre_vanul_anim",
-    "path": "datapack/c1/models/LineageMonstersTex/MeshAnimation"
+    "name": "a_casino_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
   },
   {
-    "name": "dre_vanul_anim",
-    "path": "datapack/c1/models/LineageMonstersTex/MeshAnimation"
+    "name": "a_casino_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
   },
   {
-    "name": "Fox_anim",
-    "path": "datapack/c1/models/LineageMonstersTex/MeshAnimation"
+    "name": "a_casino_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
   },
   {
-    "name": "Fox_anim",
-    "path": "datapack/c1/models/LineageMonstersTex/MeshAnimation"
+    "name": "a_casino_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
   },
   {
-    "name": "goblin_anim",
-    "path": "datapack/c1/models/LineageMonstersTex/MeshAnimation"
+    "name": "a_chamberlain_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
   },
   {
-    "name": "goblin_anim",
-    "path": "datapack/c1/models/LineageMonstersTex/MeshAnimation"
+    "name": "a_chamberlain_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_clergyman_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_clergyman_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_clergyman_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_clergyman_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_peopleA_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_peopleA_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_peopleA_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_peopleA_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_peopleB_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_peopleB_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_people_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_people_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_people_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_people_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_people_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_people_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_people_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_common_people_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_old_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_old_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_Mhuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_fighterguild_teacher_Mhuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_guard_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_guard_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_guard_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_guard_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_guard_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_guard_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_guild_master_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_guild_master_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_hardins_pupil_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_hardins_pupil_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_hardins_pupil_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_hardins_pupil_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_hardin_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_hardin_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_king_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_king_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_lord_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_lord_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_master_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_master_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_master_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_master_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_mageguild_teacher_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_maidA_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_maidA_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_maidB_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_maidB_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_patriarch_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_patriarch_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_patriarch_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_patriarch_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_royal_guardB_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_royal_guardB_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_sanctuary_master_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_sanctuary_master_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_sanctuary_teacher_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_sanctuary_teacher_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_sanctuary_teacher_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_sanctuary_teacher_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_teleporter_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_teleporter_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_teleporter_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_teleporter_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_telepoter_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_telepoter_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderA_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderA_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderA_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderA_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderA_Mhuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderA_Mhuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderB_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderB_FHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderB_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_traderB_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_trader_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_trader_FDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_trader_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_trader_FElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_trader_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_trader_MDarkElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_trader_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_trader_MElf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_warehouse_keeper_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_warehouse_keeper_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_wharfinger_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "a_wharfinger_MHuman_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "castle_aden_controlltower_jewel_m00_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "castle_aden_controlltower_jewel_m00_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "castle_aden_controlltower_jewel_m01_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "castle_aden_controlltower_jewel_m01_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "castle_aden_controltower_jewel_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "castle_aden_controltower_jewel_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "castle_kent_statue_jewel_m00_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "castle_kent_statue_jewel_m00_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_clergyman_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_clergyman_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_collector_master_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_collector_master_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_collector_teacher_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_collector_teacher_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_collector_teacher_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_collector_teacher_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_fighterguild_teacher_MOrc_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_fighterguild_teacher_MOrc_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_guard_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_guard_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_guard_MOrc_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_guard_MOrc_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_mine_master_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_mine_master_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_mine_teacher_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_mine_teacher_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_smith_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_smith_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_smith_master_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_smith_master_MDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_teleporter_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_teleporter_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_traderA_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_traderA_FDwarf_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_trader_FOrc_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_trader_FOrc_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_trader_MOrc_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
+  },
+  {
+    "name": "e_trader_MOrc_anim",
+    "path": "datapack/c1/models/LineageNpcs/MeshAnimation"
   }
 ]

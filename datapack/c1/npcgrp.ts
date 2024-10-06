@@ -161,13 +161,14 @@ function toJson(npcData: string): NpcGrp[] {
       const className = meshName.split("_");
       className.pop();
 
-      const anim = animByName.get(className.join("_").toLowerCase());
+      let anim;
+      anim = animByName.get(className.join("_").toLowerCase());
       if (anim) {
       } else {
-        const anim = animByName.get(
+        anim = animByName.get(
           (n.class_name as string).split(".")[1].toLowerCase()
         );
-        console.log(n.npc_name, anim);
+        //console.log(n.npc_name, anim);
       }
 
       return {

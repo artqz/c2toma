@@ -85,7 +85,7 @@ export type Npc = {
     }[];
     animationPath?: string;
     animation?: string;
-    params: { outputBlending: number };
+    params: { outputBlending: number; twoSided: boolean };
   };
 };
 

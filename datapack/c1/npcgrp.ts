@@ -24,7 +24,7 @@ export const NpcGrp = z.object({
   material: Material.array().optional(),
   animationPath: z.string().optional(),
   animation: z.string().optional(),
-  params: z.object({ outputBlending: z.number() }),
+  params: z.object({ outputBlending: z.number(), twoSided: z.boolean() }),
 });
 
 export type Material = z.infer<typeof Material>;
@@ -59,6 +59,13 @@ function toJson(npcData: string): NpcGrp[] {
       )
       .map((t) => [t.name.toLowerCase(), t])
   );
+  function findMatsByNane(substring: string): { name: string; path: string }[] {
+    // Фильтруем ключи, которые содержат нужную подстроку
+    return Array.from(matsByName.values()).filter((key) =>
+      key.name.toLowerCase().includes(substring.toLowerCase())
+    );
+  }
+
   // Загружаем анимации
   const animByName = new Map(
     z
@@ -111,8 +118,11 @@ function toJson(npcData: string): NpcGrp[] {
       const [meshPath, meshName] = (n.mesh_name as string).split(".");
 
       let texturePath: string | undefined;
-      const material: Material[] = [];
-      const params: { outputBlending: number } = { outputBlending: 0 };
+      const material = new Map<string, Material>();
+      let params: NpcGrp["params"] = {
+        outputBlending: 0,
+        twoSided: false,
+      };
 
       // Проверка, если texture_name — это массив или строка
       if (n.texture_name) {
@@ -123,11 +133,38 @@ function toJson(npcData: string): NpcGrp[] {
         // Обрабатываем каждый элемент texture_name
         textureNames.forEach((t) => {
           const [_texturePath, _textureName] = t.split(".");
+          // загружаем все похожие материалы
+          for (const mat of findMatsByNane(
+            removeAfterT0(_textureName.toLowerCase())
+          )) {
+            if (Fs.existsSync(`${mat.path}/${mat.name}.mat`)) {
+              const matData = Fs.readFileSync(
+                `${mat.path}/${mat.name}.mat`,
+                "utf8"
+              );
+              const propsData = Fs.readFileSync(
+                `${mat.path}/${mat.name}.props.txt`,
+                "utf8"
+              );
+
+              params = parseProps(propsData);
+
+              const { diffuse, specular, opacity } = parseMat(matData);
+
+              material.set(mat.name, {
+                name: mat.name,
+                diffuse,
+                specular,
+                opacity,
+              });
+            }
+          }
+
           // Проверяем существует-ли такая текстура
           const checkTexture = textureByName.get(_textureName.toLowerCase());
 
           if (checkTexture) {
-            material.push({ diffuse: _textureName });
+            material.set(_textureName, { diffuse: _textureName });
           }
           // Если нет текстуры проверяем материал
           const checkMat = matsByName.get(_textureName.toLowerCase());
@@ -143,12 +180,16 @@ function toJson(npcData: string): NpcGrp[] {
             );
             // console.log(propsData);
 
-            const { outputBlending } = parseProps(propsData);
-            params.outputBlending = outputBlending;
+            params = parseProps(propsData);
 
             const { diffuse, specular, opacity } = parseMat(matData);
 
-            material.push({ name: _textureName, diffuse, specular, opacity });
+            material.set(_textureName, {
+              name: _textureName,
+              diffuse,
+              specular,
+              opacity,
+            });
           } else {
             // console.log("huy");
           }
@@ -168,8 +209,10 @@ function toJson(npcData: string): NpcGrp[] {
         anim = animByName.get(
           (n.class_name as string).split(".")[1].toLowerCase()
         );
-        //console.log(n.npc_name, anim);
+        // console.log(n.npc_name, anim);
       }
+
+      const materialArr = Array.from(material.values());
 
       return {
         npc_id: parseInt(n.npc_id as string, 10), // Преобразуем строку в число с основанием 10
@@ -177,7 +220,7 @@ function toJson(npcData: string): NpcGrp[] {
         meshPath,
         meshName,
         ...(texturePath && { texturePath }), // Добавляем texturePath только если оно существует
-        ...(material.length > 0 && { material }), // Добавляем textureName только если массив не пуст
+        ...(materialArr.length > 0 && { material: materialArr }), // Добавляем textureName только если массив не пуст
         ...(anim && { animation: anim.name }),
         ...(anim && { animationPath: anim.path.split("/").slice(3).join("/") }),
         params,
@@ -207,16 +250,25 @@ function parseMat(data: string) {
   return material;
 }
 
-function parseProps(data: string) {
+function parseProps(data: string): NpcGrp["params"] {
   const tmp = data.split("\r\n");
   let outputBlending = 0;
+  let twoSided = false;
   for (const str of tmp) {
-    const [keys, value] = str.split(" = ");
-    if (keys === "OutputBlending") {
+    const [key, value] = str.split(" = ");
+    if (key === "OutputBlending") {
       const match = value.match(/\((\d+)\)/);
       outputBlending = match ? parseInt(match[1], 10) : 0;
     }
+    if (key === "TwoSided") {
+      twoSided = value === "true";
+    }
   }
 
-  return { outputBlending };
+  return { outputBlending, twoSided };
+}
+
+function removeAfterT0(str: string): string {
+  // Разделяем строку по '_t0' и берем первую часть
+  return str.split("_t0")[0];
 }

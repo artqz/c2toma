@@ -39,6 +39,16 @@ export function loadNpcGrpDataC1() {
 
 // Функция для преобразования текста в JSON
 function toJson(npcData: string): NpcGrp[] {
+  // Загружаем мешы
+  const meshByName = new Map(
+    z
+      .object({ name: z.string(), path: z.string() })
+      .array()
+      .parse(
+        JSON.parse(Fs.readFileSync("datapack/c1/models/meshes.json", "utf8"))
+      )
+      .map((t) => [t.name.toLowerCase(), t])
+  );
   // Загружаем текстуры
   const textureByName = new Map(
     z
@@ -59,11 +69,19 @@ function toJson(npcData: string): NpcGrp[] {
       )
       .map((t) => [t.name.toLowerCase(), t])
   );
-  function findMatsByNane(substring: string): { name: string; path: string }[] {
+  function findMatsByName(substring: string): { name: string; path: string }[] {
     // Фильтруем ключи, которые содержат нужную подстроку
-    return Array.from(matsByName.values()).filter((key) =>
-      key.name.toLowerCase().includes(substring.toLowerCase())
-    );
+
+    // Фильтруем материалы по точному совпадению с одной из частей имени
+    return Array.from(matsByName.values()).filter((key) => {
+      // Разбиваем имя на части по подчеркиванию
+
+      // Проверяем, содержится ли подстрока как отдельная часть
+      return (
+        removeSuffix(substring.toLowerCase()) ===
+        removeSuffix(key.name.toLowerCase())
+      );
+    });
   }
 
   // Загружаем анимации
@@ -115,7 +133,10 @@ function toJson(npcData: string): NpcGrp[] {
   return NpcGrp.array().parse(
     npcs.map((n) => {
       // Разбиваем class_name на путь и имя класса
-      const [meshPath, meshName] = (n.mesh_name as string).split(".");
+      const [meshPath, _meshName] = (n.mesh_name as string).split(".");
+
+      const _mesh = meshByName.get(_meshName.toLowerCase());
+      const meshName = _mesh ? _mesh.name : _meshName;
 
       let texturePath: string | undefined;
       const material = new Map<string, Material>();
@@ -134,7 +155,7 @@ function toJson(npcData: string): NpcGrp[] {
         textureNames.forEach((t) => {
           const [_texturePath, _textureName] = t.split(".");
           // загружаем все похожие материалы
-          for (const mat of findMatsByNane(
+          for (const mat of findMatsByName(
             removeAfterT0(_textureName.toLowerCase())
           )) {
             if (Fs.existsSync(`${mat.path}/${mat.name}.mat`)) {
@@ -151,12 +172,15 @@ function toJson(npcData: string): NpcGrp[] {
 
               const { diffuse, specular, opacity } = parseMat(matData);
 
-              material.set(mat.name, {
-                name: mat.name,
-                diffuse,
-                specular,
-                opacity,
-              });
+              const tId = diffuse;
+
+              tId &&
+                material.set(tId, {
+                  name: mat.name,
+                  diffuse,
+                  specular,
+                  opacity,
+                });
             }
           }
 
@@ -164,7 +188,12 @@ function toJson(npcData: string): NpcGrp[] {
           const checkTexture = textureByName.get(_textureName.toLowerCase());
 
           if (checkTexture) {
-            material.set(_textureName, { diffuse: _textureName });
+            const tId = _textureName;
+
+            tId &&
+              material.set(tId, {
+                diffuse: _textureName,
+              });
           }
           // Если нет текстуры проверяем материал
           const checkMat = matsByName.get(_textureName.toLowerCase());
@@ -184,12 +213,15 @@ function toJson(npcData: string): NpcGrp[] {
 
             const { diffuse, specular, opacity } = parseMat(matData);
 
-            material.set(_textureName, {
-              name: _textureName,
-              diffuse,
-              specular,
-              opacity,
-            });
+            const tId = diffuse;
+
+            tId &&
+              material.set(tId, {
+                name: _textureName,
+                diffuse,
+                specular,
+                opacity,
+              });
           } else {
             // console.log("huy");
           }
@@ -271,4 +303,8 @@ function parseProps(data: string): NpcGrp["params"] {
 function removeAfterT0(str: string): string {
   // Разделяем строку по '_t0' и берем первую часть
   return str.split("_t0")[0];
+}
+
+function removeSuffix(name: string): string {
+  return name.replace(/_[mt]\d+.*$/, "");
 }

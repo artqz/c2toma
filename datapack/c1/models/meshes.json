@@ -1,0 +1,1378 @@
+[
+  {
+    "name": "antaras_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ant_larva_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ant_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ant_soldier_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "aracne_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "archangel_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "baium_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "banshee_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "batur_orc_archer_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "batur_orc_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "batur_orc_overlord_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "batur_orc_shaman_a_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "batur_orc_shaman_b_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "batur_orc_shaman_c_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "batur_orc_warrior_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "binding_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "bloody_queen_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "box_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "bugbear_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "cat_the_cat_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "cave_maiden_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "centaurus_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "crimson_bear_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "crimson_doll_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "crocodile_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "cutie_cat_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dark_fencer_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dark_horror_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dark_horror_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "death_blader_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "death_knight_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "devastator_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "devestrator_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dgstone_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dire_wolf_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "drake_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dre_vanul_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dre_vanul_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dryad_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dryad_sm_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "dwarf_ghost_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "eagle_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "elf_ghost_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "elpy_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "field_stalker_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "Fox_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "gamlin_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "gargoyle_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "gargoyle_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "giant_bee_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "giant_bee_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "giant_leech_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "giant_spider_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "giant_wild_hog_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "goblin_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "goblin_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "grave_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "great_bat_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "Great_white_shark_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "gremlin_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "griffin_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "grizzly_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "grizzly_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "grizzly_sm_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "hanged_man_ripper_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "harpy_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "hatchling_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "headless_knight_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "heltor_silenos_chieftain_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "heltor_silenos_hunter_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "heltor_silenos_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "heltor_silenos_shaman_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "heltor_silenos_warrior_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "hobgoblin_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "human_ghost_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "hungry_spirit_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "hunter_gargoyle_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "imp_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "imp_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "iron_golem_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "karik_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "kel_mahum_archer_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "kel_mahum_champion_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "kel_mahum_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "kel_mahum_warrior_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "kel_mahum_witch_doctor_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ketra_orc_archer_a_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ketra_orc_archer_b_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ketra_orc_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ketra_orc_overload_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ketra_orc_shaman_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ketra_orc_warrior_a_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ketra_orc_warrior_b_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "king_bugbear_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "kobold_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "leogul_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "lesser_basilisk_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "lesser_basilisk_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "lesser_basilisk_sm_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "lesser_giant_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "lesser_giant_mage_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "lesser_giant_shooter_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "life_cubic_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "lion_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "liviona_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "lizardman_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "magical_weaver_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "manadragora_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "mana_vampire_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "mandragora_a_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "mandragora_b_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "marsh_stakato_drone_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "marsh_stakato_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "marsh_stakato_queen_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "marsh_stakato_soldier_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "marsh_stakato_worker_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "mechanic_golem_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "medusa_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "medusa_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "minotaur_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "mirror_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "monster_eye_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "monster_eye_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "neer_crawler_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "noble_ant_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "northern_goblin_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "oel_mahum_archer_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "oel_mahum_champion_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "oel_mahum_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "oel_mahum_warrior_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "oel_mahum_witch_doctor_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ogre_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ogre_mage_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ol_mahum_archer_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ol_mahum_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ol_mahum_champion_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ol_mahum_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "onyx_beast_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "onyx_beast_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "orc_archer_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "orc_champion_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "orc_fighter_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "orc_fighter_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "orc_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "orc_shaman_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "orfen_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "orfen_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "pan_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "pet_wolf_a_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "pet_wolf_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "pirate_Zombie_captin_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "pixy_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "poison_spider_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "poison_toad_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "poltergeist_cubic_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "queen_ant_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "Rabbit_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "raikel_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "raikel_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "riba_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "riba_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "Saber_toothed_tiger_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "salamander_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "serpent_slave_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "shadow_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "siege_golem_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "silenos_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "silhouette_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "skeleton_archer_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "skeleton_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "skeleton_knight_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "skeleton_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "skeleton_pikeman_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "skeleton_royal_guard_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "spartoi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "specter_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "spike_stakato_drone_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "spike_stakato_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "spike_stakato_soldier_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "spike_stakato_worker_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "stone_golem_bi1_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "stone_golem_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "stone_golem_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "storm_cubic_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "strider_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "succubus_bi1_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "succubus_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "succubus_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "susceptor_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "susceptor_prime_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "sylph_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ti_mi_riran_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "ti_mi_tran_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "troll_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "twin_headed_giant_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "undine_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "unicorn_boxer_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "unicorn_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "unicorn_mirage_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "vampire_bat_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "vampire_bat_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "vampiric_cubic_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "viper_cubic_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "virud_lizardman_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "virud_lizardman_matriarch_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "virud_lizardman_scout_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "virud_lizardman_shaman_a_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "virud_lizardman_shaman_b_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "virud_lizardman_warrior_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "virud_lizardman_warrior_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "walking_fungus_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "walking_fungus_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "water_elemental_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wererat_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wererat_sm_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "werewolf_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "werewolf_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wild_horse_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "will_o_wisp_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wind_archer_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wind_messenger_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wind_servent_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wolf_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wolf_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wyrm_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wyvern_a_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "wyvern_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "yeti_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "young_fox_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "zenta_lizardman_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "zenta_lizardman_matriarch_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "zenta_lizardman_scout_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "zenta_lizardman_shaman_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "zenta_lizardman_warrior_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "zombie_bi1_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "zombie_bi_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "zombie_m00",
+    "path": "datapack/c1/models/LineageMonsters/SkeletalMesh"
+  },
+  {
+    "name": "a_casino_FDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_casino_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_chamberlain_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_clergyman_FDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_clergyman_MDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_common_peopleA_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_common_peopleA_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_common_peopleB_Fhuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_common_peopleB_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_common_people_FDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_common_people_FElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_common_people_MDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_common_people_MElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_fighterguild_master_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_fighterguild_master_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_fighterguild_master_Mhuman_old_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_fighterguild_teacher_FDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_fighterguild_teacher_FElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_fighterguild_teacher_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_fighterguild_teacher_MDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_fighterguild_teacher_MElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_fighterguild_teacher_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_guard_FDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_guard_MElf_low_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_guard_MElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_guard_MHuman_low_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_guard_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_guard_Mhuman_old_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_guild_master_MDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_hardins_pupil_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_hardins_pupil_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_hardin_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_king_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_lord_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_mageguild_master_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_mageguild_master_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_mageguild_teacher_FDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_mageguild_teacher_FElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_mageguild_teacher_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_mageguild_teacher_MDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_mageguild_teacher_MElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_mageguild_teacher_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_maidA_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_maidB_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_patriarch_MDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_patriarch_MElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_low_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_royal_guardA_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_royal_guardB_MHuman_low_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_royal_guardB_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_sanctuary_master_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_sanctuary_teacher_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_sanctuary_teacher_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_smith_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_teleporter_FDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_teleporter_FElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_teleporter_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_traderA_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_traderA_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_traderA_Mhuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_traderB_FHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_traderB_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_trader_FDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_trader_FElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_trader_MDarkElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_trader_MElf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_warehouse_keeper_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "a_wharfinger_MHuman_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "barrel_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "box_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "castle_aden_controlltower_jewel_m01",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "castle_aden_controltower_jewel_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "castle_kent_statue_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "coffer_a_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "coffer_b_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "coffer_c_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "coffer_d_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "dgstone_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_celebrant_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_clergyman_FDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_clergyman_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_collector_master_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_collector_teacher_FDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_collector_teacher_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_common_people_FDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_common_people_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_guard_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_guard_MOrc_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_mine_master_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_mine_teacher_FDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_mine_teacher_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_smith_FDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_smith_master_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_teleporter_FDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_traderA_FDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_traderA_master_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_traderB_FDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_traderB_master_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_traderB_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_trader_FOrc_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_trader_MOrc_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_warehouse_keeper_FDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "e_warehouse_master_MDwarf_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "heart_of_warding_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "human_tree_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "knightstatue_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  },
+  {
+    "name": "orc_head_m00",
+    "path": "datapack/c1/models/LineageNpcs/SkeletalMesh"
+  }
+]

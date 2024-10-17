@@ -1,4 +1,3 @@
-import { number, object, unknown } from "zod";
 import { loadNpcDataC1 } from "../../datapack/c1/npcdata";
 import { loadNpcNamesC1 } from "../../datapack/c1/npcnames";
 import { loadNpcDataC4 } from "../../datapack/c4/npcdata";
@@ -33,6 +32,7 @@ import { getSkills } from "./skills/npcGetSkill";
 import { canUseSA } from "./npc/canUseSA";
 import { getClan } from "./npc/getters";
 import { loadNpcGrpDataC1, NpcGrp } from "../../datapack/c1/npcgrp";
+import { loadNpcGrpDataC4 } from "../../datapack/c4/npcgrp";
 
 export function loadNpcs(deps: {
   chronicle: Chronicle;
@@ -60,7 +60,11 @@ function loadNpcData(deps: {
         npcGrp: loadNpcGrpDataC1(),
       });
     case "c4":
-      return addNpcs({ ...deps, npcsData: loadNpcDataC4() });
+      return addNpcs({
+        ...deps,
+        npcsData: loadNpcDataC4(),
+        npcGrp: loadNpcGrpDataC4(),
+      });
     case "c5":
       return addNpcsС5(deps);
     case "il":

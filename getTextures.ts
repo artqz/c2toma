@@ -52,6 +52,21 @@ saveFile(
   )
 );
 saveFile(
+  `datapack/${chronicle}/models/meshes.json`,
+  JSON.stringify(
+    [
+      ...getFilesInDirectorySync(
+        `datapack/${chronicle}/models/LineageMonsters/SkeletalMesh`
+      ),
+      ...getFilesInDirectorySync(
+        `datapack/${chronicle}/models/LineageNpcs/SkeletalMesh`
+      ),
+    ],
+    null,
+    2
+  )
+);
+saveFile(
   `datapack/${chronicle}/models/mats.json`,
   JSON.stringify(
     [

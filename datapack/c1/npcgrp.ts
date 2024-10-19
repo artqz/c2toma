@@ -12,6 +12,12 @@ const Material = z.object({
   diffuse: z.string(),
   specular: z.string().optional(),
   opacity: z.string().optional(),
+  params: z
+    .object({
+      outputBlending: z.number(),
+      twoSided: z.boolean(),
+    })
+    .optional(),
 });
 
 // Определяем схему через zod для проверки структуры NPC
@@ -24,7 +30,7 @@ export const NpcGrp = z.object({
   material: Material.array().optional(),
   animationPath: z.string().optional(),
   animation: z.string().optional(),
-  params: z.object({ outputBlending: z.number(), twoSided: z.boolean() }),
+  // params: z.object({ outputBlending: z.number(), twoSided: z.boolean() }),
 });
 
 export type Material = z.infer<typeof Material>;
@@ -133,17 +139,22 @@ function toJson(npcData: string): NpcGrp[] {
   return NpcGrp.array().parse(
     npcs.map((n) => {
       // Разбиваем class_name на путь и имя класса
-      const [meshPath, _meshName] = (n.mesh_name as string).split(".");
+      const [_meshPath, _meshName] = (n.mesh_name as string).split(".");
+
+      const meshPath =
+        _meshPath === ""
+          ? _meshPath + "/SkeletalMesh"
+          : "LineageNpcs/SkeletalMesh";
 
       const _mesh = meshByName.get(_meshName.toLowerCase());
       const meshName = _mesh ? _mesh.name : _meshName;
 
       let texturePath: string | undefined;
       const material = new Map<string, Material>();
-      let params: NpcGrp["params"] = {
-        outputBlending: 0,
-        twoSided: false,
-      };
+      // let params: NpcGrp["params"] = {
+      //   outputBlending: 0,
+      //   twoSided: false,
+      // };
 
       // Проверка, если texture_name — это массив или строка
       if (n.texture_name) {
@@ -168,7 +179,7 @@ function toJson(npcData: string): NpcGrp[] {
                 "utf8"
               );
 
-              params = parseProps(propsData);
+              // params = parseProps(propsData);
 
               const { diffuse, specular, opacity } = parseMat(matData);
 
@@ -180,6 +191,7 @@ function toJson(npcData: string): NpcGrp[] {
                   diffuse,
                   specular,
                   opacity,
+                  params: parseProps(propsData),
                 });
             }
           }
@@ -209,8 +221,6 @@ function toJson(npcData: string): NpcGrp[] {
             );
             // console.log(propsData);
 
-            params = parseProps(propsData);
-
             const { diffuse, specular, opacity } = parseMat(matData);
 
             const tId = diffuse;
@@ -221,6 +231,7 @@ function toJson(npcData: string): NpcGrp[] {
                 diffuse,
                 specular,
                 opacity,
+                params: parseProps(propsData),
               });
           } else {
             // console.log("huy");
@@ -255,7 +266,6 @@ function toJson(npcData: string): NpcGrp[] {
         ...(materialArr.length > 0 && { material: materialArr }), // Добавляем textureName только если массив не пуст
         ...(anim && { animation: anim.name }),
         ...(anim && { animationPath: anim.path.split("/").slice(3).join("/") }),
-        params,
       };
     })
   );
@@ -282,7 +292,7 @@ function parseMat(data: string) {
   return material;
 }
 
-function parseProps(data: string): NpcGrp["params"] {
+function parseProps(data: string): Material["params"] {
   const tmp = data.split("\r\n");
   let outputBlending = 0;
   let twoSided = false;

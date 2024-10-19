@@ -82,10 +82,10 @@ export type Npc = {
       diffuse: string;
       specular?: string;
       opacity?: string;
+      params?: { outputBlending: number; twoSided: boolean };
     }[];
     animationPath?: string;
     animation?: string;
-    params: { outputBlending: number; twoSided: boolean };
   };
 };
 

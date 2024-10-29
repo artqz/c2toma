@@ -142,7 +142,7 @@ function toJson(npcData: string): NpcGrp[] {
       const [_meshPath, _meshName] = (n.mesh_name as string).split(".");
 
       const meshPath =
-        _meshPath === ""
+        _meshPath === "LineageMonsters"
           ? _meshPath + "/SkeletalMesh"
           : "LineageNpcs/SkeletalMesh";
 

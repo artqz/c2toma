@@ -165,6 +165,8 @@ function toJson(npcData: string): NpcGrp[] {
         // Обрабатываем каждый элемент texture_name
         textureNames.forEach((t) => {
           const [_texturePath, _textureName] = t.split(".");
+          texturePath = _texturePath;
+
           // загружаем все похожие материалы
           for (const mat of findMatsByName(
             removeAfterT0(_textureName.toLowerCase())

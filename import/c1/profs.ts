@@ -1,3 +1,4 @@
+import slug from "slug";
 import {
   ProfSkillAcquireC1,
   loadSkillAcquireDataC1,
@@ -110,7 +111,7 @@ function getSkills(deps: {
     if (typeof pSkill !== "string") {
       const reqLvl = pSkill.get_lv;
 
-      const skill = deps.skills.get(pSkill.skill_name);
+      const skill = deps.skills.get(slug(pSkill.skill_name, "_"));
       if (skill) {
         skillMap.set(skill.skillName, {
           skill: skill.id + "_" + skill.level,

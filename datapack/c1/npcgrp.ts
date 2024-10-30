@@ -165,7 +165,10 @@ function toJson(npcData: string): NpcGrp[] {
         // Обрабатываем каждый элемент texture_name
         textureNames.forEach((t) => {
           const [_texturePath, _textureName] = t.split(".");
-          texturePath = _texturePath;
+          texturePath =
+            _meshPath === "LineageMonstersTex"
+              ? _texturePath
+              : "LineageNpcsTex/SkeletalMesh";
 
           // загружаем все похожие материалы
           for (const mat of findMatsByName(

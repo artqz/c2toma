@@ -168,7 +168,7 @@ function toJson(npcData: string): NpcGrp[] {
           texturePath =
             _meshPath === "LineageMonstersTex"
               ? _texturePath
-              : "LineageNpcsTex/SkeletalMesh";
+              : "LineageNpcsTex";
 
           // загружаем все похожие материалы
           for (const mat of findMatsByName(

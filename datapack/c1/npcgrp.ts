@@ -165,8 +165,10 @@ function toJson(npcData: string): NpcGrp[] {
         // Обрабатываем каждый элемент texture_name
         textureNames.forEach((t) => {
           const [_texturePath, _textureName] = t.split(".");
+          console.log(textureNames);
+
           texturePath =
-            _meshPath === "LineageMonstersTex"
+            _texturePath === "LineageMonstersTex"
               ? _texturePath
               : "LineageNpcsTex";
 

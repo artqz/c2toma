@@ -347,17 +347,9 @@ function getNpcNamesByMultisell(multisellName: string) {
         { npcName: "trader_kunai", show: true },
         { npcName: "trader_uska", show: true },
       ];
-    case "trade_for_newbie":
+    case "weapon_rent_for_newbie_5":
     case "weapon_rent_for_newbie_20":
-      return [
-        { npcName: "adventure_helper_01", show: false },
-        { npcName: "adventure_helper_02", show: false },
-        { npcName: "adventure_helper_03", show: false },
-        { npcName: "adventure_helper_04", show: false },
-        { npcName: "adventure_helper_05", show: false },
-        { npcName: "adventure_helper_06", show: false },
-        { npcName: "adventure_helper_07", show: false },
-      ];
+      return [{ npcName: "adventure_helper_01", show: false }];
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];

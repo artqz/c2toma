@@ -316,6 +316,48 @@ function getNpcNamesByMultisell(multisellName: string) {
         { npcName: "grandmagister_havrier", show: true },
         { npcName: "grandmagister_celes", show: true },
       ];
+    case "trade_for_newbie":
+      return [
+        // newbie traders
+        { npcName: "lector", show: true },
+        { npcName: "jackson", show: true },
+        { npcName: "silvia", show: true },
+        { npcName: "katrine", show: true },
+        { npcName: "iria", show: true },
+        { npcName: "paint", show: true },
+        { npcName: "vollodos", show: true },
+        { npcName: "mina", show: true },
+        { npcName: "uno", show: true },
+        { npcName: "ariel", show: true },
+        { npcName: "cel", show: true },
+        { npcName: "trader_arodin", show: true },
+        { npcName: "trader_daeronees", show: true },
+        { npcName: "trader_simplon", show: true },
+        { npcName: "trader_varanket", show: true },
+        { npcName: "trader_nestle", show: true },
+        { npcName: "trader_poesia", show: true },
+        { npcName: "trader_sydney", show: true },
+        { npcName: "tweety", show: true },
+        { npcName: "trader_reep", show: true },
+        { npcName: "trader_chali", show: true },
+        { npcName: "trader_garita", show: true },
+        { npcName: "trader_mion", show: true },
+        { npcName: "trader_jakaron", show: true },
+        { npcName: "trader_mion", show: true },
+        { npcName: "trader_kunai", show: true },
+        { npcName: "trader_uska", show: true },
+      ];
+    case "trade_for_newbie":
+    case "weapon_rent_for_newbie_20":
+      return [
+        { npcName: "adventure_helper_01", show: false },
+        { npcName: "adventure_helper_02", show: false },
+        { npcName: "adventure_helper_03", show: false },
+        { npcName: "adventure_helper_04", show: false },
+        { npcName: "adventure_helper_05", show: false },
+        { npcName: "adventure_helper_06", show: false },
+        { npcName: "adventure_helper_07", show: false },
+      ];
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];

@@ -5,6 +5,7 @@ import { loadMultisellDataIL } from "../../datapack/il/miltisell";
 import { Item, Multisell, Npc, SellList } from "../../result/types";
 import { Chronicle } from "../types";
 import { fixC5Multisell } from "./c5/multisell";
+import { fixIlMultisell } from "./il/multisell";
 
 export function loadMultisell(deps: {
   chronicle: Chronicle;
@@ -362,5 +363,8 @@ function handFix(deps: {
 }) {
   if (deps.chronicle === "c5") {
     fixC5Multisell(deps.multisell);
+  }
+  if (deps.chronicle === "il") {
+    fixIlMultisell(deps.multisell);
   }
 }

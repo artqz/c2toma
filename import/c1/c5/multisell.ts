@@ -1,232 +1,235 @@
-import { Multisell } from '../../../result/types';
+import { Multisell } from "../../../result/types";
 
 export function fixC5Multisell(multisell: Map<number, Multisell>) {
-  ms.forEach(m => {
-    const _ms = multisell.get(m.id)
+  ms.forEach((m) => {
+    const _ms = multisell.get(m.id);
     if (_ms) {
-      _ms.sellList.push(..._ms.sellList, ...m.sellList)
+      _ms.sellList.push(..._ms.sellList, ...m.sellList);
     }
-  })
+  });
 }
 
-const ms = [{
-    "id": 2,
-    "multisellName": "blackmerchant_armor",
-    "sellList": [
+const ms = [
+  {
+    id: 2,
+    multisellName: "blackmerchant_armor",
+    sellList: [
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_c",
-            "count": 100
+            itemName: "crystal_c",
+            count: 100,
           },
           {
-            "itemName": "crystal_d",
-            "count": 500
-          }
+            itemName: "crystal_d",
+            count: 500,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "blue_soul_crystal_7",
-            "count": 1
-          }
-        ]
+            itemName: "blue_soul_crystal_7",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_c",
-            "count": 120
+            itemName: "crystal_c",
+            count: 120,
           },
           {
-            "itemName": "crystal_d",
-            "count": 567
-          }
+            itemName: "crystal_d",
+            count: 567,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "blue_soul_crystal_8",
-            "count": 1
-          }
-        ]
+            itemName: "blue_soul_crystal_8",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_b",
-            "count": 44
+            itemName: "crystal_b",
+            count: 44,
           },
           {
-            "itemName": "crystal_c",
-            "count": 135
-          }
+            itemName: "crystal_c",
+            count: 135,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "blue_soul_crystal_9",
-            "count": 1
-          }
-        ]
+            itemName: "blue_soul_crystal_9",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_b",
-            "count": 50
+            itemName: "crystal_b",
+            count: 50,
           },
           {
-            "itemName": "crystal_c",
-            "count": 150
-          }
+            itemName: "crystal_c",
+            count: 150,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "blue_soul_crystal_10",
-            "count": 1
-          }
-        ]
+            itemName: "blue_soul_crystal_10",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_c",
-            "count": 100
+            itemName: "crystal_c",
+            count: 100,
           },
           {
-            "itemName": "crystal_d",
-            "count": 500
-          }
+            itemName: "crystal_d",
+            count: 500,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "green_soul_crystal_7",
-            "count": 1
-          }
-        ]
+            itemName: "green_soul_crystal_7",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_c",
-            "count": 120
+            itemName: "crystal_c",
+            count: 120,
           },
           {
-            "itemName": "crystal_d",
-            "count": 567
-          }
+            itemName: "crystal_d",
+            count: 567,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "green_soul_crystal_8",
-            "count": 1
-          }
-        ]
+            itemName: "green_soul_crystal_8",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_b",
-            "count": 44
+            itemName: "crystal_b",
+            count: 44,
           },
           {
-            "itemName": "crystal_c",
-            "count": 135
-          }
+            itemName: "crystal_c",
+            count: 135,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "green_soul_crystal_9",
-            "count": 1
-          }
-        ]
+            itemName: "green_soul_crystal_9",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_b",
-            "count": 50
+            itemName: "crystal_b",
+            count: 50,
           },
           {
-            "itemName": "crystal_c",
-            "count": 150
-          }
+            itemName: "crystal_c",
+            count: 150,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "green_soul_crystal_10",
-            "count": 1
-          }
-        ]
+            itemName: "green_soul_crystal_10",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_c",
-            "count": 100
+            itemName: "crystal_c",
+            count: 100,
           },
           {
-            "itemName": "crystal_d",
-            "count": 500
-          }
+            itemName: "crystal_d",
+            count: 500,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "red_soul_crystal_7",
-            "count": 1
-          }
-        ]
+            itemName: "red_soul_crystal_7",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_c",
-            "count": 120
+            itemName: "crystal_c",
+            count: 120,
           },
           {
-            "itemName": "crystal_d",
-            "count": 567
-          }
+            itemName: "crystal_d",
+            count: 567,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "red_soul_crystal_8",
-            "count": 1
-          }
-        ]
+            itemName: "red_soul_crystal_8",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_b",
-            "count": 44
+            itemName: "crystal_b",
+            count: 44,
           },
           {
-            "itemName": "crystal_c",
-            "count": 135
-          }
+            itemName: "crystal_c",
+            count: 135,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "red_soul_crystal_9",
-            "count": 1
-          }
-        ]
+            itemName: "red_soul_crystal_9",
+            count: 1,
+          },
+        ],
       },
       {
-        "requiredItems": [
+        requiredItems: [
           {
-            "itemName": "crystal_b",
-            "count": 50
+            itemName: "crystal_b",
+            count: 50,
           },
           {
-            "itemName": "crystal_c",
-            "count": 150
-          }
+            itemName: "crystal_c",
+            count: 150,
+          },
         ],
-        "resultItems": [
+        resultItems: [
           {
-            "itemName": "red_soul_crystal_10",
-            "count": 1
-          }
-        ]
-      }
-    ]}]
+            itemName: "red_soul_crystal_10",
+            count: 1,
+          },
+        ],
+      },
+    ],
+  },
+];

@@ -4,12 +4,13 @@ export function fixIlMultisell(multisell: Map<number, Multisell>) {
   ms.forEach((m) => {
     const _ms = multisell.get(m.id);
     if (_ms) {
-      _ms.sellList.push(..._ms.sellList, ...m.sellList);
+    } else {
+      multisell.set(m.id, m);
     }
   });
 }
 
-const ms = [
+const ms: Multisell[] = [
   {
     id: 528,
     multisellName: "weapon_rent_for_newbie_5",
@@ -97,6 +98,12 @@ const ms = [
             count: 1,
           },
         ],
+      },
+    ],
+    npcList: [
+      {
+        npcName: "adventure_helper_01",
+        show: true,
       },
     ],
   },
@@ -243,6 +250,12 @@ const ms = [
             count: 1,
           },
         ],
+      },
+    ],
+    npcList: [
+      {
+        npcName: "adventure_helper_01",
+        show: true,
       },
     ],
   },

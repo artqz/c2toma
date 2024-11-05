@@ -346,7 +346,7 @@ function getNpcNamesByMultisell(multisellName: string) {
         { npcName: "trader_jakaron", show: false },
         { npcName: "trader_mion", show: false },
         { npcName: "trader_kunai", show: false },
-        { npcName: "trader_uska", show: true },
+        { npcName: "trader_uska", show: false },
       ];
     case "weapon_rent_for_newbie_5":
     case "weapon_rent_for_newbie_20":

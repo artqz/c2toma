@@ -1,0 +1,13 @@
+FrameBufferBlending = FB_Overwrite (0)
+ZWrite = true
+ZTest = true
+AlphaTest = true
+TwoSided = true
+AlphaRef = 160
+TreatAsTwoSided = true
+Material = Shader'centaurus.centaurus_t00_sh'
+FallbackMaterial = None
+DefaultMaterial = None
+SurfaceType = 0
+bUseTextureAsHeat = false
+HeatMaterial = None

@@ -5,6 +5,7 @@ import { loadMultisellDataIL } from "../../datapack/il/miltisell";
 import { Item, Multisell, Npc, SellList } from "../../result/types";
 import { Chronicle } from "../types";
 import { fixC5Multisell } from "./c5/multisell";
+import { fixIlMultisell } from "./il/multisell";
 
 export function loadMultisell(deps: {
   chronicle: Chronicle;
@@ -316,6 +317,40 @@ function getNpcNamesByMultisell(multisellName: string) {
         { npcName: "grandmagister_havrier", show: true },
         { npcName: "grandmagister_celes", show: true },
       ];
+    case "trade_for_newbie":
+      return [
+        // newbie traders
+        { npcName: "lector", show: false },
+        { npcName: "jackson", show: false },
+        { npcName: "silvia", show: false },
+        { npcName: "katrine", show: false },
+        { npcName: "iria", show: false },
+        { npcName: "paint", show: false },
+        { npcName: "vollodos", show: false },
+        { npcName: "mina", show: false },
+        { npcName: "uno", show: false },
+        { npcName: "ariel", show: false },
+        { npcName: "cel", show: false },
+        { npcName: "trader_arodin", show: false },
+        { npcName: "trader_daeronees", show: false },
+        { npcName: "trader_simplon", show: false },
+        { npcName: "trader_varanket", show: false },
+        { npcName: "trader_nestle", show: false },
+        { npcName: "trader_poesia", show: false },
+        { npcName: "trader_sydney", show: false },
+        { npcName: "tweety", show: false },
+        { npcName: "trader_reep", show: false },
+        { npcName: "trader_chali", show: false },
+        { npcName: "trader_garita", show: false },
+        { npcName: "trader_mion", show: false },
+        { npcName: "trader_jakaron", show: false },
+        { npcName: "trader_mion", show: false },
+        { npcName: "trader_kunai", show: false },
+        { npcName: "trader_uska", show: false },
+      ];
+    case "weapon_rent_for_newbie_5":
+    case "weapon_rent_for_newbie_20":
+      return [{ npcName: "adventure_helper_01", show: true }];
     default:
       console.log("Unhandled multisell: %s", multisellName);
       return [];
@@ -328,5 +363,8 @@ function handFix(deps: {
 }) {
   if (deps.chronicle === "c5") {
     fixC5Multisell(deps.multisell);
+  }
+  if (deps.chronicle === "il") {
+    fixIlMultisell(deps.multisell);
   }
 }

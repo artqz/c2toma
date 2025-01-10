@@ -1,0 +1,13 @@
+FrameBufferBlending = FB_Overwrite (0)
+ZWrite = true
+ZTest = true
+AlphaTest = true
+TwoSided = true
+AlphaRef = 0
+TreatAsTwoSided = true
+Material = Shader'crimson_bear.crimson_bear_t00_sh'
+FallbackMaterial = None
+DefaultMaterial = None
+SurfaceType = 0
+bUseTextureAsHeat = false
+HeatMaterial = None

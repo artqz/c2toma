@@ -72,21 +72,21 @@ function loadSkillAcquireData(deps: {
 
     const skills = parentProf
       ? parentProf.skills.concat(
-          getSkills({
-            ...deps,
-            itemsByName,
-            skills: skillsByName,
-            profSkills: prof.$,
-            itemsILByName,
-          })
-        )
-      : getSkills({
+        getSkills({
           ...deps,
           itemsByName,
           skills: skillsByName,
           profSkills: prof.$,
           itemsILByName,
-        });
+        })
+      )
+      : getSkills({
+        ...deps,
+        itemsByName,
+        skills: skillsByName,
+        profSkills: prof.$,
+        itemsILByName,
+      });
 
     profMap.set(prof.t, {
       profName: prof.t,
@@ -110,7 +110,6 @@ function getSkills(deps: {
   for (const pSkill of deps.profSkills) {
     if (typeof pSkill !== "string") {
       const reqLvl = pSkill.get_lv;
-
       const skill = deps.skills.get(slug(pSkill.skill_name, "_"));
       if (skill) {
         skillMap.set(skill.skillName, {

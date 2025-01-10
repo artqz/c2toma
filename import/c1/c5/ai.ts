@@ -9,6 +9,7 @@ import {
 } from "../../../datapack/gf/aidata";
 import { loadNpcDataGF } from "../../../datapack/gf/npcdata";
 import { Ai, Item, Npc, AiSellList as AiSL } from "../../../result/types";
+import { EXTRA_ITEMS } from "../extra/extraItems";
 
 export function generaAiC5(deps: {
   items: Map<number, Item>;
@@ -151,64 +152,3 @@ function filterAi(deps: { items: Map<number, Item>; aiMap: Map<string, Ai> }) {
 
   return newMapAi;
 }
-
-const EXTRA_ITEMS = new Set([
-  "sb_greater_heal11",
-  "sb_greater_group_heal11",
-  "sb_resist_shock1",
-  "sb_return1",
-  "sb_mana_regeneration",
-  "sb_might_of_heaven11",
-  "sb_mass_summon_aqua_cubic",
-  "sb_bless_shield1",
-  "sb_surrender_to_water1",
-  "sb_summon_life_cubic1",
-  "sb_summon_storm_cubic1",
-  "sb_summon_aqua_cubic1",
-  "sb_summon_unicorn_merrow1",
-  "sb_servitor_cure1",
-  "sb_servitor_physical_shield1",
-  "sb_solar_flare1",
-  "sb_spirit_barrier1",
-  "sb_aura_bolt1",
-  "sb_aura_flare11",
-  "sb_curse_fear1",
-  "sb_transfer_pain",
-  "sb_frost_bolt11",
-  "sb_freezing_skin1",
-  "sb_hydro_blast11",
-  "sb_servitor_magic_shield1",
-  "sb_servitor_haste1",
-  "sb_serenade_of_eva1",
-  "sb_sleeping_cloud1",
-  "sb_ice_dagger1",
-  "sb_freezing_shackle1",
-  "sb_vitalize1",
-  "sb_cancel1",
-  "sb_party_recall1",
-  "sb_servitor_empower1",
-  "sb_frost_wall1",
-  "sb_mana_burn",
-  "sb_major_heal",
-  "sb_betray",
-  "sb_summon_unicorn_seraphim",
-  "sb_summon_friend",
-  "sb_erase",
-  "sb_invocation1",
-  "sb_turn_undead",
-  "sb_trance",
-  "sb_auqa_resist1",
-  "sb_resist_unholy",
-  "sb_mass_surrender_to_water",
-  "sb_aqua_splash1",
-  "sb_advanced_block1",
-  "sb_aura_flash1",
-  "sb_clarity",
-  "sb_summon_attract_cubic1",
-  "sb_servitor_blessing",
-  "sb_wild_magic1",
-  "sb_seed_of_water",
-  "sb_aura_symphony1",
-  "sb_blizzard1",
-  "sb_elemental_symphony_e1",
-]);

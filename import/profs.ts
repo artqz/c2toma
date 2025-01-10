@@ -59,13 +59,13 @@ function getSkills(deps: {
       skill: pSkill.skillId + "_" + pSkill.skillLevel,
       itemNeeded: pSkill.itemNeeded
         ? [
-            {
-              itemName: itemById
-                .get(pSkill.itemNeeded)!
-                .itemName.replace(":", "_"),
-              count: 1,
-            },
-          ]
+          {
+            itemName: itemById
+              .get(pSkill.itemNeeded)!
+              .itemName.replace(":", "_"),
+            count: 1,
+          },
+        ]
         : [],
     });
   }

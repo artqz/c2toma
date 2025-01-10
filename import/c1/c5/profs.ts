@@ -38,13 +38,13 @@ function getSkills(deps: {
         mp: pSkill.mp,
         itemNeeded: pSkill.itemNeeded
           ? [
-              {
-                itemName: deps.items
-                  .get(pSkill.itemNeeded)!
-                  .itemName.replace(":", "_"),
-                count: 1,
-              },
-            ]
+            {
+              itemName: deps.items
+                .get(pSkill.itemNeeded)!
+                .itemName.replace(":", "_"),
+              count: 1,
+            },
+          ]
           : [],
         lvUpSp: pSkill.lvUpSp,
         isMagic: pSkill.isMagic,

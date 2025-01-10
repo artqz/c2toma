@@ -82,7 +82,7 @@ export const PROFS: Record<number, string> = {
   110: "storm_screamer",
   111: "spectral_master",
   112: "shillien_saint",
-  113: "destroyer",
+  113: "titan",
   114: "grand_khavatari",
   115: "dominator",
   116: "doomcryer",

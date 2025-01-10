@@ -117,6 +117,20 @@ function getNpcNamesByMultisell(multisellName: string) {
       return [{ npcName: "galladuchi", show: true }];
     case "blackmerchant_armor":
       return [{ npcName: "alexandria", show: true }];
+    case "pet_trade":
+      return [
+        // c4, to do HF
+        { npcName: "pet_manager_martin", show: false },
+        { npcName: "pet_manager_lundy", show: false },
+        { npcName: "pet_manager_waters", show: false },
+        { npcName: "pet_manager_cooper", show: false },
+        { npcName: "pet_manager_joey", show: false },
+        { npcName: "pet_manager_nelson", show: false },
+        { npcName: "pet_manager_lemper", show: false },
+        { npcName: "pet_manager_rood", show: false },
+        { npcName: "pet_manager_annette", show: false },
+        { npcName: "pet_manager_woods", show: false },
+      ]
     case "dualsword_d":
     case "dualsword_b":
     case "dualsword_b_2":

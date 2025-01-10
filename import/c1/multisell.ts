@@ -118,6 +118,8 @@ function getNpcNamesByMultisell(multisellName: string) {
     case "blackmerchant_armor":
       return [{ npcName: "alexandria", show: true }];
     case "dualsword_d":
+    case "dualsword_b":
+    case "dualsword_b_2":
       return [
         { npcName: "blacksmith_sumari", show: false },
         { npcName: "blacksmith_kluto", show: false },

@@ -4,7 +4,7 @@ export function fixC5Multisell(multisell: Map<number, Multisell>) {
   ms.forEach((m) => {
     const _ms = multisell.get(m.id);
     if (_ms) {
-      _ms.sellList.push(..._ms.sellList, ...m.sellList);
+      _ms.sellList.push(...m.sellList);
     }
   });
 }

@@ -8,10 +8,8 @@ export function fixIlMultisell(multisell: Map<number, Multisell>) {
       multisell.set(m.id, m);
     }
   });
-  //"dualsword_b", 5
-  //"dualsword_b_2", 6
-  multisell.delete(5);
-  multisell.delete(6);
+  //"ssq_weapon_yupgrade", 203
+  multisell.delete(203);
 }
 
 const ms: Multisell[] = [

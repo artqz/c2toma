@@ -23,6 +23,7 @@ import { generateItemsIL } from "./il/items";
 import { generateItemsC5 } from "./c5/items";
 import { loadItemGrpC5 } from "../../datapack/c5/itemgrp";
 import { getTypeMaterials } from "./items/materials";
+import { loadItemNamesC5 } from "../../datapack/c5/itemnames";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -117,7 +118,7 @@ function addItems(itemsData: ItemDataEntry[]) {
         weaponType: item.weapon_type!,
         weight: item.weight!,
         enchantBonus: [],
-        defaultAction: item.default_action
+        defaultAction: item.default_action,
       });
     }
   }
@@ -142,6 +143,9 @@ function loadItemNames(deps: {
       break;
     case "c4":
       addNamesC4(deps);
+      break;
+    case "c5":
+      addNamesC5(deps);
       break;
     case "il":
       addNamesIL(deps);
@@ -348,6 +352,21 @@ function addNamesC1(deps: { itemData: Map<number, Item> }) {
 function addNamesC4(deps: { itemData: Map<number, Item> }) {
   const itemData = deps.itemData;
   for (const itemName of loadItemNamesC4()) {
+    const item = itemData.get(itemName.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        addName: itemName.add_name,
+        name: itemName.name,
+        desc: itemName.desc,
+      });
+    }
+  }
+}
+
+function addNamesC5(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemName of loadItemNamesC5()) {
     const item = itemData.get(itemName.id);
     if (item) {
       itemData.set(item.id, {

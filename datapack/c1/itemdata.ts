@@ -13,17 +13,19 @@ const ItemEntryC1 = z.object({
     z.array(z.number()),
   ]),
   item_type: z.string().optional(),
+  slot_bit_type: z.object({ $: z.array(z.string()) }).optional(),
   armor_type: z.string().optional(),
   etcitem_type: z.string().optional(),
-  weapon_type: z.string().optional(),
-  slot_bit_type: z.object({ $: z.array(z.string()) }).optional(),
+  blessed: z.number().optional(),
   weight: z.number().optional(),
+  default_action: z.string().optional(),
   consume_type: z.string().optional(),
   initial_count: z.number().optional(),
   maximum_count: z.number().optional(),
   soulshot_count: z.number().optional(),
   spiritshot_count: z.number().optional(),
   immediate_effect: z.number().optional(),
+  price: z.number().optional(),
   default_price: z.number().optional(),
   item_skill: z.string().optional(),
   critical_attack_skill: z.string().optional(),
@@ -35,6 +37,7 @@ const ItemEntryC1 = z.object({
   is_destruct: z.number().optional(),
   physical_damage: z.number().optional(),
   random_damage: z.number().optional(),
+  weapon_type: z.string().optional(),
   can_penetrate: z.number().optional(),
   critical: z.number().optional(),
   hit_modify: z.number().optional(),
@@ -50,9 +53,16 @@ const ItemEntryC1 = z.object({
   mp_consume: z.number().optional(),
   magical_damage: z.number().optional(),
   durability: z.number().optional(),
+  damaged: z.number().optional(),
   physical_defense: z.number().optional(),
   magical_defense: z.number().optional(),
   mp_bonus: z.number().optional(),
+  // category: {},
+  enchanted: z.number().optional(),
+  html: z.string().optional(),
+  equip_pet: z
+    .object({ $: z.array(z.union([z.number(), z.string()])).optional() })
+    .optional(),
   magic_weapon: z.number().optional(),
   //sets
   slot_chest: z.number().optional(),
@@ -181,8 +191,7 @@ const ItemEntryC1 = z.object({
       $: z.tuple([z.number(), z.number()]),
     })
     .optional(),
-    //capsule
-  default_action: z.string().optional(),
+  //capsule
 });
 
 export type ItemEntryC1 = z.infer<typeof ItemEntryC1>;

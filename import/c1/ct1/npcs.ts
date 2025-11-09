@@ -170,9 +170,12 @@ function addSkills(deps: {
   );
   const tomaNpcById = new Map(
     tomaNpcsParser({
-      path: "import/c1/ct/npcs",
+      path: "import/c1/ct1/npcs",
     }).map((n) => [n.npc.npcClassId, n.npc.skillList])
   );
+
+  console.log(tomaNpcById);
+  
 
   for (const npc of deps.npcs.values()) {
     const skillList: string[] = [];
@@ -347,9 +350,9 @@ function addDrop(deps: {
             const item = deps.itemByName.get(itemName.replace("_low", ""));
 
             if (!item) {
-              console.log(
-                `Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`
-              );
+              // console.log(
+              //   `Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`
+              // );
             } else {
               deps.npc.dropList.push({
                 itemId: item.id,
@@ -376,9 +379,9 @@ function addSpoil(deps: {
       const itemName = itemData.$[0];
       const item = deps.itemByName.get(itemName);
       if (!item) {
-        console.log(
-          `Spoil list (NPC: ${deps.npc.id}) item not found: ${itemName}`
-        );
+        // console.log(
+        //   `Spoil list (NPC: ${deps.npc.id}) item not found: ${itemName}`
+        // );
       } else {
         deps.npc.spoilList.push({
           itemId: item.id,
@@ -425,9 +428,9 @@ function addDropHerbs(deps: {
             const item = deps.itemByName.get(itemName);
 
             if (!item) {
-              console.log(
-                `Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`
-              );
+              // console.log(
+              //   `Drop list (NPC: ${deps.npc.id}) item not found: ${itemName}`
+              // );
             } else {
               deps.npc.herbList.push({
                 itemId: item.id,

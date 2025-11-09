@@ -254,7 +254,7 @@ function getDrop(deps: { list: any; items: Map<string, Item> }) {
             const item = deps.items.get(itemName);
 
             if (!item) {
-              console.log("Drop list item not found: " + itemName);
+              // console.log("Drop list item not found: " + itemName);
             } else {
               drop.push({
                 itemId: item.id,
@@ -297,7 +297,7 @@ function getNewDrop(deps: { list: any; items: Map<string, Item> }) {
             const item = deps.items.get(itemName);
 
             if (!item) {
-              console.log("Drop list item not found: " + itemName);
+              // console.log("Drop list item not found: " + itemName);
             } else {
               arr.push({
                 itemId: item.id,

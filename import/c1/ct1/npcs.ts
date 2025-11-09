@@ -168,24 +168,24 @@ function addSkills(deps: {
   const skillsByName = new Map(
     Array.from(deps.skills.values()).map((s) => [s.skillName, s])
   );
-  // const tomaNpcById = new Map(
-  //   tomaNpcsParser({
-  //     path: "import/c1/il/npcs",
-  //   }).map((n) => [n.npc.npcClassId, n.npc.skillList])
-  // );
+  const tomaNpcById = new Map(
+    tomaNpcsParser({
+      path: "import/c1/ct/npcs",
+    }).map((n) => [n.npc.npcClassId, n.npc.skillList])
+  );
 
   for (const npc of deps.npcs.values()) {
     const skillList: string[] = [];
-    // const tomaNapcSkills = tomaNpcById.get(npc.id);
-    // if (tomaNapcSkills) {
-    //   for (const tSkill of tomaNapcSkills) {
-    //     const skill = deps.skills.get(tSkill.skillId + "_" + tSkill.skillLevel);
-    //     if (skill) {
-    //       skillList.push(skill.skillName.replace("@", ""));
-    //     }
-    //   }
-    // } 
-    // else {
+    const tomaNapcSkills = tomaNpcById.get(npc.id);
+    if (tomaNapcSkills) {
+      for (const tSkill of tomaNapcSkills) {
+        const skill = deps.skills.get(tSkill.skillId + "_" + tSkill.skillLevel);
+        if (skill) {
+          skillList.push(skill.skillName.replace("@", ""));
+        }
+      }
+    } 
+    else {
       const grp = npcGrp.get(npc.id);
       if (grp) {
         for (const skillIdLvl of grp.skillList) {
@@ -195,7 +195,7 @@ function addSkills(deps: {
           }
         }
       }
-    // }
+    }
     // const skillList = [];
     // const grp = npcGrp.get(npc.id);
     // if (grp) {

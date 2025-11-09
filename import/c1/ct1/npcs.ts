@@ -172,10 +172,7 @@ function addSkills(deps: {
     tomaNpcsParser({
       path: "import/c1/ct1/npcs",
     }).map((n) => [n.npc.npcClassId, n.npc.skillList])
-  );
-
-  console.log(tomaNpcById);
-  
+  ); 
 
   for (const npc of deps.npcs.values()) {
     const skillList: string[] = [];

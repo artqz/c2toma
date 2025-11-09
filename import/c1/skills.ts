@@ -170,6 +170,7 @@ function loadSkillRuNames(deps: {
   if (
     deps.chronicle === "c1" ||
     deps.chronicle === "c4" ||
+    deps.chronicle === "c5" ||
     deps.chronicle === "il" ||
     deps.chronicle === "ct1"
   ) {

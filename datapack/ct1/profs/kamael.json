@@ -1,0 +1,76 @@
+[
+    {
+        "name": "Kamael Male Soldier",
+        "id": 123,
+        "childs": [
+            {
+                "name": "Trooper",
+                "id": 125,
+                "childs": [
+                    {
+                        "name": "Berserker",
+                        "id": 127,
+                        "childs": [
+                            {
+                                "name": "Doombringer",
+                                "id": 131
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Male Soul Breaker",
+                        "id": 128,
+                        "childs": [
+                            {
+                                "name": "Male Soul Hound",
+                                "id": 132
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Kamael Female Soldier",
+        "id": 124,
+        "childs": [
+            {
+                "name": "Warder",
+                "id": 126,
+                "childs": [
+                    {
+                        "name": "Arbalester",
+                        "id": 130,
+                        "childs": [
+                            {
+                                "name": "Trickster",
+                                "id": 134
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Female Soul Breaker",
+                        "id": 129,
+                        "childs": [
+                            {
+                                "name": "Female Soul Hound",
+                                "id": 133
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Inspector",
+        "id": 135,
+        "childs": [
+            {
+                "name": "Judicator",
+                "id": 136
+            }
+        ]
+    }
+]

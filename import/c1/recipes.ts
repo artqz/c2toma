@@ -5,6 +5,7 @@ import { RecipeEntry } from '../../datapack/types';
 import { Item, Material, Product, Recipe } from "../../result/types";
 import { Chronicle } from "../types";
 import { generateRecipesC5 } from './c5/recipe';
+import { generateRecipesCT1 } from "./ct1/recipe";
 import { generateRecipesIL } from './il/recipe';
 
 export function loadRecipes(deps: {
@@ -31,6 +32,8 @@ function loadRecipesData(deps: {
       return addRecipeC5(deps)
     case "il":
       return addRecipeIL(deps)
+      case "ct1":
+      return addRecipeCT1(deps)
     case "gf":
       return addRecipe({...deps, recipeData: loadRecipeDataGF()})
     default:
@@ -67,6 +70,10 @@ function addRecipeC5(deps: {items: Map<number, Item>; }) {
 
 function addRecipeIL(deps: {items: Map<number, Item>; }) {
   return generateRecipesIL(deps)
+}
+
+function addRecipeCT1(deps: {items: Map<number, Item>; }) {
+  return generateRecipesCT1(deps)
 }
 
 function getItemList(deps: {

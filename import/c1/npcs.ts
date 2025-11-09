@@ -33,6 +33,7 @@ import { canUseSA } from "./npc/canUseSA";
 import { getClan } from "./npc/getters";
 import { loadNpcGrpDataC1, NpcGrp } from "../../datapack/c1/npcgrp";
 import { loadNpcGrpDataC4 } from "../../datapack/c4/npcgrp";
+import { generateNpcsCT1 } from "./ct1/npcs";
 
 export function loadNpcs(deps: {
   chronicle: Chronicle;
@@ -69,6 +70,8 @@ function loadNpcData(deps: {
       return addNpcsС5(deps);
     case "il":
       return addNpcsIL(deps);
+    case "ct1":
+      return addNpcsCT1(deps);
     case "gf":
       return addNpcs({ ...deps, npcsData: loadNpcDataGF() });
     default:
@@ -267,6 +270,14 @@ function getDrop(deps: { list: any; items: Map<string, Item> }) {
   });
 
   return drop;
+}
+
+function addNpcsCT1(deps: {
+  skills: Map<string, Skill>;
+  items: Map<number, Item>;
+}) {
+  const npcs = generateNpcsCT1({ ...deps, ignoreNpcList: IGNORE_NPCS });
+  return npcs;
 }
 
 function getNewDrop(deps: { list: any; items: Map<string, Item> }) {

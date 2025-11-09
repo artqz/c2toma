@@ -24,6 +24,7 @@ import { generateItemsC5 } from "./c5/items";
 import { loadItemGrpC5 } from "../../datapack/c5/itemgrp";
 import { getTypeMaterials } from "./items/materials";
 import { loadItemNamesC5 } from "../../datapack/c5/itemnames";
+import { generateItemsCT1 } from "./ct1/items";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -47,6 +48,8 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       return addItemsC5();
     case "il":
       return addItemsIL();
+      case "ct1":
+      return addItemsCT1();
     case "gf":
       return addItems(loadItemDataGF());
 
@@ -131,6 +134,10 @@ function addItemsC5() {
 
 function addItemsIL() {
   return generateItemsIL();
+}
+
+function addItemsCT1() {
+  return generateItemsCT1();
 }
 
 function loadItemNames(deps: {

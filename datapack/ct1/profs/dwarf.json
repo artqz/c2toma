@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Dwarf Fighter",
+        "id": 53,
+        "childs": [
+            {
+                "name": "Scavenger",
+                "id": 54,
+                "childs": [
+                    {
+                        "name": "Bounty Hunter",
+                        "id": 55,
+                        "childs": [
+                            {
+                                "name": "Fortune Seeker",
+                                "id": 117
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Artisan",
+                "id": 56,
+                "childs": [
+                    {
+                        "name": "Warsmith",
+                        "id": 57,
+                        "childs": [
+                            {
+                                "name": "Maestro",
+                                "id": 118
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

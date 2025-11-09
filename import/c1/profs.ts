@@ -10,6 +10,7 @@ import { loadSkillAcquireDataIL } from "../../datapack/il/skillacquire";
 import { Item, Prof, ProfSkill, Skill } from "../../result/types";
 import { Chronicle } from "../types";
 import { generateProfsC5 } from "./c5/profs";
+import { generateProfsCT1 } from "./ct1/profs";
 
 export function loadProfs(deps: {
   chronicle: Chronicle;
@@ -41,6 +42,8 @@ function loadSkillAcquireData(deps: {
     case "il":
       profData = loadSkillAcquireDataIL();
       break;
+      case "ct1":
+      return generateProfsCT1(deps);
     case "gf":
       profData = loadSkillAcquireDataGF();
       break;

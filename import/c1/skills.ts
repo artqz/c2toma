@@ -12,9 +12,9 @@ import { loadSkillDataIL } from "../../datapack/il/skilldata";
 import { loadSkillGrpIL } from "../../datapack/il/skillgrp";
 import { loadSkillNamesIL } from "../../datapack/il/skillnames";
 import { Skill } from "../../result/types";
-import { saveFile } from '../../utils/Fs';
 import { Chronicle } from "../types";
 import { generateSkillDataC5 } from "./c5/skills";
+import { generateSkillDataCT1 } from "./ct1/skills";
 import { getEffects } from './skillEffects';
 
 export function loadSkills(deps: { chronicle: Chronicle }) {
@@ -41,6 +41,9 @@ function loadItemData(deps: { chronicle: Chronicle }) {
       break;
     case "il":
       skillData = loadSkillDataIL();
+      break;
+    case "ct1":
+      skillData = generateSkillDataCT1();
       break;
     case "gf":
       skillData = loadSkillDataGF();

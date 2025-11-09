@@ -18,7 +18,7 @@ import { loadCapsuleItems } from "./import/c1/capsule/items";
 import { loadSummonData } from "./import/c1/summon";
 import { loadPetsData } from "./import/c1/pets";
 
-const chronicle: Chronicle = "c1";
+const chronicle: Chronicle = "ct1";
 
 function init() {
   createDir(`result/data/${chronicle}`);

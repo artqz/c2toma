@@ -38,6 +38,8 @@ function loadAiData(deps: {
       return addAiC5(deps);
     case "il":
       return addAiIL(deps);
+    case "ct1":
+      return addAiCT1(deps)
     case "gf":
       return getAi({ ...deps, aiData: loadAiGf() });
     default:
@@ -71,6 +73,14 @@ function addAiC5(deps: {
 }
 
 function addAiIL(deps: {
+  chronicle: Chronicle;
+  npcs: Map<number, Npc>;
+  items: Map<number, Item>;
+}) {
+  return generaAiIL(deps)
+}
+
+function addAiCT1(deps: {
   chronicle: Chronicle;
   npcs: Map<number, Npc>;
   items: Map<number, Item>;

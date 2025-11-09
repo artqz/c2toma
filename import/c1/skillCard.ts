@@ -2,7 +2,7 @@ import { Chronicle } from "./../types";
 import { Skill, lstring } from "../../result/types";
 import { saveFile } from "../../utils/Fs";
 
-const ECHANT_ONLY = new Set(["c4", "c5", "il", "gf"]);
+const ECHANT_ONLY = new Set(["c4", "c5", "il", "ct1", "gf"]);
 const SKILL_ENCHANT_TYPES = ["power", "cost", "chance", "recovery", "time"];
 const ENCHANT_CHANCE: Record<string, number[]> = {
   "76": [

@@ -1,10 +1,15 @@
 import { loadZoneNamesC5 } from "../../datapack/c5/zonenames";
+import { loadZoneNamesCT1 } from "../../datapack/ct1/zonenames";
 import { loadZoneNamesGF } from "../../datapack/gf/zonenames";
 import { Chronicle } from "../types";
 
 export function loadZones(deps: { chronicle: Chronicle }) {
   if (deps.chronicle === "c5") {
     const data = loadZoneNamesC5().filter((x) => x.img);
+    return data;
+  }
+   if (deps.chronicle === "ct1") {
+    const data = loadZoneNamesCT1().filter((x) => x.img);
     return data;
   }
   if (deps.chronicle === "gf") {

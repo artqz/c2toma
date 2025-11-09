@@ -14,7 +14,7 @@ export type ItemGrpC5= z.infer<typeof ItemGrpC5>;
 
 const soursec = ["armorgrp.txt", "etcitemgrp.txt", "weapongrp.txt"];
 
-export function loadItemGrpC5() {
+export function loadItemGrpCT1() {
   const grps = new Map<string, ItemGrp>();
   for (const file of soursec) {
     const itemGrps: ItemGrpC5[] = parseCsv(

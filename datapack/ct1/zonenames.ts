@@ -18,7 +18,7 @@ type ChildMapez = {
   imgSize: { x: number; y: number };
 };
 
-export function loadZoneNamesC5(): ChildMapez[] {
+export function loadZoneNamesCT1(): ChildMapez[] {
   const json = parseCsv(Fs.readFileSync("datapack/c5/zonename-e.txt", "utf8"), {
     delimiter: "\t",
     relaxQuotes: true,

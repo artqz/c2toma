@@ -20,7 +20,7 @@ const EntryC5 = z.object({
   desc_add2: z.string(),
 });
 
-export function loadSkillNamesC5(): SkillNameEntry[] {
+export function loadSkillNamesCT1(): SkillNameEntry[] {
   const json = parseCsv(
     Fs.readFileSync("datapack/c5/skillname-e.txt", "utf8"),
     {

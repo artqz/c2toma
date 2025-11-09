@@ -58,7 +58,7 @@ const Entry = z.object({
   "num_items[13]": z.string(),
 });
 
-export function loadQuestNamesC5(): QuestNameEntryC4[] {
+export function loadQuestNamesCT1(): QuestNameEntryC4[] {
   const json = parseCsv(Fs.readFileSync("datapack/ct1/questname-e.txt", "utf8"), {
     delimiter: "\t",
     relaxQuotes: true,

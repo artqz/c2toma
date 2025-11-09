@@ -25,6 +25,8 @@ import { loadItemGrpC5 } from "../../datapack/c5/itemgrp";
 import { getTypeMaterials } from "./items/materials";
 import { loadItemNamesC5 } from "../../datapack/c5/itemnames";
 import { generateItemsCT1 } from "./ct1/items";
+import { loadItemNamesCT1 } from "../../datapack/ct1/itemnames";
+import { loadItemGrpCT1 } from "../../datapack/ct1/itemgrp";
 
 export function loadItems(deps: { chronicle: Chronicle }) {
   let items = loadItemData(deps);
@@ -157,6 +159,9 @@ function loadItemNames(deps: {
     case "il":
       addNamesIL(deps);
       break;
+    case "ct1":
+      addNamesCT1(deps);
+      break;
     case "gf":
       addNamesGF(deps);
       break;
@@ -185,6 +190,9 @@ function loadItemGrps(deps: {
     case "il":
       addIconsIL(deps);
       break;
+    case "ct1":
+      addIconsCT1(deps);
+      break;
     case "gf":
       addIconsGF(deps);
       break;
@@ -204,7 +212,8 @@ function loadItemRuNames(deps: {
     deps.chronicle === "c1" ||
     deps.chronicle === "c4" ||
     deps.chronicle === "c5" ||
-    deps.chronicle === "il"
+    deps.chronicle === "il" ||
+    deps.chronicle === "ct1"
   ) {
     const itemNames = loadItemNamesGF();
 
@@ -308,6 +317,19 @@ function addIconsIL(deps: { itemData: Map<number, Item> }) {
   }
 }
 
+function addIconsCT1(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemGrp of loadItemGrpCT1()) {
+    const item = itemData.get(itemGrp.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        icon: addIcon(itemGrp.icon, item.itemName),
+      });
+    }
+  }
+}
+
 function addIconsGF(deps: { itemData: Map<number, Item> }) {
   const itemData = deps.itemData;
   for (const itemGrp of loadItemGrpGF()) {
@@ -389,6 +411,21 @@ function addNamesC5(deps: { itemData: Map<number, Item> }) {
 function addNamesIL(deps: { itemData: Map<number, Item> }) {
   const itemData = deps.itemData;
   for (const itemName of loadItemNamesIL()) {
+    const item = itemData.get(itemName.id);
+    if (item) {
+      itemData.set(item.id, {
+        ...item,
+        addName: itemName.add_name,
+        name: itemName.name,
+        desc: itemName.desc,
+      });
+    }
+  }
+}
+
+function addNamesCT1(deps: { itemData: Map<number, Item> }) {
+  const itemData = deps.itemData;
+  for (const itemName of loadItemNamesCT1()) {
     const item = itemData.get(itemName.id);
     if (item) {
       itemData.set(item.id, {

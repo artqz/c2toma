@@ -34,6 +34,7 @@ import { getClan } from "./npc/getters";
 import { loadNpcGrpDataC1, NpcGrp } from "../../datapack/c1/npcgrp";
 import { loadNpcGrpDataC4 } from "../../datapack/c4/npcgrp";
 import { generateNpcsCT1 } from "./ct1/npcs";
+import { loadNpcNamesCT1 } from "../../datapack/ct1/npcnames";
 
 export function loadNpcs(deps: {
   chronicle: Chronicle;
@@ -358,6 +359,9 @@ function loadNpcnames(deps: {
     case "il":
       addNamesIL(deps);
       break;
+    case "ct1":
+      addNamesCT1(deps);
+      break;
     case "gf":
       addNamesGF(deps);
       break;
@@ -378,7 +382,8 @@ function loadNpcRuNames(deps: {
     deps.chronicle === "c1" ||
     deps.chronicle === "c4" ||
     deps.chronicle === "il" ||
-    deps.chronicle === "c5"
+    deps.chronicle === "c5" ||
+    deps.chronicle === "ct1"
   ) {
     const npcdataGF = new Map(loadNpcDataGF().map((npc) => [npc.$[1], npc]));
     const npcNamesGF = new Map(loadNpcNamesGF().map((npc) => [npc.id, npc]));
@@ -457,6 +462,21 @@ function addNamesC5(deps: { npcsData: Map<number, Npc> }) {
 function addNamesIL(deps: { npcsData: Map<number, Npc> }) {
   const npcsData = deps.npcsData;
   for (const npcName of loadNpcNamesIL()) {
+    const npc = npcsData.get(npcName.id);
+    if (npc) {
+      npcsData.set(npc.id, {
+        ...npc,
+        name: npcName.name,
+        nick: npcName.nick,
+        nickColor: npcName.nickcolor,
+      });
+    }
+  }
+}
+
+function addNamesCT1(deps: { npcsData: Map<number, Npc> }) {
+  const npcsData = deps.npcsData;
+  for (const npcName of loadNpcNamesCT1()) {
     const npc = npcsData.get(npcName.id);
     if (npc) {
       npcsData.set(npc.id, {

@@ -20,6 +20,7 @@ function loadNpcBuffsData(deps: {
     case "c4":
     case "c5":
     case "il":
+    case "ct1":
     case "gf":
       return load({ ...deps });
   }

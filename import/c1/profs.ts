@@ -42,7 +42,7 @@ function loadSkillAcquireData(deps: {
     case "il":
       profData = loadSkillAcquireDataIL();
       break;
-      case "ct1":
+    case "ct1":
       return generateProfsCT1(deps);
     case "gf":
       profData = loadSkillAcquireDataGF();

@@ -40,8 +40,7 @@ function loadMultisellData(deps: {
     case "il":
       multisellData = loadMultisellDataGF();
       break;
-
-       case "ct1":
+    case "ct1":
       multisellData = loadMultisellDataGF();
       break;
     case "gf":

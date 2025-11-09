@@ -7,6 +7,7 @@ import {
   QuestNameEntryC4,
 } from "../../datapack/c4/questnames";
 import { loadQuestNamesC5 } from '../../datapack/c5/questnames';
+import { loadQuestNamesCT1 } from "../../datapack/ct1/questnames";
 import {
   loadQuestNamesGF,
   QuestNameEntryGF,
@@ -43,6 +44,9 @@ function loadQuestsData(deps: {
       break;
     case "il":
       questData = loadQuestsIL(deps);
+      break;
+    case "ct1":
+      questData = loadQuestsCT1(deps);
       break;
     case "gf":
       questData = loadQuestsGf(deps);
@@ -182,6 +186,49 @@ function loadQuestsIL(deps: { items: Map<number, Item> }) {
   return quests;
 }
 
+function loadQuestsCT1(deps: { items: Map<number, Item> }) {
+  const map = new Map();
+  loadQuestNamesCT1().forEach((item) => {
+    const key = item.id;
+    const collection = map.get(key);
+    if (!collection) {
+      map.set(key, [item]);
+    } else {
+      collection.push(item);
+    }
+  });
+
+  const questRuById = new Map(
+    loadQuestNamesGF().map((q) => [q.id + "_" + q.progId, q])
+  );
+
+  const quests: Quest[] = [];
+  for (const progs of Array.from(map.values()) as QuestNameEntryGF[][]) {
+    const questProgs: QusetProg[] = [];
+    for (const quest of progs) {
+      const questRu = questRuById.get(quest.id + "_" + quest.progId);
+      questProgs.push({
+        id: quest.progId,
+        name: { ...quest.progName, ru: questRu?.progName.ru ?? quest.progName.en },
+        desc: { ...quest.desc, ru: questRu?.desc.ru ?? quest.desc.en },
+        items: getItems({ ...deps, tabs1: quest.tabs1, tabs2: quest.tabs2 }),
+      });
+    }
+    const questRu = questRuById.get(progs[0].id + "_" + progs[0].progId);
+    quests.push({
+      id: progs[0].id,
+      name: { ...progs[0].name, ru: questRu?.name.ru ?? progs[0].name.en },
+      desc: {
+        ...progs[0].short_desc,
+        ru: questRu?.short_desc.ru ?? progs[0].short_desc.en,
+      },
+      progs: questProgs,
+    });
+  }
+
+  return quests;
+}
+
 function loadQuestsGf(deps: { items: Map<number, Item> }) {
   const map = new Map();
   loadQuestNamesGF().forEach((item) => {
@@ -242,7 +289,7 @@ function loadQuestsC1() {
           id: quest.level,
           name: {
             en: quest.name + `Step ${quest.level}`,
-            ru: `Шаг ${quest.level}` ?? `Step ${quest.level}`,
+            ru: `Шаг ${quest.level}`,
           },
           desc: { en: quest.desc, ru: questRu?.desc.ru ?? quest.desc },
           items: [],
